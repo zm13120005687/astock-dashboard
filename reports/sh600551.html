@@ -1,1 +1,454 @@
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBsYW5nPSJ6aC1DTiI+PGhlYWQ+PG1ldGEgY2hhcnNldD0idXRmLTgiPg0KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCxpbml0aWFsLXNjYWxlPTEiPg0KPHRpdGxlPuaXtuS7o+WHuueJiO+8iDYwMDU1Me+8ieS6lOatpeazleWIhuaekOaKpeWRijwvdGl0bGU+DQo8c3R5bGU+DQo6cm9vdHstLWJnOiMwZjExMTU7LS1mZzojZTZlOGVjOy0tbXV0ZWQ6IzlhYTRiMjstLWxpbmU6IzI2MmIzNjstLWFjYzojNGRhM2ZmfQ0KKntib3gtc2l6aW5nOmJvcmRlci1ib3h9DQpib2R5e21hcmdpbjowO2JhY2tncm91bmQ6dmFyKC0tYmcpO2NvbG9yOnZhcigtLWZnKTsNCmZvbnQtZmFtaWx5Oi1hcHBsZS1zeXN0ZW0sQmxpbmtNYWNTeXN0ZW1Gb250LCJQaW5nRmFuZyBTQyIsIk1pY3Jvc29mdCBZYUhlaSIsc2Fucy1zZXJpZjsNCmxpbmUtaGVpZ2h0OjEuNzU7Zm9udC1zaXplOjE1cHh9DQoud3JhcHttYXgtd2lkdGg6OTQwcHg7bWFyZ2luOjAgYXV0bztwYWRkaW5nOjI2cHggMjBweCA3MHB4fQ0KYS5iYWNre2Rpc3BsYXk6aW5saW5lLWJsb2NrO21hcmdpbi1ib3R0b206MThweDtjb2xvcjp2YXIoLS1hY2MpO3RleHQtZGVjb3JhdGlvbjpub25lOw0KZm9udC1zaXplOjE0cHg7Ym9yZGVyOjFweCBzb2xpZCB2YXIoLS1saW5lKTtwYWRkaW5nOjZweCAxNHB4O2JvcmRlci1yYWRpdXM6NnB4fQ0KLnJwIGgxe2ZvbnQtc2l6ZToyNXB4O21hcmdpbjo2cHggMCAxOHB4O3BhZGRpbmctYm90dG9tOjE0cHg7Ym9yZGVyLWJvdHRvbToycHggc29saWQgdmFyKC0tbGluZSl9DQoucnAgaDJ7Zm9udC1zaXplOjIwcHg7bWFyZ2luOjMycHggMCAxNHB4O3BhZGRpbmctbGVmdDoxMXB4O2JvcmRlci1sZWZ0OjRweCBzb2xpZCB2YXIoLS1hY2MpfQ0KLnJwIGgze2ZvbnQtc2l6ZToxNnB4O21hcmdpbjoyMnB4IDAgMTBweDtjb2xvcjp2YXIoLS1hY2MpfQ0KLnJwIHB7bWFyZ2luOjEwcHggMH0NCi5ycCB0YWJsZXtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7d2lkdGg6MTAwJTttYXJnaW46MTZweCAwO2ZvbnQtc2l6ZToxNHB4fQ0KLnJwIHRoe2JhY2tncm91bmQ6IzFlMjQzMDtwYWRkaW5nOjEwcHggMTJweDt0ZXh0LWFsaWduOmxlZnQ7Zm9udC13ZWlnaHQ6NjAwOw0KYm9yZGVyOjFweCBzb2xpZCB2YXIoLS1saW5lKX0NCi5ycCB0ZHtwYWRkaW5nOjlweCAxMnB4O2JvcmRlcjoxcHggc29saWQgdmFyKC0tbGluZSk7dmVydGljYWwtYWxpZ246dG9wfQ0KLnJwIGJsb2NrcXVvdGV7bWFyZ2luOjE0cHggMDtwYWRkaW5nOjEycHggMTZweDtiYWNrZ3JvdW5kOiMxYTFmMmI7DQpib3JkZXItbGVmdDozcHggc29saWQgdmFyKC0tYWNjKTtib3JkZXItcmFkaXVzOjAgNnB4IDZweCAwO2NvbG9yOiNjZmQ2ZTB9DQoucnAgYmxvY2txdW90ZSBwe21hcmdpbjo0cHggMH0NCi5ycCBjb2Rle2JhY2tncm91bmQ6IzFlMjQzMDtwYWRkaW5nOjJweCA2cHg7Ym9yZGVyLXJhZGl1czo0cHg7Zm9udC1zaXplOjEzcHh9DQoucnAgaHJ7Ym9yZGVyOm5vbmU7Ym9yZGVyLXRvcDoxcHggc29saWQgdmFyKC0tbGluZSk7bWFyZ2luOjI4cHggMH0NCi5ycCBzdHJvbmd7Y29sb3I6I2ZmZn0NCi5ycCB1bCwucnAgb2x7cGFkZGluZy1sZWZ0OjIycHh9DQoucnAgbGl7bWFyZ2luOjVweCAwfQ0KLnJwIGVte2NvbG9yOnZhcigtLW11dGVkKTtmb250LXN0eWxlOm5vcm1hbDtmb250LXNpemU6MTNweH0NCjwvc3R5bGU+PC9oZWFkPjxib2R5PjxkaXYgY2xhc3M9IndyYXAiPg0KPGEgY2xhc3M9ImJhY2siIGhyZWY9Ii4uL2luZGV4Lmh0bWwiPuKGkCDov5Tlm57mgLvop4jooajmoLw8L2E+DQo8ZGl2IGNsYXNzPSJycCI+DQo8aDE+5pe25Luj5Ye654mI77yINjAwNTUx77yJ5LqU5q2l5rOV5YiG5p6Q5oql5ZGKPC9oMT4NCjxibG9ja3F1b3RlPg0KPHA+5YiG5p6Q5pel5pyf77yaMjAyNi0wOS0wOSDvvZwg546w5Lu3IDxzdHJvbmc+Ny43NCDlhYM8L3N0cm9uZz7vvIgyMDI2LTA5LTA5IOaUtuebmO+8jOiFvuiur+ihjOaDhe+8jOW9k+aXpSDiiJI2LjE4Je+8iSDvvZwg5oC75biC5YC8IDxzdHJvbmc+NTIuNDgg5Lq/PC9zdHJvbmc+IO+9nCBQRShUVE0pIDxzdHJvbmc+MTMuMHg8L3N0cm9uZz4g772cIFBCIDxzdHJvbmc+MC44OHjvvIjnoLTlh4DvvIk8L3N0cm9uZz4g772cIOaAu+iCoeacrCA8c3Ryb25nPue6piA2Ljc4IOS6v+iCoTwvc3Ryb25nPjxiciAvPg0K6KGM5Lia77ya5Lyg5aqS5aix5LmQ77yI5Ye654mI5Y+R6KGM77yJ772cIOadv+Wdl++8muayquW4guS4u+advyDvvZwg5a6e5o6n5Lq677ya5a6J5b6955yB5Lq65rCR5pS/5bqc77yI55yB5bGe5Zu95pyJ5paH5YyW5Lyg5aqS5bmz5Y+w77yJPC9wPg0KPC9ibG9ja3F1b3RlPg0KPGhyIC8+DQo8aDI+56ys5LiA5q2l77ya5YWs5Y+45piv5bmy5LuA5LmI55qE77yfPC9oMj4NCjxwPjxzdHJvbmc+5LiA5Y+l6K+d5a6a5L2NPC9zdHJvbmc+77ya5a6J5b6955yB5bGe5Zu95pyJ5Ye654mI5Lyg5aqS6b6Z5aS077yM5Lul5pWZ5p2Q5pWZ6L6F5Ye654mI5Y+R6KGM5Li65Z+65pys55uY77yM5Y+g5Yqg5Y2w5Yi35aSN5Yi244CB5paH5YyW54mp6LWE6LS45piT44CB6K++5ZCO5pyN5Yqh5LiO56CU5a2m5paH5peF55qEIuWHuueJiCvmlZnogrIr5paH5peFIuiejeWQiOW5s+WPsOOAgjwvcD4NCjxwPjxzdHJvbmc+5ZCE5Lia5Yqh5p2/5Z2X6JCl5pS25Y2g5q+U77yIMjAyNkgx77yM5ZCI5bm26JCl5pS2IDI5LjE4IOS6v++8iTwvc3Ryb25nPjwvcD4NCjx0YWJsZT4NCjx0aGVhZD4NCjx0cj4NCjx0aD7kuJrliqHmnb/lnZc8L3RoPg0KPHRoPuiQpeaUtjwvdGg+DQo8dGg+5Y2g5q+UPC90aD4NCjx0aD7nibnlvoE8L3RoPg0KPC90cj4NCjwvdGhlYWQ+DQo8dGJvZHk+DQo8dHI+DQo8dGQ+54mp6LWE6ZSA5ZSu5YiG6YOoPC90ZD4NCjx0ZD4yMC42NCDkur88L3RkPg0KPHRkPjcwLjc0JTwvdGQ+DQo8dGQ+5Y2w5Yi354mp6LWEL+aWh+WMluWVhuWTgei0uOaYk++8jDxzdHJvbmc+5L2O5q+b5Yip44CB5Li75Yqo5pS257yp5LitPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5Ye654mI5Y+R6KGM5YiG6YOoPC90ZD4NCjx0ZD45LjIxIOS6vzwvdGQ+DQo8dGQ+MzEuNTYlPC90ZD4NCjx0ZD7mlZnmnZDmlZnovoUr5LiA6Iis5Zu+5Lmm77yMPHN0cm9uZz7liKnmtqbln7rmnKznm5g8L3N0cm9uZz7vvIgyMDI1IOW5tOaVmeadkOaVmei+heavm+WIqeeOhyA0MC44OSXjgIHmlrDpl7vlh7rniYggMzUuODEl77yJPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5Y2w5Yi35aSN5Yi25YiG6YOoPC90ZD4NCjx0ZD4xLjk0IOS6vzwvdGQ+DQo8dGQ+Ni42NCU8L3RkPg0KPHRkPuWNsOWIt+WMheijhemFjeWllzwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPuWFtuS7luS4muWKoTwvdGQ+DQo8dGQ+MC41MCDkur88L3RkPg0KPHRkPjEuNzElPC90ZD4NCjx0ZD7igJQ8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7liIbpg6jpl7TmirXplIA8L3RkPg0KPHRkPuKIkjMuMTEg5Lq/PC90ZD4NCjx0ZD7iiJIxMC42NSU8L3RkPg0KPHRkPuKAlDwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8YmxvY2txdW90ZT4NCjxwPuazqOaEj+e7k+aehO+8mjxzdHJvbmc+6LS45piT5Y2g5pS25YWl5LiD5oiQ5L2G5Y+q6LSh54yu6Zu25aS05Yip5ram77yb5Ye654mI5Y+R6KGM5Y2g5pS25YWl5LiJ5oiQ5omN5piv5Yip5ram5Li75L2TPC9zdHJvbmc+4oCU4oCU6L+Z5piv55CG6KejIuiQpeaUtiDiiJIyMS41JeOAgeaJo+mdniArMzQuNyUi6IOM56a755qE6ZKl5YyZ44CCPC9wPg0KPC9ibG9ja3F1b3RlPg0KPHA+PHN0cm9uZz7moLjlv4Pkuqflk4Ev5pyN5YqhPC9zdHJvbmc+77ya5a6J5b6955yB5Z+656GA5pWZ6IKy5pWZ5p2Q5pWZ6L6F77yI5Yy65Z+f5Z6E5pat5oCn56iz5Zu677yJ44CB5LiA6Iis5Zu+5Lmm5Ye654mI77yIMjAyNkgxIOiOt+S4reWbveWHuueJiOaUv+W6nOWlliA4IOmhue+8jOWIm+WOhuWPsuacgOS9s++8ieOAgeivvuWQjuacjeWKoeWPjOW5s+WPsO+8iOe0r+iuoeS6pOaYk+i/kSAxNCDkur/vvInjgIHnoJTlrabmlofml4XjgIHmlbDlrZflh7rniYjvvIhBSSDmmbrog73lrqHmoKHjgIHono3lqpLkvZPor7vnianvvInjgII8L3A+DQo8cD48c3Ryb25nPuS4u+imgeWuouaIty/kuIvmuLg8L3N0cm9uZz7vvJrlronlvr3nnIHmlZnogrLljoXns7vnu5/kuI7kuK3lsI/lrabmoKHvvIjmlZnmnZDmlZnovoXjgIHor77lkI7mnI3liqHvvInjgIHmlrDljY7kuablupfmuKDpgZPjgIHljbDliLflrqLmiLfjgIHotLjmmJPkuIvmuLjjgII8L3A+DQo8cD48c3Ryb25nPuWig+WGheWkluaUtuWFpeWNoOavlDwvc3Ryb25nPu+8muS7peWbveWGheS4uuS4u++8jOaWh+WMlui0uOaYk+S4jueJiOadg+WHuua1t+WNoOavlOWwj+OAgjwvcD4NCjxwPjxzdHJvbmc+6YeR6J6N6LWE5LqnPC9zdHJvbmc+77ya5oyB5pyJ5rWZ5ZWG6K+B5Yi444CB6L6w5a6J56eR5oqA44CB5Zu96IGU5rCR55Sf5LiJ5Y+q6IKh56Wo77yIMjAyNkgxIOacq+i0pumdoiAyLjI3IOS6v++8ie+8jOWFrOWFgeS7t+WAvOazouWKqOWvueWIqea2puihqOaJsOWKqOaYvuiRl++8iOacrOacnyDiiJIzNjEyIOS4h++8ieOAgjwvcD4NCjxociAvPg0KPGgyPuesrOS6jOatpe+8muihjOS4muaZr+awlOW6piArIOaUv+etli/luILlnLrmlbDmja48L2gyPg0KPGgzPu+8iDHvvInmlL/nrZbnq6/vvIjov5EgNuKAkzEyIOS4quaciO+8ieKAlOKAlDxzdHJvbmc+5pS/562W5Y+L5aW977yM5Zu95a6257qn56uL5rOVK+S4k+mhueW3peeoizwvc3Ryb25nPjwvaDM+DQo8dGFibGU+DQo8dGhlYWQ+DQo8dHI+DQo8dGg+5pS/562WPC90aD4NCjx0aD7lj5HluIPkuLvkvZM8L3RoPg0KPHRoPuWKm+W6pjwvdGg+DQo8dGg+6JC95Zyw6IqC5aWPPC90aD4NCjwvdHI+DQo8L3RoZWFkPg0KPHRib2R5Pg0KPHRyPg0KPHRkPuOAiuWFqOawkemYheivu+S/g+i/m+adoeS+i+OAi++8iOWbveWKoemZouS7pOesrCA4MjMg5Y+377yJPC90ZD4NCjx0ZD7lm73liqHpmaI8L3RkPg0KPHRkPjxzdHJvbmc+5Zu95a6257qn6KGM5pS/5rOV6KeEPC9zdHJvbmc+77yI5YWo5rCR6ZiF6K+76aKG5Z+f6aaW6YOo77yJPC90ZD4NCjx0ZD48c3Ryb25nPjIwMjYtMDItMDEg6LW35pa96KGMPC9zdHJvbmc+77yb6K6+56uL5YWo5rCR6ZiF6K+75rS75Yqo5ZGo44CB5pSv5oyB5LyY6LSo5Ye654mI5L6b57uZ44CB5pSv5oyB5pWw5a2X6ZiF6K+75LiO5Lyg57uf6ZiF6K+757uT5ZCIPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+MjAyNiDlubTluqblh7rniYjono3lkIjlj5HlsZXlt6XnqIvvvIjlm73mlrDlh7rlj5HjgJQyMDI144CVMTkg5Y+377yJPC90ZD4NCjx0ZD7lm73lrrbmlrDpl7vlh7rniYjnvbI8L3RkPg0KPHRkPumDqOWnlOe6p+S4k+mhuTwvdGQ+DQo8dGQ+MjAyNS0xMi0xOCDljbDlj5HvvJvph43ngrnmlK/mjIHlupTnlKjnlJ/miJDlvI8gQUkg55qE5Ye654mI6J6N5ZCI6aG555uu44CB57q45pWw6J6N5ZCI6K+754mp44CB5pWw5pm65Z6L5Ye654mI5Lqn5ZOBPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+44CKIuS6uuW3peaZuuiDvSvmlZnogrIi6KGM5Yqo6K6h5YiS44CLPC90ZD4NCjx0ZD7mlZnogrLpg6jnrYnkupTpg6jpl6g8L3RkPg0KPHRkPumDqOWnlOe6pzwvdGQ+DQo8dGQ+MjAyNi0wNCDljbDlj5HvvJtBSSDor77nqIvov5vkuK3lsI/lrabjgIHmlbDlrZfmlZnmnZDkuI7mmbrmhafmlZnmnZDlu7rorr7igJTigJTkuI7lhazlj7jmlZnmnZDmlZnovoUr6K++5ZCO5pyN5Yqh5Li75Lia55u05o6l55u45YWzPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5LiK5rW35Ye654mI6auY6LSo6YeP5Y+R5bGV5a6e5pa95oSP6KeB77yI5Yy65Z+f5qC35pys77yJPC90ZD4NCjx0ZD7kuIrmtbfluILlp5TlrqPkvKDpg6g8L3RkPg0KPHRkPuWcsOaWuee6pzwvdGQ+DQo8dGQ+MjAyNi0wNe+8m+aOqOWKqCLlh7rniYgr5paH5peFK+aVmeiCsiLnlJ/mgIHono3lkIjjgIHmlZnmnZDlh7rniYjmlbDlrZfljJbovazlnovvvIzlhajlm73npLrojIPmhI/kuYk8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPGgzPu+8iDLvvInluILlnLrnq6/vvIjph4/ku7fmlbDmja7vvIk8L2gzPg0KPHRhYmxlPg0KPHRoZWFkPg0KPHRyPg0KPHRoPuaMh+aghzwvdGg+DQo8dGg+5pWw5o2uPC90aD4NCjwvdHI+DQo8L3RoZWFkPg0KPHRib2R5Pg0KPHRyPg0KPHRkPuihjOS4muWfuuacrOmdojwvdGQ+DQo8dGQ+57q46LSo5Zu+5Lmm5biC5Zy66ZyA5rGC5LiL6KGM77yI5YWs5Y+45Lit5oql6Ieq5YiX6aOO6Zmp77yJ77yM5Ye654mI5Lia6L+b5YWlIuaAu+mHj+W5s+a3oeOAgee7k+aehOWIhuWMliLpmLbmrrU8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7kurrlj6Plrablj5jph488L3RkPg0KPHRkPuWHuueUn+S6uuWPo+S4i+ihjOWQkSBLMTIg5Lyg5a+85piv5pWZ5p2Q5pWZ6L6F55qEPHN0cm9uZz7plb/mnJ/nu5PmnoTmgKfljovlips8L3N0cm9uZz7vvIgyMDI2IOW5tOWcqOWtpuS6uuWPo+S7jeWkhOmrmOS9je+8jOWOi+WKmyAyMDI4IOW5tOWQjuaYvuaAp+WMlu+8iTwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPuWFrOWPuOmHj+S7t++8iDIwMjZIMe+8iTwvdGQ+DQo8dGQ+6JCl5pS2IDI5LjE4IOS6v++8iOKIkjIxLjUyJe+8jOi0uOaYk+aUtue8qeaJgOiHtO+8ie+8m+W9kuavjSAyLjAyIOS6v++8iOKIkjMuMzcl77yJ77ybPHN0cm9uZz7miaPpnZ4gMi4wMSDkur/vvIgrMzQuNjUl77yJPC9zdHJvbmc+77yb57u85ZCI5q+b5Yip546HIDExLjgwJe+8iCsxLjUzcGN077yJPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5Li75Lia5q+b5YipPC90ZD4NCjx0ZD4yMDI1IOW5tOaVmeadkOaVmei+heavm+WIqeeOhyA0MC44OSXvvIgrNi45MnBjdO+8ieOAgeaWsOmXu+WHuueJiCAzNS44MSXvvIgrNC44NHBjdO+8ieKAlOKAlDxzdHJvbmc+5Li75Lia6YeP56iz5Lu35Y2HPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+6LS555So566h5o6nPC90ZD4NCjx0ZD4yMDI2SDEg6ZSA5ZSu6LS555SoIOKIkjcuMTMl44CB566h55CG6LS555SoIOKIkjUuMjEl77yb56CU5Y+R6LS555SoICs1LjMwJe+8iOaKleWQkeaVsOWtl+WHuueJiC/mlZnogrLmnI3liqHvvIk8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7njrDph5HmtYE8L3RkPg0KPHRkPue7j+iQpeeOsOmHkea1gSDiiJIxLjc0IOS6v++8iOaVmeadkOaVmei+heWto+iKguaAp+Wkh+i0pyvlnqvotYTvvJsyMDI1IOW5tCBRMSDmm77kuLog4oiSNi4zNCDkur/jgIHlhajlubTovazmraMgKzcuMzAg5Lq/77yJ77yM5Y2K5bm05Y+j5b6E5Y+C6ICD5oSP5LmJ5pyJ6ZmQPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5YiG57qiPC90ZD4NCjx0ZD4yMDI1IOW5tOW6puWIhue6oiAyLjAzIOS6v++8iOaUr+S7mOeOhyA0OS42NCXvvInvvJsyMDI2IOS4reacn+aLn+avjyAxMCDogqHmtL4gMSDlhYPvvIg2NzgxIOS4h++8jOWNoCBIMSDlvZLmr40gMzMuNiXvvInigJTigJQ8c3Ryb25nPueOsOS7t+WvueW6lOiCoeaBr+eOh+e6piAzLjklPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjxoMz7vvIgz77yJ5Lqn5Lia6ZO+5Lyg5a+84oCU4oCU5Y6f5paZ5oiQ5pys4oaS5q+b5Yip57uT5p6E5Zub5Zug5a2QPC9oMz4NCjx1bD4NCjxsaT48c3Ryb25nPuWboOWtkDEg5oiQ5pys5Lyg5a+85by55oCnPC9zdHJvbmc+77ya5Ye654mI5Li75Lia5oiQ5pys56uv5Li657q45byg77yI5Y+M6IO257q4L+mTnOeJiOe6uO+8jOWNoOWNsOWIt+aIkOacrOe6piA0MOKAkzUwJe+8ieOAgue6uOW8oOihjOS4muS6p+iDvei/h+WJqeOAgeS7t+agvOS9juS9je+8iDIwMjUg5bm05Lul5p2l5Y+M6IO257q45Lu35qC85oyB57ut6Zi06LeM77yJ77yM5YWs5Y+45L2c5Li655yB57qn5pWZ5p2Q57uf6LSt57uf6ZSA5pa5PHN0cm9uZz7ovazlq4Hns7vmlbDmjqXov5EgMTwvc3Ryb25nPu+8iOaVmeadkOWumuS7t+WPl+euoeWItuS9hue6uOW8oOmZjeS7t+e6ouWIqeebtOaOpeeVmeWtmO+8ieKAlOKAlOS9kOivge+8muaVmeadkOaVmei+heavm+WIqeeOhyArNi45MnBjdOOAgui0uOaYk+S4muWKoei9rOWrgeezu+aVsOe6piAwLjgg5L2G5q+b5Yip5Z+65beu5LuFIDLigJMzIOS4queCue+8jOWxnui1sOmHj+eUn+aEj+OAgjwvbGk+DQo8bGk+PHN0cm9uZz7lm6DlrZAyIOavm+WIqee7k+aehOWGjeW5s+ihoTwvc3Ryb25nPu+8muS4pOadoee6v+aVj+aEn+W6pui/peW8guKAlOKAlOWHuueJiOWPkeihjO+8iOe6uOW8oOaVj+aEn+OAgeavm+WIqeeOhyAzNeKAkzQxJeOAgeWIqea2puWNoOavlOe6piA4NSUr77yJ5LiO54mp6LWE6LS45piT77yI57q45rWGL+e6uOW8oOS7t+agvOaVj+aEn+OAgeavm+WIqeeOhyAy4oCTMyXjgIHliKnmtqbljaDmr5TmnoHkvY7vvInjgILlhazlj7jkuLvliqjljovnvKnotLjmmJPjgIHlgZrlpKflh7rniYjljaDmr5Qg4oaSIDxzdHJvbmc+57u85ZCI5q+b5Yip546H57uT5p6E5oCn5LiK56e7PC9zdHJvbmc+77yIMjAyNkgxIOW3siArMS41M3BjdCDoh7MgMTEuODAl77yJ77yM6L+Z5LiA6L+B56e75piv5pyq5p2l5Lik5bm05Yip5ram55qE5Li76KaB5p2l5rqQ77yM6ICM6Z2e5pS25YWl5aKe6ZW/44CCPC9saT4NCjxsaT48c3Ryb25nPuWboOWtkDMg5bqT5a2Y5LiO6YeH6LSt6IqC5aWPPC9zdHJvbmc+77ya5pWZ5p2Q5pWZ6L6F5Li656eL5a2j5a2m5pyf6amx5Yqo77yM5LiK5Y2K5bm05aSH6LSn77yI5a2Y6LSnICsyNi45JeOAgemihOS7mCArOTMuMSXvvInlr7zoh7QgSDEg546w6YeR5rWB5Li66LSf5bGe5a2j6IqC5oCn77yb57q45byg5L2O5Lu35pyf5aSH5paZ5a+55Li75Lia5q+b5Yip5p6E5oiQ6ZqQ5oCn5aKe55uK44CCPC9saT4NCjxsaT48c3Ryb25nPuWboOWtkDQg5pS/562WL+W4guWcuumUmueCuTwvc3Ryb25nPu+8muKRoOaVmeiCsuaVmei+heaUv+etlu+8iCLlj4zlh48i5ZCO6K++5ZCO5pyN5Yqh55Sx5a2m5qCh6YeH6LSt77yM5YWs5Y+45Y+M5bmz5Y+w57Sv6K6h5Lqk5piT6L+RIDE0IOS6v+aYr+ebtOaOpeWPl+ebiuW9ouaAge+8ie+8m+KRoeOAiuWFqOawkemYheivu+S/g+i/m+adoeS+i+OAi+iQveWcsOaLieWKqOS4gOiIrOWbvuS5pu+8m+KRoui0uOaYk+S4muWKoemmluasoeWIl+WFpSLlpKflrpfllYblk4HotLjmmJPpo47pmaki5riF5Y2V4oCU4oCU5pS257yp5pa55ZCR5piO56Gu44CC6aqM6K+B54K577ya5a2j5bqm5Ye654mI5Y+R6KGM5YiG6YOo5pS25YWl5LiO5q+b5Yip546H77yb6K+B5Lyq5L+h5Y+377ya5pWZ5p2Q5b6q546v5L2/55So5pS/562W5omp5aSn6K+V54K544CB5Ye655Sf5Lq65Y+j5Lyg5a+85LiL5pWZ6L6F5b6B6K6i5LiL5ruR44CCPC9saT4NCjwvdWw+DQo8aHIgLz4NCjxoMj7nrKzkuInmraXvvJrnoa7lrprmgKflop7ph4/ph4/ljJbvvIjoh6rkuIvogIzkuIrmuIXljZXvvIk8L2gyPg0KPHRhYmxlPg0KPHRoZWFkPg0KPHRyPg0KPHRoPumhueebrjwvdGg+DQo8dGg+5YaF5a65PC90aD4NCjx0aD7ph5Hpop0v5L2T6YePPC90aD4NCjx0aD7nirbmgIHkuI7oioLlpY88L3RoPg0KPHRoPuehruiupOeql+WPozwvdGg+DQo8L3RyPg0KPC90aGVhZD4NCjx0Ym9keT4NCjx0cj4NCjx0ZD7otLjmmJPkuJrliqHmlLbnvKk8L3RkPg0KPHRkPuS4u+WKqOWOi+e8qeS9juavm+WIqeaWh+WMluWVhuWTgei0uOaYkzwvdGQ+DQo8dGQ+MjAyNkgxIOi0uOaYk+aUtuWFpeWQjOavlOWHj+Wwkee6piA3IOS6vzwvdGQ+DQo8dGQ+6L+b6KGM5Lit77yM5YWo5bm06JCl5pS25Y+j5b6E57un57ut5LiL56e75L2G5Yip5ram546H5LiK56e7PC90ZD4NCjx0ZD7mjIHnu608L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7lh7rniYjkuLvkuJrnqLPmgIE8L3RkPg0KPHRkPuaVmeadkOaVmei+heWMuuWfn+WehOaWrSArIOe6uOW8oOS9juS7t+e6ouWIqTwvdGQ+DQo8dGQ+5Ye654mI5Y+R6KGMIDIwMjZIMSDnuqYgOS4yIOS6vzwvdGQ+DQo8dGQ+6YeP56iz77yI5Zyo5a2m5Lq65Y+j5bCa5aSE6auY5L2N77yJ44CB5q+b5Yip546HIDQwJSs8L3RkPg0KPHRkPuaMgee7rTwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPuivvuWQjuacjeWKoeWPjOW5s+WPsDwvdGQ+DQo8dGQ+5a6J5b6955yB5YaF6K++5ZCO5pyN5Yqh6L+Q6JClPC90ZD4NCjx0ZD7ntK/orqHkuqTmmJPov5EgMTQg5Lq/77yM5b2T5pyf5pyN5Yqh5pS25YWl5L2T6YeP6L6D5bCPPC90ZD4NCjx0ZD7mianlvKDkuK3vvIzot6jljLrln5/lpI3liLbmnKrpqozor4E8L3RkPg0KPHRkPjIwMjcg5bm06LW36KeC5a+fPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+QUkv5pWw5a2X5Ye654mIPC90ZD4NCjx0ZD5BSSDmmbrog73lrqHmoKHjgIHono3lqpLkvZPor7vnianjgIHmlbDlrZfmlZnmnZA8L3RkPg0KPHRkPuWwmuaXoOWkp+inhOaooeWVhuS4muWMluaUtuWFpTwvdGQ+DQo8dGQ+5bel5YW35bqU55So6Zi25q61PC90ZD4NCjx0ZD7kuK3mnJ/mnJ/mnYM8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7ph5Hono3otYTkuqc8L3RkPg0KPHRkPua1meWVhuivgeWIuOOAgei+sOWuieenkeaKgOOAgeWbveiBlOawkeeUnzwvdGQ+DQo8dGQ+6LSm6Z2iIDIuMjcg5Lq/PC90ZD4NCjx0ZD7lhazlhYHku7flgLzms6LliqjmibDliqjliKnmtqbooajvvIjmnKzmnJ8g4oiSMzYxMiDkuIfvvInvvJs8c3Ryb25nPumdnue7j+W4uOaAp+aNn+ebiumhu+WJlOmZpDwvc3Ryb25nPjwvdGQ+DQo8dGQ+5rOi5Yqo6aG5PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+6LWE5Lqn5aSE572uL+WHj+WAvOi9rOWbnjwvdGQ+DQo8dGQ+5Zu65a6a6LWE5Lqn5aSE572u5pS255uKIDI1MTIg5LiHICsg5L+h55So5YeP5YC86L2s5ZueIDE0MTMg5LiHPC90ZD4NCjx0ZD7kuIDmrKHmgKflm6DntKDvvIzlt7LliZTpmaTlpITnkIY8L3RkPg0KPHRkPjIwMjZIMSDmiaPpnZ4gKzM0LjY1JSDkuK3lkKvmraTkuKTpobnvvIw8c3Ryb25nPuS4jeiDveWFqOmineinhuS4uui2i+WKvzwvc3Ryb25nPjwvdGQ+DQo8dGQ+5LiA5qyh5oCnPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5YiG57qi5YaN5oqV6LWE5pS255uKPC90ZD4NCjx0ZD7ogqHliKnmlK/ku5jnjofnuqYgNTAlPC90ZD4NCjx0ZD7lubTluqbnjrDph5HliIbnuqLnuqYgMiDkur88L3RkPg0KPHRkPuaMgee7rTwvdGQ+DQo8dGQ+4oCUPC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjxwPjxzdHJvbmc+56ys5LiJ5q2l6L+b6Zi2wrfkuInlsYLms5U8L3N0cm9uZz7vvJo8L3A+DQo8dWw+DQo8bGk+PHN0cm9uZz7lsYIxIOeOsOacieS4muWKoe+8muWuuemHjyDDlyDku73pop08L3N0cm9uZz7vvJrlronlvr0gSzEyIOWcqOWtpuS6uuWPo+efreacn+eos+Wumu+8jOWFrOWPuOaVmeadkOaVmei+heWcqOecgeWGheS4ujxzdHJvbmc+5pS/562W5oCn5Z6E5pat5Lu96aKd77yI6L+R5LmOIDEwMCUg5pWZ5p2Q44CB5Li75a+85pWZ6L6F77yJPC9zdHJvbmc+77yM5Lu96aKd5Y+Y6YeP5LiN5Zyo55yB5YaF5Zyo55yB5YaF77yM6ICM5ZyoIuWNleeUn+S7t+WAvCLvvIjor77lkI7mnI3liqHjgIHnoJTlrabjgIHmlbDlrZflhoXlrrkgQVJQVSDmj5DljYfvvInjgILkuInmoaPvvJrkv53lrojigJTigJTmlZnmnZDmlZnovoXmlLblhaXpm7blop7plb/jgIHmr5vliKnnjofnu7TmjIEgNDAl77yb5Lit5oCn4oCU4oCU6K++5ZCO5pyN5Yqh55yB5YaF5riX6YCP546H5o+Q5Y2H6LSh54yu5bm05aKeIDAuNeKAkzEg5Lq/5pS25YWl77yI6aqM6K+B54K577ya5bmz5Y+w5a2j5bqm5Lqk5piT6aKd5YWs5ZGK77yJ77yb5LmQ6KeC4oCU4oCU6Leo55yB5aSN5Yi26JC95Zyw77yI6aqM6K+B54K577ya55yB5aSW5Lit5qCH5YWs5ZGK77yM5b2T5YmN5peg77yM5LiN6K6h5YWl5Lit5oCn77yJ44CCPC9saT4NCjxsaT48c3Ryb25nPuWxgjIg6L+B56e756m66Ze077yI5Lit5pyf5pyf5p2D77yJPC9zdHJvbmc+77ya6IO95Yqb6L+B56e75pa55ZCR5Li6IuWHuueJiOWGheWuueKGkuaVmeiCsuacjeWKoS/mlbDlrZfmlZnmnZAi44CCVEFNIOW8ueaAp+Wkp++8iOaVsOWtl+aVmeadkOWFqOWbveW4guWcuu+8ie+8jOS9huiupOivgemXqOanm++8iOaVmeadkOWuoeWumu+8ieOAgeWMuuWfn+WjgeWeku+8iOWkluecgeWdh+acieacrOWcsOWHuueJiOmbhuWbou+8ieWPjOmrmO+8jDxzdHJvbmc+5pyq6L+H6aqM6K+B54K577yM5LiN6K6h5YWl5Lit5oCn5oOF5pmvPC9zdHJvbmc+44CCPC9saT4NCjxsaT48c3Ryb25nPuWxgjMg6K+B5Lyq5L+h5Y+3PC9zdHJvbmc+77ya5pWZ5p2Q5pWZ6L6F5q+b5Yip546H6LeM56C0IDM1Je+8m+WHuueUn+S6uuWPo+S4i+a7keS8oOWvvOiHtOW+geiuoumHj+S4i+mZje+8m+ivvuWQjuacjeWKoei3qOecgeaXoOi/m+WxleS4lOecgeWGhea4l+mAj+ingemhtu+8m+mHkeiejei1hOS6p+aMgeS7k+aJqeWkp+WvvOiHtOWIqea2puazouWKqOWkseaOp+OAgjwvbGk+DQo8L3VsPg0KPGhyIC8+DQo8aDI+56ys5Zub5q2l77ya5Lyw5YC86ZSa5a6a77yI6Ieq5LiL6ICM5LiK77yM6Z2e5aKe6YCf5aSW5o6o77yJPC9oMj4NCjxibG9ja3F1b3RlPg0KPHA+PHN0cm9uZz7mlrnms5Xor7TmmI48L3N0cm9uZz7vvJrkuI3kvb/nlKjlop7pgJ/lpJbmjqjjgILmjIki5Ye654mI5Li75Lia56iz5oCBICsg6LS45piT5pS257yp5ZCO55qE5pS25YWl57uT5p6EICsg6Z2e57uP5bi45oCn5o2f55uK5YmU6ZmkIua1i+eul+OAgjwvcD4NCjwvYmxvY2txdW90ZT4NCjxwPjxzdHJvbmc+5oC76IKh5pys77ya57qmIDYuNzgg5Lq/6IKhPC9zdHJvbmc+PC9wPg0KPGgzPuWIhuS4muWKoea1i+eul++8iDIwMjlF77yJPC9oMz4NCjx0YWJsZT4NCjx0aGVhZD4NCjx0cj4NCjx0aD7kuJrliqHnur88L3RoPg0KPHRoPua1i+eul+S+neaNrjwvdGg+DQo8dGg+MjAyOUUg5pS25YWlPC90aD4NCjx0aD7lh4DliKnnjoc8L3RoPg0KPHRoPjIwMjlFIOWHgOWIqTwvdGg+DQo8L3RyPg0KPC90aGVhZD4NCjx0Ym9keT4NCjx0cj4NCjx0ZD7lh7rniYjlj5HooYzvvIjmlZnmnZDmlZnovoUr5LiA6Iis5Zu+5Lmm77yJPC90ZD4NCjx0ZD7mlZnmnZDlnKjlrabkurrlj6PnqLPlrprjgIHkuIDoiKzlm77kuablj5fjgIrlhajmsJHpmIXor7vmnaHkvovjgIvmiZjlupXvvJvmr5vliKnnjofnu7TmjIEgMzjigJM0MSU8L3RkPg0KPHRkPjE44oCTMjAg5Lq/PC90ZD4NCjx0ZD4xOOKAkzIwJe+8iOavm+WIqSA0MCUg5omj6Zmk6LS555So5ZCO77yM5Y+C54Wn55yB57qn5Ye654mI6ZuG5Zui5rC05bmz77yJPC90ZD4NCjx0ZD48c3Ryb25nPjMuNOKAkzMuOSDkur88L3N0cm9uZz48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7ljbDliLflpI3liLY8L3RkPg0KPHRkPumFjeWll+eos+aAgTwvdGQ+DQo8dGQ+NCDkur88L3RkPg0KPHRkPjTigJM1JTwvdGQ+DQo8dGQ+PHN0cm9uZz4wLjE14oCTMC4yIOS6vzwvc3Ryb25nPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPueJqei1hOi0uOaYkzwvdGQ+DQo8dGQ+57un57ut5pS257yp6IezIDI1IOS6v+W3puWPs+i1sOmHj+e7tOaMgTwvdGQ+DQo8dGQ+MjUg5Lq/PC90ZD4NCjx0ZD4wLjUlPC90ZD4NCjx0ZD48c3Ryb25nPjAuMSDkur88L3N0cm9uZz48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7or77lkI7mnI3liqEv56CU5a2mPC90ZD4NCjx0ZD7nnIHlhoXmuJfpgI/mj5DljYc8L3RkPg0KPHRkPjIg5Lq/PC90ZD4NCjx0ZD44JTwvdGQ+DQo8dGQ+PHN0cm9uZz4wLjE1IOS6vzwvc3Ryb25nPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPjxzdHJvbmc+5Lit5oCn5ZCI6K6hPC9zdHJvbmc+PC90ZD4NCjx0ZD48L3RkPg0KPHRkPue6piA1MCDkur88L3RkPg0KPHRkPuKAlDwvdGQ+DQo8dGQ+PHN0cm9uZz7nuqYgNC4zIOS6vzwvc3Ryb25nPjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8aDM+5Z+65YeG77yIMjAyNkXvvIk8L2gzPg0KPHVsPg0KPGxpPkgxIOW9kuavjSAyLjAyIOS6v++8iOWQq+WkhOe9ruaUtuebii/lh4/lgLzovazlm57nrYnkuIDmrKHmgKfnuqYgMC4zNSDkur/vvInvvJtIMiDkuLrmlZnmnZDmlZnovoXnoa7orqTml7rlraPvvIgyMDI1IOWFqOW5tOW9kuavjSA0LjEwIOS6v++8jEgxL0gyIOWto+iKguWIhuW4g+e6piAyLjEvMi4wIOS6v++8iTwvbGk+DQo8bGk+PHN0cm9uZz4yMDI2RSDlvZLmr43nuqYgMy454oCTNC4xIOS6v++8jOWPliA0LjAg5Lq/PC9zdHJvbmc+77yI5YW25Lit57uP5bi45oCn57qmIDMuNyDkur/vvIk8L2xpPg0KPGxpPuagoemqjO+8muWHuueJiOS4u+S4miBIMSDmiaPpnZ4gMi4wMSDkur/nmoTlraPoioLnu5PmnoQgKyBIMiDml7rlraPlhZHnjrDvvIzkuI7kuqfog70v5Lia5Yqh5b2i5oCB5a6M5YWo5Yy56YWNPC9saT4NCjwvdWw+DQo8aDM+5LiJ5oOF5pmv77yIMjAyOUXvvIk8L2gzPg0KPHRhYmxlPg0KPHRoZWFkPg0KPHRyPg0KPHRoPuaDheaZrzwvdGg+DQo8dGg+6Kem5Y+R5p2h5Lu2PC90aD4NCjx0aD4yMDI5RSDlh4DliKk8L3RoPg0KPHRoPuWQiOeQhlBFPC90aD4NCjx0aD7nm67moIfluILlgLw8L3RoPg0KPHRoPuebruagh+iCoeS7tzwvdGg+DQo8dGg+6L6D546w5Lu356m66Ze0PC90aD4NCjwvdHI+DQo8L3RoZWFkPg0KPHRib2R5Pg0KPHRyPg0KPHRkPjxzdHJvbmc+5oKy6KeCPC9zdHJvbmc+PC90ZD4NCjx0ZD7lh7rnlJ/kurrlj6PkvKDlr7zmj5DliY0gKyDmlZnovoXmr5vliKnnjofot4znoLQgMzUlICsg6LS45piT5YeP5YC8PC90ZD4NCjx0ZD4zLjMg5Lq/PC90ZD4NCjx0ZD4xMHg8L3RkPg0KPHRkPjMzIOS6vzwvdGQ+DQo8dGQ+PHN0cm9uZz40Ljkg5YWDPC9zdHJvbmc+PC90ZD4NCjx0ZD48c3Ryb25nPuKIkjM2LjclPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PHN0cm9uZz7kuK3mgKc8L3N0cm9uZz48L3RkPg0KPHRkPuWHuueJiOS4u+S4mumHj+eos+S7t+WNh+OAgei0uOaYk+aUtue8qeWIsOS9jeOAgeivvuWQjuacjeWKoeecgeWGheWFkeeOsDwvdGQ+DQo8dGQ+NC4zIOS6vzwvdGQ+DQo8dGQ+MTJ4PC90ZD4NCjx0ZD41MiDkur88L3RkPg0KPHRkPjxzdHJvbmc+Ny42IOWFgzwvc3Ryb25nPjwvdGQ+DQo8dGQ+PHN0cm9uZz7iiJIxLjglPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PHN0cm9uZz7kuZDop4I8L3N0cm9uZz48L3RkPg0KPHRkPuivvuWQjuacjeWKoei3qOecgeeqgeegtCArIOaVsOWtl+aVmeadkOaUv+etlue6ouWIqSArIOegtOWHgOS/ruWkjeiHsyAxLjB4IFBCPC90ZD4NCjx0ZD40Ljgg5Lq/PC90ZD4NCjx0ZD4xNHg8L3RkPg0KPHRkPjY3IOS6vzwvdGQ+DQo8dGQ+PHN0cm9uZz45Ljkg5YWDPC9zdHJvbmc+PC90ZD4NCjx0ZD48c3Ryb25nPisyNy45JTwvc3Ryb25nPjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8dGFibGU+DQo8dGhlYWQ+DQo8dHI+DQo8dGg+6aG555uuPC90aD4NCjx0aD7ln7rlh4bvvIgyMDI2Re+8iTwvdGg+DQo8dGg+6L+c5pyf77yIMjAyOUXCt+S4reaAp++8iTwvdGg+DQo8L3RyPg0KPC90aGVhZD4NCjx0Ym9keT4NCjx0cj4NCjx0ZD7lh4DliKnmtqY8L3RkPg0KPHRkPjQuMCDkur88L3RkPg0KPHRkPjQuMyDkur88L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7lkIjnkIZQRTwvdGQ+DQo8dGQ+MTN4PC90ZD4NCjx0ZD4xMng8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7lkIjnkIbluILlgLw8L3RkPg0KPHRkPjUyIOS6vzwvdGQ+DQo8dGQ+NTIg5Lq/PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PHN0cm9uZz7lr7nlupTogqHku7c8L3N0cm9uZz48L3RkPg0KPHRkPjxzdHJvbmc+Ny43IOWFgzwvc3Ryb25nPjwvdGQ+DQo8dGQ+PHN0cm9uZz43LjYg5YWDPC9zdHJvbmc+PC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjxoMz7nrKzlm5vmraXov5vpmLbCt+S4iemBk+agoeatozwvaDM+DQo8dWw+DQo8bGk+PHN0cm9uZz7moKHmraMxIOi1hOS6p+i0qOmHj+aKmOaJo++8iOegtOWHgOW/hemhu+ivtOaYjuWOn+WboO+8iTwvc3Ryb25nPu+8mlBCIDAuODh4IOegtOWHgOeahOaIkOWboOS4ujxzdHJvbmc+6LWE5Lqn55uI5Yip6IO95Yqb5bmz5bq46ICM6Z2e6LWE5Lqn6Jma6auYPC9zdHJvbmc+4oCU4oCU5b2S5q+N5YeA6LWE5LqnIDYwLjQg5Lq/5a+55bqUIFJPRSDku4UgM+KAkzcl77yM5Ye654mI5Li75Lia5aKe6ZW/5pyJ6ZmQ44CB6LS45piT5ouW57Sv5oql6KGo77yM5biC5Zy65oyJIuS9jiBST0Ug5Zu95LyBIuWumuS7t++8jOegtOWHgOaYrzxzdHJvbmc+5YWs5YWB5a6a5Lu36ICM6Z2e5L2O5LywPC9zdHJvbmc+44CC6ZyA5rOo5oSP5Lik54K557uT5p6E5oCn57yT5Yay77ya4pGg6LSm6Z2i5oyB5pyJ5LiK5biC5YWs5Y+46IKh5p2DIDIuMjcg5Lq/ICsg5aSn6aKd6LSn5biB6LWE6YeR77yI6LSi5Yqh6LS555So5Li6IOKIkjIxNzEg5LiH77yM5Yip5oGv5pS25YWl5aSn5LqO5pSv5Ye677yJ77yM6LWE5Lqn5ZCr6YeR6YeP6auY5LqO5LiA6Iis5Zu95LyB77yb4pGh57qmIDMuOSUg6IKh5oGv546HICsgNTAlIOaUr+S7mOeOh+aPkOS+m+eOsOmHkeWbnuaKpeW6leOAgjxzdHJvbmc+57uT6K6677ya5L+d55WZ56C05YeA5LqL5a6e77yM5LiN5Y2V5YetIFBCJmx0OzEg5o6o5a+85aSn56m66Ze044CCPC9zdHJvbmc+PC9saT4NCjxsaT48c3Ryb25nPuagoeatozIg5ZGo5pyf5L2N572uPC9zdHJvbmc+77ya5Ye654mI5peg5by65ZGo5pyf77yM5L2G5pWZ5p2Q5pWZ6L6F5a2Y5ZyoIuWcqOWtpuS6uuWPo+mVv+WRqOacn+S4i+ihjCLnmoTkvY3nva7igJTigJTlvZPliY3ku43lpITpq5jkvY3lubPlj7DmnJ/vvIwyMDI4IOW5tOWQjuWOi+WKm+aYvuaAp+WMlu+8jOaVheS4reaApyBQRSDnu5kgMTJ477yI5L2O5LqO5Y6G5Y+y5Lit5p6i77yJ6ICM6Z2eIDE1eOOAgjwvbGk+DQo8bGk+PHN0cm9uZz7moKHmraMzIOadoOadhuS4i+ihjOaDheaZrzwvc3Ryb25nPu+8mui1hOS6p+i0n+WAuueOhyAzMC43JeOAgei0ouWKoei0ueeUqOS4uui0n++8jOadoOadhumjjumZqeaegeS9ju+8jOatpOagoeato+S4jeinpuWPkeOAgjwvbGk+DQo8bGk+PHN0cm9uZz7mnJ/mnYPnuqrlvos8L3N0cm9uZz7vvJpBSSDmlbDlrZflh7rniYjjgIHot6jnnIHor77lkI7mnI3liqHjgIHph5Hono3otYTkuqfph43kvLDlnYfmnKrov4fpqozor4HngrnvvIzkuI3orqHlhaXkuK3mgKflh4DliKnvvIzku4XlhaXkuZDop4LmoI/jgII8L2xpPg0KPC91bD4NCjxwPjxzdHJvbmc+4pqg77iPIOS6pOWPieagoemqjDwvc3Ryb25nPu+8mueOsOS7tyA3Ljc0IOWFg+WvueW6lCAyMDI2RSBQRSDnuqYgMTN444CB5omj6Z2e5Y+j5b6E57qmIDE0eO+8jOS4juS4reaAp+ebruagh+S7tyA3LjYg5YWD5Z+65pys6YeN5ZCI4oCU4oCUPHN0cm9uZz7lvZPliY3lrprku7flt7LlhYXliIblj43mmKDnqLPmgIHnm4jliKk8L3N0cm9uZz7jgILnoLTlh4AgKyAzLjklIOiCoeaBr+aYr+WuieWFqOWeq++8jOS9huaXoOWinumVv+W8leaTjuaXtuWuieWFqOWeq+S4jeetieS6juS4iuihjOepuumXtOOAgjwvcD4NCjxociAvPg0KPGgyPuesrOS6lOatpe+8mue7vOWQiOi1lOeOh+WIpOaWre+8iOS5sOS4jeS5sO+8n++8iTwvaDI+DQo8cD48c3Ryb25nPuW9k+WJjeS7t+agvOS9jee9rjwvc3Ryb25nPu+8mjxzdHJvbmc+5ZCI55CGPC9zdHJvbmc+44CCNy43NCDlhYPkuI7kuK3mgKfov5zmnJ8gNy42IOWFg+WHoOS5juaMgeW5s++8jOW4guWcuuWvuSLnqLPmgIHlh7rniYgr6LS45piT5pS257ypIueahOWumuS7t+aYr+WHhuehrueahO+8mzkg5pyIIDkg5pelIOKIkjYuMTglIOeahOS4i+i3jOabtOWkmuaYr+S4reaKpeiQpeaUtiDiiJIyMS41JSDnmoTmg4Xnu6rmgKflj43lupTvvIzlubbmnKrot4znoLTlkIjnkIbljLrpl7TjgII8L3A+DQo8cD48c3Ryb25nPuWuieWFqOi+uemZhTwvc3Ryb25nPu+8mjxiciAvPg0KLSDkuK3mgKfov5zmnJ8gNy42IOWFgyDihpIg56m66Ze0IDxzdHJvbmc+4oiSMS44JTwvc3Ryb25nPu+8iOi/kembtu+8ie+8m+S5kOingiA5Ljkg5YWDIOKGkiA8c3Ryb25nPisyNy45JTwvc3Ryb25nPu+8m+aCsuingiA0Ljkg5YWDIOKGkiA8c3Ryb25nPuKIkjM2LjclPC9zdHJvbmc+PGJyIC8+DQotIOWuieWFqOWeq+S4u+imgeadpeiHqui1hOS6p+err++8mjAuODh4IFBC44CBMy45JSDogqHmga/njofjgIHotKbpnaLph5Hono3otYTkuqfigJTigJTkuIvooYzmnInnvJPlhrLvvIzkuIrooYznvLrlgqzljJbvvIw8c3Ryb25nPui1lOeOh+W5s+W6uDwvc3Ryb25nPjxiciAvPg0KLSDkuIrooYzmg7PosaHlipvmg4Xmma/vvIjnrKzkupTmraXov5vpmLbvvInvvJo8c3Ryb25nPuexu+Wei0Ig5pS/562W5pyf5p2DPC9zdHJvbmc+4oCU4oCU44CK5YWo5rCR6ZiF6K+75L+D6L+b5p2h5L6L44CL5pa96KGMICsg5pWZ6IKy6YOoIEFJIOaVmeiCsuihjOWKqOiuoeWIkuiLpeWCrOeUnyLlm73mnInlh7rniYjpm4blm6LmlbDlrZfmlZnmnZDnu5/nvJbph4fotK0i57G75pS/562W77yM5YWs5Y+45L2c5Li655yB57qn5bmz5Y+w55u05o6l5Y+X55uK77yM6YeN5Lyw5by55oCnID0gUEUg5LuOIDEyeCDkv67lpI3oh7MgMTV477yIKzI1Je+8ie+8mzxzdHJvbmc+57G75Z6LQyDplJnmnYDkv67lpI08L3N0cm9uZz7igJTigJToi6XluILlnLrpo47moLzlm57lvZLkvY7kvLDlgLzpq5jogqHmga/lm73kvIHvvIwwLjg4eCBQQiDlkJEgMS4weCDkv67lpI3nuqYgKzE0JeOAgumqjOivgeeCue+8muaVsOWtl+aVmeadkOecgee6p+mHh+i0reaWh+S7tuOAgeWFrOWPuOivvuWQjuacjeWKoeecgeWkluS4reagh+WFrOWRiuOAguivgeS8qu+8muaVmei+heW+geiuoumHj+S4i+a7keOAgeaUv+etluaXoOWunui0qOmHh+i0reiQveWcsOOAgjwvcD4NCjxwPjxzdHJvbmc+5LuL5YWl5p2h5Lu2PC9zdHJvbmc+77yaPGJyIC8+DQoxLiA8c3Ryb25nPjYuOCDlhYPku6XkuIs8L3N0cm9uZz7vvIjlr7nlupQgMjAyNkUgUEUgMTEuNXjjgIHogqHmga/njocgJmd0OzQuNCXvvInlho3ogIPomZHlu7rku5M8YnIgLz4NCjIuIOWKoOS7k+S/oeWPt++8muivvuWQjuacjeWKoeecgeWkluS4reagh+WFrOWRiu+8m+aVsOWtl+aVmeadkC9BSSDlh7rniYjlvaLmiJDop4TmqKHljJbmlLblhaXvvJtQQiDlm57ljYfkvLTpmo8gUk9FIOermeS4iiA3JTxiciAvPg0KMy4g5YeP5LuTL+WbnumBv+S/oeWPt++8muaVmeadkOaVmei+heavm+WIqeeOh+i3jOegtCAzNSXvvJvph5Hono3otYTkuqfmjIHku5Pnu6fnu63mlL7lpKfmibDliqjliKnmtqY8L3A+DQo8cD48c3Ryb25nPuacgOWkp+mjjumZqe+8iOacgOWPr+iDveegtOWdj+mAu+i+keeahOWboOe0oO+8iTwvc3Ryb25nPu+8muKRoOWHuueUn+S6uuWPo+S4i+ihjCAyMDI4IOW5tOWQjuS8oOWvvOiHs+aVmeadkOaVmei+heW+geiuou+8jOWfuuacrOebmOiQjue8qeS4lOaXoOWvueWGsuS4muWKoe+8m+KRoei0uOaYk+S4muWKoSLmlLbnvKnkuI3liLDkvY0i4oCU4oCU6aKE5LuY5qy+ICs5MyXjgIHlrZjotKcgKzI3JSDmmL7npLrotLjmmJPotYTkuqfljaDnlKjku43lnKjkuIrljYfvvIzoi6Xlh7rnjrDlpKflrpfotLjmmJPlh4/lgLzlsIbnm7TmjqXkvrXomoDliKnmtqbvvJvikaLliKnmtqbpq5jluqbkvp3otZbkuIDmrKHmgKfpobnnm67vvIjlpITnva7mlLbnm4rjgIHlh4/lgLzovazlm57vvInvvIzmiaPpnZ7otKjph4/pnIDpgJDlraPpqozor4HjgII8L3A+DQo8cD48c3Ryb25nPue7k+iuuu+8muaaguS4jeS7i+WFpTwvc3Ryb25nPjwvcD4NCjxibG9ja3F1b3RlPg0KPHA+6LSo5Zyw56iz5YGl77yI55yB5bGe5Zu95LyB44CB5L2O5p2g5p2G44CB56C05YeA44CBMy45JSDogqHmga/jgIHkuLvkuJrmr5vliKnnjofkuIrooYzvvInvvIzkvYbkuK3mgKfov5zmnJ/nqbrpl7Qg4oiSMS44Je+8jOaXouaXoOWinumVv+W8leaTjuS5n+aXoOS9juS8sOe8uuWPo++8jOWxnuS6jiLmi7/nnYDkuI3kuo/kvYbkuZ/otZrkuI3liLDotoXpop0i55qE57G75Z6L44CC562J5b6FIDYuOCDlhYPku6XkuIvnmoTogqHmga/njofkubDngrnmiJbmlL/nrZblgqzljJblho3ljYfnuqfnu5PorrrjgII8L3A+DQo8L2Jsb2NrcXVvdGU+DQo8aHIgLz4NCjxoMz7mnKzogqHkvLDlgLzplJrlrprpgJ/mn6Xooag8L2gzPg0KPHRhYmxlPg0KPHRoZWFkPg0KPHRyPg0KPHRoPumhueebrjwvdGg+DQo8dGg+5pWw5YC8PC90aD4NCjwvdHI+DQo8L3RoZWFkPg0KPHRib2R5Pg0KPHRyPg0KPHRkPuW9k+WJjeiCoeS7tzwvdGQ+DQo8dGQ+Ny43NCDlhYM8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7ln7rlh4bnm67moIfku7fvvIgyMDI25bm05bqV77yJPC90ZD4NCjx0ZD48c3Ryb25nPjcuNyDlhYM8L3N0cm9uZz7vvIjljLrpl7QgNy4z4oCTOC4y77yJPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5Z+65YeG56m66Ze0PC90ZD4NCjx0ZD48c3Ryb25nPuKIkjAuNSU8L3N0cm9uZz48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7ov5zmnJ/nm67moIfku7fvvIgyMDI5RcK35Lit5oCn77yJPC90ZD4NCjx0ZD48c3Ryb25nPjcuNiDlhYM8L3N0cm9uZz48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD7ov5zmnJ/nqbrpl7TvvIjkuK3mgKfvvIk8L3RkPg0KPHRkPjxzdHJvbmc+4oiSMS44JTwvc3Ryb25nPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPuWMuumXtDwvdGQ+DQo8dGQ+5oKy6KeCIDQuOSDlhYPvvIjiiJIzNi43Je+8ie+9niDkuZDop4IgOS45IOWFg++8iCsyNy45Je+8iTwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPuaguOW/g+mAu+i+kTwvdGQ+DQo8dGQ+5a6J5b695pWZ5p2Q5pWZ6L6F5Z+65pys55uY5q+b5Yip546H5LiK6KGMK+i0uOaYk+aUtue8qeaPkOe6r+ebiOWIqSvnoLTlh4AgMC44OHgv6IKh5oGvIDMuOSUg5o+Q5L6b5bqV6YOo77yM5L2G5peg5aKe6ZW/5byV5pOO77yM546w5Lu35bey5YWF5YiG5Y+N5pig56iz5oCB55uI5YipPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+5bu66K6uPC90ZD4NCjx0ZD48c3Ryb25nPuaaguS4jeS7i+WFpTwvc3Ryb25nPu+8iDYuOCDlhYPku6XkuIvmiJbmlL/nrZblrp7otKjlgqzljJblho3or4TkvLDvvIk8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPGhyIC8+DQo8cD48ZW0+5pWw5o2u5p2l5rqQ77ya5YWs5Y+4IDIwMjYg5bm05Y2K5bm05bqm5oql5ZGK77yIMjAyNi0wOC0yOCDmiqvpnLLvvInjgIHor4HliLjkuYvmmJ/kuK3miqXnrqHnkIblsYLorqjorrrop6PmnpDjgIHkuInkuKrnmq7ljKDmiqXlkYrkuK3miqXop6Por7vjgIHjgIrlhajmsJHpmIXor7vkv4Pov5vmnaHkvovjgIvvvIjlm73liqHpmaLku6TnrKwgODIzIOWPt++8jDIwMjYtMDItMDEg5pa96KGM77yJ44CB5Zu95a625paw6Ze75Ye654mI572y44CKMjAyNiDlubTluqblh7rniYjono3lkIjlj5HlsZXlt6XnqIvjgIvvvIjlm73mlrDlh7rlj5HjgJQyMDI144CVMTkg5Y+377yJ44CB5pWZ6IKy6YOo562J5LqU6YOo6Zeo44CKIuS6uuW3peaZuuiDvSvmlZnogrIi6KGM5Yqo6K6h5YiS44CL77yIMjAyNi0wNO+8ieOAgeaQnOeLkOi0oue7j+WFrOWPuOeCueivhOOAgeiFvuiur+ihjOaDhSAyMDI2LTA5LTA5IOaUtuebmOaVsOaNruOAgjwvZW0+PGJyIC8+DQo8ZW0+5Lyw5YC85rWL566X5Li65Z+65LqO5YWs5byA5L+h5oGv55qE54us56uL5Yik5pat77yM5LiN5p6E5oiQ5oqV6LWE5bu66K6u44CCPC9lbT48L3A+DQo8L2Rpdj4NCjwvZGl2PjwvYm9keT48L2h0bWw+
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>时代出版（600551）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>时代出版（600551）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-09 ｜ 现价 <strong>7.74 元</strong>（2026-09-09 收盘，腾讯行情，当日 −6.18%） ｜ 总市值 <strong>52.48 亿</strong> ｜ PE(TTM) <strong>13.0x</strong> ｜ PB <strong>0.88x（破净）</strong> ｜ 总股本 <strong>约 6.78 亿股</strong><br />
+行业：传媒娱乐（出版发行）｜ 板块：沪市主板 ｜ 实控人：安徽省人民政府（省属国有文化传媒平台）</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：安徽省属国有出版传媒龙头，以教材教辅出版发行为基本盘，叠加印刷复制、文化物资贸易、课后服务与研学文旅的"出版+教育+文旅"融合平台。</p>
+<p><strong>各业务板块营收占比（2026H1，合并营收 29.18 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物资销售分部</td>
+<td>20.64 亿</td>
+<td>70.74%</td>
+<td>印刷物资/文化商品贸易，<strong>低毛利、主动收缩中</strong></td>
+</tr>
+<tr>
+<td>出版发行分部</td>
+<td>9.21 亿</td>
+<td>31.56%</td>
+<td>教材教辅+一般图书，<strong>利润基本盘</strong>（2025 年教材教辅毛利率 40.89%、新闻出版 35.81%）</td>
+</tr>
+<tr>
+<td>印刷复制分部</td>
+<td>1.94 亿</td>
+<td>6.64%</td>
+<td>印刷包装配套</td>
+</tr>
+<tr>
+<td>其他业务</td>
+<td>0.50 亿</td>
+<td>1.71%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>分部间抵销</td>
+<td>−3.11 亿</td>
+<td>−10.65%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注意结构：<strong>贸易占收入七成但只贡献零头利润；出版发行占收入三成才是利润主体</strong>——这是理解"营收 −21.5%、扣非 +34.7%"背离的钥匙。</p>
+</blockquote>
+<p><strong>核心产品/服务</strong>：安徽省基础教育教材教辅（区域垄断性稳固）、一般图书出版（2026H1 获中国出版政府奖 8 项，创历史最佳）、课后服务双平台（累计交易近 14 亿）、研学文旅、数字出版（AI 智能审校、融媒体读物）。</p>
+<p><strong>主要客户/下游</strong>：安徽省教育厅系统与中小学校（教材教辅、课后服务）、新华书店渠道、印刷客户、贸易下游。</p>
+<p><strong>境内外收入占比</strong>：以国内为主，文化贸易与版权出海占比小。</p>
+<p><strong>金融资产</strong>：持有浙商证券、辰安科技、国联民生三只股票（2026H1 末账面 2.27 亿），公允价值波动对利润表扰动显著（本期 −3612 万）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>政策友好，国家级立法+专项工程</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《全民阅读促进条例》（国务院令第 823 号）</td>
+<td>国务院</td>
+<td><strong>国家级行政法规</strong>（全民阅读领域首部）</td>
+<td><strong>2026-02-01 起施行</strong>；设立全民阅读活动周、支持优质出版供给、支持数字阅读与传统阅读结合</td>
+</tr>
+<tr>
+<td>2026 年度出版融合发展工程（国新出发〔2025〕19 号）</td>
+<td>国家新闻出版署</td>
+<td>部委级专项</td>
+<td>2025-12-18 印发；重点支持应用生成式 AI 的出版融合项目、纸数融合读物、数智型出版产品</td>
+</tr>
+<tr>
+<td>《"人工智能+教育"行动计划》</td>
+<td>教育部等五部门</td>
+<td>部委级</td>
+<td>2026-04 印发；AI 课程进中小学、数字教材与智慧教材建设——与公司教材教辅+课后服务主业直接相关</td>
+</tr>
+<tr>
+<td>上海出版高质量发展实施意见（区域样本）</td>
+<td>上海市委宣传部</td>
+<td>地方级</td>
+<td>2026-05；推动"出版+文旅+教育"生态融合、教材出版数字化转型，全国示范意义</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业基本面</td>
+<td>纸质图书市场需求下行（公司中报自列风险），出版业进入"总量平淡、结构分化"阶段</td>
+</tr>
+<tr>
+<td>人口学变量</td>
+<td>出生人口下行向 K12 传导是教材教辅的<strong>长期结构性压力</strong>（2026 年在学人口仍处高位，压力 2028 年后显性化）</td>
+</tr>
+<tr>
+<td>公司量价（2026H1）</td>
+<td>营收 29.18 亿（−21.52%，贸易收缩所致）；归母 2.02 亿（−3.37%）；<strong>扣非 2.01 亿（+34.65%）</strong>；综合毛利率 11.80%（+1.53pct）</td>
+</tr>
+<tr>
+<td>主业毛利</td>
+<td>2025 年教材教辅毛利率 40.89%（+6.92pct）、新闻出版 35.81%（+4.84pct）——<strong>主业量稳价升</strong></td>
+</tr>
+<tr>
+<td>费用管控</td>
+<td>2026H1 销售费用 −7.13%、管理费用 −5.21%；研发费用 +5.30%（投向数字出版/教育服务）</td>
+</tr>
+<tr>
+<td>现金流</td>
+<td>经营现金流 −1.74 亿（教材教辅季节性备货+垫资；2025 年 Q1 曾为 −6.34 亿、全年转正 +7.30 亿），半年口径参考意义有限</td>
+</tr>
+<tr>
+<td>分红</td>
+<td>2025 年度分红 2.03 亿（支付率 49.64%）；2026 中期拟每 10 股派 1 元（6781 万，占 H1 归母 33.6%）——<strong>现价对应股息率约 3.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导——原料成本→毛利结构四因子</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：出版主业成本端为纸张（双胶纸/铜版纸，占印刷成本约 40–50%）。纸张行业产能过剩、价格低位（2025 年以来双胶纸价格持续阴跌），公司作为省级教材统购统销方<strong>转嫁系数接近 1</strong>（教材定价受管制但纸张降价红利直接留存）——佐证：教材教辅毛利率 +6.92pct。贸易业务转嫁系数约 0.8 但毛利基差仅 2–3 个点，属走量生意。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：两条线敏感度迥异——出版发行（纸张敏感、毛利率 35–41%、利润占比约 85%+）与物资贸易（纸浆/纸张价格敏感、毛利率 2–3%、利润占比极低）。公司主动压缩贸易、做大出版占比 → <strong>综合毛利率结构性上移</strong>（2026H1 已 +1.53pct 至 11.80%），这一迁移是未来两年利润的主要来源，而非收入增长。</li>
+<li><strong>因子3 库存与采购节奏</strong>：教材教辅为秋季学期驱动，上半年备货（存货 +26.9%、预付 +93.1%）导致 H1 现金流为负属季节性；纸张低价期备料对主业毛利构成隐性增益。</li>
+<li><strong>因子4 政策/市场锚点</strong>：①教育教辅政策（"双减"后课后服务由学校采购，公司双平台累计交易近 14 亿是直接受益形态）；②《全民阅读促进条例》落地拉动一般图书；③贸易业务首次列入"大宗商品贸易风险"清单——收缩方向明确。验证点：季度出版发行分部收入与毛利率；证伪信号：教材循环使用政策扩大试点、出生人口传导下教辅征订下滑。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>贸易业务收缩</td>
+<td>主动压缩低毛利文化商品贸易</td>
+<td>2026H1 贸易收入同比减少约 7 亿</td>
+<td>进行中，全年营收口径继续下移但利润率上移</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>出版主业稳态</td>
+<td>教材教辅区域垄断 + 纸张低价红利</td>
+<td>出版发行 2026H1 约 9.2 亿</td>
+<td>量稳（在学人口尚处高位）、毛利率 40%+</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>课后服务双平台</td>
+<td>安徽省内课后服务运营</td>
+<td>累计交易近 14 亿，当期服务收入体量较小</td>
+<td>扩张中，跨区域复制未验证</td>
+<td>2027 年起观察</td>
+</tr>
+<tr>
+<td>AI/数字出版</td>
+<td>AI 智能审校、融媒体读物、数字教材</td>
+<td>尚无大规模商业化收入</td>
+<td>工具应用阶段</td>
+<td>中期期权</td>
+</tr>
+<tr>
+<td>金融资产</td>
+<td>浙商证券、辰安科技、国联民生</td>
+<td>账面 2.27 亿</td>
+<td>公允价值波动扰动利润表（本期 −3612 万）；<strong>非经常性损益须剔除</strong></td>
+<td>波动项</td>
+</tr>
+<tr>
+<td>资产处置/减值转回</td>
+<td>固定资产处置收益 2512 万 + 信用减值转回 1413 万</td>
+<td>一次性因素，已剔除处理</td>
+<td>2026H1 扣非 +34.65% 中含此两项，<strong>不能全额视为趋势</strong></td>
+<td>一次性</td>
+</tr>
+<tr>
+<td>分红再投资收益</td>
+<td>股利支付率约 50%</td>
+<td>年度现金分红约 2 亿</td>
+<td>持续</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第三步进阶·三层法</strong>：</p>
+<ul>
+<li><strong>层1 现有业务：容量 × 份额</strong>：安徽 K12 在学人口短期稳定，公司教材教辅在省内为<strong>政策性垄断份额（近乎 100% 教材、主导教辅）</strong>，份额变量不在省内在省内，而在"单生价值"（课后服务、研学、数字内容 ARPU 提升）。三档：保守——教材教辅收入零增长、毛利率维持 40%；中性——课后服务省内渗透率提升贡献年增 0.5–1 亿收入（验证点：平台季度交易额公告）；乐观——跨省复制落地（验证点：省外中标公告，当前无，不计入中性）。</li>
+<li><strong>层2 迁移空间（中期期权）</strong>：能力迁移方向为"出版内容→教育服务/数字教材"。TAM 弹性大（数字教材全国市场），但认证门槛（教材审定）、区域壁垒（外省均有本地出版集团）双高，<strong>未过验证点，不计入中性情景</strong>。</li>
+<li><strong>层3 证伪信号</strong>：教材教辅毛利率跌破 35%；出生人口下滑传导致征订量下降；课后服务跨省无进展且省内渗透见顶；金融资产持仓扩大导致利润波动失控。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不使用增速外推。按"出版主业稳态 + 贸易收缩后的收入结构 + 非经常性损益剔除"测算。</p>
+</blockquote>
+<p><strong>总股本：约 6.78 亿股</strong></p>
+<h3>分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出版发行（教材教辅+一般图书）</td>
+<td>教材在学人口稳定、一般图书受《全民阅读条例》托底；毛利率维持 38–41%</td>
+<td>18–20 亿</td>
+<td>18–20%（毛利 40% 扣除费用后，参照省级出版集团水平）</td>
+<td><strong>3.4–3.9 亿</strong></td>
+</tr>
+<tr>
+<td>印刷复制</td>
+<td>配套稳态</td>
+<td>4 亿</td>
+<td>4–5%</td>
+<td><strong>0.15–0.2 亿</strong></td>
+</tr>
+<tr>
+<td>物资贸易</td>
+<td>继续收缩至 25 亿左右走量维持</td>
+<td>25 亿</td>
+<td>0.5%</td>
+<td><strong>0.1 亿</strong></td>
+</tr>
+<tr>
+<td>课后服务/研学</td>
+<td>省内渗透提升</td>
+<td>2 亿</td>
+<td>8%</td>
+<td><strong>0.15 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td>约 50 亿</td>
+<td>—</td>
+<td><strong>约 4.3 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 2.02 亿（含处置收益/减值转回等一次性约 0.35 亿）；H2 为教材教辅确认旺季（2025 全年归母 4.10 亿，H1/H2 季节分布约 2.1/2.0 亿）</li>
+<li><strong>2026E 归母约 3.9–4.1 亿，取 4.0 亿</strong>（其中经常性约 3.7 亿）</li>
+<li>校验：出版主业 H1 扣非 2.01 亿的季节结构 + H2 旺季兑现，与产能/业务形态完全匹配</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>出生人口传导提前 + 教辅毛利率跌破 35% + 贸易减值</td>
+<td>3.3 亿</td>
+<td>10x</td>
+<td>33 亿</td>
+<td><strong>4.9 元</strong></td>
+<td><strong>−36.7%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>出版主业量稳价升、贸易收缩到位、课后服务省内兑现</td>
+<td>4.3 亿</td>
+<td>12x</td>
+<td>52 亿</td>
+<td><strong>7.6 元</strong></td>
+<td><strong>−1.8%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>课后服务跨省突破 + 数字教材政策红利 + 破净修复至 1.0x PB</td>
+<td>4.8 亿</td>
+<td>14x</td>
+<td>67 亿</td>
+<td><strong>9.9 元</strong></td>
+<td><strong>+27.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>4.0 亿</td>
+<td>4.3 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>13x</td>
+<td>12x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>52 亿</td>
+<td>52 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>7.7 元</strong></td>
+<td><strong>7.6 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶·三道校正</h3>
+<ul>
+<li><strong>校正1 资产质量折扣（破净必须说明原因）</strong>：PB 0.88x 破净的成因为<strong>资产盈利能力平庸而非资产虚高</strong>——归母净资产 60.4 亿对应 ROE 仅 3–7%，出版主业增长有限、贸易拖累报表，市场按"低 ROE 国企"定价，破净是<strong>公允定价而非低估</strong>。需注意两点结构性缓冲：①账面持有上市公司股权 2.27 亿 + 大额货币资金（财务费用为 −2171 万，利息收入大于支出），资产含金量高于一般国企；②约 3.9% 股息率 + 50% 支付率提供现金回报底。<strong>结论：保留破净事实，不单凭 PB&lt;1 推导大空间。</strong></li>
+<li><strong>校正2 周期位置</strong>：出版无强周期，但教材教辅存在"在学人口长周期下行"的位置——当前仍处高位平台期，2028 年后压力显性化，故中性 PE 给 12x（低于历史中枢）而非 15x。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率 30.7%、财务费用为负，杠杆风险极低，此校正不触发。</li>
+<li><strong>期权纪律</strong>：AI 数字出版、跨省课后服务、金融资产重估均未过验证点，不计入中性净利，仅入乐观栏。</li>
+</ul>
+<p><strong>⚠️ 交叉校验</strong>：现价 7.74 元对应 2026E PE 约 13x、扣非口径约 14x，与中性目标价 7.6 元基本重合——<strong>当前定价已充分反映稳态盈利</strong>。破净 + 3.9% 股息是安全垫，但无增长引擎时安全垫不等于上行空间。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理</strong>。7.74 元与中性远期 7.6 元几乎持平，市场对"稳态出版+贸易收缩"的定价是准确的；9 月 9 日 −6.18% 的下跌更多是中报营收 −21.5% 的情绪性反应，并未跌破合理区间。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 7.6 元 → 空间 <strong>−1.8%</strong>（近零）；乐观 9.9 元 → <strong>+27.9%</strong>；悲观 4.9 元 → <strong>−36.7%</strong><br />
+- 安全垫主要来自资产端：0.88x PB、3.9% 股息率、账面金融资产——下行有缓冲，上行缺催化，<strong>赔率平庸</strong><br />
+- 上行想象力情景（第五步进阶）：<strong>类型B 政策期权</strong>——《全民阅读促进条例》施行 + 教育部 AI 教育行动计划若催生"国有出版集团数字教材统编采购"类政策，公司作为省级平台直接受益，重估弹性 = PE 从 12x 修复至 15x（+25%）；<strong>类型C 错杀修复</strong>——若市场风格回归低估值高股息国企，0.88x PB 向 1.0x 修复约 +14%。验证点：数字教材省级采购文件、公司课后服务省外中标公告。证伪：教辅征订量下滑、政策无实质采购落地。</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>6.8 元以下</strong>（对应 2026E PE 11.5x、股息率 &gt;4.4%）再考虑建仓<br />
+2. 加仓信号：课后服务省外中标公告；数字教材/AI 出版形成规模化收入；PB 回升伴随 ROE 站上 7%<br />
+3. 减仓/回避信号：教材教辅毛利率跌破 35%；金融资产持仓继续放大扰动利润</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：①出生人口下行 2028 年后传导至教材教辅征订，基本盘萎缩且无对冲业务；②贸易业务"收缩不到位"——预付款 +93%、存货 +27% 显示贸易资产占用仍在上升，若出现大宗贸易减值将直接侵蚀利润；③利润高度依赖一次性项目（处置收益、减值转回），扣非质量需逐季验证。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>质地稳健（省属国企、低杠杆、破净、3.9% 股息、主业毛利率上行），但中性远期空间 −1.8%，既无增长引擎也无低估缺口，属于"拿着不亏但也赚不到超额"的类型。等待 6.8 元以下的股息率买点或政策催化再升级结论。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>7.74 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>7.7 元</strong>（区间 7.3–8.2）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−0.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>7.6 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−1.8%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 4.9 元（−36.7%）～ 乐观 9.9 元（+27.9%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>安徽教材教辅基本盘毛利率上行+贸易收缩提纯盈利+破净 0.88x/股息 3.9% 提供底部，但无增长引擎，现价已充分反映稳态盈利</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（6.8 元以下或政策实质催化再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：公司 2026 年半年度报告（2026-08-28 披露）、证券之星中报管理层讨论解析、三个皮匠报告中报解读、《全民阅读促进条例》（国务院令第 823 号，2026-02-01 施行）、国家新闻出版署《2026 年度出版融合发展工程》（国新出发〔2025〕19 号）、教育部等五部门《"人工智能+教育"行动计划》（2026-04）、搜狐财经公司点评、腾讯行情 2026-09-09 收盘数据。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
