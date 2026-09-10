@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中交设计（600720）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>中交设计（600720）五步法分析报告</h1>
+<blockquote>
+<p>分析基准日：2026-09-09 ｜ 现价 <strong>5.30 元</strong> ｜ 总股本 <strong>22.946 亿股</strong> ｜ 总市值 <strong>121.61 亿元</strong> ｜ PE(TTM) <strong>约 10.1x</strong> ｜ PB <strong>约 0.76x（破净）</strong><br />
+行业：建筑装饰 — 工程咨询服务Ⅱ / 基建设计咨询 ｜ 板块：上海主板（原「祁连山」水泥，2023-12 更名）｜ 控股股东：中国交通建设股份有限公司（48.41%）｜ 实际控制人：国务院国资委<br />
+<strong>口径说明</strong>：2026 年半年报归母净利 <strong>+3.085 亿元（为正）</strong>，本报告按<strong>盈利股</strong>处理，估值采用「<strong>稳态净利润</strong>」口径；同时按第四步进阶对<strong>周期底部年份</strong>做归一化校正。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：A 股规模最大的<strong>基建工程设计咨询央企龙头</strong>——通过 2023 年重大资产重组，将原甘肃祁连山水泥集团的水泥资产全部置出、置入中国交建及中国城乡旗下 <strong>6 家国家级设计院</strong>（公规院、一公院、二公院、西南院、东北院、能源院）100% 股权，主营公路、市政、建筑、能源等领域的<strong>规划咨询、勘察设计、试验检测、监理及工程项目管理</strong>，是 A 股首单央企间市场化重组上市案例。</p>
+<p><strong>各业务板块营收占比（2026H1，营业收入 40.59 亿元 / 主营业务收入 39.92 亿元）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>2026H1 收入</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>勘察设计</strong></td>
+<td><strong>28.15 亿元</strong></td>
+<td><strong>70.52%</strong></td>
+<td><strong>26.23%</strong></td>
+<td>核心基本盘，含公路、桥梁、隧道、市政</td>
+</tr>
+<tr>
+<td>机电交安、光伏安装及项目管理等</td>
+<td>7.77 亿元</td>
+<td>19.46%</td>
+<td>—</td>
+<td>工程总承包及项目管理类</td>
+</tr>
+<tr>
+<td>工程试验检测</td>
+<td>1.63 亿元</td>
+<td>4.08%</td>
+<td>—</td>
+<td>高附加值技术服务</td>
+</tr>
+<tr>
+<td>工程监理</td>
+<td>1.34 亿元</td>
+<td>3.36%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他业务</td>
+<td>1.03 亿元</td>
+<td>2.58%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>主营业务毛利率</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>22.35%</strong></td>
+<td>综合毛利率 22.39%（同比 −5.81pct）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2025 年报口径（营收 110.60 亿元）</strong>：服务业收入 109.38 亿元（98.89%）；按产品分，勘察设计 84.34 亿元（76.25%）、机电交安/光伏安装/项目管理等 15.59 亿元（14.10%）、工程试验检测 4.74 亿元（4.28%）。按地区分，中国（除港澳）101.73 亿元（91.98%）、其他国家和地区 <strong>7.65 亿元（6.91%）</strong>。</p>
+<p><strong>核心产品/服务</strong>：项目规划策划、可行性研究、项目前期咨询评估、招投标咨询、代政府审查、勘察设计、监理、项目管理、试验检测，覆盖工程咨询全产业链。标志性业绩包括<strong>港珠澳大桥、深中通道、北盘江大桥、苏通大桥</strong>等；2026 年 7 月，参与研发的《深中通道钢壳混凝土沉管隧道建设关键技术、装备及应用》获<strong>国家科学技术进步奖一等奖</strong>。自主研发的桥隧结构分析设计软件 <strong>OSIS</strong> 通过北京市首台（套）重大技术装备认定。</p>
+<p><strong>技术实力</strong>：拥有 <strong>8 名全国勘察设计大师</strong>、6 家工程设计综合甲级资质企业，员工约 1.4 万人；主导主编多项 ISO 标准，主编的《公路隧道工程技术手册》在 2026 世界交通运输大会发布。</p>
+<p><strong>主要客户/下游</strong>：地方政府及平台公司、国有企事业单位（省交投、市交投、交通厅局等）。业务版图扩展至全球 <strong>60 余个国家</strong>。</p>
+<p><strong>境内外收入占比</strong>：2025 年国内 <strong>91.98%</strong>、海外 <strong>6.91%</strong>；<strong>2026H1 境外新签合同额同比增长 80%</strong>，先后中标圭亚那 PM 公路、南苏丹朱巴—伦拜克公路、东帝汶供水与卫生设施等项目，海外为当前增速最快的板块。</p>
+<p><strong>股东与治理</strong>：控股股东<strong>中国交通建设股份有限公司</strong>（持股 48.41%）+ 一致行动人<strong>中国城乡控股集团</strong>（7.61%）+ <strong>中交资本</strong>（2.33%）+ <strong>国调二期协同发展基金</strong>（2.39%）等，中国交建及其一致行动人合计控制约 <strong>58.35%</strong>；实际控制人为<strong>国务院国资委</strong>。控股股东已连续三年增持（2024、2025 年累计增持 4.40 亿元 / 5,349.41 万股；2026 年新一期计划 8,000 万–1.6 亿元）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>政策端强支撑，但落地存在时滞</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度</th>
+<th>落地节奏与量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《中华人民共和国国民经济和社会发展第十五个五年规划纲要》</td>
+<td>全国人大</td>
+<td>2026 年</td>
+<td><strong>国家级</strong></td>
+<td>部署<strong>六大类 109 项重大工程</strong>；提出「<strong>六张网</strong>」体系建设（水网、新型电网、算力网、新一代通信网、城市地下管网、物流网）</td>
+</tr>
+<tr>
+<td>城市更新行动纵深推进</td>
+<td>国务院 / 住建部</td>
+<td>持续推进</td>
+<td><strong>国家级</strong></td>
+<td>存量提质改造替代增量新建，设计咨询需求从「新建」向「改扩建 + 智慧化 + 运维」迁移</td>
+</tr>
+<tr>
+<td>超长期特别国债 + 地方专项债</td>
+<td>国家发展改革委、财政部</td>
+<td>2026 年延续</td>
+<td><strong>国家级</strong></td>
+<td>2026 年上半年实施扩张性财政政策，适度扩大政府债务规模，资金重点投向重大工程与新型基础设施；<strong>但专项债发行节奏调整、项目审批周期拉长</strong>，行业尚未迎来项目集中释放窗口</td>
+</tr>
+<tr>
+<td>《加力推进石化化工行业老旧装置更新改造行动方案（2026—2029年）》等专项</td>
+<td>多部门</td>
+<td>2026 年</td>
+<td>部门级</td>
+<td>对设计咨询行业间接利好（工业项目改造前端设计）</td>
+</tr>
+<tr>
+<td>中交集团「八网融合」系统解决方案</td>
+<td>中交集团 / 公司</td>
+<td>2026 年</td>
+<td>集团级</td>
+<td>统筹交通网、能源网、水网、数字网、生态网、产业网、健康网、文化网，以「方案+项目包」模式提供规划—投资—设计—建设—运营一体化方案</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策定性</strong>：<strong>政策方向明确向上，但落地节奏慢于预期</strong>——「十五五」109 项重大工程与「六张网」理论上将带动前期规划、可研、评估等咨询需求上行，但<strong>项目谋划、审批、资金落地存在明显时滞</strong>；2026 年上半年地方财政紧张、专项债发行节奏调整，<strong>基建投资增速逐季回落</strong>，行业尚未迎来项目集中释放窗口。行业公司自述「中长期看，随着超长期特别国债、专项债持续投放，行业周期底部将逐步夯实」。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全国固定资产投资（不含农户）</strong></td>
+<td>2026H1 <strong>22.637 万亿元，同比 −5.7%</strong>（国家统计局）</td>
+</tr>
+<tr>
+<td>其中：基础设施投资</td>
+<td><strong>同比 −2.4%</strong></td>
+</tr>
+<tr>
+<td>其中：制造业投资</td>
+<td>同比 −1.2%</td>
+</tr>
+<tr>
+<td>其中：房地产开发投资</td>
+<td><strong>同比 −18.0%</strong></td>
+</tr>
+<tr>
+<td>其中：民间固定资产投资</td>
+<td>同比 −8.5%</td>
+</tr>
+<tr>
+<td>建筑业增加值</td>
+<td>同比 −4.0%</td>
+</tr>
+<tr>
+<td>新建商品房销售面积</td>
+<td>同比 −11.6%</td>
+</tr>
+<tr>
+<td><strong>全国工程设计收入（行业总盘）</strong></td>
+<td>2024 年 <strong>5,368.9 亿元，同比 −4.8%</strong>；工程设计新签合同额 <strong>6,868.2 亿元，同比 −5.8%</strong></td>
+</tr>
+<tr>
+<td>具备工程勘察设计资质企业数</td>
+<td>2024 年 <strong>28,430 个，同比 −3.1%</strong>（产能持续出清）</td>
+</tr>
+<tr>
+<td>结构性亮点</td>
+<td>高技术产业投资 <strong>同比 +4.6%</strong>、知识产权产品投资 +9.4%、设备工器具购置投资 +8.1%；信息传输、综合交通等新基建投资维持<strong>两位数增长</strong></td>
+</tr>
+<tr>
+<td><strong>公司新签合同额（2026H1）</strong></td>
+<td><strong>91.66 亿元，同比 −2.4%</strong>（规模保持平稳）；其中<strong>境外新签合同额同比增长 80%</strong></td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>行业「总量承压、结构剧变、存量博弈」；<strong>产能过剩下低价竞争</strong>，设计费被压缩 30%–50%（部分 EPC 项目）；中小设计院加速出清</td>
+</tr>
+<tr>
+<td>价格趋势</td>
+<td>传统新建公路项目设计费<strong>量价齐跌</strong>；地方市政道路因城投付款困难，设计院被迫垫资或接受超长账期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：<br />
+- <strong>量降</strong>：营收 40.59 亿元（<strong>同比 −6.87%</strong>），Q2 单季 23.73 亿元（同比 −11.58%），<strong>降幅环比扩大</strong>；<br />
+- <strong>价（毛利率）明显下滑</strong>：综合毛利率 <strong>22.39%（同比 −5.81pct）</strong>；主营业务毛利率 22.35%，其中勘察设计 26.23%；<strong>「成本刚性 + 人工成本相对稳定」是毛利率下滑主因</strong>；<br />
+- <strong>利润率腰斩</strong>：归母净利 <strong>3.085 亿元（同比 −44.84%）</strong>，扣非 3.00 亿元（同比 −44.17%），归母净利率 7.60%（同比 −5.23pct）；<br />
+- <strong>现金流恶化</strong>：经营活动现金流净额 <strong>−14.65 亿元</strong>（上年同期 −13.47 亿元），现金净流出同比增加 1.18 亿元；<strong>营业收现率 87.77%（同比 +13.94pct）是唯一改善项</strong>；<br />
+- <strong>资产占用上升</strong>：应收账款 <strong>115.38 亿元</strong>（较年初 +6.58%）、合同资产 16.03 亿元（较年初 +18.67%）；货币资金较上年末减少 14.16% 至 67.58 亿元；短期借款较上年末<strong>增加 633.22%</strong> 至 7.25 亿元。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：设计咨询行业的上游为<strong>人工（设计人员薪酬，约占营业成本 55–65%）+ 软件与设备 + 外协</strong>。人工成本<strong>刚性极强</strong>——2026H1 收入下降 6.87% 而人工成本相对稳定，直接导致毛利率 −5.81pct。<strong>这是本行业最核心的成本传导机制：收入下行无法通过人工成本同步下调来对冲。</strong></p>
+<p><strong>下游</strong>：地方政府及平台公司、国有企事业单位。下游资金紧张直接传导为<strong>设计费结算滞后、账期拉长、垫资要求</strong>——2026H1 应收账款 115.38 亿元（占归母净资产 <strong>72.4%</strong>），经营现金流 −14.65 亿元。公司自述「下游客户以地方政府及平台、国有企事业单位为主，客户整体资信实力较强，<strong>款项更多是客户内部审批流程、财政预算拨付节奏导致付款延后</strong>」。</p>
+<p><strong>议价权判断：中（下游）／弱（对人工成本）</strong>。佐证：① 公司作为央企设计平台在<strong>重大项目获取能力、资质等级、品牌影响力</strong>上具备显著优势（承担深中通道、港珠澳大桥等国家级工程）；② 但在<strong>行业产能过剩、同质化竞争</strong>背景下，传统新建项目设计费被压缩 30%–50%；③ 对人工成本<strong>几乎无议价权</strong>（设计人员薪酬刚性与人才流失双向挤压）。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through，量化转嫁系数）</strong></p>
+<ul>
+<li>成本结构：人工成本约 55–65%、外协/分包约 15–20%、折旧与房租约 8–10%、软件与差旅约 5–8%。</li>
+<li><strong>对甲方转嫁率 ≈ 0.2–0.3（弱）</strong>：设计费在投标阶段锁定，项目周期 2–5 年，<strong>期间人工成本上涨无法调价</strong>；地方财政紧张下甲方甚至反向压价（传统公路设计费被压缩 30%–50%）。</li>
+<li><strong>对上游（人工）转嫁率 ≈ 0.1（极弱）</strong>：设计院难以降薪，2026H1 即为「收入 −6.87%、人工成本基本持平」的典型错配。</li>
+<li>量化：若收入下降 7% 而人工成本不变，在人工占比 60% 假设下，<strong>毛利率承压 ≈ 7% × 60% ≈ 4.2pct</strong>——与实际 −5.81pct 基本吻合，<strong>说明毛利率下滑是结构性的、非一次性的</strong>。</li>
+<li>依据：2026H1 主营业务毛利率 22.35%，勘察设计业务毛利率 26.23%（2025 年整体毛利率 30.08%），一年内下滑约 7.7pct，可反推转嫁率约 0.2。</li>
+</ul>
+<p><strong>因子2 毛利结构再平衡（分业务线，禁用单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入权重</th>
+<th>毛利率（估）</th>
+<th>成本敏感权重</th>
+<th>结构迁移方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>勘察设计（公路/桥梁/隧道）</td>
+<td><strong>70.52%</strong></td>
+<td><strong>26.23%（已披露）</strong></td>
+<td>人工 <strong>极高</strong></td>
+<td>占比<strong>提升</strong>（高附加值），毛利率下行</td>
+</tr>
+<tr>
+<td>机电交安、光伏安装及项目管理</td>
+<td>19.46%</td>
+<td>约 12–16%（施工类，低毛利）</td>
+<td>分包/材料 <strong>高</strong></td>
+<td>占比稳定</td>
+</tr>
+<tr>
+<td>工程试验检测</td>
+<td>4.08%</td>
+<td>约 30–35%（技术服务，高毛利）</td>
+<td>人工 + 设备 <strong>中</strong></td>
+<td>占比小幅提升</td>
+</tr>
+<tr>
+<td>工程监理</td>
+<td>3.36%</td>
+<td>约 20–25%</td>
+<td>人工 <strong>高</strong></td>
+<td>占比稳定</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>2.58%</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>综合毛利率 22.39% 是「高毛利勘察设计占比提升 + 全线毛利率下行」的加权结果</strong>。测算：若试验检测（高毛利）收入占比由 4.08% 提升至 8%，在分线毛利率不变前提下，<strong>综合毛利率可提升约 +0.5–0.8pct</strong>——但<strong>幅度远不足以对冲勘察设计毛利率的下行</strong>。</li>
+<li>反证：勘察设计业务收入占比 70.52%，其毛利率每下降 1pct，<strong>综合毛利率下降约 0.71pct</strong>，是<strong>本股毛利弹性的绝对主变量</strong>。</li>
+</ul>
+<p><strong>因子3 库存与采购节奏（timing）</strong></p>
+<ul>
+<li><strong>无低价囤货收益</strong>（服务业无原料库存），但存在<strong>两项关键 timing 变量</strong>：</li>
+<li><strong>合同资产与应收账款的 timing</strong>：合同资产较年初 <strong>+18.67%</strong>、应收账款 <strong>+6.58%</strong>，意味着<strong>收入确认快于结算回款</strong>——当期利润含「已确认未收现」部分，<strong>利润的现金实现滞后</strong>。经营现金流 −14.65 亿元（净利润现金含量 −146.34%）即为直接证据。</li>
+<li><strong>汇兑损失 timing</strong>：2026H1 财务费用为净收益 0.19 亿元，<strong>净收益同比减少 0.22 亿元，主要受汇兑损失增加影响</strong>——海外收入（2025 年 7.65 亿元）以美元/当地货币结算而成本以人民币计价，人民币升值直接侵蚀利润。<strong>这是一项"非经营但计入损益"的波动源。</strong></li>
+<li><strong>长协/套保</strong>：无大宗原料，无套保安排披露。</li>
+<li><strong>结论</strong>：本股无库存收益虚增利润的情形，但<strong>应收账款 + 合同资产占用是"利润不打钱"的核心来源</strong>，须在估值中作为<strong>资产质量折扣</strong>处理（见第四步校正1）。</li>
+</ul>
+<p><strong>因子4 政策/市场锚点（成本驱动变量）</strong></p>
+<ul>
+<li><strong>市场层</strong>：固定资产投资增速（2026H1 −5.7%）、基础设施投资增速（−2.4%）、专项债发行节奏、地方财政拨付进度、人民币汇率（海外业务汇兑）。</li>
+<li><strong>政策层</strong>：</li>
+<li><strong>「十五五」109 项重大工程 + 「六张网」</strong>：情景 = 若 2027–2029 年项目集中释放，勘察设计新签合同额回升 10%–15%；<strong>验证点</strong> = 公司季度新签合同额、全国工程设计新签合同额统计公报；<strong>证伪信号</strong> = 新签合同额连续两年负增长。</li>
+<li><strong>城市更新纵深推进</strong>：情景 = 存量改造项目设计费率高于新建（改造项目复杂度高）；<strong>验证点</strong> = 公司城市更新类订单占比；<strong>证伪信号</strong> = 该类订单未披露或占比未提升。</li>
+<li><strong>超长期特别国债 / 专项债</strong>：情景 = 资金到位率提升 → 回款改善 → 财务费用与减值下降；<strong>验证点</strong> = 营业收现率、经营现金流季度转正；<strong>证伪信号</strong> = 应收账款/合同资产继续以两位数增长。</li>
+<li><strong>「设计出海」战略（公司级 + 一带一路）</strong>：情景 = 海外新签（2026H1 +80%）持续转化为收入，海外收入占比由 6.91% 升至 15%；<strong>验证点</strong> = 海外收入分部披露、海外项目中标公告；<strong>证伪信号</strong> = 海外收入占比停滞、汇率大幅波动侵蚀利润。</li>
+<li><strong>本因子输出直接喂给第四步毛利率假设</strong>：勘察设计线毛利率 <strong>24%（中性）/ 21%（悲观）/ 27%（乐观）</strong>；试验检测线 <strong>33%（中性）/ 29%（悲观）/ 36%（乐观）</strong>。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<h3>3.1 硬增量清单（项目 / 金额 / 进度 / 确认时点 / 利润贡献 / 确定性）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>在手合同储备</strong></td>
+<td>2026H1 新签合同额 <strong>91.66 亿元</strong>（同比 −2.4%），在手合同形成后续收入支撑</td>
+<td>91.66 亿元（半年新签）</td>
+<td>已签约，按项目进度结转</td>
+<td>2026H2–2029</td>
+<td><strong>高（已签约）</strong></td>
+</tr>
+<tr>
+<td><strong>海外设计订单</strong></td>
+<td>境外新签合同额<strong>同比 +80%</strong>；圭亚那 PM 公路、南苏丹朱巴—伦拜克公路、东帝汶供水与卫生设施</td>
+<td>金额未单独披露</td>
+<td>已中标，设计中</td>
+<td>2027–2029</td>
+<td><strong>中高（已中标，金额未披露）</strong></td>
+</tr>
+<tr>
+<td><strong>低空经济</strong></td>
+<td>主编《无人机工程测量技术规范》正式实施；中标<strong>润扬大桥智慧扩容项目</strong>（自研低空技术首次市场化应用）</td>
+<td>金额未披露</td>
+<td>首单落地</td>
+<td>2027–2029</td>
+<td><strong>低（未量化）</strong></td>
+</tr>
+<tr>
+<td><strong>压缩空气储能 / 交能融合 / 共享储能 / 超充站</strong></td>
+<td>在光伏、压缩空气储能、超充站及共享储能领域持续获取订单</td>
+<td>金额未披露</td>
+<td>培育期</td>
+<td>2027–2029</td>
+<td><strong>低（未量化）</strong></td>
+</tr>
+<tr>
+<td><strong>智慧城市 / 智慧交通 / 深地空间</strong></td>
+<td>「十五五」战略性新兴产业导向布局</td>
+<td>金额未披露</td>
+<td>培育期，<strong>尚未完全释放利润</strong></td>
+<td>2028–2029</td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td><strong>OSIS 桥隧结构分析设计软件</strong></td>
+<td>通过北京市首台（套）重大技术装备认定</td>
+<td>金额未披露</td>
+<td>商业化起步</td>
+<td>2027–2029</td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td><strong>中期分红机制</strong></td>
+<td>2026 年中期每 10 股派 0.269 元，合计 <strong>6,172.46 万元</strong>（占当期归母 20%）；制定未来三年股东分红回报规划</td>
+<td>0.617 亿元/次</td>
+<td>已实施</td>
+<td>2026 年起</td>
+<td><strong>高（已公告）</strong></td>
+</tr>
+<tr>
+<td><strong>控股股东增持</strong></td>
+<td>中交资本 2026-08-28 首次增持 123.87 万股，计划 12 个月内增持 <strong>8,000 万–1.6 亿元</strong></td>
+<td>0.8–1.6 亿元</td>
+<td>进行中</td>
+<td>2026–2027</td>
+<td><strong>高（已公告）</strong></td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：中交集团设计业务资产进一步注入</td>
+<td>光大证券等认为重组完成后「有望注入更多设计业务资产」</td>
+<td><strong>未过验证点</strong></td>
+<td>无在筹划事项</td>
+<td>—</td>
+<td><strong>低</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：<strong>91.66 亿元新签合同是本股最硬的增量基础</strong>（相当于 2025 年营收的 82.9%），但同比 −2.4% 说明<strong>订单规模已停止增长</strong>；海外 +80% 增速虽高，但<strong>绝对金额未披露、基数仅 7.65 亿元（2025 年）</strong>，<strong>难以对冲国内基本盘的下行</strong>。新业务（低空、储能、智慧交通）<strong>均未披露金额与利润贡献</strong>，构成预测的主要不确定源。</p>
+<h3>3.2 增量拆解三层法（份额变量与主业迁移空间）</h3>
+<p><strong>层1 现有业务 = 市场容量 × 份额变量</strong></p>
+<ul>
+<li>市场容量：全国工程设计收入 <strong>5,368.9 亿元（2024 年，−4.8%）</strong>、新签合同额 6,868.2 亿元（−5.8%）；行业总盘<strong>连续多年收缩</strong>，具备资质企业数 28,430 个（−3.1%）。</li>
+<li>公司份额：2025 年营收 110.60 亿元 ÷ 行业工程设计收入 5,368.9 亿元 ≈ <strong>2.1%</strong>（注：公司收入含勘察设计以外的检测、监理、项目管理，该比值仅为量级参考）；<strong>在公路设计细分领域，公司为绝对龙头</strong>（公规院、一公院、二公院三家甲级院）。</li>
+<li>五锚点逼近：</li>
+<li><strong>供给侧份额</strong>：行业资质企业数 <strong>−3.1%</strong>（产能出清），公司作为央企龙头<strong>在出清中相对受益</strong>；但公司自身新签合同额 −2.4%，<strong>说明份额提升尚未兑现为订单增长</strong>。</li>
+<li><strong>需求侧/客户份额</strong>：客户为省交投、市交投、交通厅局，<strong>重大项目获取能力突出</strong>（深中通道、港珠澳大桥）；但客户集中度上升带来单一财政来源风险。</li>
+<li><strong>技术代际差</strong>：<strong>领先</strong>。6 家工程设计综合甲级资质、8 名全国勘察设计大师、国家科技进步一等奖（深中通道）、自研 OSIS 软件、主编多项 ISO 标准与行业技术手册——<strong>技术代际差构成份额溢价</strong>，是公司在低价竞争中维持 26.23% 勘察设计毛利率的根本。</li>
+<li><strong>成本曲线位置</strong>：<strong>左侧</strong>（央企品牌 + 规模效应 + 1.4 万人技术团队）；但<strong>人工成本刚性</strong>使成本曲线在收入下行时无法左移，<strong>这是本股最大的结构缺陷</strong>。</li>
+<li><strong>份额二阶导</strong>：行业总盘收缩、公司新签 −2.4%，<strong>份额增长已进入平台期</strong>；但海外新签 +80% 显示<strong>份额在海外市场加速渗透</strong>（S 曲线早段）。</li>
+<li><strong>三档份额假设</strong>：</li>
+<li>保守（守住）：新签合同额维持 90 亿元/年 → 2029E 收入约 95 亿元</li>
+<li>中性（小幅提升）：新签年 +3%（行业出清 + 海外拓展）→ 2029E 收入约 <strong>105 亿元</strong></li>
+<li>乐观（抢份额）：新签年 +6% → 2029E 收入约 <strong>115 亿元</strong></li>
+<li><strong>验证点</strong>：公司季度/年度新签合同额公告、住建部《全国工程勘察设计统计公报》；<strong>证伪信号</strong>：新签合同额连续两年负增长、勘察设计毛利率跌破 23%。</li>
+</ul>
+<p><strong>层2 扩展业务 = 主业迁移空间（"旧池塘 → 新池塘"）</strong></p>
+<ul>
+<li>迁移方向：<strong>交通/市政勘察设计 → 低空经济（无人机测量、低空航路规划）+ 压缩空气储能 + 交能融合 + 智慧交通/城市 + 设计出海</strong>。</li>
+<li>五点判断：</li>
+<li><strong>能力可迁移性</strong>：<strong>高</strong>。低空经济的基础设施（起降场、航路）与测量规范与公路勘察设计技术同源——公司主编《无人机工程测量技术规范》即为能力迁移的直接证据；储能、交能融合亦基于既有工程设计与项目管理能力。</li>
+<li><strong>新 TAM 弹性</strong>：<strong>中-高</strong>。低空经济为国家级新兴产业（万亿级市场空间预期），储能与交能融合受「十五五」能源网/算力网建设驱动；但公司可获取的<strong>设计咨询环节</strong>仅占其中一小部分。</li>
+<li><strong>切入时点与卡位</strong>：<strong>早</strong>。低空经济尚处标准制定阶段，公司<strong>主导主编行业规范</strong>，具备先发卡位；润扬大桥智慧扩容为首个市场化应用案例。</li>
+<li><strong>客户认证门槛</strong>：<strong>高</strong>。新场景（低空、储能）需新的资质、认证与业绩积累，<strong>既是护城河也是扩张阻力</strong>。</li>
+<li><strong>信号验证</strong>：<strong>已过部分验证点</strong>——① 主编无人机工程测量技术规范正式实施；② 中标润扬大桥智慧扩容项目（<strong>自研低空技术首次市场化应用</strong>）；③ OSIS 软件获北京市首台（套）认定。<strong>但三项均未披露金额，利润贡献为零。</strong></li>
+<li><strong>纪律执行</strong>：低空经济<strong>已过"技术落地"验证点但未过"金额/收入"验证点</strong>，按规则<strong>不计入中性情景</strong>，仅作<strong>中期期权</strong>计入乐观情景；压缩空气储能、交能融合、智慧城市<strong>均未过验证点</strong>，不计入中性。</li>
+</ul>
+<p><strong>层3 风险折扣（证伪信号）</strong></p>
+<ul>
+<li>新签合同额连续两年负增长 → 份额变量证伪；</li>
+<li>勘察设计毛利率跌破 23%（人工成本刚性无法对冲收入下行） → 盈利模型证伪；</li>
+<li>应收账款/合同资产继续以两位数增长、经营现金流连续两年大额为负 → 资产质量证伪；</li>
+<li>海外收入占比未提升至 10% 以上 → 出海逻辑证伪；</li>
+<li>低空经济/储能订单连续两年无金额披露 → 主业迁移证伪。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：业绩预测全部自下而上，由<strong>分业务线收入拆解（勘察设计/机电交安/试验检测/监理）+ 新签合同额与结转节奏 + 人工成本刚性假设 + 海外新签订单</strong>推导，不做整体打包，不使用历史增速外推。因公司处于<strong>基建设计周期的底部年份</strong>，同时按第四步进阶对<strong>周期底部净利做归一化校正</strong>。</p>
+</blockquote>
+<p><strong>总股本：22.946 亿股</strong> ｜ 现价 5.30 元 ｜ 总市值 121.61 亿元 ｜ 归母净资产 <strong>159.32 亿元（每股 6.94 元）</strong> ｜ 总资产 306.13 亿元 ｜ 资产负债率 46.72%。</p>
+<h3>4.1 分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据（自下而上）</th>
+<th>2029E 收入</th>
+<th>净利率假设</th>
+<th>2029E 净利贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>勘察设计（国内）</strong></td>
+<td>2026H1 收入 28.15 亿元，年化约 56 亿元；按新签合同额中性假设（年 +3%）与结转节奏，2029E 国内勘察设计约 <strong>58 亿元</strong></td>
+<td>58 亿元</td>
+<td><strong>11%</strong>（毛利率 24%，扣销售/管理/研发费用与减值）</td>
+<td><strong>6.38 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>海外设计</strong></td>
+<td>2025 年海外收入 7.65 亿元；2026H1 海外新签 +80%，按中性假设海外收入 2029E 达 <strong>20 亿元</strong></td>
+<td>20 亿元</td>
+<td><strong>12%</strong>（海外设计费率与毛利高于国内）</td>
+<td><strong>2.40 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>机电交安/光伏安装/项目管理</strong></td>
+<td>2026H1 收入 7.77 亿元，年化约 15.5 亿元；按年 +5%（光伏/储能安装增长）→ 2029E 约 <strong>18 亿元</strong></td>
+<td>18 亿元</td>
+<td><strong>6%</strong>（施工类低毛利）</td>
+<td><strong>1.08 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>试验检测 + 监理</strong></td>
+<td>2026H1 合计 2.97 亿元，年化约 5.9 亿元；按年 +6%（高附加值业务提升）→ 2029E 约 <strong>7 亿元</strong></td>
+<td>7 亿元</td>
+<td><strong>10%</strong></td>
+<td><strong>0.70 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>其他业务</strong></td>
+<td>2026H1 约 1.03 亿元，年化约 2 亿元</td>
+<td>2 亿元</td>
+<td>5%</td>
+<td><strong>0.10 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>约 105 亿元</strong></td>
+<td>综合净利率约 <strong>10.2%</strong></td>
+<td><strong>约 10.66 亿元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>期间费用与校验（2029E·中性）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额/说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综合毛利率</td>
+<td>约 <strong>21.5%</strong>（较 2026H1 的 22.39% 略降，反映人工成本刚性；但较悲观情景有改善）</td>
+</tr>
+<tr>
+<td>期间费用率</td>
+<td>约 <strong>11.5%</strong>（销售 + 管理 + 研发；研发投入强度 4.84%）</td>
+</tr>
+<tr>
+<td>信用/资产减值</td>
+<td>约 0.5–0.8 亿元/年（按应收账款 115 亿元、年计提 0.5% 估）</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>约 <strong>−0.2 亿元</strong>（净收益，货币资金 67.58 亿元 vs 有息负债约 13.5 亿元）</td>
+</tr>
+<tr>
+<td>汇兑</td>
+<td>假设中性（无单边损益）</td>
+</tr>
+<tr>
+<td><strong>2029E 中性归母净利</strong></td>
+<td><strong>约 10.7 亿元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>周期归一化校正（接第四步进阶·校正2）</strong>：<br />
+- 2022–2025 年归母净利：<strong>16.95 亿 / 17.66 亿 / 17.51 亿 / 14.55 亿元</strong>；2026E 为<strong>周期底部</strong>（约 9.0 亿元）。<br />
+- 按规则，<strong>禁用近三年均值（恰逢上行期）、禁用单年好年景、禁用拐点年化</strong>。<br />
+- <strong>改用「trough-to-peak 中值」</strong>：(2026E 底部 9.0 亿 + 2023 年顶部 17.66 亿) ÷ 2 ≈ <strong>13.3 亿元</strong>。<br />
+- <strong>取 2029E 中性归母净利 = 13.0 亿元</strong>（同时高于上表自下而上测算的 10.66 亿元，说明该中性值已包含<strong>周期向中枢回归</strong>的合理假设，<strong>并非外推</strong>）。<br />
+- <strong>当前周期位置标注：底部</strong>（全国固投 −5.7%、基建投资 −2.4%、行业设计收入连续三年下滑、公司新签 −2.4%、归母 −44.84%）。<strong>底部时不过度悲观</strong>是本步的核心纪律。</p>
+<p><strong>产能/规模约束校验</strong>：2029E 收入 105 亿元 ÷ 员工约 1.4 万人 ≈ <strong>人均产值 75 万元</strong>（2025 年人均产值约 79 万元），<strong>未突破现有产能约束</strong>，无需大规模新增投入。</p>
+<p><strong>一次性因素识别与剔除</strong>：<br />
+- 2026H1 汇兑损失增加（财务费用净收益同比减少 0.22 亿元）为<strong>阶段性</strong>，已按中性汇率假设剔除单边影响；<br />
+- 2026 年中期分红 6,172.46 万元为<strong>分配项</strong>，不影响净利；<br />
+- <strong>无政府补助、资产处置等大额一次性收益</strong>，2026H1 非经常性损益仅 895.59 万元（3.085 亿 − 3.00 亿），<strong>利润质量干净</strong>。</p>
+<h3>4.2 基准（2026E）</h3>
+<ul>
+<li>2026H1 已实现归母 <strong>3.085 亿元</strong>（Q2 单季 2.37 亿元）；</li>
+<li>历史上公司收入与利润<strong>高度集中在下半年</strong>：2025 年 H1 归母 5.59 亿元、全年 14.55 亿元，<strong>H2 占全年 61.6%</strong>；2024 年 H1 5.35 亿元、全年 17.51 亿元，H2 占 69.4%；</li>
+<li>按此节奏，2026H2 归母约 <strong>5.5–6.5 亿元</strong>（假设同比 −30% 至 −38%，反映行业需求承压与人工成本刚性）；</li>
+<li><strong>2026E 归母净利 8.6–9.4 亿元，取 9.0 亿元</strong>（对应营收约 100 亿元、净利率约 9.0%，较 2025 年的 13.27% 下降 4.3pct）。</li>
+</ul>
+<h3>4.3 三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 归母净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>固投继续负增长、新签合同额连续两年下滑；人工成本刚性下勘察设计毛利率跌破 21%；应收账款减值大幅计提（应收 115 亿元计提 3% → 损失 3.5 亿元）；海外订单因汇率与地缘受阻</td>
+<td>8.0 亿</td>
+<td>9x</td>
+<td>72.0 亿</td>
+<td><strong>3.14 元</strong></td>
+<td><strong>−40.8%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>新签合同额年 +3%（行业出清 + 海外拓展），「十五五」109 项重大工程 2027 年起逐步释放；勘察设计毛利率维持 24%；海外收入占比升至约 19%；减值维持正常水平</td>
+<td><strong>13.0 亿</strong></td>
+<td>11.5x</td>
+<td>149.5 亿</td>
+<td><strong>6.51 元</strong></td>
+<td><strong>+22.8%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>城市更新 + 「六张网」项目集中释放，新签年 +6%；海外收入占比升至 25%；低空经济/储能新业务形成收入贡献；破净修复至 PB 1.0x</td>
+<td>15.5 亿</td>
+<td>13x</td>
+<td>201.5 亿</td>
+<td><strong>8.78 元</strong></td>
+<td><strong>+65.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>9.00 亿元</td>
+<td>13.00 亿元</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>14x（周期底部给高倍数）</td>
+<td>11.5x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>126.0 亿元</td>
+<td>149.5 亿元</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>5.49 元</strong></td>
+<td><strong>6.51 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>4.4 第四步进阶：重资产/周期股估值校正（三道闸）</h3>
+<p><strong>校正1 资产质量折扣（PB 0.76x 破净，必须说明破净原因）</strong></p>
+<ul>
+<li><strong>破净事实</strong>：现价 5.30 元 vs 每股净资产 6.94 元，PB <strong>0.76x</strong>，破净幅度 <strong>23.6%</strong>；总市值 121.61 亿元 vs 归母净资产 159.32 亿元。</li>
+<li><strong>破净原因逐条举证</strong>（四条全部成立，<strong>属"资产盈利能力下行 + 资产质量瑕疵"型破净，非金融资产未重估型真破净</strong>）：</li>
+<li><strong>资产盈利能力下行</strong>：2026H1 加权 ROE 仅 <strong>1.92%</strong>（同比 −1.76pct），2025 年 ROE 9.40%、2024 年 13.11%——<strong>ROE 三年腰斩</strong>，破净是对盈利能力下行的<strong>公允定价</strong>，不是错杀。</li>
+<li><strong>利润质量瑕疵（"账面利润不打钱"）</strong>：2026H1 经营现金流净额 <strong>−14.65 亿元</strong>、净利润现金含量 <strong>−146.34%</strong>；应收账款 <strong>115.38 亿元</strong>（占归母净资产 <strong>72.4%</strong>）、合同资产 16.03 亿元（+18.67%）。<strong>净资产中约 72% 是对地方政府的应收，其可回收性决定净资产真实性。</strong></li>
+<li><strong>资产专用性强 + 隐含负债</strong>：设计咨询的核心资产是<strong>人力资本（不进资产负债表）+ 应收款</strong>，固定资产占比低；但应收账款账龄拉长意味着<strong>隐含减值风险</strong>——公司自述"不存在大额坏账风险"，但 3 年以上应收占比在同类企业中普遍上升（参考同业百花医药 3 年以上应收占比由 24.46% 升至 32.30%）。</li>
+<li><strong>非"金融资产未重估型"</strong>：公司持有<strong>货币资金 67.58 亿元</strong>（占市值 <strong>55.6%</strong>），但这是<strong>经营性现金而非可重估金融资产</strong>；无上市公司股权等可按市价重估的资产。<strong>故不适用"金融资产未重估型真破净可保留"的例外条款。</strong></li>
+<li><strong>结论</strong>：<strong>破净提供的是"下行缓冲"而非"上涨理由"</strong>。PB 0.76x 对应 ROE 1.92%（H1）——若以 2026E 归母 9.0 亿元计，年化 ROE 约 5.6%，<strong>对应合理 PB 约 0.7–0.9x</strong>，<strong>现价 0.76x 已处于合理区间</strong>，<strong>不能单凭 PB&lt;1 推导"空间大"</strong>。</li>
+<li><strong>但须同时承认两项正向因素</strong>：① 货币资金 67.58 亿元占市值 55.6%，<strong>净现金支撑较强</strong>；② 控股股东连续三年增持（累计 4.40 亿元）+ 中期分红（20% 派现率）+ 未来三年分红规划，<strong>国有股东以实际行动背书，降低"价值陷阱"概率</strong>。</li>
+</ul>
+<p><strong>校正2 周期位置校正</strong></p>
+<ul>
+<li>工程设计咨询属<strong>强周期行业</strong>，景气度直接由固定资产投资驱动（行业公司自述"工程咨询景气度与固投、宏观经济、产业政策高度相关，兼具顺周期、逆周期双重属性"）。</li>
+<li><strong>当前周期位置：底部</strong>。证据：① 全国固定资产投资 2026H1 <strong>−5.7%</strong>、基础设施投资 <strong>−2.4%</strong>、房地产开发投资 <strong>−18.0%</strong>；② 全国工程设计收入 2024 年 −4.8%、新签合同额 −5.8%，<strong>连续多年下滑</strong>；③ 公司营收由 2023 年 135.11 亿元降至 2026H1 年化约 81 亿元，<strong>归母净利由 17.66 亿元降至 2026E 约 9.0 亿元</strong>；④ 行业资质企业数 −3.1%，<strong>产能出清中</strong>。</li>
+<li>中性净利<strong>不使用</strong>单年好年景（2023 年 17.66 亿元为周期顶部）、<strong>不使用</strong>近三年均值（2023–2025 恰逢上行、均值 16.57 亿元显著偏高）、<strong>不使用</strong>拐点年化（2026H1 归母 3.085 亿元年化 6.17 亿元将严重低估）。</li>
+<li><strong>改用</strong>：<strong>trough-to-peak 中值</strong> = (9.0 + 17.66) ÷ 2 ≈ <strong>13.3 亿元</strong>，取 <strong>13.0 亿元</strong>。该值<strong>低于 2023–2025 年任意一年</strong>，<strong>已含保守折扣</strong>。</li>
+<li><strong>周期位置对结论的影响</strong>：底部时不过度悲观——若行业在 2028–2029 年回到中枢，13.0 亿元净利是<strong>可实现的</strong>；但<strong>周期底部也可能延长</strong>，故须以悲观情景（8.0 亿元）作为下边界。</li>
+</ul>
+<p><strong>校正3 杠杆下行情景（本股负债率 46.72%，不属"高负债"，但须做应收/现金流负面情景）</strong></p>
+<ul>
+<li><strong>资产负债率 46.72%</strong>（较年初 −0.26pct），<strong>绝对水平不高</strong>；有息负债约 13.5 亿元（有息负债率约 9.35%，2025 年数据），货币资金 67.58 亿元，<strong>净现金状态</strong>。<strong>故不触发"高负债必附杠杆情景"的强制条款。</strong></li>
+<li><strong>但本股存在另一种杠杆：经营性杠杆（应收账款）</strong>，须做负面情景：</li>
+<li><strong>情景1 回款恶化</strong>：若应收账款 115.38 亿元按 <strong>3%</strong> 计提减值（较当前水平提高），一次性损失约 <strong>3.46 亿元</strong>（相当于 2026E 净利的 38%）；若按 5% 计提，损失 <strong>5.77 亿元</strong>（相当于 2026E 净利的 64%）；</li>
+<li><strong>情景2 短期借款快速上升</strong>：短期借款较上年末 <strong>+633.22%</strong> 至 7.25 亿元（仍小），若继续快速上升且利率上行 100BP，财务费用增加约 0.07 亿元——<strong>影响有限</strong>；</li>
+<li><strong>情景3 汇兑</strong>：人民币升值 5%，按海外收入 7.65 亿元计，汇兑损失约 0.38 亿元/年（对 9 亿元净利影响约 4.2%）；</li>
+<li><strong>三者叠加情景下，2029E 净利降至 8.0 亿元（即悲观情景），目标价 3.14 元（−40.8%），空间转负 → 按规则不得标"大空间/重点关注"，至多"纳入观察"且须注明周期性。</strong></li>
+<li><strong>本股贝塔属性</strong>：作为基建链前端、央企设计龙头，业绩与固投周期高度同步，<strong>属"高贝塔 + 顺周期"标的</strong>，不宜按稳态消费股定价。</li>
+</ul>
+<p><strong>期权纪律</strong>：低空经济、压缩空气储能、交能融合、智慧城市/交通、中交集团设计资产进一步注入——<strong>均未过"金额/收入"验证点</strong>（无金额披露、无收入贡献、无资产注入公告），<strong>不计入中性净利与中性目标市值</strong>，仅计入乐观情景或单独列示。</p>
+<h3>4.5 交叉校验</h3>
+<ul>
+<li>现价 5.30 元对应 2026E 归母 9.0 亿元 → <strong>PE 约 13.5x</strong>；对应 PB <strong>0.76x</strong>、2026H1 加权 ROE 1.92%（年化约 5.6%）、股息率约 2.4%（按中期分红年化）。</li>
+<li><strong>市场定价逻辑</strong>：PB 0.76x 已反映"行业下行 + 应收占用 + ROE 下行"，<strong>但尚未反映"周期底部净利 13 亿元的中枢回归"</strong>。中性远期 6.51 元对应 PB 约 0.94x、PE 11.5x——<strong>空间 +22.8% 主要来自盈利从 9.0 亿元恢复至 13.0 亿元（+44%）与 PB 从 0.76x 修复至 0.94x</strong>，属"业绩+估值双修复"，但幅度有限。</li>
+<li><strong>反向校验</strong>：若 2029E 净利仅 8.0 亿元（悲观），则现价对应 PE 15.2x、PB 0.76x，<strong>估值已偏贵</strong>（对一家收入负增长的设计企业）。因此本股的核心变量是<strong>新签合同额能否转正</strong>与<strong>应收账款能否回收</strong>，而非估值。</li>
+<li><strong>同行业对照</strong>：2026 中报工程咨询服务Ⅱ 行业平均每股收益 0.025 元、净利润 3,197 万元、ROE 0.39%；公司每股收益 0.13 元、净利润 3.085 亿元、ROE 1.92%——<strong>公司在行业内盈利水平显著领先</strong>，但 PB 0.76x 与行业每股净资产均值 7.20 元（公司 6.94 元）基本持平，<strong>说明市场对该行业整体给以破净定价</strong>。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏低（但非"便宜"）</strong>。现价 5.30 元对应 2026E PE 约 13.5x、PB 0.76x，破净 23.6%。<strong>破净反映的是行业下行与应收占用，属公允定价；但公司为央企设计龙头、净现金 67.58 亿元、控股股东连续三年增持，破净已提供下行缓冲。</strong></p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 6.51 元 → 空间 <strong>+22.8%</strong>，<strong>未达"重点关注"的 +50% 门槛</strong>；<br />
+- 悲观情景 3.14 元 → 下行 <strong>−40.8%</strong>，风险不对称<strong>偏负</strong>（上行 22.8% vs 下行 40.8%）；<br />
+- 乐观情景 8.78 元 → <strong>+65.7%</strong>，需「十五五」项目集中释放 + 海外占比升至 25% + 新业务贡献 + 破净修复；<br />
+- <strong>下行保护</strong>：① PB 0.76x 破净，每股净资产 6.94 元；② <strong>货币资金 67.58 亿元占市值 55.6%</strong>，净现金状态；③ 资产负债率仅 46.72%；④ 控股股东连续三年增持（累计 4.40 亿元）+ 2026 年新一期增持计划 0.8–1.6 亿元；⑤ 中期分红 + 未来三年分红规划。</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价可纳入观察，不建议立即重仓</strong>。现价 5.30 元对应 2026E PE 13.5x 属合理区间，但<strong>行业拐点未确认</strong>；<br />
+2. <strong>加仓信号（须同时满足两条以上）</strong>：① 季度新签合同额<strong>同比转正</strong>；② 经营现金流单季度转正且营业收现率持续提升；③ 应收账款/合同资产增速降至 5% 以下；④ 勘察设计毛利率止跌回升至 <strong>25% 以上</strong>；⑤ 海外收入占比提升至 <strong>10% 以上</strong>且披露具体金额；<br />
+3. <strong>更佳介入区间</strong>：<strong>4.60 元以下</strong>（对应 PB 0.66x、2026E PE &lt;11.7x）；<br />
+4. <strong>观察指标</strong>：公司季度新签合同额、住建部《全国工程勘察设计统计公报》、固定资产投资与基建投资月度数据、专项债发行与拨付进度、人民币汇率。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 应收账款减值（首要）</strong>：应收账款 <strong>115.38 亿元</strong>（占归母净资产 72.4%）、合同资产 16.03 亿元（+18.67%），客户为地方政府及平台；若按 3% 计提减值，一次性损失约 <strong>3.46 亿元</strong>（相当于 2026E 净利的 38%），<strong>可直接击穿当期利润</strong>。<br />
+2. <strong>⚠️ 人工成本刚性下的毛利率持续下滑</strong>：2026H1 综合毛利率同比 <strong>−5.81pct</strong>；收入下降 6.87% 而人工成本基本持平，<strong>该错配在收入继续下行时无法缓解</strong>；勘察设计毛利率每降 1pct，综合毛利率降约 0.71pct。<br />
+3. <strong>行业周期底部延长</strong>：2026H1 全国固投 −5.7%、基建投资 −2.4%、房地产开发投资 −18.0%；「十五五」项目落地存在审批与资金时滞，<strong>行业尚未迎来项目集中释放窗口</strong>。<br />
+4. <strong>新业务（低空、储能、智慧交通）"只有故事没有金额"</strong>：公司自述"处于培育投入期，<strong>尚未完全释放利润</strong>"；<strong>未披露任何金额、订单规模或收入贡献</strong>，若连续两年无量化进展，中期期权将归零。<br />
+5. <strong>海外业务的双重风险</strong>：汇率波动（2026H1 汇兑损失已致财务费用净收益减少 0.22 亿元）+ 地缘与履约风险（圭亚那、南苏丹、东帝汶等新兴市场）。<br />
+6. <strong>控股股东持股集中度高</strong>：中国交建及一致行动人合计控制约 58.35%，<strong>流通盘较小</strong>，股价波动可能被放大。</p>
+<h3>5.1 第五步进阶：上行想象力情景（四类，显式建模上行侧）</h3>
+<p><strong>类型A 行业调整剩者红利</strong><br />
+- 逻辑：勘察设计行业<strong>产能严重过剩</strong>（2024 年具备资质企业 28,430 个、同比 −3.1%），中小设计院因<strong>收款难、垫资、价格战</strong>加速出清；央企龙头在资质、品牌、重大项目获取能力上具备<strong>不可替代性</strong>，行业集中度将向头部提升。<br />
+- 上行锚定：若行业出清使公司份额由约 2.1% 提升至 2.5%（对应收入约 130 亿元），按 10.2% 净利率 → <strong>净利增量约 2.5 亿元</strong>；对应 2029E 净利 15.5 亿元（即乐观情景）。<br />
+- <strong>验证点</strong>：行业资质企业数继续下降、公司新签合同额增速由负转正、勘察设计毛利率止跌；<strong>证伪信号</strong>：新签合同额连续两年负增长、毛利率跌破 21%。<br />
+- <strong>该情景已部分计入乐观情景，未计入中性锚。</strong></p>
+<p><strong>类型B 政策反转期权</strong><br />
+- 具体政策名：① <strong>「十五五」规划《纲要》六大类 109 项重大工程</strong>；② <strong>「六张网」体系建设</strong>（水网、新型电网、算力网、新一代通信网、城市地下管网、物流网）；③ <strong>城市更新行动纵深推进</strong>；④ <strong>超长期特别国债 + 地方专项债</strong>（2026 年上半年实施扩张性财政政策、适度扩大政府债务规模）。<br />
+- 反转信号：专项债发行节奏加快且资金到位率提升；109 项重大工程<strong>前期规划/可研/评估招标集中释放</strong>（可跟踪交通、水利、市政类设计招标公告）；城市更新专项支持政策出台。<br />
+- 重估弹性：若项目集中释放使公司新签合同额年 +6%（对应 2029E 收入 115 亿元、净利约 15.5 亿元），叠加破净修复至 PB 1.0x（市值 159 亿元），<strong>目标价可达 8.78 元（+65.7%）</strong>。<br />
+- <strong>未过验证点（2026H1 新签仍为 −2.4%、基建投资仍为 −2.4%），仅作机会情景，不计入中性锚。</strong> 证伪信号：2027 年基建投资增速继续为负、公司新签合同额连续两年负增长。</p>
+<p><strong>类型C 市场错杀修复</strong><br />
+- 错杀证据：<strong>部分成立</strong>。公司 PB 0.76x 破净、股价自 2025-12-31 的 7.09 元跌至 2026-09-10 的 5.31 元（<strong>区间跌幅 −25.94%</strong>，最高 7.41 元 / 最低 4.62 元），而同期公司<strong>新签合同额仅 −2.4%、归母净资产基本持平（159.31 亿 → 159.32 亿）</strong>；<strong>股价跌幅远超基本面恶化幅度</strong>，且<strong>破净提供 PB 修复弹性</strong>。<br />
+- 修复触发点：① 控股股东增持持续落地（已启动 0.8–1.6 亿元计划）；② 中期分红 + 未来三年分红规划提升股息吸引力；③ 行业政策（专项债、重大工程）落地；④ Q3/Q4 回款改善使经营现金流转正。<br />
+- <strong>该情景属"估值中枢回归"，可部分计入中性偏乐观</strong>：若 PB 由 0.76x 修复至 0.85x，对应股价 5.90 元（<strong>+11.3%</strong>）；若修复至 1.0x，对应 6.94 元（<strong>+30.9%</strong>）。</p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权</strong><br />
+- 三要素检查：<br />
+  1. <strong>政策驱动技术路线</strong>：低空经济为国家级战略性新兴产业（「十五五」新兴赛道），压缩空气储能、交能融合受能源网建设驱动 → <strong>成立</strong>；<br />
+  2. <strong>行业趋势向该技术收敛</strong>：低空经济尚处<strong>标准与基础设施起步期</strong>，商业模式未定型；储能技术路线多元、成本曲线仍在竞争中 → <strong>部分成立</strong>；<br />
+  3. <strong>公司技术投产落地</strong>（硬验证点：中试良率达标 / 客户定点 / 量产成本优于旧路线）：<br />
+     - <strong>低空经济</strong>：主编《无人机工程测量技术规范》正式实施（<strong>标准卡位已过</strong>）；中标润扬大桥智慧扩容项目（<strong>首个市场化应用已过</strong>）；<strong>但未披露金额、无收入贡献</strong>；<br />
+     - <strong>OSIS 软件</strong>：通过北京市首台（套）重大技术装备认定（<strong>资质已过</strong>）；<strong>未披露商业化收入</strong>；<br />
+     - 压缩空气储能、智慧交通：<strong>均未披露项目金额与客户定点</strong>。<br />
+- <strong>结论：三要素中"技术投产落地"仅部分满足（标准与首单已过、金额与收入未过），按规则仅作"机会情景"，不计入中性锚。</strong> 证伪信号：低空/储能订单连续两年无金额披露、无收入贡献。</p>
+<p><strong>什么条件出现才把结论上调至"重点关注"</strong>：<br />
+- 需<strong>同时</strong>满足：① 季度新签合同额<strong>同比转正且连续两期</strong>；② 2026 全年归母 ≥9.0 亿元、经营现金流全年降幅收窄或转正；③ 勘察设计毛利率止跌回升至 <strong>25% 以上</strong>；④ 海外收入占比提升至 <strong>10% 以上</strong>并披露具体金额；⑤ 低空经济/储能业务披露<strong>单笔 ≥1 亿元</strong>的合同金额。<br />
+- <strong>下调至"暂不介入"的触发</strong>：应收账款减值计提超 3 亿元；勘察设计毛利率跌破 21%；新签合同额连续两年负增长超 5%；经营现金流连续两年净流出超 20 亿元。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>+22.8%</strong>（远期目标价 6.51 元），悲观情景下行 −40.8%，<strong>风险不对称偏负</strong>，不满足"重点关注"的 &gt;50% 门槛。<br />
+公司质地扎实：<strong>A 股规模最大的基建设计咨询央企龙头</strong>（6 家甲级院、8 名全国勘察设计大师、深中通道国家科技进步一等奖）、<strong>PB 0.76x 破净 + 货币资金 67.58 亿元占市值 55.6% + 资产负债率 46.72% + 控股股东连续三年增持</strong>，<strong>下行保护明确</strong>。<br />
+<strong>但当前处于行业周期底部且拐点未确认</strong>：2026H1 营收 −6.87%、归母 −44.84%、毛利率 −5.81pct、经营现金流 −14.65 亿元、应收 115.38 亿元（占净资产 72.4%）；「十五五」政策方向明确但<strong>落地存在时滞</strong>。<br />
+<strong>核心矛盾</strong>：破净是"公允定价"而非"错杀"——ROE 从 13.11%（2024）降至 1.92%（2026H1 年化 5.6%），<strong>PB 0.76x 对应 ROE 5.6% 已属合理</strong>；真正的机会在于<strong>周期向中枢回归（净利 9.0 亿 → 13.0 亿）与 PB 修复</strong>，而非"便宜"。<br />
+<strong>核心跟踪点</strong>：① 季度新签合同额能否转正；② 应收账款/合同资产增速与减值计提；③ 经营现金流与营业收现率；④ 勘察设计毛利率；⑤ 海外收入占比与金额披露；⑥ 低空经济/储能订单金额。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>5.30 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.49 元</strong>（区间 4.62–5.90，2026E 归母 9.0 亿元×14x）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+3.6%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>6.51 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+22.8%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 3.14 元（−40.8%）～ 乐观 8.78 元（+65.7%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>央企基建设计龙头 PB 0.76x 破净 + 净现金 67.58 亿元，周期底部净利 9 亿向中枢 13 亿回归，但应收 115 亿与人工刚性压制弹性</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（4.60 元以下或季度新签转正+现金流转正再考虑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：中交设计 2026 年半年度报告及摘要（2026-08-28 披露）、2025 年年度报告、2024 年年度报告、2026-03-31《关于重大资产重组事项之标的资产业绩承诺期满减值测试情况的公告》、2026 年 9 月投资者关系活动记录表、公司官网与百度百科公司资料、长江证券《中交设计（600720）：业绩阶段承压 海外订单快速增长》（2026-09-10）、证券时报《中交设计：战略定力穿越周期，高分红与股东增持彰显发展信心》、国家统计局 2026 年上半年固定资产投资数据、住房城乡建设部《全国工程勘察设计统计公报》、中设咨询/中诚咨询 2026 年半年度报告行业章节、《中华人民共和国国民经济和社会发展第十五个五年规划纲要》「六张网」相关表述、腾讯行情接口（2026-09-09 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
