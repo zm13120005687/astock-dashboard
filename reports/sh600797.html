@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>浙大网新（600797）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>浙大网新（600797）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-11 ｜ 现价 <strong>6.77 元</strong>（2026-09-10 收盘）｜ 总市值 <strong>69.56 亿</strong> ｜ PE(TTM) <strong>−69.80x</strong> ｜ PB <strong>2.18x</strong> ｜ 总股本 <strong>约 10.27 亿股</strong><br />
+行业：电子信息（软件与信息技术服务 / 智算云服务）｜ 板块：上交所主板 ｜ 第一大股东：<strong>浙江网新集团有限公司持股仅 6.30%</strong>（6475 万股），<strong>无控股股东、无实际控制人</strong><br />
+每股净资产约 <strong>3.11 元</strong>（PB 口径反推；2026Q1 披露 3.22 元），归母净资产约 <strong>31.9 亿元</strong>；2025 年资产负债率 <strong>35.87%</strong>、有息负债 6.16 亿元；2026Q1 资产负债率 33.40%、有息负债率 27.93%；<strong>母公司前身系浙江大学产业体系，品牌与"浙大"深度绑定</strong></p>
+<p><strong>亏损股确认</strong>：以真实最新财报为准，公司 <strong>2026 年半年报归母净利 −5947.94 万元、扣非 −4158.26 万元，为亏损</strong>；队列"亏损"列标注正确。本文按亏损股口径完整执行五步法并用<strong>正常化净利润法</strong>估值，同时显式回答"为什么亏 / 靠什么扭亏 / 亏得起吗"三问。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：浙江大学产业体系衍生的<strong>数智化 IT 服务商</strong>——以"AI 向实，智序共生"为战略，用产业数智化（软件外包与技术服务）守规模、用<strong>智算云服务</strong>（IDC + 算力租赁 + 云资源加速）博增量，客户横跨政府、基建、金融、能源、新零售。</p>
+<p><strong>各业务板块营收占比（2026 年半年报，营收 14.7215 亿元）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>业务属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>产业数智化</strong></td>
+<td>8.13 亿</td>
+<td><strong>55.24%</strong></td>
+<td><strong>12.26%</strong></td>
+<td>金融科技、能源数智化、新零售、智慧教育、软件评测、用户体验设计、IT 运维——低毛利、规模大</td>
+</tr>
+<tr>
+<td><strong>基建数智化</strong></td>
+<td>2.71 亿</td>
+<td>18.42%</td>
+<td>14.43%</td>
+<td>智能交通（高铁车站、公路桥梁、城市隧道、机场）、地下综合管廊、智慧建筑</td>
+</tr>
+<tr>
+<td><strong>政府数智化</strong></td>
+<td>2.05 亿</td>
+<td>13.93%</td>
+<td><strong>41.24%</strong></td>
+<td>智慧人社、智慧医保、信用服务、智慧监管、智慧城管、智慧就业</td>
+</tr>
+<tr>
+<td><strong>智算云服务</strong></td>
+<td>1.57 亿</td>
+<td>10.68%</td>
+<td>17.64%</td>
+<td>算网融合服务、AI 综合应用服务、IDC 托管、云计算及互联网资源加速</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>14.72 亿</td>
+<td>100%</td>
+<td><strong>18.08%</strong></td>
+<td>综合毛利率同比 +0.47pct</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品/服务</strong>：<br />
+- <strong>智算云</strong>：自有算力租赁（客户含<strong>同花顺、浙江大学</strong>）；<strong>IDC 托管</strong>——与<strong>阿里巴巴 ZH12 数据中心项目</strong>取得突破性进展，<strong>第三大模块商务合同正式落地，锁定期 10 年，合约周期内预计实现含税营收 4.48 亿元</strong><br />
+- <strong>AI 平台</strong>：以"<strong>灵犀</strong>"智能体平台为蓝本推进 <strong>Skills 中心</strong>开发与<strong>仓颉系统</strong>落地，将高频工作场景封装为标准化 Skill<br />
+- <strong>AI 架构</strong>：海外子品牌"<strong>Horizon8</strong>"发布《从超级个体到超级组织：原生 AI 软件开发新范式》白皮书<br />
+- 传统交付：智慧政务、智慧金融、智慧能源、智能终端、第三方软件评测</p>
+<p><strong>主要客户/下游领域</strong>：政府部门（人社、医保、信用、城管）、交通运输（高铁站、公路桥梁、隧道、机场）、金融（金融科技）、能源（能源数智化）、新零售、教育；智算云客户为<strong>同花顺、浙江大学、阿里巴巴</strong>。</p>
+<p><strong>境内外收入占比</strong>：以境内为主；设海外子品牌 Horizon8，承接<strong>高端咨询、研究与应用开发、用户体验设计、系统重构、测试与质量保证、IT 运维</strong>等全球产业客户服务（公司未单独披露境内外拆分，<strong>构成数据缺口</strong>）。</p>
+<p><strong>股权特征（关键）</strong>：<strong>无控股股东、无实际控制人</strong>，第一大股东浙江网新集团仅持股 <strong>6.30%</strong>；周文彬 1.29%、香港中央结算 0.88%、吕强 0.74%、史烈 0.38%。→ 治理层面<strong>缺乏强控制人</strong>，既意味着战略灵活，也意味着<strong>战略连续性与资产注入预期不可依赖</strong>。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>国家级强驱动，已在执行</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026 年《政府工作报告》</td>
+<td>国务院</td>
+<td>2026 年 3 月</td>
+<td>国家级</td>
+<td>明确"<strong>实施超大规模智算集群、算电协同等新基建工程，加强全国一体化算力监测调度，支持公共云发展</strong>"；<strong>"算电协同"首次写入政府工作报告</strong></td>
+</tr>
+<tr>
+<td>《关于组织开展国家算力互联互通节点建设工作的通知》</td>
+<td><strong>工业和信息化部办公厅</strong></td>
+<td><strong>2026 年 2 月</strong></td>
+<td>部门专项</td>
+<td>部署"<strong>1+M+N</strong>"国家算力互联互通节点体系</td>
+</tr>
+<tr>
+<td>《关于在政府采购中实施本国产品标准及相关政策的通知》</td>
+<td>财政部等</td>
+<td><strong>2026-01-01 起施行</strong></td>
+<td>部门级</td>
+<td>政府采购对符合条件的<strong>本国产品给予 20% 价格评审优惠</strong></td>
+</tr>
+<tr>
+<td>《关于促进人工智能与能源双向赋能的行动方案》</td>
+<td>国家发展改革委、国家能源局、工信部、国家数据局<strong>四部门联合</strong></td>
+<td><strong>2026 年 4 月</strong></td>
+<td>部门联合</td>
+<td>围绕"保障算力设施安全可靠能源供给、推动绿色低碳转型、完善绿电直连政策"部署 <strong>20 余项</strong>重点任务</td>
+</tr>
+<tr>
+<td>《关于深入实施"人工智能+"行动的意见》</td>
+<td>中共中央、国务院</td>
+<td>延续执行</td>
+<td>最高级</td>
+<td>"人工智能+"上升为国家战略</td>
+</tr>
+<tr>
+<td>《安全可靠测评结果公告（2026 年第 2 号）》</td>
+<td>中国信息安全测评中心、国家保密科技测评中心</td>
+<td>2026 年</td>
+<td>部门级</td>
+<td><strong>首次将"人工智能训练推理芯片"纳入国家安全可靠测评体系</strong>，<strong>7 家企业 9 款国产 AI 芯片全部获评 I 级</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国智能算力规模（工信部实测）</td>
+<td>截至 <strong>2026 年 6 月末达 2185 EFLOPS（FP16），同比增长 177%</strong>；全国算力设施整体上架率 <strong>71.4%</strong></td>
+<td>工信部</td>
+</tr>
+<tr>
+<td>中国智能算力规模（第三方预测）</td>
+<td>2026E <strong>1180 EFLOPS</strong>（2024 年 725.3 EFLOPS、2025 年约 1037.3 EFLOPS）</td>
+<td>中商产业研究院/IDC</td>
+</tr>
+<tr>
+<td>中国 AIDC（智算中心）市场规模</td>
+<td>2026E <strong>1778 亿元</strong> → 2030 年接近 <strong>4000 亿元</strong></td>
+<td>中商产业研究院</td>
+</tr>
+<tr>
+<td>中国算力租赁市场规模</td>
+<td>2026E <strong>2600 亿元</strong>（赛迪研究院预测）</td>
+<td>赛迪研究院</td>
+</tr>
+<tr>
+<td>中国智能算力服务市场规模</td>
+<td>2025 年突破 <strong>1300 亿元</strong></td>
+<td>中国信通院</td>
+</tr>
+<tr>
+<td>全国智能算力调度接入</td>
+<td>截至 2026 年 3 月末总规模 <strong>188 万 PFLOPS（FP16）</strong>，国家级监测调度平台已接入 <strong>137 万 PFLOPS（约 72%）</strong></td>
+<td>国家数据局</td>
+</tr>
+<tr>
+<td>全球算力租赁市场</td>
+<td>到 2026 年将突破 <strong>800 亿美元</strong>，年增长超 25%</td>
+<td>IDC</td>
+</tr>
+<tr>
+<td>我国人工智能核心产业规模</td>
+<td>2025 年突破 <strong>1.2 万亿元</strong>，AI 相关企业超 <strong>6200 家</strong>；2026 年相关产业增速预计 30% 以上</td>
+<td>工信部、国家发改委</td>
+</tr>
+<tr>
+<td>国产 AI 加速卡份额</td>
+<td>2025 年出货约 <strong>400 万片</strong>，国产厂商 <strong>165 万片、占比 41%</strong></td>
+<td>IDC</td>
+</tr>
+<tr>
+<td>互联网行业（下游）</td>
+<td>2026Q1 规模以上互联网和相关服务企业收入 <strong>5027 亿元，同比增长 10.6%</strong></td>
+<td>工信部</td>
+</tr>
+<tr>
+<td>公司智算云量价</td>
+<td><strong>2026H1 收入 1.57 亿元，毛利率 17.64%</strong>；ZH12 第三大模块 10 年锁定、合约期含税营收 <strong>4.48 亿元</strong>（≈0.45 亿元/年）</td>
+<td>公司半年报</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：<br />
+- 营收 <strong>14.72 亿元（−5.91%）</strong>；归母 <strong>−0.5948 亿元</strong>（上年同期 −0.1507 亿元）<br />
+- <strong>扣非 −0.4158 亿元，同比减亏 789.61 万元</strong>——主业在改善<br />
+- <strong>综合毛利率 18.08%（+0.47pct）</strong>；<strong>Q2 单季毛利率 20.20%（同比 +3.88pct、环比 +4.49pct）</strong><br />
+- <strong>Q2 单季归母 −0.1189 亿元、扣非 −0.0610 亿元</strong>（环比 +82.79%、同比 +34.2%）——<strong>已逼近盈亏平衡</strong><br />
+- <strong>非经常性损益 −1789.68 万元</strong>，其中<strong>公允价值变动收益 −4223.73 万元</strong>（上年同期 +2845.78 万元，同比减少 <strong>7069.51 万元</strong>）——<strong>这是亏损的第一主因，且属资产端而非主业</strong><br />
+- 经营现金流净额 <strong>−1.49 亿元</strong>（上年同期 −0.6931 亿元），<strong>现金流恶化需警惕</strong></p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：AI 芯片（GPU/ASIC）、服务器、网络与存储设备、供配电与制冷系统、电价。公司作为<strong>算力运营方</strong>，上游是"芯片 + 电力"——算力涨价（阿里云 2026 年 AI 算力、存储等产品<strong>最高涨价 34%</strong>）说明上游供给紧张，公司作为<strong>持有算力资源的运营方受益于租金上行</strong>，但自建 IDC 也承受电价与折旧压力。</p>
+<p><strong>下游</strong>：政府（智慧政务）、交通基建（智能交通）、金融、能源、新零售。政府与基建客户付款周期长（2026H1 应收账款周转率 0.77 次），是<strong>现金流 −1.49 亿元的直接原因</strong>。</p>
+<p><strong>议价权判断</strong>：<strong>中等偏弱</strong>。佐证：①产业数智化（占收入 55.24%）毛利率仅 <strong>12.26%</strong>，属软件外包/交付型业务，<strong>典型买方强势</strong>；②政府数智化毛利率 <strong>41.24%</strong> 显著最高，但收入仅占 13.93%，且回款慢；③智算云毛利率 17.64%，与阿里 ZH12 的 10 年锁定合约说明<strong>公司以长约换稳定、让渡了部分议价权</strong>。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<blockquote>
+<p>本公司无实体原材料，其"原料"是<strong>算力（芯片 + 电力 + 机柜）与人力</strong>，四因子框架对应改写为"<strong>算力成本 → 毛利结构</strong>"。</p>
+</blockquote>
+<ul>
+<li><strong>因子 1 成本传导弹性（转嫁系数）</strong>：<strong>智算云 ≈ 0.7</strong>——算力供不应求（2026H1 智能算力规模同比 +177%、上架率 71.4%），租金可随行就市上行，成本上涨可大部分转嫁；<strong>产业数智化 ≈ 0.15</strong>——软件外包为招投标定价，人力成本上涨无法转嫁（2026H1 毛利率仅 12.26%）；<strong>政府数智化 ≈ 0.5</strong>——政府项目按预算定额，成本超支自担。<strong>加权转嫁系数约 0.28</strong>，意味着人力/算力成本每上涨 10%，公司综合毛利承压约 <strong>7%</strong>——这是"规模 30 亿但净利率近零"的根源。</li>
+<li><strong>因子 2 毛利结构再平衡（分业务线）</strong>：<strong>四条线毛利率相差 3.4 倍</strong>（产业数智化 12.26% → 政府数智化 41.24%）。<strong>结构迁移方向至关重要</strong>：①产业数智化占比 55.24% 且毛利率最低，是<strong>盈利最大拖累</strong>；②智算云占比 10.68%、毛利率 17.64% 且为<strong>唯一具备量级弹性的业务</strong>（ZH12 单一模块 10 年 4.48 亿元含税）；③政府数智化毛利率最高但受财政预算与回款制约。→ <strong>第四步必须按四条业务线分别测算，绝不能用 18.08% 的综合毛利率代表全结构。</strong> 若智算云占比从 10.68% 升至 25%，加权毛利率可提升约 2pct、净利率可提升约 4pct（弹性极大）。</li>
+<li><strong>因子 3 库存与采购节奏（timing）</strong>：无实体库存（2026H1 存货周转率 1.59 次，主要为在施项目）。真正的 timing 项是<strong>算力资产的折旧与租约锁定</strong>：ZH12 第三大模块<strong>锁定期 10 年</strong>，等于用<strong>长期折旧刚性</strong>换<strong>长期收入确定性</strong>——报表上会先出现"收入分期确认 + 折旧前置"的<strong>负向 timing</strong>。此外，公司持有的<strong>金融资产公允价值波动</strong>（2026H1 −4223.73 万元）属纯资产端 timing，<strong>必须与主业毛利严格分离，不得当作经营趋势</strong>。</li>
+<li><strong>因子 4 政策/市场锚点（成本/需求驱动变量）</strong>：</li>
+<li><strong>政策层</strong>：算电协同写入政府工作报告（2026）、工信部"1+M+N"算力互联互通节点（2026-02）、政府采购本国产品 20% 价格评审优惠（2026-01-01）、四部门 AI 与能源双向赋能行动方案（2026-04）、国产 AI 芯片纳入安全可靠测评（7 家 9 款获 I 级）</li>
+<li><strong>市场层</strong>：智能算力规模 2185 EFLOPS（2026-06，同比 +177%）、上架率 71.4%、算力租赁市场 2026E 2600 亿元、阿里云 AI 算力最高涨价 34%（成本/价格双向信号）</li>
+<li><strong>情景假设</strong>：中性假设智算云收入由 2026 年约 3.2 亿元升至 2029 年 6.0 亿元（ZH12 模块 2 贡献 + 自有算力租赁扩租），毛利率由 17.64% 升至 20%</li>
+<li><strong>可观测验证点</strong>：公司智算云分季度收入与毛利率、ZH12 其他模块签约公告、同花顺/浙大等客户续约与新增、IDC 机柜上架率</li>
+<li><strong>证伪信号</strong>：智算云收入连续两季环比下滑或毛利率跌破 15%；ZH12 后续模块无签约；算力租赁价格转为下行（供过于求）</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>进度与状态</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阿里 ZH12 数据中心第三大模块</strong></td>
+<td>IDC 托管，<strong>锁定期 10 年</strong></td>
+<td><strong>合约周期内含税营收 4.48 亿元（≈0.45 亿元/年）</strong></td>
+<td><strong>商务合同正式落地</strong></td>
+<td>2026–2036 分期确认</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>自有算力租赁</strong></td>
+<td>与<strong>同花顺、浙江大学</strong>等重点客户达成合作</td>
+<td>未披露</td>
+<td>已签约运营中</td>
+<td>2026–2029</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>智算云服务扩容</td>
+<td>算网融合 + AI 综合应用 + 云计算/互联网资源加速</td>
+<td>2026H1 收入 1.57 亿元</td>
+<td>已运营</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td>"灵犀"智能体平台 / Skills 中心 / 仓颉系统</td>
+<td>AI 提效内部工具与对外标准化 Skill</td>
+<td>未披露</td>
+<td>开发与落地中</td>
+<td>2026–2028（先降本后创收）</td>
+<td>中</td>
+</tr>
+<tr>
+<td>Horizon8 原生 AI 软件新范式</td>
+<td>海外子品牌，AI 原生运营体系</td>
+<td>未披露</td>
+<td>白皮书发布阶段</td>
+<td>2027 年后</td>
+<td>低</td>
+</tr>
+<tr>
+<td>数智政务/金融/能源智能应用</td>
+<td>政府数智化（毛利率 41.24%）</td>
+<td>2026H1 收入 2.05 亿元</td>
+<td>已运营</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td>标准化智能终端与产品</td>
+<td>智能终端产品打造</td>
+<td>未披露</td>
+<td>推进中</td>
+<td>2027 年后</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：金融资产/参股重估</td>
+<td>直接和间接投资的金融资产</td>
+<td>2026H1 公允价值变动 <strong>−4223.73 万元</strong></td>
+<td><strong>波动项，中性与负值互现</strong></td>
+<td>—</td>
+<td>不可预测</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>关键提示</strong>：公司增量中<strong>只有 ZH12 第三大模块是可量化的确定项（0.45 亿元/年含税营收，10 年）</strong>；其余均为"未披露金额"的开发或洽谈项。这决定了中性情景的收入弹性有限——<strong>从 2026 年约 31 亿元收入到 2029 年约 33.5 亿元，三年仅增约 8%</strong>，利润弹性主要来自业务结构（智算云+政府数智化占比提升）而非规模。</p>
+</blockquote>
+<h4>第三步进阶：份额变量与主业迁移空间（增量拆解三层法）</h4>
+<p><strong>层 1 现有业务：市场容量 × 份额变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>保守（守住）</th>
+<th>中性（小幅提升）</th>
+<th>乐观（抢份额）</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①供给侧份额</td>
+<td>IDC 机柜规模、自有算力规模未披露，属<strong>区域中小玩家</strong>（行业头部为润泽、光环新网、万国数据、三大运营商）</td>
+<td>守住 ZH12 现有模块</td>
+<td>竞得 ZH12 后续模块或新增第三方 IDC 客户</td>
+<td>签约公告、上架率</td>
+</tr>
+<tr>
+<td>②客户份额</td>
+<td>智算云客户为<strong>同花顺、浙江大学</strong>（集中度高，认证即粘性）</td>
+<td>新增 1–2 家头部客户</td>
+<td>承接阿里更多模块/云厂商混合部署</td>
+<td>客户名单与合同公告</td>
+</tr>
+<tr>
+<td>③技术代际差</td>
+<td>IT 服务为<strong>成熟代</strong>，无代际领先；AI 应用侧"灵犀"，国内同质化严重</td>
+<td>持平</td>
+<td>Skills 标准化形成交付效率壁垒</td>
+<td>交付周期、人均产出</td>
+</tr>
+<tr>
+<td>④成本曲线位置</td>
+<td>人力成本刚性（产业数智化毛利率 12.26%），成本曲线无优势</td>
+<td>靠 AI 提效降本 3–5%</td>
+<td>AI 替代使毛利率提升 5pct 以上</td>
+<td>毛利率、人均营收</td>
+</tr>
+<tr>
+<td>⑤份额二阶导</td>
+<td>产业数智化收入 8.13 亿、三年基本在 30 亿元总收入量级徘徊，<strong>已饱和</strong></td>
+<td>智算云占比 10.68%→15%</td>
+<td>智算云占比→25%</td>
+<td>分业务占比季度变化</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三档次锚定</strong>：保守 = 智算云占比维持 10–12%；中性 = 升至 15–18%；乐观 = 达 25% 以上。</p>
+<p><strong>层 2 扩展业务：主业迁移空间（新易盛范式）</strong>——<strong>从"IT 项目交付"迁移到"AI 原生 + 算力运营"</strong><br />
+1. <strong>能力可迁移性</strong>：<strong>中等偏高</strong>。三十年软件工程、数据治理、行业 Know-how 与 AI 应用开发<strong>技术同源</strong>，迁移成本低；但<strong>算力运营（IDC/电力）与软件交付能力不同源</strong>，需重资产投入。<br />
+2. <strong>新 TAM 弹性</strong>：<strong>极大</strong>。中国 AIDC 市场 2026E 1778 亿元、算力租赁 2026E 2600 亿元，均远超公司当前 69.56 亿元市值所对应的 IT 服务市场。<br />
+3. <strong>切入时点与卡位</strong>：<strong>中期、非早期</strong>。IDC 与算力租赁已进入资本开支高峰（2026 年为算力资本开支"元年"），公司体量小、<strong>卡位偏后</strong>；但"阿里 ZH12 第三大模块 10 年锁定"是<strong>稀缺的可信卡位证据</strong>。<br />
+4. <strong>客户认证门槛</strong>：<strong>高</strong>。阿里 IDC 合格供应商认证、同花顺/浙大算力客户认证、政府项目资质——<strong>既是护城河也是扩张阻力</strong>（认证周期长）。<br />
+5. <strong>信号验证</strong>：<strong>部分达标</strong>——ZH12 第三大模块商务合同已落地（明确金额与锁定期）✓；但<strong>未披露自有算力规模、未披露同花顺/浙大合同金额、未见第二/第三模块签约</strong> → <strong>整体未过验证点，迁移空间只作中期期权，不计入中性情景</strong>。</p>
+<p><strong>层 3 风险折扣：证伪信号</strong><br />
+- 智算云收入连续两季环比下滑或毛利率跌破 15%<br />
+- ZH12 后续模块两年内无签约 → 迁移假设作废<br />
+- 应收账款周转率继续下滑（2026H1 已仅 0.77 次）、经营现金流持续为负<br />
+- 金融资产公允价值继续大幅波动、侵蚀净资产<br />
+- 产业数智化毛利率跌破 10%（软件外包价格战）</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<p><strong>总股本：约 10.27 亿股</strong>；归母净资产约 <strong>31.9 亿元</strong>（BPS 约 3.11 元）。</p>
+<blockquote>
+<p><strong>方法说明</strong>：公司当前<strong>主业净利近零、报表亏损</strong>，PE 分母无意义，故采用<strong>正常化净利润法</strong>（估稳态营收 → 保守正常化净利率 → × 远期合理 PE → 目标市值 → 目标价），并以 <strong>PB 法交叉校验</strong>。所有假设均由 ZH12 模块金额、分业务收入与毛利率、认证客户名单等结构性变量推导。</p>
+</blockquote>
+<h3>亏损股三问</h3>
+<p><strong>① 为什么亏？</strong><br />
+<strong>（a）资产端一次性冲击（第一主因）</strong>：2026H1 <strong>公允价值变动收益 −4223.73 万元</strong>，而上年同期为 <strong>+2845.78 万元</strong>——同比减少 <strong>7069.51 万元</strong>，直接吞掉全部主业改善。公司明确表述"受证券市场股价波动等因素影响，公司直接和间接投资的金融资产公允价值变动损失较大"。<strong>（b）主业净利率极薄（结构性）</strong>：30 亿元级收入、综合毛利率仅 18.08%，而占收入 55.24% 的产业数智化毛利率仅 <strong>12.26%</strong>，典型的软件外包/交付型业务，扣非连续两年为负（2024 年 −0.9699 亿元、2025 年 −0.7077 亿元）。<strong>（c）回款与现金流拖累</strong>：2026H1 应收账款周转率仅 0.77 次，政府/基建客户付款周期长，经营现金流 <strong>−1.49 亿元</strong>（上年同期 −0.6931 亿元），财务费用与减值压力上升。</p>
+<p><strong>② 靠什么扭亏？触发时点哪一年？</strong><br />
+三条具体路径：<br />
+- <strong>路径一（2026H2–2027，最确定）——主业扣非转正</strong>：2026Q2 单季扣非已收敛至 <strong>−610.41 万元</strong>（环比 +82.79%、同比 +34.2%），毛利率连续两季回升（Q2 20.20%，同比 +3.88pct）；叠加人员结构优化与 AI 提效，扣非有望在 <strong>2027 年实现单季转正</strong>。<br />
+- <strong>路径二（2026–2036，可量化）——ZH12 锁定收入</strong>：阿里 ZH12 第三大模块商务合同落地，<strong>锁定期 10 年、合约期含税营收 4.48 亿元（≈0.45 亿元/年）</strong>，是稳定、可预测的现金流贡献；后续模块若签约则进一步放大。<br />
+- <strong>路径三（2027–2029，弹性最大）——智算云毛利率与占比双升</strong>：智算云 2026H1 收入 1.57 亿元、毛利率 17.64%；若收入升至 6 亿元、毛利率升至 20%，可贡献毛利 1.2 亿元（相当于 2026H1 全公司毛利的 45%）。<br />
+<strong>触底年 = 2026 年（归母仍亏约 0.55 亿元），扣非扭亏年 = 2027 年，归母稳定盈利年 = 2028 年。</strong><br />
+<strong>唯一不可预测项</strong>：金融资产公允价值变动（2026H1 −4223.73 万元）不由经营决定，任何"扭亏年"判断都可能被该科目推翻。</p>
+<p><strong>③ 亏得起吗？</strong><br />
+<strong>亏得起，但现金流质量在恶化</strong>：①<strong>资产负债率仅 35.87%</strong>（2026Q1 为 33.40%），有息负债 6.16 亿元、有息负债率 27.93%——<strong>杠杆不高</strong>；②<strong>归母净资产 31.9 亿元</strong>，即便按当前年亏 0.55–1.5 亿元速度，<strong>可支撑 20 年以上</strong>，不存在资不抵债风险；③2025 年经营现金流 <strong>+4.20 亿元</strong>、每股经营现金流 0.41 元，历史上具备造血能力；④但 <strong>2026H1 经营现金流 −1.49 亿元</strong>（同比恶化 115%），叠加自由现金流为负，需持续跟踪；⑤<strong>无控股股东</strong>，治理上缺少强势资本方托底，融资便利性弱于国资平台。<br />
+→ <strong>结论：生存无忧（离"倒下"极远），核心矛盾是"能否盈利"而非"能否存活"。</strong></p>
+<h3>分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>自下而上测算依据</th>
+<th>2029E 收入</th>
+<th>毛利率</th>
+<th>期间费用后净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>智算云服务</strong></td>
+<td>ZH12 第三大模块（10 年 4.48 亿含税 ≈0.45 亿/年）+ 后续模块与自有算力租赁扩租 + 算力租金随行就市</td>
+<td><strong>6.00 亿</strong></td>
+<td>20%（2026H1 17.64%，随规模与上架率提升）</td>
+<td>16%</td>
+<td><strong>0.96 亿</strong></td>
+</tr>
+<tr>
+<td><strong>产业数智化</strong></td>
+<td>2026H1 8.13 亿 → 全年约 16.5 亿，价格竞争激烈、靠 AI 提效守规模</td>
+<td><strong>17.50 亿</strong></td>
+<td>14%</td>
+<td>3%</td>
+<td><strong>0.53 亿</strong></td>
+</tr>
+<tr>
+<td><strong>基建数智化</strong></td>
+<td>智能交通、管廊、智慧建筑，受基建投资下行压制</td>
+<td><strong>5.50 亿</strong></td>
+<td>15%</td>
+<td>3%</td>
+<td><strong>0.17 亿</strong></td>
+</tr>
+<tr>
+<td><strong>政府数智化</strong></td>
+<td>毛利率最高（41.24%），受财政预算与"六张网"数智化需求支撑</td>
+<td><strong>4.50 亿</strong></td>
+<td>40%</td>
+<td>13%</td>
+<td><strong>0.59 亿</strong></td>
+</tr>
+<tr>
+<td>投资收益 / 公允价值（正常化）</td>
+<td>剔除波动，按正常年份取保守正值</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>0.10 亿</strong></td>
+</tr>
+<tr>
+<td>减：总部/财务费用与少数股东</td>
+<td>有息负债 6.16 亿元利息 + 总部管理</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>−1.03 亿</strong></td>
+</tr>
+<tr>
+<td><strong>归母净利（中性）</strong></td>
+<td></td>
+<td><strong>约 33.50 亿</strong></td>
+<td>加权约 22%</td>
+<td>约 3.9%</td>
+<td><strong>约 1.32 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束校验</strong>：智算云 6.00 亿元收入需对应约 6 亿元的 IDC+算力资产规模。公司<strong>未披露自有算力规模与机柜数</strong>——<strong>这是本报告最大的数据缺口</strong>，也是智算云假设的主要不确定源。因此本章对该线给出悲观（不达产）与乐观（超额）双边界。</p>
+<p><strong>一次性因素剔除</strong>：①2026H1 公允价值变动 −4223.73 万元（及上年同期 +2845.78 万元）已剔除；②非经常性损益 −1789.68 万元已剔除；③ZH12 大额合约的<strong>分期确认节奏</strong>按直线法假设，不前置确认。</p>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 <strong>−0.5948 亿元</strong>、扣非 −0.4158 亿元；Q2 扣非已收敛至 −0.0610 亿元</li>
+<li>H2 按 Q2 收敛节奏小幅改善 + 金融资产公允价值不再出现大额损失，给 0.0 至 +0.05 亿元</li>
+<li><strong>2026E 归母 −0.60 至 −0.50 亿元，取 −0.55 亿元（仍为亏损）</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 归母</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>智算云不达产、ZH12 无后续模块；产业数智化毛利率跌破 10%；政府项目回款继续恶化</td>
+<td>0.40 亿</td>
+<td>25x</td>
+<td>10.0 亿 → 取 <strong>PB 1.2x×30 亿 = 36.0 亿</strong></td>
+<td><strong>3.50 元</strong></td>
+<td><strong>−48.3%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>智算云升至 6 亿元、毛利率 20%；政府数智化稳增；AI 提效使产业数智化净利率转正；金融资产波动正常化</td>
+<td><strong>1.32 亿</strong></td>
+<td><strong>45x</strong></td>
+<td>59.4 亿</td>
+<td><strong>5.78 元</strong></td>
+<td><strong>−14.6%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>智算云收入达 10 亿元、毛利率 22%（新增 1–2 个阿里模块 + 自有算力翻倍）；AI 原生交付形成效率壁垒、产业数智化净利率升至 5%</td>
+<td>3.00 亿</td>
+<td>35x</td>
+<td>105.0 亿</td>
+<td><strong>9.80 元</strong></td>
+<td><strong>+44.8%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>−0.55 亿（仍亏损）</td>
+<td>1.32 亿（正常化）</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损期无意义）→ <strong>PB 1.7x</strong></td>
+<td>45x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>53.9 亿（PB 口径）</td>
+<td>59.4 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>5.25 元</strong></td>
+<td><strong>5.78 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验（本股最关键的定价事实）</strong>：现价 6.77 元对应 <strong>PB 2.18x</strong>（净资产 31.9 亿元、ROE 接近 0）、2026E PE 无意义（仍亏损）。同业对照：<strong>光环新网 PB 1.68x（PE −24.51x）、同方股份 PB 1.46x（PE 92.71x）、科大讯飞 PB 4.16x（PE 107.57x）、昆仑万维 PB 3.84x（PE 162.12x）</strong>。<strong>关键推论</strong>：若公司在 2029 年实现正常化归母 1.32 亿元，则<strong>当前 69.56 亿元市值对应 PE 将高达 52.7x</strong>——即"<strong>盈利兑现了，但估值倍数无法维持</strong>"。这正是本股的核心矛盾：<strong>当前股价隐含的是数十倍于正常化盈利的估值，靠的是"AI 算力"题材而非已实现的盈利</strong>。PB 2.18x 也显著高于 IDC 同业光环新网（1.68x）与 IT 服务同方股份（1.46x）。</p>
+<h4>第四步进阶：重资产 / 周期股估值校正（三道闸）</h4>
+<ul>
+<li><strong>校正 1 资产质量折扣（破净原因说明）</strong>：公司 <strong>PB 2.18x，未破净</strong>，不适用"破净即低估"证伪；相反，<strong>PB 2.18x 对应 ROE ≈ 0（2026H1 ROE −1.79%）属"高 PB + 零 ROE"组合</strong>，存在估值向下回归风险。资产质量层面的两点正面因素：①资产负债率仅 <strong>35.87%</strong>，有息负债 6.16 亿元，<strong>资产结构不重、无高杠杆风险</strong>；②IDC 与算力设备为<strong>通用性较强</strong>资产（机柜、服务器可转租/转售），清算价值优于专用产线。两点负面因素：①<strong>应收账款周转率仅 0.77 次</strong>，政府/基建应收账款的<strong>回收质量存疑</strong>（隐含坏账风险）；②<strong>ZH12 合约 10 年锁定期</strong>意味着算力资产被<strong>长周期绑定</strong>，一旦技术代际更替（芯片换代），资产的账面价值可能高于实际可用价值。<strong>禁止单凭"净资产 31.9 亿元"推导安全边际。</strong></li>
+<li><strong>校正 2 周期位置校正</strong>：公司<strong>非强周期股</strong>，但受<strong>两个外部周期叠加</strong>：①<strong>AI 算力资本开支周期</strong>——2026 年是国内算力资本开支"元年"，处<strong>上行早中期</strong>（智能算力规模同比 +177%、上架率 71.4%），对新进入者最为友好；②<strong>政府/基建 IT 支出周期</strong>——处<strong>下行</strong>（2026H1 基建投资同比 −2.4%、房地产开发投资 −18.0%，地方政府 IT 预算承压）。<strong>当前周期位置标注：算力上行、政企 IT 下行，净效应偏中性</strong>。中性净利<strong>不使用</strong>单年好年景（公司无好年景）或"拐点年化"（Q2 扣非 −0.0610 亿元<strong>不得直接年化</strong>），而用<strong>分业务稳态口径</strong>（见上表），并明确 Q2 单季接近盈亏平衡<strong>仅作趋势参考，不作中性净利起点</strong>。</li>
+<li><strong>校正 3 杠杆下行情景（高负债必附负面情景）</strong>：<strong>本项不严重</strong>——资产负债率 35.87%、有息负债 6.16 亿元。<strong>负面情景</strong>：若利率上行 100bp（利息支出增约 0.06 亿元）+ 智算云租金转为下行（收入 6 亿 → 4.5 亿、毛利率 20% → 15%，毛利减 0.44 亿元）+ 金融资产再计提 0.3 亿元，合计减少约 0.80 亿元，<strong>中性 1.32 亿元将降至 0.52 亿元</strong>，目标价由 5.78 元下移至约 3.60 元（<strong>空间 −46.8%</strong>）。<strong>该负面情景使空间显著转负，故本股不得标"重点关注"，至多"纳入观察"，且本报告结论为"暂不介入"。</strong></li>
+<li><strong>期权纪律</strong>：<strong>智算云扩容、Horizon8、标准化智能终端、灵犀平台对外创收均未过验证点</strong>（未披露自有算力规模、未披露同花顺/浙大合同金额、无后续模块签约），<strong>全部不计入中性 1.32 亿元</strong>；金融资产重估收益亦不计入中性（该项中性与负值互现，2026H1 为 −4223.73 万元）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>高估</strong>。现价 6.77 元 = <strong>PB 2.18x / 2026E 仍亏损 / 正常化（2029E）PE 52.7x</strong>。市场完全按"AI 算力题材 + 智算云期权"定价，<strong>与已实现的盈利（近零、扣非连续两年为负）严重脱节</strong>。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 5.78 元 → 空间 <strong>−14.6%</strong>，<strong>负空间</strong><br />
+- 悲观 3.50 元 → 下行 <strong>−48.3%</strong>；乐观 9.80 元 → <strong>+44.8%</strong><br />
+- <strong>下行保护薄弱</strong>：①PB 2.18x 高于 IDC 同业（光环新网 1.68x）与 IT 服务同业（同方股份 1.46x），<strong>存在 15–30% 的 PB 压缩空间</strong>；②无控股股东、无资产注入预期；③2026H1 经营现金流 −1.49 亿元、自由现金流为负，<strong>分红能力弱</strong>；④唯一硬支撑是 <strong>资产负债率 35.87%、净资产 31.9 亿元</strong>（无资不抵债风险）。<br />
+- 赔率结构：上行 +44.8%、下行 −48.3%，<strong>近乎对称但中性与基准均为负</strong>，期望值偏负。</p>
+<h4>第五步进阶：上行想象力情景（四类，必须认真建模上行侧）</h4>
+<ul>
+<li><strong>类型 A 行业调整剩者红利（★★）</strong>：IT 服务与系统集成行业高度分散、价格战激烈，AI 原生交付（"灵犀"+ Skills 中心 + 仓颉系统）有望<strong>将非标交付标准化</strong>，形成"剩者"——公司将高频工作场景封装为标准化 Skill，通过"完善标准交付流程与项目管理体系，实现跨区域复制效率与服务质量的跃升"。<strong>锚定</strong>：若人均产出提升 20%、产业数智化毛利率由 12.26% 升至 15%，可新增毛利约 0.45 亿元。<strong>验证点</strong>：毛利率季度环比连续提升、人均营收上行。<strong>证伪信号</strong>：产业数智化毛利率跌破 10%。</li>
+<li><strong>类型 B 政策反转期权（★★★）</strong>：<strong>算力政策已反转（向上）</strong>——"算电协同"首次写入 2026 年政府工作报告、工信部"1+M+N"算力互联互通节点、政府采购本国产品 20% 价格评审优惠、四部门 AI 与能源双向赋能行动方案。<strong>反转信号</strong>：①国家算力互联互通节点落地带动跨区域算力交易（公司作为节点参与方）；②国产 AI 芯片获 I 级认证后国产算力采购放量（公司可借势承接国产算力集群运营）。<strong>重估弹性</strong>：智算云收入每增 1 亿元（净利率 16%）→ 净利 +0.16 亿元 → 中性目标价 +0.70 元。<strong>未过验证点（公司未披露算力节点参与身份与国产集群承接），仅作机会情景。</strong></li>
+<li><strong>类型 C 市场错杀修复（★）</strong>：<strong>错杀判定不成立</strong>。股价未经历系统性错杀，反而因"AI 算力"题材处于<strong>估值溢价</strong>状态（PB 2.18x 高于 IDC 与 IT 服务同业）。→ <strong>本类不构成上行来源。</strong></li>
+<li><strong>类型 D 技术突破 / 技术代际跃迁期权（★★★）</strong>：<strong>三要素检验</strong>：①<strong>政策驱动技术路线</strong>——"人工智能+"国家战略、超大规模智算集群列为新基建 ✓；②<strong>行业趋势向该技术收敛</strong>——智能算力规模同比 +177%、算力租赁市场 2026E 2600 亿元 ✓；③<strong>公司技术投产落地</strong>——<strong>部分达标</strong>：阿里 ZH12 第三大模块商务合同已落地（10 年锁定、合约期含税营收 4.48 亿元）、自有算力租赁与同花顺/浙江大学达成合作、Horizon8 白皮书发布。<strong>但硬验证点未全过</strong>：<strong>未披露自有算力规模与机柜数，未披露同花顺/浙大合同金额，未见 ZH12 第二/第三个模块签约，无中试/良率类指标可验</strong>。→ <strong>只作机会情景，不计入中性锚。</strong> <strong>证伪信号</strong>：智算云收入连续两季环比下滑、毛利率跌破 15%、ZH12 后续模块两年内无签约。</li>
+</ul>
+<blockquote>
+<p><strong>什么条件出现才把结论上调至"重点关注"？</strong> ①<strong>智算云单季收入突破 2 亿元且毛利率 ≥20%</strong>；②<strong>披露自有算力规模/机柜数</strong>并证明上架率 ≥70%；③<strong>ZH12 后续模块或新增云厂商 IDC 客户签约公告</strong>；④<strong>扣非连续两个季度为正</strong>；⑤<strong>经营现金流转正</strong>；⑥股价回落至 <strong>4.50 元以下</strong>（PB ≤1.45x）。至少满足三条。</p>
+</blockquote>
+<p><strong>介入条件</strong>：<br />
+1. <strong>不介入现价</strong>。现价 6.77 元较基准估值 5.25 元高约 29%，较正常化远期 5.78 元高约 17%。<br />
+2. <strong>介入价位</strong>：<strong>≤ 4.40 元</strong>（对应 PB ≤1.42x、正常化 2029E PE ≤34x）。届时中性空间转正约 +31%。<br />
+3. <strong>加仓信号</strong>：①智算云单季收入 ≥2 亿元；②ZH12 后续模块签约；③扣非连续两季为正 + 经营现金流转正。<br />
+4. <strong>观察指标</strong>：智算云分季度收入与毛利率、应收账款周转率、经营现金流、金融资产公允价值变动、ZH12 模块商务进展。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 估值与盈利严重脱节（首要）</strong>：即使 2029 年实现正常化归母 1.32 亿元，当前 69.56 亿元市值仍相当于 <strong>52.7x PE</strong>、<strong>PB 2.18x</strong>（对应 ROE ≈ 0）——<strong>盈利兑现也可能伴随估值倍数压缩，即"业绩改善、股价下跌"</strong>。这是本股最大的不对称风险。<br />
+2. <strong>金融资产公允价值不可预测</strong>：2026H1 −4223.73 万元（同比减少 7069.51 万元）是亏损的第一主因，<strong>该科目不随经营改善而消失</strong>，可持续压制报表归母净利，"扭亏年"判断随时可能被推翻。<br />
+3. <strong>主业净利率结构性偏薄</strong>：占收入 55.24% 的产业数智化毛利率仅 12.26%，软件外包属性决定<strong>规模不带来利润</strong>。<br />
+4. <strong>现金流恶化</strong>：2026H1 经营现金流 −1.49 亿元（同比恶化 115%），应收账款周转率 0.77 次，政府/基建客户回款风险上升。<br />
+5. <strong>算力业务数据不透明</strong>：<strong>自有算力规模、机柜数、同花顺/浙大合同金额均未披露</strong>，无法验证智算云的真实产能与盈利质量——<strong>这是本报告最大的数据缺口与不确定源</strong>。<br />
+6. <strong>无控股股东</strong>：第一大股东仅持股 6.30%，治理上缺少强势控制人，战略连续性依赖管理层。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：<strong>核心矛盾是"估值"而非"质地"</strong>。公司确实站在算力上行周期与"人工智能+"政策风口，且已握有<strong>可量化的确定性资产</strong>——阿里 ZH12 第三大模块 10 年锁定期、合约期含税营收 4.48 亿元；2026Q2 扣非已收敛至 −610.41 万元、毛利率连续两季回升，<strong>主业改善的方向是真实的</strong>（类型 A/B/D 均具备雏形）。但三件事使本股现阶段不具备买入价值：①<strong>中性远期空间 −14.6%、基准 −22.5%，均为负</strong>；②<strong>正常化盈利（2029E 1.32 亿元）对应的当前 PE 高达 52.7x，PB 2.18x 对应 ROE ≈ 0</strong>，估值倍数无法维持；③<strong>智算云规模、客户合同金额、算力资产均未披露</strong>，最大增量无法验证。<strong>乐观情景 +44.8% 也不达"重点关注"的 &gt;50% 门槛。</strong><br />
+<strong>核心跟踪点</strong>：①智算云分季度收入与毛利率；②自有算力规模/机柜数披露；③ZH12 后续模块签约；④扣非与经营现金流是否连续转正；⑤金融资产公允价值变动。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>6.77 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.25 元</strong>（区间 5.05–5.45）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−22.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>5.78 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−14.6%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 3.50 元（−48.3%）～ 乐观 9.80 元（+44.8%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>阿里ZH12模块10年锁定4.48亿含税营收、Q2扣非近盈亏平衡，但PE 52.7x/PB 2.18x对应零ROE，估值与盈利严重脱节</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（4.40 元以下或智算云单季收入破2亿再考虑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：浙大网新 2026 年半年度报告（2026-08-22 披露）、2025 年年度报告（2026-04-29 披露）、证券时报《浙大网新上半年实现营收14.72亿元 积极推动AI技术场景落地》、中证网《浙大网新：上半年实现营收14.72亿元 AI战略纵深推进》、2026 年《政府工作报告》、工业和信息化部办公厅《关于组织开展国家算力互联互通节点建设工作的通知》（2026 年 2 月）、《关于在政府采购中实施本国产品标准及相关政策的通知》（2026-01-01 施行）、国家发展改革委等四部门《关于促进人工智能与能源双向赋能的行动方案》（2026 年 4 月）、《安全可靠测评结果公告（2026 年第 2 号）》、工信部与国家数据局算力统计、中国信通院《智能算力服务研究报告（2026 年）》、赛迪研究院算力租赁市场预测、中商产业研究院《2026 年中国 AIDC 行业市场前景预测研究报告》、光环新网/同方股份/科大讯飞/昆仑万维行情数据、腾讯行情（2026-09-10 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
