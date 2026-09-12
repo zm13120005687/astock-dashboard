@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>音飞储存（603066）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>音飞储存（603066）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-12 ｜ 现价 <strong>9.29 元</strong>（队列基准价口径；2026-09-11 收盘 9.20 元，本报告统一采用队列价 9.29 元）｜ 总市值 <strong>27.33 亿</strong> ｜ PE(TTM) <strong>24.57x</strong> ｜ PB <strong>1.79x</strong> ｜ 总股本 <strong>2.9418 亿股</strong><br />
+行业：智能物流系统集成与智能物流装备 ｜ 板块：上交所主板 ｜ 控股股东：景德镇陶文旅集团（国资）<br />
+<strong>口径说明</strong>：队列表头未标注亏损。经核实 2026 年半年报（2026-08-25 披露），2026H1 归母 <strong>+1.40 亿元（+125.32%）</strong>，为真实盈利。但其中<strong>非经常性损益 8350.59 万元</strong>（子公司音飞产发增资扩股，持股 100%→48.73%，不再并表，确认投资收益 <strong>9583.63 万元</strong>）——<strong>扣非归母仅 5697.28 万元（+0.59%）</strong>。本报告估值以扣非口径为锚，一次性资产处置收益单独列示、不计入趋势。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内专业的智能物流系统集成商——为客户提供从规划设计、系统集成、核心设备（货架/穿梭车/堆垛机）自主研发生产、软件系统（WMS/WCS）到实施交付、运营服务的"全场景、全行业"一站式智能仓储解决方案。</p>
+<p><strong>各业务板块（2026H1，营收 6.31 亿元）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自动化系统集成</strong></td>
+<td>4.58 亿</td>
+<td><strong>72.58%</strong></td>
+<td>核心主业，含项目规划、集成、实施交付</td>
+</tr>
+<tr>
+<td>货架产品</td>
+<td>1.05 亿</td>
+<td>16.66%</td>
+<td>自研自产，年产货架 20 万吨</td>
+</tr>
+<tr>
+<td>堆垛机产品</td>
+<td>0.484 亿</td>
+<td>7.67%</td>
+<td>自研自产，年产能 2000 台套</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.195 亿</td>
+<td>3.10%</td>
+<td>穿梭车、运维服务等</td>
+</tr>
+</tbody>
+</table>
+<p><strong>地区构成（2026H1）</strong>：华东 2.75 亿（43.62%）、<strong>国外 1.47 亿（23.33%）</strong>、华中 0.856 亿（13.56%）、其他 1.23 亿（19.50%）。<strong>海外占比已达 23.33%</strong>，海外新签同比 <strong>+142.19%</strong>。</p>
+<p><strong>核心产品/技术</strong>：<br />
+- 硬件：高精密货架、堆垛机、托盘/箱式穿梭车、子母穿梭车、EMS、闪梭、<strong>攀爬机器人</strong>、AGV/AMR、空中搬运机器人<br />
+- 软件：WMS（仓储管理系统）、WCS（控制系统）、iC+ECC、iN+EQM、鹰眼、神农、仿真测试平台<br />
+- 2026H1 新推"<strong>AI+物流仓储</strong>"一体化解决方案（场景大脑，感知—决策—调度—执行—优化五层闭环），并用<strong>四足机器人</strong>做高频循环盘点、无人机高位盘点、IoT 环境监测<br />
+- 嵌入式控制平台由单片机全面迁移至 <strong>Linux 嵌入式平台</strong>（算力与内存提升数十倍）</p>
+<p><strong>主要客户/下游</strong>：新能源、电子商务、高端制造、食品冷链、医药医疗、半导体、汽车零部件、鞋服纺织、商超零售。<strong>公司系京东工业自有品牌核心合作伙伴</strong>。</p>
+<p><strong>产能布局</strong>：五大生产基地（江苏南京、安徽马鞍山、江西景德镇、江苏苏州、<strong>泰国</strong>），总面积超 600 亩；具备年产<strong>货架 20 万吨、穿梭车 5000 台套、堆垛机 2000 台套</strong>的综合产能。南京高标厂房（智慧园区）与苏州新工厂（整合罗伯泰克）在建。</p>
+<p><strong>股东背景</strong>：控股股东景德镇陶文旅集团（景德镇市国资委体系），质押 50% 持股用于支付股权收购款，公司称无平仓风险。双品牌战略："音飞"（国内智能制造）+"罗伯泰克"。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/文件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《关于推进服务业扩能提质的意见》</td>
+<td>中共中央办公厅、国务院办公厅</td>
+<td><strong>国家级</strong></td>
+<td>2026 年 4 月印发</td>
+<td>明确推动<strong>老旧物流仓储设施改造</strong>、发展分布式仓储、优化海外仓布局</td>
+</tr>
+<tr>
+<td>物联网产业行动方案</td>
+<td>工信部等九部门</td>
+<td>部级联合</td>
+<td>已发布</td>
+<td>将<strong>仓储物流列为重点落地场景</strong></td>
+</tr>
+<tr>
+<td>人形机器人实景实训专项行动</td>
+<td>工信部 + 国务院国资委</td>
+<td>部级联合</td>
+<td>2026 年 6 月启动</td>
+<td>明确<strong>仓储物流是具身智能规模化落地的"黄金场景"</strong></td>
+</tr>
+<tr>
+<td>《智慧物流装备发展行动计划》</td>
+<td>多部委联合</td>
+<td>部级</td>
+<td>已发布</td>
+<td>到 <strong>2027 年自动化仓储设备国产化率 ≥75%</strong></td>
+</tr>
+<tr>
+<td>《仓储货架安全技术规范》</td>
+<td>标准化主管部门</td>
+<td>行业标准</td>
+<td>已生效</td>
+<td>存量设备更新换代，仅 2025 年因标准升级带动替换需求达 <strong>31 亿元</strong></td>
+</tr>
+<tr>
+<td>智慧物流列入<strong>战略性新兴产业</strong></td>
+<td>国家</td>
+<td>战略级</td>
+<td>持续</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策力度评级：强（国家级 + 多部委联合 + 明确量化目标）</strong>。政策直接指向"老旧仓储改造 + 国产化率 75% + 具身智能落地"，与公司主业高度契合。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国智慧物流市场规模</td>
+<td><strong>2026 年约 20,880 亿元 → 2030 年 53,840 亿元</strong></td>
+</tr>
+<tr>
+<td><strong>智能物流仓储系统细分（公司所在）</strong></td>
+<td><strong>2026 年约 1,663.8 亿元 → 2030 年 2,982 亿元</strong></td>
+</tr>
+<tr>
+<td>中国智能物流装备市场</td>
+<td>2026 年约 3,500 亿元，增速 15%–18%；智能仓储装备占 38%，智能分拣 26%，自动化输送 17%</td>
+</tr>
+<tr>
+<td>行业渗透率</td>
+<td>中国物流自动化普及率约 <strong>20%</strong>，对比发达国家 <strong>80%</strong>；烟草 46%、医药 42%、汽车 38%</td>
+</tr>
+<tr>
+<td>2026 年智能物流装备渗透率</td>
+<td>38%（较 2025 年 +5.3pct）；制造业 45%、电商 52%</td>
+</tr>
+<tr>
+<td>社会物流总费用/GDP</td>
+<td>2025 年降至 <strong>13.9%</strong></td>
+</tr>
+<tr>
+<td>全球自动化仓储</td>
+<td>2026 年市场规模突破 <strong>820 亿美元（+14.7%）</strong>；亚太贡献 &gt;38%，中国/印度/东南亚增速 19.2%</td>
+</tr>
+<tr>
+<td>中国企业全球份额</td>
+<td>从 2020 年 8% → 2026 年 <strong>17%</strong>，2025 年产品出口额首超进口额，净出口顺差 12.6 亿美元</td>
+</tr>
+<tr>
+<td>全球竞争格局</td>
+<td>CR10 = 63%；行业毛利率 32%–38%（<strong>注：公司毛利率仅 22.56%，显著低于行业</strong>）</td>
+</tr>
+<tr>
+<td>公司 2026H1 毛利率</td>
+<td><strong>22.56%（−1.12pct）</strong></td>
+</tr>
+<tr>
+<td>公司经营数据</td>
+<td>搬运机器人产量 1,435 台套、销量 1,401 台套（<strong>−6.97%</strong>）、库存 265 台套（+14.72%）；货架/自动化系统集成产量 119,176 吨、销量同比 +0.1%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>供需与竞争格局</strong>：需求端高景气（渗透率从 20% 向 80% 爬坡 + 全球份额提升）；供给端<strong>梯队分化</strong>——有的聚焦新能源与汽车、有的以电商 AGV 分拣领先、区域厂商依赖价格竞争。<strong>公司处于"技术全面但毛利率偏低"的位置</strong>：毛利率 22.56% 显著低于行业 32%–38%，说明其产品结构（低毛利货架占 16.66%）与竞争策略（价格竞争）处于劣势。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：钢材（货架主材，占成本比重高）、电机/伺服、传感器（高端传感器与伺服电机<strong>进口依存度仍 &gt;52%</strong>）、芯片。钢材价格直接影响货架毛利。</p>
+<p><strong>下游</strong>：制造业固定资产投资、电商物流资本开支。不同下游景气分化：新能源/跨境电商/半导体高景气，食品冷链/医药/汽车零部件稳步增长，部分传统制造业需求调整。</p>
+<p><strong>议价权</strong>：<strong>偏弱</strong>。佐证：① 毛利率 22.56% 显著低于全球行业 32%–38%；② H1 毛利率同比 −1.12pct；③ 存货周转率仅 0.34 次（项目周期长，占用资金）；④ 经营现金流 1476.82 万（−54.12%），且公司称"票据收款占比较往年偏高"。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：<strong>传导率 ≈ 0.5–0.6（中等偏弱）</strong>。依据：系统集成项目多为<strong>签约时锁定总价</strong>的固定总价合同，钢材涨价期间无法转嫁；但公司在投资者交流中明确"优化订单结构，重点攻坚高技术壁垒、高毛利的核心业务""供应链集中采购降低单位生产成本"，说明存在<strong>主动改善传导能力的路径</strong>。传导率取 0.55：上游涨 10%，毛利承压 4.5pct。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入占比</th>
+<th>毛利特征</th>
+<th>原料敏感权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自动化系统集成</td>
+<td><strong>72.58%</strong></td>
+<td>中等（含外购设备，摊薄毛利）</td>
+<td>中（外购设备+钢材）</td>
+</tr>
+<tr>
+<td>货架产品</td>
+<td>16.66%</td>
+<td><strong>最低</strong>（钢材占成本 60%+，同质化严重）</td>
+<td><strong>最高（钢材）</strong></td>
+</tr>
+<tr>
+<td>堆垛机产品</td>
+<td>7.67%</td>
+<td><strong>较高</strong>（自研自产，技术含量高）</td>
+<td>中（电机/伺服/传感器，进口依存 52%）</td>
+</tr>
+<tr>
+<td>其他（穿梭车/运维）</td>
+<td>3.10%</td>
+<td>高（软件服务）</td>
+<td>低</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构迁移方向</strong>：<strong>积极的</strong>——低毛利货架占比 16.66%、高毛利堆垛机+穿梭车+软件占比提升；<strong>消极的</strong>——H1 综合毛利率仍 −1.12pct，说明集成业务（占 72.58%）毛利下滑抵消了结构改善。<strong>单一"综合毛利率 22.56%"掩盖了"货架拖累 vs 装备改善"的对冲</strong>。<br />
+- <strong>因子3 库存与采购节奏</strong>：存货周转率仅 <strong>0.34 次</strong>（2026H1），2025 年 1.36 次——<strong>在项目制下，存货主要为在产项目成本，不构成"低价囤货收益"</strong>。但需警惕：搬运机器人库存 265 台套（<strong>+14.72%</strong>）而销量 −6.97%，<strong>存在库存积压信号</strong>。钢材无长协/套保披露 → 价格波动全额暴露。<br />
+- <strong>因子4 政策/市场锚点</strong>：① <strong>钢材价格</strong>——验证点：螺纹钢/热卷期货；情景：涨 10% 则货架毛利压 5–6pct。② <strong>《仓储货架安全技术规范》</strong>——存量替换需求，2025 年已带动 31 亿元替换需求，<strong>利好货架业务量</strong>。③ <strong>国产化率不低于 75%（2027）</strong>——利好国产集成商替代外资；验证点：国产堆垛机/穿梭车市占率（2025 年已 63%，2026 预计 68%）。④ <strong>关税/海外</strong>——泰国工厂（销北美）规避关税；东南亚/中东为出口新增长极。</p>
+<blockquote>
+<p><strong>喂给第四步的毛利率假设</strong>：2026E 22.3%（H2 竞争延续）；2029E 回升至 <strong>24.5%</strong>（海外高毛利占比提升 + 堆垛机/穿梭车/软件占比提升 + 供应链集采降本）。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>在手订单（最硬锚）</strong></td>
+<td>截至 2026-06-30 在手订单总额</td>
+<td><strong>21.78 亿元</strong></td>
+<td>订单储备充裕，行业分布广泛</td>
+<td>2026H2–2028</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>新签订单（增长引擎）</strong></td>
+<td>H1 新签总额（含已中标未签约）</td>
+<td><strong>11.81 亿元（+80.94%）</strong></td>
+<td>订单增速 &gt;&gt; 收入增速</td>
+<td>2026H2–2027</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>国内新签·战略新兴</td>
+<td>高端制造、电子商务、新能源</td>
+<td><strong>4.16 亿</strong></td>
+<td>增长主力</td>
+<td>2026H2–2027</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>国内新签·基础行业</td>
+<td>鞋服纺织、食品</td>
+<td><strong>3.01 亿</strong></td>
+<td>稳固底盘</td>
+<td>2026H2–2027</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>国内新签·流通领域</td>
+<td>医药智能配送、冷链物流</td>
+<td><strong>1.12 亿</strong></td>
+<td>全链条集成能力</td>
+<td>2026H2–2027</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>海外新签（最强弹性）</strong></td>
+<td><strong>3.41 亿（+142.19%）</strong>；中标马来西亚医药分销智能仓储、马来西亚高端零售超市智能仓储、中东电商自动化仓储</td>
+<td>3.41 亿</td>
+<td>"推动海外业务成为新增长引擎"取得阶段性成果</td>
+<td>2026H2–2028</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>泰国工厂</strong></td>
+<td>已投产，产品主要销北美</td>
+<td>2025 年销售收入 <strong>+258.55%</strong>；2026 目标继续高增</td>
+<td>产能未完全释放</td>
+<td>持续</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>南京高标厂房</td>
+<td>定位智慧园区</td>
+<td>在建</td>
+<td>产能扩张</td>
+<td>2027–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td>苏州新工厂</td>
+<td>整合罗伯泰克，打造智能化研发生产基地</td>
+<td>在建</td>
+<td>产能扩张</td>
+<td>2027–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>AI+物流仓储方案</strong></td>
+<td>场景大脑五层闭环；四足机器人盘点 + 无人机高位盘点 + IoT</td>
+<td>2026H1 正式推出</td>
+<td>商业化初期</td>
+<td>2027 起</td>
+<td>中低（期权）</td>
+</tr>
+<tr>
+<td>嵌入式平台升级</td>
+<td>单片机 → Linux 嵌入式平台，算力提升数十倍</td>
+<td>已完成</td>
+<td>为算法升级奠基</td>
+<td>成本/性能改善</td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>具身智能布局</strong></td>
+<td>培育具身智能科技企业；N+1+N 战略拓展至巡检、安防、设备预测性维护；大股东文旅场景</td>
+<td>规划中</td>
+<td>早期</td>
+<td>不确定</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td><strong>⚠️ 一次性收益</strong></td>
+<td>音飞产发增资扩股（持股 100%→48.73%，不再并表）</td>
+<td>投资收益 <strong>9583.63 万</strong>（非经常性损益合计 8350.59 万，所得税影响 −1477.98 万）</td>
+<td><strong>已确认，不可持续</strong></td>
+<td>2026H1 一次性</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计新增收入测算</strong>：在手订单 21.78 亿 vs 2025 年营收 12.56 亿 = <strong>1.73 倍覆盖</strong>，是未来 2–3 年收入的最硬约束与最硬支撑。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层1 现有业务 = 市场容量 × 份额变量</strong><br />
+1. <strong>供给侧份额</strong>：五大基地（南京/马鞍山/景德镇/苏州/泰国）年产货架 20 万吨、穿梭车 5000 台套、堆垛机 2000 台套，<strong>产能规模位居行业前列</strong>；南京/苏州新工厂在建 → 供给侧继续扩张。<br />
+2. <strong>需求侧/客户份额</strong>：<strong>京东工业自有品牌核心合作伙伴</strong>（硬证据）；H1 国内新签 8.4 亿来源日趋多元（三大领域 4.16/3.01/1.12 亿），客户结构分散化降低单一行业周期风险。<br />
+3. <strong>技术代际差</strong>：公司提供"货架+穿梭车"与"货架+堆垛机"两种主流方案，具备核心硬件（含攀爬机器人）与软件（WMS/WCS/鹰眼/神农）全自研能力——<strong>在国产集成商中属第一梯队</strong>；但在 AI/具身智能的下一代技术上，与专注 AGV/AMR 的厂商相比<strong>无代际领先</strong>。<br />
+4. <strong>成本曲线位置</strong>：自研自制模式降低多厂家集成的接口适配风险与调试延滞；"标准化+定制化"双轨生产 + MES → 成本曲线左移。但毛利率 22.56% 低于行业 32%–38%，说明<strong>成本优势未转化为定价优势</strong>。<br />
+5. <strong>份额二阶导数</strong>：新签 +80.94%、海外 +142.19% → <strong>份额处于加速渗透期（S 曲线陡峭段）</strong>。</p>
+<p>三档：保守（守住份额，新签维持 18 亿/年）/ 中性（新签 20–22 亿/年，海外占比 30%）/ 乐观（新签 25 亿+，海外 35%，AI 方案溢价）。<strong>验证点</strong>：① 半年报/年报在手订单余额；② 海外收入占比（H1 23.33%）；③ 新签公告。</p>
+<p><strong>层2 扩展业务 = 主业迁移空间</strong><br />
+- <strong>能力可迁移性</strong>：物流仓储的"移动机器人 + 调度算法 + 感知"能力 → 可迁移至巡检、安防、设备预测性维护（N+1+N 战略），<strong>技术同源性高</strong>（同为移动机器人 + AI 感知）。<br />
+- <strong>新 TAM 弹性</strong>：具身智能/巡检机器人市场 &gt;&gt; 仓储设备市场，且 AI+仓储可提升软件与服务收入占比（软件毛利率远高于硬件）。<br />
+- <strong>切入卡位</strong>：<strong>早期</strong>——公司明确"培育一批聚焦具身智能的科技企业"，并计划应用于<strong>大股东陶文旅集团的文旅场景</strong>（景区巡检/安防），属于<strong>有场景背书的早期卡位</strong>。<br />
+- <strong>客户认证门槛</strong>：文旅场景为内部关联场景，认证门槛低（优势）；工业巡检需重新取得客户认可（阻力）。<br />
+- <strong>信号验证</strong>：① 具身智能科技企业投资公告（❌ 未见具体标的/金额）；② 文旅场景试点落地（❌ 未见）；③ 新业务收入占比跳升（❌ 0%）。<br />
+  → <strong>判定：具身智能/文旅巡检为"中期期权"，未过验证点，不计入中性情景</strong>，仅进乐观栏。</p>
+<p><strong>层3 风险折扣（证伪信号）</strong>：① 毛利率跌破 20%；② 在手订单余额连续两期下降；③ 新签增速回落至 20% 以下；④ 海外项目交付延期或坏账（马来西亚/中东项目回款风险）；⑤ 票据收款占比持续偏高致经营现金流恶化；⑥ 存货周转率继续下滑（H1 仅 0.34 次）。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法声明</strong>：<strong>本报告不使用历史 CAGR 外推</strong>。收入预测全部基于"<strong>在手订单 21.78 亿 + 新签节奏 + 产能上限</strong>"自下而上推导；利润预测采用<strong>扣非口径</strong>（剔除 2026H1 一次性投资收益 9583.63 万）。</p>
+</blockquote>
+<p><strong>总股本：2.9418 亿股</strong>（294,180,074 股）</p>
+<h3>分业务/分区域测算（2029E，自下而上）</h3>
+<p><strong>第一步：收入推导（订单驱动，非增速外推）</strong></p>
+<table>
+<thead>
+<tr>
+<th>依据</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-06-30 在手订单</td>
+<td><strong>21.78 亿</strong></td>
+</tr>
+<tr>
+<td>2026H1 已确认收入</td>
+<td>6.31 亿</td>
+</tr>
+<tr>
+<td>2026E 收入</td>
+<td>H1 6.31 亿 + H2（Q2 3.27 亿基础上环比提升，2025H2 为 7.13 亿，按 +18% 计 8.41 亿）= <strong>14.72 亿（+17.2%）</strong></td>
+</tr>
+<tr>
+<td>2027E 收入</td>
+<td>在手订单结转（假设 60% 于 2027 确认 = 13.07 亿）+ 2026H2/2027H1 新签部分确认（约 7 亿）= <strong>20.0 亿</strong></td>
+</tr>
+<tr>
+<td>2028E 收入</td>
+<td>新签维持 20–22 亿/年（订单增速已 +80.94%），<strong>25.0 亿</strong></td>
+</tr>
+<tr>
+<td>2029E 收入</td>
+<td>海外占比提升 + AI 解决方案溢价，<strong>28.0 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能校验</strong>：2023 年公司曾实现营收 15.73 亿（现有五大基地），叠加南京/苏州新工厂与泰国工厂投产，<strong>28 亿收入在产能可承受范围内</strong>（约需产能提升 78%，新工厂 + 泰国 + 外协可覆盖）。✓</p>
+<p><strong>第二步：净利率推导（扣非口径）</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024A</th>
+<th>2025A</th>
+<th>2026H1</th>
+<th>2026E</th>
+<th>2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收</td>
+<td>14.43 亿</td>
+<td>12.56 亿</td>
+<td>6.31 亿</td>
+<td>14.72 亿</td>
+<td>28.0 亿</td>
+</tr>
+<tr>
+<td>扣非归母</td>
+<td>0.384 亿</td>
+<td>0.175 亿</td>
+<td><strong>0.570 亿</strong></td>
+<td>0.98 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>扣非净利率</td>
+<td>2.66%</td>
+<td>1.40%</td>
+<td><strong>9.03%（季节性高）</strong></td>
+<td>6.7%</td>
+<td><strong>5.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026E 扣非测算</strong>：H1 扣非 5697.28 万（Q1 约 4087 万、Q2 1610 万）；H2 参考 2025H2 扣非约 −3911 万，考虑订单改善（在手 21.78 亿、新签 +80.94%）假设 H2 扣非转正为 +4100 万 → <strong>2026E 扣非 ≈ 0.98 亿</strong>。</p>
+<p><strong>2029E 净利率 5.3% 的依据</strong>：① 海外收入占比从 23.33% → 35%（海外毛利更高）；② 高毛利堆垛机/穿梭车/软件占比提升，低毛利货架占比下降；③ 供应链集采与"标准化+定制化"降本；④ 规模效应摊薄研发费用。<strong>对照</strong>：2024 年 2.66%、2026E 6.7%，取 5.3% 为中性（低于 2026E 因 2026 年含 Q1 高基数季节性）。</p>
+<p><strong>2029E 扣非归母 = 28.0 亿 × 5.3% = 1.48 亿</strong></p>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 收入</th>
+<th>扣非净利率</th>
+<th>2029E 归母</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>宏观资本开支下行，订单交付延期，行业价格战加剧，毛利率跌破 20%</td>
+<td>20.0 亿</td>
+<td>2.5%</td>
+<td>0.50 亿</td>
+<td>20x（PB 兜底 1.0x → 16.0 亿）</td>
+<td>16.0 亿</td>
+<td><strong>5.44 元</strong></td>
+<td><strong>−41.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>在手订单如期交付，海外占比升至 35%，AI 方案溢价兑现</td>
+<td><strong>28.0 亿</strong></td>
+<td><strong>5.3%</strong></td>
+<td><strong>1.48 亿</strong></td>
+<td>25x</td>
+<td>37.0 亿</td>
+<td><strong>12.58 元</strong></td>
+<td><strong>+35.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>海外 + AI + 具身智能（巡检/文旅）三重放量，软件服务占比跳升</td>
+<td>34.0 亿</td>
+<td>7.0%</td>
+<td>2.38 亿</td>
+<td>30x</td>
+<td>71.4 亿</td>
+<td><strong>24.27 元</strong></td>
+<td><strong>+161.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润（扣非）</td>
+<td>0.98 亿</td>
+<td>1.48 亿</td>
+</tr>
+<tr>
+<td>净利润（含一次性，报表口径）</td>
+<td>约 1.80 亿</td>
+<td>1.48 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>28x（扣非）</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>27.4 亿</td>
+<td>37.0 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>9.32 元</strong></td>
+<td><strong>12.58 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 9.29 元对应 2026E 扣非 PE <strong>27.9x</strong>，2029E 中性 PE <strong>18.5x</strong>。PB 1.79x、2025 年 ROE 2.37%（2026H1 ROE 9.57% 含一次性）。<strong>现价已基本反映 2026 年业绩，但未充分反映订单高增长的 2027–2029 兑现</strong>。</p>
+<h4>第四步进阶：重资产/周期股校正</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：PB <strong>1.79x</strong>（不适用破净分析），但<strong>恰恰是安全边际来源</strong>——2025 年报每股净资产 4.78 元，净资产约 14.06 亿，2026H1 因确认 9583.63 万投资收益，净资产升至约 15.3 亿（对应 PB 1.79x）。公司五大基地超 600 亩土地与厂房，属<strong>可持续经营的通用制造资产</strong>（非专用不可转产），重置成本对净资产有一定支撑；存货为在产项目（可变现），非滞销库存。<strong>资产质量中等偏上</strong>。</li>
+<li><strong>校正2 周期位置校正</strong>：智能物流装备属<strong>顺周期行业</strong>（与制造业固定资产投资、工业企业利润、社零相关）。当前周期位置：<strong>下游景气分化期</strong>——新能源/跨境电商/半导体高景气，传统制造业调整；叠加"渗透率从 20%→80%"的<strong>产业升级长周期正向驱动</strong>。中性净利 1.48 亿已采用"2024（2.66%）/2025（1.40%）/2026E（6.7%）"的区间中值 5.3%，<strong>未使用单年好年景或拐点年化</strong>。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率 50.17%、<strong>有息负债仅 1.42 亿（有息负债率 9.99%）</strong>——<strong>杠杆极低</strong>，这是公司最大的财务优势。负面情景测试：① 利率上行 100bp → 年增利息约 142 万，对 1.48 亿净利影响 &lt;1%；② 需求下行 20% + 毛利率降至 20% → 2029E 归母跌至约 0.5 亿，对应悲观 5.44 元（−41.4%）。<strong>因杠杆极低，不触发"高负债不得标大空间"的限制</strong>。</li>
+<li><strong>期权纪律</strong>：AI+物流仓储方案、具身智能/文旅巡检、具身智能科技企业投资<strong>均未过验证点</strong>（无大额订单、无收入占比），<strong>不计入中性净利</strong>，仅计入乐观情景（24.27 元）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理</strong>。现价 9.29 元对应 2026E 扣非 PE 27.9x、2029E 中性 PE 18.5x、PB 1.79x。市场已反映 2026 年业绩（含一次性收益已被市场识别并打折），但<strong>尚未充分反映 21.78 亿在手订单 + 新签 +80.94% 的中期兑现</strong>。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 12.58 元 → 空间 <strong>+35.4%</strong><br />
+- 悲观 5.44 元 → 下行 <strong>−41.4%</strong>（PB 兜底 1.0x）<br />
+- 乐观 24.27 元 → <strong>+161.3%</strong><br />
+- <strong>下行保护</strong>：有息负债仅 1.42 亿、PB 1.79x、600 亩五大基地实物资产 → 7.5 元附近（PB 1.45x）为较强支撑<br />
+- <strong>风险收益比</strong>：上行 35.4% vs 下行 41.4%，<strong>接近对称但略偏负</strong>，故不能给"重点关注"</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>价格</strong>：8.50 元以下（PB &lt;1.65x）分批建仓；7.50 元以下（PB 1.45x）为强安全边际<br />
+2. <strong>加仓信号</strong>：① 2026 年报在手订单余额 &gt;22 亿；② 海外收入占比突破 30%；③ 单季扣非净利同比转正且环比提升；④ 具身智能/文旅场景项目落地公告<br />
+3. <strong>上调至"重点关注"的条件</strong>：<strong>出现"海外收入占比 &gt;35% 且扣非净利率 &gt;6.5%"的组合</strong>（对应 2029E 归母 1.8 亿+，空间 &gt;50%），或"具身智能业务获首个千万元级订单"</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 毛利率持续低于行业（首要）</strong>：22.56% vs 全球行业 32%–38%，若价格战延续，净利率难以从 1.40% 修复至 5.3%<br />
+2. <strong>项目制现金流风险</strong>：H1 经营现金流 1476.82 万（<strong>−54.12%</strong>），票据收款占比偏高；存货周转率仅 0.34 次，应收账款周转率 0.55 次——<strong>订单高增长但现金回款慢</strong><br />
+3. <strong>海外项目执行风险</strong>：马来西亚、中东项目面临地缘、汇率、回款与本地化交付挑战<br />
+4. <strong>顺周期属性</strong>：下游制造业资本开支若下行，订单转化节奏将显著延后<br />
+5. <strong>一次性收益高基数</strong>：2026 年归母 1.80 亿含 9583.63 万一次性投资收益，2027 年同比将大幅回落，可能引发市场误读<br />
+6. <strong>控股股东质押</strong>：陶文旅集团质押 50% 持股</p>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：智能物流装备行业"梯队分化"，区域厂商依赖价格竞争、面临头部技术碾压。国产化率目标 2027 年 ≥75%（2025 年已达 63%、2026 预计 68%）→ 国产替代 + 尾部出清双轮。验证点：① 国产堆垛机/穿梭车市占率；② 行业 CR5 提升；③ 公司中标金额市占。<strong>弹性测算</strong>：若公司全球份额从当前（中国企业整体 17% 中的一部分）提升 50%，2029E 收入可上修至 30 亿+。<strong>计入乐观情景</strong>。</li>
+<li><strong>类型B 政策反转期权</strong>：<strong>弱适用</strong>——智能物流是政策<strong>扶持</strong>行业而非被打压行业，无反转空间。但《仓储货架安全技术规范》带来的存量替换（2025 年已 31 亿元）属<strong>政策创造的增量需求</strong>，已计入中性收入假设。</li>
+<li><strong>类型C 市场错杀修复</strong>：<strong>部分适用</strong>。公司股价"箱体震荡五六年"（投资者提问原话），2026H1 归母 +125.32%、新签 +80.94%、在手 21.78 亿，但 PE 仅 24.57x（TTM）、PB 1.79x——<strong>基本面显著改善而估值处于历史箱体</strong>，存在"业绩兑现但估值未修复"的错配。错杀证据：① 新签 +80.94% vs 收入 +16.23%，订单前置指标远超收入；② 有息负债率仅 9.99%，财务极稳健；③ 五大基地 600 亩实物资产支撑 PB。修复触发点：2026 年报/2027 一季报订单转化为收入与扣非利润。<strong>此为本报告上行情景中最具确定性的部分，已部分反映在中性预测中</strong>。</li>
+<li><strong>类型D 技术突破/技术代际跃迁期权（核心）</strong>：<strong>AI+物流仓储 + 具身智能</strong>。三要素检查：</li>
+<li>① <strong>政策驱动技术路线</strong>——工信部 + 国资委 2026 年 6 月启动人形机器人实景实训专项行动，明确仓储物流是具身智能"黄金场景"（✅ 政策明确）；九部门物联网方案将仓储物流列为重点落地场景（✅）</li>
+<li>② <strong>行业趋势向该技术收敛</strong>——Logistics 从"自动化"向"智慧化"跃升，2026 年一季度采用无轨导航与 3D 视觉的 AMR 新品占比首超传统激光导航；数字孪生在仓储规划应用率 2021 年 12%→2025 年 58%（✅ 趋势收敛）</li>
+<li>③ <strong>公司技术投产落地</strong>——H1 正式推出"AI+物流仓储"一体化解决方案（场景大脑五层闭环）并已商用化部署（✅ 部分落地）；嵌入式平台从单片机迁移至 Linux（✅ 算力底座完成）；<strong>但硬验证点检查</strong>：中试良率（✅ 已有四足机器人 + 无人机 + IoT 的实际盘点作业）/ <strong>客户定点或大额订单（❌ AI 方案未披露独立订单金额）</strong> / <strong>量产成本优于旧路线（⚠️ 未披露成本对比数据）</strong><br />
+  → <strong>判定：三要素中"客户定点/大额订单"与"成本优势验证"未过 → 仅作机会情景，不计入中性锚</strong><br />
+  证伪信号：AI 方案仅停留在展会演示无实际订单；具身智能科技企业投资迟迟无标的落地；文旅场景试点未启动；政策（人形机器人实训专项）2027 年退坡早于商业化。</li>
+</ul>
+<blockquote>
+<p><strong>纪律提示</strong>：A/C/D 三类想象情景<strong>只进乐观/机会栏，不进中性锚</strong>。中性 12.58 元仅由"在手订单 21.78 亿交付 + 海外占比 35% + 扣非净利率 5.3%"构成。</p>
+</blockquote>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>+35.4%</strong>，满足"纳入观察"（&gt;0）但未达"重点关注"（&gt;50%）。公司<strong>订单端极其强劲</strong>（在手 21.78 亿 = 2025 年营收 1.73 倍、新签 +80.94%、海外 +142.19%），<strong>财务极稳健</strong>（有息负债仅 1.42 亿、有息负债率 9.99%、PB 1.79x 提供下行保护），是"订单已锁定、利润待兑现"的典型标的。<br />
+但<strong>毛利率 22.56% 显著低于行业 32%–38%</strong>，说明订单转化为利润的效率存疑；且经营现金流 −54.12%、存货/应收周转率低，项目制回款慢。<strong>悲观情景 −41.4% 与乐观 +161.3% 的不对称，本质是"净利率能否修复"的赌注</strong>。<br />
+<strong>核心跟踪点</strong>：① 2026 年报在手订单余额与海外收入占比；② 单季扣非净利率能否稳定在 5% 以上；③ AI+物流仓储方案的首个独立订单公告。<br />
+<strong>上调条件</strong>：海外收入占比 &gt;35% 且扣非净利率 &gt;6.5%，或具身智能获千万元级订单 → 上调至"重点关注"。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>9.29 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>9.3 元</strong>（区间 8.6–10.5）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+0.1%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>12.58 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+35.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 5.44 元（−41.4%）～ 乐观 24.27 元（+161.3%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>在手订单21.78亿为2025营收1.73倍、新签+80.94%、海外+142%；低负债PB1.79，待净利率修复</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（8.50 元以下建仓；海外占比&gt;35%且扣非净利率&gt;6.5%则上调重点关注）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：音飞储存 2026 年半年度报告（2026-08-25 披露）、2025 年年度报告、《关于 2025 年度暨 2026 年第一季度业绩说明会召开情况的公告》（2026-05-08，含具身智能/泰国工厂/京东合作等问答）、《2026 年度"提质增效重回报"行动方案》（2026-04-23，含行业市场规模数据）、证券时报网《上半年净利倍增 海外订单与 AI 布局成新增长极》（2026-08-25）、中证智能财讯 2026-08-26 中报解读、中财网 2026 年半年报全文（核心竞争力分析）、中研普华《2026 年中国智能物流装备行业市场深度分析》、《全球自动化仓储系统行业发展咨询报告（2026）》、腾讯行情接口。</em><br />
+<em>口径说明：现价采用任务队列基准价 9.29 元；2026-09-11 收盘价 9.20 元。2026H1 归母 1.40 亿中含一次性投资收益 9583.63 万元（音飞产发增资扩股不再并表），扣非归母仅 5697.28 万元，本报告估值以扣非口径为锚。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
