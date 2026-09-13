@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>七一二（603712）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>七一二（603712）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-13 ｜ 现价 <strong>12.03 元</strong>（2026-09-11 收盘，经 <code>curl -s "http://qt.gtimg.cn/q=sh603712" | iconv -f GBK -t UTF-8</code> 亲自复查确认）｜ 总市值 <strong>92.87 亿</strong> ｜ PE(TTM) <strong>−19.00x</strong> ｜ PB <strong>2.46x</strong> ｜ 总股本 <strong>7.72 亿股</strong><br />
+行业：国防军工—军工电子Ⅱ（军用专网无线通信）｜ 实控人：天津市国资委（通过智博科技持股 48.31%）</p>
+<p><strong>亏损股双向核查结论：确为真亏损。</strong> 队列 TTM 口径标"亏损"与真实 2026 半年报一致，<strong>不存在"去年亏、今年已扭亏"的误标</strong>——2026H1 归母 <strong>−1.108 亿</strong>、扣非 <strong>−1.378 亿</strong>（上年同期分别为 −1.142 亿 / −1.313 亿），<strong>归母减亏靠非经常性损益（政府补助、债务重组收益等），扣非反而同比扩大</strong>。按 RULES 要求做完整五步法，估值采用正常化净利润法 + SOTP 交叉验证。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内军用专网无线通信的"老字号"——为陆、海、空、天各军兵种提供超短波电台、数据链、卫星导航终端与野战通信系统，同时是铁路机车综合无线通信设备（CIR）与城市轨道交通专网的龙头供应商。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 7.61 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品/业务</th>
+<th>营收</th>
+<th>占比</th>
+<th>参考毛利率</th>
+<th>经营主体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专用无线通信终端产品</td>
+<td>4.38 亿</td>
+<td>57.59%</td>
+<td>2025 年 35.46%</td>
+<td>母公司（军用）+ 津移通信（民用）</td>
+</tr>
+<tr>
+<td>系统集成产品</td>
+<td>2.48 亿</td>
+<td>32.62%</td>
+<td>2025 年 25.31%</td>
+<td>母公司</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.60 亿</td>
+<td>7.85%</td>
+<td>—</td>
+<td>母公司</td>
+</tr>
+<tr>
+<td>材料销售及维修等</td>
+<td>0.15 亿</td>
+<td>1.93%</td>
+<td>偏高（后市场）</td>
+<td>母公司</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>7.61 亿</strong></td>
+<td>100%</td>
+<td><strong>综合 31.02%（同比 −2.86pct）</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>境内外收入占比</strong>：国内 7.59 亿（<strong>99.89%</strong>），国外仅 80.62 万元（<strong>0.11%</strong>）——出口几乎为零，既是最大的空白，也是最大的期权。</p>
+<p><strong>核心产品</strong><br />
+- 军用：机载超短波电台、直升机回传系统、车载/手持电台、数据链设备、天通卫星终端、北斗三号导航接收机、机动通信系统、散射通信设备、单兵通信设备、无人平台通信载荷<br />
+- 民用：GSM-R 机车综合无线通信设备（CIR）、国铁 V2.5 CIR、5G-R 新一代 CIR（研制中）、调度命令传输系统、平面调车系统、地铁 5G 车载台、车地高速无线转储系统</p>
+<p><strong>主要客户/下游</strong>：特殊机构用户（军方）+ 中国国家铁路集团有限公司（津移通信前五大客户占比 62.76%，其中国铁集团占 29.03%）+ 各城市地铁公司（上海、南京、厦门、广州、北京等）。合并口径前五大客户销售占比 <strong>34.42%</strong>，前五大供应商采购占比 18.61%。</p>
+<p><strong>⚠️ 关键结构性发现（本报告主线）</strong>：合并报表亏的是<strong>军品母公司</strong>，赚的是<strong>控股子公司津移通信</strong>。<br />
+- 津移通信（874682.NQ，国家级制造业单项冠军、专精特新"小巨人"）：七一二持股 <strong>65.79%</strong>（另有铁投集团 14.80%，天津国资合计控制 80.59%）<br />
+- 津移 2023–2025 营收 4.22 / 4.69 / 4.73 亿，归母净利 <strong>6896 / 7088 / 7908 万</strong>；<strong>2026H1 营收 2.38 亿、净利 7122 万</strong>（半年利润已接近 2025 全年）<br />
+- 折算 2026H1 津移归属母公司权益约 <strong>+0.47 亿</strong>，而合并归母为 <strong>−1.11 亿</strong> → <strong>军用及其他主体实际亏损约 −1.58 亿</strong><br />
+- 2025 年同理：合并归母 −4.92 亿，津移贡献约 +0.52 亿 → 军品主体亏约 −5.44 亿</p>
+<blockquote>
+<p><strong>含义</strong>：这不是一家"整体没救"的公司，而是<strong>被母公司亏损拖累、同时内含一块正在分拆上市的盈利优质资产</strong>的公司。估值必须用分部加总（SOTP），单一合并 PE 会严重失真。</p>
+</blockquote>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度级别</th>
+<th>量化指标 / 落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中央和地方财政预算草案报告</td>
+<td>国务院 → 全国人大</td>
+<td>2026 年 3 月</td>
+<td><strong>国家级刚性支出</strong></td>
+<td><strong>2026 年国防支出 1.94 万亿元（+6.9%）</strong>，中央本级 1.91 万亿（+7%），<strong>连续第 11 年个位数稳定增长</strong></td>
+</tr>
+<tr>
+<td>"十五五"规划纲要</td>
+<td>中共中央</td>
+<td>2026 年（开局之年）</td>
+<td><strong>国家级五年规划</strong></td>
+<td>明确"加快发展新质战斗力、智能化/无人化/体系化作战能力"，与 <strong>2027 年建军百年</strong>目标衔接，新一代装备规模化订单进入验证窗口</td>
+</tr>
+<tr>
+<td>2026 年政府工作报告</td>
+<td>国务院</td>
+<td>2026 年 3 月</td>
+<td>国家级</td>
+<td>航空航天列为<strong>"新兴支柱产业"</strong>；商业航天、低轨星座（GW/千帆/鸿鹄）、低空经济列为战略增量</td>
+</tr>
+<tr>
+<td>2025 年中央经济工作会议</td>
+<td>中共中央</td>
+<td>2025 年 12 月</td>
+<td>国家级</td>
+<td>部署<strong>"人工智能+"行动</strong>，AI 与军工融合加速（认知电子战、自主协同作战）</td>
+</tr>
+<tr>
+<td>5G-R 铁路新一代移动通信</td>
+<td>工信部 → 国铁集团</td>
+<td>2023 年批复试验频率，2026 年多局推进</td>
+<td>部门级 + 国铁集团</td>
+<td>工信部已批复 5G-R 试验频率；2026H1 公司完成大秦铁路第一阶段试验、武汉局试验动车组安装方案、合新铁路试用前期工作 → <strong>国铁 CIR 换代窗口开启</strong></td>
+</tr>
+<tr>
+<td>《现代化应急体系建设"十五五"规划》</td>
+<td>国务院</td>
+<td>2026 年</td>
+<td>国家级</td>
+<td>明确"三断"（断路/断网/断电）极端条件下通信畅通，利好调度通信设备备灾需求</td>
+</tr>
+<tr>
+<td>⚠️ 军品定价机制改革 / 带量采购</td>
+<td>装备采购主管部门</td>
+<td>持续</td>
+<td><strong>对准收益率的关键负面变量</strong></td>
+<td>装备采购强调低成本可持续发展 → <strong>批量交付价格下行是 2024–2026 连续的毛利率杀手</strong>（公司半年报原文："受批量交付产品价格因素的影响，综合毛利率同比有所下降"）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>政策净判断</strong>：<strong>需求侧政策强正向且确定性高</strong>（预算连年增长、十五五开局、建军百年），<strong>价格侧政策强负向</strong>（审价降价/带量采购）。两者叠加的结果是"量回来、价不回"，这正解释了为什么公司收入回升而毛利率仍在跌。</p>
+</blockquote>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国国防支出</td>
+<td>2026 年 <strong>1.94 万亿元（+6.9%）</strong>；2025 年 1.81 万亿（+7.2%）；装备费占比持续提升</td>
+</tr>
+<tr>
+<td>全球军用通信市场</td>
+<td>2025 年约 <strong>286.7–396.7 亿美元</strong>，2032 年达 <strong>482.4 亿美元</strong>（第三方机构区间，仅作背景参考，不作本项目外推依据）</td>
+</tr>
+<tr>
+<td>军工板块整体（164 家重点公司）</td>
+<td>2025 年营收 <strong>8314.93 亿（+8.44%）</strong>、归母净利 <strong>318.90 亿（+18.50%）</strong>；2026Q1 营收 <strong>1840.58 亿（+19.36%）</strong>、归母净利 <strong>107.12 亿（+47.24%）</strong></td>
+</tr>
+<tr>
+<td>板块利润率</td>
+<td>2025 年毛利率 17.91%（+0.23pct）、净利率 3.84%（+0.33pct）；2026Q1 毛利率 18.96%、净利率 5.82% —— <strong>量回来了，利润率仅小幅修复</strong></td>
+</tr>
+<tr>
+<td>板块应收账款</td>
+<td>2025 年绝对额持续上升，<strong>占营收比例上升 5.36pct 至 110.34%</strong>，回款是全行业痛点</td>
+</tr>
+<tr>
+<td>板块合同负债 + 存货</td>
+<td>合同负债 2024 年 2208.39 亿 → 2025 年 <strong>2378.92 亿</strong>；存货 3125.97 亿 → <strong>3243.30 亿</strong> —— <strong>订单与备产指标先于收入回暖</strong></td>
+</tr>
+<tr>
+<td>机构持仓</td>
+<td>2026Q1 公募军工持仓占比 <strong>3.97%</strong>（较 2025Q1 低点 3.51% 回升 0.46pct），仍处历史底部区，潜在卖压有限</td>
+</tr>
+<tr>
+<td>竞争格局（军用专网）</td>
+<td>主要参与者：<strong>海格通信、七一二、北斗星通、烽火电子</strong>等；资质（"四证"）+ 军标认证构成核心护城河，新进入企业取得资质通常需 <strong>约 3 年</strong>；型号定型后列装生命周期 <strong>5–10 年</strong>，同型号研制单位一般仅 <strong>2–3 家</strong>，定型后一般不轻易换供应商 → <strong>格局稳定、难被替代，但也难抢别人的份额</strong></td>
+</tr>
+<tr>
+<td>本公司位置</td>
+<td>2025 年三年营收复合 <strong>−18.99%</strong>，在军工电子Ⅲ 已披露公司中排名第 <strong>27/30</strong>，属景气修复中受损最重的一档</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1 / 2026Q2）</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2026Q1</th>
+<th>2026Q2</th>
+<th>2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>2.46 亿</td>
+<td><strong>5.15 亿（同比 +24.10%，环比 +109.28%）</strong></td>
+<td><strong>7.61 亿（+20.57%）</strong></td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td>−0.65 亿</td>
+<td><strong>−0.4563 亿（同比减亏 24.22%）</strong></td>
+<td><strong>−1.108 亿</strong></td>
+</tr>
+<tr>
+<td>扣非净利润</td>
+<td>−0.70 亿</td>
+<td>−0.6772 亿</td>
+<td><strong>−1.378 亿（同比亏损扩大）</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>约 37%（推算）</td>
+<td><strong>28.18%（同比 −1.99pct，环比 −8.79pct）</strong></td>
+<td><strong>31.02%（同比 −2.86pct）</strong></td>
+</tr>
+<tr>
+<td>期间费用率</td>
+<td>—</td>
+<td>—</td>
+<td><strong>40.77%（同比 −10.69pct）</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>量在恢复、价在恶化、亏在收窄但扣非没改善</strong> —— 这是判断本期盈利质量的核心坐标。</p>
+</blockquote>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：特种集成电路（FPGA/DSP/高端 ADC-DAC）、射频前端、微波毫米波器件、PCB、结构件、特种电源。采购分散（前五大供应商仅占 <strong>18.61%</strong>），单一原料不构成致命约束；但<strong>高端制程芯片仍受国际出口管制影响</strong>，国产替代虽提升可控性，短期却抬高单位成本（替代料验证与批次一致性成本）。</p>
+<p><strong>下游</strong>：军方（航空/地面/卫星导航三大方向）+ 国铁集团 + 各城市地铁。客户高度集中且粘性极强——这是双刃剑：粘性保证长期份额，集中度意味着单点失速将致命。</p>
+<p><strong>议价权判断：下游（客户）强，公司弱，传导率 ≈ 0.1</strong><br />
+- 佐证 1：2026H1 综合毛利率 31.02%（同比 −2.86pct），Q2 单季更低至 28.18%，而同期营收增长 20.57% —— <strong>价格压力几乎全部由自己吞下</strong><br />
+- 佐证 2：2025 年报与 2026 半年报均明确"受批量交付产品价格因素影响，综合毛利率同比下降"，属军方审价降价，并非上游涨价<br />
+- 佐证 3：应收账款 37.36 亿、占总资产 42.78%、周转率仅 0.61 次 —— 结算条款同样由客户主导</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through）—— 传导率 ≈ 0.1，自己扛</strong></p>
+<p>军品采用"审价/议价"定价，不存在随原料浮动的调价条款。上游元器件 +5% → 公司实际毛利承压 ≈ 5% ×（1 − 0.1）= <strong>4.5%</strong>，几乎全额自担。<br />
+- 依据：①只有"降价"表述，从未有终端产品提价公告；②采购集中度仅 18.61%，长协/现货比例未披露，议价筹码有限；③<strong>唯一例外是新增首次定型型号</strong>（直升机回传系统、北斗三号提升工程等），新品可重新审价，传导率阶段性回到 <strong>0.6–0.8</strong>，这是未来毛利修复的关键通道<br />
+- <strong>验证点</strong>：年报/半年报披露的新中标型号数量与新品收入占比。<strong>证伪信号</strong>：新品批量订货后毛利率仍未回到 33% 以上</p>
+<p><strong>因子2 毛利结构再平衡 —— 结构正在向低毛利迁移</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2025 营收</th>
+<th>2025 毛利率</th>
+<th>2026H1 占比</th>
+<th>对"批产降价"的敏感度</th>
+<th>敏感权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专用无线通信终端</td>
+<td>12.54 亿</td>
+<td>35.46%</td>
+<td>57.59%（占比提升）</td>
+<td><strong>高</strong>（批量交付最直接被审价）</td>
+<td>约 0.60</td>
+</tr>
+<tr>
+<td>系统集成</td>
+<td>7.46 亿</td>
+<td>25.31%</td>
+<td>32.62%</td>
+<td>中（按项目招投标）</td>
+<td>约 0.33</td>
+</tr>
+<tr>
+<td>材料销售及维修</td>
+<td>0.60 亿</td>
+<td>偏高</td>
+<td>1.93%</td>
+<td><strong>低</strong>（后市场定价自由度高）</td>
+<td>约 0.02</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.60 亿</td>
+<td>—</td>
+<td>7.85%</td>
+<td>中</td>
+<td>约 0.05</td>
+</tr>
+</tbody>
+</table>
+<p><strong>加权结论</strong>：2026H1 军用终端占比上升（终端批量交付回暖）→ 结构自动向价格敏感敞口倾斜 → 即使各产线毛利率不变，综合毛利率也会被拉低。<strong>这是 2026Q2 毛利率环比 −8.79pct 的主要贡献项，而非单纯降价。</strong><br />
+→ <strong>喂给第四步的输入</strong>：中性情景毛利率不能静态沿用 2025 年的 32.03%，须按"终端占比升 + 终端单价降"双杀处理，2029E 中性给 <strong>35.4%</strong>（靠津移高毛利与维修后市场占比提升拉回）、悲观给 <strong>30%</strong>。</p>
+<p><strong>因子3 库存与采购节奏（timing）</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2026-06-30</th>
+<th>2025-12-31</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存货</td>
+<td><strong>23.03 亿</strong></td>
+<td>22.22 亿</td>
+<td>占净资产 <strong>60.93%</strong>，主要为在产/备货军用整机</td>
+</tr>
+<tr>
+<td>存货跌价准备</td>
+<td>1.19 亿（计提比例 4.92%）</td>
+<td>—</td>
+<td>高价备货后遇审价下行，<strong>已确认跌价损失</strong></td>
+</tr>
+<tr>
+<td>合同资产</td>
+<td>1.29 亿</td>
+<td>1.18 亿</td>
+<td>已交付未结算，转收入较快</td>
+</tr>
+<tr>
+<td>应收票据</td>
+<td>1.12 亿</td>
+<td>3.84 亿</td>
+<td>票据集中兑现，短期现金改善</td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td><strong>37.36 亿</strong></td>
+<td>37.30 亿</td>
+<td>与上年末持平，未见继续恶化</td>
+</tr>
+<tr>
+<td>合同负债</td>
+<td><strong>4.53 亿</strong></td>
+<td>—</td>
+<td><strong>订单预收款，唯一可观测的订单先行指标</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>高价接货损失已落地</strong>：2025 年报明确"计提存货跌价准备同比增加"，2025Q4 单季扣非 −3.12 亿即为体现</li>
+<li><strong>低价囤货收益</strong>：不适用（元器件价格整体平稳，公司无大宗商品原料敞口）</li>
+<li><strong>长协/套保</strong>：未披露任何套保安排，无金融对冲</li>
+<li><strong>timing 判断</strong>：2025 年是"备货垫付 + 跌价计提"的最差年份；2026H1 收入 +20.57% 说明<strong>存货已开始转化为收入</strong>（与管理层 2025 年"扩产备货"口径吻合），但存货绝对值仍升 0.82 亿 —— <strong>转化速度慢于备货速度</strong></li>
+<li><strong>验证点</strong>：年报存货周转率（2025 年仅 0.61 次）；若 2026 年报存货下降且收入超 24 亿，则转化成功。<strong>证伪信号</strong>：存货继续上升且跌价计提比例突破 6%</li>
+</ul>
+<p><strong>因子4 政策 / 市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>类型</th>
+<th>方向</th>
+<th>情景假设</th>
+<th>验证点 / 证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>军品定价机制改革 / 带量采购</td>
+<td><strong>政策核心</strong></td>
+<td>毛利杀手</td>
+<td>悲观：2027 年起新品也纳入批量降价 → 毛利率破 30%；中性：存量降价见底、新品可重新审价 → 修复至 33%+</td>
+<td><strong>验证</strong>：年度审价结果、年报毛利率；<strong>证伪</strong>：连续 2 年毛利率低于 30%</td>
+</tr>
+<tr>
+<td>高端芯片出口管制</td>
+<td>政策</td>
+<td>抬成本</td>
+<td>悲观：关键 FPGA/ADC 进口受阻，国产替换验证周期拉长，单位成本 +5~8%</td>
+<td><strong>验证</strong>：国产芯片替代比例披露；<strong>证伪</strong>：进口料断供致交付延期公告</td>
+</tr>
+<tr>
+<td>国产替代补贴</td>
+<td>政策</td>
+<td>降成本</td>
+<td>乐观：核心芯片国产化专项补贴落地，部分对冲研发支出</td>
+<td><strong>验证</strong>：政府补助科目金额（2025 年仅 1691 万，量级很小）；<strong>证伪</strong>：补助连续 2 年低于 2000 万</td>
+</tr>
+<tr>
+<td>5G-R 国铁换代</td>
+<td><strong>政策（民用）</strong></td>
+<td>抬单价 + 抬量</td>
+<td>CIR 换代是全行业重置定价窗口，新品可重新定价 → 传导率阶段性回升</td>
+<td><strong>验证</strong>：CRCC 认证通过公告、首次批量订单；<strong>证伪</strong>：2027 年底仍未取证或换代招标延后</td>
+</tr>
+<tr>
+<td>铜/PCB/结构件等大宗</td>
+<td>市场</td>
+<td>中性</td>
+<td>≤3% 波动对毛利影响 &lt;0.3pct，非主要矛盾</td>
+<td>—</td>
+</tr>
+<tr>
+<td>军贸出口放开</td>
+<td>政策</td>
+<td>抬单价</td>
+<td>军贸价格高于内销，若放量可显著修复毛利</td>
+<td><strong>验证</strong>：出口合同公告（当前境外收入仅 80.62 万，0.11%）；<strong>证伪</strong>：2027 年境外收入仍 &lt;1%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>进度</th>
+<th>收入确认窗口</th>
+<th>利润贡献</th>
+<th>确定性等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直升机回传系统项目</td>
+<td>航空通信领域<strong>独家中标</strong>（方案竞标与试飞比测均第一）</td>
+<td>未披露</td>
+<td><strong>已中标</strong>，待批产</td>
+<td>2027–2029</td>
+<td>新品议价，毛利率高于存量</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>某新型指挥系统超短波通信设备</td>
+<td>构成该指挥系统的核心装备，覆盖指挥车等品类</td>
+<td>未披露</td>
+<td><strong>已中标</strong></td>
+<td>2027–2029</td>
+<td>同上</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>北斗三号系统提升工程项目</td>
+<td>高精度定位技术支撑</td>
+<td>未披露</td>
+<td><strong>已中标</strong></td>
+<td>2027–2029</td>
+<td>卫星类毛利率高于普通终端</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>天通/北斗设备项目</td>
+<td>某军兵种远程终端数据交互、定位导航、状态管控</td>
+<td>未披露</td>
+<td><strong>已中标</strong></td>
+<td>2027–2029</td>
+<td>同上</td>
+<td>中</td>
+</tr>
+<tr>
+<td>某机动通信项目</td>
+<td>前期中标，<strong>已获批量订货并进入产品交付阶段</strong></td>
+<td>未披露</td>
+<td><strong>已批产交付</strong></td>
+<td><strong>2026H2–2027</strong></td>
+<td>已可见，最先兑现</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>某通信导航识别系统</td>
+<td>前期批产交付后<strong>实现地面站领域市场突破</strong></td>
+<td>未披露</td>
+<td>持续订货</td>
+<td>2026H2–2028</td>
+<td>中</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>某型卫星导航接收机</td>
+<td><strong>已装配至新平台</strong>，具备持续放量基础</td>
+<td>未披露</td>
+<td>小批量</td>
+<td>2027–2029</td>
+<td>取决于平台放量节奏</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td>机载超短波电台 / 通信控制管理设备</td>
+<td>配套<strong>支撑新质作战模式的新型平台</strong></td>
+<td>未披露</td>
+<td>配套供货</td>
+<td>2027–2029</td>
+<td>跟随平台节奏</td>
+<td>中</td>
+</tr>
+<tr>
+<td>车载 / 手持电台配套新平台</td>
+<td>存量型号换平台</td>
+<td>未披露</td>
+<td>持续配套</td>
+<td>2026H2–2029</td>
+<td>稳</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>国铁 <strong>V2.5 CIR</strong> 系列</td>
+<td>完成性能样机开发，<strong>进入 CRCC 认证审核</strong>，国铁换代具先发优势</td>
+<td>未披露</td>
+<td><strong>认证中</strong></td>
+<td>2027–2030</td>
+<td>换代定价，毛利率高</td>
+<td><strong>中高（关键）</strong></td>
+</tr>
+<tr>
+<td>国铁<strong>新一代 CIR（5G-R）</strong></td>
+<td>完成合新铁路试用前期、武汉局安装方案、大秦铁路第一阶段全部试验 → <strong>进入现场试用阶段</strong></td>
+<td>未披露</td>
+<td>现场试用</td>
+<td>2028–2031</td>
+<td>长期主线</td>
+<td>中（时点偏晚）</td>
+</tr>
+<tr>
+<td>城市轨道交通项目</td>
+<td>上海 1 号线信号改造、上海市域嘉闵线、南京 2 号线、厦门 3 号线二期、广州 2 号线、北京燕房线等多地重点项目</td>
+<td>未披露</td>
+<td><strong>已中标</strong></td>
+<td>2026H2–2028</td>
+<td>稳，毛利率中等</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>毫米波 / 5G 宽窄融合新产品</td>
+<td>多地新产品测试与方案验证</td>
+<td>未披露</td>
+<td>研发 → 示范</td>
+<td>2028 以后</td>
+<td>期权</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>津移通信北交所 IPO</strong></td>
+<td>2026-05-30 报送材料，<strong>2026-06-17 获受理</strong>，拟募资 4 亿</td>
+<td>标的 2026H1 营收 2.38 亿 / 净利 7122 万</td>
+<td><strong>IPO 审核中</strong></td>
+<td>—</td>
+<td><strong>股权价值重估 + 权益摊薄至约 55%</strong></td>
+<td><strong>高（事件）</strong></td>
+</tr>
+<tr>
+<td>方州科技并表（训练仿真）</td>
+<td>以 <strong>3.78 亿收购 58.24%</strong>，形成商誉 <strong>1.40 亿</strong></td>
+<td>报告期营收 2766 万、<strong>亏损 854 万</strong></td>
+<td>整合初期</td>
+<td>2027 以后</td>
+<td><strong>目前为负贡献</strong></td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：出海军贸、低空经济、装备维修</td>
+<td>公司明确列为 2026H2 新方向</td>
+<td>境外收入当前仅 <strong>80.62 万（0.11%）</strong></td>
+<td><strong>孵化期，无规模订货</strong></td>
+<td>2028 以后</td>
+<td>暂不可见</td>
+<td><strong>低</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计量化（自下而上，仅统计"已中标 / 已批产 / 已进认证"项目）</strong><br />
+- 2026H2–2027 可确认增量（军用机动通信 + 通信导航识别 + 城轨项目）：合并收入由 2025 年 <strong>21.48 亿</strong> 提升至 <strong>2026E 约 24.5 亿</strong>（H1 已实现 7.61 亿，军品验收集中于下半年）<br />
+- 2027 年后接力：上述 6 类军用新中标型号 + 国铁 CIR 换代<br />
+- <strong>⚠️ 主要不确定源：军用项目金额按惯例一律未披露，无在手订单总额可查。唯一可观测的订单先行指标是合同负债 4.53 亿</strong></p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守档</th>
+<th>中性档</th>
+<th>乐观档</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>军用专网全国产能充裕，公司 2025 年营收 21.48 亿，规模居前但非最大</td>
+<td>维持现有型号配套份额</td>
+<td>新平台配套带来型号数 +3~5 个</td>
+<td>航空/地面/卫星三线同时放量</td>
+<td>季报产品结构：终端 vs 系统集成占比变化</td>
+</tr>
+<tr>
+<td>② 需求侧 / 客户份额</td>
+<td>前五大客户 34.42%，<strong>定型后生命周期 5–10 年、同型号 2–3 家且不易更换</strong></td>
+<td>存量份额 100% 保住</td>
+<td>存量稳 + 新型号切入</td>
+<td>成为新型号主研单位之一</td>
+<td>年报"新增订货/定型"表述；新客户首配公告</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>处于软件定义无线电 + 抗干扰 + 北斗三号 + 天通 + 5G-R 代，多个方向国内第一梯队，直升机回传系统为<strong>独家中标</strong></td>
+<td>与国际代差未扩大</td>
+<td><strong>领先一代</strong>（新品重新定价）</td>
+<td>星基导航获国家科技进步一等奖，技术兑现能力获官方背书</td>
+<td>型号定型公告、国家/省部级科技奖项</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td>天津单一基地、本地化率高；但研发费用率过高 → <strong>单位成本被费用拖累，不在曲线左侧</strong></td>
+<td>规模上来后单位费用下降</td>
+<td>费用率从 40.77% 降至 26%</td>
+<td>降至 22% 以下</td>
+<td>季报期间费用率（2026H1 已同比 −10.69pct）</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td>2024–2025 份额被压缩（行业排 27/30），<strong>2026H1 出现回补 +20.57%</strong></td>
+<td>二阶导仍为负（一次性反弹）</td>
+<td><strong>二阶导转正，但尚未进入 S 曲线陡峭段</strong></td>
+<td>S 曲线进入陡峭段</td>
+<td>连续 2~3 个季度营收同比 &gt;15%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>中性档结论</strong>：2029E 合并收入 35.0 亿（津移 7.2 亿 + 军品及其他 27.8 亿），相当于 2022 年历史峰值 40.4 亿的 <strong>87%</strong>。<br />
+<strong>产能约束校验</strong>：2022 年已实现 40.4 亿交付，现有产能上限远高于 35 亿，<strong>不受产能约束，只受订单约束</strong>（2026H1 在建工程仅 0.19 亿，无重大扩产投入，亦无新增大额折旧压力）。</p>
+<p><strong>层2 扩展业务：主业迁移空间（五点判定）</strong></p>
+<table>
+<thead>
+<tr>
+<th>迁移方向</th>
+<th>①能力可迁移性</th>
+<th>②新 TAM 弹性</th>
+<th>③切入卡位</th>
+<th>④认证门槛</th>
+<th>⑤信号验证</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出海 / 军贸</td>
+<td>高（通信装备通用）</td>
+<td>大（军贸是十五五重要增量）</td>
+<td><strong>卡位偏晚</strong>（境外收入仅 0.11%）</td>
+<td>极高（出口许可）</td>
+<td>未通过：无出口订单公告</td>
+<td><strong>中期期权，不计中性</strong></td>
+</tr>
+<tr>
+<td>低空经济通信载荷</td>
+<td>高（无人机通信）</td>
+<td>大</td>
+<td>卡位尚可</td>
+<td>中（民航/适航）</td>
+<td>未通过：无具体订单</td>
+<td><strong>中期期权，不计中性</strong></td>
+</tr>
+<tr>
+<td>训练仿真（方州科技）</td>
+<td>中（技术协同）</td>
+<td>中</td>
+<td>已通过并购切入</td>
+<td>中</td>
+<td><strong>当前仍亏</strong>（营收 2766 万、亏 854 万），商誉 1.40 亿存减值风险</td>
+<td><strong>期权，且带负贡献</strong></td>
+</tr>
+<tr>
+<td>装备维修后市场</td>
+<td>高（原厂优势）</td>
+<td>稳定但体量不大</td>
+<td>天然卡位</td>
+<td>低</td>
+<td>材料维修收入仅 0.15 亿</td>
+<td>小幅计入中性</td>
+</tr>
+<tr>
+<td>民用 5G-R / 城轨毫米波</td>
+<td>高</td>
+<td>中（国铁换代 + 城轨改造）</td>
+<td>先发优势（铁路龙头）</td>
+<td>中（CRCC 认证）</td>
+<td><strong>CRCC 认证审核中，尚未取证</strong></td>
+<td><strong>部分计入中性</strong>（2027 起）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+1. 综合毛利率连续两个半年低于 30% → 降价未见底，层1 中性档下调<br />
+2. 新中标型号在 2027 年底前<strong>未转为批量订货交付</strong> → 剔除层1 乐观档，2029E 营收下调至 26 亿<br />
+3. 2027 年（建军百年）扣非仍未转正 → 扭亏路径失效<br />
+4. 方州科技连续 2 年亏损 → 商誉 1.40 亿计提减值，直接冲击净资产<br />
+5. 津移通信 IPO 被否或撤回 → SOTP 中最确定的一块价值坍塌<br />
+6. 应收账款增速持续高于收入增速且账龄恶化 → 减值超预期</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：<strong>不使用任何历史增速外推</strong>（全文不出现"假设未来保持 X% 增速""CAGR 外推"一类表述）。亏损期（2026E）用 <strong>PS / PB 交叉锚</strong>；远期（2029E）用 <strong>正常化净利润法 + SOTP 双轨交叉验证</strong> —— 因为亏损集中在军品母公司，而控股子公司津移通信是盈利且正在 IPO 的资产，单一合并 PE 会严重失真。</p>
+</blockquote>
+<p><strong>总股本：7.72 亿股</strong>（注册资本 77200 万元，无待转股的可转债等稀释工具）</p>
+<h3>（A）基准：2026 年底测算</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>测算依据</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 已实现营收</td>
+<td>财务报表</td>
+<td>7.61 亿（+20.57%）</td>
+</tr>
+<tr>
+<td>2026H2 交付节奏</td>
+<td>军品验收集中于 Q3/Q4（2025 年 H2 占全年 70.6%）；本期新增"机动通信批量订货""通信导航识别地面站突破"及多个城轨项目在 H2 确认</td>
+<td><strong>16.9 亿</strong>（保守取 H1 的 2.2 倍，低于 2025 年的 2.4 倍）</td>
+</tr>
+<tr>
+<td><strong>2026E 营收</strong></td>
+<td>H1 + H2</td>
+<td><strong>24.5 亿</strong>（2025 年 21.48 亿）</td>
+</tr>
+<tr>
+<td>2026E 毛利率</td>
+<td>H1 31.02%，Q2 已降至 28.18%，批产降价仍在持续</td>
+<td><strong>29.5%</strong></td>
+</tr>
+<tr>
+<td>2026E 毛利额</td>
+<td>24.5 × 29.5%</td>
+<td><strong>7.23 亿</strong></td>
+</tr>
+<tr>
+<td>2026E 期间费用</td>
+<td>H1 3.10 亿；H2 放量后费用非线性增加，估 3.6 亿</td>
+<td><strong>6.70 亿</strong>（费用率 27.3%，较 H1 的 40.77% 大幅摊薄）</td>
+</tr>
+<tr>
+<td>2026E 减值损失</td>
+<td>H1 信用 + 资产减值合计约 0.45 亿；年末惯例集中计提，保守给全年 1.6 亿（2025 年约 3 亿）</td>
+<td><strong>1.60 亿</strong></td>
+</tr>
+<tr>
+<td>2026E 其他收益 / 投资收益</td>
+<td>政府补助 + 债务重组 + 金融资产收益</td>
+<td><strong>0.50 亿</strong></td>
+</tr>
+<tr>
+<td><strong>2026E 利润总额</strong></td>
+<td>7.23 − 6.70 − 1.60 + 0.50</td>
+<td><strong>−0.57 亿</strong></td>
+</tr>
+<tr>
+<td>2026E 净利润 / 少数股东损益</td>
+<td>津移 2026E 净利约 1.4 亿，35% 归少数股东</td>
+<td>净利 −0.60 亿 / 少数股东 <strong>+0.50 亿</strong></td>
+</tr>
+<tr>
+<td><strong>2026E 归母净利润</strong></td>
+<td></td>
+<td><strong>−1.10 亿</strong>（2025 年 −4.92 亿，大幅减亏）</td>
+</tr>
+<tr>
+<td>2026E 每股净资产</td>
+<td>（37.80 − 1.10）亿 ÷ 7.72 亿股</td>
+<td><strong>约 4.75 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>基准估值锚（亏损期不用 PE）</strong><br />
+- PS 锚：24.5 亿营收 × 3.5x = 85.8 亿 → <strong>11.1 元</strong>；× 4.3x = 105.4 亿 → <strong>13.7 元</strong><br />
+- PB 锚：BPS 4.75 元 × 2.4x = <strong>11.4 元</strong>；× 2.9x = <strong>13.8 元</strong><br />
+- 双锚交叉 → <strong>基准目标价 11.8 元（区间 10.3–13.7）</strong>，相对现价 12.03 元 <strong>空间 −1.9%</strong></p>
+<h3>（B）远期：2029E 分业务自下而上测算（正常化净利润法）</h3>
+<p><strong>第 1 步：估稳态营收（2029E·中性）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2025 实际</th>
+<th>2029E 中性</th>
+<th>自下而上依据</th>
+<th>正常化毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>军用终端（含机载/车载/手持/卫星导航终端）</td>
+<td>12.54 亿</td>
+<td><strong>17.5 亿</strong></td>
+<td>存量型号交付回暖 + 直升机回传、天通/北斗设备、卫星导航接收机、车载/手持电台换平台共 5 类已中标型号在 2027–2029 爬坡至批量</td>
+<td>33%</td>
+</tr>
+<tr>
+<td>军用系统集成</td>
+<td>7.46 亿</td>
+<td><strong>8.3 亿</strong></td>
+<td>机动通信批量订货已放量 + 北斗三号提升工程 + 新型指挥系统超短波；散射/单兵/无人通信暂不计</td>
+<td>27%</td>
+</tr>
+<tr>
+<td>民用铁路 / 城轨（津移通信）</td>
+<td>4.73 亿</td>
+<td><strong>7.2 亿</strong></td>
+<td>国铁 V2.5 CIR 换代（CRCC 认证中）+ 5G-R 换代启动 + 上海/南京/厦门/广州/北京等已中标城轨项目交付 + IPO 募资 4 亿扩产</td>
+<td>46%</td>
+</tr>
+<tr>
+<td>材料销售、维修及其他</td>
+<td>1.15 亿</td>
+<td><strong>2.0 亿</strong></td>
+<td>装备维修后市场（已列 2026H2 重点方向）+ 方州科技小幅贡献</td>
+<td>40%</td>
+</tr>
+<tr>
+<td><strong>2029E 合计营收</strong></td>
+<td>21.48 亿</td>
+<td><strong>35.0 亿</strong></td>
+<td>—</td>
+<td><strong>加权 35.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>产能约束校验：35.0 亿 vs 历史峰值 2022 年 40.4 亿，<strong>未超过已验证的交付能力上限，不需新增重大资本开支</strong>（2026H1 在建工程仅 0.19 亿）。</p>
+</blockquote>
+<p><strong>第 2 步：算正常化净利率（三选一取保守）</strong><br />
+- 行业正常净利率：军工电子中游信息化配套环节 2025 年利润普遍承压（板块净利率仅 3.84%），头部参考值 <strong>8%</strong><br />
+- 公司历史最好年份净利率：2022 年 <strong>19.2%</strong>、2023 年 <strong>13.5%</strong><br />
+- 产能爬坡后理论净利率（本报告自下而上推演）：<strong>约 6.3%</strong><br />
+- <strong>按 RULES 要求取保守值 → 采用自下而上推演值 6.3%</strong>，理由：批产降价不可逆 + 研发费用率结构性抬升 + 津移约 45% 少数股东权益长期摊薄归母</p>
+<p><strong>第 3 步：2029E 中性损益表</strong></p>
+<table>
+<thead>
+<tr>
+<th>科目</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td><strong>35.0 亿</strong></td>
+<td>见上表</td>
+</tr>
+<tr>
+<td>营业毛利</td>
+<td><strong>12.39 亿</strong></td>
+<td>加权毛利率 35.4%（终端/系统定价仍承压，靠津移高毛利 + 维修后市场占比提升拉回）</td>
+</tr>
+<tr>
+<td>期间费用</td>
+<td><strong>7.90 亿</strong></td>
+<td>费用率 22.6%。其中研发约 4.5 亿（占营收 13%，低于 2025 年 32% 但高于 2023 年）、销售 0.8 亿、管理 1.9 亿、财务 0.7 亿</td>
+</tr>
+<tr>
+<td>信用 + 资产减值损失</td>
+<td><strong>−0.90 亿</strong></td>
+<td>应收账款规模仍大，按年度正常化计提</td>
+</tr>
+<tr>
+<td>其他收益 / 投资收益</td>
+<td><strong>+0.60 亿</strong></td>
+<td>政府补助 + 权益法收益</td>
+</tr>
+<tr>
+<td><strong>利润总额</strong></td>
+<td><strong>4.19 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>所得税</td>
+<td><strong>−0.63 亿</strong></td>
+<td>按 15% 高新资质估算</td>
+</tr>
+<tr>
+<td>净利润</td>
+<td><strong>3.56 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>少数股东损益</td>
+<td><strong>−0.95 亿</strong></td>
+<td>津移 IPO 摊薄后约 45% 少数股东，2.0 亿 × 45%</td>
+</tr>
+<tr>
+<td><strong>2029E 归母净利润（中性）</strong></td>
+<td><strong>2.61 亿</strong></td>
+<td>对应正常化净利率 7.5%</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>保守起见，<strong>再打 15% 安全折扣</strong>（订单不可见 + 存货/应收减值不确定性）→ <strong>中性归母取 2.20 亿</strong>。</p>
+</blockquote>
+<p><strong>第 4 步：→ 目标市值 → 目标价（双轨交叉）</strong></p>
+<p><strong>轨道一（合并正常化 PE）</strong>：2.20 亿 × <strong>34x</strong>（军用通信稀缺性 + 天津国资改革 + 扭亏弹性）= <strong>74.8 亿</strong> → <strong>9.69 元</strong></p>
+<p><strong>轨道二（SOTP 分部加总）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>分部</th>
+<th>2029E 净利</th>
+<th>给予估值</th>
+<th>分部市值</th>
+<th>权益比例</th>
+<th>权益价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>津移通信（民用铁路/轨交）</td>
+<td>2.00 亿</td>
+<td>30x PE（北交所专精特新龙头）</td>
+<td>60.0 亿</td>
+<td><strong>55%</strong>（IPO 摊薄后）</td>
+<td><strong>33.0 亿</strong></td>
+</tr>
+<tr>
+<td>军用通信主体（含方州科技）</td>
+<td>—</td>
+<td>PS 1.0x × 军用收入 27.8 亿</td>
+<td>27.8 亿</td>
+<td>100%</td>
+<td><strong>27.8 亿</strong></td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>60.8 亿</strong></td>
+<td><strong>7.88 元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>两轨结果 <strong>9.69 元 / 7.88 元</strong>，取中值并略偏向 PE 轨（PS 法未体现军品扭亏后的经营杠杆）→ <strong>中性目标市值 67 亿，对应目标价 8.68 元</strong>。</p>
+</blockquote>
+<h3>（C）三情景表（目标价取中性）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>2029E 归母</th>
+<th>估值方法</th>
+<th>目标市值</th>
+<th><strong>目标价</strong></th>
+<th><strong>空间</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>军用新中标型号 2027 年底前未转批量订货；军品降价持续；方州科技商誉减值 1.40 亿</td>
+<td>26.0 亿</td>
+<td><strong>−1.5 亿（仍亏）</strong></td>
+<td>SOTP：津移 1.5 亿 × 25x × 55% = 20.6 亿 + 军用 PS 0.6x × 22 亿 = 13.2 亿</td>
+<td>33.8 亿</td>
+<td><strong>4.38 元</strong></td>
+<td><strong>−63.6%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>已中标型号 2027–2029 陆续转批量交付；毛利率修复至 35%；津移 IPO 成功且成为国铁换代主力</td>
+<td>35.0 亿</td>
+<td><strong>2.20 亿</strong></td>
+<td>34x PE（已含 15% 安全折扣）／SOTP 交叉</td>
+<td>67.0 亿</td>
+<td><strong>8.68 元</strong></td>
+<td><strong>−27.8%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>十五五规模化订单提前下达 + 建军百年 2027 集中交付 + 军品定价纠偏 + 军贸突破</td>
+<td>40.0 亿</td>
+<td><strong>3.80 亿</strong></td>
+<td>38x PE（恢复期高弹性）</td>
+<td>144.4 亿</td>
+<td><strong>18.71 元</strong></td>
+<td><strong>+55.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>24.5 亿</td>
+<td>35.0 亿</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td><strong>−1.10 亿</strong>（亏损）</td>
+<td><strong>+2.20 亿</strong>（正常化）</td>
+</tr>
+<tr>
+<td>合理 PE / 锚</td>
+<td>PS 3.5–4.3x ／ PB 2.4–2.9x</td>
+<td>34x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>91–106 亿</td>
+<td><strong>67 亿</strong></td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>11.8 元</strong>（区间 10.3–13.7）</td>
+<td><strong>8.68 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 12.03 元对应 2029E 中性归母 2.20 亿 → <strong>远期 PE 42x</strong>。对一个正常化净利率仅 6–7%、ROE 不足 6% 的装备制造企业，42x 明显偏贵。同时 PB 2.46x 对一个仍在亏损的军工主体也不便宜。<strong>市场已把"看不到具体金额的订单"充分定价。</strong></p>
+<h3>第四步进阶：重资产 / 周期 / 杠杆三道校正</h3>
+<p><strong>校正1 资产质量折扣（虽未破净，但净资产成色须打折）</strong></p>
+<p>PB = 2.46x <strong>未破净</strong>，但 37.80 亿净资产的含金量需逐项审视：</p>
+<table>
+<thead>
+<tr>
+<th>科目</th>
+<th>金额</th>
+<th>质量判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>应收账款</td>
+<td><strong>37.36 亿</strong>（总资产 42.78%，周转率 0.61 次）</td>
+<td><strong>虚高风险最高</strong>：军方回款周期长，2025 年板块应收占营收已达 110.34%。账龄若拉长，再计提 1–2 亿易如反掌</td>
+</tr>
+<tr>
+<td>存货</td>
+<td><strong>23.03 亿</strong>（占净资产 60.93%）</td>
+<td>已计提跌价 1.19 亿（4.92%）。军品专用性强、难转产 → 清算价值远低于账面，是<strong>第二虚高项</strong></td>
+</tr>
+<tr>
+<td>商誉</td>
+<td><strong>1.40 亿</strong></td>
+<td>方州科技并表形成，标的仍亏（−854 万），<strong>减值风险实质存在</strong></td>
+</tr>
+<tr>
+<td>无形资产</td>
+<td><strong>2.84 亿</strong>（较上年末 +297.98%）</td>
+<td>由其他非流动资产（−96.04%）转入，需关注后续摊销压力</td>
+</tr>
+<tr>
+<td>货币资金</td>
+<td>4.99 亿</td>
+<td>真实</td>
+</tr>
+<tr>
+<td>交易性金融资产</td>
+<td>0.90 亿</td>
+<td>真实</td>
+</tr>
+<tr>
+<td>长期股权投资</td>
+<td>1.89 亿</td>
+<td>真实</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>调整后可变现净资产约 33–35 亿（真实 BPS 4.3–4.5 元），较账面 4.90 元低 8–12%。按真实 BPS 4.40 元计，现价 12.03 元对应真实 PB 约 2.73x</strong> —— 对一家仍在亏损的公司并不便宜。</p>
+<p><strong>校正2 周期位置校正（中性净利用周期归一化，禁用单年好年景 / 近三年均值 / 拐点年化）</strong></p>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>营收</th>
+<th>归母</th>
+<th>周期位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>40.40 亿</td>
+<td><strong>+7.75 亿</strong></td>
+<td><strong>顶部</strong>（十四五中期交付高峰）</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>32.68 亿</td>
+<td>+4.40 亿</td>
+<td>下行初期</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>21.54 亿</td>
+<td>−2.49 亿</td>
+<td>底部左侧（订单断档）</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>21.48 亿</td>
+<td><strong>−4.92 亿</strong>（含大额减值）</td>
+<td><strong>底部</strong>（营收最低点 + 减值集中爆发）</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>24.5 亿</td>
+<td>−1.10 亿</td>
+<td><strong>底部回升初期</strong></td>
+</tr>
+<tr>
+<td>2029E 中性</td>
+<td>35.0 亿</td>
+<td>+2.20 亿</td>
+<td>中枢—上行早期</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>周期归一化净利</strong>：trough-to-peak（−4.92 ~ +7.75）中值约 <strong>+1.4 亿</strong>；以行业正常单位盈利校验（板块净利率 3.84%–5.82% 应用于 35 亿营收）得 <strong>1.35–2.04 亿</strong>。两者交叉 → <strong>1.4–2.0 亿</strong>，与本报告中性 2.20 亿基本吻合（已加 15% 折扣处理，落在区间上沿但合理）</li>
+<li>✅ <strong>未使用"近三年均值"（2023–2025 恰含顶部与底部，均值失真）或"单季扭亏年化"（2026Q2 仅减亏，尚未扭亏）</strong></li>
+<li><strong>当前周期位置标注：底部回升初期</strong>（依据：2026H1 营收 +20.57%、板块合同负债与存货双升、2026Q1 板块营收 +19.36% 净利 +47.24%、公募军工持仓 3.97% 处历史低位）</li>
+<li><strong>含义</strong>：底部不过度悲观（故未把悲观档 4.38 元当作中性），但<strong>回升初期不等于中枢已到</strong> —— 这是中性目标价显著低于现价的根因</li>
+</ul>
+<p><strong>校正3 杠杆下行情景（利率 / 需求下行负面情景）</strong><br />
+- 2026H1 资产负债率 <strong>53.03%</strong>（较上年末 −2.03pct）；有息负债率 <strong>18.38%</strong>；有息负债约 16 亿（短期借款 0.59 亿 + <strong>一年内到期非流动负债 6.89 亿，较上年末 +186.92%</strong> + 长期借款 8.57 亿）<br />
+- <strong>负面情景推演</strong>：若 2027 年军方订单延后半年 + 贷款利率上行 50bp，则 ①营收回落至 20 亿 → 经营杠杆使亏损由 −1.10 亿扩大至约 −2.5 亿；②新增财务费用约 0.08 亿；③6.89 亿一年内到期债务需再融资，若授信收紧则触发应急；④净资产降至约 33 亿 → PB 2.0x 支撑价 <strong>8.5 元</strong>，PB 1.6x 支撑价 <strong>6.8 元</strong><br />
+- ✅ 该负面情景已反映在悲观档（4.38 元）与其上沿（约 6.8 元）之间。<strong>只要出现"订单延后 + 再融资受阻"双共振，空间将进一步转负 → 因此不得标注"重点关注 / 大空间"</strong><br />
+- 补充风险：控股股东智博科技质押 1.34 亿股，占其持股 36.01%、占总股本 17.4%</p>
+<p><strong>期权纪律执行</strong><br />
+- 津移通信 IPO：因标的已连续三年多盈利、北交所已受理、独立估值可测，<strong>属"已确认事件"而非"期权"，计入中性（33.0 亿权益）</strong><br />
+- <strong>明确不计入中性 NAV / 中性净利</strong>：军贸出口（境外收入 0.11%）、低空经济、训练仿真（方州仍亏）、5G-R 换代放量、军品定价纠偏 —— 以上仅出现在乐观档 18.71 元中</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>亏损股三问（必答）</strong></p>
+<p><strong>① 为什么亏？</strong> —— 四重因素叠加，而非单一原因：<br />
+- <strong>收入塌方</strong>：从 2022 年 40.40 亿腰斩至 2025 年 21.48 亿（−47%），订单到交付的节奏被打断<br />
+- <strong>费用刚性</strong>：2025 年研发费用 <strong>6.88 亿（占营收 32.05%）</strong>，研发人员 1071 人占员工总数 48.51%，年报原文承认"研发投入持续增长但未明显转化为收入"<br />
+- <strong>减值集中爆发</strong>：2025Q4 单季扣非 −3.12 亿（占全年扣非亏损 57.77%），主因存货跌价与信用减值同比增加，叠加递延所得税资产确认减少<br />
+- <strong>价格侧</strong>：批产交付价格下行，毛利率从历史约 40% 降至 2026Q2 的 28.18%</p>
+<p><strong>② 靠什么扭亏？触发时点在哪一年？</strong><br />
+- <strong>数学上的盈亏平衡营收 ≈ 30 亿元</strong>（按毛利率 33%、期间费用 7.5 亿、减值 1.0 亿测算）。<strong>2026E 仅 24.5 亿，缺口约 5.5 亿</strong><br />
+- 扭亏驱动源（按确定性排序）：<br />
+  1. <strong>津移通信</strong>（已在赚钱，2026H1 净利 7122 万，确定性最高）<br />
+  2. <strong>军品已中标型号转批量交付</strong>：机动通信（<strong>已在交付</strong>）、通信导航识别地面站（<strong>已突破</strong>）、直升机回传 / 北斗三号提升工程 / 天通北斗 / 新型指挥系统超短波（<strong>已中标待批产</strong>）<br />
+  3. <strong>费用摊薄</strong>：收入上 30 亿时，期间费用率自动从 40.77% 降至约 25%<br />
+- <strong>触发时点判断</strong>：中性情形 <strong>2027 年扣非转正、2028 年归母转正约 1.2–1.5 亿</strong>（与第三方机构"2027 年扭亏、2028 年净利近 2 亿"的预期方向一致）；悲观情形推迟到 2029 年以后</p>
+<p><strong>③ 亏得起吗？</strong> —— <strong>亏得起，但有期限</strong><br />
+- 净资产 37.80 亿（BPS 4.90 元）、资产负债率 53.03%、天津国资委实控、国有大行授信通道通畅<br />
+- 货币资金 4.99 亿 + 交易性金融资产 0.90 亿，但一年内到期负债 6.89 亿 → <strong>短期流动性偏紧，需靠回款或再融资接续</strong><br />
+- 经营现金流：2026H1 <strong>−0.65 亿</strong>（同比改善 <strong>1.85 亿</strong>），仍未转正；2025 全年 −4.98 亿<br />
+- 按当前年亏 1–2 亿的节奏，净资产可支撑十年以上，<strong>不存在退市 / 破产风险</strong>；真正的风险是"估值持续下杀"，而非倒闭</p>
+<p><strong>当前价格位置：合理偏贵（结构性偏贵，而非短期偏贵）</strong><br />
+- PE(TTM) −19.00x（无意义）；PB 2.46x；<strong>剔除应收 / 存货 / 商誉虚高后的真实 PB 约 2.73x</strong><br />
+- 按 2029E 中性归母 2.20 亿计，现价对应 2029 年 PE <strong>42x</strong>，对净利率仅 6–7%、ROE 不足 6% 的装备制造企业偏贵<br />
+- 股价已从 2025 年高点 26.25 元跌至 12.03 元（−54%），2026 年至今约 −42%。深跌来自 2024 年之前的高基数与高预期，并非单纯错杀</p>
+<p><strong>安全边际：负值</strong><br />
+- 中性远期 8.68 元 → <strong>−27.8%</strong><br />
+- 悲观远期 4.38 元 → <strong>−63.6%</strong>，下行肥尾厚（应收 37 亿 + 存货 23 亿 + 商誉 1.4 亿三重虚高）<br />
+- 乐观远期 18.71 元 → <strong>+55.5%</strong>，但需四个条件同时兑现<br />
+- <strong>当前位置不具备安全边际，赔率明显偏负</strong></p>
+<p><strong>介入条件（具体到价格）</strong><br />
+1. <strong>主介入位：7.50 元以下</strong>（对应中性目标 8.68 元仍有约 +16% 空间，且接近悲观情景上沿之下的安全区）<br />
+2. <strong>次介入位：9.00 元</strong> —— 但须同时满足以下三条信号：<br />
+   - 2026 年报营收 ≥ 24 亿且毛利率 ≥ 30%（证明量与价双稳）<br />
+   - 出现明确的批量订货公告（金额 ≥ 5 亿，或明确批产型号 + 交付年度）<br />
+   - 津移通信 IPO 成功挂牌且发行定价对应市值 ≥ 45 亿<br />
+3. <strong>严禁介入的情形</strong>：①2027 年中报扣非仍亏；②2026 年报应收账款增速高于营收增速且账龄恶化；③方州科技商誉计提减值</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong><br />
+1. <strong>⚠️ 军用新中标型号"只中标、不批量"（首要）</strong>：军方从中标 → 定型 → 批量订货存在数年链条，2026H1 拿到的 6 类中标<strong>金额全部未披露</strong>，这是中性情景最大的不确定源<br />
+2. <strong>应收账款黑天鹅</strong>：37.36 亿占总资产 42.78%，周转率 0.61 次，2025 年行业回款环境仍在恶化<br />
+3. <strong>减值 2.0</strong>：2025Q4 已演示过一次性计提约 3 亿的威力；若 2026Q4 再来一次，本报告 −1.10 亿的预测直接失效<br />
+4. <strong>军品降价未见底</strong>：Q2 毛利率 28.18% 已是新低；若跌破 25%，即使 35 亿营收也赚不到钱<br />
+5. <strong>方州科技整合失败 + 商誉减值</strong>（1.40 亿）<br />
+6. <strong>大股东质押 17.4%</strong>，股价继续下行存在被动减仓压力</p>
+<h3>第五步进阶：上行想象力情景（四类，与下行校正对称）</h3>
+<p><strong>类型A 行业调整剩者红利</strong><br />
+- 逻辑：军用专网通信资质壁垒极高（取得"四证"通常需约 3 年，型号定型后生命周期 5–10 年且同型号仅 2–3 家供应商）。过去三年行业深度洗牌，部分企业亏损甚至退出；一旦"十五五"规模化订单下达，<strong>存活者的型号份额可能被动提升</strong>（竞争者退出后无人接盘）<br />
+- 上行弹性：若 CR5 提升带动公司军用份额提升约 3pct，对应 2029 年增量收入约 3–4 亿、增量净利约 0.8 亿<br />
+- <strong>验证点</strong>：①2027 年"十五五"首批规模化订单正式下达；②公司季报合同负债环比持续大幅增长；③行业集中度进一步抬升的数据<br />
+- <strong>证伪信号</strong>：出现新进入者中标同类型号；公司份额被海格通信等对手切走</p>
+<p><strong>类型B 政策反转期权（军品定价纠偏）—— 本股最相关的想象力</strong><br />
+- 逻辑：压制公司盈利的核心变量是<strong>军品审价降价</strong>，而非需求。若"十五五"期间采购方在"低成本可持续发展"与"保产业链健康"之间纠偏，给承制单位合理利润留存，毛利率有望从 28% 修复至 38% 以上 —— <strong>这一项单独即可使 2029E 归母从 2.20 亿跳到 4.5 亿以上</strong><br />
+- 弹性测算：毛利率 +5pct × 35 亿营收 = 1.75 亿毛利 → 对应归母约 +1.5 亿；在 34x 下 = <strong>+51 亿市值 ≈ +6.6 元/股</strong><br />
+- <strong>验证点</strong>：①装备采购定价政策文件出现"合理利润 / 激励约束定价"表述；②公司毛利率连续两个半年度回升；③2026 年报首次出现"审价结果优于预期"<br />
+- <strong>证伪信号</strong>：2027 年报毛利率仍低于 30%；新一轮大额订货继续降价</p>
+<p><strong>类型C 市场错杀修复</strong><br />
+- 错杀证据：①2026 年至今跌幅约 −42%，同期军工板块 2026Q1 营收 +19.36%、净利 +47.24%，<strong>基本面与市场表现明显背离</strong>；②公募军工持仓占比 3.97% 仍处历史底部，潜在卖压已充分释放；③市值 92.87 亿中，仅津移通信 65.79% 权益就可能值 30–40 亿，军品主体隐含估值并不高<br />
+- 修复弹性：若板块整体修复带动 PB 回到 3.0x（对应 BPS 4.75 元）→ <strong>14.3 元（+18.9%）</strong><br />
+- <strong>验证点</strong>：①军工板块成交额与机构持仓占比回升至 5% 以上；②三季报确认合同负债转化为交付<br />
+- <strong>证伪信号</strong>：错杀被证明是"基本面提前反应"——即 2026 年报增收不减亏、毛利率继续下探；或板块上涨而本股不跟（说明是个体 alpha 问题）</p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权（5G-R + 星基导航双线）</strong><br />
+- 逻辑一：<strong>5G-R 新一代 CIR 换代</strong>。工信部已批复 5G-R 试验频率，公司完成大秦铁路第一阶段试验、武汉局安装方案、合新铁路试用前期工作，<strong>处于铁路通信代际切换第一梯队</strong>。国铁 CIR 存量设备规模巨大，换代即重置定价窗口，传导率阶段性回到 0.6–0.8，是公司未来五年最确定的高毛利增长源<br />
+- 逻辑二：<strong>星基导航</strong>。由北京航空航天大学牵头、公司联合参与的"中国民航星基导航运行系统关键技术及应用"荣获<strong>国家科学技术进步奖一等奖</strong>，打开了民航北斗应用这条与军品完全不同的新赛道<br />
+- <strong>三要素共振检查</strong>：①政策驱动 —— 5G-R 频率已批复（成立），民航星基导航尚无强制政策（未成立）→ 部分满足；②行业趋势收敛 —— 铁路换代 + 北斗替代 GPS（成立）；③公司投产落地 —— 性能样机完成、CRCC 认证审核中（中试跑通成立），但客户定点 / 大额订单未落地、量产成本是否优于旧路线未验证（未成立）<br />
+- <strong>硬验证点（防画饼，三者缺一则只作机会情景、不计中性锚）</strong>：①CRCC 认证正式取证；②国铁新一代 CIR 首次批量招投标的中标公告 + 金额；③量产交付毛利率显著高于现有产品（证明定价窗口真正打开）<br />
+- <strong>证伪信号</strong>：2027 年底 CRCC 认证仍未通过；国铁换代招标延后；新一代 CIR 中标价仍被压到老产品毛利率水平；星基导航无后续政策与订单跟进<br />
+- <strong>处理</strong>：✅ <strong>仅计入乐观档（18.71 元），不进中性锚 8.68 元</strong></p>
+<p><strong>❗ 什么条件出现才把结论上调至"重点关注"？（防为看涨找理由）</strong></p>
+<p>必须<strong>同时</strong>出现以下三条，缺一不可：<br />
+1. <strong>订单可见化</strong>：披露明确的批量订货合同（单笔 ≥ 5 亿，或明确的批产型号 + 交付年度公告）<br />
+2. <strong>价格见底</strong>：连续两个半年度综合毛利率回升并站上 33%（证明军品降价压力解除）<br />
+3. <strong>价格足够低</strong>：股价跌到 <strong>7.50 元以下</strong>（使中性目标对应空间跨过 &gt;50% 门槛），或公司 2028E 归母确定 ≥ 3 亿而股价不动<br />
+→ 三者齐备时中性目标价可上修至 13 元以上，届时结论方可上调至<strong>重点关注</strong></p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p><strong>理由汇总</strong>：①双向核查结果为<strong>确为真亏损</strong>（扣非同比扩大），扭亏触发时点最快 2027 年、正常 2028 年；②2029E 中性正常化归母 2.20 亿对应中性目标价 8.68 元，<strong>远期空间 −27.8%，既不满足"重点关注"的 &gt;50% 门槛，也不满足"纳入观察"的 &gt;0 要求</strong>；③净资产的应收 / 存货 / 商誉三重虚高使真实 PB 达 2.73x，价格不便宜；④公司质地不差（天津国资实控、津移通信是盈利现金牛且正在 IPO、多个型号独家中标、2208 名员工中研发占 48.51%），但<strong>当前价格把"看不到具体金额的订单"已经完全定价了</strong>；⑤类型 B（军品定价纠偏）与类型 D（5G-R 换代）是两条真实存在的上行期权，按纪律只放乐观档、不进中性锚。<br />
+<strong>一句话</strong>：逻辑对、底子在、时点在 2027–2028，但价格领先了基本面约两个身位。等 7.50 元以下，或等"批量订货公告 + 毛利率回升"双信号。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>12.03 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>11.8 元</strong>（区间 10.3–13.7）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−1.9%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>8.68 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−27.8%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 4.38 元（−63.6%）～ 乐观 18.71 元（+55.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>军用专网TOP2＋津移通信IPO重估，但批产降价拖垮毛利，30亿营收才盈亏平衡</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（7.50元以下或见批量订货+毛利率回升双信号再考虑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年年度报告、2026 年半年度报告（2026-08-29 披露）、天津七一二移动通信股份有限公司 2025 年年报及北交所 IPO 申报材料、中国证券报·中证网中报解读、证券之星中报深度解读、腾讯行情接口 <code>qt.gtimg.cn</code>（2026-09-11 收盘亲自复查）、国务院 2026 年财政预算草案（国防支出 1.94 万亿）、工业和信息化部 5G-R 试验频率批复、中信建投/国金证券/中航证券军工板块 2026 年中期策略。</em><br />
+<em>估值校验：①2026E 与 2029E 均由"业务线 → 订单/交付节奏 → 量 → 收入 → 毛利 → 费用 → 利润"自下而上推导，全文未使用任何历史增长率外推；②亏损双向核查完成，确为真亏损（2026H1 归母 −1.108 亿、扣非 −1.378 亿且扣非同比扩大）；③正常化净利经周期归一化交叉验证（trough-to-peak 中值 1.4 亿 与 板块单位盈利法 1.35–2.04 亿 双向印证）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

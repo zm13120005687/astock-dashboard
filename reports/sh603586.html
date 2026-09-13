@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金麒麟（603586）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>金麒麟（603586）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-13 ｜ 现价 <strong>13.58 元</strong>（2026-09-11 收盘，腾讯行情实测）｜ 总市值 <strong>26.62 亿</strong> ｜ 静态 PE <strong>19.52x</strong> ｜ 动态 PE <strong>76.98x</strong>（H1 年化）｜ PB <strong>1.18x</strong> ｜ 总股本 <strong>1.9605 亿股</strong><br />
+行业：摩擦材料 / 汽车制动零件 ｜ 板块：上交所主板<br />
+<strong>数据订正提示</strong>：<code>analysis_queue.csv</code> 中该股"现价 14.17 元 / PE_TTM 60.44 / PB 1.24"为旧窗口缓存，已逐个实测复核并全部替换；队列"亏损"标记与增速列口径同步修正。本报告全部股价、股本、市值以 2026-09-11 收盘实测口径为准。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内汽车刹车片（制动衬片）与刹车盘出口龙头，靠"多配方、多品种、小批量快反"的能力给海外汽车售后市场（AM）做制动易耗件的一站式供货，同时向 OEM 配套与轨道交通（动车组闸片）两个更高门槛方向迁移。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 7.749 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刹车片</td>
+<td>5.76 亿</td>
+<td>74.39%</td>
+<td>核心，海外 AM 为主</td>
+</tr>
+<tr>
+<td>刹车盘</td>
+<td>1.78 亿</td>
+<td>22.97%</td>
+<td>国内 AM 推广重点</td>
+</tr>
+<tr>
+<td>其他（含轨交/工业制动）</td>
+<td>0.205 亿</td>
+<td>2.64%</td>
+<td>基数极小，弹性观察点</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：汽车刹车片（乘用车/商用车，覆盖 6,800 种型号）、汽车刹车盘（4,700 余种型号）、轨道交通制动闸片（CRH380B/D 350km/h、CRH1A/1A-A 250km/h 已获 CRCC 认证证书，有效期 5 年）、工业制动产品。公司拥有 300 多个制动摩擦材料配方。</p>
+<p><strong>主要客户 / 下游</strong>：<br />
+- 国际 AM：境外 OEM/AM 分销巨头（欧、美、亚非），2026H1 拜访客户 26 家、<strong>新获取 22 家目标客户资源</strong><br />
+- OEM：奔驰（<strong>已量产 5 个型号并持续扩展应用</strong>）、三菱 FUSO（已量产，<strong>订单稳定增长</strong>）<br />
+- 轨交：中国中车体系配套（当前仍在试用/小批量阶段）<br />
+- 合计前五大客户占比未披露，但 AM 渠道分散、无明显单一客户依赖。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：境外 <strong>6.33 亿（81.73%）</strong>、境内 <strong>1.42 亿（18.27%）</strong>。出口占主营收入 80% 以上是公司最核心的结构特征，也是利润表最大的单一变量来源。</p>
+<p><strong>股东背景</strong>：控股股东山东金麒麟投资管理有限公司，实控人 <strong>孙忠义</strong>，法定代表人孙鹏，注册地山东乐陵。上市以来未做再融资扩张（无定增），主要靠自身现金流滚动。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策 / 事件</th>
+<th>发布主体</th>
+<th>力度级别</th>
+<th>落地节奏</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Euro 7（欧七）制动粉尘排放法规</strong></td>
+<td>欧盟</td>
+<td>强制准入（非关税壁垒）</td>
+<td>公司已开发合规低排放配方并供货</td>
+<td>要求刹车磨损颗粒物限值，配方不达标即失欧洲 AM 入场券</td>
+</tr>
+<tr>
+<td><strong>国七制动粉尘排放测试研究与标准制定</strong></td>
+<td>中国（相关部门/行业标委会）</td>
+<td>行业标准升级</td>
+<td><strong>公司深度参与测试研究与标准制定</strong></td>
+<td>公司自述"致力于定义行业标杆"——标准制定参与者身份是配方端先发优势</td>
+</tr>
+<tr>
+<td><strong>CRCC 铁路产品认证</strong></td>
+<td>中铁检验认证中心</td>
+<td>行政许可型资质</td>
+<td><strong>2026-05 通过年度监督审核；2026-07 CRH380B/D + CRH1A/1A-A 闸片证书再获 5 年有效期</strong></td>
+<td>有效期 5 年；2025 年已完成 CRH380B/D 一个全寿命周期 + 一年小批量试用并取得试用报告</td>
+</tr>
+<tr>
+<td>中国汽配出口整体</td>
+<td>商务部 / 全联汽摩配商会</td>
+<td>行业促进</td>
+<td>常态化</td>
+<td>2023 年出口 537.6 亿美元 → 2025 年 <strong>590.51 亿美元</strong>；<strong>2026 年 1-6 月已达 320.5 亿美元</strong>；制动系统品类 2025 年出口 <strong>81.19 亿美元</strong>（第三大品类）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对公司方向的判断</strong>：政策端对本股是"两授一压"——欧七/国七授予配方合规优势（抬高非合规小厂门槛，利于集中），CRCC 授予轨交入场券；压力来自美国对中国件 HS 8708 的 Section 301 关税 <strong>7.5%–25%</strong> 以及欧盟/部分拉美对中国摩擦材料的反倾销税 <strong>15%–30%</strong>，这是压制海外 AM 报价能力的长期变量。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全国汽车保有量</td>
+<td><strong>3.67 亿辆</strong>（截至 2026 年 6 月底，公安部交管局），其中新能源 3,200 万辆，<strong>燃油车保有量仍增长</strong></td>
+</tr>
+<tr>
+<td>2026H1 全球汽车销量</td>
+<td><strong>4,786 万辆，同比 +3%</strong>（乘联会）；中国占全球份额 30%（同比 −4%）</td>
+</tr>
+<tr>
+<td>2026H1 中国汽车产销</td>
+<td>1,499.3 万辆 / 1,501.7 万辆，<strong>同比 −4% / −4.1%</strong>（中汽协）</td>
+</tr>
+<tr>
+<td>2026H1 中国新能源产销</td>
+<td>743.8 万辆 / 744.6 万辆，同比 <strong>+6.7% / +7.3%</strong></td>
+</tr>
+<tr>
+<td>中国摩擦材料出口</td>
+<td>2026 年估计 <strong>12–15 亿美元</strong>，主目的地东南亚/中东/非洲/拉美，价格较日欧同类低 30%–50%</td>
+</tr>
+<tr>
+<td>中国独立售后（IAM）渠道占比</td>
+<td><strong>60%–70%</strong> 的替换件销售，电商渠道已占 AM 刹车片销售 <strong>15%–20%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新量价拆解（2026H1）</strong>：这是本股最关键的读数——<br />
+- 营收 <strong>7.749 亿（−19.64%）</strong>，Q2 单季 3.784 亿，Q2 归母 <strong>878.17 万（−73.09%）</strong>、扣非 731.92 万；<br />
+- <strong>综合毛利率 21.16%，上年同期 21.94%，仅差 0.78pct</strong>。</p>
+<p>即：<strong>这次塌的是"量"，不是"价"</strong>。AM 售后件需求受海外渠道去库存拖累（订单端收缩），而产品单价与毛利体系并未破防。这决定了本次盈利下滑的性质是<strong>需求侧周期性收缩 + 汇率扰动</strong>，而非"竞争格局恶化导致的价格战"。这个性质判断直接决定第四步能否把利润"修复回来"。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：摩擦原材料（树脂、陶瓷纤维、矿物填料、铜粉/金属纤维）与钢材。高端高纯铜粉与特种陶瓷纤维仍部分依赖进口（易重点 writings 提到 high-purity copper powders 依赖进口），且中国监管已在草拟刹车摩擦材料 <strong>2028 年铜含量降到 5% 以下、2032 年降到 0.5% 以下</strong> 的路线（对标加州/华盛顿州），意味着低铜/无铜配方是未来十年的合规主线——公司已在欧洲 AM 低排放配方上先行。</p>
+<p><strong>下游</strong>：海外 AM 渠道（分销商→修理厂）、国内 AM、OEM 整车厂、轨交。AM 需求由<strong>汽车保有量与行驶里程</strong>驱动，弱周期；OEM 由新车产销驱动，强周期。本股 81.73% 在 AM，因此周期性弱，但受渠道库存节奏（去库存/补库存）影响显著。</p>
+<p><strong>议价权</strong>：<strong>AM 端中等偏弱</strong>。佐证：面向海外分销巨头，定价跟随渠道，且叠加 301 关税与反倾销税后成本无法全转嫁；但公司凭借"6,800 型号 × 一站式供货 × 小批量多品种"降低了客户的供应商管理成本，形成<strong>服务型粘性而非定价权</strong>。OEM/轨交端更强（进入即长期），但当前占比极小。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through）</strong><br />
+定性量化：给 AM 端传导率 <strong>0.35–0.45</strong>（仅为 estimates，依据：①无随原料指数调价的销售惯例；②客户多为海外大分销商，年框议价；③301 关税与反倾销税由公司与客户分担，进一步削弱转嫁）。按 2026H1 营业成本约 6.11 亿测算，若摩擦原材料+钢材综合涨 10%（约 4,500 万），公司实际承担约 <strong>0.55–0.65 × 4,500 万 ≈ 2,500–2,900 万</strong>，对当期毛利率的冲击约 <strong>3.2–3.7pct</strong>。2026H1 毛利率仅降 0.78pct，反推当期原料端总体是<strong>顺风或持平</strong>——进一步佐证"塌的是量不是价"。</p>
+<blockquote>
+<p>验证点：季度综合毛利率（跌破 19% 视为传导失败）；公司对海外客户是否发布调价函。<br />
+证伪信号：连续两季毛利率跌破 19% 且收入同比仍负 → 说明不只是周期收缩，而是竞争/传导双失，第四步须下修。</p>
+</blockquote>
+<p><strong>因子2 毛利结构再平衡</strong><br />
+不能只看"综合毛利率 21%"这单一数字。拆分：<br />
+- 刹车片（占 74.4%）：核心 casting 品类，欧七合规配方升级带来配方溢价，毛利相对稳定，估计环比略高于综合水平；<br />
+- 刹车盘（占 23.0%）：金属加工属性强，<strong>钢材敏感度高</strong>（钢价是其成本主变量），毛利低于刹车片，且其占比提升会拉低综合毛利率；<br />
+- 轨交/其他（占 2.6%）：若闸片放量，毛利率显著高于 AM 件，属结构性抬升项。</p>
+<blockquote>
+<p>结论：若未来轨交闸片从 0.2 亿做到 1.5 亿占比提升，即便 AM 端毛利率不变，综合毛利率也会被结构性抬升。这是"结构迁移"而非"单点降本"的毛利改善路径。</p>
+</blockquote>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+2026H1 经营现金流 <strong>+1.09 亿（+6.61%）</strong>，与净利 −83.94% 严重背离。拆现金流：销售商品收到现金 7.98 亿（&gt;营收 7.749 亿，收现比 103%），购买商品支付现金 4.01 亿（<strong>上年同期 5.85 亿，减少 1.84 亿</strong>）。即本期"少买原料、消化库存"贡献了大部分现金。这是<strong>去库存动作而非真实盈利改善</strong>——不能把库存释放出的现金当作盈利能力修复的证据。反向推论：一旦海外订单回暖、公司重回原材料补库，现金流的弹性会弱于利润表的弹性。</p>
+<blockquote>
+<p>验证点：季报"购买商品接受劳务支付的现金"重回 5.5 亿以上 + 存货环比转正回升 = 需求真回暖信号。</p>
+</blockquote>
+<p><strong>因子4 政策 / 市场锚点（作为原料成本驱动变量）</strong><br />
+- <strong>关税</strong>：US Section 301 对 HS 8708 中国件征 7.5%–25%；转道墨西哥近岸外包可规避部分税率，但会带来额外的落地成本。若公司对美直接出口占比高，则关税是其成本曲线的直接抬升项。<strong>情景</strong>：若美方追加至 25% 全额，且公司传导率 0.4，则公司对美毛利率承压约 15% 的税率差 × 0.6 = 约 9pct 的对应成本占比 → 必须靠客户提价或产地转移化解。<br />
+- <strong>出口管制/仲裁委员会</strong>：欧盟与中国相机摇摆反倾销税率 15%–30%。<br />
+- <strong>双控/环保</strong>：无铜低铜配方路线图（2028 &lt;5%、2032 &lt;0.5%）→ 研发端提前投入。</p>
+<blockquote>
+<p>政策验证点：是否公告海外生产基地（规避关税）；低铜无铜配方是否获客户认证。<br />
+政策证伪信号：欧盟反倾销扩大到公司主力 HS 码，或美国将税率上抬并取消豁免。</p>
+<p><strong>本因子输出（喂给第四步毛利率假设）</strong>：刹车片/刹车盘业务维持在 <strong>21%–22%</strong> 综合毛利率（不上浮臆测，也不悲观到 19% 以下）；轨交等新品类若落地，按其高于 AM 的毛利率单独加计。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>增量项</th>
+<th>内容</th>
+<th>体量 / 金额</th>
+<th>状态与进度</th>
+<th>贡献确认时点</th>
+<th>利润贡献（年化毛估）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>22 家新目标客户</strong></td>
+<td>2026H1 土耳其法兰克福汽配展 + 拜访 26 家获取</td>
+<td>未披露单量；按 AM 客户首年 300–800 万/家测算</td>
+<td><strong>已签意向/报价阶段，未见正式合同公告</strong></td>
+<td>2026H2–2028</td>
+<td>若转化 50%（11 家）× 500 万 = <strong>约 0.55 亿收入</strong>，按 6% 净利率 ≈ <strong>330 万</strong></td>
+<td><strong>低</strong>（未过正式订单验证点）</td>
+</tr>
+<tr>
+<td><strong>奔驰 OEM 5 个型号扩应用</strong></td>
+<td>已量产型号向更多车型扩展</td>
+<td>未披露</td>
+<td><strong>已量产，正在扩展</strong></td>
+<td>2026H2–2028</td>
+<td>增量收入乐观 1 亿 → 净利约 <strong>600 万</strong>（OEM 毛利低于 AM）</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>三菱 FUSO 项目</strong></td>
+<td>已量产，订单稳定增长</td>
+<td>未披露</td>
+<td><strong>稳定出货</strong></td>
+<td>持续</td>
+<td>已在收入中，边际贡献有限</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>轨道交通闸片</strong></td>
+<td>CRH380B/D（350km/h）+ CRH1A/1A-A（250km/h）双认证，证书再获 5 年有效期</td>
+<td>当前收入 &lt;0.2 亿</td>
+<td><strong>已获证，未获得批量订单公告</strong></td>
+<td><strong>未见订单 → 不计入中性</strong></td>
+<td>若获整列车订单，按 2029 年 1.0–1.5 亿收入 × 15% 净利率 ≈ <strong>1,500–2,250 万</strong>（仅进乐观栏）</td>
+<td><strong>低（属期权）</strong></td>
+</tr>
+<tr>
+<td><strong>欧七/国七低排放配方</strong></td>
+<td>已开发性能多元化低排放新配方，深度参与国标制定</td>
+<td>—</td>
+<td><strong>已完成开发</strong></td>
+<td>2026 起逐步替换</td>
+<td>维持欧洲份额、避免掉队，属"防守型"贡献</td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>国内 AM 刹车盘推广</strong></td>
+<td>优化渠道布局与产品策略</td>
+<td>境内 1.42 亿基数</td>
+<td><strong>推广中，同比未单列</strong></td>
+<td>2026–2028</td>
+<td>结构性缓慢，忽略</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>新能源专用制动片</strong></td>
+<td>已投入市场应用</td>
+<td>极小</td>
+<td>早期</td>
+<td>未明确</td>
+<td>—</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>8.71 亿货币资金</strong></td>
+<td>短期借款 0、长期借款仅 3,000 万，资产负债率 12.95%，未分配利润 7.75 亿、资本公积约 11 亿</td>
+<td>现金占市值 32.7%</td>
+<td><strong>已在表</strong></td>
+<td>持续</td>
+<td>提供下行保护 + 2025 年每股股利 0.55 元（股息率约 <strong>4.05%</strong>）</td>
+<td><strong>高</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>第三步进阶：份额变量与主业迁移空间（三层法）</strong></p>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点）</strong><br />
+1. <strong>供给侧份额</strong>：公司为国内摩擦材料细分龙头，出口份额高；竞争对手为国内同行及日欧系（Brembo、Akebono、TRW），分处不同价格带。暂未见大规模产能退出公告。<br />
+2. <strong>需求侧/客户份额</strong>：22 家新目标客户是<strong>唯一可观测份额变量</strong>，尚未转正式订单。<br />
+3. <strong>技术代际差</strong>：欧七合规配方矩阵已成型且参与国标制定 → 技术上不落后；届时若 2028 低铜路线落地，可能导致一轮配方淘汰赛，公司位置偏左（有利）。<br />
+4. <strong>成本曲线位置</strong>：国内细分龙头、300 配方/6800 型号的规模与柔性优势使其位于成本曲线左侧，但相比日欧头部供应商的差距尚未完全抹平。<br />
+5. <strong>份额二阶导数</strong>：<strong>当前处于份额渗透停滞期</strong>——2026H1 收入 −19.64% 表明是在"丢需求"而非"抢份额"。份额二阶导为正之前，中性不得给份额溢价。</p>
+<blockquote>
+<p>三档：保守守住现有（收入 15–16 亿）／中性小幅回升（17–18 亿）／乐观抢份额（20–21 亿）。<br />
+验证点：季度收入同比转正；新签 OEM/AM 大额合同公告；单季刹车片销量同比恢复。<br />
+证伪信号：收入连续 4 个季度同比负增长且毛利率跌破 19%。</p>
+</blockquote>
+<p><strong>层2 扩展业务：主业迁移空间（老能力 → 新市场）</strong><br />
+候选迁移：<strong>AM 刹车片 → 轨道交通闸片</strong>。五点判断：<br />
+1. <strong>能力可迁移性</strong>：强。同为摩擦材料配方与制动摩擦副产品，材料科学同源；已有 300 配方技术池。<br />
+2. <strong>新 TAM 弹性</strong>：中。轨交闸片是"认证制 + 中车供应链"的封闭市场，国内年需求量有限（非消费级海量），TAM 弹性远小于原来的全球 AM，但毛利/客户粘性更高。<br />
+3. <strong>切入卡位</strong>：偏早。目前双车型 CRCC 证书 5 年有效期在手、完成全寿命周期试用，卡位不算晚。<br />
+4. <strong>客户认证门槛</strong>：<strong>极高</strong>（既有 CRCC 认证，又有中车供应商准入 + 装车试用周期），这是护城河也是障碍，意味着放量慢。<br />
+5. <strong>信号验证</strong>：<strong>未通过</strong>——至今无批量订单公告、无轨交收入单列。</p>
+<blockquote>
+<p>判定：<strong>未过验证点，仅作中期期权，不计入中性情景</strong>，放入第五步乐观/机会栏。</p>
+</blockquote>
+<p><strong>层3 证伪信号汇总</strong>：新目标客户无正式签约公告；轨交闸片 2027 年底前无批量订单；价格战致毛利率连续破 19%；人民币持续单边升值导致汇兑损失继续扩大。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不使用历史增速推演。以"量（客户/型号/渠道）× 单价 × 分业务毛利率 → 费用结构 → 净利"自下而上重建，并用净资产与现金双锚校验。所有"增长"均须来自第三步清单中已观测到的具体项目。</p>
+</blockquote>
+<p><strong>总股本：196,052,780 股 = 1.9605 亿股</strong>（市值 13.58 × 1.9605 = 26.62 亿）</p>
+<h3>自下而上重建（中性情景，目标年 2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>推导口径</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刹车片收入</td>
+<td>2026H1 5.76 亿（年化 11.5 亿）+ 22 家新客户保守转化 0.5 亿 + 欧美 AM 需求回补 1.0 亿</td>
+<td><strong>13.0 亿</strong></td>
+</tr>
+<tr>
+<td>刹车盘收入</td>
+<td>2026H1 1.78 亿（年化 3.6 亿）+ 国内渠道微增</td>
+<td><strong>3.8 亿</strong></td>
+</tr>
+<tr>
+<td>OEM（奔驰 + 三菱 FUSO）增量</td>
+<td>由当前估计约 1 亿提至</td>
+<td><strong>1.5 亿</strong></td>
+</tr>
+<tr>
+<td>其他（含轨交，中性不计新订单）</td>
+<td>保守</td>
+<td><strong>0.2 亿</strong></td>
+</tr>
+<tr>
+<td><strong>2029E 稳态营收</strong></td>
+<td>合计</td>
+<td><strong>18.5 亿</strong></td>
+</tr>
+<tr>
+<td>综合毛利率</td>
+<td>第二步四因子输出（21%–22% 中位）</td>
+<td><strong>21.5%</strong></td>
+</tr>
+<tr>
+<td>毛利</td>
+<td></td>
+<td><strong>3.98 亿</strong></td>
+</tr>
+<tr>
+<td>期间费用（销售+管理+研发，参考 2025 年实付结构）</td>
+<td></td>
+<td><strong>2.40 亿</strong></td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>汇款回到中性（假设 −0.1 亿，利息收入略大于汇兑）</td>
+<td><strong>−0.10 亿</strong></td>
+</tr>
+<tr>
+<td>投资收益（博麒麟合营等，2026H1 仅 167 万，保守）</td>
+<td></td>
+<td><strong>0.20 亿</strong></td>
+</tr>
+<tr>
+<td>营业利润</td>
+<td></td>
+<td><strong>1.88 亿</strong></td>
+</tr>
+<tr>
+<td>所得税（按 15%–25% 综合，取 20%）</td>
+<td></td>
+<td><strong>−0.38 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性 2029E 归母净利</strong></td>
+<td></td>
+<td><strong>约 1.50 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>产能约束校验</strong>：公司现有产能对应历史峰值营收 18.29 亿（2022 年），18.5 亿的目标未超产能上限，<strong>无需新增资本开支即可承载</strong>，产能校验通过。<br />
+<strong>汇率敏感性校验</strong>：公司自测<strong>人民币兑美元每波动 5%，影响净利润约 3,400 万</strong>。2026H1 财务费用由上年同期 −1,689 万变为 +3,256 万，反向变动 <strong>4,945 万</strong>——这是净利下滑 8,908 万的<strong>最大单项</strong>。中性情景假设汇率不再单边贡献大额损失，属"回归中枢"而非"乐观外推"。</p>
+</blockquote>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>H1 归母 1,729 万；H2 收入环比持平（约 7.8 亿）、无新增汇兑冲击 → H2 归母估 4,500–6,000 万</li>
+<li><strong>2026E 归母约 0.65 亿</strong>（EPS 0.33 元），属汇率扰动 + 需求收缩双杀的"坑年"</li>
+<li>坑年不适用 PE 定价，改用<strong>资产锚</strong>：期末归属净资产约 22.3 亿（BVPS 11.38 元），给 PB <strong>1.10–1.20x</strong> → 市值 24.5–26.8 亿 → 股价 <strong>12.5–13.7 元</strong></li>
+</ul>
+<h3>三情景（2029E·目标年）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 归母</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>海外 AM 需求持续疲软 + 人民币继续升值 + 新客户转化失败，稳态营收降至 15.5 亿、汇兑再损 3,000 万</td>
+<td><strong>0.75 亿</strong></td>
+<td>15x</td>
+<td>11.3 亿 → <strong>资产锚托底 PB 0.95x ≈ 21.4 亿</strong></td>
+<td><strong>10.80 元</strong></td>
+<td><strong>−20.5%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>需求温和回补 + 22 家客户半数转化 + 奔驰扩型号落地 + 汇率回归中性</td>
+<td><strong>1.50 亿</strong></td>
+<td>19x</td>
+<td>28.5 亿</td>
+<td><strong>14.40 元</strong></td>
+<td><strong>+6.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>海外 AM 补库共振 + OEM 放量 + <strong>轨交闸片获批量订单（验证点通过）</strong> + 新能源专用片起量，营收达 21.5 亿</td>
+<td><strong>2.00 亿</strong></td>
+<td>22x</td>
+<td>44.0 亿</td>
+<td><strong>22.40 元</strong></td>
+<td><strong>+64.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸）</h3>
+<p><strong>校正1 资产质量折扣（本股为 PB 1.18x，"准破净"，必须说明原因）</strong><br />
+- 净资产 22.48 亿中：<strong>货币资金 8.71 亿（占市值 32.7%）、无短期借款、有息负债仅长期借款 3,000 万、资产负债率 12.95%</strong>、未分配利润 7.75 亿、资本公积约 11 亿。这不是"资不抵债型"或"ROE 极差型"破净。<br />
+- 破净/准破净的真实原因有三：<strong>① 盈利能力低（2026H1 加权 ROE 仅 0.76%，2025 全年 5.95%，未回到 2022 年水平）；② AM 出口制造资产的专用性强（摩擦材料产线专用，不能轻易转产，重置成本难兜底）；③ 汇率对本股利润的扰动被市场打了折（利润可预测性差 → 估值折价）。</strong><br />
+- → <strong>结论：不可单凭 PB 1.18x 推导"大空间"。</strong>但也不构成资产质量恶化，下行由 8.71 亿净现金 + 4.05% 股息率保护，因此悲观情景以 PB 0.95x 托底而非继续向下击穿。</p>
+<p><strong>校正2 周期位置校正</strong><br />
+- 本股属<strong>弱周期 + 强汇率扰动</strong>型，非典型商品周期股。当前位置判定：<strong>需求侧周期底部区域</strong>（海外 AM 渠道去库存，2026H1 收入 −19.64%），但<strong>盈利侧已被汇率打至坑底</strong>（财务费用反向变动 4,945 万）。<br />
+- 中性净利 1.50 亿的做法：既不采用"近三年均值"（会被 2024 年 0.92 亿的低谷拉低），也不采用"2022 年 1.93 亿的好年景"，而是用自下而上的量价重建（1.50 亿），并用"剔除极端年份后的正常交货水平"交叉校核——公司 2023 年 1.33 亿、2025 年 1.36 亿、2022 年 1.93 亿，1.50 亿落在合理中枢区间。<br />
+- <strong>明确标注：当前处于周期底部 + 扰动坑叠加的双低位置</strong>，所以"坑年利润 0.65 亿"不能作为中枢，"顶年 1.93 亿"也不能作为中枢。</p>
+<p><strong>校正3 杠杆下行情景</strong><br />
+- 资产负债率 <strong>12.95%</strong>、有息负债 3,000 万，<strong>几乎无财务杠杆</strong>，本校正对本股不构成实质约束——这是本股相对于同批标的的稀缺优势。<br />
+- 下行情景更应关注"经营杠杆"：收入每下降 10%（约 1.75 亿收入），按 21.5% 毛利率、固定成本刚性，净利下降约 <strong>3,000–3,500 万</strong>，即净利弹性约为收入弹性的 1.7–2.0 倍。</p>
+<p><strong>期权纪律</strong>：22 家未签约目标客户（确定性低）与轨交闸片（未获订单）<strong>均不计入中性</strong>，只出现在乐观情景。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏贵</strong>。现价 13.58 元对应 2026E 归母 0.65 亿的静态 PE 高达 41x（坑年失真），对应中性 2029E 1.50 亿为 17.8x；PB 1.18x 处在自身历史偏低位但因盈利能力低下而合理。<strong>现价已把"2027 年需求修复"的预期基本定完，却没有给"若不修复"留任何折价。</strong></p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 <strong>14.40 元 → +6.0%</strong>，三年维度的中性回报不足以构成"重点关注"（需 &gt; +50%）<br />
+- 悲观 <strong>10.80 元 → −20.5%</strong>（由 4.05% 股息率 + 8.71 亿净现金缓冲）<br />
+- 乐观 <strong>22.40 元 → +64.9%</strong>，但强依赖"轨交闸片批量订单"这一尚未出现的验证点<br />
+- <strong>风险收益略偏负</strong>：中性 +6.0% 对悲观 −20.5%，赔率不够，但因为下行由资产托底、且有约 4% 股息，属"持有尚可、追高无谓"的区间</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>价格</strong>：回落至 <strong>11.5 元以下</strong>（PB &lt; 1.02x，且隐含 2029 中性情景回报 &gt; +25%）再考虑；11 元附近为强吸引区<br />
+2. <strong>信号</strong>：① 单季收入同比转正且毛利率守住 21% 以上；② 22 家新目标客户中至少落地 3–5 家的正式合同公告；③ 轨交闸片获得批量订单（这是上调结论的最强单一信号）；④ 美元兑人民币企稳，财务费用不再单季贡献超 2,000 万损失<br />
+3. <strong>观察指标</strong>：季度经营现金流中"购买商品支付的现金"是否重回 5.5 亿以上（真实补库 = 需求回暖，区别于 2026H1 的"去库存式现金流"）</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 人民币持续单边升值（首要）</strong>：公司自测每 5% 波动影响净利 3,400 万，2026H1 已实际贡献 4,945 万的反向冲击；若人民币继续升值，第三步的"需求修复"会被汇兑完全对冲掉<br />
+2. <strong>海外 AM 去库存超预期延长</strong>：2026H1 收入 −19.64% 若延续至 2027，则中性情景的 18.5 亿营收无法兑现，目标价须下修至悲观区间<br />
+3. <strong>301 关税 / 欧盟反倾销税率上行</strong>：直接压缩 AM 端的成本传导空间，可能把 0.35–0.45 的传导率进一步打低<br />
+4. <strong>质押/治理风险未见，但因实控人集中度高，需关注后续大额资金运用</strong></p>
+<h4>第五步进阶：上行想象力情景（四类，只进乐观/机会栏，不进中性锚）</h4>
+<p><strong>类型A 行业调整剩者红利</strong>：欧洲 AM 市场在欧七制动粉尘排放标准落地后，低排放/低铜合规配方门槛抬高，中小不合格产能（尤其中国低价小厂）被挤出，剩者获得提价机会。</p>
+<blockquote>
+<p>验证点：公司对欧出货毛利率是否在下一轮报价周期抬升；欧洲 AM 竞品是否出现停产/退出公告。<br />
+证伪信号：公司在欧洲份额不升反降，或低价同行继续放量。</p>
+</blockquote>
+<p><strong>类型B 政策反转期权</strong>：美国若对华零部件关税出现松动/豁免清单扩容，或墨西哥近岸布局降低实际税率，公司 20%+ 的美国敞口直接受益。</p>
+<blockquote>
+<p>验证点：USTR 301 豁免清单更新；公司是否公告海外（墨西哥/东南亚）产能落地。<br />
+证伪信号：税率进一步上抬且公司无产地转移动作。<strong>未过验证点 → 只进乐观栏。</strong></p>
+</blockquote>
+<p><strong>类型C 市场错杀修复</strong>：若因 2026 年坑年业绩（归母 −83.94%）引发恐慌杀跌至 PB 0.85x 以下（约 9.7 元），而基本面（21% 毛利率未破防、现金流仍为正、8.71 亿净现金、4% 股息）并未恶化，则构成典型错杀。</p>
+<blockquote>
+<p>验证点：股价跌破 10 元但季度毛利率仍 ≥21%、经营现金流仍为正。<br />
+证伪信号：跌破的同时毛利率破 19%——那就不是错杀，是逻辑破了。</p>
+</blockquote>
+<p><strong>类型D 技术突破 / 代际跃迁期权</strong>：轨交闸片（CRH380B/D 350km/h + CRH1A/1A-A 250km/h 双认证，有效期 5 年）若从"试用完成"跃迁到"批量装车供货"，是从 AM 消费品向轨交高端制造的代际迁移，毛利率结构将整体系提升。</p>
+<blockquote>
+<p>硬验证点：① 中车/路局批量订单公告；② 单季轨交收入过 3,000 万；③ 量产良率与成本经一轮装车验证。三者缺一<strong>只作机会情景</strong>。<br />
+证伪信号：2027 年底前仍无订单，证书到期前未见产业化。</p>
+</blockquote>
+<p><strong>上调至"重点关注"的条件（明确写出）</strong>：<strong>轨交闸片获得批量订单 + 单季收入同比转正 + 22 家新客户落地 3 家以上正式合同</strong>，三条同时成立后，2029E 净利可由 1.50 亿上修至 2.00–2.20 亿，对应目标价 22–25 元，届时空间 &gt;+60%，才够"重点关注"门槛。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间仅 <strong>+6.0%</strong>，不达"重点关注"的 &gt;+50% 门槛；且悲观情景存在 −20.5% 下行，赔率偏负。<br />
+但本股具备"低 PB + 净现金 + 高股息 + 几乎无有息负债"的硬资产特征，下行由资产托底，不属于"回避"类标的。<br />
+<strong>核心跟踪点</strong>：① 季度收入同比能否转正；② 汇兑是否继续侵蚀；③ 轨交闸片订单。这三点任一改善都可能把赔率拉向乐观侧。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.58 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>13.0 元</strong>（区间 12.5–13.7）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−4.3%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>14.40 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+6.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 10.80 元（−20.5%）～ 乐观 22.40 元（+64.9%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>刹车片出口龙头，汇率扰动致坑年，8.7亿净现金+4%股息托底，等需求与轨交订单双拐点</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（11.5 元以下更具吸引力，重点跟踪收入同比转正与轨交闸片订单）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：山东金麒麟股份有限公司《2026 年半年度报告》（2026-08-07 披露）、2025 年年度报告；腾讯行情 qt.gtimg.cn 2026-09-11 收盘实测（注：队列 CSV 现价 14.17 元为旧值，已实测更正）；公安部交管局 2026 年 6 月底汽车保有量数据、中汽协 2026 年 1-6 月汽车产销数据、乘联会 2026H1 全球销量数据；全联汽车摩托车配件用品业商会与上海特易资讯《中国汽车配件出口分析及各国进口政策影响》白皮书；山东商报/爱集微/证券之星相关中报解读。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

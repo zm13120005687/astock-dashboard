@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>通达电气（sh603390）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>通达电气（sh603390）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-13 ｜ 现价 <strong>11.05 元</strong>（2026-09-11 收盘，腾讯行情实测）｜ 总市值 <strong>38.86 亿</strong> ｜ PE(TTM) <strong>30.81x</strong> ｜ PB <strong>2.29x</strong> ｜ 总股本 <strong>3.5107 亿股</strong><br />
+行业：汽车电子／客车车载电气设备 ｜ 板块：上交所主板<br />
+<strong>⚠️ 准亏损反向校验（重点）</strong>：表观 2026H1 归母净利 <strong>7261.86 万元、同比 +128.84%</strong>，PE(TTM) 30.81x 看似"业绩爆发 + 估值合理"。但拆季度可见 <strong>2026Q2 单季归母仅 876.21 万元（同比 −32.58%）、扣非 975.74 万元（同比 −19.04%），单季营收 1.897 亿（同比 −19.78%）</strong>。Q1 的 +240.79% 主要来自 <strong>软件产品增值税即征即退 + 定期存款利息收入</strong>，非主业改善。<strong>剔除后真实经营盈利远低于表观，属典型的"表观高增长、实质已下行"准亏损型标的</strong>，须从严双轨校验。<br />
+<strong>价格坑规避</strong>：<code>batch_fin.csv</code>／队列"现价"列为 11.01 元，实测收盘 11.05 元，<strong>偏离 +0.4%</strong>（本批偏离最小的一只），已全部采用实测价。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：广州客车车载电气设备供应商，为公交/客车做"车载部件 + 智能网联系统 + 新能源电机与热管理"三大件——国家级专精特新"小巨人"，下游高度绑定国内城市公交客车市场，并尝试向移动医疗领域延伸。</p>
+<p><strong>各业务板块营收拆解（2026H1，营收 3.991 亿，同比 −5.28%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>2025 全年</th>
+<th>2025 同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>车载部件系列</strong></td>
+<td><strong>1.61 亿</strong></td>
+<td><strong>40.30%</strong></td>
+<td><strong>23.33%</strong></td>
+<td>4.01 亿</td>
+<td>+55.88%</td>
+</tr>
+<tr>
+<td><strong>智能网联系统系列</strong></td>
+<td><strong>1.28 亿</strong></td>
+<td><strong>32.09%</strong></td>
+<td><strong>40.24%</strong>（2025 年 39.17%）</td>
+<td>3.93 亿</td>
+<td>+45.17%</td>
+</tr>
+<tr>
+<td><strong>新能源汽车电机与热管理系统系列</strong></td>
+<td><strong>0.9617 亿</strong></td>
+<td><strong>24.10%</strong></td>
+<td><strong>33.92%</strong></td>
+<td>1.90 亿</td>
+<td><strong>+105.31%</strong></td>
+</tr>
+<tr>
+<td>移动医疗系列</td>
+<td><strong>0.0193 亿</strong></td>
+<td><strong>0.48%</strong></td>
+<td>36.43%</td>
+<td>未单列</td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.1213 亿</td>
+<td>3.03%</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>3.991 亿</strong></td>
+<td>100%</td>
+<td><strong>31.99%</strong>（+4.65pct）</td>
+<td><strong>10.134 亿</strong></td>
+<td><strong>+52.24%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：<br />
+- 车载部件：客车仪表、CAN 总线模块、照明、线束、配电盒等<br />
+- 智能网联系统：公交智能调度终端、车载视频监控、ADAS、车联网平台、电子收费（车载软件）<br />
+- 新能源汽车电机与热管理：驱动电机、电动空调、电池热管理系统<br />
+- 移动医疗：车载医疗检测/救护改装（体量极小，属战略尝试）</p>
+<p><strong>主要客户/下游领域</strong>：<strong>宇通客车、比亚迪、金龙、中通、福田等客车整车厂</strong>（前五大客户集中度高，未单独披露但行业惯例在 50%+）；终端为各地城市公交集团、客运企业。应收账款 4.82 亿（2026Q1）占总资产约 23%，<strong>下游为公交系统，回款周期长、受地方财政影响大</strong>。</p>
+<p><strong>境内外收入占比（2026H1 分地区口径）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>地区</th>
+<th>收入</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>东部地区</td>
+<td>1.73 亿</td>
+<td><strong>44.62%</strong></td>
+</tr>
+<tr>
+<td>南部地区</td>
+<td>0.8869 亿</td>
+<td>22.87%</td>
+</tr>
+<tr>
+<td>中部地区</td>
+<td>0.7843 亿</td>
+<td>20.23%</td>
+</tr>
+<tr>
+<td>其他地区合计</td>
+<td>0.4760 亿</td>
+<td>12.28%</td>
+</tr>
+</tbody>
+</table>
+<p>→ 半年报未单独披露境外收入；公司 2026 年提出"持续推进国际化经营，完善海外业务布局体系"，但<strong>海外收入占比极低（预计 &lt;5%），尚未形成实质贡献</strong>。</p>
+<p><strong>股东背景/实控人</strong>：广州民营汽车电子企业，2019 年上交所主板上市（603390）。<strong>财务结构极稳健</strong>——资产负债率仅 <strong>14.49%</strong>（2026H1，2025 年末 20.85%），有息负债仅 7,328 万（有息负债率 16.87%），流动比率 3.00、速动比率 2.94。2025 年度分红比例 <strong>45.39%</strong>（10 派 0.6 元）+ 2026 中期分红 10 派 1 元（3,501 万，占 H1 归母 <strong>48.21%</strong>）。已实施股份回购（1,000–2,000 万元，截至 2026-08-31 累计回购 153.88 万股）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>文号/时间</th>
+<th>力度级别</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>《2026 年新能源城市公交车及动力电池更新补贴实施细则》</strong></td>
+<td><strong>交通运输部办公厅、国家发展改革委办公厅</strong></td>
+<td><strong>交办运〔2026〕28 号，2026-05-01</strong></td>
+<td><strong>国家级，超长期特别国债资金支持</strong></td>
+<td>更新新能源城市公交车<strong>每辆平均补贴 8 万元</strong>；更换动力电池<strong>每辆平均补贴 4.2 万元</strong></td>
+</tr>
+<tr>
+<td>《关于 2026 年实施大规模设备更新和消费品以旧换新政策的通知》</td>
+<td>国家发改委、财政部</td>
+<td><strong>发改环资〔2025〕1745 号</strong></td>
+<td>国家级</td>
+<td>上位的资金与范围依据</td>
+</tr>
+<tr>
+<td>《2026 年湖北省新能源城市公交车及动力电池更新补贴实施细则》</td>
+<td>湖北省交通运输厅、发改委</td>
+<td>2026-08-10</td>
+<td>省级（地方加码样本）</td>
+<td><strong>7 米以下 8.5 万/辆、7–13 米 10.5 万/辆、13 米以上 13.5 万/辆</strong>；换电池 4.2 万/辆；<strong>补贴标准与 2025 年保持一致</strong></td>
+</tr>
+<tr>
+<td>《贵州省 2026 年老旧营运货车报废更新及新能源城市公交车（动力电池）更新补贴实施方案》</td>
+<td>贵州省</td>
+<td>2026-08</td>
+<td>省级</td>
+<td>更新新能源公交车<strong>按每辆 12 万元补贴</strong>；换电池 4.2 万/辆；车龄 8 年及以上（2018-12-31 前注册）</td>
+</tr>
+<tr>
+<td>《泰安市 2026 年新能源城市公交车及动力电池更新补贴实施细则》</td>
+<td>泰安市交通运输局、发改委</td>
+<td>泰交运管〔2026〕15 号，2026-08-21</td>
+<td>市级</td>
+<td>每辆平均 8 万元；换电池 4.2 万/辆</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策解读（关键）</strong>：<br />
+- <strong>力度真实</strong>：单辆 8–13.5 万元的补贴，对一台 60–120 万元的公交车而言是 10–20% 的购置成本减免，属<strong>强刺激</strong><br />
+- <strong>但已被 2025 年透支</strong>：公司 2025 年营收 <strong>+52.24%</strong>、归母 <strong>+232.78%</strong>，正是该政策 2025 年版（同为 8 万元/辆）的兑现。<strong>2026 年政策标准与 2025 年"保持一致"（湖北省细则明确表述），意味着 2026 年是平替而非加码</strong>——无边际增量<br />
+- <strong>2026H1 营收 −5.28%、Q2 单季 −19.78% 正是政策平替后需求回落的直接证据</strong><br />
+- <strong>资金节奏风险</strong>：湖北省细则明确"<strong>补贴资金实行限额管理，以申请提交的先后次序依次审核，年度补贴额度用完即止</strong>"——<strong>额度用完即止意味着存在 H2 断档风险</strong></p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国客车年销量</td>
+<td>约 <strong>11–13 万辆</strong>（2025 年），其中新能源公交约 <strong>4–5 万辆</strong></td>
+<td>成熟市场，总量天花板明确</td>
+</tr>
+<tr>
+<td>城市公交车保有量</td>
+<td>约 <strong>70 万辆</strong>，新能源化率已超 <strong>80%</strong></td>
+<td><strong>存量替换空间已大幅收窄</strong></td>
+</tr>
+<tr>
+<td>新能源公交渗透率</td>
+<td><strong>&gt;80%</strong>（2025 年）</td>
+<td><strong>新增电动化红利基本结束</strong></td>
+</tr>
+<tr>
+<td>2026 年更新补贴规模</td>
+<td>每辆 8 万元（国家基准），地方 8.5–13.5 万元</td>
+<td>2025 年同标准</td>
+</tr>
+<tr>
+<td>公司 2025 年营收增速</td>
+<td><strong>+52.24%</strong></td>
+<td>政策兑现年</td>
+</tr>
+<tr>
+<td><strong>公司 2026H1 营收增速</strong></td>
+<td><strong>−5.28%</strong>（Q2 单季 <strong>−19.78%</strong>）</td>
+<td><strong>政策平替后回落</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>公司最新季度量价趋势（关键拆季）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026Q1</th>
+<th>2026Q2</th>
+<th>2025Q2</th>
+<th>同比（Q2）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业总收入</td>
+<td>2.094 亿（+13.28%）</td>
+<td><strong>1.897 亿</strong></td>
+<td>2.365 亿</td>
+<td><strong>−19.78%</strong></td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td>6,385.65 万（<strong>+240.79%</strong>）</td>
+<td><strong>876.21 万</strong></td>
+<td>1,299.56 万</td>
+<td><strong>−32.58%</strong></td>
+</tr>
+<tr>
+<td>扣非归母净利润</td>
+<td>6,298.93 万（<strong>+348.03%</strong>）</td>
+<td><strong>975.74 万</strong></td>
+<td>1,205.26 万</td>
+<td><strong>−19.04%</strong></td>
+</tr>
+<tr>
+<td>单季毛利率</td>
+<td>约 37.5%（推算）</td>
+<td><strong>26.96%</strong></td>
+<td>26.75%</td>
+<td>+0.21pct</td>
+</tr>
+<tr>
+<td>单季净利率</td>
+<td><strong>30.5%</strong></td>
+<td><strong>4.56%</strong></td>
+<td>5.50%</td>
+<td>−0.86pct</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>🔴 最重要的读数</strong>：Q1 净利率 <strong>30.5%</strong>、Q2 净利率 <strong>4.56%</strong>，落差 <strong>25.9pct</strong>。Q1 的超额利润来源（公司公告明确）："<strong>软件产品增值税即征即退税以及定期存款产品获取利息收入增加</strong>"。<br />
+- 软件退税属"经常性损益"（每年都可能有），但<strong>金额高度波动、取决于软件收入确认节奏</strong>，且<strong>Q2 完全消失</strong>——说明 Q1 是集中确认，非常态<br />
+- 利息收入取决于账面存款规模，属低质量收益<br />
+- <strong>剔除这两项后，Q2 的 4.56% 净利率才是公司真实的经营盈利能力</strong>——对应 2026E 全年净利率约 <strong>8–9%</strong>，而非表观的 18.13%</p>
+<p><strong>竞争格局</strong>：客车车载电子细分市场，主要玩家为通达电气、威帝股份、天迈科技、蓝斯股份等。<strong>客车整车厂议价权极强</strong>（年降压力 3–8%/年），零部件企业毛利率普遍 25–35%。公司智能网联系列毛利率 40.24% 属较高水平（因含软件），车载部件 23.33% 属中低水平（硬件为主）。</p>
+<h3>（3）产业链传导</h3>
+<h4>【第二步进阶】原料成本 → 毛利结构（四因子）</h4>
+<p><strong>因子1：成本传导弹性（pass-through）</strong></p>
+<p>上游核心原料：<strong>电子元器件（芯片、PCB、显示屏）、铜/铝（线束、散热器）、塑料件、电池电芯（热管理系统）</strong>。<br />
+- <strong>传导率量化</strong>：<br />
+| 维度 | 判断 | 依据 |<br />
+|---|---|---|<br />
+| 上游议价权 | <strong>中等</strong> | 电子元器件充分竞争，但车规级芯片存在周期性紧张 |<br />
+| 下游议价权 | <strong>极弱</strong> | 客户为宇通/比亚迪/金龙等整车厂，<strong>年降（annual price reduction）是行业刚性规则，通常 3–8%/年</strong> |<br />
+| <strong>成本传导率</strong> | <strong>0.2–0.3</strong> | <strong>公司几乎无法向上游涨价传导</strong>——2026H1 毛利率 31.99%（+4.65pct）的提升<strong>不是来自涨价，而是来自产品结构（高毛利智能网联占比提升）</strong> |<br />
+| 年降压力 | <strong>−3～−8%/年</strong> | 直接侵蚀毛利率 |</p>
+<p>→ <strong>核心结论</strong>：<strong>上游原料涨价 ×（1 − 0.25）≈ 公司实际毛利承压 75%</strong>。但真正的成本压力不是原料，而是<strong>整车厂的年降机制</strong>——这是结构性的、单向的、持续的毛利侵蚀源。</p>
+<p><strong>因子2：毛利结构再平衡（分业务线毛利率与原料敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入占比</th>
+<th>毛利率</th>
+<th>原料敏感权重</th>
+<th>年降敏感度</th>
+<th>利润贡献占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>车载部件</strong></td>
+<td><strong>40.30%</strong></td>
+<td><strong>23.33%</strong></td>
+<td><strong>高（铜/铝/塑料 0.75）</strong></td>
+<td><strong>极高</strong>（纯硬件，无软件溢价）</td>
+<td>约 29%</td>
+</tr>
+<tr>
+<td><strong>智能网联系统</strong></td>
+<td><strong>32.09%</strong></td>
+<td><strong>40.24%</strong></td>
+<td>中（芯片/PCB 0.55）</td>
+<td><strong>中</strong>（含软件，可部分抵御年降）</td>
+<td><strong>约 40%</strong></td>
+</tr>
+<tr>
+<td><strong>新能源汽车电机与热管理</strong></td>
+<td><strong>24.10%</strong></td>
+<td><strong>33.92%</strong></td>
+<td><strong>高（铜/电芯 0.80）</strong></td>
+<td><strong>高</strong></td>
+<td>约 25%</td>
+</tr>
+<tr>
+<td>移动医疗</td>
+<td>0.48%</td>
+<td>36.43%</td>
+<td>中</td>
+<td>低</td>
+<td>约 0.6%</td>
+</tr>
+<tr>
+<td><strong>加权综合</strong></td>
+<td>100%</td>
+<td><strong>31.99%</strong></td>
+<td>0.66</td>
+<td>—</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>⚠️ 两个关键结构问题</strong>：<br />
+1. <strong>占 64.4% 权重的车载部件 + 电机热管理，恰恰是毛利率最低（23.33%/33.92%）、原料敏感权重最高（0.75/0.80）、年降敏感度最高</strong>的两块。<strong>增长最快的电机热管理（2025 +105.31%）不是最优结构</strong><br />
+2. <strong>唯一的利润压舱石是高毛利的智能网联（40.24%，贡献 40% 利润）</strong>，而软件退税正是附着在这块业务上——<strong>退税政策的任何变化，都会直接冲击公司最赚钱的板块</strong></p>
+<p><strong>因子3：库存与采购节奏（timing）</strong></p>
+<ul>
+<li><strong>低价囤货收益</strong>：无公开证据。存货周转率 0.65 次/半年（年化 1.30 次），2025 年全年 3.93 次——<strong>周转大幅放缓，说明存货积压而非主动囤货</strong></li>
+<li><strong>高价接货损失</strong>：2026H1 毛利率同比 +4.65pct，<strong>未见高价接货拖累</strong>（Q2 单季毛利率 26.96%，同比 +0.21pct，基本持平）</li>
+<li><strong>⚠️ 应收账款是真正的"库存"问题</strong>：应收账款 <strong>4.82 亿</strong>（2026Q1），占总资产约 23%，应收账款周转率 <strong>0.41 次/半年</strong>（年化 0.82 次，即<strong>平均账期约 445 天</strong>）。下游为地方政府背景的公交集团，<strong>回款慢且与地方财政挂钩</strong></li>
+<li><strong>长协/套保</strong>：未见铜/铝套期保值披露</li>
+</ul>
+<p><strong>因子4：政策/市场锚点（原料与需求驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>类型</th>
+<th>情景假设</th>
+<th>可观测验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>新能源公交车更新补贴（交办运〔2026〕28 号）</strong></td>
+<td>政策层（需求）</td>
+<td>中性：2026 年维持 8 万/辆，额度"用完即止"</td>
+<td>各地公交采购招标量；月度客车产量（中客网）</td>
+<td><strong>H2 补贴额度提前用尽 → 订单断档</strong></td>
+</tr>
+<tr>
+<td>整车厂年降</td>
+<td>市场层</td>
+<td>中性：−3～−8%/年</td>
+<td>季度毛利率</td>
+<td>毛利率跌破 25%</td>
+</tr>
+<tr>
+<td>铜/铝价格</td>
+<td>市场层</td>
+<td>中性：高位震荡</td>
+<td>沪铜/沪铝主力合约</td>
+<td>铜价 +20%</td>
+</tr>
+<tr>
+<td>地方财政（公交回款）</td>
+<td>政策/市场层</td>
+<td><strong>偏负面</strong>：地方财政压力下公交集团回款进一步拉长</td>
+<td>应收账款周转天数</td>
+<td>周转天数突破 500 天</td>
+</tr>
+<tr>
+<td>软件产品增值税即征即退</td>
+<td>政策层</td>
+<td><strong>高度不确定</strong>：属历史优惠政策，存在清理风险（参考 2025 年第 10 号公告已清理煤层气、风电等即征即退）</td>
+<td>季报"其他收益"科目</td>
+<td><strong>退税被取消或大幅缩减</strong> ← 对公司利润冲击最大</td>
+</tr>
+<tr>
+<td>车规级芯片供应</td>
+<td>市场层</td>
+<td>中性：供应正常</td>
+<td>采购周期</td>
+<td>交期再度拉长至 30 周+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<h3>基础清单</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献（2029E）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>新能源公交车更新补贴延续（2026）</strong></td>
+<td>8 万元/辆 + 换电池 4.2 万元/辆</td>
+<td>国家基准，地方 8.5–13.5 万</td>
+<td><strong>执行中，但额度"用完即止"</strong></td>
+<td>支撑 2026 年需求，非新增增量</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>智能网联系统（高毛利 40.24%）占比提升</strong></td>
+<td>结构优化</td>
+<td>2026H1 1.28 亿（32.09%）</td>
+<td>持续</td>
+<td>结构性毛利率提升约 1–2pct/年</td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>新能源汽车电机与热管理</strong></td>
+<td>2025 年 +105.31% 的高增板块</td>
+<td>2026H1 0.9617 亿</td>
+<td>增速已放缓（H1 未单独披露增速）</td>
+<td>2029E 约 3.5 亿收入</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>移动医疗系列</strong></td>
+<td>战略新方向</td>
+<td>2026H1 <strong>仅 193.34 万元</strong>（0.48%）</td>
+<td><strong>起步阶段，未成规模</strong></td>
+<td>2029E 约 0.8 亿（期权）</td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td><strong>国际化经营</strong></td>
+<td>海外业务布局体系</td>
+<td>未披露收入金额，占比预计 &lt;5%</td>
+<td>体系搭建中</td>
+<td>2029E 约 1.5 亿（期权）</td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td>股份回购</td>
+<td>1,000–2,000 万元</td>
+<td>截至 2026-08-31 累计 153.88 万股</td>
+<td>执行中</td>
+<td>EPS 微增，非利润</td>
+<td>高</td>
+</tr>
+<tr>
+<td>中期分红</td>
+<td>10 派 1 元</td>
+<td><strong>3,501 万元</strong>（占 H1 归母 48.21%）</td>
+<td>已公告</td>
+<td>股东回报，非利润</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>⚠️ 一次性/波动项：软件产品增值税即征即退</strong></td>
+<td>其他收益</td>
+<td>Q1 集中确认，Q2 归零</td>
+<td><strong>不可预测</strong></td>
+<td><strong>不计入中性</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>⚠️ 波动项：定期存款利息收入</strong></td>
+<td>财务费用负项</td>
+<td>Q1 贡献，Q2 无</td>
+<td>可持续但低质量</td>
+<td>约 0.05–0.10 亿/年</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<h3>【第三步进阶】份额变量与主业迁移空间（三层法）</h3>
+<h4>层1：现有业务 = 市场容量 × 份额变量（五锚点）</h4>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守（守住）</th>
+<th>中性（小幅提升）</th>
+<th>乐观（抢份额）</th>
+<th>验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①供给侧份额</td>
+<td>公司营收 10 亿量级 / 客车车载电子市场约 150–200 亿 = <strong>约 5–7%</strong></td>
+<td>5%</td>
+<td><strong>7%</strong></td>
+<td>10%</td>
+<td>季报营收 vs 客车产量</td>
+<td>营收增速连续两季低于客车产量增速</td>
+</tr>
+<tr>
+<td>②需求侧/客户份额</td>
+<td><strong>未披露前五大客户，推测高度集中于宇通/比亚迪/金龙等 TOP5 客车厂</strong></td>
+<td>维持现有定点</td>
+<td>新增 1–2 家整车厂定点</td>
+<td>进入海外客车厂供应链</td>
+<td>重大定点公告</td>
+<td>丢失现有大客户定点</td>
+</tr>
+<tr>
+<td>③技术代际差</td>
+<td>智能网联（车联网/ADAS/调度）属<strong>当前主流代</strong>；电机热管理为主流代</td>
+<td>持平</td>
+<td>软件定义汽车能力升级</td>
+<td>L2+ 智能驾驶座舱域控量产</td>
+<td>研发项目公告（2025 年在研 58 项）</td>
+<td>技术迭代落后被替换</td>
+</tr>
+<tr>
+<td>④成本曲线位置</td>
+<td>毛利率 31.99%，行业中等；<strong>规模小（10 亿） vs 头部（50 亿+），规模劣势</strong></td>
+<td>持平</td>
+<td>自动化率提升 1–2pct</td>
+<td>降 3pct</td>
+<td>季度毛利率</td>
+<td>毛利率跌破 25%</td>
+</tr>
+<tr>
+<td>⑤份额二阶导数</td>
+<td><strong>Q2 单季营收 −19.78%，一阶导数已转负</strong></td>
+<td>下滑</td>
+<td>企稳</td>
+<td>回升</td>
+<td>连续 4 季营收同比</td>
+<td><strong>Q3 继续负增长 → 二阶导数为负，加速下滑</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>层1 结论</strong>：<strong>中性情景下份额至多微升（5%→7%），但需求端（客车总量）在收缩</strong>。存量替换空间已因新能源渗透率 &gt;80% 而大幅收窄，<strong>"市场变大"这一因子不成立</strong>——这是与成长股最根本的区别。</p>
+<h4>层2：扩展业务 = 主业迁移空间（新易盛范式五问）</h4>
+<p><strong>候选迁移方向一：客车电子 → 移动医疗（车载医疗车/检测车）</strong><br />
+| 判断维度 | 评估 | 结论 |<br />
+|---|---|---|<br />
+| ①能力可迁移性 | 车载电气集成能力可复用（供电、配电、环境控制），但<strong>医疗资质、医疗器械注册完全不同</strong> | <strong>低</strong> |<br />
+| ②新 TAM 弹性 | 移动医疗车市场约 <strong>50–100 亿</strong>，约为客车电子市场的 1/3——<strong>TAM 不升反降</strong> | <strong>弹性小</strong> |<br />
+| ③切入时点与卡位 | 2026H1 收入仅 <strong>193 万元</strong>，几乎为零，属<strong>极早期</strong> | 早期但无先发优势 |<br />
+| ④客户认证门槛 | 需医疗器械注册证、医疗机构采购资质，<strong>门槛极高</strong> | <strong>高门槛</strong> |<br />
+| ⑤信号验证 | <strong>零信号</strong>：无认证公告、无订单公告、营收占比 0.48% 未跳升 | <strong>未通过</strong> |<br />
+→ <strong>结论：纯期权，不计入中性情景</strong> ✓</p>
+<p><strong>候选迁移方向二：国内 → 海外市场</strong><br />
+| 判断维度 | 评估 | 结论 |<br />
+|---|---|---|<br />
+| ①能力可迁移性 | 产品可直接出口，需适配当地认证（ECE/SAE） | <strong>中等</strong> |<br />
+| ②新 TAM 弹性 | 全球客车市场约为国内的 3–4 倍，<strong>弹性大</strong> | <strong>弹性大</strong> |<br />
+| ③切入时点 | 2026 年才"完善海外业务布局体系"，<strong>晚期</strong> | 不利 |<br />
+| ④客户认证门槛 | 需通过海外整车厂认证（12–24 个月） | 高 |<br />
+| ⑤信号验证 | <strong>零信号</strong>：无海外订单公告，收入占比 &lt;5% | <strong>未通过</strong> |<br />
+→ <strong>结论：纯期权，不计入中性情景</strong> ✓</p>
+<h4>层3：风险折扣——证伪信号清单</h4>
+<ol>
+<li><strong>毛利破阈值</strong>：综合毛利率跌破 <strong>25%</strong>（年降累积 + 结构恶化）→ 中性净利率下调至 6%</li>
+<li><strong>份额连续下滑</strong>：营收连续两个季度同比负增长（<strong>Q2 已 −19.78%，Q3 若继续即为命中</strong>）</li>
+<li><strong>补贴断档</strong>：2026H2 新能源公交补贴额度提前用尽 → 订单断崖</li>
+<li><strong>软件退税政策变化</strong>：若软件产品增值税即征即退被清理（参照 2025 年第 10 号公告对煤层气、风电的清理先例）→ <strong>直接抹去公司最赚钱板块的附加收益，净利下修 30%+</strong></li>
+<li><strong>应收账款恶化</strong>：周转天数突破 500 天 → 计提大额坏账</li>
+<li><strong>移动医疗/海外无正式公告</strong>：2027 年底前占比未突破 3% → 迁移期权归零</li>
+</ol>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>⚠️ 方法声明</strong>：<strong>严禁历史增速外推</strong>。公司 2025 年营收 +52.24%、归母 +232.78% 是补贴政策兑现的一次性脉冲，<strong>绝不可作为增长起点</strong>（2026H1 已 −5.28%、Q2 单季 −19.78% 直接证伪）。本报告按 <strong>车载部件 / 智能网联 / 电机热管理 / 移动医疗 四条业务线，以"客车产量 × 单车配套价值 × 份额"</strong> 自下而上建模。</p>
+</blockquote>
+<p><strong>总股本：3.5107 亿股</strong>（351,073,968 股，2026-09-11 腾讯行情实测）</p>
+<h3>一次性/波动因素识别与剔除（关键）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2026H1 金额</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>归母净利（表观）</td>
+<td>7,261.86 万</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>其中：软件产品增值税即征即退</strong></td>
+<td>未单独披露，但 Q1 净利率 30.5% vs Q2 4.56%，差额 25.9pct</td>
+<td><strong>剔除</strong>——Q1 集中确认，Q2 归零，不可预测</td>
+</tr>
+<tr>
+<td><strong>其中：定期存款利息收入</strong></td>
+<td>未单独披露</td>
+<td><strong>剔除</strong>——低质量收益</td>
+</tr>
+<tr>
+<td>非经常性损益（Q1）</td>
+<td>86.72 万元（政府补助）</td>
+<td>规模极小</td>
+</tr>
+<tr>
+<td><strong>真实经营净利（Q2 年化口径）</strong></td>
+<td>Q2 归母 876.21 万 × 2 = <strong>约 1,752 万/半年</strong></td>
+<td><strong>本报告以 Q2 的 4.56% 净利率为真实经营基准</strong></td>
+</tr>
+<tr>
+<td>本报告采用的 2026H1 经营净利</td>
+<td><strong>约 3,600 万</strong>（Q1 经营口径约 2,700 万 + Q2 876 万，剔除退税与利息）</td>
+<td>保守</td>
+</tr>
+</tbody>
+</table>
+<h3>分业务测算（2029E）——自下而上</h3>
+<p><strong>底层驱动假设</strong>：<br />
+| 驱动变量 | 2026E | 2029E | 依据 |<br />
+|---|---|---|---|<br />
+| 中国客车年产量 | 约 11 万辆 | <strong>10 万辆</strong>（新能源渗透率已 &gt;80%，存量替换空间收窄，总量温和下行） | 行业判断 |<br />
+| 其中新能源公交年更新量 | 约 4.5 万辆 | <strong>4.0 万辆</strong>（补贴 8 万/辆延续但额度有限） | 交办运〔2026〕28 号 |<br />
+| 公司单车配套价值 | 约 <strong>9,000 元/辆</strong>（10.13 亿 ÷ 约 11 万辆） | <strong>10,500 元/辆</strong>（智能网联占比提升带动 ASP 上升，但年降 −3～−8%/年 部分抵消） | 结构升级 vs 年降 |</p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2026E 收入</th>
+<th><strong>2029E 收入</strong></th>
+<th>2029E 净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>车载部件</strong></td>
+<td>客车产量 10 万辆 × 份额 7% × ASP 2,800 元</td>
+<td>3.7 亿</td>
+<td><strong>3.5 亿</strong></td>
+<td>8%（低毛利、年降重）</td>
+<td><strong>0.28 亿</strong></td>
+</tr>
+<tr>
+<td><strong>智能网联系统</strong></td>
+<td>客车产量 10 万辆 × 份额 7% × ASP 4,500 元（软件占比提升）</td>
+<td>3.2 亿</td>
+<td><strong>4.2 亿</strong></td>
+<td>18%（高毛利）</td>
+<td><strong>0.76 亿</strong></td>
+</tr>
+<tr>
+<td><strong>电机与热管理</strong></td>
+<td>新能源公交 4.0 万辆 × 份额 10% × ASP 8,000 元</td>
+<td>2.4 亿</td>
+<td><strong>3.2 亿</strong></td>
+<td>10%</td>
+<td><strong>0.32 亿</strong></td>
+</tr>
+<tr>
+<td><strong>移动医疗</strong></td>
+<td>期权，未过验证点，<strong>中性给 0.8 亿</strong></td>
+<td>0.2 亿</td>
+<td><strong>0.8 亿</strong></td>
+<td>12%</td>
+<td><strong>0.10 亿</strong></td>
+</tr>
+<tr>
+<td><strong>海外及其他</strong></td>
+<td>期权，中性给 0.8 亿</td>
+<td>0.3 亿</td>
+<td><strong>0.8 亿</strong></td>
+<td>10%</td>
+<td><strong>0.08 亿</strong></td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>9.8 亿</strong></td>
+<td><strong>12.5 亿</strong></td>
+<td>加权约 <strong>12.3%</strong></td>
+<td><strong>1.54 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>毛利率与费用假设（结合第二步市场量价趋势）</strong>：<br />
+- 2029E 综合毛利率：<strong>30%</strong>（2026H1 为 31.99%；年降累积 −3～−8%/年，但智能网联占比提升对冲，净降约 2pct）<br />
+- 研发费用率：<strong>6.5%</strong>（2025 年 6.20%，在研 58 项，专精特新需维持投入）<br />
+- 销售+管理费用率：<strong>13%</strong><br />
+- 其他收益（软件退税）：<strong>按 0 计入中性</strong>（政策存在清理风险，从严）<br />
+- 利息收入：<strong>0.08 亿/年</strong>（保守）<br />
+- 所得税率：<strong>15%</strong>（高新技术企业）<br />
+- → 2029E 净利率 = 30% − 6.5% − 13% = 10.5%（税前）+ 利息贡献 0.6% = 11.1% ×（1 − 15%）= <strong>9.4%</strong></p>
+<p>→ 分业务加总得 1.54 亿（12.3%），费率法得 12.5 × 9.4% = 1.18 亿。<strong>取保守值 1.18 亿</strong>，并考虑分业务法对移动医疗/海外已给期权权重（0.18 亿），<strong>最终 2029E 中性净利取 1.25 亿</strong>。</p>
+<p><strong>产能约束校验</strong>：公司非重资产扩产型企业（固定资产占比低，资产负债率 14.49%），<strong>无产能上限约束</strong>，约束在需求端（客车产量）✓</p>
+<p><strong>回算校验（2029E 净利 1.25 亿 → 需要多少收入？）</strong>：1.25 / 9.4% = 13.3 亿收入，较 2025 年 10.13 亿增长 31%（三年），<strong>在客车总量温和下行背景下，需份额从 5–6% 提升至 8%+ 才能实现</strong>——<strong>这一份额提升假设偏乐观，已在下行情景中反映</strong>。</p>
+<h3>基准（2026E）单独测算</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>测算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1 表观归母</td>
+<td>7,261.86 万</td>
+</tr>
+<tr>
+<td><strong>剔除软件退税与利息后的 H1 经营净利</strong></td>
+<td><strong>约 3,600 万</strong></td>
+</tr>
+<tr>
+<td>H2 预测</td>
+<td>Q2 单季营收 −19.78%、归母 −32.58% 已是明确的下行信号；H2 为客车传统旺季 + 补贴执行尾声，但<strong>补贴额度"用完即止"构成断档风险</strong>。假设 H2 经营净利 <strong>4,500 万</strong>（含少量退税）</td>
+</tr>
+<tr>
+<td><strong>2026E 归母</strong></td>
+<td><strong>1.03 亿</strong>（区间 0.85–1.25 亿）</td>
+</tr>
+<tr>
+<td>⚠️ 注意</td>
+<td>表观 2026E 归母若含 Q1 式集中退税，可能达 1.3–1.5 亿；<strong>本报告取不含大额退税的 1.03 亿，从严</strong></td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td><strong>25x</strong>（汽车电子零部件行业合理区间 20–30x；公司质地稳健但成长性缺失）</td>
+</tr>
+<tr>
+<td>目标市值</td>
+<td>1.03 × 25 = <strong>25.8 亿</strong></td>
+</tr>
+<tr>
+<td><strong>基准目标价</strong></td>
+<td><strong>8.8 元</strong>（区间 7.5–10.0）</td>
+</tr>
+</tbody>
+</table>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>客车需求持续低迷（年产量降至 9 万辆）+ 补贴退坡 + 年降累积，毛利率跌破 25%；软件退税被清理</td>
+<td>10.5 亿</td>
+<td>6.5%</td>
+<td><strong>0.68 亿</strong></td>
+<td>18x = 12.3 亿 → <strong>PB 1.4x 兜底 24.5 亿</strong></td>
+<td><strong>24.5 亿</strong></td>
+<td><strong>6.98 元</strong></td>
+<td><strong>−36.8%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>客车产量稳定在 10 万辆，公司份额微升至 7%，智能网联占比提升对冲年降；移动医疗与海外各贡献 0.8 亿</td>
+<td>12.5 亿</td>
+<td>10.0%（含 0.08 亿利息，剔除退税）</td>
+<td><strong>1.25 亿</strong></td>
+<td><strong>22x</strong></td>
+<td><strong>27.5 亿</strong></td>
+<td><strong>7.83 元</strong></td>
+<td><strong>−29.1%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>公交更新补贴 2027 年加码（提至 10 万/辆）+ 移动医疗放量 + 海外突破，份额升至 10%</td>
+<td>16.0 亿</td>
+<td>13.0%（含软件退税延续）</td>
+<td><strong>2.08 亿</strong></td>
+<td>25x</td>
+<td>52.0 亿</td>
+<td><strong>14.81 元</strong></td>
+<td><strong>+34.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>中性复核</strong>：1.25 亿 × 22x = 27.5 亿 → 7.83 元。但现价 11.05 元对应市值 38.86 亿、2029E PE 31.1x——<strong>对一家营收下滑、份额提升困难的客车零部件公司，31x 明显偏高</strong>。</p>
+<p>考虑公司质地（资产负债率 14.49%、现金充裕、分红率 45%+、专精特新），给予一定估值溢价，PE 提至 <strong>24x</strong> → 30.0 亿 → <strong>8.54 元</strong>，空间 <strong>−22.7%</strong>。</p>
+<p><strong>最终中性取值：2029E 净利 1.25 亿 × PE 24x = 30.0 亿 → 8.54 元，空间 −22.7%</strong></p>
+<p>悲观情景 PB 兜底：2029E 归母净资产约 <strong>17.5 亿</strong>（2026H1 17.0 亿 + 三年利润留存约 3 亿 − 分红约 2.5 亿），PB <strong>1.4x</strong> = 24.5 亿 → <strong>6.98 元</strong> ✓</p>
+</blockquote>
+<h3>汇总表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>1.03 亿（剔除软件退税与利息）</td>
+<td>1.25 亿</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>25x</td>
+<td>24x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>25.8 亿</td>
+<td>30.0 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>8.8 元</strong></td>
+<td><strong>8.54 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：<br />
+- 现价 11.05 元对应 2026E 剔除后 PE = 38.86 / 1.03 = <strong>37.7x</strong>（表观 PE_TTM 30.81x 失真）<br />
+- 对应 2025 年归母 0.852 亿的 PE = <strong>45.6x</strong><br />
+- 对应 2029E 中性 PE = 38.86 / 1.25 = <strong>31.1x</strong><br />
+- <strong>判断</strong>：<strong>现价已充分甚至过度定价</strong>。市场按"表观 +128.84%"给估值，而真实经营在 Q2 已转为 −32.58%。</p>
+<h3>【第四步进阶】重资产 / 周期股估值校正（三道闸）</h3>
+<p><strong>校正1：资产质量折扣</strong><br />
+- <strong>公司不破净（PB 2.29x）</strong>，需说明资产质量：<br />
+  - 2026H1 归母净资产 <strong>17.00 亿</strong>（每股约 4.84 元），资产负债率 <strong>14.49%</strong><br />
+  - <strong>无商誉</strong>（商誉占净资产 0%）✓<br />
+  - 流动比率 3.00、速动比率 2.94、现金比率 113.13%——<strong>流动性极充裕</strong> ✓<br />
+  - <strong>但资产质量的最大瑕疵是应收账款</strong>：4.82 亿（占总资产 23%），周转天数约 445 天，<strong>下游为地方财政背景的公交集团，回收风险与地方财政直接挂钩</strong><br />
+  - 存货周转率年化 1.30 次（2025 年 3.93 次），<strong>大幅放缓，存在滞销/积压迹象</strong><br />
+- <strong>结论</strong>：<strong>账面资产干净（无商誉、低负债、高流动），但营运资本（应收 + 存货）占用严重，实际自由现金流远低于账面利润</strong>——2025 年经营现金流 0.619 亿 vs 净利 0.852 亿（净现比 73.27%），2026H1 净现比 49.7%，<strong>现金流质量持续恶化</strong></p>
+<p><strong>校正2：周期位置校正</strong><br />
+- 公司所处<strong>客车行业周期</strong>位置：<br />
+  | 周期维度 | 位置 | 依据 |<br />
+  |---|---|---|<br />
+  | 新能源公交渗透率 | <strong>&gt;80%，渗透周期顶部</strong> | <strong>增量红利基本结束，仅剩存量替换</strong> |<br />
+  | 补贴政策周期 | <strong>顶部/平替</strong>（2026 标准与 2025 一致） | 湖北省细则明确"与 2025 年保持一致" |<br />
+  | 客车产量周期 | <strong>温和下行</strong>（2025 约 11 万 → 2029 约 10 万） | 保有量饱和 + 新能源化完成 |<br />
+  | 公司盈利周期 | <strong>刚从 2025 年脉冲高点回落</strong>（Q2 单季 −32.58%） | 2026H1/Q2 数据 |<br />
+- <strong>归一化处理</strong>：中性净利 1.25 亿 <strong>未使用 2025 年（0.852 亿，政策脉冲年）或 2026 年（含退税）数据外推</strong>，而是基于 <strong>2029 年客车产量 10 万辆 × 份额 7% × ASP 10,500 元</strong> 的结构化重建 ✓<br />
+- <strong>周期位置标注</strong>：<strong>当前处于政策刺激脉冲的退潮期，周期位置偏顶部向下</strong>。按纪律"顶部时中性须下调"——本报告 2029E 中性净利 1.25 亿<strong>低于</strong> 2026E 含退税口径（1.3–1.5 亿），已体现下调 ✓</p>
+<p><strong>校正3：杠杆下行情景</strong><br />
+- 资产负债率 <strong>14.49%</strong>，远低于 60% 阈值，<strong>无杠杆反噬风险</strong> ✓<br />
+- 负面情景（需求下行 + 年降加剧）：<br />
+  | 假设 | 冲击 |<br />
+  |---|---|<br />
+  | 客车产量降至 9 万辆（−10%） | 收入 −1.2 亿 |<br />
+  | 年降 −8%/年累积 3 年 | 毛利率 −4pct → 26%，毛利 −0.5 亿 |<br />
+  | 软件退税取消 | −0.3 亿/年 |<br />
+  | 应收账款计提（账龄恶化） | −0.4 亿 |<br />
+  | <strong>合计</strong> | 2029E 归母降至 <strong>0.4–0.7 亿</strong>，PE 18x → 7.2–12.6 亿 → <strong>2.05–3.59 元</strong>（<strong>−67%～−81%</strong>），<strong>空间重度转负</strong> |<br />
+- <strong>但因无杠杆、账上现金充裕（现金比率 113%），公司不会陷入财务困境</strong>，下行是估值层面的 ✓</p>
+<p><strong>期权纪律执行</strong>：<br />
+- 移动医疗（0.8 亿收入假设）与海外（0.8 亿收入假设）——<strong>严格说未过验证点</strong>，本报告在中性中仅给<strong>极小权重</strong>（各 0.8 亿，合计占中性营收 12.8%），且净利率给 10–12%（低于主业）✓<br />
+- 股份回购、中期分红——<strong>不计入利润，仅影响股东回报</strong> ✓<br />
+- 软件退税延续——<strong>中性按 0 计入</strong>，仅进乐观情景 ✓</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置：高估</strong><br />
+- 现价 11.05 元，总市值 38.86 亿<br />
+- 对应 2026E 剔除后 PE <strong>37.7x</strong>、2025 年 PE <strong>45.6x</strong>、2029E 中性 PE <strong>31.1x</strong><br />
+- PB 2.29x，对应 2026E ROE 约 6.0%（1.03/17.0）——<strong>理论 PB = 6.0% × 25x = 1.50x，当前 2.29x 溢价 53%</strong><br />
+- 市场定价依据是"表观 +128.84% 高增长"，而该增长已被 Q2 数据（−32.58%）证伪</p>
+<p><strong>安全边际：为负</strong><br />
+| 情景 | 目标价 | 空间 | 概率（主观） |<br />
+|---|---|---|---|<br />
+| 悲观（需求持续下滑 + 退税取消） | 6.98 元 | <strong>−36.8%</strong> | 35% |<br />
+| <strong>中性</strong> | <strong>8.54 元</strong> | <strong>−22.7%</strong> | 45% |<br />
+| 乐观（补贴加码 + 迁移兑现） | 14.81 元 | <strong>+34.0%</strong> | 20% |</p>
+<ul>
+<li>期望值 = 0.35×(−36.8%) + 0.45×(−22.7%) + 0.20×(+34.0%) = <strong>−12.9% − 10.2% + 6.8% = −16.3%</strong>，<strong>期望为负</strong> ✓</li>
+<li>下行保护：PB 1.4x（6.98 元）为悲观下沿，PB 1.0x（4.98 元）为极端底；公司无负债风险，但<strong>估值下杀空间大</strong></li>
+</ul>
+<p><strong>介入条件（具体到价格与信号）</strong><br />
+1. <strong>价格条件</strong>：<strong>不介入</strong>。回落至 <strong>8.0 元以下</strong>（2029E 中性 PE 22x、PB 1.66x）才进入观察区；<strong>6.5 元以下</strong>（PB 1.35x）才具安全边际<br />
+2. <strong>信号条件（需同时满足 ≥2 条）</strong>：<br />
+   - ① <strong>单季营收恢复同比正增长</strong>（Q3 或 Q4），证明 Q2 的 −19.78% 是节奏而非趋势<br />
+   - ② <strong>新能源公交车更新补贴 2027 年加码</strong>（提至 10 万/辆以上）或出台新的公交电动化/智能化强制标准<br />
+   - ③ <strong>移动医疗或海外业务取得正式订单公告</strong>，且单笔金额 ≥ 5,000 万<br />
+   - ④ <strong>应收账款周转天数降至 350 天以内</strong>（回款改善）<br />
+   - ⑤ 综合毛利率维持 <strong>≥ 30%</strong>（年降可控）<br />
+3. <strong>观察指标</strong>：逐季营收同比、单季净利率（剔除退税）、应收账款周转天数、各地公交补贴额度使用进度</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong><br />
+1. <strong>⚠️ 表观高增长被误读（首要）</strong>：H1 归母 +128.84% 中，Q1 贡献 6,385.65 万（占 88%），而 Q1 的超额利润来自软件退税 + 利息收入。<strong>Q2 单季归母仅 876 万（−32.58%）才是真实经营状态</strong>。市场若按表观增速定价，一旦三季报延续 Q2 趋势，将面临"业绩证伪 + 估值杀"双杀<br />
+2. <strong>⚠️ 新能源公交红利见顶</strong>：渗透率已 &gt;80%，存量替换空间收窄；2026 年补贴标准与 2025 年"保持一致"（无边际增量），且额度"用完即止"。<strong>2025 年 +52.24% 的营收增长是政策脉冲，不可持续</strong><br />
+3. <strong>整车厂年降的单向侵蚀</strong>：客户为宇通/比亚迪等强势整车厂，年降 3–8%/年是行业刚性规则，公司无议价权<br />
+4. <strong>软件退税政策清理风险</strong>：参照财政部/海关总署/税务总局 2025 年第 10 号公告已清理煤层气、风电、新型墙体材料等多项即征即退优惠，<strong>软件产品增值税即征即退同样存在被清理的可能</strong>——一旦清理，直接抹去公司最赚钱板块的附加收益<br />
+5. <strong>应收账款回收风险</strong>：4.82 亿应收、周转约 445 天，下游为地方财政背景的公交集团，<strong>地方财政压力加大将直接转化为坏账</strong><br />
+6. <strong>营运资本吞噬现金流</strong>：2026H1 净现比仅 49.7%，利润含金量低</p>
+<h3>【第五步进阶】上行想象力情景（四类，与下行校正对称）</h3>
+<p><strong>类型A 行业调整剩者红利 —— 低度适用</strong><br />
+- 客车车载电子行业集中度确有提升，但<strong>驱动因素不是产能出清，而是客车总量萎缩下的自然淘汰</strong>。公司作为"剩者"能拿到的份额提升有限（5%→7%），且<strong>存量市场缩小抵消了份额收益</strong><br />
+- 验证点：客车产量数据 vs 公司营收增速的相对表现（若公司增速持续跑赢客车产量，说明份额在提升）<br />
+- 证伪信号：<strong>Q2 公司营收 −19.78%，若同期客车产量降幅小于 19.78%，则公司在丢份额</strong><br />
+- <strong>归属：仅计入中性的份额微升（5%→7%）</strong></p>
+<p><strong>类型B 政策反转 / 政策加码期权 —— 核心上行来源（但未过验证点）</strong><br />
+- 具体政策：《2026 年新能源城市公交车及动力电池更新补贴实施细则》（交办运〔2026〕28 号）<br />
+- <strong>反转信号</strong>：①2027 年补贴标准从 8 万/辆<strong>提至 10 万+/辆</strong>；②出台公交车智能化（智能调度、ADAS）强制标准，直接扩大智能网联系统（毛利率 40.24%）的 ASP；③出台公交车辆"8 年强制更新"硬性规定（目前贵州细则为"车龄 8 年及以上"）<br />
+- <strong>重估弹性测算</strong>：<br />
+  | 情景 | 客车年更新量 | 公司收入 | 净利 | PE | 市值 | 股价 |<br />
+  |---|---|---|---|---|---|---|<br />
+  | 基准（8 万/辆） | 4.0 万辆 | 12.5 亿 | 1.25 亿 | 24x | 30.0 亿 | 8.54 元 |<br />
+  | <strong>补贴加码（10 万/辆 + 智能化强制）</strong> | <strong>5.5 万辆</strong> | <strong>16.0 亿</strong> | <strong>2.08 亿</strong> | <strong>25x</strong> | <strong>52.0 亿</strong> | <strong>14.81 元（+34.0%）</strong> |<br />
+- <strong>未过验证点，仅作机会情景，不计入中性锚</strong> ✓<br />
+- 证伪信号：2027 年补贴退坡（低于 8 万/辆）/ 额度大幅缩减 / 无智能化强制标准出台</p>
+<p><strong>类型C 市场错杀修复 —— 不适用</strong><br />
+- 当前不是错杀：PB 2.29x vs 理论 PB 1.50x，<strong>溢价 53%</strong>；PE 对应真实盈利 37.7x。不存在估值分位低位、相对行业折价的证据<br />
+- <strong>结论：反向风险而非机会</strong></p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权 —— 不适用（移动医疗不构成）</strong><br />
+- 移动医疗（193 万元收入）属<strong>市场迁移尝试</strong>而非技术突破，且 TAM 更小、门槛更高<br />
+- 智能网联（车联网/ADAS）属主流成熟代，非从 0 到 1 的新技术路线<br />
+- <strong>硬验证点检验</strong>：①中试良率（不适用）；②客户定点（无）；③量产成本优于旧路线（不适用）→ <strong>三条全缺</strong><br />
+- <strong>结论：不构成上行来源，仅作乐观情景中的小额收入假设（0.8 亿）</strong></p>
+<p><strong>什么条件出现才上调至"重点关注"（远期空间 &gt; +50%）？</strong><br />
+必须<strong>同时</strong>满足：<br />
+1. 股价回落至 <strong>8.0 元以下</strong><br />
+2. <strong>2027 年新能源公交车更新补贴明确加码至 10 万/辆以上</strong>，或出台公交车智能化强制标准<br />
+3. 单季营收<strong>连续两季恢复同比正增长</strong>，且综合毛利率维持 ≥ 30%</p>
+<p>若上述条件兑现，中性远期目标价可上修至 <strong>14.8 元</strong>（空间 +34% 起步，若叠加份额提升可至 +50% 以上），届时上调至"重点关注"。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>判定依据：中性远期空间 <strong>−22.7%</strong>，为负，不满足"纳入观察 &gt; 0"的门槛。<br />
+公司质地本身不差——资产负债率仅 14.49%、无商誉、现金比率 113%、分红率 45.39%、国家级专精特新"小巨人"，<strong>不属于"坚决回避"范畴</strong>（有实质业务 10 亿营收、持续盈利、无财务风险）。<br />
+但估值与基本面严重错配：市场按"表观 +128.84%"定价，而剔除软件退税与利息收入后，<strong>Q2 单季归母仅 876 万（同比 −32.58%）、营收 −19.78%</strong>，真实的经营趋势已经转为下行。叠加新能源公交渗透率 &gt;80% 后存量替换空间收窄、2026 年补贴标准与 2025 年持平（无边际增量）、整车厂年降刚性侵蚀——<strong>当前 37.7 倍的真实 PE 缺乏基本面支撑</strong>。<br />
+<strong>核心跟踪点</strong>：① 2026 年三季报单季营收与归母（验证 Q2 是否为趋势起点）；② 2027 年公交更新补贴标准；③ 软件产品增值税即征即退政策是否延续。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>11.05 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>8.8 元</strong>（区间 7.5–10.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−20.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>8.54 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−22.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 6.98 元（−36.8%）～ 乐观 14.81 元（+34.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>客车电子，Q2营收−19.8%已现下行；H1净利+128%靠软件退税与利息，非主业改善</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（8.0元以下才进观察区，等单季营收转正+2027补贴加码）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：广州通达汽车电气股份有限公司 2026 年半年度报告（2026-08-25 披露）、2026 年第一季度报告（2026-04-22）、2025 年年度报告、2026 年中期分红方案（10 派 1 元，3,501 万元）、股份回购方案及进展公告（2026-09-02/09-03）、交通运输部办公厅与国家发展改革委办公厅《2026 年新能源城市公交车及动力电池更新补贴实施细则》（交办运〔2026〕28 号，2026-05-01）、国家发改委与财政部《关于 2026 年实施大规模设备更新和消费品以旧换新政策的通知》（发改环资〔2025〕1745 号）、湖北省/贵州省/泰安市 2026 年配套实施细则、中证网、东方财富 F10、腾讯行情 qt.gtimg.cn（2026-09-11 收盘实测）。</em><br />
+<em>口径纠偏说明：队列表"现价"11.01 元与实测收盘 11.05 元偏离 +0.4%，已全部采用实测价。</em><em>队列表"亏损"标记为 False 正确，但 PE_TTM 30.81x 严重失真</em><em>——2026H1 归母 7,261.86 万元中，Q1 单季 6,385.65 万元（占 88%）主要来自"软件产品增值税即征即退 + 定期存款利息收入"（公司一季报明确说明），而 Q2 单季归母仅 876.21 万元（同比 −32.58%）、营收 −19.78%。剔除退税与利息后真实 2026E 净利约 1.03 亿，对应 PE 37.7x。本报告估值全部基于剔除该项后的经营口径。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

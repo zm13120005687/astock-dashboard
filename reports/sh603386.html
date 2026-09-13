@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>骏亚科技（sh603386）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>骏亚科技（sh603386）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-13 ｜ 现价 <strong>16.46 元</strong>（2026-09-11 收盘，腾讯行情实测，当日 +10.03% 涨停）｜ 总市值 <strong>53.71 亿</strong> ｜ PE(TTM) <strong>−100.49x</strong> ｜ PB <strong>4.07x</strong> ｜ 总股本 <strong>3.2632 亿股</strong><br />
+行业：印制电路板（PCB）／电子元器件 ｜ 板块：上交所主板<br />
+<strong>口径纠偏</strong>：队列表标记"亏损"（PE_TTM −89.13）属实。经核对 2026 年半年报（2026-08-26 披露），<strong>2026H1 归母净利 −844.13 万元，确为亏损</strong>；但 <strong>2026Q2 单季归母已转正 +1200.92 万元</strong>，属"亏损边际改善、全年待验证"状态，非"持续恶化型亏损"。本报告按亏损股完整五步法 + 正常化净利润法估值。<br />
+<strong>价格坑规避</strong>：<code>batch_fin.csv</code>／队列"现价"列为 14.60 元，实测收盘 16.46 元，<strong>偏离 +12.7%</strong>，已全部采用实测价。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：广东惠州的通用印制电路板（PCB）制造商，做研发样板、小批量板与中大批量板，并提供 SMT 表面贴装配套，下游覆盖通信、消费电子与工业控制——是这一轮 AI 算力 PCB 涨价潮中被主题带动的<strong>中低端通用板标的</strong>，而非高多层/HDI 的核心供给方。</p>
+<p><strong>业务板块拆解（2026H1 营收 13.49 亿元）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务/口径</th>
+<th>金额</th>
+<th>占比</th>
+<th>同比</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>印制电路板（PCB）</td>
+<td>未单独披露，为主业主体</td>
+<td>&gt;90%</td>
+<td>+6.73%（整体）</td>
+<td>含样板、小批量板、中大批量板</td>
+</tr>
+<tr>
+<td>SMT 表面贴装</td>
+<td>未单独披露</td>
+<td>预计 &lt;10%</td>
+<td>—</td>
+<td>配套服务，非独立增长引擎</td>
+</tr>
+<tr>
+<td>营业总收入</td>
+<td><strong>13.49 亿</strong></td>
+<td>100%</td>
+<td><strong>+6.73%</strong></td>
+<td>2025 全年 25.36 亿</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td><strong>−0.0844 亿</strong></td>
+<td>—</td>
+<td><strong>−122.14%</strong></td>
+<td>上年同期 +0.3813 亿</td>
+</tr>
+<tr>
+<td>扣非归母净利润</td>
+<td><strong>−0.1219 亿</strong></td>
+<td>—</td>
+<td><strong>−148.4%</strong></td>
+<td>上年同期 +0.2516 亿</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：单/双面板、多层硬板（4–12 层为主）、HDI 试产、样板与小批量快板；配套 SMT 贴装服务。产品结构以<strong>中低端通用板</strong>为主，与 AI 服务器所需 20–78 层高多层板、6 阶 HDI、M9/M10 级超低损耗覆铜板存在明显技术代际差距。</p>
+<p><strong>主要客户/下游领域</strong>：通信设备、消费电子、工业控制三大方向。客户以国内电子制造厂商为主，前五大客户集中度未单独披露（年报口径为"不存在重大依赖"表述），但应收账款周转率仅 1.17 次/半年（年化 2.34 次），反映下游账期偏长、议价能力偏弱。</p>
+<p><strong>境内外收入占比</strong>：2026 半年报未单独拆分境内外，参照 2025 年报口径，公司以<strong>内销为主</strong>（出口占比低于同业龙头沪电、深南的 50%+）。这也是其未能充分享受本轮 AI PCB 海外订单红利的结构性原因之一。</p>
+<p><strong>股东背景/实控人</strong>：广东惠州民营 PCB 企业，2017 年上交所主板上市（603386）。实控人为创始人家族，无央企/国资背景。<strong>重资产 + 高负债经营</strong>——2026H1 资产负债率 65.63%，有息负债约 11.70 亿元（短期借款 9.122 亿 + 长期借款 2.575 亿），货币资金仅 1.705 亿元。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度级别</th>
+<th>落地节奏</th>
+<th>对公司的传导</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工信部"电子材料国产化攻关"重点目录（2026 年）</td>
+<td>工信部</td>
+<td>部委专项</td>
+<td>执行中</td>
+<td>高端 CCL、高频高速基材、先进封装基板单项目最高补贴 5000 万元；<strong>公司主业为通用板，直接受益有限，属"政策红利外溢方"</strong></td>
+</tr>
+<tr>
+<td>"东数西算"2.0 工程 / AI 算力基建提速</td>
+<td>国家发改委等</td>
+<td>国家级</td>
+<td>2026H1 新建智算中心超 30 座</td>
+<td>抬升高多层/HDI 需求，间接推高全行业原材料与产能挤占</td>
+</tr>
+<tr>
+<td>东莞/吉安/珠海/昆山等地 PCB 产业园配套政策</td>
+<td>地方政府</td>
+<td>地市级</td>
+<td>密集出台</td>
+<td>用地优先审批 + 税收优惠，主要面向高阶 HDI 项目；<strong>龙南骏亚 HDI 项目属此类受益范畴</strong></td>
+</tr>
+<tr>
+<td>增值税法及配套清理（2025 年第 10 号公告）</td>
+<td>财政部、海关总署、税务总局</td>
+<td>国家级</td>
+<td>2025-11-01 起</td>
+<td>与公司主业关联度低，但属制造业税负环境变化背景</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化指标</strong>：2026 年上半年中国 PCB 企业已披露扩产投资金额累计<strong>超 700 亿元</strong>，其中鹏鼎 337 亿、胜宏 200 亿、沪电 177 亿、景旺 50 亿，<strong>90% 以上流向高阶 HDI、AI 服务器专用板、IC 载板</strong>。工信部要求新建智算中心高速 PCB 国产化率<strong>不低于 70%</strong>。</p>
+<blockquote>
+<p><strong>关键判断</strong>：政策与资本开支的双轮驱动<strong>高度指向高端产能</strong>，通用中低端板既无政策补贴也少资本注入，反而因上游材料被 AI 挤占而承受更大成本压力。这是理解骏亚科技"行业极景气 + 公司仍亏损"矛盾的核心。</p>
+</blockquote>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>来源/时点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球 PCB 产值</td>
+<td>2025 年 <strong>851.52 亿美元</strong>，同比 <strong>+15.80%</strong></td>
+<td>Prismark</td>
+</tr>
+<tr>
+<td>2025—2030 全球 CAGR</td>
+<td><strong>7.7%</strong>，2030 年达 1233.48 亿美元</td>
+<td>Prismark（行业规模引用，非公司业绩外推）</td>
+</tr>
+<tr>
+<td>2026 年全球 PCB 市场</td>
+<td>预估 <strong>约 957 亿美元</strong>，年增约 12.5%</td>
+<td>Prismark</td>
+</tr>
+<tr>
+<td>HDI 增速</td>
+<td>约 <strong>+14.5%</strong>；18 层以上高阶板成长率约 <strong>+62.4%</strong></td>
+<td>Prismark</td>
+</tr>
+<tr>
+<td>中国大陆占全球产值</td>
+<td><strong>54.37%</strong></td>
+<td>Prismark</td>
+</tr>
+<tr>
+<td>2026H1 国内 PCB 扩产投资</td>
+<td><strong>超 700 亿元</strong></td>
+<td>公开统计</td>
+</tr>
+<tr>
+<td>AI 服务器出货</td>
+<td>2026 年预计突破 <strong>200 万台</strong>，同比 <strong>+55%</strong></td>
+<td>行业预测</td>
+</tr>
+<tr>
+<td>单机 PCB 价值量</td>
+<td>传统服务器约 3000 元 → AI 服务器 <strong>1–3 万元</strong>（3–10 倍）</td>
+<td>产业调研</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1 / Q2）</strong>：<br />
+- <strong>量</strong>：公司 H1 营收 13.49 亿（+6.73%），Q2 单季 7.43 亿（同比 +10.43%、环比 +22.43%）——<strong>营收端在改善</strong><br />
+- <strong>价</strong>：H1 综合毛利率 16.47%（同比 −2.07pct）；Q2 单季毛利率 <strong>20.29%</strong>（同比 +0.12pct、<strong>环比 +8.49pct</strong>）——<strong>涨价传导在 Q2 开始生效</strong><br />
+- <strong>利</strong>：Q1 归母 −2045 万 → Q2 归母 <strong>+1200.92 万</strong>（环比 +158.72%），毛利率从 11.80% 修复至 20.6%</p>
+<p><strong>供需格局与竞争格局（K 型分化的下半支）</strong>：<br />
+- 高端（高阶 HDI、高多层、IC 载板）：量价齐升，头部订单锁定至 2027 年，部分产品涨价超 300%<br />
+- <strong>低端（单双面板、4–6 层普通硬板）：缺乏政策红利与技术壁垒，陷入持续价格战，部分企业毛利率已逼近零点</strong> ← <strong>骏亚科技所处位置</strong><br />
+- 全球有效产能利用率 2026 年约 78%，偏紧但非紧缺——紧缺的是高端，不是通用板</p>
+<h3>（3）产业链传导</h3>
+<h4>【第二步进阶】原料成本 → 毛利结构（四因子）</h4>
+<p><strong>因子1：成本传导弹性（pass-through）</strong></p>
+<p>上游核心原料为<strong>覆铜板 CCL（占 PCB 原材料成本约 60%）</strong>、铜箔、电子玻纤布、特种树脂。2026 年涨价节奏：<br />
+- 2026 年 3 月 1 日：日本 Resonac 宣布 CCL 及粘合胶片<strong>涨价 30%+</strong><br />
+- 2026 年 4 月 1 日：三菱瓦斯化学全系列高端 PCB 材料<strong>涨价 30%</strong><br />
+- 建滔积层板：3/10、4/3 之后<strong>第三次</strong>调价，FR-4 及 PP 提价 <strong>10%</strong><br />
+- 台燿科技：部分产品涨价 <strong>20%–40%</strong><br />
+- 电子布：7628 型号突破 <strong>6.5 元/米</strong>；1080 型号报 <strong>7.5–8.0 元/米</strong>，年内四轮提价</p>
+<p><strong>传导率量化</strong>：<br />
+| 公司/品类 | 议价权 | 估算传导率 | 依据 |<br />
+|---|---|---|---|<br />
+| 沪电、深南、胜宏（AI/高端） | 强 | <strong>0.8–0.9</strong> | 订单锁定至 2027，缺货周期，涨价函可直接落地 |<br />
+| <strong>骏亚科技（通用板）</strong> | <strong>弱</strong> | <strong>0.4–0.5</strong> | H1 毛利率同比仍 <strong>−2.07pct</strong>（原料涨 30%，公司毛利率仅修复 Q2 单季），说明约半数涨幅自己扛；Q1 毛利率一度跌至 11.80% |</p>
+<p>→ <strong>上游涨价 30% ×（1 − 0.45）= 实际毛利承压约 16.5pct</strong>，与公司 H1 毛利率从 18.54% 降至 16.47% 的幅度（已叠加 Q2 涨价回补）大致吻合。</p>
+<p><strong>因子2：毛利结构再平衡（分业务线毛利率与原料敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入占比</th>
+<th>估算毛利率</th>
+<th>对 CCL/铜箔敏感权重</th>
+<th>原料涨 30% 的毛利冲击</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通用多层硬板（4–12 层）</td>
+<td>约 55%</td>
+<td>12–16%</td>
+<td><strong>高（0.85）</strong></td>
+<td>最大承压源</td>
+</tr>
+<tr>
+<td>样板/小批量快板</td>
+<td>约 25%</td>
+<td>22–28%</td>
+<td>中（0.55）</td>
+<td>中等，快板交期短可部分顺价</td>
+</tr>
+<tr>
+<td>中大批量板</td>
+<td>约 15%</td>
+<td>8–12%</td>
+<td><strong>高（0.90）</strong></td>
+<td>价格战 + 原料双杀</td>
+</tr>
+<tr>
+<td>SMT 及其他</td>
+<td>约 5%</td>
+<td>15–20%</td>
+<td>低（0.35）</td>
+<td>影响小</td>
+</tr>
+<tr>
+<td><strong>加权综合</strong></td>
+<td>100%</td>
+<td><strong>16.47%</strong></td>
+<td><strong>0.72</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结论</strong>：单一"综合毛利率 16.47%"掩盖了结构问题——占 70% 权重的通用板 + 中大批量板是成本承压主体，而高毛利的小批量快板占比不足以对冲。<strong>这正是公司"行业景气、自身仍亏"的结构性根因</strong>。</p>
+<p><strong>因子3：库存与采购节奏（timing）</strong></p>
+<ul>
+<li><strong>低价囤货收益</strong>：无公开证据显示公司 2025 年末大规模囤积 CCL。存货周转率 1.21 次/半年（年化 2.42 次），低于 2025 年全年的 5.71 次——<strong>周转放缓本身说明存在备货，但更可能是滞销/在产积压而非低价囤货</strong></li>
+<li><strong>高价接货损失</strong>：Q1 毛利率骤降至 11.80%，是高价原料入库 + 未及顺价的直接体现；Q2 修复至 20.29% 则反映涨价函落地 + 前期低价库存消化完毕</li>
+<li><strong>长协/套保</strong>：<strong>未见公司披露任何铜/CCL 套期保值或长期锁价协议</strong>（2026 半年报及近期公告均无相关表述）。公司 H1 非经常性损益中"有效套期保值业务外"的金融资产公允价值变动仅 70.66 万元，规模极小，不构成对冲</li>
+<li><strong>⚠️ 重要提示</strong>：Q2 单季毛利率从 11.80% 跳升至 20.29%（+8.49pct），<strong>其中包含低价库存消化的时间性收益</strong>。若无长协锁价，Q3 起需按新采购成本重定价，<strong>Q2 的 20.29% 不构成稳态水平</strong>——本报告第四步假设稳态毛利率显著低于该值，理由即在于此</li>
+</ul>
+<p><strong>因子4：政策/市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>类型</th>
+<th>情景假设</th>
+<th>可观测验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CCL/铜箔/电子布价格</td>
+<td>市场层</td>
+<td>中性：2026H2 涨幅收窄至 10–15%，2027 年见顶回落</td>
+<td>建滔/生益/南亚月度涨价函；上海有色网 CCL 价格指数</td>
+<td>2026Q4 再现 30% 级别涨价</td>
+</tr>
+<tr>
+<td>AI 需求挤占通用材料产能</td>
+<td>市场层</td>
+<td>中性：挤占持续至 2027，通用 FR-4 交期 3–4 周</td>
+<td>FR-4 交期数据；AI 服务器出货月度数据</td>
+<td>交期回落至 2 周以内（挤占解除）</td>
+</tr>
+<tr>
+<td>工信部电子材料国产化专项</td>
+<td>政策层</td>
+<td>中性：补贴主要流向 CCL 龙头，间接缓解 2027 后供给</td>
+<td>生益松山湖二厂（52 亿/4800 万平米）投产进度</td>
+<td>项目延期、补贴退坡</td>
+</tr>
+<tr>
+<td>铜价（LME/沪铜）</td>
+<td>市场层</td>
+<td>中性：高位震荡</td>
+<td>沪铜主力合约；公司采购成本公告</td>
+<td>铜价突破前高 15%</td>
+</tr>
+<tr>
+<td>出口关税/贸易壁垒</td>
+<td>政策层</td>
+<td>公司出口占比低，影响有限</td>
+<td>公司境外收入披露</td>
+<td>出口占比升至 30%+ 后需重新评估</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<h3>基础清单（项目 / 金额 / 进度 / 确认时点 / 利润贡献 / 确定性）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献（2029E）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>龙南骏亚 60 万㎡ 高多层/HDI 项目（一期）</strong></td>
+<td>年产 60 万平方米高多层、HDI 线路板，<strong>分两期</strong></td>
+<td><strong>总投资 15.57 亿</strong>，一期 <strong>6.28 亿</strong></td>
+<td>2026-06-22 公告；一期建设期 <strong>24 个月</strong>（→2028 年中）；<strong>在现有厂房内建设，不新增土地及基建</strong></td>
+<td>满产口径见下</td>
+<td><strong>中</strong>（已公告，但资金未落实）</td>
+</tr>
+<tr>
+<td>交通银行固定资产贷款</td>
+<td>配套融资</td>
+<td><strong>1.9552 亿元</strong>，期限 10 年</td>
+<td>已签订合同</td>
+<td>仅解决约 12.6% 的 15.57 亿总投资</td>
+<td>高</td>
+</tr>
+<tr>
+<td>Q2 单季扭亏</td>
+<td>经营改善信号</td>
+<td>归母 +1200.92 万</td>
+<td>已实现（2026Q2）</td>
+<td>若 Q3/Q4 延续 → 2026 全年可转正</td>
+<td><strong>中低</strong>（未验证）</td>
+</tr>
+<tr>
+<td>政府补助</td>
+<td>经常性补助</td>
+<td>H1 <strong>309.96 万元</strong></td>
+<td>持续但规模小</td>
+<td>0.03 亿/年</td>
+<td>高</td>
+</tr>
+<tr>
+<td>退回政府补助</td>
+<td>负面</td>
+<td><strong>−298.81 万元</strong></td>
+<td>2026 年 7 月需退回</td>
+<td>−0.03 亿（2026 一次性）</td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<h3>⚠️ 资金缺口测算（最关键的自下而上约束）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HDI 项目总投资</td>
+<td>15.57 亿</td>
+</tr>
+<tr>
+<td>已落实融资（交行贷款）</td>
+<td>1.96 亿</td>
+</tr>
+<tr>
+<td>公司货币资金（2026-06-30）</td>
+<td>1.705 亿</td>
+</tr>
+<tr>
+<td>2026H1 经营现金流净额</td>
+<td>0.193 亿（同比 −90.26%）</td>
+</tr>
+<tr>
+<td><strong>静态资金缺口</strong></td>
+<td><strong>约 11.9 亿</strong></td>
+</tr>
+<tr>
+<td>2026H1 有息负债</td>
+<td>11.70 亿（短借 9.122 亿 + 长借 2.575 亿）</td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td><strong>65.63%</strong>（同比 +4.83pct）</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>2360.98 万元（同比 <strong>+49.61%</strong>）</td>
+</tr>
+<tr>
+<td>货币资金/流动负债</td>
+<td><strong>11.28%</strong>（严重偏低）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结论</strong>：15.57 亿投资的资金 90% 以上需依赖新增银行贷款。当前流动比率 0.65、速动比率 0.46（2025 年报口径），<strong>短期偿债能力已偏紧</strong>。若项目推进，财务费用将进一步攀升，形成"扩产→加杠杆→财务费用吃掉毛利"的负反馈风险。<strong>这是本报告对 HDI 项目利润贡献给予较大折扣的核心依据。</strong></p>
+<h3>【第三步进阶】份额变量与主业迁移空间（三层法）</h3>
+<h4>层1：现有业务 = 市场容量 × 份额变量（五锚点）</h4>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守（守住）</th>
+<th>中性（小幅提升）</th>
+<th>乐观（抢份额）</th>
+<th>验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①供给侧份额</td>
+<td>公司营收 25 亿量级，国内 PCB 行业超 3000 亿，<strong>份额 &lt;1%</strong></td>
+<td>维持</td>
+<td>微升至 1.0%</td>
+<td>升至 1.5%</td>
+<td>季报营收同比；龙南一期投产公告</td>
+<td>营收连续两季同比转负</td>
+</tr>
+<tr>
+<td>②需求侧/客户份额</td>
+<td>客户以国内中小电子厂为主，<strong>未进入任何头部 AI 服务器客户供应链</strong></td>
+<td>维持现有客户</td>
+<td>拓展 1–2 家通信/工控龙头</td>
+<td>通过某头部客户 HDI 认证</td>
+<td>重大合同公告；前五大客户披露</td>
+<td>应收账款周转率继续下滑</td>
+</tr>
+<tr>
+<td>③技术代际差</td>
+<td><strong>落后一代</strong>：主产 4–12 层通用板，缺 20+ 层高多层、6 阶 HDI 量产能力</td>
+<td>补齐 HDI 试产</td>
+<td>一期达产，具备 2–3 阶 HDI</td>
+<td>达到 4 阶以上并获客户认证</td>
+<td>龙南项目良率/投产公告</td>
+<td>2028 年底未投产</td>
+</tr>
+<tr>
+<td>④成本曲线位置</td>
+<td>位于成本曲线<strong>右端</strong>（规模小、自动化率低、毛利率 15–16% vs 龙头 25–35%）</td>
+<td>持平</td>
+<td>左移 1–2pct</td>
+<td>左移 3–5pct</td>
+<td>季度毛利率</td>
+<td>毛利率跌破 12%</td>
+</tr>
+<tr>
+<td>⑤份额二阶导数</td>
+<td><strong>S 曲线尚未起势</strong>——营收 +6.73% 接近行业低端产能增速，无加速迹象</td>
+<td>零阶</td>
+<td>一阶为正</td>
+<td>二阶为正（加速渗透）</td>
+<td>连续 4 季营收增速抬升</td>
+<td>增速走平或回落</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>层1 结论</strong>：中性情景下公司份额<strong>至多小幅提升</strong>，无法期待"市场变大 + 份额变高"双因子共振。增量主要来自<strong>绝对产能扩张</strong>（龙南项目），而非份额跃迁。</p>
+<h4>层2：扩展业务 = 主业迁移空间（新易盛范式五问）</h4>
+<table>
+<thead>
+<tr>
+<th>判断维度</th>
+<th>评估</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①能力可迁移性</td>
+<td>PCB 制造 → HDI/高多层，<strong>工艺同源度高</strong>（压合、钻孔、电镀、蚀刻），但精度与良率控制要求跃升；资本开支可复用度中等（现有厂房可用）</td>
+<td><strong>中等偏高</strong></td>
+</tr>
+<tr>
+<td>②新 TAM 弹性</td>
+<td>高多层/HDI 市场：HDI 全球 157 亿美元（+25.6%）；高阶板 +62.4%。<strong>新 TAM 约为公司现有通用板市场的 3–5 倍，且增速高 3–4 倍</strong></td>
+<td><strong>弹性大</strong></td>
+</tr>
+<tr>
+<td>③切入时点与卡位</td>
+<td><strong>晚期切入</strong>。头部厂商 2025 年即启动扩产，2026 年投资超 700 亿，产能 2026H2–2027 陆续释放。公司 2028 年中才投产，<strong>属红海卡位而非先发</strong></td>
+<td><strong>不利</strong></td>
+</tr>
+<tr>
+<td>④客户认证门槛</td>
+<td>HDI/AI 服务器板认证周期 <strong>12 个月以上</strong>（工厂审核 + 产品认证 + 良率爬坡），且客户高度集中</td>
+<td><strong>高门槛，双刃</strong></td>
+</tr>
+<tr>
+<td>⑤信号验证</td>
+<td><strong>目前零正式信号</strong>：无 HDI 客户定点公告、无大额订单公告、营收结构未见新品类占比跳升</td>
+<td><strong>未通过</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>层2 结论</strong>：主业迁移（通用板 → HDI/高多层）<strong>仅作中期期权，不计入中性情景</strong>。理由：未过验证点⑤，且切入时点③不利。仅在乐观情景中给予部分权重。</p>
+<h4>层3：风险折扣——证伪信号清单</h4>
+<ol>
+<li><strong>价格战致毛利破阈值</strong>：综合毛利率跌破 <strong>12%</strong> → 中性情景净利率假设下调至 1.5% 以下</li>
+<li><strong>份额连续下滑</strong>：连续两个季度营收同比负增长</li>
+<li><strong>认证/订单无正式公告</strong>：2027 年底前未见龙南项目客户认证或订单公告 → 迁移期权归零</li>
+<li><strong>新品类营收占比未跳升</strong>：2029 年高多层/HDI 收入占比低于 <strong>15%</strong> → 结构性升级失败</li>
+<li><strong>资金链信号</strong>：财务费用率突破 3.0%、或短期借款继续大幅攀升 → 杠杆反噬</li>
+</ol>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>⚠️ 方法声明</strong>：公司当前归母净利为负（2026H1 −0.0844 亿），<strong>PE 无意义（PE_TTM −100.49x）</strong>。本报告采用 <strong>RULES.md 第四节"正常化净利润法"（Normalized Earnings）</strong>：估稳态营收 → 保守正常化净利率 → × 远期合理 PE → 目标市值 → 目标价。<strong>全文不使用任何历史增速外推。</strong></p>
+</blockquote>
+<p><strong>总股本：3.2632 亿股</strong>（326,322,560 股，2026-09-11 腾讯行情实测）</p>
+<h3>亏损股三问（必须回答）</h3>
+<p><strong>① 为什么亏？</strong><br />
+| 原因 | 量化 |<br />
+|---|---|<br />
+| 原材料涨价（CCL +30%、铜箔、电子布四轮提价）传导不畅 | H1 毛利率 16.47%，同比 −2.07pct；Q1 一度 11.80% |<br />
+| 汇兑损失 | 半年报明确列为亏损主因之一（未单独披露金额） |<br />
+| 资产减值 | 半年报明确列为亏损主因之一 |<br />
+| 政府补助减少 | 7 月需退回 298.81 万元 |<br />
+| <strong>财务费用吞噬</strong> | 2360.98 万元，同比 <strong>+49.61%</strong>；H1 归母亏损仅 844 万，<strong>财务费用是亏损额的 2.8 倍</strong> |<br />
+| 产品结构处于成本曲线右端 | 通用板无定价权 |</p>
+<p>→ <strong>核心定性</strong>：属<strong>行业结构性挤压（上游涨价 + 下游无定价权）+ 高杠杆财务费用拖累</strong>的复合型亏损，非一次性减值型、亦非主业持续萎缩型（营收仍 +6.73%）。</p>
+<p><strong>② 靠什么扭亏？触发时点？</strong><br />
+| 扭亏抓手 | 机制 | 触发时点 | 确定性 |<br />
+|---|---|---|---|<br />
+| <strong>Q2 已实现的涨价传导延续</strong> | 毛利率 11.80% → 20.29%，若 Q3/Q4 维持 17%+，全年可微利 | <strong>2026Q3–Q4（最近）</strong> | 中低（Q2 含库存收益） |<br />
+| 财务费用见顶回落 | 若不再新增大额贷款、或利率下行 | 2027 起 | 低（与扩产冲突） |<br />
+| <strong>龙南 HDI 一期投产 + 结构升级</strong> | 高多层/HDI 毛利率显著高于通用板 | <strong>2028 年中投产，2029 年才有实质利润贡献</strong> | 中（资金缺口 11.9 亿） |<br />
+| 剥离/处置低效资产 | 无公开计划 | 不确定 | — |</p>
+<p>→ <strong>扭亏时点判断</strong>：<strong>2026 年全年大概率在盈亏平衡线附近（−0.1 亿至 +0.4 亿）</strong>，真正意义上的稳定盈利需等 <strong>2028–2029 年龙南一期达产</strong>。</p>
+<p><strong>③ 亏得起吗？</strong><br />
+| 生存能力指标 | 数值 | 评价 |<br />
+|---|---|---|<br />
+| 货币资金 | 1.705 亿 | <strong>偏紧</strong> |<br />
+| 货币资金/流动负债 | 11.28% | <strong>严重偏低</strong> |<br />
+| 2026H1 经营现金流净额 | +0.193 亿（−90.26%） | 仍为正，未失血 |<br />
+| 2026H1 筹资活动现金流净额 | +0.80 亿（半年报口径） | 银行渠道尚通 |<br />
+| 未分配利润 | 每股 0.96 元（2025 年报） | 有历史留存 |<br />
+| 资产负债率 | 65.63% | <strong>偏高但未资不抵债</strong> |<br />
+| 流动比率 / 速动比率 | 0.65 / 0.46（2025 年报） | <strong>短期偿债压力大</strong> |</p>
+<p>→ <strong>结论</strong>：<strong>亏得起，但腾挪空间很小</strong>。绝对值亏损仅 844 万/半年，短期生存无虞；但 15.57 亿扩产的资金缺口使其高度依赖银行续贷，任何信用收紧都会直接冲击项目进度。<strong>倒在黎明前的风险主要来自"激进扩产 × 紧绷现金流"的组合，而非亏损本身。</strong></p>
+<h3>稳态营收测算（自下而上）</h3>
+<table>
+<thead>
+<tr>
+<th>驱动项</th>
+<th>依据</th>
+<th>2026E</th>
+<th>2029E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存量通用板/SMT 业务</td>
+<td>2026H1 13.49 亿，H2 旺季 + 涨价传导，全年 27–28 亿；此后受行业低端产能过剩压制，<strong>假设 2029 年结构升级前持平于 27 亿</strong></td>
+<td><strong>27.5 亿</strong></td>
+<td><strong>27.0 亿</strong></td>
+</tr>
+<tr>
+<td>龙南 HDI 一期（60 万㎡，2028 年中投产）</td>
+<td>一期 6.28 亿投资对应约 30 万㎡；HDI 均价按 <strong>1200–1600 元/㎡</strong> 保守取值（行业 HDI 均价 1000–2500 元），2029 年爬坡率 <strong>50%</strong> → 15 万㎡ × 1400 元 = <strong>2.1 亿</strong></td>
+<td>0</td>
+<td><strong>2.1 亿</strong></td>
+</tr>
+<tr>
+<td>龙南 HDI 二期及存量技改</td>
+<td>二期 9.29 亿，2029 年前基本不贡献；存量线小幅技改提效 +2%</td>
+<td>—</td>
+<td><strong>0.5 亿</strong></td>
+</tr>
+<tr>
+<td>小批量快板/样板自然增长</td>
+<td>随客户迭代，年增 3–5%，但受通用板拖累</td>
+<td>含上</td>
+<td>含上</td>
+</tr>
+<tr>
+<td><strong>稳态营收合计</strong></td>
+<td></td>
+<td><strong>27.5 亿</strong></td>
+<td><strong>29.6 亿（悲观 27.0 / 乐观 36.0）</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束校验</strong>：龙南一期设计 60 万㎡/年（一期约 30 万㎡），2029 年按 50% 爬坡取 15 万㎡，<strong>未超设计产能上限</strong> ✓。存量业务 27 亿 vs 2025 年 25.36 亿，仅 +6.5%，<strong>产能完全支撑</strong> ✓。</p>
+<h3>正常化净利率（三选一，取保守）</h3>
+<table>
+<thead>
+<tr>
+<th>参考口径</th>
+<th>净利率</th>
+<th>取值判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业正常净利率（通用 PCB 中低端）</td>
+<td>1–3%</td>
+<td>偏低</td>
+</tr>
+<tr>
+<td><strong>公司历史最好年份（2023 年：归母 0.6855 亿 / 营收 24.27 亿）</strong></td>
+<td><strong>2.82%</strong></td>
+<td><strong>可作为基底</strong></td>
+</tr>
+<tr>
+<td>产能爬坡后理论净利率（HDI 结构升级后）</td>
+<td>4–6%</td>
+<td>需 HDI 满产，乐观情景才成立</td>
+</tr>
+<tr>
+<td><strong>本报告中性取值</strong></td>
+<td><strong>4.0%</strong></td>
+<td><strong>介于历史最好 2.82% 与理论值 4–6% 下沿之间，已考虑 HDI 部分达产的结构改善，偏保守</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>正常化净利润 → 目标市值 → 目标价（三情景）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>正常化净利率</th>
+<th>2029E 净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>HDI 项目延期/资金不到位，通用板价格战延续，毛利率跌破 12%</td>
+<td>27.0 亿</td>
+<td>1.8%</td>
+<td>0.49 亿</td>
+<td>20x</td>
+<td>9.8 亿 → <strong>PB 1.8x 兜底 24.3 亿</strong></td>
+<td><strong>7.45 元</strong></td>
+<td><strong>−54.7%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>Q2 涨价传导延续至稳态（毛利率 16–18%）+ 龙南一期 2028 年中投产、2029 年爬坡 50%</td>
+<td>29.6 亿</td>
+<td>4.0%</td>
+<td><strong>1.20 亿</strong></td>
+<td><strong>30x</strong></td>
+<td><strong>36.0 亿</strong></td>
+<td><strong>11.03 元</strong></td>
+<td><strong>−33.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>AI PCB 景气延续至 2029 + 龙南一二期满产 + 通过头部客户 HDI 认证 + 财务费用率下降</td>
+<td>36.0 亿</td>
+<td>7.8%</td>
+<td>2.80 亿</td>
+<td>32x</td>
+<td>89.6 亿</td>
+<td><strong>27.46 元</strong></td>
+<td><strong>+66.8%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>悲观情景采用 PB 兜底说明</strong>：悲观下 PE 法仅得 9.8 亿市值（对应 PB 0.72x），低于 PCB 制造业重置成本合理下沿。参照公司 2026H1 归母净资产约 13.5 亿（每股净资产 4.08 元 × 3.2632 亿股，扣除 H1 微亏），给 <strong>PB 1.8x = 24.3 亿</strong> 作为悲观下沿，对应 7.45 元。<strong>该兜底不构成"低估"判断，仅为清算/重置视角的估值地板。</strong></p>
+</blockquote>
+<h3>基准（2026 年底）单独测算</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>测算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H1 实际归母</td>
+<td>−0.0844 亿</td>
+</tr>
+<tr>
+<td>H2 预测</td>
+<td>Q2 单季 +0.12 亿，Q3/Q4 为 PCB 传统旺季 + 涨价函落地，但 Q2 的 20.29% 毛利率含低价库存收益不可持续。假设 Q3/Q4 单季归母 +0.15/+0.20 亿</td>
+</tr>
+<tr>
+<td><strong>2026E 归母</strong></td>
+<td><strong>约 0.35 亿（区间 0.15–0.55 亿）</strong></td>
+</tr>
+<tr>
+<td>估值方法</td>
+<td>微利年份 PE 法失真，采用 <strong>PB 中枢法</strong>：2026 年末归母净资产约 13.6 亿，市场在 PCB 涨价周期 + AI 主题下给予 <strong>PB 3.0x</strong>（低于当前 4.07x，高于历史中枢）</td>
+</tr>
+<tr>
+<td>目标市值</td>
+<td><strong>40.8 亿</strong></td>
+</tr>
+<tr>
+<td><strong>基准目标价</strong></td>
+<td><strong>14.5 元</strong>（区间 12.0–17.0）</td>
+</tr>
+</tbody>
+</table>
+<h3>汇总表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>0.35 亿（微利，扭亏）</td>
+<td>1.20 亿（正常化）</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>—（微利，用 PB 3.0x）</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>40.8 亿</td>
+<td>36.0 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>14.5 元</strong></td>
+<td><strong>11.03 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>【第四步进阶】重资产 / 周期股估值校正（三道闸）</h3>
+<p><strong>校正1：资产质量折扣（PB 4.07x 的原因必须说明）</strong></p>
+<p>公司 <strong>PB 4.07x，不破净，且显著高于账面</strong>。这恰恰是<strong>反向的估值锚偏差</strong>——不是"破净伪空间"，而是"高 PB 泡沫风险"：<br />
+- <strong>ROE 严重不匹配</strong>：2026H1 加权 ROE <strong>−0.64%</strong>，2025 年 −0.54%。<strong>PB 4.07x 对应 ROE ≈ 0，隐含 PE 无穷大</strong><br />
+- <strong>资产盈利能力差</strong>：总资产周转率 0.20 次/半年（年化 0.40 次），ROA 0.32%<br />
+- <strong>资产专用性</strong>：PCB 产线（压合机、钻孔机、电镀线）专用性中等，可转产但需改造投入；<strong>清算价值显著低于账面</strong>（专用设备二手折价率通常 50–70%）<br />
+- <strong>隐含负债</strong>：资产负债率 65.63%，有息负债 11.70 亿；无环保整改/养护类大额或有负债，但<strong>流动比率 0.65、速动比率 0.46 显示短期偿付缺口</strong><br />
+- <strong>是否存在金融资产未重估型真破净</strong>：<strong>否</strong>。公司无大额股权投资、无持有上市公司股权，账面无隐藏资产</p>
+<p>→ <strong>结论</strong>：PB 4.07x <strong>完全由 AI PCB 主题溢价支撑，无任何基本面锚</strong>。若主题退潮，PB 回归 2.0–2.5x 是合理路径，对应股价 8.3–10.4 元。</p>
+<p><strong>校正2：周期位置校正（中性净利用周期归一化）</strong></p>
+<table>
+<thead>
+<tr>
+<th>周期维度</th>
+<th>当前位置</th>
+<th>判断依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCB 行业周期</td>
+<td><strong>上行中段</strong>（涨价周期已启动 5 个月，机构判断"至少贯穿 2026 全年，或延续至 2027H1"）</td>
+<td>CCL 三轮涨价、交期拉长至数月、头部订单锁至 2027</td>
+</tr>
+<tr>
+<td>公司所处细分（通用低端板）</td>
+<td><strong>底部偏右侧</strong>（刚从 Q1 的 11.80% 毛利谷底反弹）</td>
+<td>Q2 毛利率 20.29%，环比 +8.49pct</td>
+</tr>
+<tr>
+<td>上游原料周期</td>
+<td><strong>顶部区域</strong>（CCL +30% 已落地，进一步大涨空间有限）</td>
+<td>日本两巨头涨价已执行，国内跟随</td>
+</tr>
+<tr>
+<td>公司盈利周期</td>
+<td><strong>刚刚转正（未确认）</strong></td>
+<td>Q2 单季 +1200 万，仅一个季度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>周期归一化处理</strong>：<br />
+- <strong>禁止</strong>把 Q2 单季 +1200.92 万直接年化当作稳态（"拐点年化"是明令禁止的）→ 本报告<strong>未采用</strong><br />
+- <strong>禁止</strong>用近三年均值（2023 +0.69 亿、2024 −1.54 亿、2025 −0.07 亿，均值 −0.31 亿，恰逢下行周期，均值严重失真）→ 本报告<strong>未采用</strong><br />
+- <strong>采用</strong>：<strong>结构驱动法</strong>——以稳态营收 29.6 亿 × 周期中位净利率 4.0%（介于历史最好 2.82% 与产能升级后理论值 4–6% 下沿）= <strong>1.20 亿</strong>。该值高于 2023 年历史峰值 0.69 亿（因含 HDI 结构性增量），低于乐观满产情景，<strong>符合 trough-to-peak 中位偏保守的要求</strong><br />
+- <strong>周期位置标注</strong>：<strong>当前处于"行业景气上行 + 公司盈利刚触底反弹"的组合</strong>。上行周期中，中性净利<strong>不上调</strong>（避免把周期高点当稳态）；底部刚反转，<strong>不过度悲观</strong>（给予 4.0% 而非 2.82% 的历史中枢）</p>
+<p><strong>校正3：杠杆下行情景（资产负债率 65.63% &gt; 60%，强制附加）</strong></p>
+<table>
+<thead>
+<tr>
+<th>负面情景</th>
+<th>假设</th>
+<th>对净利的冲击</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>利率上行/信用收紧</td>
+<td>有息负债 11.70 亿，若综合融资成本 +100bp</td>
+<td>财务费用 +0.117 亿</td>
+<td>2026E 归母由 +0.35 亿 → <strong>+0.23 亿</strong></td>
+</tr>
+<tr>
+<td>需求下行（消费电子/工控去库）</td>
+<td>营收 −15%，经营杠杆约 2.5x</td>
+<td>毛利 −0.65 亿</td>
+<td>2026E 归母 → <strong>−0.5 亿（转亏）</strong></td>
+</tr>
+<tr>
+<td><strong>双重下行（利率 +150bp &amp; 需求 −20%）</strong></td>
+<td>营收 −20%，毛利率降至 10%，财务费用 +0.18 亿</td>
+<td>合计 −1.3 亿</td>
+<td><strong>2029E 归母转负，空间彻底转负</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>⚠️ 关键结论</strong>：该负面情景下公司空间<strong>明确转负</strong>。按 RULES.md 校正3 纪律——"该负面情景若使空间转负，则不得标'大空间/重点关注'，至多'纳入观察'且须注明高贝塔属性"。<strong>本报告进一步从严，判定为"暂不介入"。</strong></p>
+<p><strong>期权纪律执行</strong>：<br />
+- 龙南 HDI 主业迁移（层2 未过验证点）→ <strong>不计入中性净利 1.20 亿</strong>，仅计入乐观情景<br />
+- AI PCB 主题溢价 → <strong>不计入任何基本面锚</strong><br />
+- 2029E 中性净利 1.20 亿中，HDI 一期贡献约 0.4 亿（已按 50% 爬坡打折），属<strong>已公告且资金部分落实的确定性增量</strong>，非期权 ✓</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置：显著高估</strong><br />
+- 现价 16.46 元（2026-09-11 涨停收盘），总市值 53.71 亿<br />
+- <strong>PB 4.07x 对应 ROE −0.64%</strong>，隐含 PE 无解<br />
+- 对应 2029E 中性净利 1.20 亿的前瞻 PE 达 <strong>44.8x</strong>——一个尚未盈利、资产负债率 65.63%、主业处于成本曲线右端的公司，被给予近 45 倍的前瞻估值<br />
+- 对比：同日涨停的博敏电子 PB 3.16，超声电子 PE 55——<strong>整个 PCB 板块的涨停潮是主题定价而非业绩定价</strong></p>
+<p><strong>安全边际：为负</strong><br />
+| 情景 | 目标价 | 空间 |<br />
+|---|---|---|<br />
+| 悲观（PB 1.8x 兜底） | 7.45 元 | <strong>−54.7%</strong> |<br />
+| <strong>中性</strong> | <strong>11.03 元</strong> | <strong>−33.0%</strong> |<br />
+| 乐观 | 27.46 元 | +66.8% |</p>
+<ul>
+<li>中性下行 −33.0%，乐观上行 +66.8%，<strong>赔率看似 1:2，但乐观情景需同时满足"HDI 满产 + 通过头部客户认证 + 财务费用下降"三重条件，概率显著低于 50%</strong></li>
+<li>期望值 = 0.35×(−54.7%) + 0.45×(−33.0%) + 0.20×(+66.8%) = <strong>−19.1% − 14.9% + 13.4% = −20.6%</strong>，<strong>期望为负</strong></li>
+</ul>
+<p><strong>介入条件（具体到价格与信号）</strong><br />
+1. <strong>价格条件</strong>：<strong>不追高</strong>。回落至 <strong>11 元以下</strong>（对应 2029E 中性 PE 30x、PB 约 2.7x）才具备讨论价值；<strong>8.5 元以下</strong>（PB 2.1x）才具安全边际<br />
+2. <strong>信号条件（需同时满足 ≥2 条）</strong>：<br />
+   - ① 龙南 HDI 一期<strong>投产进度过半</strong>且披露<strong>客户认证/订单公告</strong>（金额 ≥ 2 亿）<br />
+   - ② 单季毛利率<strong>连续两季稳定在 17% 以上</strong>（证明 Q2 的 20.29% 不是库存收益）<br />
+   - ③ 资产负债率<strong>降至 58% 以下</strong>或财务费用同比转降<br />
+   - ④ 2026 年报<strong>扣非归母转正</strong><br />
+3. <strong>观察指标</strong>：逐季毛利率、财务费用率、短期借款余额、龙南项目在建工程转固进度</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong><br />
+1. <strong>⚠️ 主题退潮（首要）</strong>：2026-09-11 涨停是"PCB 受益 AI"板块情绪的产物（同日板块内多股涨停）。公司产品以通用板为主，与 AI 服务器高附加值 HDI 有实质距离，中报无法证明其已吃到增量。主题一旦退潮，PB 从 4.07x 回归 2.0–2.5x 是快速过程<br />
+2. <strong>⚠️ 15.57 亿扩产的资金链风险</strong>：静态缺口约 11.9 亿，货币资金仅 1.705 亿、货币资金/流动负债 11.28%。若银行授信收紧，项目延期 → HDI 增量归零 → 中性情景下的 1.20 亿净利降至 0.7 亿以下<br />
+3. <strong>Q2 毛利率 20.29% 含低价库存收益</strong>：无长协套保保护，Q3 起按新采购成本重定价，毛利率大概率回落至 15–17%，"扭亏"可能只是昙花一现<br />
+4. <strong>低端 PCB 价格战无解</strong>：行业 K 型分化下，低端板"部分企业毛利率已逼近零点"，公司无技术壁垒也无客户壁垒<br />
+5. <strong>财务费用反噬</strong>：2360.98 万（+49.61%）已是亏损额的 2.8 倍，扩产将使其继续抬升</p>
+<h3>【第五步进阶】上行想象力情景（四类，与下行校正对称）</h3>
+<p><strong>类型A 行业调整剩者红利 —— 不适用（反向）</strong><br />
+低端 PCB 行业<strong>尚未出清</strong>，2026H1 扩产投资超 700 亿全部流向高端，低端产能既无退出补贴也无强制标准，<strong>不存在政策驱动的出清机制</strong>。公司不是"剩者"，而是"被挤出者"的候选。<br />
+- 验证点：工信部/协会出台低端 PCB 落后产能淘汰目录<br />
+- 证伪信号：无相关政策出台，低端产能继续扩张<br />
+- <strong>结论：不构成上行来源</strong></p>
+<p><strong>类型B 政策反转期权 —— 部分适用（低权重）</strong><br />
+- 政策：工信部"电子材料国产化攻关"专项（单项目最高补贴 5000 万）+ 龙南/吉安等地 PCB 产业园配套政策（用地优先、税收优惠）<br />
+- 反转信号：龙南 HDI 项目获得国家级/省级专项补贴或低息技改贷款<br />
+- 重估弹性：若 15.57 亿中 20%（3.1 亿）由政策性低息资金覆盖，财务费用可节约 0.1–0.15 亿/年，对应市值弹性约 3–5 亿（+6–9%）<br />
+- <strong>未过验证点，仅作机会情景，不计入中性锚</strong></p>
+<p><strong>类型C 市场错杀修复 —— 不适用（反向）</strong><br />
+当前不是错杀，而是<strong>明显溢价</strong>（PB 4.07x vs 行业合理 2.0–2.5x）。不存在估值分位低位、相对行业折价的证据。<br />
+- <strong>结论：反向风险而非机会</strong></p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权 —— 核心上行来源（但未过硬验证点）</strong><br />
+- 技术路线：通用多层板（4–12 层）→ <strong>高多层 / HDI（20+ 层、2–4 阶）</strong><br />
+- <strong>三要素共振检验</strong>：<br />
+  | 要素 | 状态 | 判断 |<br />
+  |---|---|---|<br />
+  | ①政策驱动技术路线 | 工信部电子材料国产化专项 + 地方 HDI 产业园政策 | <strong>✓ 成立</strong> |<br />
+  | ②行业趋势向该技术收敛 | HDI +14.5%、18 层以上 +62.4%，AI 服务器单机 PCB 价值 3–10 倍 | <strong>✓ 成立</strong> |<br />
+  | ③公司技术投产落地 | 龙南项目 2028 年中才投产，<strong>当前零良率数据、零客户定点、零订单</strong> | <strong>✗ 不成立</strong> |<br />
+- <strong>硬验证点（防画饼）</strong>：<br />
+  1. 中试/量产线跑通且<strong>良率达标</strong>（HDI 行业良率门槛通常 &gt;85%）<br />
+  2. 拿到<strong>客户定点或大额订单公告</strong>（≥2 亿）<br />
+  3. <strong>量产成本曲线优于旧路线</strong>（HDI 单位毛利需显著高于现有通用板 12–16%）<br />
+  → <strong>三者目前全部缺位</strong>，按纪律<strong>只作机会情景，不计入中性锚</strong><br />
+- 证伪信号：2028 年底前未投产 / 良率长期不达标 / 无客户认证公告 / 投产後 HDI 毛利率低于 20%<br />
+- <strong>重估弹性（若三条硬验证点全部通过）</strong>：HDI 满产（60 万㎡）按 1500 元/㎡ = 9 亿收入、12% 净利率 = 1.08 亿净利，叠加存量 0.8 亿 → 2029E 净利 2.8 亿，PE 32x = 89.6 亿 → <strong>27.46 元（+66.8%）</strong> ← 即本报告乐观情景的构成</p>
+<p><strong>什么条件出现才上调至"重点关注"？</strong><br />
+必须<strong>同时</strong>满足以下三条：<br />
+1. 股价回落至 <strong>11 元以下</strong>（PB &lt; 2.7x）<br />
+2. 龙南 HDI 一期<strong>投产且披露客户订单公告</strong>（金额 ≥ 2 亿）<br />
+3. 单季毛利率<strong>连续两季 ≥ 17%</strong> 且扣非归母转正</p>
+<p>在此之前，任何上涨都视为主题溢价，不改变"暂不介入"的判定。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>判定依据：中性远期空间 <strong>−33.0%</strong>，不满足"纳入观察 &gt; 0"的门槛。公司虽非"确无扭亏可能"（有实质业务 25 亿营收、Q2 已单季转正、有明确扩产项目），因此<strong>不判"坚决回避"</strong>；但当前 4.07 倍 PB 对应 −0.64% 的 ROE，已把 2029 年的最好情形提前定价完毕。<br />
+<strong>核心跟踪点</strong>：① 龙南 HDI 一期的资金落实与投产进度；② Q3 毛利率能否延续（验证 Q2 是否含库存收益）；③ 财务费用与短期借款变化。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>16.46 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>14.5 元</strong>（区间 12.0–17.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−11.9%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>11.03 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−33.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 7.45 元（−54.7%）～ 乐观 27.46 元（+66.8%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>通用PCB微利，Q2单季扭亏但H1仍亏；15.57亿HDI扩产是扭亏抓手，4倍PB已透支</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（回落至11元以下且HDI一期投产进度过半再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-26 披露）、2025 年年度报告、2026-06-22 龙南骏亚 HDI 项目投资公告、交通银行固定资产贷款公告、腾讯行情 qt.gtimg.cn（2026-09-11 收盘实测）、中证智能财讯、Prismark 全球 PCB 产业数据、工信部"电子材料国产化攻关"专项、央广网/中证网 PCB 涨价周期报道、中国证券报。</em><br />
+<em>口径纠偏说明：队列表"现价"14.60 元与实测收盘 16.46 元偏离 +12.7%，已全部采用实测价；队列表"亏损"标记经 2026 半年报核对属实（H1 归母 −844.13 万元），但 Q2 单季已转正 +1200.92 万元，属"亏损边际改善"而非"持续恶化"。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
