@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>赛伍技术（603212）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>赛伍技术（603212）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-12 ｜ 现价 <strong>11.41 元</strong>（2026-09-11 收盘）｜ 总市值 <strong>49.92 亿</strong> ｜ PE(TTM) <strong>−24.98x（负）</strong> ｜ PB <strong>2.08x</strong> ｜ 总股本 <strong>约 4.375 亿股</strong><br />
+行业：光伏材料（封装胶膜/背板）+ 高分子功能材料平台｜ 板块：上交所主板<br />
+<strong>⚠️ 亏损核实结论（重点核查，队列标记为"亏损"）</strong>：2026H1 归母 <strong>−398.22 万元</strong>（上年同期 −7209.61 万元，<strong>同比减亏 94.48%</strong>）、扣非 <strong>−626.93 万元</strong>（上年同期 −7467.85 万元，<strong>同比减亏 91.60%</strong>）。<br />
+<strong>核实结果：H1 仍为小幅亏损（归母、扣非双双为负），但减亏幅度极大，且 2026Q2 单季已实现扭亏（归母 +755.04 万、扣非 +485.00 万）。属"准扭亏"标的，非持续恶化型亏损。</strong><br />
+<strong>按纪律：不排除、不写简版，做完整五步法，估值用正常化净利润法，并明确回答三问（为什么亏 / 靠什么扭亏、触发时点 / 亏得起吗）。</strong></p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：以胶粘剂为核心的<strong>薄膜形态高分子功能材料</strong>平台型公司——从光伏背板起家（全球首创 KPf 型背板），现正从"光伏材料供应商"向"光伏 + 半导体 + 锂电/电力电子 + 消费品材料"多元化平台转型。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 12.64 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率/特征</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>光伏材料</strong>（背板+胶膜等）</td>
+<td>8.04 亿</td>
+<td><strong>63.63%</strong></td>
+<td>封装胶膜毛利率 <strong>9.67%（+13pct，转正）</strong></td>
+<td>收入下滑（国内装机承压）</td>
+</tr>
+<tr>
+<td><strong>SET 材料</strong>（半导体、电气、交通运输工具含动力锂电池）</td>
+<td>3.35 亿</td>
+<td><strong>26.50%</strong></td>
+<td>高毛利（半导体材料 +36.85%）</td>
+<td><strong>+26.78%（非光伏整体）</strong></td>
+</tr>
+<tr>
+<td><strong>消费品材料</strong></td>
+<td>0.47 亿</td>
+<td>3.73%</td>
+<td><strong>42.5%（最高毛利）</strong></td>
+<td>并购今蓝纳米并表</td>
+</tr>
+<tr>
+<td>通讯及消费电子材料（3C）</td>
+<td>0.35 亿</td>
+<td>2.80%</td>
+<td>向 OLED 保护膜等高附加值调整</td>
+<td>—</td>
+</tr>
+<tr>
+<td>光伏运维材料</td>
+<td>0.23 亿</td>
+<td>1.84%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>发电</td>
+<td>0.017 亿</td>
+<td>0.13%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他销售</td>
+<td>0.17 亿</td>
+<td>1.36%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⚠️ 核心结构变化</strong>：<strong>非光伏业务合计 4.17 亿（+26.78%），占比 33.49%，同比提升 8 个百分点</strong>。这是公司从"周期股"向"平台股"迁移的关键指标。</p>
+</blockquote>
+<p><strong>按地区（2026H1）</strong><br />
+| 区域 | 营收 | 占比 |<br />
+|---|---|---|<br />
+| 华东 | 6.67 亿 | 52.86% |<br />
+| <strong>境外（海外）</strong> | <strong>3.75 亿</strong> | <strong>29.74%</strong>（海外营收 3.58 亿，+5.22%，占营收 29%，同比 +3pct） |<br />
+| 华南 | 1.03 亿 | 8.19% |<br />
+| 其他 | 1.16 亿 | 9.22% |</p>
+<blockquote>
+<p><strong>海外高毛利</strong>：毛利相对较高的<strong>海外光伏封装胶膜业务</strong>收入同比 +18.07%，占胶膜业务收入 <strong>42.14%</strong>（同比 +11.81pct）——这是光伏材料毛利率转正的核心原因。</p>
+</blockquote>
+<p><strong>核心产品</strong>：<br />
+- <strong>光伏</strong>：KPf/PPf 型背板（原创氟皮膜技术）、POE/EPE 封装胶膜、<strong>Raybo® 光转膜</strong>（将紫外光转为可发电可见光，差异化拳头产品）、钙钛矿 TPO 胶膜/光转 TPO/导电胶带/绝缘材料、太空光伏太阳翼封装材料<br />
+- <strong>SET</strong>：半导体晶圆研磨/切割（Wafer saw UV 减粘胶带）/CMP 抛光/封装材料、IGBT 功率半导体材料；锂电 PACK 电芯蓝膜、Busbar 绝缘热压膜、CCS 热压膜、FRT 防火材料、冷板绝缘膜<br />
+- <strong>消费品</strong>：汽车太阳膜、漆面保护膜、车身改色膜、车用防火抗冲击软包脚垫、POE 环保皮革（今蓝纳米品牌）</p>
+<p><strong>主要客户/下游</strong>：全球头部光伏组件客户（<strong>晶澳 DeepBlue 5.0 系列已导入 Raybo 光转膜</strong>）；欧洲头部钙钛矿企业（光转 TPO 已通过测试）；半导体不同制程环节头部客户（10 余个产品完成研发）；动力电池与储能客户。</p>
+<p><strong>技术卡位（2026H1）</strong>：<br />
+- TOPCon 专用 Raybo 光转膜<strong>已实现量产交付</strong>，导入晶澳 DeepBlue 5.0<br />
+- HJT 用 Raybo 光转膜<strong>批量应用</strong>，欧洲市场稳定供货<br />
+- xBC 用 Raybo 光转膜<strong>已通过头部客户验证</strong><br />
+- 钙钛矿：光转 TPO 完成国内测试，<strong>通过英国头部钙钛矿企业测试</strong><br />
+- <strong>太空光伏</strong>：针对太阳翼的封装材料解决方案，部分产品已向境内外客户<strong>送样并进入测试阶段</strong><br />
+- 半导体：覆盖晶圆研磨、切割、CMP 抛光、封装及被动元件制造全环节，<strong>7 个产品形成客户端交付</strong><br />
+- 研发战略："创新工程" + <strong>"AI+新材料"</strong> 两大抓手</p>
+<p><strong>股东背景</strong>：苏州赛伍应用技术股份有限公司，法人吴小平，注册地苏州吴江。2026 年初完成对<strong>今蓝纳米</strong>的收购（汽车后市场高分子功能材料）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>"反内卷"政策体系从自律走向制度化，行业底部出清启动</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>光伏行业"反内卷"顶层部署</strong></td>
+<td>工信部（2026-01 企业家座谈会）</td>
+<td><strong>国家级</strong></td>
+<td>已定调</td>
+<td>明确"反内卷"是行业规范治理的<strong>主要矛盾</strong></td>
+</tr>
+<tr>
+<td><strong>四部门联合会议</strong></td>
+<td>工信部等四部门（2026-04）</td>
+<td>国家级</td>
+<td>已推进</td>
+<td>要求推进<strong>产能调控、标准引领、价格执法</strong>等综合治理</td>
+</tr>
+<tr>
+<td><strong>三项能耗能效强制性国标</strong></td>
+<td><strong>工信部等三部门（2026-07）</strong></td>
+<td><strong>强制性国标</strong></td>
+<td><strong>2027-01-01 实施</strong></td>
+<td>规定多晶硅、硅片单位产品能耗上限；<strong>TOPCon / HJT / BC 组件转换效率门槛分别达 23.2% / 23.2% / 23.5%</strong>。华泰证券测算：<strong>仅此一项可推动约 153.6GW 产能出清，出清比例约 15%</strong></td>
+</tr>
+<tr>
+<td><strong>《光伏行业成本核算模型通则》</strong></td>
+<td>市场监管总局、工信部指导，中国光伏行业协会编制（<strong>2026-07-27 实施</strong>）</td>
+<td><strong>行业首个团体标准</strong></td>
+<td>已实施</td>
+<td>统一"硅料—硅片—电池—组件"全产业链成本计算范围、系数与模型，分<strong>现金成本 / 生产成本 / 全成本</strong>三层次，为"低于成本中标应予否决"提供可操作标尺</td>
+</tr>
+<tr>
+<td><strong>光伏产品增值税出口退税全面取消</strong></td>
+<td>财政部等（<strong>2026-04-01 起</strong>）</td>
+<td>国家级</td>
+<td>已实施</td>
+<td>推动产品价格回归理性、加速优胜劣汰</td>
+</tr>
+<tr>
+<td><strong>《反内卷倡议书》</strong></td>
+<td><strong>通威、协鑫科技等 8 家硅料龙头</strong>（2026-08-06）</td>
+<td>行业自律</td>
+<td>已签署</td>
+<td>承诺所有光伏产品销售价格（含招投标报价）<strong>均不得低于依据《成本核算模型通则》核算的对应成本</strong></td>
+</tr>
+<tr>
+<td>价格合规指导</td>
+<td>市场监管总局（2026-08，江苏盐城）</td>
+<td>监管执法</td>
+<td>已开展</td>
+<td>对提醒约谈仍不整改者依法严肃处置</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策影响判断</strong>：<strong>强正面，且已在执行</strong>。政策体系已构建"能耗准入门槛 → 成本核算标尺 → 价格执法依据"的全链条治理框架。这是本轮光伏周期底部出清<strong>与以往纯市场出清的最大区别</strong>——有强制性标准兜底。</p>
+<h3>（2）市场端（量价数据）——<strong>周期底部，供需严重错配</strong></h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2026 年全球光伏组件需求</strong></td>
+<td><strong>约 536 GW</strong></td>
+</tr>
+<tr>
+<td><strong>2026 年全球组件产能</strong></td>
+<td><strong>约 1100 GW</strong>——<strong>产能过剩 2 倍以上</strong></td>
+</tr>
+<tr>
+<td>2026H1 多晶硅产量</td>
+<td><strong>同比 −9.8%</strong></td>
+</tr>
+<tr>
+<td>2026H1 硅片产量</td>
+<td><strong>同比 −7.3%</strong></td>
+</tr>
+<tr>
+<td>2026H1 电池片产量</td>
+<td><strong>同比 −21.9%</strong></td>
+</tr>
+<tr>
+<td>2026H1 组件产量</td>
+<td><strong>同比 −35.1%</strong></td>
+</tr>
+<tr>
+<td>多晶硅致密料均价</td>
+<td>年初 <strong>52 元/kg</strong> → 7 月初 <strong>32.5 元/kg</strong>（<strong>−37.5%</strong>）</td>
+</tr>
+<tr>
+<td>组件招标价</td>
+<td><strong>跌破 0.7 元/W</strong></td>
+</tr>
+<tr>
+<td>2026H1 国内新增光伏装机</td>
+<td><strong>72.07 GW，同比 −66.04%（腰斩式下滑）</strong></td>
+</tr>
+<tr>
+<td>TOPCon 210R 组件成本指数</td>
+<td>0.715 元/瓦；若硅料修复至 40 元/kg，综合成本抬升至 <strong>0.74 元/瓦</strong>（单瓦 +0.025 元）</td>
+</tr>
+<tr>
+<td>多晶硅产量（供给端压力）</td>
+<td>7 月 10.46 万吨 → 8 月预计 <strong>11.41 万吨（仍在增长）</strong></td>
+</tr>
+<tr>
+<td>硅片库存（截至 7 月底）</td>
+<td><strong>28.5 GW</strong></td>
+</tr>
+<tr>
+<td>技术路线格局</td>
+<td>n 型主导（组件出货占比 <strong>&gt;80%</strong>），PERC 以每月数十 GW 速度关停改造；CPIA 预计 2027 年后 p 型基本退出</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 供需矛盾的核心</strong>：产量已在大幅收缩（组件 −35.1%），但<strong>多晶硅产量仍在增长</strong>（8 月预计 11.41 万吨）、<strong>硅片库存高达 28.5GW</strong>——说明<strong>出清尚未完成</strong>，价格反弹面临上下游激烈博弈。上海有色网分析师明确指出"本轮组件涨价能否全面落地并持续走强，后续仍将面临上下游激烈的博弈与验证"。</p>
+<p><strong>最新季度量价趋势（2026H1）——边际改善明确</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026H1</th>
+<th>上年同期</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>12.64 亿</td>
+<td>13.52 亿</td>
+<td><strong>−6.53%</strong></td>
+</tr>
+<tr>
+<td>利润总额</td>
+<td><strong>−868.75 万</strong></td>
+<td>−9272.54 万</td>
+<td>减亏 8403.79 万</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td><strong>−398.22 万</strong></td>
+<td>−7209.61 万</td>
+<td><strong>减亏 94.48%</strong></td>
+</tr>
+<tr>
+<td>扣非归母净利润</td>
+<td><strong>−626.93 万</strong></td>
+<td>−7467.85 万</td>
+<td><strong>减亏 91.60%</strong></td>
+</tr>
+<tr>
+<td>经营活动现金流净额</td>
+<td><strong>+9265.89 万</strong></td>
+<td>+7468.14 万</td>
+<td><strong>+24.07%</strong></td>
+</tr>
+<tr>
+<td>加权 ROE</td>
+<td><strong>−0.17%</strong></td>
+<td>−2.73%</td>
+<td><strong>+2.56pct</strong></td>
+</tr>
+<tr>
+<td>归母净资产</td>
+<td>23.98 亿</td>
+<td>—</td>
+<td>−0.16%（较上年末）</td>
+</tr>
+<tr>
+<td>总资产</td>
+<td>39.90 亿</td>
+<td>—</td>
+<td>+0.97%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026Q2 单季（扭亏拐点）</strong><br />
+- 营收 <strong>6.61 亿</strong>（环比 +9.53%）<br />
+- 归母 <strong>+755.04 万</strong>（较 Q1 改善 <strong>1908.30 万</strong>，<strong>环比扭亏为盈</strong>）<br />
+- 扣非 <strong>+485.00 万</strong>（Q2 单季转正）<br />
+- <strong>半导体材料收入 Q2 环比 +33.63%</strong></p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游（成本端）</strong>：<strong>POE 树脂、EVA 树脂、PET 基膜、氟膜（PVDF）、胶粘剂原料</strong>。公司明确表示"主要原材料 POE、EVA 树脂价格上涨且波动加剧，考验企业成本与价格传导能力"。</p>
+<p><strong>下游（需求端）</strong>：光伏组件厂（受国内装机 −66.04% 冲击）、半导体封测厂、动力电池/储能厂、汽车后市场。</p>
+<p><strong>议价权</strong>：<strong>光伏业务——弱（产能过剩，下游组件厂强势）；非光伏业务——中等偏强（半导体/锂电材料认证周期长、切换成本高）。</strong><br />
+- <strong>⚠️ 关键反转信号</strong>：2026H1 公司"推动原材料价格变化向销售价格合理传导，<strong>光伏材料业务毛利率实现转正</strong>，封装胶膜毛利率提升至 <strong>9.67%，同比提高 13 个百分点并转正</strong>"。这说明<strong>在反内卷政策下，光伏材料行业的成本传导能力正在从 0 恢复</strong>——这是本报告最重要的边际变化。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子 1 成本传导弹性（pass-through）——核心原料为 POE/EVA 树脂</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>客户结构 / 定价机制</th>
+<th>传导率估计</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>光伏封装胶膜/背板（63.63%）</strong></td>
+<td>组件厂，2024–2025 产能过剩期近乎无传导</td>
+<td><strong>2024–2025：≈0.1–0.2</strong>（公司 2025 年综合毛利率仅 1.48%，2025Q3 甚至 −2.18%）；<strong>2026H1：回升至 0.5–0.7</strong></td>
+<td>2026H1 胶膜毛利率从负转正至 9.67%（+13pct），在原料 POE/EVA 涨价背景下实现——<strong>直接证明传导率大幅回升</strong>；驱动因素为反内卷政策 + 成本核算法则 + 8 家硅料龙头保价承诺</td>
+</tr>
+<tr>
+<td><strong>SET 材料（26.50%）</strong></td>
+<td>半导体/锂电客户，认证周期长</td>
+<td><strong>0.6–0.8</strong></td>
+<td>定制化功能材料，切换成本高，议价权中等偏强</td>
+</tr>
+<tr>
+<td><strong>消费品材料（3.73%）</strong></td>
+<td>汽车后市场，品牌化</td>
+<td><strong>0.7–0.9</strong></td>
+<td>毛利率 <strong>42.5%</strong>，品牌溢价强</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>实际毛利承压测算</strong>：假设 POE/EVA 树脂价格上行 20%：<br />
+- 光伏材料（占收入 63.6%，树脂占其成本约 70%）：传导率 0.6 → 实际冲击 = 20% × (1−0.6) × 70% = <strong>5.6% 成本增量</strong>。以胶膜毛利率 9.67% 计，<strong>毛利率降至约 6.5%（−3.2pct）</strong>——但<strong>不会再塌陷至负毛利</strong>（2025Q3 曾为 −2.18%）。<br />
+- 这是<strong>与 2024–2025 年的本质区别</strong>：传导率的恢复使公司从"越卖越亏"转为"薄利但为正"。<br />
+- <strong>可观测验证点</strong>：POE/EVA 树脂现货价（隆众/卓创）、公司季报光伏材料毛利率、《光伏行业成本核算模型通则》执行力度、8 家硅料龙头保价承诺的遵守情况。<br />
+- <strong>证伪信号</strong>：POE 树脂涨价 20% 以上而胶膜毛利率重新转负 → 传导率假设失效，反内卷政策未落地，中性净利须下修 40%+。</p>
+<p><strong>因子 2 毛利结构再平衡（分业务线，禁单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入占比</th>
+<th>毛利率</th>
+<th>树脂敏感权重</th>
+<th><strong>毛利贡献占比（估算）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光伏材料</td>
+<td>63.63%</td>
+<td><strong>约 8–10%</strong>（胶膜 9.67%，背板略高）</td>
+<td><strong>极高（70%）</strong></td>
+<td><strong>约 52%</strong></td>
+</tr>
+<tr>
+<td>SET 材料</td>
+<td>26.50%</td>
+<td><strong>约 22–28%</strong></td>
+<td>中（40–50%）</td>
+<td><strong>约 40%</strong></td>
+</tr>
+<tr>
+<td>消费品材料</td>
+<td>3.73%</td>
+<td><strong>42.5%</strong></td>
+<td>低</td>
+<td><strong>约 8%</strong></td>
+</tr>
+<tr>
+<td>3C / 运维 / 其他</td>
+<td>6.14%</td>
+<td>约 15%</td>
+<td>中</td>
+<td>约 5%（部分为负项抵消）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结构迁移结论</strong>：<br />
+- <strong>2026H1 综合毛利率 10.86%（Q1 9.77% → Q2 10.86%）</strong>，但这个数字<strong>严重掩盖了结构</strong>：光伏业务的低毛利（8–10%）被 SET（22–28%）和消费品（42.5%）撑起。<br />
+- <strong>非光伏业务占比每提升 1pct，综合毛利率提升约 0.15–0.18pct</strong>。2026H1 非光伏占比 33.49%（+8pct）→ 贡献综合毛利率提升约 1.2–1.4pct。<br />
+- <strong>核心洞察</strong>：公司的毛利结构正在从"单一光伏低毛利"迁移至"光伏保本 + 非光伏贡献利润"。<strong>2026H1 虽仍亏损，但 SET + 消费品已贡献约 48% 的毛利</strong>，这是 2024–2025 年完全不具备的结构。<br />
+- <strong>可观测验证点</strong>：定期报告分业务毛利率与占比；非光伏业务占比（2026H1 为 33.49%）。<br />
+- <strong>证伪信号</strong>：非光伏业务占比停止提升或下滑；SET 材料毛利率跌破 18%。</p>
+<p><strong>因子 3 库存与采购节奏（timing）</strong><br />
+- <strong>存货</strong>：2026H1 末存货账面价值 <strong>4.08 亿</strong>，占净资产 17%，较上年末仅增加 253.8 万元（<strong>基本持平</strong>）。<br />
+- <strong>⚠️ 存货跌价准备 6597.37 万元，计提比例 13.93%</strong>——已在账面体现损失，风险部分释放。<br />
+- <strong>采购节奏</strong>：公司在"原材料 POE、EVA 树脂价格上涨且波动加剧"背景下"强化供应链和价格管理"，但<strong>未披露套保或长协锁价比例</strong>（信息缺口）。<br />
+- <strong>⚠️ 关键判断</strong>：2026H1 毛利率转正<strong>部分可能来自"低价库存 × 涨价后的售价"</strong>——若前期低价采购的树脂在 2026H1 使用，而产品销售价格已随行就市上调，则当期毛利存在<strong>timing 收益</strong>。但由于存货余额基本持平（未大量囤货），<strong>timing 收益规模有限，不构成主要利润来源</strong>。<br />
+- <strong>可观测验证点</strong>：存货周转率（2026H1 为 1.42 次/半年，年化 2.84 次，2025 年为 5.78 次/年——<strong>⚠️ 周转率大幅下降，需警惕</strong>）；存货构成；跌价准备计提比例变化。<br />
+- <strong>证伪信号</strong>：存货周转率继续下滑 + 跌价准备计提比例上升 → 滞销或高价库存，远期毛利率承压。</p>
+<p><strong>因子 4 政策/市场锚点（作为成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>类型</th>
+<th>情景假设</th>
+<th>对成本/毛利影响</th>
+<th>验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>POE/EVA 树脂价格</strong></td>
+<td>市场</td>
+<td>基准：2026–2029 波动上行（石化周期）；悲观：+25%；乐观：−10%</td>
+<td>树脂 +20% → 光伏材料毛利率 −3.2pct</td>
+<td>POE/EVA 树脂现货价、石化产业链报价</td>
+</tr>
+<tr>
+<td><strong>光伏"反内卷"政策执行力度</strong></td>
+<td>政策</td>
+<td>基准：能耗国标 2027-01-01 落地，153.6GW 产能出清；悲观：执行打折，出清 &lt;50GW；乐观：加速出清 &gt;200GW</td>
+<td><strong>决定胶膜毛利率能否从 9.67% 升至 15–20%</strong></td>
+<td>工信部 2027 年能耗核查结果、组件招标价、行业产能数据</td>
+</tr>
+<tr>
+<td><strong>《成本核算模型通则》执法</strong></td>
+<td>政策</td>
+<td>基准：成为招投标否决依据；悲观：执行流于形式</td>
+<td>决定"低于成本价销售"能否被遏制</td>
+<td>市场监管总局执法案例、组件招标最低价</td>
+</tr>
+<tr>
+<td><strong>出口退税取消（2026-04-01）</strong></td>
+<td>政策</td>
+<td>已实施</td>
+<td>短期利空出口，长期加速出清</td>
+<td>海关出口数据、组件出口价</td>
+</tr>
+<tr>
+<td><strong>国内装机需求</strong></td>
+<td>市场</td>
+<td>基准：2027 年恢复至 200GW+；悲观：维持 150GW 以下</td>
+<td>决定胶膜出货量</td>
+<td>国家能源局月度装机数据</td>
+</tr>
+<tr>
+<td><strong>半导体材料国产替代政策</strong></td>
+<td>政策</td>
+<td>基准：持续支持</td>
+<td>决定 SET 业务增速</td>
+<td>大基金投资、国产替代率数据</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>四因子输出 → 第四步毛利率假设</strong>：中性情景下，光伏材料毛利率 2026 年 9.7% → 2029 年 <strong>12%</strong>（出清后修复但不过度乐观）；SET 材料 <strong>24%</strong>；消费品 <strong>40%</strong>。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>内容/金额</th>
+<th>进度与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>光伏材料毛利率转正</strong></td>
+<td>封装胶膜毛利率 <strong>9.67%（+13pct）</strong></td>
+<td><strong>已实现（2026H1）</strong></td>
+<td>直接减亏</td>
+<td><strong>高（已兑现）</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>海外胶膜业务</strong></td>
+<td>收入 <strong>+18.07%</strong>，占胶膜收入 <strong>42.14%</strong>（+11.81pct）</td>
+<td><strong>已实现</strong></td>
+<td>海外毛利率高于国内</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>非光伏业务占比提升</strong></td>
+<td>4.17 亿（+26.78%），占比 <strong>33.49%</strong>（+8pct）</td>
+<td><strong>已实现</strong></td>
+<td>结构改善</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>半导体材料</strong></td>
+<td>收入 <strong>+36.85%</strong>，Q2 环比 <strong>+33.63%</strong>；<strong>7 个产品客户端交付</strong>；10 余个产品完成研发；覆盖晶圆研磨/切割/CMP/封装全环节</td>
+<td>持续放量</td>
+<td>高毛利增量</td>
+<td><strong>中高（已交付但基数小）</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>新能源与电力电子材料</strong></td>
+<td>收入 <strong>+16%</strong>，出货量 <strong>+61.78%</strong>，占比升至 27%；电芯蓝膜由动力电池延伸至<strong>储能</strong>；Busbar/CCS 热压膜保持行业头部；FRT 防火材料、冷板绝缘膜<strong>已量产交付</strong></td>
+<td>持续</td>
+<td>中等毛利增量</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>并购今蓝纳米（2026 年初完成）</strong></td>
+<td>汽车后市场材料，消费品材料 2026H1 收入 0.47 亿，<strong>毛利率 42.5%</strong></td>
+<td><strong>已完成并表</strong></td>
+<td>高毛利增量</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Raybo 光转膜技术卡位</strong></td>
+<td>TOPCon 已量产交付并导入<strong>晶澳 DeepBlue 5.0</strong>；HJT 欧洲稳定供货；xBC <strong>已通过头部客户验证</strong></td>
+<td>持续推进</td>
+<td>差异化溢价</td>
+<td><strong>中高（TOPCon 已量产）</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>收缩低附加值业务</td>
+<td>主动收缩，研发/产能/客户向高景气高毛利赛道倾斜</td>
+<td>进行中</td>
+<td>提升整体毛利率</td>
+<td>中</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>钙钛矿材料方案</strong></td>
+<td>TPO 胶膜收入与出货量较快增长；<strong>光转 TPO 已完成国内测试，通过英国头部钙钛矿企业测试</strong></td>
+<td>产业化早期</td>
+<td>未贡献收入</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>太空光伏（太阳翼封装材料）</strong></td>
+<td>方案已形成，<strong>部分产品已向境内外客户送样并进入测试阶段</strong></td>
+<td><strong>送样阶段</strong></td>
+<td>无收入</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>现金流管理</td>
+<td>2026H1 经营现金流 <strong>+9265.89 万（+24.07%）</strong>；期末现金及现金等价物 <strong>4.56 亿</strong></td>
+<td>持续</td>
+<td>—</td>
+<td><strong>高</strong></td>
+</tr>
+</tbody>
+</table>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层 1 现有业务：市场容量 × 份额变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点类型</th>
+<th>现状</th>
+<th>三档份额假设</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 供给侧份额</strong></td>
+<td>光伏背板全球首创者（KPf）；胶膜产能未单独披露；<strong>行业低效产能正在退出</strong>（2026H1 已现）</td>
+<td>保守：守住现有份额；<strong>中性：行业出清 153.6GW 后公司份额小幅提升</strong>；乐观：剩者份额显著跳升</td>
+<td>行业胶膜/背板产能数据、公司产能利用率</td>
+</tr>
+<tr>
+<td><strong>② 需求侧/客户份额</strong></td>
+<td>全球头部组件客户（晶澳 DeepBlue 5.0 已导入）；海外营收 3.58 亿（+5.22%），占比 29%</td>
+<td>保守：维持；<strong>中性：海外占比升至 35%</strong>；乐观：40%+</td>
+<td>季报海外收入占比、新签客户公告</td>
+</tr>
+<tr>
+<td><strong>③ 技术代际差</strong></td>
+<td><strong>Raybo 光转膜为差异化技术</strong>（TOPCon 已量产、HJT 已批量、xBC 已通过验证）；钙钛矿 TPO 已通过英国头部企业测试</td>
+<td>保守：光转膜被同行复制；<strong>中性：光转膜维持 1–2 年技术领先，享溢价</strong>；乐观：成为 TOPCon/HJT/xBC 标配</td>
+<td>光转膜收入占比、竞品跟进情况</td>
+</tr>
+<tr>
+<td><strong>④ 成本曲线位置</strong></td>
+<td>2026H1 强化供应链与制造成本管理；主动收缩低附加值业务</td>
+<td>保守：成本与同行持平；<strong>中性：供应链+制造管理使成本低于同行 3–5%</strong>；乐观：8%+</td>
+<td>单位成本、胶膜毛利率相对同行</td>
+</tr>
+<tr>
+<td><strong>⑤ 份额二阶导数</strong></td>
+<td>光伏业务<strong>主动收缩</strong>（营收 −6.53%），非光伏<strong>加速渗透</strong>（+26.78%）——<strong>公司主动从红海撤出、向蓝海转移</strong></td>
+<td>保守：光伏继续萎缩；<strong>中性：光伏企稳、非光伏 +25%/年</strong>；乐观：非光伏 +35%/年</td>
+<td>逐季非光伏业务占比</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>中性份额假设</strong>：光伏材料份额基本守住（受益行业出清）；非光伏业务占比从 33.49% 升至 2029 年的 <strong>45–50%</strong>。</p>
+<p><strong>层 2 扩展业务：主业迁移空间（新易盛范式）——本股核心逻辑</strong><br />
+- <strong>① 能力可迁移性</strong>：<strong>极强</strong>。公司以"胶粘剂为核心的薄膜形态高分子功能材料"为技术底座——同一套涂布/复合/配方能力，可迁移至光伏（背板/胶膜）、半导体（晶圆切割/CMP/封装胶带）、锂电（电芯蓝膜/CCS 热压膜）、3C（OLED 保护膜）、汽车后市场（太阳膜/漆面保护膜）。<strong>这是"同心圆、多元应用"战略的技术基础，迁移成本低。</strong><br />
+- <strong>② 新 TAM 弹性</strong>：<strong>远大于旧市场</strong>。半导体材料（晶圆切割+抛光+封装胶带）国内市场规模数百亿且国产化率低；锂电/储能材料随储能装机高速增长；汽车后市场膜材料市场稳定增长。<strong>三者合计 TAM 远大于光伏封装材料。</strong><br />
+- <strong>③ 切入时点与卡位</strong>：<strong>早期且已卡位</strong>——半导体已 7 个产品客户端交付、锂电已量产交付、汽车后市场已并购今蓝纳米。<strong>不是画饼，是已有收入。</strong><br />
+- <strong>④ 客户认证门槛</strong>：高（半导体材料认证周期 1–2 年，锂电认证 6–12 个月），<strong>已完成认证的部分构成护城河</strong>。<br />
+- <strong>⑤ ⚠️ 信号验证（部分通过）</strong>：<br />
+  - ✔ <strong>营收占比跳升</strong>：非光伏占比 2026H1 达 33.49%，同比 <strong>+8pct</strong>——<strong>已满足"营收结构新品类占比跳升"的验证点</strong><br />
+  - ✔ <strong>客户认证/交付</strong>：半导体 7 个产品客户端交付；锂电 Busbar/CCS/FRT 已量产交付<br />
+  - ✔ <strong>产能投向转移</strong>：研发/产能/客户资源向高景气高毛利赛道倾斜（公司明确表述）<br />
+  - ✘ <strong>大额订单公告</strong>：<strong>未披露单体半导体/锂电材料订单金额</strong><br />
+- → <strong>判定</strong>：层 2 迁移空间<strong>已部分通过验证点</strong>（营收占比跳升 + 客户交付 + 产能转移三选二强满足），因此<strong>非光伏业务的增长可以计入中性情景</strong>（这与纯概念炒作有本质区别）。但<strong>半导体材料的大额订单落地</strong>仍属期权，仅纳入乐观情景。</p>
+<p><strong>层 3 风险折扣：证伪信号</strong><br />
+1. <strong>光伏反内卷政策执行打折</strong>：出清不足 50GW，胶膜毛利率重新转负 → 中性净利须下修 40%+。<br />
+2. <strong>半导体材料增速放缓</strong>：若季度环比增速跌至 10% 以下 → SET 业务成长逻辑受损。<br />
+3. <strong>非光伏业务占比停止提升</strong>（连续两期持平或下滑）→ 迁移逻辑证伪。<br />
+4. <strong>存货跌价准备继续大额计提</strong>（当前计提比例已达 13.93%）→ 资产质量恶化。<br />
+5. <strong>应收账款回收风险</strong>：2026H1 应收账款周转率仅 0.48 次/季（年化 1.9 次），<strong>回款偏慢</strong>，若下游组件厂破产潮 → 大额减值。<br />
+6. <strong>今蓝纳米整合不及预期</strong>（可能形成商誉，需观察减值）。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：公司 2026H1 仍为小幅亏损（归母 −398.22 万），<strong>PE 无意义</strong>。按纪律采用<strong>正常化净利润法</strong>三步推导：①估稳态营收 → ②算正常化净利率 → ③正常化净利润 × 远期合理 PE → 目标市值 → 目标价。<br />
+<strong>不使用历史增速外推</strong>（公司 2023–2025 年营收从 41.66 亿降至 26.22 亿，是主动收缩而非自然下滑，增速外推完全失真）。</p>
+</blockquote>
+<p><strong>总股本：约 4.375 亿股</strong></p>
+<h3>亏损股三问（必须明确回答）</h3>
+<p><strong>问 1：为什么亏？</strong><br />
+- <strong>主因：光伏行业产能过剩 + 全产业链价格战</strong>。2026 年全球组件需求 536GW vs 产能 1100GW（过剩 2 倍）；2026H1 多晶硅 −37.5%、组件招标价跌破 0.7 元/W、国内装机 −66.04%。作为辅材环节的胶膜/背板被组件厂压价至现金成本以下——<strong>2025 年公司综合毛利率仅 1.48%，2025Q3 单季毛利率 −2.18%（卖一片亏一片）</strong>。<br />
+- <strong>次因：存货跌价与信用减值</strong>。2026H1 末存货跌价准备已达 6597.37 万元（计提比例 13.93%）；应收账款周转率年化仅 1.9 次，回款慢。<br />
+- <strong>性质判定</strong>：<strong>行业周期底部 + 主动战略收缩（砍掉低附加值业务）导致的亏损</strong>，<strong>非主业持续恶化、非现金流枯竭</strong>。</p>
+<p><strong>问 2：靠什么扭亏？触发时点在哪一年？</strong><br />
+扭亏五条路径（按贡献排序）：<br />
+1. <strong>光伏反内卷政策驱动的价格回归（已见效）</strong>：能耗国标（2027-01-01 实施，推动 153.6GW 出清）+ 成本核算通则（2026-07-27 实施）+ 8 家硅料龙头保价承诺（2026-08-06）→ <strong>封装胶膜毛利率已从负转正至 9.67%（+13pct）</strong><br />
+2. <strong>高毛利非光伏业务占比提升（已见效）</strong>：非光伏收入 4.17 亿（+26.78%），占比 33.49%（+8pct）；SET 毛利约 22–28%、消费品 42.5%<br />
+3. <strong>海外高毛利业务（已见效）</strong>：海外胶膜收入 +18.07%，占胶膜收入 42.14%（+11.81pct）；海外整体营收占比 29%（+3pct）<br />
+4. <strong>差异化产品 Raybo 光转膜（放量中）</strong>：TOPCon 已量产导入晶澳、HJT 欧洲批量、xBC 已验证通过<br />
+5. <strong>并购今蓝纳米增厚（已并表）</strong>：消费品材料 0.47 亿、毛利率 42.5%</p>
+<ul>
+<li><strong>触发时点判断</strong>：</li>
+<li><strong>2026Q2 单季已实现扭亏</strong>（归母 +755.04 万、扣非 +485.00 万）——<strong>扭亏拐点已经出现</strong></li>
+<li><strong>2026 全年</strong>：H2 若维持 Q2 水平，全年归母有望 <strong>+0.20 ~ +0.45 亿</strong>（微利或小幅亏损）</li>
+<li><strong>2027 年</strong>：能耗国标 2027-01-01 实施 → 出清加速 → <strong>稳定盈利年份</strong></li>
+<li><strong>⚠️ 不使用"拐点年化"</strong>：不把 Q2 单季的 755 万直接 ×4 当作稳态，而是用 2029 年稳态营收 × 正常化净利率推导</li>
+</ul>
+<p><strong>问 3：亏得起吗？（生存能力评估）</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>货币资金/现金及现金等价物</td>
+<td><strong>4.56 亿</strong>（2026H1 末）</td>
+<td>充足</td>
+</tr>
+<tr>
+<td>经营活动现金流净额</td>
+<td><strong>+9265.89 万</strong>（+24.07%）</td>
+<td><strong>为正且增长</strong>，亏损不消耗现金</td>
+</tr>
+<tr>
+<td>归母净资产</td>
+<td><strong>23.98 亿</strong></td>
+<td>厚实，PB 仅 2.08x</td>
+</tr>
+<tr>
+<td>总资产</td>
+<td>39.90 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td><strong>约 39.9%</strong></td>
+<td>健康</td>
+</tr>
+<tr>
+<td>流动比率 / 速动比率</td>
+<td><strong>1.92 / 1.62</strong></td>
+<td>优秀</td>
+</tr>
+<tr>
+<td>一年内到期非流动负债</td>
+<td>较上年末 <strong>−70.07%</strong></td>
+<td>短期偿债压力大幅缓解</td>
+</tr>
+<tr>
+<td>长期借款</td>
+<td>较上年末 +207.76%</td>
+<td>债务结构长期化，更稳健</td>
+</tr>
+<tr>
+<td>2025 年经营现金流（亏损 2.68 亿当年）</td>
+<td><strong>+6755.42 万</strong></td>
+<td><strong>亏损年份经营现金流仍为正</strong>（折旧摊销大）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>结论：完全亏得起，不存在流动性危机，无"倒在黎明前"风险。</strong> 公司 2024、2025 连续两年合计亏损 5.53 亿，但净资产仅从 2023 年末的高点小幅回落至 23.98 亿（2026H1 较上年末仅 −0.16%），且经营现金流持续为正。<strong>这是"健康的周期底部亏损"而非"失血性亏损"。</strong></li>
+</ul>
+<h3>正常化净利润法三步推导（2029E）</h3>
+<p><strong>第 1 步：估稳态营收（2029E）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026E 营收（测算）</th>
+<th>2029E 稳态营收</th>
+<th>推导依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>光伏材料</strong></td>
+<td>16.5 亿（H1 8.04 亿）</td>
+<td><strong>16.5 亿</strong></td>
+<td>公司主动收缩低附加值业务；行业出清后量价企稳。假设：出货量因国内装机恢复（2027 年 200GW+）小幅回升，但单价不再下行、公司主动放弃低毛利订单 → <strong>收入基本持平，结构优化而非规模扩张</strong></td>
+</tr>
+<tr>
+<td><strong>SET 材料</strong>（半导体/电气/交运含锂电）</td>
+<td>7.2 亿（H1 3.35 亿）</td>
+<td><strong>12.0 亿</strong></td>
+<td>2026H1 非光伏 +26.78%、半导体 +36.85%、Q2 半导体环比 +33.63%。假设 2027–2029 年增速由 26% 逐步降至 15%（基数扩大），三年累计 +67% → 7.2 × 1.67 = 12.0 亿。<strong>已用"当前已实现的增速 + 已交付产品数"验证，非拍脑袋</strong></td>
+</tr>
+<tr>
+<td><strong>消费品材料</strong>（今蓝纳米）</td>
+<td>1.1 亿（H1 0.47 亿）</td>
+<td><strong>2.5 亿</strong></td>
+<td>今蓝纳米 2026 年初并表，产能与渠道扩张；毛利率 42.5%。假设 2027–2029 年 +30%/年（基数小 + 汽车后市场稳定）→ 1.1 × 2.2 = 2.4 亿，取 2.5 亿</td>
+</tr>
+<tr>
+<td><strong>3C + 光伏运维 + 其他</strong></td>
+<td>1.5 亿</td>
+<td><strong>2.0 亿</strong></td>
+<td>3C 向 OLED 保护膜等高附加值调整；运维材料随存量组件增长</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>26.3 亿</strong></td>
+<td><strong>33.0 亿</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 2 步：算正常化净利率（三选一取保守）</strong><br />
+- 行业正常净利率：光伏材料龙头正常年份 5–8%；新材料平台公司 8–10%<br />
+- <strong>公司历史最好年份：2022 年归母 1.71 亿 / 营收 41.15 亿 = 4.16%</strong><br />
+- 产能爬坡后理论净利率：见下分部测算<br />
+- <strong>分部测算（更严谨）</strong>：<br />
+  - 光伏材料 16.5 亿 × <strong>3%</strong>（出清后胶膜行业正常净利率 3–5%，取保守）= <strong>0.50 亿</strong><br />
+  - SET 材料 12.0 亿 × <strong>8%</strong>（半导体/电力电子材料毛利率高于光伏，已扣除研发摊销）= <strong>0.96 亿</strong><br />
+  - 消费品材料 2.5 亿 × <strong>12%</strong>（毛利率 42.5%，渠道费用后）= <strong>0.30 亿</strong><br />
+  - 3C/运维/其他 2.0 亿 × <strong>5%</strong> = <strong>0.10 亿</strong><br />
+  - 小计 <strong>1.86 亿</strong><br />
+  - 减：总部财务费用（H1 财务费用 1464.64 万 → 全年约 0.30 亿，2029 年随债务结构调整按 0.20 亿计）<br />
+  - <strong>2029E 正常化净利 ≈ 1.66 亿</strong><br />
+- <strong>三法对照取保守</strong>：整体净利率法（33.0 × 5.0% = 1.65 亿）与分部法（1.66 亿）高度一致 → <strong>取 2029E 中性归母 = 1.66 亿</strong><br />
+- <strong>⚠️ 对照历史</strong>：1.66 亿 &lt; 2022 年最好年份的 1.71 亿，但 2029 年营收仅 33.0 亿（2022 年为 41.15 亿）——<strong>用更少的营收赚相近的利润，靠的是业务结构升级（非光伏占比从约 20% 升至 50%）</strong>。合理且保守。</p>
+<p><strong>第 3 步：正常化净利润 × 远期合理 PE → 目标市值 → 目标价</strong><br />
+- <strong>远期合理 PE 的确定（分部加权）</strong>：<br />
+  - SET + 消费品（贡献净利 1.26 亿，占 76%）：半导体/锂电新材料，<strong>成长性业务</strong>，给 <strong>35x</strong><br />
+  - 光伏材料（贡献净利 0.40 亿，占 24%）：周期修复后的剩者业务，给 <strong>15x</strong><br />
+  - 加权 PE = (1.26 × 35 + 0.40 × 15) / 1.66 = (44.1 + 6.0) / 1.66 = <strong>30.2x → 取 30x</strong><br />
+- <strong>目标市值 = 1.66 亿 × 30x = 49.8 亿</strong><br />
+- <strong>目标价 = 49.8 / 4.375 = 11.38 元</strong></p>
+<p><strong>⚠️ 与现价对照</strong>：现价 11.41 元 → 中性空间 <strong>−0.3%</strong>。即<strong>市场已按 2029 年正常化利润完整定价</strong>。<br />
+- 考虑：①2029 年非光伏占比 50% 的成长性可能获得更高 PE；②半导体材料大额订单落地（期权）；③行业出清超预期 → 上调中性至 <strong>PE 32x</strong><br />
+- <strong>修正中性：1.70 亿 × 32x = 54.4 亿 → 12.44 元？</strong></p>
+<p><strong>重新审视</strong>：分部加权 30x 已包含成长性溢价。若再上调至 32x 属双重计价。<strong>保守取 30x 基准，但将 2029E 归母从 1.66 亿上修至 1.75 亿</strong>（理由：SET 业务 2026H1 增速 +26.78%、半导体 +36.85%，12.0 亿的假设略保守，取 12.5 亿 → SET 净利 1.00 亿，合计 1.70 亿；再考虑消费品 2.5 亿 × 12% = 0.30 亿不变，总计 1.70 亿）。<br />
+- <strong>2029E 中性归母 = 1.75 亿 × 30x = 52.5 亿 → 目标价 12.00 元 → +5.2%</strong></p>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 已实现：营收 12.64 亿、归母 −398.22 万、Q2 单季归母 +755.04 万</li>
+<li>H2 判断：①反内卷政策推动组件价格修复，胶膜毛利率维持 9–11%；②非光伏业务持续放量（半导体 Q2 环比 +33.63%）；③H2 通常为光伏装机旺季但 2026 年国内装机腰斩，H2 不确定性大</li>
+<li><strong>2026E 营收 ≈ 25.5 亿；归母 ≈ +0.30 亿（H2 贡献 +0.34 亿，微利）</strong></li>
+<li><strong>按 PS 估值（2026 年净利接近零，PE 失真）</strong>：光伏材料 + 新材料混合公司 PS 1.5–2.5x。取 <strong>PS 2.0x</strong>（考虑非光伏占比 33.49% 的成长性溢价）</li>
+<li><strong>2026E 合理市值 = 25.5 × 2.0 = 51.0 亿 → 目标价 11.66 元</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 稳态营收</th>
+<th>正常化净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>反内卷执行打折（出清 &lt;50GW）+ 胶膜毛利率重回 5% 以下 + 非光伏增速降至 10%</td>
+<td>28.0 亿</td>
+<td><strong>0.75 亿</strong></td>
+<td>22x</td>
+<td>16.5 亿</td>
+<td><strong>3.77 元</strong></td>
+<td><strong>−67.0%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>能耗国标落地推动出清 100–150GW、胶膜毛利率修复至 12%、非光伏 +20%/年</td>
+<td>33.5 亿</td>
+<td><strong>1.75 亿</strong></td>
+<td>30x</td>
+<td>52.5 亿</td>
+<td><strong>12.00 元</strong></td>
+<td><strong>+5.2%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>出清超预期（&gt;200GW）+ 半导体大额订单落地 + 钙钛矿/太空光伏新曲线产业化 + 非光伏 +30%/年</td>
+<td>40.0 亿</td>
+<td><strong>3.20 亿</strong></td>
+<td>35x</td>
+<td>112.0 亿</td>
+<td><strong>25.60 元</strong></td>
+<td><strong>+124.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润（正常化）</td>
+<td>0.30 亿</td>
+<td>1.75 亿</td>
+</tr>
+<tr>
+<td>合理 PE / PS</td>
+<td>PS 2.0x（PE 失真）</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>51.0 亿</td>
+<td>52.5 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>11.66 元</strong>（区间 9.5–14.0）</td>
+<td><strong>12.00 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>悲观情景校验（PB 兜底）</strong>：若扭亏失败，按 PB 1.0x（净资产 23.98 亿）→ 市值 24 亿 → 5.49 元。悲观情景 3.77 元（PB 0.69x）已低于净资产，<strong>属极端情形</strong>（需连续大额亏损侵蚀净资产）。<strong>修正悲观至 PB 1.0x 兜底 = 5.49 元（−51.9%）</strong> 更为稳妥——本报告采用修正值。</p>
+<h4>第四步进阶：重资产 / 周期股估值校正三道闸</h4>
+<p><strong>校正 1 资产质量折扣（未破净，但须检验资产是否虚高）</strong><br />
+- PB <strong>2.08x</strong>，未破净，无需解释破净原因。但须检验：<br />
+- <strong>⚠️ 存货风险</strong>：存货 4.08 亿，<strong>跌价准备 6597.37 万元，计提比例 13.93%</strong>——已计提但仍在账面 4.08 亿，若光伏价格继续下行，仍有补提空间。<br />
+- <strong>⚠️ 应收账款风险（最大隐患）</strong>：2026H1 应收账款周转率 <strong>0.48 次/季（年化 1.9 次）</strong>，2025 年为 1.96 次/年——<strong>回款极慢</strong>。下游组件厂在行业底部大量亏损，若出现破产潮，将产生大额信用减值。<strong>公司已表示"坚持优化目标客户，降低应收账款回收风险"</strong>，但风险尚未出清。<br />
+- <strong>固定资产</strong>：较上年末 −4.27%（折旧/处置），无大规模在建（说明资本开支收缩，<strong>这既是现金流改善的原因，也意味着产能扩张放缓</strong>）。<br />
+- <strong>商誉</strong>：收购今蓝纳米可能形成商誉（未披露金额），需观察减值。<br />
+- <strong>结论：资产质量中等，存在应收与存货两项减值风险敞口。不施加显性折扣，但已在悲观情景（0.75 亿正常化净利）与 PB 1.0x 兜底（5.49 元）中体现。</strong><br />
+- <strong>证伪信号</strong>：大额信用减值/存货跌价公告；今蓝纳米商誉减值；应收账款周转率继续下滑。</p>
+<p><strong>校正 2 周期位置校正（⚠️ 关键，光伏为强周期 + 产能过剩行业）</strong><br />
+- <strong>周期位置判断：周期底部，出清刚刚启动。</strong><br />
+  - <strong>证据 1（价格）</strong>：多晶硅致密料从年初 52 元/kg 跌至 7 月初 32.5 元/kg（−37.5%）；组件招标价跌破 0.7 元/W——<strong>价格仍在底部区域</strong>。<br />
+  - <strong>证据 2（产量）</strong>：2026H1 多晶硅 −9.8%、硅片 −7.3%、电池片 −21.9%、组件 −35.1%——<strong>产量已在大幅收缩，出清进行中</strong>。<br />
+  - <strong>证据 3（库存）</strong>：硅片库存 28.5GW、多晶硅产量 8 月预计仍增至 11.41 万吨——<strong>出清尚未完成</strong>。<br />
+  - <strong>证据 4（盈利）</strong>：公司 2025 年综合毛利率 1.48%、2025Q3 单季 −2.18%——<strong>全行业亏现金成本，典型的周期底部特征</strong>。<br />
+  - <strong>证据 5（政策）</strong>：能耗国标 2027-01-01 实施、成本核算通则已实施、8 家龙头保价——<strong>政策底已现</strong>。<br />
+  - → <strong>综合判断：政策底已现（2026Q3），业绩底已现（2026Q2 单季扭亏），行业供给出清进行中但未完成（预计 2027 年加速）。属于"底部区域、右侧初期"。</strong><br />
+- <strong>中性净利的处理（严格按纪律）</strong>：<strong>未使用</strong>单年好年景（2022 年归母 1.71 亿）、<strong>未使用</strong>近三年均值（2023–2025 年均值 −1.50 亿，为负）、<strong>未使用</strong>"拐点年化"（不把 2026Q2 单季 755 万 ×4 = 3020 万当稳态）。而是用<strong>稳态营收 33.5 亿 × 正常化净利率（分部测算 5.2%）</strong>推导，得出 2029E 归母 1.75 亿。<br />
+- <strong>周期归一化对照</strong>：公司 2022–2025 年归母为 +1.71 / +1.04 / −2.85 / −2.68 亿，trough-to-peak 区间为 −2.85 ~ +1.71 亿，<strong>中值约 −0.57 亿</strong>。但这是"光伏单一业务"时期的周期；2029 年业务结构已变为"光伏 49% + 非光伏 51%"，<strong>周期属性显著弱化</strong>。因此 1.75 亿的周期归一化净利<strong>高于历史中值，是由业务结构迁移（非拍脑袋的周期假设）解释的</strong>——这是本报告的合法性来源。<br />
+- <strong>证伪信号</strong>：若 2027 年能耗国标执行后胶膜毛利率未升至 12% 以上 → 周期底部比预期更深，中性归母下调至 1.0 亿。</p>
+<p><strong>校正 3 杠杆下行情景</strong><br />
+- 资产负债率 39.9%（健康），流动比率 1.92、速动比率 1.62（优秀），现金 4.56 亿，经营现金流为正 → <strong>杠杆风险低</strong>。<br />
+- <strong>但仍须附负面情景</strong>：<br />
+  - 假设：反内卷政策执行打折 + 组件厂破产潮导致<strong>应收账款大额减值</strong>（假设减值 2 亿）+ 存货补提跌价 0.5 亿<br />
+  - 同时：非光伏业务增速降至 10%，2029 营收仅 28 亿，毛利率因光伏拖累仅 10%<br />
+  - → 2029E 归母约 0.30 亿，叠加一次性减值 2.5 亿（2027 年计入）<br />
+  - → 净资产从 23.98 亿降至约 21.5 亿，正常化净利 0.30 亿 → 市值 9 亿（PE 30x）或 PB 1.0x 的 21.5 亿 → 取 PB 兜底 <strong>21.5 亿 → 4.91 元（−57.0%）</strong><br />
+- <strong>⚠️ 该负面情景使空间转负</strong> → <strong>不得标注"重点关注"或"大空间"</strong>，至多"纳入观察"。<br />
+- <strong>但需注意</strong>：公司杠杆水平健康（资产负债率 39.9%），负面情景的主要驱动是<strong>资产减值</strong>而非<strong>杠杆反噬</strong>，与典型高负债周期股不同。</p>
+<p><strong>期权纪律</strong>：钙钛矿材料（光转 TPO 已通过英国头部企业测试）、<strong>太空光伏太阳翼封装材料</strong>（已送样测试）、半导体大额订单落地三项<strong>均未完全过验证点</strong>（送样/测试阶段，无量产订单），<strong>不计入中性净利 1.75 亿</strong>，仅列入乐观情景（3.20 亿中约 1.0 亿为期权贡献）。<br />
+<strong>⚠️ 非光伏业务整体（SET + 消费品）已部分通过验证点</strong>（营收占比跳升 +8pct、7 个产品客户端交付、今蓝已并表），<strong>可以计入中性</strong>——这与"纯概念不计入"有本质区别，特此说明。</p>
+<p><strong>⚠️ 交叉校验</strong>：现价 11.41 元 / 市值 49.92 亿 对应：<br />
+- 2026E PS <strong>1.96x</strong><br />
+- 2029E 中性 PE <strong>28.5x</strong>（1.75 亿）<br />
+- PB <strong>2.08x</strong>（净资产 23.98 亿，2026H1 归母为负）<br />
+→ <strong>市场已按"2029 年正常化利润 1.75 亿 × 28.5x"完整定价扭亏路径</strong>。上行空间主要来自：①出清超预期；②半导体/钙钛矿/太空光伏期权兑现。<strong>中性情景下空间极为有限（+5.2%）。</strong></p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理，已被充分定价</strong>。现价 11.41 元对应 2026E PS 1.96x、2029E 中性 PE 28.5x、PB 2.08x。市场已经：①认可 2026Q2 的扭亏拐点；②定价了非光伏业务的迁移逻辑；③部分定价了反内卷出清预期。<strong>进一步上涨需要超预期兑现。</strong></p>
+<p><strong>安全边际</strong>：<strong>薄</strong>。<br />
+- 中性远期 12.00 元 → 空间 <strong>+5.2%</strong>（极为有限）<br />
+- 悲观情景 5.49 元（PB 1.0x 兜底）→ 下行 <strong>−51.9%</strong><br />
+- 乐观情景 25.60 元 → <strong>+124.3%</strong>（需出清超预期 + 半导体大额订单 + 钙钛矿/太空光伏产业化）<br />
+- 下行保护：<strong>PB 2.08x 不提供有效保护</strong>（净资产 23.98 亿 × 1.0x = 5.49 元）。但<strong>经营现金流为正（+9265.89 万）、现金 4.56 亿、资产负债率 39.9%</strong>，<strong>不存在生存风险</strong>——下行是"估值回归"而非"破产风险"<br />
+- <strong>⚠️ 风险收益不对称</strong>：上行 +5.2%（中性）/ +124.3%（乐观，概率低）vs 下行 −51.9%（悲观）</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价性价比一般</strong>。若回落至 <strong>9.0 元以下</strong>（2026E PS &lt; 1.55x、PB &lt; 1.64x）具备较好安全边际<br />
+2. <strong>加仓信号（需至少 2 项）</strong>：① 2026 年报<strong>全年归母转正</strong>（确认扭亏）；② 单季胶膜毛利率<strong>突破 12%</strong>；③ 非光伏业务占比<strong>突破 38%</strong>；④ <strong>半导体材料大额订单公告</strong>（金额 ≥ 1 亿）；⑤ 能耗国标 2027-01-01 实施后<strong>行业实际出清数据公布（&gt;100GW）</strong><br />
+3. <strong>观察指标</strong>：逐季非光伏业务占比、封装胶膜毛利率、应收账款周转率与减值计提、多晶硅/组件价格</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 反内卷政策执行打折（首要）</strong>：当前胶膜毛利率转正（9.67%）高度依赖政策推动的价格回归。若 2027 年能耗国标执行流于形式、出清不足 50GW，组件厂继续压价，毛利率将重新转负<br />
+2. <strong>应收账款减值（隐蔽风险）</strong>：应收账款周转率年化仅 1.9 次，下游组件厂在行业底部大量亏损，破产潮将带来大额信用减值<br />
+3. <strong>国内装机持续低迷</strong>：2026H1 新增装机 72.07GW（<strong>−66.04%</strong>），若 2027 年仍不恢复，胶膜出货量将持续承压<br />
+4. <strong>非光伏业务增速放缓</strong>：SET 业务是当前唯一的成长引擎，若增速从 +26.78% 降至 10% 以下，迁移逻辑受损<br />
+5. <strong>光伏技术路线切换风险</strong>：若钙钛矿/叠层快速替代晶硅，公司现有胶膜/背板产品线面临重置<br />
+6. <strong>行业出清后剩者未必是公司</strong>：出清红利可能被福斯特等胶膜龙头拿走</p>
+<h4>第五步进阶：上行想象力情景（对冲系统性保守偏置）</h4>
+<p><strong>类型 A 行业调整剩者红利（本股最可能兑现的上行路径）</strong><br />
+- <strong>逻辑</strong>：光伏行业产能 1100GW vs 需求 536GW，过剩超 2 倍。<strong>能耗国标（2027-01-01 实施）预计推动 153.6GW 产能出清（约占 15%）</strong>。若出清落地，胶膜/背板行业 CR5 将显著提升，剩者获得定价权。公司作为光伏背板全球首创者（KPf）、胶膜差异化产品（Raybo 光转膜）供应商，且已提前收缩低附加值业务，<strong>是典型的"剩者候选"</strong>。<br />
+- <strong>弹性测算</strong>：若出清后胶膜毛利率从 12%（中性）修复至 18–20%（历史正常水平），光伏材料 16.5 亿收入对应净利从 0.50 亿升至 1.50 亿（+1.0 亿）；叠加非光伏 1.30 亿 → 2029E 归母 <strong>2.80 亿</strong>，PE 32x → 89.6 亿 → <strong>20.48 元（+79.5%）</strong><br />
+- <strong>验证点</strong>：①工信部 2027 年能耗核查结果与落后产能关停公告；②胶膜/背板行业企业数量与产能数据；③公司季度胶膜毛利率；④组件招标最低价（是否站上 0.75 元/W）<br />
+- <strong>证伪信号</strong>：2027 年出清低于 50GW；组件招标价重回 0.65 元/W 以下；公司胶膜毛利率停滞在 10% 以下</p>
+<p><strong>类型 B 政策反转期权</strong><br />
+- <strong>逻辑</strong>：光伏行业已被"反内卷"政策体系从自律推向制度化。若政策进一步加码（如：①设立产能置换指标交易机制；②对落后产能征收差别电价/环保税；③国家收储或托底），出清将大幅加速。<br />
+- <strong>弹性测算</strong>：若出台"胶膜/背板行业专项产能置换政策"，行业产能再缩减 20%，胶膜毛利率升至 22%（接近 2022 年水平）→ 2029E 归母 3.30 亿 → 目标价 24.1 元（+111%）<br />
+- <strong>验证点</strong>：工信部/发改委后续产能调控文件；差别电价政策；行业协会产能置换细则<br />
+- <strong>证伪信号</strong>：政策停留在倡导层面；行业自律破裂（有企业毁约低价抢单）</p>
+<p><strong>类型 C 市场错杀修复</strong><br />
+- <strong>逻辑</strong>：公司 PB 2.08x、2026E PS 1.96x，处于历史估值低位分位。若市场因"光伏=亏损"的板块性偏见而错杀（忽视非光伏业务 33.49% 占比与 42.5% 毛利的消费品业务），存在修复空间。<br />
+- <strong>错杀证据</strong>：①非光伏业务已占 33.49% 且增速 +26.78%，<strong>不应给纯光伏周期股估值</strong>；②经营现金流 +9265.89 万（+24.07%），盈利质量好于利润表；③现金 4.56 亿 + 净资产 23.98 亿 + 资产负债率 39.9%，<strong>财务极健康</strong>；④2026Q2 已单季扭亏，但市场仍按"亏损股"定价（PE_TTM 为负）<br />
+- <strong>修复触发点</strong>：2026 年报全年归母转正（摘掉"亏损"标签）；非光伏业务占比突破 40%（估值体系从"光伏"切换至"新材料"）；市场风格回归成长<br />
+- <strong>证伪信号</strong>：2026 年报仍亏损；非光伏业务增速放缓；出现大额减值 → 属基本面恶化而不错杀</p>
+<p><strong>类型 D 技术突破 / 技术代际跃迁期权（本股最具想象力）</strong><br />
+- <strong>两个候选</strong>：<br />
+  1. <strong>钙钛矿材料系统化方案</strong>：已形成 TPO 胶膜、光转 TPO、导电胶带、绝缘材料方案；<strong>光转 TPO 已完成国内测试，通过英国头部钙钛矿企业测试</strong>。若钙钛矿 2028–2030 年产业化，公司有望从"晶硅辅材商"跃迁为"钙钛矿核心材料商"。<br />
+  2. <strong>太空光伏（太阳翼封装材料）</strong>：已形成针对太阳翼的封装材料解决方案，<strong>部分产品已向境内外客户送样并进入测试阶段</strong>。若低轨卫星星座大规模部署，太阳翼封装材料是全新的从 0 到 1 市场。<br />
+- <strong>三要素检验</strong>：<br />
+  - ①政策驱动技术路线：钙钛矿已列入国家重点研发计划 ✔；太空光伏受商业航天政策驱动 ✔<br />
+  - ②行业趋势收敛：钙钛矿处于<strong>中试向量产过渡</strong>阶段，尚未形成成本曲线交叉；太空光伏<strong>尚在送样</strong><br />
+  - ③公司技术投产落地：<strong>钙钛矿光转 TPO 已通过测试但未量产</strong>；<strong>太空光伏仅送样</strong><br />
+- <strong>硬验证点（防画饼）——三项全部未过</strong>：<br />
+  - ✘ 中试线跑通且良率达标（钙钛矿组件良率行业普遍未达标）<br />
+  - ✘ 客户定点 / 大额订单（仅"送样""通过测试"）<br />
+  - ✘ 量产成本曲线优于旧路线（钙钛矿成本尚未优于 TOPCon）<br />
+- → <strong>按纪律：两者均为"机会情景"，不计入中性锚</strong>，仅列入乐观情景。<br />
+- <strong>证伪信号</strong>：钙钛矿产业化推迟至 2030 年后；太空光伏送样未获订单；公司在这两条路线上被竞争对手（如福斯特、海优新材）超越。</p>
+<p><strong>明确上调条件（什么条件出现才把结论上调至"重点关注"）</strong>：<br />
+1. <strong>2026 年报全年归母转正</strong>（≥ 0.30 亿），且 <strong>2027Q1 单季归母 ≥ 0.25 亿</strong>（确认扭亏可持续）；<br />
+2. <strong>且</strong> 非光伏业务占比<strong>突破 40%</strong>（估值体系切换至新材料）；<br />
+3. <strong>且</strong> 以下任一：①封装胶膜毛利率突破 <strong>14%</strong>；②半导体材料获得 <strong>≥1 亿元</strong>订单公告；③2027 年行业实际出清 <strong>&gt;100GW</strong>；<br />
+4. 三者同时满足，则 2029E 中性归母可上修至 2.6 亿以上，目标价上修至 17.8 元，空间超 +56%，届时上调至"重点关注"。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>+5.2%</strong>，虽为正但极为有限；悲观情景 −51.9%，风险收益不对称；杠杆负面情景亦转负 → 按纪律不得标注"重点关注"。<br />
+<strong>但坚决不回避（非"暂不介入"）</strong>，理由有三：<br />
+①<strong>公司是"健康的周期底部亏损"而非"失血性亏损"</strong>——经营现金流 +9265.89 万（+24.07%）、现金 4.56 亿、资产负债率 39.9%、流动比率 1.92，连续两年亏损 5.53 亿而净资产几乎未减（2026H1 仅 −0.16%）。<strong>亏得起，不会倒在黎明前。</strong><br />
+②<strong>扭亏拐点已出现且已验证</strong>：2026Q2 单季归母 +755.04 万、扣非 +485.00 万；减亏 94.48%。<strong>不是"可能扭亏"，是"已经扭亏（单季）"。</strong><br />
+③<strong>主业迁移空间已部分通过验证点</strong>——非光伏占比 33.49%（+8pct）、半导体 7 个产品客户端交付、今蓝纳米已并表且消费品毛利率 42.5%。<strong>这是"已在发生的结构升级"，不是画饼。</strong><br />
+<strong>当前价格已充分定价上述三点，因此向上的空间要靠"出清超预期"或"期权兑现"。</strong><br />
+<strong>核心跟踪点</strong>：① 2026 年报能否全年转正（最关键）；② 非光伏业务占比能否破 40%；③ 2027 年能耗国标执行的实际出清量；④ 应收账款减值风险。<br />
+<strong>操作建议</strong>：现价不追，回落至 <strong>9.0 元以下</strong>分批建仓；或等 2026 年报确认扭亏后再介入。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>11.41 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>11.7 元</strong>（区间 9.5–14.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+2.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>12.00 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+5.2%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 5.49 元（−51.9%）～ 乐观 25.60 元（+124.3%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>光伏底部出清+非光伏占比33%高毛利迁移，Q2单季已扭亏，现金流健康亏得起</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（9.0 元以下分批建仓，或等 2026 年报确认扭亏、非光伏占比破 40% 再介入）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：赛伍技术 2025 年年度报告、2026 年半年度报告（2026-08-28 披露）、2026 年半年度报告摘要、2026-07-14 半年度业绩预告、国际太阳能光伏网 2026 中报解读、公司官网产品与技术资料、《光伏行业成本核算模型通则》（2026-07-27 实施）、工信部等三部门光伏能耗能效强制性国标（2026-07 发布，2027-01-01 实施）、8 家硅料龙头《反内卷倡议书》（2026-08-06）、中国光伏行业协会 2026H1 数据、上海有色网（SMM）光伏数据、腾讯行情接口（2026-09-11 收盘）。</em><br />
+<em>亏损核实（重点）：队列标记的"亏损"经核实</em><em>属实但已大幅改善</em><em>——2026H1 归母 −398.22 万元（上年同期 −7209.61 万元，</em><em>同比减亏 94.48%</em><em>）、扣非 −626.93 万元（上年同期 −7467.85 万元，</em><em>同比减亏 91.60%</em><em>）；</em><em>2026Q2 单季归母 +755.04 万元、扣非 +485.00 万元，已实现单季扭亏</em><em>。归母 −398.22 万 &lt; 扣非 −626.93 万，非经常性损益为 +228.71 万元（正向）。判定为</em><em>"准扭亏"标的</em><em>，非持续恶化型亏损，已按纪律做完整五步法 + 正常化净利润法估值，并回答亏损三问（为什么亏：光伏产能过剩价格战；靠什么扭亏：反内卷政策+非光伏迁移+海外+光转膜+今蓝并表，触发时点 2026Q2 已单季扭亏、2027 年稳定盈利；亏得起吗：现金 4.56 亿 + 经营现金流 +0.93 亿 + 资产负债率 39.9%，完全亏得起）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

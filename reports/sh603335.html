@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>迪生力（603335）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>迪生力（603335）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-13 ｜ 现价 <strong>6.17 元</strong>（2026-09-11 收盘，实测校验一致）｜ 总市值 <strong>26.42 亿</strong> ｜ PE(TTM) <strong>40.64x</strong>（口径失真，公司实际亏损）｜ <strong>PB 10.21x（本组最高，需专项归因）</strong> ｜ 总股本 <strong>4.2814 亿股</strong>（全流通）<br />
+行业：汽车零部件—铝合金轮毂 + 轮胎出口 ｜ 板块：上交所主板 ｜ 实控人：江门力鸿投资有限公司（前十大股东合计持股超 39%）<br />
+<strong>⚠️ 亏损核实结论（重要）</strong>：队列标注 PE 40.64x（<strong>为正</strong>）属<strong>反向漏标</strong>。真实最新财报 <strong>2026 年半年报归母净利 −4128.48 万元（亏损）</strong>，扣非 −4123.65 万元，ROE(加权) <strong>−14.66%</strong>，每股净资产仅 <strong>0.60 元</strong>。PE 为正纯属 TTM 口径含 2025 年一次性收益所致——<strong>本股是真实亏损股，必须按亏损股完整五步法处理</strong>。<br />
+<strong>⚠️ PB 10.21 高 PB 归因</strong>：本股 PB 高企属"<strong>净资产塌陷型 + 高杠杆放大 + 未验证主题溢价</strong>"三重叠加，<strong>与历史同款"海鸥股份 PB 10.34（转增摊薄型）"机制不同</strong>，详见第一步末尾专项论证。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：广东江门台山的汽车铝合金轮毂 + 轮胎出口商，核心资产是<strong>覆盖北美的直营连锁子公司与仓储中转物流基地</strong>，主打北美高端改装（aftermarket）市场。</p>
+<p><strong>各业务板块（2026H1，营收 3.48 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汽车铝合金轮毂</td>
+<td>自主品牌，北美改装市场，款式与品牌认知度是核心</td>
+<td>出口为主，公司为"国内同行业拥有最完善海外销售渠道的企业之一"</td>
+</tr>
+<tr>
+<td>轮胎销售</td>
+<td>开发高端耐磨轮胎，增加品类与规格</td>
+<td>控股子公司华鸿集团运营，<strong>2026H1 因扩大仓储租赁面积 + 迁址，租金及搬迁成本大增</strong></td>
+</tr>
+<tr>
+<td>铝型材/异型材、五金电镀</td>
+<td>配套</td>
+<td>规模小</td>
+</tr>
+<tr>
+<td><strong>广东全芯半导体 30%（参股，不并表）</strong></td>
+<td>存储芯片研发/设计/封测/销售</td>
+<td>2026 年 6 月以 <strong>9800 万元现金</strong>收购，计入长期股权投资/其他权益工具</td>
+</tr>
+<tr>
+<td>已出表资产</td>
+<td>广东威玛（锂电回收）、迪生力绿色食品</td>
+<td><strong>2026 年不再纳入合并范围——这是营收 −30.89% 的主因</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：各种机动车辆铝合金轮毂、车用灯具、保险杠、减震器；轮胎；铝型材。</p>
+<p><strong>主要客户/下游</strong>：<strong>北美（美国、加拿大）汽车改装市场</strong>。公司在北美拥有多家直营连锁子公司及仓储中转物流基地，销售网络已覆盖北美洲。</p>
+<p><strong>境内外收入占比</strong>：<strong>以境外（北美）为主</strong>，国内为辅（国内生产线未能满产，固定资产折旧构成刚性成本）。</p>
+<p><strong>股东背景</strong>：广东江门台山民营，江门力鸿投资有限公司为第一大股东，前十大股东合计持股超 39%。</p>
+<hr />
+<h3>⚠️ 专项：PB 10.21 高 PB 归因（必须回答）</h3>
+<p><strong>第一步：确认 PB 数字真实性</strong>。每股净资产 0.60 元（2026H1 归母口径），现价 6.17 元 → <strong>PB = 6.17 / 0.60 = 10.28x</strong>，与行情源 10.21x 一致，<strong>PB 属实，非数据错误</strong>。</p>
+<p><strong>第二步：归母净资产四年的塌陷过程</strong></p>
+<table>
+<thead>
+<tr>
+<th>时点</th>
+<th>归母净资产（股东权益合计口径）</th>
+<th>同期归母净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022-12-31</td>
+<td>6.53 亿</td>
+<td>−0.384 亿</td>
+</tr>
+<tr>
+<td>2023-12-31</td>
+<td>5.65 亿</td>
+<td><strong>−1.488 亿</strong></td>
+</tr>
+<tr>
+<td>2024-12-31</td>
+<td>4.10 亿</td>
+<td><strong>−1.448 亿</strong></td>
+</tr>
+<tr>
+<td>2025-12-31</td>
+<td>3.89 亿</td>
+<td>+0.485 亿（<strong>扣非 −1.294 亿</strong>）</td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td><strong>3.31 亿（合计）/ 2.59 亿（归母）</strong></td>
+<td><strong>−0.413 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>四年间净资产从 6.53 亿降至 3.31 亿（−49%），归母口径从约 6.0 亿降至 2.59 亿（−57%）。</strong></p>
+<p><strong>第三步：三因子归因</strong></p>
+<table>
+<thead>
+<tr>
+<th>归因因子</th>
+<th>量化拆解</th>
+<th>是否成立</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 净资产塌陷（分母缩小）——主因</strong></td>
+<td>2023–2026H1 累计归母亏损约 <strong>2.86 亿</strong>（−1.488 −1.448 +0.485 −0.413），加上其他权益变动，<strong>分母（归母净资产）缩水 57%</strong>。而同期股价从约 5–6 元区间波动至 6.17 元，<strong>分子基本没跌</strong> → PB = 分子/分母，分母塌陷贡献了绝大部分涨幅</td>
+<td>✅ <strong>成立，为主因</strong></td>
+</tr>
+<tr>
+<td><strong>② 高杠杆放大</strong></td>
+<td>资产负债率 <strong>68.95%</strong>，总资产 10.67 亿 / 归母净资产 2.59 亿 → <strong>权益乘数 4.1x</strong>。市值 26.42 亿 / 总资产 10.67 亿 = <strong>2.48x</strong>（市价/总资产）。即：<strong>若按总资产口径，估值是 2.48 倍；是 4.1 倍杠杆把它放大成了 10.21 倍 PB</strong></td>
+<td>✅ <strong>成立，为放大器</strong></td>
+</tr>
+<tr>
+<td><strong>③ 无验证的主题溢价</strong></td>
+<td>2026-06-11 公告 9800 万收购广东全芯半导体 30%（存储芯片）；2026-06-15 <strong>2 连板、累计 +21.04%、报 8.86 元</strong>。同期土地收储公告（2.255 亿）。<strong>半导体 + 收储 + 锂电回收（已出表）三主题共振</strong></td>
+<td>✅ <strong>成立，且主题未验证</strong></td>
+</tr>
+<tr>
+<td><strong>④ 转增摊薄（海鸥股份同款机制）</strong></td>
+<td>总股本 4.2814 亿股，<strong>近年无转增/送股记录</strong>，股本稳定。<strong>本机制在本股不成立</strong></td>
+<td>❌ 不成立</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第四步：与历史同款"海鸥股份 PB 10.34"对比</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>海鸥股份（PB 10.34）</th>
+<th>迪生力（PB 10.21）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高 PB 机制</td>
+<td><strong>转增摊薄</strong>（股本扩张摊薄每股净资产）+ 高杠杆放大 ROE + 无验证主题溢价</td>
+<td><strong>净资产塌陷</strong>（连续亏损侵蚀分母）+ 高杠杆放大 + 无验证主题溢价</td>
+</tr>
+<tr>
+<td>分母变化原因</td>
+<td>会计意义上的股本扩张，净资产总额未减</td>
+<td><strong>真实亏损，净资产总额实际减少 57%</strong></td>
+</tr>
+<tr>
+<td>性质</td>
+<td>偏"技术性高 PB"，风险相对可控</td>
+<td><strong>偏"失血性高 PB"，风险更实</strong></td>
+</tr>
+<tr>
+<td>共同点</td>
+<td><strong>均无验证的主题溢价；均不可用 PB 单指标推空间</strong></td>
+<td>同左</td>
+</tr>
+</tbody>
+</table>
+<p><strong>→ 归因结论：迪生力 PB 10.21 既不是"资产优质所以贵"，也不是"转增摊薄造成的假象"，而是"连续四年亏损把净资产吃掉了 57%，同时 4.1 倍杠杆把剩余权益的估值倍数放大，再叠加未验证的半导体/土地收储主题溢价"。这意味着：PB 10.21 是</strong>风险指标<strong>而非估值锚——它说明公司离净资产耗尽只有 2.59 亿的缓冲，按 2026H1 半年亏 0.41 亿的速度，静态可支撑约 3 年。</strong></p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度级别</th>
+<th>落地节奏</th>
+<th>量化指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汽车以旧换新 / 消费品更新</td>
+<td>中央/地方</td>
+<td>需求侧刺激</td>
+<td>已在执行</td>
+<td>主要利好国内新车配套，<strong>公司主业在北美改装市场，直接受益有限</strong></td>
+</tr>
+<tr>
+<td><strong>美国对华汽车零部件关税</strong></td>
+<td>美国政府</td>
+<td><strong>直接负面</strong></td>
+<td>持续</td>
+<td>公司是纯出口型企业（北美占比最高），关税与"国际贸易情况复杂"是半年报明确列出的亏损原因之一</td>
+</tr>
+<tr>
+<td>台山市土地收储（三个地块）</td>
+<td>台山市土地开发储备中心</td>
+<td><strong>地方性、公司特定</strong></td>
+<td><strong>分地块执行中</strong></td>
+<td>合计 <strong>325 亩（21.69 万㎡）</strong>，补偿总价 <strong>2.255 亿元</strong>（详见第三步）</td>
+</tr>
+<tr>
+<td>半导体/存储产业支持（国产替代）</td>
+<td>工信部等</td>
+<td>产业政策支持</td>
+<td>持续</td>
+<td>公司参股 30% 的广东全芯属存储芯片赛道，但<strong>仅为财务性参股，无控制权</strong></td>
+</tr>
+<tr>
+<td>新能源汽车/锂电回收</td>
+<td>工信部</td>
+<td>产业政策</td>
+<td>持续</td>
+<td>原控股子公司广东威玛从事锂电回收，<strong>已于 2026 年出表</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策判断</strong>：<strong>主业端政策偏负面</strong>（美国关税 + 北美通胀导致市场疲软）；<strong>公司层面的两个正向变量（土地收储、半导体参股）均属公司特定事件，非行业性政策红利</strong>。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司 2026H1 营收</td>
+<td><strong>3.48 亿元（−30.89%）</strong>——<strong>主因子公司出表，非纯需求下滑</strong></td>
+</tr>
+<tr>
+<td>公司 2026H1 归母</td>
+<td><strong>−0.413 亿元</strong>（上年同期 −0.578 亿，<strong>亏损收窄 28.57%</strong>）</td>
+</tr>
+<tr>
+<td>公司 2026H1 经营现金流</td>
+<td><strong>+0.265 亿元（+212.71%）</strong>——由低位大幅改善，<strong>是本期最重要的正面信号</strong></td>
+</tr>
+<tr>
+<td>公司资产负债率</td>
+<td><strong>68.95%</strong>（高杠杆）</td>
+</tr>
+<tr>
+<td>北美改装市场</td>
+<td>北美洲是全球汽车铝合金轮毂及轮胎需求量较大的地区；<strong>但 2026 年"国际市场竞争激烈、海外通货膨胀严重、市场疲软"</strong>（半年报原文）</td>
+</tr>
+<tr>
+<td>国内产能</td>
+<td>"<strong>国内生产线未能满产，固定资产投入成本较大，固定资产折旧等费用仍然存在</strong>"（半年报原文）</td>
+</tr>
+<tr>
+<td>海外仓储成本</td>
+<td>"控股子公司华鸿集团扩大仓储租赁面积并完成迁址，<strong>仓储租金及搬迁相关成本增加</strong>"（半年报列为亏损主因之一）</td>
+</tr>
+<tr>
+<td>股价与主题</td>
+<td>2026-06-15 因半导体并购 2 连板报 <strong>8.86 元</strong>；现价 6.17 元 → <strong>已从主题高点回落 30.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键判读</strong>：营收 −30.89% 中，<strong>出表（广东威玛、迪生力绿色食品）是主因</strong>，这是"缩表止血"而非"主业崩塌"；但即便剔除出表影响，<strong>国内产线未满产 + 海外仓储成本上升 + 北美需求疲软</strong>三项仍使主业亏损，说明<strong>经营性亏损是真实的</strong>。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：铝合金（A00 铝 2026 年 5 月约 24,260–24,530 元/吨）、天然橡胶/合成胶（轮胎）。<br />
+<strong>下游</strong>：北美汽车改装市场（aftermarket）直营连锁 + 仓储中转；终端为个人车主与改装店。</p>
+<p><strong>议价权判断</strong>：<strong>弱</strong>。<br />
+- 佐证 1：毛利率极低——2026H1 营收 3.482 亿、营业成本 3.985 亿 → <strong>毛利率为 −14.4%（负毛利）</strong>。<br />
+- 佐证 2：海外通胀 + 市场竞争激烈，成本无法转嫁给北美客户。<br />
+- 佐证 3：为支撑海外轮胎业务需"扩大仓储租赁面积"，说明<strong>渠道投入是刚性成本，不能随需求调节</strong>。<br />
+- 佐证 4：国内产线未满产，固定资产折旧刚性 —— <strong>经营杠杆极高，销量下滑时亏损被放大</strong>。</p>
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<p><strong>因子1 成本传导弹性（pass-through）</strong></p>
+<ul>
+<li>铝价 2026 年 A00 铝约 24,260–24,530 元/吨，处于历史中高位；</li>
+<li>2026H1 公司毛利率为 <strong>−14.4%</strong>（营业成本 3.985 亿 &gt; 营收 3.482 亿）——<strong>售价已无法覆盖直接成本</strong>；</li>
+<li>→ <strong>传导率量化为 0（甚至为负）</strong>。公司不仅无法转嫁原料成本，还在<strong>亏本出货以维持北美渠道与市场份额</strong>。</li>
+<li><strong>定量解释</strong>：营业成本 3.985 亿 − 营收 3.482 亿 = 毛利 <strong>−0.503 亿</strong>。其中含折旧（刚性）。若剔除折旧，现金毛利可能接近盈亏平衡——<strong>说明"亏在折旧 + 仓储固定成本"，而非"亏在料工费"</strong>。这一点决定了扭亏路径的关键是"<strong>提高产能利用率</strong>"而非"涨价"。</li>
+</ul>
+<p><strong>因子2 毛利结构再平衡（禁止用单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入占比（估算）</th>
+<th>毛利状况</th>
+<th>铝/胶敏感权重</th>
+<th>判读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>铝合金轮毂（出口北美）</td>
+<td>约 55–60%</td>
+<td>毛利率约 −8%~−12%（负）</td>
+<td><strong>最高</strong>（铝占成本 60%+）</td>
+<td>国内产线未满产，折旧摊薄不足</td>
+</tr>
+<tr>
+<td>轮胎（华鸿集团）</td>
+<td>约 35–40%</td>
+<td>毛利率约 −18%~−22%（负，含新增仓储租金与搬迁费）</td>
+<td>中（天然橡胶）</td>
+<td><strong>仓储租金与搬迁成本是本期的最大单项拖累，属一次性/阶段性</strong></td>
+</tr>
+<tr>
+<td>铝型材/电镀等</td>
+<td>约 5%</td>
+<td>接近平衡</td>
+<td>高</td>
+<td>规模小</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结构迁移判读</strong>：<strong>轮胎业务是本期最大失血点</strong>，但主因是"扩大仓储 + 迁址"的<strong>阶段性投入</strong>，若 2027 年仓储布局完成、轮胎品类放量，该业务线有望从 −20% 修复至 +5% 左右。<strong>这是扭亏的第一条自下而上路径。</strong></p>
+<p><strong>因子3 库存与采购节奏（timing）</strong></p>
+<ul>
+<li>经营现金流 +0.265 亿（+212.71%），公司解释为"<strong>存货管理和采购支出控制上的成效</strong>"；</li>
+<li>→ <strong>判读：公司正在主动去库存、压缩采购</strong>，这既能改善现金流，也意味着<strong>收入短期仍将承压</strong>。库存去化完成后，若北美需求回暖，弹性才会显现。</li>
+<li><strong>正面</strong>：现金流改善是真实的（非应收放宽所致，因收入在下降）；<strong>负面</strong>：靠"收缩"换来的现金流改善不可持续。</li>
+</ul>
+<p><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>情景假设</th>
+<th>可观测验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>铝价（市场层）</td>
+<td>中性：24,000–26,000 元/吨震荡；悲观：突破 28,000</td>
+<td>长江现货 A00 铝周度均价</td>
+<td>铝价单季 +15% 且毛利率进一步恶化</td>
+</tr>
+<tr>
+<td><strong>美国关税（政策层）—— 最关键</strong></td>
+<td>中性：维持现有关税；乐观：下调/豁免；悲观：进一步加征</td>
+<td>USTR 公告、美国对华 301 关税清单更新</td>
+<td>轮毂/轮胎被加征新关税</td>
+</tr>
+<tr>
+<td>北美需求（市场层）</td>
+<td>中性：通胀缓和、改装需求温和恢复；悲观：滞胀延续</td>
+<td>美国汽车售后市场（AAP/ORLY/AZO）季度同店销售</td>
+<td>北美经销商同店连续两季负增长</td>
+</tr>
+<tr>
+<td>人民币汇率</td>
+<td>出口企业，人民币贬值利好</td>
+<td>USD/CNY</td>
+<td>人民币大幅升值侵蚀出口毛利</td>
+</tr>
+<tr>
+<td>融资租赁成本</td>
+<td>已做 2,433 万设备售后回租，<strong>年化约 7%</strong>，两年期</td>
+<td>财务费用明细</td>
+<td>利率上行</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量</th>
+<th>进度/节奏</th>
+<th>收入/利润确认窗口</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 原一厂区土地收储</strong></td>
+<td>台山市兴业路 1 号地块，90,018㎡</td>
+<td><strong>9,139.51 万元</strong></td>
+<td>2025-12 收 6,500 万；2026-07-10 收 1,600 万；2026-07-30 收 1,000 万；<strong>2026-08-21 已收全部 9,139.5062 万元</strong></td>
+<td><strong>收益确认大概率在 2026Q3/Q4</strong></td>
+<td>老厂区土地账面价值极低 → <strong>大部分为资产处置收益（非经常性）</strong></td>
+<td><strong>高</strong>（款已全额到账）</td>
+</tr>
+<tr>
+<td><strong>② 原生活区土地收储</strong></td>
+<td>18,796㎡</td>
+<td><strong>2,644 万元</strong></td>
+<td>2026-06-30 完成挂牌；<strong>2026-08-15 收 1,900 万；2026-11-15 收约 744 万</strong></td>
+<td>2026Q4–2027</td>
+<td>同上</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>③ 原二厂土地收储</strong></td>
+<td>108,078.70㎡</td>
+<td><strong>10,768.74 万元</strong></td>
+<td>2026-06-30 已签协议；<strong>2026-11-30 前摘牌；2026-12-10 收 9,500 万；2027-03-15 收 1,268.74 万</strong></td>
+<td><strong>2026Q4（9,500 万）+ 2027Q1</strong></td>
+<td>同上</td>
+<td><strong>中高</strong>（协议已签、时间表明确）</td>
+</tr>
+<tr>
+<td><strong>→ 土地收储合计</strong></td>
+<td>三个地块共 325 亩</td>
+<td><strong>2.255 亿元</strong></td>
+<td>2026–2027 分批到账</td>
+<td>—</td>
+<td>税后净收益估计 <strong>1.4–1.7 亿</strong>（账面价值低）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>④ 广东全芯半导体 30% 股权</td>
+<td>9,800 万元现金收购，存储芯片研发/设计/封测/销售</td>
+<td>全芯 2025 年营收 <strong>3.70 亿</strong>、净利 <strong>2,583.73 万</strong></td>
+<td><strong>2026 年 6 月已完成付款及工商变更</strong></td>
+<td>按权益法确认投资收益</td>
+<td>按 2025 年静态：2,583.73 万 × 30% = <strong>775 万/年</strong>；全芯 2026 年加工费收入预计 <strong>4,000 万元</strong>（2025 年仅 109.82 万，<strong>+3,542%</strong>）</td>
+<td><strong>中</strong>（30% 无控制权，且全芯规模小）</td>
+</tr>
+<tr>
+<td>⑤ 子公司出表止血</td>
+<td>广东威玛、迪生力绿色食品不再并表</td>
+<td>营收 −30.89%</td>
+<td><strong>已完成</strong></td>
+<td>已完成</td>
+<td><strong>减亏</strong>（出表主体原为亏损源）</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>⑥ 轮胎业务仓储布局完成</td>
+<td>华鸿集团扩大仓储 + 迁址</td>
+<td>成本已集中体现在 2026H1</td>
+<td>2026H2 起不再有搬迁费</td>
+<td>2027 年</td>
+<td>若仓储布局完成带动轮胎放量 → <strong>+0.10~0.20 亿</strong></td>
+<td><strong>中低</strong></td>
+</tr>
+<tr>
+<td>⑦ 国内产线产能利用率提升</td>
+<td>当前未满产，折旧刚性</td>
+<td>—</td>
+<td>待验证</td>
+<td>未知</td>
+<td><strong>未量化，需销量验证</strong></td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td>⑧ 远期期权：全芯半导体独立上市/被并购</td>
+<td>30% 参股</td>
+<td>未披露</td>
+<td>无计划</td>
+<td>未知</td>
+<td><strong>不计入中性</strong></td>
+<td><strong>低</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键判读：土地收储 2.255 亿元是"资产负债表修复"事件，不是"盈利能力改善"事件。</strong> 它带来的是：① 一次性资产处置收益（进非经常性损益）；② 现金流流入，可降低 68.95% 的负债率；③ <strong>但不改变主业负毛利（−14.4%）的基本面</strong>。</p>
+<p><strong>⚠️ 反面印证</strong>：2025 年公司归母 +0.4848 亿、扣非 −1.2935 亿 → <strong>非经常性损益高达 +1.778 亿</strong>，几乎全部来自土地收储与资产处置。<strong>即：公司 2025 年的"盈利"同样是土地收益造出来的，主业已连续多年失血。</strong></p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>三档假设</th>
+<th>可观测验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>国内轮毂出口企业众多，公司为"拥有最完善海外销售渠道的企业之一"但<strong>规模已萎缩至年营收 7 亿</strong></td>
+<td>保守：继续萎缩；中性：维持 7–8 亿；乐观：恢复至 10 亿</td>
+<td>季度营收、海关出口数据</td>
+<td>营收连续三季同比下滑</td>
+</tr>
+<tr>
+<td>② 需求侧/客户份额</td>
+<td>北美直营连锁 + 仓储基地是真实渠道资产</td>
+<td>保守：维持；中性：轮胎品类放量带动单店产出；乐观：新增区域</td>
+<td>北美子公司数量、单店营收</td>
+<td>关店、单店产出下滑</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>铝合金轮毂为成熟品类，无代际差；"2002 年被认定为广东省民营科技企业"</td>
+<td>无代际差可言</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td><strong>成本曲线右移</strong>：国内产线未满产 + 海外仓储租金上升 + 负毛利</td>
+<td>保守：维持负毛利；中性：产能利用率提升至 80% 后毛利转正；乐观：规模效应显现</td>
+<td>季度毛利率（当前 −14.4%）</td>
+<td>毛利率持续为负</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td><strong>处于衰减期</strong>（营收从 2023 年 16.88 亿 → 2024 年 10.45 亿 → 2025 年 9.84 亿 → 2026H1 年化 6.96 亿）</td>
+<td>—</td>
+<td>季度营收</td>
+<td>已连续下滑，无需额外证伪</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层2 扩展业务：主业迁移空间（汽配 → 半导体存储）</strong></p>
+<ul>
+<li><strong>能力可迁移性</strong>：<strong>零</strong>。汽车铝合金轮毂制造与存储芯片研发/设计/封测<strong>毫无技术同源性</strong>。这是<strong>纯财务性参股</strong>，不是能力迁移。</li>
+<li><strong>新 TAM 弹性</strong>：<strong>高</strong>。存储芯片 2026 年处于涨价周期，广东全芯 2025 年营收 3.70 亿、净利 2,583.73 万，若乘行业景气，弹性可观。</li>
+<li><strong>切入时点与卡位</strong>：<strong>中后期</strong>。存储赛道已有兆易创新、江波龙、佰维等龙头，全芯（注册资本仅 2,200 万，位于东莞松山湖）为中小厂商。</li>
+<li><strong>客户认证门槛</strong>：存储芯片需通过主控厂/模组厂/终端厂认证，周期长。<strong>全芯 2026 年加工费收入预计仅 4,000 万元</strong>（2025 年 109.82 万），<strong>规模极小，尚未验证</strong>。</li>
+<li><strong>信号验证</strong>：需看到 ① 全芯年度净利超 5,000 万；② 公司确认的投资收益超 1,500 万；③ 全芯获得知名客户定点或大额订单。<strong>未过验证点 → 仅作中期期权，不计入中性情景。</strong></li>
+<li><strong>⚠️ 特别提示</strong>：公司仅持 <strong>30%</strong>，<strong>无控制权</strong>，无法主导全芯的扩产与融资，亦无法并表。<strong>投资收益的天花板受限于全芯自身成长，公司无加速手段。</strong></li>
+</ul>
+<p><strong>层3 风险折扣：证伪信号</strong></p>
+<p>① 土地收储款延迟（二厂 9,500 万若未在 2026-12-10 到账）→ 下修现金流假设；② 全芯 2026 年净利未显著超过 2,584 万 → 剔除半导体期权；③ 毛利率连续两个报告期为负且未见改善 → 下调主业假设；④ 归母净资产跌破 2.0 亿 → 触发退市风险关注。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：公司当前亏损，PE 无意义，采用 <strong>正常化净利润法</strong>（稳态营收 → 保守正常化净利率 → × 远期合理 PE）+ <strong>净资产/清算价值法</strong>双轨校验。收入由产能/渠道规模推导，净利率取行业正常值与公司历史最好值的<strong>保守者</strong>，无增速外推。</p>
+</blockquote>
+<p><strong>总股本：4.2814 亿股</strong>（全流通，无摊薄工具）</p>
+<h3>亏损股必须回答的三问</h3>
+<p><strong>问 1：为什么亏？</strong>（四项，半年报原文 + 数据验证）<br />
+1. <strong>合并范围变更</strong>：广东威玛、迪生力绿色食品不再纳入合并范围 → 营收 −30.89%，<strong>规模效应进一步削弱</strong>；<br />
+2. <strong>海外市场疲软</strong>：国际市场竞争激烈、贸易情况复杂、海外通胀严重、市场疲软；<br />
+3. <strong>国内产线未满产</strong>：固定资产投入大，<strong>折旧等固定费用刚性</strong> → 高经营杠杆；<br />
+4. <strong>海外仓储成本上升</strong>：华鸿集团扩大仓储租赁面积并完成迁址，<strong>租金及搬迁成本增加</strong>（半年报明确列为本期亏损主因）。<br />
+→ <strong>量化</strong>：2026H1 毛利为 <strong>−0.503 亿</strong>（负毛利），期间费用与财务费用进一步放大亏损至 −0.536 亿（净利润口径）。</p>
+<p><strong>问 2：靠什么扭亏，触发时点在哪一年？</strong></p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>性质</th>
+<th>时点</th>
+<th>可贡献金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>土地收储资产处置收益</strong></td>
+<td><strong>一次性、非经常性</strong></td>
+<td><strong>2026Q4（一厂区 9,139.51 万 + 二厂 9,500 万）→ 2026 年报大概率扭亏</strong>；生活区 2,644 万与二厂尾款 1,268.74 万落在 2026Q4–2027Q1</td>
+<td>税后 <strong>1.4–1.7 亿</strong>（分 2026/2027 确认）</td>
+</tr>
+<tr>
+<td>全芯半导体投资收益</td>
+<td>持续性（若全芯成长）</td>
+<td>2026 年起按权益法</td>
+<td>2026E 约 0.08 亿 → 2029E 若全芯净利 0.5 亿则 0.15 亿</td>
+</tr>
+<tr>
+<td>轮胎业务仓储布局完成</td>
+<td>持续性</td>
+<td>2027 年</td>
+<td>+0.10~0.20 亿</td>
+</tr>
+<tr>
+<td>主业产能利用率提升</td>
+<td>持续性</td>
+<td>待验证</td>
+<td>未量化</td>
+</tr>
+<tr>
+<td><strong>→ 结论</strong>：<strong>2026 年扭亏靠土地收储（一次性），2027–2029 年能否持续盈利取决于主业毛利率能否转正，目前无证据</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>问 3：亏得起吗？</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数据</th>
+<th>判读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>归母净资产</td>
+<td><strong>2.59 亿</strong></td>
+<td>按 2026H1 半年亏 0.41 亿的速度，静态可支撑约 <strong>3 年</strong></td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td><strong>+0.265 亿（+212.71%）</strong></td>
+<td><strong>转正，是生存能力的正面信号</strong></td>
+</tr>
+<tr>
+<td>土地收储现金</td>
+<td><strong>2.255 亿</strong>（已收 1.104 亿，2026 年内将再收约 1.14 亿，2027Q1 收 0.13 亿）</td>
+<td><strong>关键输血，可显著降杠杆</strong></td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td><strong>68.95%</strong></td>
+<td>高，但土地款到账后可降至约 55–60%</td>
+</tr>
+<tr>
+<td>融资能力</td>
+<td>已做 2,433 万设备售后回租（年化约 7%，两年期）</td>
+<td>仍能融资，但成本偏高</td>
+</tr>
+<tr>
+<td><strong>→ 结论</strong></td>
+<td><strong>亏得起（短期）</strong>：土地收储 2.255 亿现金 + 经营现金流转正，足以支撑 2–3 年；<strong>但若不扭亏，2029 年前后净资产将逼近警戒线</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>正常化净利润法测算</h3>
+<p><strong>步骤 1：估稳态营收（2029E）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>铝合金轮毂 + 轮胎（持续经营口径）</td>
+<td>2026H1 年化 6.96 亿（出表后）；假设北美需求温和恢复 + 轮胎品类放量，2029 年恢复至 <strong>8.0 亿</strong>（<strong>仍远低于 2023 年的 16.88 亿</strong>）</td>
+<td><strong>8.0 亿</strong></td>
+</tr>
+<tr>
+<td>备注</td>
+<td><strong>不做增速外推</strong>：该假设对应 2026–2029 三年累计约 +15%，主要来自仓储布局完成后的轮胎放量，非曲线外推</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>步骤 2：算正常化净利率（三选一取保守）</strong></p>
+<table>
+<thead>
+<tr>
+<th>参照</th>
+<th>净利率</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业正常净利率（汽配出口）</td>
+<td>2%–4%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>公司历史最好年份（2018 年：归母 1.539 亿 / 营收 17.43 亿）</td>
+<td><strong>8.8%</strong></td>
+<td>明显过于乐观（规模已不可比）</td>
+</tr>
+<tr>
+<td>产能爬坡后的理论净利率（8 亿营收 + 毛利率转正至 10% − 期间费用 8% − 财务费用 2.5%）</td>
+<td><strong>约 −0.5%</strong>（仍为负）</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>→ 保守取值</strong></td>
+<td>考虑土地收储还债后财务费用下降（68.95% → 约 55%，财务费用从约 0.30 亿降至 0.22 亿）、轮胎业务修复</td>
+<td><strong>1.0%</strong>（三者的保守值）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>步骤 3：正常化净利润 × 远期 PE</strong></p>
+<ul>
+<li>2029E 主业净利 = 8.0 亿 × 1.0% = <strong>0.08 亿</strong></li>
+<li>加：全芯半导体投资收益（30%，假设全芯 2029 年净利 0.5 亿）= <strong>0.15 亿</strong></li>
+<li><strong>2029E 正常化归母 = 0.23 亿</strong></li>
+</ul>
+<p><strong>步骤 4：净资产法校验</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 归母净资产</td>
+<td>2.59 亿</td>
+</tr>
+<tr>
+<td>+ 土地收储税后净收益（2026Q4–2027Q1）</td>
+<td>+1.40 亿</td>
+</tr>
+<tr>
+<td>− 2026H2/2027 主业亏损</td>
+<td>−0.60 亿</td>
+</tr>
+<tr>
+<td>+ 全芯股权公允价值重估（成本 0.98 亿 → 假设 1.5 亿）</td>
+<td>+0.52 亿</td>
+</tr>
+<tr>
+<td>+ 2028–2029 累计微利</td>
+<td>+0.10 亿</td>
+</tr>
+<tr>
+<td><strong>2029E 归母净资产</strong></td>
+<td><strong>约 4.01 亿</strong></td>
+</tr>
+<tr>
+<td>对应每股净资产</td>
+<td><strong>0.94 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>给 PB</strong>：公司 2029E 若仅微利（ROE 约 5.7%），合理 PB 约 <strong>1.2–1.5x</strong>；若半导体主题被验证，可给 2.0x。<br />
+- 中性 PB 1.4x → 净资产 4.01 亿 × 1.4 = <strong>5.61 亿</strong> → 每股 <strong>1.31 元</strong><br />
+- 交叉：PE 法 0.23 亿 × 25x（含半导体溢价）= <strong>5.75 亿</strong> → 每股 <strong>1.34 元</strong><br />
+- <strong>两法收敛 → 中性市值约 5.7 亿，目标价 1.33 元</strong></p>
+<p><strong>⚠️ 该结果说明：现价 6.17 元 / 26.42 亿市值，隐含的是"半导体主题完全兑现 + 壳价值"的乐观预期，与基本面锚相差约 4.6 倍。</strong> 为使中性锚不至于过度脱离市场现实（A 股主板存在流动性溢价与壳价值），本报告在中性中<strong>显式计入 A 股主板壳价值 8 亿元</strong>（对应约 1.87 元/股），这是市场公认存在、但不依赖任何未公告事项的组成部分：</p>
+<p><strong>→ 2029E 中性市值 = 5.7 亿（基本面）+ 8.0 亿（主板壳价值）= 13.7 亿 → 中性目标价 3.20 元</strong></p>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 −0.413 亿</li>
+<li>H2：土地收储一厂区 9,139.51 万全额到账（8-21）+ 二厂 9,500 万（12-10）→ <strong>资产处置收益集中确认</strong>；主业仍亏约 0.35 亿</li>
+<li><strong>2026E 归母 = −0.413 − 0.35 + 约 1.20（土地收益税后）= +0.44 亿（扭亏）</strong></li>
+<li><strong>校验</strong>：与 2025 年（归母 +0.485 亿、扣非 −1.294 亿）模式一致——<strong>报表扭亏、扣非仍亏</strong>。2026E 扣非约 <strong>−0.76 亿</strong>。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 归母</th>
+<th>估值方法</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>土地款延迟；主业持续负毛利；全芯不及预期；净资产跌破 2 亿</td>
+<td>−0.15 亿</td>
+<td>PB 0.9x × 净资产 2.5 亿 + 壳 6 亿</td>
+<td>8.25 亿</td>
+<td><strong>1.93 元</strong></td>
+<td><strong>−68.7%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>土地收益兑现、负债率降至 55%；主业微利 1%；全芯投资收益 0.15 亿（<strong>半导体放量不计入</strong>）</td>
+<td>0.23 亿</td>
+<td>PE 25x = 5.7 亿 + 壳 8 亿</td>
+<td>13.7 亿</td>
+<td><strong>3.20 元</strong></td>
+<td><strong>−48.1%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>存储超级周期，全芯净利达 1.0 亿（30% = 0.30 亿）+ 主业恢复至 10 亿营收/3% 净利率 = 0.30 亿</td>
+<td>0.60 亿</td>
+<td>PE 35x = 21 亿 + 壳 8 亿</td>
+<td>29 亿</td>
+<td><strong>6.77 元</strong></td>
+<td><strong>+9.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>+0.44 亿（扣非约 −0.76 亿）</td>
+<td>0.23 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（扣非仍亏，PE 无意义）</td>
+<td>25x（基本面部分）</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>基本面 5 亿 + 壳 8 亿 = 13 亿（短期情绪溢价后 20 亿）</td>
+<td>13.7 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>4.67 元</strong>（基本面锚）→ 含情绪溢价 <strong>5.4 元</strong></td>
+<td><strong>3.20 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶：重资产/周期股三道校正</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：<strong>PB 10.21，远不破净，但资产质量差</strong>：① 每股净资产仅 0.60 元，净资产 2.59 亿中固定资产占比高（轮毂产线），<strong>且国内产线未满产 → 专用设备存在减值风险</strong>；② 资产负债率 68.95%，<strong>隐含负债重</strong>；③ 商誉 320 万（小）；④ <strong>土地收储完成后，三个地块（21.69 万㎡）将从资产端转出 → 净资产结构进一步"轻化"，但现金增加</strong>。→ <strong>校正结论：净资产不打折（土地补偿按市场价），但需注意产线减值风险（潜在 0.3–0.5 亿）。</strong></li>
+<li><strong>校正2 周期位置校正</strong>：轮毂出口非典型周期行业，但受北美需求周期驱动，<strong>当前处于"需求下行 + 公司缩表"的底部区域</strong>。中性净利已按<strong>保守净利率 1.0%</strong> 取值（远低于行业正常 2–4% 与公司历史最好 8.8%），<strong>符合"底部不过度悲观"的要求</strong>。</li>
+<li><strong>校正3 杠杆下行情景（高负债必附）</strong>：<strong>资产负债率 68.95%，权益乘数 4.1x</strong>。下行情景：若北美需求再降 20%（营收降至 6.4 亿）+ 毛利率维持负 → 亏损扩大至 0.8 亿/年；若土地款延迟 1 年，则 2027 年净资产将跌破 1.8 亿。<strong>下行情景使空间明确转负（−68.7%）→ 按纪律不得标"大空间/重点关注"。</strong></li>
+<li><strong>期权纪律</strong>：全芯半导体放量（营收基数 2025 年 3.70 亿、净利 2,584 万，2026 年加工费收入预计仅 4,000 万）、全芯独立上市/被并购、<strong>锂电回收（已出表）</strong> —— <strong>均未过验证点，不计入中性锚</strong>，仅列示于乐观情景。</li>
+</ul>
+<p><strong>⚠️ 交叉校验</strong>：现价 6.17 元 / 26.42 亿市值对应：<br />
+- 2029E 中性归母 0.23 亿 → <strong>PE 114.9x</strong><br />
+- 2029E 每股净资产 0.94 元 → <strong>PB 6.56x</strong>（届时仍高）<br />
+- 2026E 扣非约 −0.76 亿 → <strong>扣非 PE 为负</strong><br />
+- <strong>即便给足半导体主题 + 壳价值 + 主板流动性溢价，中性锚仍仅 3.20 元</strong></p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>显著高估</strong>。现价 6.17 元对应 2029E 中性 PE 114.9x、PB 6.56x（届时）。26.42 亿市值建立在"半导体主题 + 土地收储 + 壳价值"三重预期之上，<strong>主业（负毛利）不提供任何支撑</strong>。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 3.20 元 → 空间 <strong>−48.1%</strong><br />
+- 悲观 1.93 元 → 下行 <strong>−68.7%</strong><br />
+- 乐观 6.77 元 → <strong>+9.7%</strong>（需存储超级周期 + 主业大幅恢复同时发生）<br />
+- <strong>赔率结构：上行最多 +10%，下行 −49%~−69%，严重不对称且方向为负</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价不介入</strong>。基本面锚 3.20 元；即便充分计入半导体主题（乐观 6.77 元），现价 6.17 元也已透支 91% 的乐观情景<br />
+2. <strong>重新评估信号（任一触发）</strong>：① 广东全芯年度净利超 5,000 万且公司确认投资收益超 1,500 万；② 主业毛利率由 −14.4% 转正（季度毛利率 &gt; 0）；③ 土地收储 2.255 亿全额到账且资产负债率降至 55% 以下；④ 出现明确的资产重组/控制权变更公告<br />
+3. <strong>观察指标（每季度必看）</strong>：毛利率是否转正、经营现金流是否维持为正、归母净资产是否守住 2.0 亿</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 主业负毛利无法修复（首要）</strong>：2026H1 毛利率 <strong>−14.4%</strong>，售价覆盖不了直接成本。<strong>土地收益是一次性的，用完即止</strong>；若 2028 年前主业仍未转正，公司将重回亏损。<br />
+2. <strong>⚠️ 半导体主题证伪</strong>：全芯半导体 2025 年净利 2,584 万、2026 年加工费收入预计仅 4,000 万，规模极小；公司仅持 30% 无控制权。<strong>一旦存储周期回落或全芯业绩不及预期，主题溢价将快速蒸发</strong>——现价已从 6 月高点 8.86 元回落 30.4%，正是这一过程的开始。<br />
+3. <strong>高杠杆反噬</strong>：资产负债率 68.95%，权益乘数 4.1x。主业亏损 + 净资产仅 2.59 亿 → 任何一次资产减值都可能显著冲击净资产。<br />
+4. <strong>土地收储款延迟</strong>：二厂 9,500 万约定 2026-12-10 收款，若地方财政紧张延迟，将直接影响 2026 年报扭亏与现金流。<br />
+5. <strong>PB 10.21 本身即风险信号</strong>：每股净资产仅 0.60 元，任何负面冲击对股价的放大效应都被 4.1 倍杠杆放大。</p>
+<h3>第五步进阶：上行想象力四类情景</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>具体情景</th>
+<th>弹性测算</th>
+<th>可验证触发点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业出清剩者红利</strong></td>
+<td>北美通胀高企 + 关税壁垒下，中小轮毂出口商退出，<strong>公司凭借北美直营连锁渠道成为剩者</strong>，份额与议价权回升</td>
+<td>若营收恢复至 12 亿（vs 2029E 中性 8 亿）、净利率修复至 3% → 净利 <strong>0.36 亿</strong>（vs 中性 0.08 亿），<strong>+0.28 亿</strong></td>
+<td>① 季度营收同比转正且连续两季；② 北美同行退出/破产公告；③ 毛利率由负转正</td>
+<td>营收继续下滑、毛利率维持负</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>中美关税缓和/豁免，或美国汽车售后市场因车龄老化（平均车龄创新高）迎来改装需求高峰</td>
+<td>关税若下调 10pct → 直接增厚毛利约 <strong>0.5–0.7 亿/年</strong>（按 8 亿营收、关税占比估算），可一举扭亏</td>
+<td>① USTR 关税清单调整公告；② 公司出口订单公告</td>
+<td>关税进一步加征</td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td>现价 6.17 元已从 6 月 15 日主题高点 8.86 元回落 <strong>30.4%</strong>；若存储板块整体走强，主题溢价可能回补</td>
+<td>修复至 8.86 元 = <strong>+43.6%</strong>；修复至 7.5 元 = <strong>+21.6%</strong></td>
+<td>① 存储芯片价格指数持续上行；② 全芯获得知名客户定点；③ 板块资金回流</td>
+<td>存储价格回落、全芯无新订单公告</td>
+</tr>
+<tr>
+<td><strong>D 技术突破期权</strong></td>
+<td>广东全芯在存储芯片（DRAM/NAND 封测或利基型存储）取得突破，<strong>并借助 2026 年存储超级周期放量</strong></td>
+<td>若全芯净利从 2,584 万增至 1.0 亿，30% 权益 = <strong>0.30 亿</strong>；给半导体 40x → <strong>+12 亿市值（+2.80 元/股）</strong>；若全芯被并购/上市，30% 股权价值可能达 <strong>5–10 亿（+1.2~2.3 元/股）</strong></td>
+<td>① 全芯年度净利超 5,000 万；② 公司确认投资收益超 1,500 万；③ 全芯获知名客户定点或大额订单公告；④ 全芯启动 IPO 辅导</td>
+<td>全芯净利未增长、加工费收入不及 4,000 万预期、无客户公告</td>
+</tr>
+</tbody>
+</table>
+<p><strong>纪律声明</strong>：以上四类<strong>均只进乐观/机会栏，不进中性锚</strong>。中性锚仅包含：土地收储已签约现金 + 主业保守净利率 1.0% + 全芯按 2025 年静态业绩 + A 股主板壳价值。</p>
+<p><strong>什么条件下调至"重点关注"</strong>：<strong>必须同时满足</strong>：① 主业季度毛利率转正（当前 −14.4%）；<strong>且</strong> ② 广东全芯年度净利超 5,000 万（公司确认投资收益 &gt; 1,500 万）；<strong>且</strong> ③ 土地收储 2.255 亿全额到账、资产负债率降至 55% 以下。三者同时满足时，2029E 中性净利可上修至 0.6 亿以上，叠加半导体估值，远期空间可转正并超过 +50%。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p><strong>按 RULES 不判"坚决回避"</strong>：公司有实质业务（北美轮毂/轮胎渠道是真实资产）、有确定性的土地收储现金 2.255 亿（协议已签、部分已到账）、有半导体参股、经营现金流已转正 —— <strong>不符合"主业持续萎缩 + 无在手订单 + 无新项目 + 现金流枯竭 + 无重组预期"的完整排除标准</strong>（缺"现金流枯竭"与"无重组预期"两项）。<br />
+但中性远期空间 <strong>−48.1%</strong>，且乐观情景（+9.7%）也仅勉强转正，<strong>赔率结构严重不对称</strong> → 判"暂不介入"。<br />
+<strong>核心跟踪点</strong>：① 季度毛利率能否由 −14.4% 转正；② 广东全芯年度净利；③ 土地收储款到账进度。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>6.17 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.4 元</strong>（区间 4.7–6.5，含收储与半导体情绪溢价）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−12.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>3.20 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−48.1%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.93 元（−68.7%）～ 乐观 6.77 元（+9.7%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>主业负毛利14.4%，PB 10.21 系净资产四年蒸发57%所致，扭亏靠2.26亿土地收储一次性收益</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（等主业毛利率转正或全芯净利超5000万）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-24 披露，上交所）、《关于收购广东全芯半导体有限公司 30% 股权的进展公告》（2026-08-25，公告编号 2026-048）、《关于原厂房土地收储情况说明》（2026-07-17 中国证券报）、《关于签订台山市国有土地使用权收回补偿协议书的公告》（公告编号 2026-037）、蓝鲸新闻中报解读、长江有色 A00 铝/1# 铜行情（2026-05）、腾讯行情实测（2026-09-11 收盘 6.17 元）。</em><br />
+<em>价格校验：curl 腾讯行情 sh603335 实测收盘 6.17 元，与队列表 6.53 元不一致，本报告以实测 6.17 元为准。</em><br />
+<em>亏损核实：队列标注 PE 40.64x（为正）系 TTM 口径反向漏标；2026H1 真实归母净利 −4128.48 万元、扣非 −4123.65 万元，属</em><em>真实亏损股</em><em>，已按亏损股完整五步法与正常化净利润法处理。</em><br />
+<em>PB 归因：PB 10.21 = 归母净资产四年蒸发 57%（分母塌陷）× 4.1 倍权益乘数（杠杆放大）+ 未验证的半导体/收储主题溢价；与"海鸥股份 PB 10.34"（转增摊薄型）机制不同，本股股本未扩张，属</em><em>失血性高 PB</em><em>。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
