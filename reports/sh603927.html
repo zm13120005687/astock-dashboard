@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中科软（603927）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>中科软（603927）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>13.61 元</strong>（最近交易日收盘） ｜ 总市值 <strong>113.10 亿</strong> ｜ PE(TTM) <strong>54.57x</strong> ｜ PB <strong>3.68x</strong> ｜ 总股本 <strong>8.3104 亿股</strong><br />
+行业：计算机应用 / 保险 IT（垂直行业应用软件）｜ 板块：上交所主板<br />
+<strong>⚠️ 口径纠偏（反向漏标，重点）</strong>：队列表"亏损"标记为 <strong>False</strong>、PE_TTM <strong>54.57 为正</strong>。经查 2026 年半年报（2026-08-25 披露）：<strong>H1 归母 +9,034.43 万元（同比 −15.60%）看似盈利，但拆季发现 —— 2026Q1 单季归母为 −1,584.23 万元（亏损），H1 利润 100% 由 Q2 贡献（Q2 归母 +1.0619 亿）</strong>。<br />
+进一步核查：2025Q1 归母亦为 −0.162 亿（Q1 亏损是软件行业季节性常态），<strong>故不构成"实亏"，但必须提示：公司利润高度集中在 Q2/Q4，Q1 季节性亏损，PE_TTM 54.57 掩盖了季度利润的极端不均衡</strong>。另识别一次性因素：<strong>2025H1 营业外收入基数较高，2026H1 同比减少，是 H1 归母 −15.60% 的主因</strong>（非主业恶化）。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：中国保险行业 IT 系统的"国家队"级供应商（背靠中科院软件所），为保险公司做核心业务系统（承保、理赔、保单管理）+ 监管数据治理，近年推进"FDE 能力升级"试图从项目制转型为订阅制。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 24.355 亿元，同比 +0.06%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>分行业</th>
+<th>2026H1 收入</th>
+<th>同比</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保险 IT</strong></td>
+<td><strong>13.28 亿</strong></td>
+<td><strong>+2.91%</strong></td>
+<td>54.5%</td>
+</tr>
+<tr>
+<td>教科文及其他</td>
+<td>5.39 亿</td>
+<td><strong>+33.94%</strong></td>
+<td>22.1%</td>
+</tr>
+<tr>
+<td>政务 IT</td>
+<td>2.36 亿</td>
+<td><strong>−26.47%</strong></td>
+<td>9.7%</td>
+</tr>
+<tr>
+<td>非保险金融 IT</td>
+<td>1.94 亿</td>
+<td><strong>−28.83%</strong></td>
+<td>8.0%</td>
+</tr>
+<tr>
+<td>医疗 IT</td>
+<td>1.31 亿</td>
+<td>−7.59%</td>
+<td>5.4%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分产品（2026 中报口径）</strong>：软件开发及服务 20.43 亿（<strong>83.88%</strong>）｜系统集成及其服务 3.64 亿（14.96%）｜软件产品 0.194 亿（0.80%）｜其他 0.087 亿（0.36%）。<br />
+<strong>分地区（2026 中报）</strong>：华北 12.21 亿（<strong>50.12%</strong>）｜华东 6.04 亿（24.81%）｜华南 2.41 亿（9.91%）｜其他 3.69 亿（15.16%）。</p>
+<p><strong>核心产品</strong>：保险核心业务系统（承保/理赔/保单管理）、保险监管数据治理平台、AI 智能核保/理赔、FDE（Forward Deployed Engineer）服务体系、模型基座授权、年度订阅服务、版本迭代升级、专属微调定制。</p>
+<p><strong>主要客户/下游</strong>：保险公司（覆盖国内绝大多数保险机构）、银行/非银金融机构、政府部门、医疗机构、教科文单位。<strong>客户集中度低、分散度高，单一客户依赖风险小</strong>。</p>
+<p><strong>境内外收入占比</strong>：基本 100% 国内（华北占比 50.12%，与总部在北京 + 保险机构总部集中在北京高度相关）。海外布局处于起步阶段（研报提及"产品出海进展不及预期"为风险项）。</p>
+<p><strong>股东背景</strong>：中科院软件所为重要股东背景（公司名称即来源于此），具备<strong>国资科研院所基因</strong>，在政务/教科文领域具备天然信任优势。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/文件</th>
+<th>发文部门</th>
+<th>时间</th>
+<th>量化指标与影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>《关于银行业保险业人工智能安全开发应用的指导意见》（金发〔2026〕8 号，"8 号文"）</strong></td>
+<td><strong>国家金融监督管理总局</strong></td>
+<td><strong>2026-06-18</strong></td>
+<td>① 董（理）事会应指定专门委员会对 AI 开发应用负责；② 建立 AI 应用全生命周期管理体系（需求分析/数据准备/训练开发/部署运行/维护迭代/评估退出）；③ <strong>强化高风险应用准入管理</strong>：承保理赔、风险管理等涉 AI 场景视为<strong>高风险应用</strong>；④ 坚持<strong>自主可控</strong>，加强信创适配</td>
+</tr>
+<tr>
+<td>《金融科技发展规划（2025—2030 年）》</td>
+<td>中国人民银行</td>
+<td>2025 发布，2026 执行</td>
+<td>"安全可控、架构重塑、数字赋能、生态协同"四大原则</td>
+</tr>
+<tr>
+<td><strong>金融信创强制替换</strong></td>
+<td>监管层</td>
+<td><strong>2026 年底前</strong></td>
+<td>要求国有大行、头部股份行/券商/险企核心业务系统<strong>完成全栈国产化替换</strong>（底层算力/数据库/中间件/前端应用）</td>
+</tr>
+<tr>
+<td>《国务院关于深入实施"人工智能+"行动的意见》</td>
+<td>国务院</td>
+<td>2025—2026</td>
+<td>AI+金融为重点行动</td>
+</tr>
+<tr>
+<td>《"十五五"规划纲要》</td>
+<td>全国人大</td>
+<td>2026</td>
+<td>加快人工智能技术创新与治理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>力度级别判定</strong>：<strong>国家级强监管 + 强制信创 + AI 准入三重驱动，属"合规驱动的刚性需求"</strong>。<br />
+<strong>⚠️ 对中科软的双刃性</strong>：8 号文对中科软是<strong>明确的利好</strong>（合规要求 → 险企必须采购具备"全生命周期管理 + 可追溯 + 信创适配"能力的 AI 系统，中科软这类有国资背景、懂保险业务的厂商受益），<strong>但也是成本项</strong>（AI 治理架构、数据安全评估、算法风险筛查将抬高交付成本）。同时 8 号文明确"<strong>摒弃为新而新、为用而用</strong>"，意味<strong>短期 AI 项目审批会变慢、变严</strong> —— 这解释了 2026H1 保险 IT 仅 +2.91% 的温和增速。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>中国保险业 IT 投入（2025）</strong></td>
+<td><strong>672.8 亿元，同比 +14%</strong></td>
+</tr>
+<tr>
+<td>保险业科技投入中 AI 板块</td>
+<td><strong>年均复合增速 22.5%</strong>（艾瑞咨询），为增速最快方向</td>
+</tr>
+<tr>
+<td>中国保险业原保费收入（2025）</td>
+<td><strong>突破 6 万亿元，同比 +7%</strong>，全球第二大保险市场</td>
+</tr>
+<tr>
+<td>银行业 IT 投入（2025）</td>
+<td>3,118.5 亿元（+12%）｜证券业 543.4 亿（+15%）</td>
+</tr>
+<tr>
+<td>全球保险科技需求（2026E）</td>
+<td>同比 +21%；2026 年预计超 <strong>200 家</strong>保险机构部署 LLM 客户交互系统</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>保险 IT 头部：<strong>中科软、恒生电子（保险板块）、软通动力、宇信科技</strong>；中科软在<strong>保险核心系统</strong>领域市占率领先，但面临综合厂商挤压</td>
+</tr>
+<tr>
+<td>行业整体</td>
+<td>金融科技市场规模已突破 4.5 万亿元，年复合增速 12%+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026Q2）</strong>：营收 14.265 亿（同比 <strong>+6.40%</strong>，Q1 为 −7.71%，<strong>V 型反转</strong>）；归母 <strong>1.0619 亿</strong>（同比 −13.86%）；毛利率 <strong>30.60%</strong>（Q1/H1 为 27.77%，同比 −0.73pct）。<br />
+→ <strong>收入企稳回升（Q2 +6.40%），但利润仍下滑（主因 2025H1 营业外收入高基数）</strong>，<strong>毛利率小幅承压</strong>。</p>
+<p><strong>⚠️ 最关键的长期趋势（必须直面）</strong>：归母净利从 2022 年 <strong>6.38 亿</strong> → 2023 年 <strong>6.55 亿</strong> → 2024 年 <strong>3.55 亿</strong> → 2025 年 <strong>2.24 亿</strong>，<strong>三年下滑 66%</strong>；同期营收从 67.05 亿降至 60.28 亿（−10%）。<strong>这是"减收 + 减利 + 毛利率下行"三重恶化，而非单纯的周期波动</strong> —— 反映保险 IT 行业<strong>项目制模式已走到尽头</strong>（人力成本上升 + 险企 IT 预算收紧 + 价格战）。<strong>FDE 转型是唯一的破局路径。</strong></p>
+<h3>（3）产业链传导</h3>
+<ul>
+<li><strong>上游</strong>：人力（程序员/实施顾问，<strong>占总成本 60%+</strong>）、服务器/算力（AI 训练推理）、数据库/中间件（信创替换后为国产）。<strong>议价权对上游弱</strong>（人力成本刚性上涨）。</li>
+<li><strong>下游</strong>：保险公司（议价权<strong>强</strong>，IT 预算受保费增速与监管影响）、政府/医疗机构（议价权<strong>极强</strong>，回款慢）。</li>
+<li><strong>产业链位置</strong>：<strong>中游行业应用软件商</strong>。相比通用软件商，<strong>行业 Know-how 是壁垒</strong>（保险业务流程 + 监管标准的理解，普通技术厂商无法快速复制）；但相比平台型软件商，<strong>产品化程度低（软件开发及服务占 83.88%）→ 规模不经济</strong>。</li>
+<li><strong>议价权判定：中等偏弱</strong>。佐证：毛利率从 2023 年高位降至 2025 年 <strong>24.71%</strong>，应收账款周转率 6.93 次（尚可），经营现金流 H1 <strong>−10.80 亿</strong>（<strong>回款极差，是最大隐患</strong>）。</li>
+</ul>
+<h4>第二步进阶：成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子 1 · 成本传导弹性（转嫁系数）</strong><br />
+- 项目制合同：<strong>人天计价</strong>，人力成本上涨理论上可传导，但<strong>险企 IT 预算刚性 + 竞标压价 → 实际传导率 ≈ 0.4–0.5</strong>。<br />
+- 信创替换项目：<strong>政策性定价，传导率 ≈ 0.3</strong>（预算固定、要求提高）。<br />
+- AI 项目：新定价，<strong>传导率 ≈ 0.7</strong>（稀缺性溢价）。<br />
+- <strong>综合传导率约 0.45</strong>。2026H1 毛利率 27.77%（同比 −0.73pct），说明<strong>人力成本上涨未能充分传导</strong>。<br />
+- 验证点：人均创收/人均创利；软件开发及服务毛利率季度走势。证伪信号：连续两季毛利率跌破 26%。</p>
+<p><strong>因子 2 · 毛利结构再平衡（分业务线，禁单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入</th>
+<th>毛利率（估）</th>
+<th>权重</th>
+<th>人力成本敏感权重</th>
+<th>战略定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保险 IT</strong></td>
+<td>13.28 亿</td>
+<td><strong>~29%</strong></td>
+<td>54.5%</td>
+<td><strong>高</strong>（定制化交付重）</td>
+<td>现金牛+AI 主战场</td>
+</tr>
+<tr>
+<td>教科文及其他</td>
+<td>5.39 亿</td>
+<td>~25%</td>
+<td>22.1%</td>
+<td>中高</td>
+<td><strong>增长引擎（+33.94%）</strong></td>
+</tr>
+<tr>
+<td>政务 IT</td>
+<td>2.36 亿</td>
+<td>~22%</td>
+<td>9.7%</td>
+<td>高（回款最差）</td>
+<td><strong>收缩中（−26.47%）</strong></td>
+</tr>
+<tr>
+<td>非保险金融 IT</td>
+<td>1.94 亿</td>
+<td>~26%</td>
+<td>8.0%</td>
+<td>中</td>
+<td>波动大（−28.83%）</td>
+</tr>
+<tr>
+<td>医疗 IT</td>
+<td>1.31 亿</td>
+<td>~24%</td>
+<td>5.4%</td>
+<td>中高</td>
+<td>承压（−7.59%）</td>
+</tr>
+<tr>
+<td>系统集成</td>
+<td>3.64 亿（产品口径）</td>
+<td><strong>~8%</strong></td>
+<td>14.96%</td>
+<td>低（硬件为主）</td>
+<td><strong>毛利拖累项</strong></td>
+</tr>
+<tr>
+<td><strong>加权</strong></td>
+<td>24.36 亿</td>
+<td><strong>27.77%</strong></td>
+<td>100%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构迁移方向（正面）</strong>：教科文及其他 +33.94%（占比升至 22.1%）、政务 IT −26.47%（占比降至 9.7%）→ <strong>低毛利的政务在收缩、教科文在放量</strong>，这是<strong>结构性改善</strong>。<br />
+<strong>结构迁移风险（负面）</strong>：系统集成（毛利率 ~8%）占 14.96%，若信创替换带来更多系统集成收入，将<strong>稀释综合毛利率</strong>。<br />
+<strong>→ 结论：FDE 转型（订阅制/模型授权）能否把"软件开发及服务"的 29% 毛利率提到 35%+，是估值的唯一核心变量。</strong></p>
+<p><strong>因子 3 · 库存与采购节奏（timing）</strong><br />
+- 软件公司无存货，但有<strong>合同履约成本（未验收项目成本）</strong>与<strong>应收账款</strong>。<br />
+- <strong>2026H1 经营现金流 −10.80 亿</strong>（上年同期 −13.35 亿，<strong>收窄 2.55 亿，改善但仍巨额流出</strong>）→ <strong>已确认收入未回款</strong>，这是项目制商业模式的致命伤。<br />
+- <strong>无囤货收益/接货损失问题</strong>，但也<strong>无库存缓冲</strong>，成本即期发生。<br />
+- <strong>关键判断</strong>：经营现金流持续为负 + 净利润为正 → <strong>利润质量差</strong>，若回款恶化将引发减值。</p>
+<p><strong>因子 4 · 政策/市场锚点（成本驱动变量）</strong><br />
+- <strong>政策层</strong>：① 8 号文（金发〔2026〕8 号）要求 AI 全生命周期管理、数据安全评估、算法风险筛查 → <strong>合规交付成本上升 5%–10%</strong>；② 金融信创 2026 年底前完成全栈替换 → <strong>信创适配研发投入刚性</strong>；③ 若后续出台 AI 司法/金融<strong>准入目录</strong>，先发者受益。<br />
+- <strong>市场层</strong>：AI 工程师薪酬（2025–2026 大幅上涨）、GPU 算力租赁价格（AI 训练/推理成本）。<br />
+- 情景：若 AI 工程师薪酬再涨 20% 而 AI 项目定价未同步 → 毛利率受损 2–3pct。<br />
+- 验证点：研发费用率变化；AI 相关收入是否单独披露及毛利率。<br />
+- <strong>证伪信号</strong>：研发投入持续加大但毛利率不升反降（说明 AI 投入未转化为定价权）。</p>
+<blockquote>
+<p><strong>本因子输出 → 第四步毛利率假设</strong>：中性 2029E 综合毛利率 <strong>28.5%</strong>（FDE 转型部分兑现 +3.8pct，信创集成稀释 −1.0pct，人力成本 −0.5pct）；悲观 25.5%；乐观 32.0%。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额/体量</th>
+<th>进度</th>
+<th>收入确认时点</th>
+<th>利润贡献（中性）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保险 IT·AI 核心系统改造</strong></td>
+<td>2026H1 13.28 亿（+2.91%）；AI 从外围向核心场景纵深渗透；核心系统持续改造 + 监管数据治理深化</td>
+<td>持续</td>
+<td>2026–2029</td>
+<td>按 2027/2028/2029 分别新增 2.0/3.5/4.5 亿收入，净利率 8% → 2029 年 +0.36 亿</td>
+<td><strong>中高</strong>（政策+需求双驱动）</td>
+</tr>
+<tr>
+<td><strong>教科文及其他（数智化）</strong></td>
+<td>2026H1 5.39 亿（<strong>+33.94%</strong>）</td>
+<td>高增长中</td>
+<td>2026–2029</td>
+<td>按 2029 年 14.0 亿收入、净利率 6% → 0.84 亿</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td><strong>金融信创全栈替换（2026 年底前完成）</strong></td>
+<td>监管强制时间节点</td>
+<td>2026 攻坚收官</td>
+<td>2026–2027</td>
+<td>信创项目毛利率偏低（~22%），增收不增利</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>FDE 能力升级（商业模式转型）</strong></td>
+<td>从项目交付 → <strong>模型基座授权 + 年度订阅 + 版本迭代 + 专属微调定制</strong></td>
+<td>战略推进中，<strong>未过验证点</strong></td>
+<td>2027–2029</td>
+<td><strong>不计入中性</strong></td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td><strong>非保险金融 IT</strong></td>
+<td>2026H1 1.94 亿（−28.83%，项目验收周期性影响）</td>
+<td>波动</td>
+<td>2027 恢复</td>
+<td>按 2029 年 6.5 亿、净利率 5% → 0.33 亿</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>医疗 IT</strong></td>
+<td>2026H1 1.31 亿（−7.59%）</td>
+<td>承压</td>
+<td>2027–2029</td>
+<td>按 2029 年 4.0 亿、净利率 4% → 0.16 亿</td>
+<td><strong>中低</strong></td>
+</tr>
+<tr>
+<td><strong>政务 IT</strong></td>
+<td>2026H1 2.36 亿（−26.47%）</td>
+<td><strong>收缩中</strong></td>
+<td>—</td>
+<td>按 2029 年 8.0 亿、净利率 3%（回款差）→ 0.24 亿</td>
+<td><strong>中低</strong></td>
+</tr>
+<tr>
+<td><strong>远期期权：产品出海</strong></td>
+<td>研报明确列为风险项"产品出海进展不及预期"</td>
+<td>起步</td>
+<td>—</td>
+<td><strong>不计入中性</strong></td>
+<td><strong>低</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计（中性·2029 相对 2025 年）</strong>：新增年收入约 <strong>8.0 亿元</strong>（60.28 → 68.0 亿），新增净利约 <strong>1.2–1.5 亿元</strong>（2.24 → 3.5–3.7 亿，不含 FDE 溢价）。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层 1 · 现有业务：市场容量 × 份额变量（5 锚点）</strong><br />
+1. <strong>供给侧份额</strong>：保险 IT 属<strong>人力交付型</strong>，约束是工程师规模与交付能力，非产能。中科软在保险核心系统领域<strong>市占率领先</strong>（覆盖绝大多数险企）。<br />
+2. <strong>需求侧/客户份额</strong>：<strong>极高粘性</strong> —— 保险核心系统替换成本巨大（业务连续性风险），一旦部署基本锁定 5–10 年。这是<strong>最强的护城河</strong>。<br />
+3. <strong>技术代际差</strong>：从传统核心系统 → <strong>AI 原生核心系统</strong>，公司处于<strong>代际切换的起点</strong>。相比创业型 AI 公司，公司有<strong>业务 Know-how + 客户覆盖</strong>优势；相比恒生电子等，AI 技术积累<strong>不占优</strong>。判定：<strong>同代起步，各有优劣</strong>。<br />
+4. <strong>成本曲线位置</strong>：毛利率 24.71%（2025）→ 27.77%（2026H1），<strong>成本曲线偏右</strong>（定制化重、复用率低），但已在改善。<strong>FDE 转型本质是向左移成本曲线的努力</strong>。<br />
+5. <strong>份额二阶导数</strong>：保险 IT +2.91%（<strong>近乎停滞</strong>）、政务 −26.47%、非保险金融 −28.83%，仅教科文 +33.94% → <strong>主力赛道已饱和（S 曲线顶部），增长引擎在换轨</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>份额情景</th>
+<th>假设</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守守住</td>
+<td>保险 IT 2029 至 30 亿</td>
+<td>保险 IT 单季增速是否回正至 &gt;3%</td>
+</tr>
+<tr>
+<td><strong>中性小幅提升</strong></td>
+<td>保险 IT 2029 至 <strong>35.5 亿</strong>（AI 改造驱动）</td>
+<td>AI 核心改造项目中标公告数量与金额</td>
+</tr>
+<tr>
+<td>乐观抢份额</td>
+<td>保险 IT 2029 至 42 亿+</td>
+<td>成为某头部险企 AI 核心系统<strong>独家/主供应商</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>层 2 · 主业迁移空间（项目制 → 订阅制/模型授权，FDE 范式）</strong><br />
+1. <strong>能力可迁移性</strong>：<strong>高</strong>。保险业务 Know-how + 客户覆盖 + 系统部署基础，天然适配"模型基座授权 + 年度订阅"。<br />
+2. <strong>新 TAM 弹性</strong>：<strong>大</strong>。从"项目费"（一次性）转为"年度订阅费"（ recurring），<strong>同一客户 LTV 提升 3–5 倍</strong>；且模型授权可向中小险企<strong>低边际成本复制</strong>。<br />
+3. <strong>切入时点与卡位</strong>：<strong>早期</strong>。8 号文刚落地，保险 AI 尚无标准，先发布局窗口。<br />
+4. <strong>客户认证门槛</strong>：<strong>高</strong>（AI 高风险应用准入管理），<strong>既是护城河也是阻力</strong>。<br />
+5. <strong>信号验证</strong>：① 财报首次出现<strong>"订阅收入/模型授权收入"科目</strong>或管理层披露订阅收入占比；② 人均创收/人均创利显著提升（订阅制的直接体现）；③ 毛利率连续两季 ≥30%。<br />
+→ <strong>未过验证点（无订阅收入披露），仅作中期期权，不计入中性情景。</strong></p>
+<p><strong>层 3 · 证伪信号</strong><br />
+① 2027 年报仍未披露订阅/授权收入；② 保险 IT 收入连续两年负增长；③ 毛利率跌破 25%；④ 经营现金流全年为负且扩大；⑤ 核心 AI 人才流失/研发投入资本化率异常上升。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不使用任何历史增速外推。按<strong>五条业务线</strong>分别测算，收入驱动来自<strong>保险 AI 改造项目、信创替换、教科文数智化需求</strong>，并用<strong>人力交付能力 + 客户覆盖数</strong>校验。<strong>FDE 订阅制转型、产品出海均未过验证点，不计入中性。</strong></p>
+</blockquote>
+<p><strong>总股本：8.3104 亿股</strong>（全流通）。2025 年末每股净资产 3.84 元；2026H1 BPS 约 3.90 元（对应 PB 3.49x）。<strong>资产负债率 60.07% 但有息负债仅 3,473 万元，有息负债率 0.72% —— 负债几乎全是合同负债与应付账款，无杠杆风险。</strong></p>
+<h3>分业务测算（到 2029 年，自下而上）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据（项目/政策/需求驱动，非增速外推）</th>
+<th>2029E 收入</th>
+<th>毛利率</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保险 IT</strong></td>
+<td>2025 年约 30 亿（按 2026H1 占比反推）；基础盘（存量运维+常规开发）2029 至 31.0 亿 + <strong>AI 核心改造增量 4.5 亿</strong></td>
+<td><strong>35.50 亿</strong></td>
+<td>30%</td>
+<td>8.0%</td>
+<td>2.84 亿</td>
+</tr>
+<tr>
+<td><strong>教科文及其他</strong></td>
+<td>2026H1 5.39 亿（+33.94%）；数智化需求旺盛；按 2027/2028/2029 分别 9.0/11.5/14.0 亿</td>
+<td><strong>14.00 亿</strong></td>
+<td>25%</td>
+<td>6.0%</td>
+<td>0.84 亿</td>
+</tr>
+<tr>
+<td><strong>政务 IT</strong></td>
+<td>2026H1 2.36 亿（−26.47%）；信创+数字政府托底，缓慢恢复</td>
+<td><strong>8.00 亿</strong></td>
+<td>22%</td>
+<td>3.0%</td>
+<td>0.24 亿</td>
+</tr>
+<tr>
+<td><strong>非保险金融 IT</strong></td>
+<td>2026H1 1.94 亿（−28.83%，验收周期性）；2027 后恢复</td>
+<td><strong>6.50 亿</strong></td>
+<td>26%</td>
+<td>5.0%</td>
+<td>0.33 亿</td>
+</tr>
+<tr>
+<td><strong>医疗 IT</strong></td>
+<td>2026H1 1.31 亿（−7.59%）</td>
+<td><strong>4.00 亿</strong></td>
+<td>24%</td>
+<td>4.0%</td>
+<td>0.16 亿</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>68.00 亿</strong></td>
+<td><strong>27.4%</strong></td>
+<td>—</td>
+<td><strong>4.41 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能/交付校验</strong>：软件公司约束为<strong>工程师规模与交付能力</strong>。2025 年营收 60.28 亿 → 2029E 68.00 亿（+12.8%，3 年），<strong>在现有人力规模下可通过人效提升实现</strong>；但若 FDE 转型成功（订阅制），<strong>同样人力可支撑更高收入</strong>（这是乐观情景的逻辑）。<strong>68.00 亿不超出交付能力上限</strong> ✓</p>
+<p><strong>利润测算（中性 2029E）</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利</td>
+<td><strong>19.38 亿</strong></td>
+<td>综合毛利率按 <strong>28.5%</strong>（第二步进阶输出，含 FDE 部分兑现）</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td>−4.08 亿</td>
+<td>率 6.0%（2025 年约 6%）</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td>−3.40 亿</td>
+<td>率 5.0%</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>−5.44 亿</td>
+<td>率 8.0%（AI 投入加码，2025 年约 7.5%）</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>+0.34 亿</td>
+<td>净利息收入（有息负债仅 3,473 万，账上现金充裕）</td>
+</tr>
+<tr>
+<td><strong>营业利润</strong></td>
+<td><strong>6.80 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他收益（政府补助+软件即征即退）</td>
+<td>+1.20 亿</td>
+<td>软件企业增值税即征即退 + 研发补助，历史常态</td>
+</tr>
+<tr>
+<td>所得税（软件企业实际税率约 12%，含高新 15% + 研发加计）</td>
+<td>−0.96 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>归母净利润</strong></td>
+<td><strong>7.04 亿</strong></td>
+<td>净利率 <strong>10.4%</strong></td>
+</tr>
+<tr>
+<td><strong>保守调整</strong></td>
+<td>考虑 FDE 转型不及预期、政务/医疗持续承压</td>
+<td><strong>5.20 亿</strong>（净利率 7.6%）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>保守调整的必要性</strong>：2025 年净利率仅 <strong>3.71%</strong>（2.24/60.28），2024 年 5.57%，2023 年更高。中性取 2029E <strong>7.6%</strong>，意味着净利率相对 2025 年翻倍 —— 这已属<strong>显著乐观</strong>，故必须说明：<strong>该假设完全依赖 FDE 转型与毛利率修复</strong>。若 FDE 未兑现，2029E 净利将回落至 3.5 亿区间（对应悲观情景）。</p>
+</blockquote>
+<h3>基准（2026 年底）单独测算</h3>
+<ul>
+<li>2026E 营收：H1 24.355 亿 + H2（2025H2 为 35.93 亿，占比 59.6%；2026H1 收入持平、Q2 +6.40%，H2 取 +2.5%）→ H2 36.83 亿 → <strong>2026E 营收约 61.2 亿元</strong></li>
+<li>2026E 归母：H1 0.903 亿 + H2（2025H2 为 1.169 亿；2026 年毛利率改善 + 费用控制，取 1.60 亿）→ <strong>2026E 归母约 2.50 亿元</strong><br />
+  （券商预测 2.68 亿，本报告取 2.50 亿，<strong>低于券商 7%</strong>，理由：H1 已 −15.60%，H2 改善需 Q4 集中验收兑现，存在不确定性）</li>
+<li>合理 PE：券商给予 2026 年 <strong>56x</strong>（对应目标市值 150 亿、目标价 18.06 元）。<strong>本报告认为 56x 过高</strong>（公司 2022–2025 净利连续三年下滑、经营现金流为负、FDE 未验证）→ 取 <strong>46x</strong>（AI+金融 IT 可比区间 35–55x 的中位偏上）。</li>
+<li><strong>基准合理市值 = 2.50 × 46 = 115.0 亿元 → 目标价 115.0 / 8.3104 = 13.84 元</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>归母净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>FDE 转型失败；项目制价格战延续；政务/医疗持续下滑；毛利率跌破 25%</td>
+<td>62.0 亿</td>
+<td><strong>3.20 亿</strong></td>
+<td>22x</td>
+<td>70.4 亿</td>
+<td><strong>8.47 元</strong></td>
+<td><strong>−37.8%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>AI 核心改造放量；教科文维持高增；FDE 部分兑现，毛利率修复至 28.5%</td>
+<td><strong>68.00 亿</strong></td>
+<td><strong>5.20 亿</strong></td>
+<td><strong>30x</strong></td>
+<td><strong>156.0 亿</strong></td>
+<td><strong>18.77 元</strong></td>
+<td><strong>+37.9%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>FDE 订阅制跑通（订阅收入占比 &gt;20%）；AI 保险核心系统规模化；毛利率至 32%</td>
+<td>72.0 亿</td>
+<td><strong>7.50 亿</strong></td>
+<td>38x</td>
+<td>285.0 亿</td>
+<td><strong>34.29 元</strong></td>
+<td><strong>+152.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>61.2 亿</td>
+<td>68.00 亿</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td>2.50 亿</td>
+<td>5.20 亿</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>46x</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>115.0 亿</td>
+<td>156.0 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>13.84 元</strong></td>
+<td><strong>18.77 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 13.61 元对应 2026E PE = 113.10/2.50 = <strong>45.2x</strong>，与本报告基准 PE 46x <strong>基本一致</strong> → <strong>当前价格已处于合理区间，市场定价基本有效</strong>。中性远期 18.77 元对应 2029E PE 30x（<strong>PE 收缩 16x，空间全部来自盈利增长 108%</strong>），这是<strong>保守的估值假设</strong>（未给 AI 标的的估值扩张）。</p>
+<h3>第四步进阶：重资产 / 周期 / 杠杆校正（三道闸 + 期权纪律）</h3>
+<p><strong>校正 1 · 资产质量折扣（本案不破净，但须说明"高负债率"的真实性质）</strong><br />
+- PB <strong>3.68x</strong>，不破净。资产负债率 <strong>60.07%</strong> 看似高，但<strong>有息负债仅 3,473 万元、有息负债率 0.72%</strong> —— 负债结构是<strong>合同负债（预收款）+ 应付账款 + 应付职工薪酬</strong>，属<strong>经营性负债，是商业模式的优势而非风险</strong>。<br />
+- <strong>真正的资产瑕疵</strong>：① <strong>应收账款 + 合同资产规模大</strong>，2026H1 经营现金流 <strong>−10.80 亿</strong>，回款质量差；② 若政府/医疗客户回款恶化，将产生大额信用减值。<br />
+- <strong>→ 净资产质量的核心风险是"应收类资产减值"，而非负债本身。</strong></p>
+<p><strong>校正 2 · 周期位置校正</strong><br />
+- 软件行业非强周期，但<strong>金融 IT 存在明显的监管周期与预算周期</strong>。当前位置：<strong>AI 监管周期刚启动（8 号文 2026-06）+ 信创周期收官（2026 年底）+ 保险 IT 预算周期底部</strong>。<br />
+- 中性净利 5.20 亿<strong>未用 2022–2023 好年景（6.38/6.55 亿）、未用近三年均值、未做拐点年化</strong>；而是"分业务收入 × 分业务净利率"加总。<br />
+- <strong>周期位置偏底部 → 中性不过度悲观</strong>，但必须承认 5.20 亿隐含"净利率从 3.71% 修复到 7.6%"的强假设。</p>
+<p><strong>校正 3 · 杠杆下行情景</strong><br />
+- 有息负债率 0.72%，<strong>无财务杠杆风险</strong>。<br />
+- <strong>但经营杠杆高</strong>：人力成本刚性（占成本 60%+），若收入下滑 10% → 营业利润下滑 <strong>30%+</strong>（费用无法同比例压缩）。<br />
+- <strong>负面情景（需求下行）</strong>：险企 IT 预算削减 15% + 政务/医疗继续下滑 → 收入降至 62 亿、毛利率降至 25.5% → 归母 3.20 亿 → 目标价 8.47 元（<strong>−37.8%，空间转负</strong>）<br />
+- <strong>→ 按纪律，该负面情景使空间转负，故不得标注"重点关注"。</strong></p>
+<p><strong>期权纪律（严格执行）</strong><br />
+- <strong>FDE 订阅制转型（未披露任何订阅收入）</strong>、产品出海（研报明确"进展不及预期"）、AI 保险核心系统独家供应商地位（未获公告确认）—— <strong>三项均未过验证点，不计入中性净利 5.20 亿</strong>，仅在乐观情景体现。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置：合理。</strong> 现价 13.61 元对应 2026E PE 45.2x，与本报告基准 PE 46x 基本一致 —— <strong>市场定价已相当有效，既无明显低估也无泡沫</strong>。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 18.77 元 → 空间 <strong>+37.9%</strong>（3 年，年化约 11.3%）<br />
+- 悲观 8.47 元 → 下行 <strong>−37.8%</strong><br />
+- 乐观 34.29 元 → <strong>+152.0%</strong>（需 FDE 订阅制跑通）<br />
+- <strong>赔率约 1:1</strong>（+37.9% vs −37.8%），<strong>对称性尚可但不占优</strong><br />
+- <strong>下行保护</strong>：PB 3.68x（偏高，保护弱）；BPS 3.90 元；<strong>有息负债率 0.72% + 账上现金充裕 → 无财务风险，不存在"生存危机"</strong>；<strong>10.5 元附近（PB 2.7x）</strong> 为较弱支撑。</p>
+<p><strong>介入条件（具体）</strong>：<br />
+1. <strong>价格条件</strong>：<strong>12.5 元以下</strong>（2026E PE &lt; 41x）为第一档；<strong>11.0 元以下</strong>（PE &lt; 36x，接近悲观与中性之间）为加仓档。<br />
+2. <strong>信号条件（满足其一即可上调）</strong>：① <strong>财报首次披露订阅/模型授权收入或订阅收入占比</strong>；② 单季毛利率站上 <strong>30%</strong>；③ 全年经营现金流转正；④ 保险 IT 单季收入增速回至 <strong>&gt;5%</strong>。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 归母净利三年下滑 66%（首要）</strong>：6.55 亿（2023）→ 3.55 亿（2024）→ 2.24 亿（2025）。这不是周期波动，是<strong>项目制商业模式的系统性失效</strong>（人力成本涨 + 客户预算紧 + 价格战）。<strong>若 2026–2027 未见底，中性 5.20 亿的假设将彻底失效。</strong><br />
+2. <strong>⚠️ 经营现金流 H1 −10.80 亿</strong>：利润为正而现金流巨额流出，<strong>利润质量差</strong>；若回款持续恶化将引发大额信用减值。<br />
+3. <strong>⚠️ FDE 转型完全未验证</strong>：目前只有战略表述，<strong>财报中无任何订阅/授权收入科目</strong>。若 2027 年仍未出现，估值逻辑将回到"项目制软件商"（PE 20–25x，对应股价 8–11 元）。<br />
+4. <strong>Q1 季节性亏损</strong>：2026Q1 归母 −1,584 万、2025Q1 −0.162 亿，<strong>Q1 亏损是常态</strong>，全年利润高度依赖 Q4 集中验收 —— <strong>季报扰动大，易被误读</strong>。<br />
+5. <strong>8 号文的短期抑制作用</strong>：AI 高风险应用准入管理会<strong>拉长险企 AI 项目审批周期</strong>，2026H1 保险 IT 仅 +2.91% 即为印证。</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>情景描述</th>
+<th>可验证触发点</th>
+<th>证伪信号</th>
+<th>计入中性？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业调整剩者红利</strong></td>
+<td>项目制保险 IT 价格战出清中小厂商；中科软凭<strong>客户覆盖最广 + 国资背景 + 信创资质</strong>承接份额</td>
+<td>保险 IT 行业 CR3 提升数据；公司新增险企客户数公告</td>
+<td>中小厂商以更低价格抢单；公司险企客户流失</td>
+<td>部分（温和份额提升已含在中性）</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>① 8 号文（2026-06-18）落地后若出台<strong>保险 AI 产品准入目录/白名单</strong>；② 金融信创 2026 年底收官后的<strong>二期扩容</strong>（信创从核心系统扩展至全栈应用）；③ 若监管对保险科技给予<strong>专项补贴或税前加计</strong></td>
+<td>金融监管总局 AI 产品准入目录原文；信创二期政策文件；财税补贴文件</td>
+<td>政策仅规范不扶持；信创投入被压缩</td>
+<td><strong>否（机会情景）</strong></td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td>公司市值从历史高位大幅回落，PB 3.68x 虽不低但<strong>有息负债率仅 0.72%、无财务风险</strong>；若市场因"净利连续三年下滑"线性外推而错杀至 10 元以下（2026E PE 33x），存在修复弹性</td>
+<td>股价跌破 11 元 + 单季收入增速转正 + 全年经营现金流转正</td>
+<td>收入连续两季负增长；经营现金流全年为负且扩大</td>
+<td><strong>否（机会情景）</strong></td>
+</tr>
+<tr>
+<td><strong>D 技术突破 / AI 代际跃迁期权</strong></td>
+<td><strong>FDE + 保险垂直大模型</strong>：从"卖人天"跃迁到"卖模型基座授权 + 年度订阅"，商业模式根本性重构，毛利率从 27.77% → 35%+，净利率从 3.71% → 12%+</td>
+<td><strong>硬验证点三要素全须满足</strong>：① 财报出现订阅/授权收入科目且占比 &gt;10%；② 单季毛利率连续两季 ≥30%；③ 人均创收同比提升 &gt;15%（订阅制规模效应）</td>
+<td>2027 年报仍无订阅收入；毛利率停滞在 27% 以下；AI 项目仍按人天计价</td>
+<td><strong>否（机会情景，对应乐观 34.29 元）</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>纪律声明</strong>：B/C/D 三类<strong>全部不计入中性锚</strong>，仅在乐观情景（34.29 元）中体现。<strong>D 类三要素目前一个都未满足</strong>。</p>
+</blockquote>
+<p><strong>什么条件下调至"重点关注"</strong>：需<strong>同时</strong>满足 ① 股价回落至 12.0 元以下；② <strong>财报首次披露订阅/模型授权收入且占比 &gt;8%</strong>；③ 全年经营现金流转正。三者同时满足时，中性远期空间将提升至 +65% 以上。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>+37.9%</strong> &gt; 0，满足"纳入观察"门槛，但不足 +50%。<br />
+公司质地分化明显：<strong>优势</strong> —— 保险 IT 客户覆盖最广、客户粘性极强（核心系统替换成本巨大）、国资背景+信创资质、有息负债率仅 0.72% 无财务风险、Q2 收入已 V 型反转（+6.40%）、教科文业务 +33.94%；<strong>劣势</strong> —— 归母净利三年下滑 66%、经营现金流 H1 −10.80 亿、毛利率仅 27.77%、FDE 转型零验证、Q1 季节性亏损。<br />
+当前 13.61 元对应 2026E PE 45.2x，<strong>市场定价基本合理</strong>，赔率 +37.9% vs −37.8% 基本对称。<br />
+<strong>核心跟踪点（唯一关键）</strong>：<strong>财报中是否出现订阅/模型授权收入科目</strong>。这一个信号决定公司是"项目制软件商"（PE 20–25x）还是"AI 订阅制公司"（PE 40–60x）。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.61 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>13.8 元</strong>（区间 12.6–15.2）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+1.7%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>18.77 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+37.9%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 8.47 元（−37.8%）～ 乐观 34.29 元（+152.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>保险IT客户粘性极强+8号文驱动AI改造,但净利三年降66%、FDE转型未验证</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（12.5 元以下，等订阅收入首次披露）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年年度报告（2026-04-30 披露）、2026 年半年度报告（2026-08-25 披露）、证券时报 2026-08-25 报道、国泰海通《中科软（603927）2026 年中报业绩点评：收入企稳 推进 FDE 能力升级》、国家金融监督管理总局《关于银行业保险业人工智能安全开发应用的指导意见》（金发〔2026〕8 号，2026-06-18）、中国人民银行《金融科技发展规划（2025—2030 年）》、艾瑞咨询保险科技投入数据（2025 年 672.8 亿元，+14%）、中研普华《2026 保险科技行业发展现状与产业链分析》、财政部/税务总局软件企业税收优惠规定。</em><br />
+<em>口径纠偏说明（重要）：队列表"亏损"标记 False、PE_TTM 54.57 为正，但</em><em>拆分季度后发现 2026Q1 单季归母为 −1,584.23 万元（亏损），H1 的 9,034.43 万利润 100% 由 Q2（+1.0619 亿）贡献</em><em>；进一步核查 2025Q1 归母亦为 −0.162 亿，说明 </em><em>Q1 亏损是软件行业季节性常态，公司 H1/Q1/Q2（除 Q1 季节性外）均为盈利，不构成"PE 为正掩盖 H1 实亏"</em><em>。已识别并处理的一次性因素：</em><em>2025H1 营业外收入高基数，2026H1 同比减少，是 H1 归母 −15.60% 的主因</em><em>（非主业恶化，故 2026E 归母仍取 2.50 亿而非按 −15.60% 线性外推）。FDE 订阅制转型、产品出海均</em><em>未过验证点（无订阅收入科目披露），不计入中性净利</em><em>。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

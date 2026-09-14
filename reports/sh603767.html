@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中马传动（603767）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>中马传动（603767）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>13.30 元</strong>（2026-09-11 收盘）｜ 总市值 <strong>41.05 亿</strong> ｜ PB <strong>2.99x</strong> ｜ PE(TTM) <strong>无意义（TTM 归母仅约 171 万）</strong> ｜ 总股本 <strong>3.0863 亿股</strong><br />
+行业：汽车变速器、车辆齿轮（汽车/摩托车/农机）｜ 板块：沪市主板<br />
+<strong>⚠️ 队列亏损标记为 TTM 口径误标</strong>：<code>next_batch.py</code> 依 TTM 归母（−580.34 万 + 2025H1 561 万 − 2026H1 1312 万 ≈ <strong>+171 万</strong>，接近零）将本股标为亏损（PE 显示 −1007.7）。<strong>以真实最新财报（2026 年半年报）为准：2026H1 归母净利润 +1311.73 万元（同比 +12.59%）、扣非 +1293.12 万元（+6.13%）、Q2 单季归母 +704.69 万元（+25.72%）、Q2 扣非 +700.41 万元——四项口径全部为正，2026 年已实现盈利。</strong><br />
+<strong>误标成因</strong>：2025Q4 单季归母 <strong>−3108.61 万元</strong>（扣非 −665.75 万元，即单季含约 −2443 万元非经常性损失/减值），直接把 2025 全年拖成 −580.34 万元，TTM 口径因此失真。2025 全年扣非实为 <strong>+1887.49 万元</strong>（主业全年盈利）。本报告按<strong>盈利股</strong>处理，但因 TTM 归母近乎为零、PE 失真，第四步采用<strong>正常化净利润法</strong>估值。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内首批进入汽车变速器领域的民营企业，主打<strong>皮卡 / SUV / MPV / 轻型客车</strong>用轻型汽车变速器总成与中高端车辆齿轮，皮卡变速器历史市占率曾长期维持 40% 以上，现向新能源减速器与高精度齿轮转型。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 4.40 亿，主营 4.33 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比/说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变速器总成</td>
+<td>2.87 亿</td>
+<td><strong>65.06%</strong></td>
+<td><strong>13.53%</strong></td>
+<td>皮卡/SUV/MPV/轻客为主，第一大收入来源</td>
+</tr>
+<tr>
+<td>汽车齿轮</td>
+<td>8733.42 万</td>
+<td>19.83%</td>
+<td><strong>15.66%</strong></td>
+<td>变速器齿轮、转向器齿轮、油泵轴齿轮、发动机齿轮</td>
+</tr>
+<tr>
+<td>摩托车齿轮</td>
+<td>5669.96 万</td>
+<td>12.87%</td>
+<td><strong>11.96%</strong></td>
+<td>摩托车发动机齿轮</td>
+</tr>
+<tr>
+<td>农机齿轮</td>
+<td>209.97 万</td>
+<td>0.48%</td>
+<td>16.38%</td>
+<td>农机变速器齿轮</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>约 320 万</td>
+<td>1.76%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：汽车变速器总成（手动 MT 为主，正向自动/电控分动器延伸）、汽车齿轮、摩托车齿轮、农机齿轮。在研/已量产新品：<strong>多档电控分动器、特种车辆自动变速器、高精度新能源汽车齿轮</strong>（公司披露部分产品已实现量产）。历史技术储备含电控机械式变速器（AMT）、双离合器自动变速器（DCT）方向。</p>
+<p><strong>主要客户/下游</strong>：<br />
+- 变速器总成：长城汽车、北汽福田、奇瑞汽车、长安汽车、江淮汽车、东风柳汽、厦门金龙、中兴汽车、郑州日产（大部分客户合作多年）<br />
+- 车辆齿轮：博格华纳、万都、舍弗勒、德纳、采埃孚、圣龙股份、上海交运；整车客户含斯特兰蒂斯（Stellantis）、比亚迪<br />
+- 摩托车：大长江集团、轻骑铃木、五羊本田、新大洲本田、株洲春风雅马哈、春风动力、钱江摩托、广州大冶<br />
+- 农机：约翰迪尔、徐工</p>
+<p><strong>境内外收入占比</strong>：以境内为主，齿轮产品通过博格华纳/采埃孚/斯特兰蒂斯等间接配套海外。境外直接收入占比低（未单独披露，估 &lt;10%）。</p>
+<p><strong>股东与财务特征（关键）</strong>：总资产 16.05 亿、负债仅 2.45 亿，<strong>资产负债率 15.24%</strong>、<strong>有息负债 0 元</strong>、速动比率 3.41、现金比率 237.96%——<strong>账上现金极其充裕，零杠杆，不存在任何生存压力</strong>。净资产约 13.60 亿，每股净资产 4.41 元。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/文件</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>量化指标与影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汽车以旧换新/购置税政策退坡</td>
+<td>国家发改委、财政部</td>
+<td>2026 年现行</td>
+<td><strong>2026 年受购置税退坡影响，国内汽车产销量同比出现负增长</strong>（SMM）</td>
+</tr>
+<tr>
+<td>《新型能源体系建设"十五五"规划》（发改能源〔2026〕884 号）</td>
+<td>国家发改委、国家能源局</td>
+<td>2026-06-25</td>
+<td>新能源长期方向不变</td>
+</tr>
+<tr>
+<td>皮卡进城限制放宽（多地）</td>
+<td>各地方政府</td>
+<td>持续</td>
+<td>皮卡是公司变速器第一大下游，解禁直接利好基本盘</td>
+</tr>
+<tr>
+<td>摩托车出口相关</td>
+<td>商务部/海关总署</td>
+<td>2026 年</td>
+<td>2026 1–6 月摩托车整车出口 <strong>+17%</strong>（利好摩托车齿轮）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>判读</strong>：公司所处<strong>无直接补贴政策</strong>，政策影响是间接的：购置税退坡压制整车总量（负面），皮卡解禁（正面）、摩托车出口（正面）。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>国内汽车产销（2026 1–6 月）</strong></td>
+<td>1499.3 万辆 / 1501.7 万辆，同比 <strong>−4.0% / −4.1%</strong>（中汽协）</td>
+</tr>
+<tr>
+<td>新能源汽车产销</td>
+<td>743.8 万 / 744.6 万辆，同比 +6.7% / +7.3%；<strong>新能源新车销量占比 49.6%</strong></td>
+</tr>
+<tr>
+<td>汽车出口</td>
+<td>2026 1–7 月出口 636 万辆，<strong>+51.1%</strong>（增量核心来源）</td>
+</tr>
+<tr>
+<td>摩托车整车出口</td>
+<td>2026 1–6 月 756.99 万辆，<strong>+17%</strong></td>
+</tr>
+<tr>
+<td><strong>公司 2026H1 量价</strong></td>
+<td>营收 4.40 亿（<strong>−0.47%</strong>）、归母 1311.73 万（<strong>+12.59%</strong>）、扣非 1293.12 万（+6.13%）、毛利率 <strong>14.41%（+0.97pct）</strong></td>
+</tr>
+<tr>
+<td>Q2 单季</td>
+<td>营收 2.35 亿（−2.76%，环比 +14.78%）、归母 704.69 万（<strong>+25.72%</strong>）、扣非 700.41 万、毛利率 <strong>16.16%（+1.57pct，环比 +3.76pct）</strong></td>
+</tr>
+<tr>
+<td>成本端</td>
+<td>H1 营业成本 3.77 亿（<strong>−1.59%</strong>），公司说明"部分设备已提足折旧"</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td>H1 3720.79 万（−18.70%），<strong>仍为正</strong></td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>齿轮/变速器行业集中度提升，竞争焦点转向"新能源适配性、轻量化、制造精度"；公司 H1 毛利率 14.41% 显著低于行业平均约 21.5%</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>因子1 成本传导弹性（pass-through）</strong><br />
+- 客户结构以<strong>整车厂（长城、奇瑞、江淮等）与全球 Tier1（博格华纳、采埃孚、舍弗勒）</strong>为主，均为年度议价/年降机制，<strong>传导率 ≈ 0.3–0.5（弱）</strong>。主机厂普遍要求供应商年降 2–3%，成本上行时公司需自行消化大部分。<br />
+- 佐证：2026H1 毛利率仅 14.41%，<strong>低于行业平均约 7 个百分点</strong>——这正是弱议价权在毛利上的直接体现。<br />
+- <strong>量化</strong>：齿轮钢（20CrMnTi 等）若上涨 10%，×(1−0.4) = 实际毛利承压约 6% 相对幅度，对应综合毛利率约 −0.8pct。</p>
+<p><strong>因子2 毛利结构再平衡（分业务线毛利率 + 原料敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入占比</th>
+<th>毛利率</th>
+<th>核心原料</th>
+<th>原料敏感权重</th>
+<th>对钢价敏感度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变速器总成</td>
+<td>65.06%</td>
+<td>13.53%</td>
+<td>齿轮钢、锻件、轴承、铸铁壳体</td>
+<td><strong>约 45%</strong></td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>汽车齿轮</td>
+<td>19.83%</td>
+<td>15.66%</td>
+<td>齿轮钢、精密锻件</td>
+<td><strong>约 50%</strong></td>
+<td><strong>最高</strong></td>
+</tr>
+<tr>
+<td>摩托车齿轮</td>
+<td>12.87%</td>
+<td><strong>11.96%（最低）</strong></td>
+<td>齿轮钢</td>
+<td>约 48%</td>
+<td>高</td>
+</tr>
+<tr>
+<td>农机齿轮</td>
+<td>0.48%</td>
+<td>16.38%（最高）</td>
+<td>齿轮钢</td>
+<td>约 45%</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>关键结构判断</strong>：占收入 65% 的变速器总成毛利率只有 13.53%，是最大拖累；而毛利率最高的农机齿轮（16.38%）仅占 0.48%，<strong>结构严重失衡</strong>。公司正在推进的"高精度新能源汽车齿轮"（毛利率通常高于传统齿轮 3–5pct）与"多档电控分动器"（高附加值）若放量，是唯一能实质性抬升综合毛利率的路径。<strong>禁止用 14.41% 单一综合毛利率判断公司——结构迁移才是估值关键变量。</strong></p>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+- 存货周转率 1.28 次（H1），周转偏慢；零部件行业普遍采用"以销定产 + 安全库存"模式。<br />
+- <strong>低价囤货收益</strong>：2026H1 营业成本 −1.59%，公司明确归因"部分设备已提足折旧"（非原料因素）——<strong>这是折旧红利而非原料红利，属可持续性较强的一次性改善（设备提足折旧后长期不再计提）</strong>，但只能贡献一次，不会重复。<br />
+- <strong>高价接货</strong>：齿轮钢价格若随钢价上行，因传导率仅 0.3–0.5，公司会明显承压。<br />
+- <strong>套保/长协</strong>：无披露。前五大供应商合计约占采购额 39%（第三方口径，含温岭宏远齿轮毛坯 12.3%、台州中马精密锻造 9.8%、宝钢 7.6%、舍弗勒轴承 5.2%、博世电控 4.1%），供应链相对稳定。<br />
+- <strong>验证点</strong>：季度毛利率、存货周转、齿轮钢（20CrMnTi）市场价。</p>
+<p><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong><br />
+- <strong>市场层</strong>：①<strong>钢</strong>——2026 年亚洲钢价预计约 <strong>500 美元/吨（同比下跌）</strong>，欧洲 700、北美 1150（科法斯）。公司采购以国内钢（宝钢等）为主 → <strong>钢价下行对公司是明确的毛利利好</strong>。②<strong>铝</strong>——2026 年预计涨 20–25%（霍尔木兹海峡封锁致海湾产能瘫痪），但公司用铝量小（铸铁壳体为主），<strong>影响有限</strong>。③<strong>铜</strong>——预计 +40%，影响电机/电控类外购件。<br />
+- <strong>政策层</strong>：①印尼镍矿出口配额从 380 万吨砍至 270 万吨（2026），抬升不锈钢与特钢成本；②中国能耗双控对特钢冶炼的限产；③对美出口关税（公司间接出口占比低，影响小）。<br />
+- <strong>验证点</strong>：国内冷轧/特钢价格（周）、宝钢季度出厂价、公司毛利率。<br />
+- <strong>证伪信号</strong>：钢价上行 15% 且公司毛利率跌破 12%（传导失败）；或变速器总成毛利率跌破 11%。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高精度新能源汽车齿轮</td>
+<td>公司重点推进产品之一</td>
+<td>未披露</td>
+<td><strong>部分已实现量产</strong>（2026 中报披露）</td>
+<td>2029 收入 2.5 亿级</td>
+<td>中</td>
+</tr>
+<tr>
+<td>多档电控分动器</td>
+<td>公司重点推进产品之一</td>
+<td>未披露</td>
+<td>研发与测试验证中，部分量产</td>
+<td>高附加值，期权</td>
+<td>中低</td>
+</tr>
+<tr>
+<td>特种车辆自动变速器</td>
+<td>公司重点推进产品之一</td>
+<td>未披露</td>
+<td>研发与测试验证中</td>
+<td>期权</td>
+<td>低</td>
+</tr>
+<tr>
+<td>折旧红利</td>
+<td>部分设备已提足折旧，H1 营业成本 −1.59%</td>
+<td>约 0.05–0.07 亿/年（估）</td>
+<td><strong>已兑现，持续性存在但仅一次</strong></td>
+<td>已在 H1 体现</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>摩托车齿轮受益出口</td>
+<td>2026 1–6 月摩托车整车出口 +17%</td>
+<td>H1 5669.96 万</td>
+<td>稳定</td>
+<td>年约 1.13 亿收入</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>皮卡基本盘</td>
+<td>皮卡变速器历史市占率 40%+，多地皮卡进城解禁</td>
+<td>稳定</td>
+<td>存量维持</td>
+<td>收入基本盘</td>
+<td>中</td>
+</tr>
+<tr>
+<td>募投项目（已投产）</td>
+<td>12 万台六档 MT（达产 +3.948 亿收入/+7112 万利润）；250 万件油泵轴齿轮（+1.447 亿/+3662 万）；550 万件转向器齿轮（+1.299 亿/+2836 万）</td>
+<td>设计合计 +6.69 亿收入/+1.36 亿利润</td>
+<td><strong>早已投产，但历史收入未达设计值</strong>（2023 年 11.05 亿 → 2025 年 9.13 亿），说明产能未打满</td>
+<td>已反映在现有收入中</td>
+<td>—</td>
+</tr>
+<tr>
+<td>机器人减速器</td>
+<td>公司<strong>多次明确否认</strong>涉足人形机器人，产品未用于机器人领域</td>
+<td>0</td>
+<td><strong>不存在</strong></td>
+<td>0</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计</strong>：可确认增量主要为"新能源齿轮 + 电控分动器 + 折旧红利 + 摩托车齿轮随出口"，<strong>无重大在手订单公告、无新建产能公告、无募投项目转向公告</strong>——这是本股最大的信息缺口，也决定了中性情景必须保守。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务 = 市场容量 × 份额变量</strong>（5 锚点）<br />
+1. <strong>供给侧份额</strong>：产能未打满（2025 年收入 9.13 亿 vs 募投设计新增收入 6.69 亿 + 原有基数），<strong>产能利用率不足是双刃剑</strong>——既有提升空间，也说明订单不足。<br />
+2. <strong>需求侧份额</strong>：客户覆盖长城、北汽福田、奇瑞、长安、江淮、东风柳汽、厦门金龙、中兴、郑州日产，且"同大部分客户保持多年合作关系"——粘性存在，但<strong>前五大客户合计约占营收 67%（第三方口径），集中度过高</strong>，单一客户订单波动影响巨大。<br />
+3. <strong>技术代际差</strong>：手动变速器是<strong>成熟/衰退技术</strong>（新能源渗透率已达 49.6%，纯电无需多档 MT）；公司新品（高精度新能源齿轮、电控分动器、特种车 AT）仍处于验证/早期量产——<strong>处于代际切换的追赶位，非领先位</strong>。<br />
+4. <strong>成本曲线位置</strong>：毛利率 14.41% 显著低于行业平均 21.5% → <strong>成本曲线位于行业右侧（劣势位）</strong>，规模与良率均无优势，行业降价时最先受伤。<br />
+5. <strong>份额二阶导数</strong>：收入 2023 年 11.05 亿 → 2024 年 9.08 亿 → 2025 年 9.13 亿 → 2026H1 4.40 亿（−0.47%）——<strong>份额处于停滞/缓慢流失段，非加速段</strong>。<br />
+- 三档：保守守住现有份额（收入 9 亿级）/ 中性新能源齿轮拉动收入至 12 亿 / 乐观至 14 亿。<strong>验证点</strong>：季度收入、新能源齿轮收入披露、新客户定点公告。<br />
+- <strong>证伪信号</strong>：收入连续两季同比负增长；或新能源齿轮无单独收入披露。</p>
+<p><strong>层2 扩展业务 = 主业迁移空间（新易盛范式五点）</strong><br />
+潜在迁移：齿轮精密加工能力 → 工业机器人减速器（RV/谐波）齿轮、机器人关节齿轮。<br />
+- ①能力可迁移性：<strong>中高</strong>（齿轮精密加工、热处理、磨齿工艺同源，但 RV 减速器对精度要求高一个量级）<br />
+- ②新 TAM 弹性：<strong>大</strong>（人形机器人关节减速器是百亿级增量市场）<br />
+- ③切入卡位：<strong>无</strong>（公司<strong>多次在公告与投资者互动中明确否认涉足机器人业务</strong>）<br />
+- ④客户认证门槛：高（机器人减速器认证 1–2 年）<br />
+- ⑤信号验证：<strong>明确为负</strong>——公司主动澄清"所生产的新能源汽车减速器主要用于新能源汽车，与机器人减速器技术路径不同""无相关技术储备与业务规划"<br />
+- → <strong>判定：迁移不成立。市场将其与机器人概念关联属误读，本报告不给该项任何估值，且视为"纯概念溢价风险"而非期权。</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+①新能源齿轮无单独收入披露且收入未突破 10 亿；②毛利率跌破 12%；③前五大客户任一大客户订单流失；④股价继续依赖概念（机器人）而非业绩——命中即下调中性。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：本节不使用历史增速外推，也不使用"2023→2025 收入变化"这类历史曲线。因 2026H1 归母仅 1311.73 万、TTM 归母近乎为零（约 171 万），<strong>PE 已失真</strong>，故采用<strong>正常化净利润法</strong>估值：估稳态营收 → 保守正常化净利率 → × 远期合理 PE → 目标市值 → 目标价；并以 PB 交叉校验。</p>
+</blockquote>
+<p><strong>总股本：3.0863 亿股</strong>（无近期摊薄）</p>
+<h3>第一步：估稳态营收（2029E，自下而上）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>现状（2026H1 年化）</th>
+<th>驱动因素</th>
+<th>2029E 收入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>变速器总成</td>
+<td>5.74 亿</td>
+<td>皮卡解禁对冲新能源替代，基本持平</td>
+<td><strong>5.70 亿</strong></td>
+</tr>
+<tr>
+<td>汽车齿轮（传统）</td>
+<td>1.75 亿</td>
+<td>随 Tier1 客户稳定小幅增长</td>
+<td><strong>1.90 亿</strong></td>
+</tr>
+<tr>
+<td><strong>高精度新能源汽车齿轮</strong></td>
+<td>未单独披露</td>
+<td>已部分量产，客户含比亚迪、斯特兰蒂斯</td>
+<td><strong>2.50 亿</strong></td>
+</tr>
+<tr>
+<td>多档电控分动器 / 特种车 AT</td>
+<td>未披露</td>
+<td>研发测试验证中，爬坡</td>
+<td><strong>0.80 亿</strong></td>
+</tr>
+<tr>
+<td>摩托车齿轮</td>
+<td>1.13 亿</td>
+<td>摩托车出口 +17%</td>
+<td><strong>1.25 亿</strong></td>
+</tr>
+<tr>
+<td>农机齿轮</td>
+<td>0.04 亿</td>
+<td>稳定</td>
+<td><strong>0.05 亿</strong></td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.06 亿</td>
+<td>—</td>
+<td><strong>0.10 亿</strong></td>
+</tr>
+<tr>
+<td><strong>合计稳态营收</strong></td>
+<td>约 8.8 亿</td>
+<td></td>
+<td><strong>12.30 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束校验</strong>：2029E 收入 12.30 亿 vs 历史峰值 11.05 亿（2023 年），仅需提升 11%，现有产能（募投项目已投产且未打满）<strong>完全可支撑，通过校验</strong>。</p>
+<h3>第二步：算正常化净利率（三选一取保守）</h3>
+<ul>
+<li>行业正常净利率：齿轮/变速器行业平均毛利率约 21.5%，对应净利率约 <strong>6–8%</strong> → 取中值 7%</li>
+<li>公司历史最好年份净利率：2023 年归母 7276 万 / 营收 11.05 亿 = <strong>6.59%</strong></li>
+<li>产能爬坡后理论净利率：考虑新能源齿轮占比提升（毛利率 +3–5pct）与折旧红利 → <strong>7.5%</strong></li>
+<li><strong>取保守值：6.5%</strong>（低于行业与公司历史最好水平，反映公司成本曲线劣势位与弱议价权）</li>
+</ul>
+<h3>第三步：正常化净利润 × 远期 PE</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>计算</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>稳态营收（2029E）</td>
+<td>见上表</td>
+<td>12.30 亿</td>
+</tr>
+<tr>
+<td><strong>正常化净利率</strong></td>
+<td>保守取值</td>
+<td><strong>6.5%</strong></td>
+</tr>
+<tr>
+<td><strong>正常化净利润（中性）</strong></td>
+<td>12.30 × 6.5%</td>
+<td><strong>0.80 亿</strong></td>
+</tr>
+<tr>
+<td>远期合理 PE</td>
+<td>小盘汽车零部件 + 新能源转型，但成本曲线劣势、份额停滞 → 给 28x（未给行业 30–35x 的溢价）</td>
+<td>28x</td>
+</tr>
+<tr>
+<td><strong>目标市值</strong></td>
+<td>0.80 × 28</td>
+<td><strong>22.4 亿</strong></td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td>22.4 / 3.0863</td>
+<td><strong>7.26 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>PB 交叉校验</strong>：2029E 每股净资产约 <strong>4.60 元</strong>（当前 4.41 + 2026–2029 累计 EPS 约 0.28 − 累计分红约 0.10）；7.26 元对应 PB <strong>1.58x</strong>。对 ROE 约 6.8%（0.80/11.8 亿净资产）的公司，PB 1.58x 属合理偏上限——<strong>两种方法结论一致，中性锚定 7.3 元附近。</strong></p>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>稳态营收</th>
+<th>正常化净利率</th>
+<th>正常化净利</th>
+<th>远期 PE</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>新能源齿轮未放量、传统变速器被纯电替代加速、价格战</td>
+<td>9.5 亿</td>
+<td>4.5%</td>
+<td>0.43 亿</td>
+<td>24x</td>
+<td><strong>3.34 元</strong></td>
+<td><strong>−74.9%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>新能源齿轮如期放量、折旧红利延续、皮卡基本盘守住</td>
+<td><strong>12.30 亿</strong></td>
+<td><strong>6.5%</strong></td>
+<td><strong>0.80 亿</strong></td>
+<td>28x</td>
+<td><strong>7.26 元</strong></td>
+<td><strong>−45.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>新能源减速器/分动器大放量、毛利率修复至 17%+</td>
+<td>14.5 亿</td>
+<td>9.0%</td>
+<td>1.31 亿</td>
+<td>35x</td>
+<td><strong>14.85 元</strong></td>
+<td><strong>+11.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>悲观情景下限修正</strong>：公司零有息负债、每股净资产 4.41 元、现金比率 237.96%，<strong>不存在破产风险，PB 1.0（约 4.6 元）构成硬底</strong>。故悲观取 <strong>5.50 元（PB 1.20x）</strong>，而非 3.34 元。</p>
+</blockquote>
+<p><strong>修正后三情景</strong>：悲观 <strong>5.50 元（−58.6%）</strong> / 中性 <strong>7.26 元（−45.4%）</strong> / 乐观 <strong>14.85 元（+11.6%）</strong></p>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸 + 期权纪律）</h3>
+<p><strong>校正1 资产质量折扣</strong><br />
+当前 PB <strong>2.99x</strong>，<strong>严重溢价，不适用破净折价逻辑</strong>。需反向说明"为何 2.99x PB 不合理"：<br />
+- 2026H1 加权 ROE 仅 <strong>0.96%</strong>，2025 全年 ROE <strong>−0.42%</strong>，历史最好年份 ROE 约 5%。<strong>ROE 与 PB 严重背离</strong>——2.99x PB 隐含市场要求的 ROE 应在 12%+（按 8% 折现率），而实际 ROE 不足 1%。<br />
+- 资产构成：固定资产（齿轮加工设备）占比高，部分设备已提足折旧，<strong>账面净值偏低但重置成本更高</strong>（利于清算价值）；无商誉、无大额金融资产。<br />
+- <strong>增量判断</strong>：账上现金充裕（现金比率 237.96%，无有息负债），即"净现金"属性给资产质量加分——若剔除冗余现金，主营资产的估值溢价更显夸张。<br />
+- → <strong>结论：2.99x PB 属概念/流动性溢价，非基本面支撑。中性锚 PB 1.58x 已考虑净现金加分。</strong></p>
+<p><strong>校正2 周期位置校正</strong><br />
+- 手动变速器：<strong>结构性衰退期</strong>（新能源渗透率 49.6%，纯电无需多档 MT），非周期性而是趋势性下滑。<br />
+- 摩托车齿轮：<strong>受益出口上行周期</strong>（+17%），但占比仅 12.87%，拉动有限。<br />
+- 汽车齿轮/新能源齿轮：<strong>导入期</strong>。<br />
+- <strong>周期归一化处理</strong>：中性情景未使用任何单年好年景（如 2023 年 7276 万）作为起点，而是用<strong>稳态营收 × 保守正常化净利率</strong>重新构建，已规避"拐点年化"陷阱。当前周期位置标注：<strong>传统 MT = 衰退期 / 新能源齿轮 = 导入期</strong>。</p>
+<p><strong>校正3 杠杆下行情景</strong><br />
+公司资产负债率 <strong>15.24%</strong>、<strong>有息负债 0 元</strong>——<strong>远低于 60% 阈值，本道闸不触发强制负面情景</strong>。这是本股最大的安全垫：<strong>即使主业长期微利，公司也不会因财务杠杆陷入困境</strong>。但需注意：低杠杆也意味着<strong>ROE 弹性缺失</strong>，公司不会因经营改善而出现利润爆发。</p>
+<p><strong>期权纪律</strong>：工业机器人减速器（公司明确否认）、特种车 AT、电控分动器——<strong>均无正式定点公告/产能投向公告/营收占比跳升，五项验证点一条不满足，全部不计入中性净利</strong>，仅出现在乐观情景。</p>
+<h3>交叉校验</h3>
+<p>现价 13.30 元 / 中性正常化净利 0.80 亿 = <strong>隐含 PE 51.3x</strong>；PB 2.99x。即<strong>现价对应 2029 年中性情景的 1.83 倍</strong>——市场已把乐观情景（14.85 元）提前定价到接近其水平。这是典型的"概念先行、业绩未至"。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>显著高估</strong>。PB 2.99x、隐含 2029 年正常化 PE 51.3x，而公司 ROE 不足 1%、毛利率低于行业平均 7pct、收入连续三年零增长。现价已充分（甚至过度）反映新能源转型与机器人概念的想象。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 7.26 元 → <strong>−45.4%</strong>，<strong>安全边际为负</strong><br />
+- 悲观 5.50 元 → <strong>−58.6%</strong>（净资产硬底托住）<br />
+- 乐观 14.85 元 → <strong>+11.6%</strong>，即使最乐观情景空间也仅一成<br />
+- → <strong>上行有限、下行巨大，赔率结构严重不利</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价不介入</strong>。理论合理区间 7.3–9.0 元，<strong>回落至 8.0 元以下（PB &lt; 1.85x）</strong> 才进入可讨论范围<br />
+2. <strong>重新评估信号</strong>：①新能源齿轮收入单独披露且单年突破 2 亿；②综合毛利率修复至 17% 以上（接近行业平均）；③获得头部新能源车企的正式定点公告；④收入突破 11 亿元（超过 2023 年峰值）<br />
+3. <strong>警惕</strong>：若股价继续脱离基本面上涨（机器人概念驱动），属纯情绪，<strong>不参与</strong></p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 估值回归风险（首要）</strong>：PB 2.99x 对 ROE&lt;1% 的公司不可持续；一旦概念退潮，回归 PB 1.5–2.0x 即对应 −33%~−50%<br />
+2. <strong>⚠️ 技术代际替代</strong>：新能源渗透率已 49.6%，纯电动车无需多档手动变速器——占收入 65% 的变速器总成面临结构性萎缩，而非周期性波动<br />
+3. <strong>客户集中度过高</strong>：前五大客户约占营收 67%，任一主要客户订单流失即造成收入断层<br />
+4. <strong>成本曲线劣势</strong>：毛利率 14.41% vs 行业 21.5%，在主机厂年降压力下难有翻身空间<br />
+5. <strong>概念证伪</strong>：公司已多次明确否认机器人业务，若市场仍按机器人定价，证伪时跌幅会很大</p>
+<h3>第五步进阶：上行想象力四类（对冲保守偏置）</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>情景</th>
+<th>验证点</th>
+<th>证伪信号</th>
+<th>计入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业出清剩者红利</strong></td>
+<td>手动变速器行业在新能源冲击下加速出清，中小厂退出；公司在皮卡/SUV MT 细分守住 40%+ 份额，若 CR3 提升使幸存者获得定价权，毛利率可从 13.53% 修复至 18%，对应增厚净利 0.33 亿</td>
+<td>行业 MT 供应商退出公告、公司变速器毛利率环比、皮卡销量</td>
+<td>主机厂继续年降 3%+，毛利率不升反降</td>
+<td>乐观</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td><strong>皮卡进城全面解禁</strong>（已在多地进行），若全国性放开使皮卡销量增 20%，公司变速器收入从 5.70 亿增至 6.8 亿，按 7% 净利增厚 0.08 亿——<strong>弹性有限</strong>；实质性反转需新能源齿轮纳入产业扶持目录</td>
+<td>公安部/商务部皮卡解禁文件、皮卡月度销量</td>
+<td>2027 年底无全国性解禁</td>
+<td>乐观（弹性小）</td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td><strong>不适用</strong>——本股当前是<strong>高估而非错杀</strong>。反向风险：若概念退潮，PB 从 2.99x 回归 1.8x 即 −40%。无任何错杀证据（估值处历史高位而非分位低位、基本面未改善、无相对行业折价）</td>
+<td>—</td>
+<td>—</td>
+<td><strong>不计入</strong></td>
+</tr>
+<tr>
+<td><strong>D 技术突破期权</strong></td>
+<td>高精度新能源汽车齿轮若拿到头部车企大额定点并量产，公司从"传统 MT 厂"跃迁为"新能源齿轮供应商"，毛利率修复 + 估值体系切换至 35x</td>
+<td><strong>硬验证点</strong>：客户定点公告 + 新能源齿轮收入占比 &gt;25% + 量产良率/成本优于同业</td>
+<td>2027 年底前无定点公告；或新能源齿轮占比始终 &lt;10%</td>
+<td><strong>仅机会情景，不计入中性</strong>；且公司已否认机器人路线</td>
+</tr>
+</tbody>
+</table>
+<p><strong>什么条件出现才上调至"重点关注"</strong>：需同时满足 ①新能源齿轮/分动器收入占比突破 25%；②综合毛利率修复至 17%+；③股价回落至 8 元以下（PB&lt;1.85x）。三条同时成立时，中性远期可上修至 12 元以上（对应现价空间转正），届时方可上调评级。<strong>在此之前，任何上涨均属概念驱动，不构成基本面买点。</strong></p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>−45.4%</strong>，安全边际为负；即使乐观情景（新能源齿轮大放量 + 毛利率修复至 17%）空间也仅 +11.6%。现价 PB 2.99x 对应 ROE 0.96%，估值与基本面严重背离。<br />
+<strong>但本股不属于"坚决回避"</strong>——公司零有息负债、现金比率 237.96%、经营现金流持续为正（H1 3720.79 万）、主业未萎缩（收入持平、净利同比 +12.59%）、有真实客户（长城/奇瑞/比亚迪/博格华纳/采埃孚）与真实新品（新能源齿轮已量产），<strong>不符合"确无扭亏可能 + 无在手订单 + 现金流枯竭"的回避标准</strong>，且不存在 ST 或纯概念炒作（营收 4.40 亿、业务真实）。<br />
+<strong>核心跟踪点</strong>：①新能源齿轮能否单独披露收入并突破 2 亿；②综合毛利率能否修复至 17%；③PB 是否回落至 1.8x 以下。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.30 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>8.0 元</strong>（区间 7.0–9.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−39.8%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>7.26 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−45.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 5.50 元（−58.6%）～ 乐观 14.85 元（+11.6%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>零负债现金充裕但ROE不足1%，PB2.99x严重高估，新能源齿轮放量未验证</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（8.0 元以下再评估；等新能源齿轮收入披露+毛利率修复至17%）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：中马传动 2026 年半年度报告（2026-08-21/22 披露）、2025 年年度报告、2024/2023 年年度报告、上海证券报·中国证券网中报报道、同花顺与 AASTOCKS F10 公司资料（募投项目与产品规划）、中国汽车工业协会 2026 年 1–6 月汽车产销数据、中国摩托车商会 2026 年 1–6 月出口数据、SMM ASCC 2026 汽车供应链大会材料、科法斯（Coface）2026 年主要金属展望、腾讯行情（2026-09-11 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中电电机（603988）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>中电电机（603988）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>18.37 元</strong>（腾讯行情实测，2026-09-14 收盘）｜ 总市值 <strong>43.21 亿</strong> ｜ PE(TTM) <strong>11502.89x</strong> ｜ PB <strong>6.59x</strong> ｜ 总股本 <strong>2.352 亿股</strong><br />
+行业：电力设备—电机Ⅱ（大中型交/直流电机）｜ 板块：沪市主板<br />
+<strong>⚠️ 亏损口径双向核查结论（重点）</strong>：队列未标亏损、PE_TTM 为正（11502.89x），但实查 <strong>2026H1 归母净利仅 +470.15 万元、扣非 +421.20 万元</strong>，且 <strong>2026Q2 单季归母仅 +20.02 万元、扣非 +47.29 万元</strong>——<strong>已实质处于盈亏平衡线</strong>。TTM 归母 = 3064.53 − 3497.12 + 470.15 = <strong>+37.56 万元</strong>，43.21 亿市值 / 37.56 万净利 = 11504x，属<strong>典型的分母塌陷型失真</strong>（PE 数值本身无意义）。<br />
+<strong>按"盈利塌陷 + 类亏损"从严处理</strong>：不排除、不写简版，做完整五步法，估值采用 <strong>正常化净利润法</strong>。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：江苏无锡的大中型交直流电机专业制造商——研发、生产、销售大中型直流电动机、中高压交流电动机、发电机、电机试验站电源系统与开关试验站电源系统成套设备，订单式非标定制生产。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 2.5294 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交流电机</td>
+<td>1.80 亿</td>
+<td>71.01%</td>
+<td>中高压异步电机，主力</td>
+</tr>
+<tr>
+<td>直流电机</td>
+<td>3491.53 万</td>
+<td>13.80%</td>
+<td>大中型直流电动机</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>3406.88 万</td>
+<td>13.47%</td>
+<td>备件、服务、试验站电源系统等</td>
+</tr>
+<tr>
+<td>风力电机</td>
+<td>434.33 万</td>
+<td>1.72%</td>
+<td>边缘业务</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：大中型直流电动机、中高压交流异步电动机、同步电机、发电机、电机试验站电源系统、开关试验站电源系统；产品已通过 UL、CE、CSA、ABS、BV、DNVGL、RS、TÜV-SÜD、CGC 等认证。</p>
+<p><strong>主要客户/下游</strong>：冶金、电力、石化、水泥、矿山、水利、船舶等领域的大型工业客户；营销网络覆盖全国，采取展会销售 + 属地经销 + 网络推广，海外已有一批稳定客户。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：国内 2.16 亿（85.34%）、国外 3709.15 万（14.66%）。</p>
+<p><strong>股东与治理</strong>：民营企业，2014-11-04 上市（发行价 14.88 元），董事长轩秀丽，注册地无锡。年设计产能 <strong>4000MW</strong>，总资产 11.23 亿，员工 800 余人（专业技术人才 90 余人），拥有江苏省企业技术中心、江苏省大中型电机工程技术研究中心。<strong>上市以来累计派现约 5.55 亿元，累计派现募资比 186.43%</strong>（行业内排名前列）。</p>
+<p><strong>⚠️ 关键新变量——"双主业"战略</strong>：2025 年年度业绩说明会（2026-05-25）管理层明确"向上游资源行业拓展为公司中长期规划"，半年报释义中已出现<strong>北京高地资源开发有限公司、中德银泰投资有限公司、中科电能源（内蒙古）、中科聚能（内蒙古）</strong> 等主体，公司正"审慎立项、严控投入、风险优先"地考察资源类业务机会。<strong>这构成了本股当前估值的主要支撑，也是本报告重点审查的期权。</strong></p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>中性偏压：成本上行 + 能效升级双轨</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+<th>对公司影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电机能效提升 / IE4-IE5 强制标准推进</td>
+<td>工信部、市场监管总局</td>
+<td>强制性能效标准</td>
+<td>持续推进</td>
+<td><strong>正面</strong>——高效节能电机、特种专用电机是公司明确的高端化方向</td>
+</tr>
+<tr>
+<td>《钢铁行业产能置换实施办法》（工信部原〔2026〕97 号，2026-05-18 施行）</td>
+<td>工信部</td>
+<td>"史上最严"</td>
+<td>已施行</td>
+<td>间接：冶金客户资本开支节奏受影响</td>
+</tr>
+<tr>
+<td>大规模设备更新 / 制造业技改政策</td>
+<td>发改委等</td>
+<td>补贴+贴息</td>
+<td>持续</td>
+<td><strong>正面</strong>——工业电机属于设备更新范畴</td>
+</tr>
+<tr>
+<td>《2026 年政府工作报告》稳增长部署</td>
+<td>国务院</td>
+<td>—</td>
+<td>2026-03</td>
+<td>中性偏正面</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 全国规上工业增加值</td>
+<td>同比 <strong>+5.4%</strong>，其中制造业 <strong>+5.6%</strong></td>
+</tr>
+<tr>
+<td>2026H1 电气机械和器材制造业利润</td>
+<td>同比 <strong>−8.6%</strong>（行业利润在收缩）</td>
+</tr>
+<tr>
+<td>中小型电机行业 H1 运行（中国电器工业协会中小型电机分会）</td>
+<td>产销总体平稳、同比实现增长；<strong>利润总额同比下滑，盈利空间持续承压</strong>；出口韧性较强；<strong>期末应收应付账款及存货规模同比上升</strong>；<strong>电磁线、铝锭价格持续上行</strong>；行业综合经济效益指数同比小幅回落</td>
+</tr>
+<tr>
+<td>2026 年 1 月行业 PMI：原材料购进价格指数</td>
+<td><strong>85.5%</strong>（环比 +4.2pct），其中<strong>电磁线 93.6%、铝锭 87.3%</strong>，硅钢片/碳结钢/铸铁件均 &gt;55%</td>
+</tr>
+<tr>
+<td>2026 年 1 月行业 PMI：产品出厂价格指数</td>
+<td>65.5%（环比 +8.4pct），但机构判断"<strong>高进低出格局或将持续，行业利润将持续承压</strong>"</td>
+</tr>
+<tr>
+<td>公司 2026Q1</td>
+<td>营收 1.17 亿（−0.61%），归母 450.12 万（<strong>+7.21%</strong>），毛利率 <strong>29.14%（+6.01pct）</strong></td>
+</tr>
+<tr>
+<td>公司 2026Q2</td>
+<td>营收 1.36 亿，归母 <strong>20.02 万</strong>，扣非 47.29 万，毛利率 <strong>22.46%（环比 −6.68pct）</strong></td>
+</tr>
+<tr>
+<td>公司 2026H1</td>
+<td>营收 2.5294 亿（−17.95%），归母 470.15 万（−86.56%），扣非 421.20 万（−76.29%）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>供需格局与竞争</strong>：电机行业是典型的<strong>产能过剩 + 同质化价格战</strong>格局。行业两极分化显著——新能源汽车、工业自动化带动高端电机需求高增，传统工业（冶金/水泥/石化）配套电机需求疲软、价格战激烈。公司产品结构中传统工业电机占比高，<strong>正处在被挤压的一侧</strong>。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：电磁线（铜）、铝锭、硅钢片、碳结钢、铸铁件五大主材。<br />
+- 电解铜：2026H1 现货一度突破 <strong>7.8 万元/吨</strong>，同比 <strong>+23.4%</strong>；沪铜主力年均预计维持 <strong>7.6 万元/吨上方</strong><br />
+- 铝锭：<strong>20800–21500 元/吨</strong>区间震荡，同比 <strong>+4.3%</strong><br />
+- 高牌号无取向硅钢：2026Q1 单月三次上调、累计 <strong>+18.5%</strong>，硅钢在电机 BOM 成本占比从 28% 升至 <strong>34.2%</strong>；但 1–7 月 800 牌号硅钢热轧基料均价 3513 元/吨，同比 <strong>−1.9%</strong>（Q2 后回落）<br />
+- 绝缘材料（聚酰亚胺薄膜/Nomex）：因油价 2026-03 突破 95 美元/桶，采购成本 <strong>+14.2%</strong></p>
+<p><strong>下游</strong>：冶金、电力、石化、水泥、矿山——<strong>传统工业资本开支疲弱，议价权在买方</strong>。</p>
+<p><strong>议价权判断：弱</strong>——① 订单式生产，签单后原料涨价自己扛；② 行业"高进低出"；③ 公司在半年报中主动"压缩低毛利、同质化严重的产品订单占比"，等于主动让出份额。</p>
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<p><strong>因子1 成本传导弹性（转嫁系数）</strong><br />
+- 理论传导率：行业 2026 年 1 月出厂价格指数 65.5% vs 购进价格指数 85.5% → <strong>净传导缺口 20pct</strong>，行业层面传导率约 <strong>0.6–0.7</strong>，但涨价潮结束后不可持续（佳木斯防爆电机研究所明确判断"涨价策略恐难以持续"）。<br />
+- 公司实测：Q1 毛利率 29.14%（同比 <strong>+6.01pct</strong>，靠产品结构优化而非提价）→ Q2 毛利率 22.46%（<strong>环比 −6.68pct</strong>）。<strong>说明提价传导在 Q2 已基本失效</strong>。<br />
+- 公司已"初步建立战略供应商库"，估计年度锁价比例约 30–40%。<br />
+- <strong>综合传导率取 0.45</strong>：上游原料涨 10%，公司实际毛利承压 5.5%。<br />
+- <strong>验证点</strong>：逐季毛利率是否守住 22%；公司是否发布提价公告。<strong>证伪信号</strong>：单季毛利率跌破 20% 且营收继续同比下滑。</p>
+<p><strong>因子2 毛利结构再平衡（分业务线原料敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入权重</th>
+<th>原料敏感系数（铜/硅钢/铝）</th>
+<th>敏感权重</th>
+<th>毛利特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>交流电机</td>
+<td>0.710</td>
+<td>1.00（铜绕组+硅钢铁芯，标准结构）</td>
+<td><strong>0.710</strong></td>
+<td>主力，承压主体</td>
+</tr>
+<tr>
+<td>直流电机</td>
+<td>0.138</td>
+<td>1.20（铜用量更高）</td>
+<td>0.166</td>
+<td>单价高、定制强</td>
+</tr>
+<tr>
+<td>风力电机</td>
+<td>0.017</td>
+<td>1.10</td>
+<td>0.019</td>
+<td>边缘</td>
+</tr>
+<tr>
+<td>其他（备件/服务/试验站电源）</td>
+<td>0.135</td>
+<td>0.30（服务与系统集成为主，原料占比低）</td>
+<td>0.040</td>
+<td><strong>唯一低敏感、可对冲项</strong></td>
+</tr>
+<tr>
+<td>合计</td>
+<td>1.000</td>
+<td>—</td>
+<td><strong>0.935</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结构结论</strong>：交流电机承担 76% 的原料敏感权重，是毛利塌方主体；<strong>"其他"（含服务、试验站电源系统）仅占 13.5% 收入却是唯一低敏感项</strong>——这正是公司提出向"<strong>产品+服务</strong>"模式转型的财务动因（用服务收入稀释原料敏感度）。但当前规模太小，无法改变结构。</p>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+- 存货周转率仅 <strong>0.43 次</strong>（2026H1）、1.98 次（2025 全年）→ 订单式生产，存货以原材料+在产为主，周转慢。<br />
+- 在原料单边上涨期，慢周转 = <strong>被动"高价接货"</strong>（前期低价订单还在生产，当期采购已是高价）。<br />
+- <strong>无套期保值披露</strong>。公司已"启动存货与应收账款专项清理工作，对长账龄款项和呆滞库存进行排查梳理"。<br />
+- H1 计提信用减值和资产减值合计 <strong>623.82 万元</strong>（减少利润总额 623.82 万），接近 H1 归母净利（470.15 万）的 1.33 倍——<strong>减值对利润的侵蚀非常显著</strong>。<br />
+- <strong>结论：H1 不存在"低价囤货推高毛利"的水分，反而是高价接货 + 减值双压，真实经营质量比账面更难看。</strong></p>
+<p><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>情景假设</th>
+<th>验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电解铜（绕组主材）</td>
+<td>中性：2026H2 维持 7.4–7.8 万/吨高位</td>
+<td>沪铜主力月均价</td>
+<td>突破 8.5 万/吨</td>
+</tr>
+<tr>
+<td>高牌号无取向硅钢</td>
+<td>中性：Q2 已回落，H2 稳中略降</td>
+<td>硅钢 800 牌号出厂价月报</td>
+<td>重回 Q1 三次连涨</td>
+</tr>
+<tr>
+<td>铝锭</td>
+<td>中性：20800–21500 元/吨震荡</td>
+<td>SMM 铝锭现货</td>
+<td>突破 23000</td>
+</tr>
+<tr>
+<td>电机能效强制标准（IE4/IE5）</td>
+<td>正面：推动高效节能电机替换需求</td>
+<td>标准实施公告、公司高效电机收入占比</td>
+<td>标准延期、无强制</td>
+</tr>
+<tr>
+<td>"以铝代铜"技术</td>
+<td>行业已有 20+ 头部企业完成铝绕组电机型式试验与小批量交付，单机铜用量降 40%+</td>
+<td>公司是否跟进铝绕组技术</td>
+<td>公司未跟进则成本劣势扩大</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>四因子输出 → 第四步毛利率假设</strong>：2026 年综合毛利率约 <strong>25.5%</strong>（H1 实际 25.56%）；2029 年中性假设 <strong>26.5%</strong>（产品结构向高效节能/特种专用迁移 + 服务占比提升，部分对冲原料）。<strong>注意：这个假设建立在公司"主动收缩低毛利订单"的战略能持续兑现之上。</strong></p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>进度与节奏</th>
+<th>确认时点</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>产品结构优化</strong></td>
+<td>加大高效节能电机、特种专用电机拓展；主动压缩低毛利同质化订单</td>
+<td>已使 Q1 毛利率 +6.01pct</td>
+<td><strong>进行中</strong></td>
+<td>2026–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>"产品+服务"模式转型</strong></td>
+<td>深入客户需求前端，提供定制化电机解决方案，以技术溢价对冲成本</td>
+<td>未量化</td>
+<td>起步</td>
+<td>2027–2029</td>
+<td>中低</td>
+</tr>
+<tr>
+<td>精益生产/自动化改造</td>
+<td>提升一次合格率、降低能耗物耗；连续四年高压电机绝缘"零破压"</td>
+<td>未量化</td>
+<td>进行中</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td>战略供应商库</td>
+<td>增强原材料价格波动应对能力</td>
+<td>锁价比例未披露</td>
+<td>初步建立</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>双主业：上游资源业务</strong></td>
+<td>向上游资源行业拓展（矿山/资源开发）</td>
+<td><strong>未披露任何项目、金额、标的</strong></td>
+<td><strong>仅处于"前期考察和可行性研究"阶段</strong></td>
+<td><strong>不确定</strong></td>
+<td><strong>低（纯期权）</strong></td>
+</tr>
+<tr>
+<td>资源行业专用电机配套</td>
+<td>依托电机能力开发矿山/资源开发领域专用电机</td>
+<td>未量化</td>
+<td>早期</td>
+<td>不确定</td>
+<td>低</td>
+</tr>
+<tr>
+<td>2025 年度分红</td>
+<td>每 10 股派 0.45 元，合计 1058.4 万，分红率 34.54%</td>
+<td>已实施（2026-05-29）</td>
+<td>已完成</td>
+<td>2026</td>
+<td>高</td>
+</tr>
+<tr>
+<td>H1 经营现金流改善</td>
+<td>6898.32 万（上年同期 −1924 万）</td>
+<td>—</td>
+<td>已完成</td>
+<td>2026</td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计新增量化</strong>：<strong>除产品结构优化与费用管控外，本股不存在任何可量化的确定性新增产能或在手订单</strong>。半年报未披露在建工程新增项目、未披露在手订单金额、未披露募投项目。这是本股最大的基本面问题——<strong>没有可验证的增长来源</strong>。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>年设计产能 4000MW；2025 营收 6.585 亿、2026H1 年化仅 5.06 亿 → <strong>产能利用率偏低且在下滑</strong></td>
+<td>负向</td>
+</tr>
+<tr>
+<td>② 需求侧/客户份额</td>
+<td>客户为冶金/电力/石化/水泥/矿山大型工业客户；订单式生产；<strong>前五大客户集中度未披露</strong></td>
+<td>中性偏弱（传统工业资本开支疲弱）</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>大中型电机（非新能源驱动电机）；攻关方向为"高速电机轴承寿命提升、电机噪声抑制"；<strong>未见 IE5/扁线/永磁等代际领先技术</strong></td>
+<td><strong>与行业主流同步，未领先一代</strong></td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td>中等规模（行业均值营收 14.85 亿 vs 公司 2.53 亿），<strong>规模劣势明显，成本曲线中部偏右</strong></td>
+<td>负向</td>
+</tr>
+<tr>
+<td>⑤ 份额变化的二阶导数</td>
+<td>公司主动"收缩战线、压缩低毛利同质化订单" → <strong>份额在主动让出</strong>（营收 −17.95% 即为证据）</td>
+<td><strong>负向（当前阶段）</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>三档份额假设</strong>：保守——继续主动收缩，2029 年营收 5.0 亿；中性——收缩见底 + 高效节能/特种电机补位，2029 年营收 <strong>6.8 亿</strong>；乐观——资源配套电机 + 海外放量，2029 年营收 8.5 亿。<br />
+<strong>验证点</strong>：单季营收同比是否转正、高效节能电机收入占比披露。<strong>证伪信号</strong>：营收连续 3 个季度同比下滑且毛利率跌破 20%。</p>
+<p><strong>层2 扩展业务：主业迁移空间</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>能力可迁移性</td>
+<td><strong>中等</strong>——电机研发制造能力可迁移到矿山/资源开发专用电机（技术同源），但迁移到"资源开采/矿权运营"本身则<strong>完全不相关</strong></td>
+</tr>
+<tr>
+<td>新 TAM 弹性</td>
+<td>上游资源（矿业）TAM 巨大，若真做成，弹性数十倍于当前主业</td>
+</tr>
+<tr>
+<td>切入卡位</td>
+<td><strong>极早期</strong>——管理层明确表述为"前期考察和可行性研究"，"审慎立项、严控投入、风险优先"</td>
+</tr>
+<tr>
+<td>客户认证门槛</td>
+<td>矿用电机需煤安认证（MA）/防爆认证，门槛高、周期长</td>
+</tr>
+<tr>
+<td>信号验证</td>
+<td><strong>零</strong>——无框架协议、无标的公告、无金额、无尽职调查公告、无董事会决议</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结论：资源双主业是"纯期权"，未过任何验证点，绝不计入中性情景。</strong> 这是本股 43.21 亿市值中最大的一块"空气"。</p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+① 2027 年底前仍无任何资源项目的正式公告/董事会决议；② 单季毛利率跌破 20%；③ 营收连续 3 季同比下滑；④ 减值计提继续吞噬利润；⑤ 股价回落后"提质增效"行动方案无实质进展披露。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：本股当期净利已塌陷至盈亏平衡（TTM 归母 37.56 万元），PE 11504x 无意义，<strong>禁止使用当前 PE</strong>；同时禁止用 2023 年（归母 4320.70 万）/2022 年（5158.68 万）的好年景外推。采用 <strong>正常化净利润法</strong>：估稳态营收 → 保守正常化净利率 → × 远期合理 PE → 目标市值 → 目标价。</p>
+</blockquote>
+<p><strong>总股本：2.352 亿股</strong>（2026H1 归母净资产 6.5607 亿，每股净资产 <strong>2.79 元</strong>，对应 <strong>PB 6.59x</strong>）</p>
+<h3>正常化净利润三步推导</h3>
+<p><strong>第 1 步：估稳态营收（2029E）</strong></p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>依据</th>
+<th>2029E 营收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现有产能</td>
+<td>年设计产能 4000MW；2025 实际 6.585 亿；2026 年化 5.06 亿（主动收缩中）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>产品结构优化</td>
+<td>高效节能/特种专用电机补位 + 海外（越南/东南亚无布局，仅现有 14.66% 出口）+ 服务收入</td>
+<td>+1.2 亿</td>
+</tr>
+<tr>
+<td>资源配套电机</td>
+<td>若资源业务 2028 起落地，配套电机贡献</td>
+<td>+0.5 亿（<strong>不计入中性</strong>）</td>
+</tr>
+<tr>
+<td><strong>中性假设</strong></td>
+<td>2026 年 5.2 亿见底，2027–2029 随制造业设备更新与高效电机替换温和恢复</td>
+<td><strong>6.8 亿</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>继续萎缩</td>
+<td>5.0 亿</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>资源业务落地 + 电机复苏</td>
+<td>9.0 亿</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 2 步：算正常化净利率（三选一取保守）</strong></p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业正常净利率（电机Ⅱ，2026H1 行业均值 ROE 2.99%、净利均值 7800 万）</td>
+<td>约 4–6%</td>
+</tr>
+<tr>
+<td>公司历史最好年份净利率（2022 年：5158.68 万 / 8.60 亿）</td>
+<td><strong>6.00%</strong></td>
+</tr>
+<tr>
+<td>公司近 5 年归母净利率（2022 6.00% / 2023 5.70% / 2024 −1.55% / 2025 4.65% / 2026H1 1.86%）中值</td>
+<td>约 <strong>4.65%</strong></td>
+</tr>
+<tr>
+<td>产能爬坡后理论净利率（毛利率 26.5% − 费用率 20%）</td>
+<td>约 6.5%</td>
+</tr>
+<tr>
+<td><strong>取保守值</strong></td>
+<td><strong>4.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 3 步：正常化净利润 × 远期合理 PE = 目标市值 → 目标价</strong></p>
+<ul>
+<li><strong>正常化净利润（2029E 中性）= 6.8 亿 × 4.0% = 0.272 亿，取 0.28 亿</strong></li>
+<li>远期合理 PE：电机Ⅱ行业属传统制造，成长性一般，但公司为小市值 + 有转型预期，给 <strong>28x</strong>（已含一定流动性溢价，但<strong>不含资源期权</strong>）</li>
+<li>目标市值 = 0.28 × 28 = <strong>7.84 亿，取 8.4 亿</strong>（即 2029 年净利恢复至 0.30 亿 × 28x）</li>
+</ul>
+<blockquote>
+<p><strong>⚠️ 估值锚偏差提示</strong>：43.21 亿市值 − 8.4 亿基本面价值 = <strong>约 34.8 亿的"资源转型/壳"溢价</strong>，占总市值 <strong>80.5%</strong>。这 34.8 亿对应的是一项<strong>零公告、零标的、零金额、仅处于"可行性研究"阶段</strong>的期权。</p>
+</blockquote>
+<h3>三情景（2029E，正常化净利润法）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>电机主业继续萎缩、毛利率跌破 20%、资源无任何进展、减值持续</td>
+<td>0.12 亿</td>
+<td>22x</td>
+<td>2.64 亿</td>
+<td><strong>1.12 元</strong></td>
+<td><strong>−93.9%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>主业 2026 见底后温和恢复至 6.8 亿营收，正常化净利率 4.0%；资源业务未落地</td>
+<td><strong>0.30 亿</strong></td>
+<td>28x</td>
+<td>8.4 亿</td>
+<td><strong>3.57 元</strong></td>
+<td><strong>−80.6%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>资源业务 2027–2028 落地并贡献并表净利约 1.7 亿，叠加电机复苏至 0.30 亿</td>
+<td><strong>2.00 亿</strong></td>
+<td>26x</td>
+<td>52.0 亿</td>
+<td><strong>22.11 元</strong></td>
+<td><strong>+20.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E·正常化）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td><strong>正常化净利润 0.20 亿</strong>（当期实际约 0.10–0.15 亿）</td>
+<td><strong>正常化净利润 0.30 亿</strong></td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>28x</td>
+<td>28x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>5.6 亿</td>
+<td>8.4 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>2.38 元</strong></td>
+<td><strong>3.57 元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>基准口径说明</strong>：2026 年为主动收缩 + 原料涨价 + 减值（H1 已提 623.82 万）的低谷年，实际归母预计仅 0.10–0.15 亿；为避免使用"拐点年化"，基准采用<strong>正常化净利 0.20 亿</strong>（介于低谷实际与稳态 0.30 亿之间）。</p>
+</blockquote>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸 + 期权纪律）</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：<strong>PB 6.59x，远高于 1，不破净</strong>，反向触发"高估"警示。资产结构本身是干净的——2026H1 总资产 11.23 亿、归母净资产 6.56 亿、资产负债率 <strong>41.56%</strong>、<strong>有息负债仅 251.8 万元</strong>（几乎零杠杆）、速动比率 1.67、现金比率 61.33%、经营现金流 +6898 万（同比 +458.54%）。<strong>即：资产质量无瑕疵，问题 100% 出在价格而非资产。</strong></li>
+<li><strong>校正2 周期位置校正</strong>：电机属弱周期，但当前处于 <strong>"原料成本上行 + 传统工业需求疲弱"的底部区域</strong>（电气机械和器材制造业 H1 利润 −8.6%）。中性净利已用正常化法（近 5 年中值 + 行业均值 + 历史最好三者取保守），<strong>规避了"用 2022/2023 好年景外推"与"用 2026Q1 单季 +7.21% 拐点年化"两种常见错误</strong>。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率 41.56% <strong>&lt; 60% 阈值</strong>，有息负债几乎为零 → <strong>不触发强制负面情景</strong>。财务安全性极高（这是本股唯一的确定性优点）：零有息负债 + 6.56 亿净资产 + 正经营现金流，<strong>不存在"倒在黎明前"的生存风险</strong>。因此即使中性空间 −80.6%，也<strong>不判"坚决回避"</strong>。</li>
+<li><strong>期权纪律（关键）</strong>：资源双主业（北京高地资源、中德银泰、中科电能源/中科聚能）<strong>未过任何验证点——无公告、无标的、无金额、无决议，仅管理层口头表述"前期考察和可行性研究"，严格不计入中性 NAV/中性净利</strong>，只放在乐观情景。</li>
+</ul>
+<hr />
+<h3>准亏损从严：正常化净利润法 + 盈利塌陷三问</h3>
+<p>本报告对本股按「<strong>盈利塌陷 + 类亏损</strong>」从严处理（当期 TTM 归母仅 <strong>37.56 万元</strong>，已实质处于盈亏平衡线，PE 11504x 无意义），故按亏损股纪律完整回答三问：</p>
+<p><strong>1）为什么亏（利润为什么塌陷到盈亏平衡线）？</strong><br />
+- <strong>减值是直接主因（可量化）</strong>：2026H1 计提信用减值与资产减值合计 <strong>623.82 万元</strong>，达到 H1 归母净利（470.15 万）的 <strong>1.33 倍</strong> —— 当期利润几乎被减值吃光；<br />
+- <strong>需求端</strong>：营收 −17.95%，传统工业电机下游（冶金、起重、风机水泵）资本开支疲弱，电气机械和器材制造业 H1 利润 −8.6%；<br />
+- <strong>成本端</strong>：Q2 单季毛利率环比 <strong>−6.68pct</strong> 至 22.46%，硅钢 / 铜 / 铝涨价未能完全转嫁（传导率不足，见第二步进阶因子1）。<br />
+→ 定性：属「<strong>减值 + 需求疲弱 + 原料挤压</strong>」三重叠加的<strong>周期性塌陷</strong>，既非一次性会计事故，也非主业永久性毁灭——故可做正常化，但仍需从严。</p>
+<p><strong>2）靠什么扭亏（恢复）？触发时点在哪一年？</strong><br />
+- <strong>靠减值出清后的主业恢复</strong>：2025 年已充分计提，2027 年起减值基数消失，营收恢复至 6.8 亿 × 正常化净利率 4.0% 即可回到 0.27–0.30 亿量级；<br />
+- <strong>靠产品结构升级</strong>：高效电机 / 永磁直驱 / 防爆电机替代传统异步电机，受电机能效强制标准与《电机能效提升计划（2025—2027）》驱动；<br />
+- <strong>触发时点（中性）</strong>：<strong>2027H2–2028</strong> 看到营收同比转正且毛利率回升至 26% 以上。<br />
+- <strong>期权纪律</strong>：市场定价的"资源转型"预期<strong>无任何正式公告</strong>，不计入中性锚，仅入乐观 / 机会情景。</p>
+<p><strong>3）亏得起吗（能否撑到恢复那天）？</strong><br />
+- <strong>完全亏得起，无生存风险</strong>：2026H1 资产负债率仅 <strong>41.56%</strong>、<strong>有息负债 251.8 万元（近乎零杠杆）</strong>、速动比率 <strong>1.67</strong>、现金比率 <strong>61.33%</strong>、经营现金流 <strong>+6898 万（同比 +458.54%）</strong>、归母净资产 <strong>6.56 亿</strong>。<br />
+- 即便在"利润归零"的最差状态下，公司也无任何偿债压力，<strong>不存在"倒在黎明前"风险</strong>。<br />
+→ 结论：<strong>资产端与现金流端是安全的，问题 100% 出在价格（PB 6.59x、正常化 PE 约 174x），而非经营存续。</strong></p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>极度偏高</strong>。现价 18.37 元对应 PB <strong>6.59x</strong>（每股净资产仅 2.79 元）、正常化 PE 约 <strong>174x</strong>（0.30 亿稳态净利）。市场定价的不是电机业务，而是"资源转型 + 小盘壳"预期。</p>
+<p><strong>安全边际</strong>：<br />
+- 远期中性 3.57 元 → 空间 <strong>−80.6%</strong><br />
+- 悲观 1.12 元 → 下行 <strong>−93.9%</strong><br />
+- 乐观 22.11 元 → 上行 <strong>+20.4%</strong>（且需资源资产并表净利达 1.7 亿/年，属极小概率）<br />
+- <strong>唯一的下行保护</strong>：零有息负债 + 6.56 亿净资产 + 正现金流 + 连续分红（上市累计派现 5.55 亿，派现募资比 186.43%）→ 公司不会倒闭，但<strong>股价可以跌很多</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>基本面介入价：3.5 元以下</strong>（对应正常化 PE 28x 附近）。现价距此有 80% 下跌空间，<strong>不具备任何基本面意义上的介入价值</strong><br />
+2. <strong>若坚持博弈资源转型，必须等硬信号</strong>：① 董事会正式决议公告；② 明确的标的名称 + 交易金额 + 股权比例；③ 标的的资源储量/品位/盈利数据（第三方报告）；④ 若构成重大资产重组，需交易所问询函回复披露<br />
+3. <strong>在硬信号出现之前，任何买入都是对"管理层一句话"定价</strong></p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 资源转型证伪（首要）</strong>：管理层仅表述为"前期考察和可行性研究""后续如有相关事项将严格履行审议程序及信息披露义务"——这是标准的不承诺表述。若 2027 年底前无实质动作，34.8 亿期权溢价将快速蒸发<br />
+2. <strong>主业持续塌陷</strong>：Q2 单季归母 20.02 万，若 H2 转亏（2025Q4 曾单季亏 857.01 万），全年归母可能归零甚至转负<br />
+3. <strong>原料成本失控</strong>：行业"高进低出"格局延续，2026 年前两月电机行业因原料失控的订单违约率升至 <strong>4.5%</strong>（2018 年以来新高）<br />
+4. <strong>减值风险</strong>：H1 已计提 623.82 万，应收与存货规模行业性上升，后续仍有计提空间<br />
+5. <strong>高估值下的流动性风险</strong>：市值 43.21 亿但真实盈利仅百万级，一旦风格切换，回撤幅度没有基本面支撑位</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>内容</th>
+<th>验证点</th>
+<th>证伪信号</th>
+<th>计入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业调整剩者红利</strong></td>
+<td>电机中小厂因原料失控"接单即亏损"，2026 年前两月行业订单违约率 4.5% 创 2018 年新高 → 出清进行中</td>
+<td>行业集中度 CR5 提升、公司营收同比转正、毛利率回升至 26%+</td>
+<td>营收继续下滑、毛利率跌破 20%</td>
+<td><strong>中性已部分计入</strong>（营收恢复至 6.8 亿）</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>大规模设备更新 + IE4/IE5 强制能效标准 → 高效电机替换需求</td>
+<td>能效标准强制实施公告；公司"高效节能电机收入占比"披露</td>
+<td>标准延期、公司无高效电机订单</td>
+<td>机会情景（不计入中性）</td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td>股价 2026 年内 −24.9%（24.26→18.37），年内最高 39.93（1/29）已跌 <strong>54%</strong></td>
+<td>PB 回落至 2x 以下；PE 回到可计算区间</td>
+<td><strong>当前 PB 仍 6.59x，错杀证据不成立</strong></td>
+<td><strong>证伪——不是错杀，是仍在高位</strong></td>
+</tr>
+<tr>
+<td><strong>D 技术代际跃迁期权</strong></td>
+<td>无。公司无全新技术路线（未涉足扁线/油冷/永磁/轴向磁通等）</td>
+<td>—</td>
+<td>—</td>
+<td>不适用</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>纪律</strong>：A 类已按营收恢复至 6.8 亿计入中性；B 类只进乐观栏；<strong>C 类明确证伪</strong>——股价虽跌 54%，但 PB 6.59x、正常化 PE 174x 说明<strong>跌的是泡沫不是价值</strong>；D 类不存在。<br />
+<strong>什么条件出现才上调至"重点关注"</strong>：① 资源项目出现<strong>董事会决议 + 标的名称 + 交易金额 + 标的盈利数据</strong>四项齐全的正式公告；② 公告后测算的并表净利使中性目标价 &gt;27.5 元（即现价 +50% 以上）；③ 同时电机主业单季营收与毛利率同步转正。三者必须全部满足。在此之前，任何看涨都属于"为看涨找理由"。</p>
+</blockquote>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：① <strong>基本面价值 8.4 亿 vs 市值 43.21 亿，80.5% 的市值是无公告支撑的资源转型期权</strong>，中性远期空间 <strong>−80.6%</strong>，远不满足"重点关注"（&gt;+50%）或"纳入观察"（&gt;0）的正空间门槛；② 主业 Q2 单季归母仅 20.02 万，已实质盈亏平衡，无任何可量化的新增产能或在手订单；③ 但公司资产干净、零有息负债、持续分红、不存在生存风险，<strong>不符合"确无扭亏可能/纯概念炒作"的"坚决回避"标准</strong>（电机是真实业务，6.56 亿净资产、800 名员工、4000MW 产能、H1 经营现金流 +6898 万）。<br />
+<strong>定位</strong>：这是一只"<strong>资产无瑕疵、价格有泡沫</strong>"的转型预期股。正确的做法是放在观察池最末端，<strong>等资源项目的正式公告</strong>，用公告里的数字重新定价，而不是为管理层的一句"前期考察"支付 34.8 亿。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>18.37 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>2.4 元</strong>（区间 2.0–2.8，正常化净利润 0.20 亿×28x）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−87.0%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>3.57 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−80.6%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.12 元（−93.9%）～ 乐观 22.11 元（+20.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>大中型电机主业Q2单季归母仅20万已盈亏平衡，PB6.59，市值80%是零公告的资源转型期权溢价</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（3.5 元以下或资源项目正式公告后再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-21/22 披露）、2026 年度"提质增效重回报"行动方案半年度评估报告、关于 2026 年半年度计提资产减值准备的公告、2025 年年度报告、中国电器工业协会中小型电机分会行业运行数据、佳木斯防爆电机研究所《2026 年 1 月中小型电机行业采购经理指数》、Mysteel/有色金属工业协会电解铜与铝锭价格数据、上海证券报、证券时报、腾讯行情（2026-09-14 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

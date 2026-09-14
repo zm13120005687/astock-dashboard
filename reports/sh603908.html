@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>牧高笛（603908）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>牧高笛（603908）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>18.51 元</strong>（2026-09-11 收盘，实测）｜ 总市值 <strong>约 17.24 亿</strong> ｜ PE(TTM) <strong>−36.63x（TTM 口径，失真）</strong> ｜ PB <strong>约 3.46x</strong> ｜ 总股本 <strong>0.9313 亿股</strong><br />
+行业：户外用品（帐篷 / 睡袋 / 充气垫 / 背包 / 登山杖 / 户外服饰）｜ 板块：上交所主板<br />
+<strong>口径校正（重要）</strong>：<br />
+① 队列表现价 19.75、市值 18.39 亿、PE_TTM −38.28 均为过时数据。本报告现价一律采用<strong>实测 2026-09-11 收盘价 18.51 元</strong>。<br />
+② <strong>队列表"亏损标记 = True"为 TTM 口径误标</strong>。经核实 2026 年半年报：<strong>2026H1 归母净利润 +3334.50 万元，扣非 +2742.68 万元，已恢复盈利</strong>。TTM 为负系 2025 全年亏损 3419 万元拖累（其中 2025Q4 单季亏损 7083 万元）。<br />
+③ <strong>反向核查同样要查</strong>：公司 2026H1 非经常性损益 591.82 万元中<strong>政府补助占 818.42 万元</strong>（占归母 17.5%）；且 <strong>2026Q2 扣非仅 762.89 万元，同比 −50.46%、环比 −61.47%</strong>，主因外币汇率影响。<strong>盈利质量环比明显弱化，须持续跟踪。</strong></p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内户外装备"自主原创品牌 + OEM/ODM 专业制造"双轮驱动企业——自主品牌 MOBI GARDEN（牧高笛）做国内露营与徒步装备，OEM/ODM 为全球户外品牌做产品开发和生产制造，三地产能布局中国、孟加拉国、越南。</p>
+<p><strong>业务结构（两大板块）</strong></p>
+<table>
+<thead>
+<tr>
+<th>板块</th>
+<th>内容</th>
+<th>市场</th>
+<th>毛利率特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自主原创品牌业务</strong></td>
+<td>MOBI GARDEN 牧高笛（经典徒步帐篷起家）+ 大牧品牌；已拓展至帐篷、睡袋、充气垫、背包、登山杖、冲锋衣、软壳、美利奴内搭等全品类户外装备与服饰</td>
+<td><strong>国内为主</strong></td>
+<td><strong>高</strong>（品牌溢价，估算 35–40%）</td>
+</tr>
+<tr>
+<td><strong>OEM/ODM 专业制造</strong></td>
+<td>面向全球客户提供户外产品开发设计及生产制造服务</td>
+<td><strong>出口</strong>：欧洲、澳大利亚、新西兰、亚洲、<strong>美国</strong></td>
+<td><strong>低</strong>（代工，估算 22–25%）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026H1 财务概览（营业收入 5.897 亿元，同比 −2.61%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026H1</th>
+<th>上年同期</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>5.897 亿</td>
+<td>6.055 亿</td>
+<td>−2.61%</td>
+</tr>
+<tr>
+<td>利润总额</td>
+<td>4640.67 万</td>
+<td>5743.87 万</td>
+<td>−19.21%</td>
+</tr>
+<tr>
+<td><strong>归母净利润</strong></td>
+<td><strong>3334.50 万</strong></td>
+<td>4721.01 万</td>
+<td><strong>−29.37%</strong></td>
+</tr>
+<tr>
+<td>扣非净利润</td>
+<td><strong>2742.68 万</strong></td>
+<td>4103.82 万</td>
+<td><strong>−33.17%</strong></td>
+</tr>
+<tr>
+<td>经营活动现金流净额</td>
+<td><strong>+1.313 亿</strong></td>
+<td>0.910 亿</td>
+<td><strong>+44.42%</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td><strong>29.75%</strong></td>
+<td>31.37%</td>
+<td>−1.62pct</td>
+</tr>
+<tr>
+<td>加权 ROE</td>
+<td>6.91%</td>
+<td>8.18%</td>
+<td>−1.27pct</td>
+</tr>
+<tr>
+<td>期间费用</td>
+<td>1.24 亿</td>
+<td>1.315 亿</td>
+<td>−5.4%（费用率 21.03%，−0.68pct）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>季度拆分（关键）</strong></p>
+<table>
+<thead>
+<tr>
+<th>季度</th>
+<th>营业收入</th>
+<th>归母净利润</th>
+<th>扣非净利润</th>
+<th>毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026Q1</td>
+<td>2.682 亿</td>
+<td>2047.11 万</td>
+<td>1979.79 万</td>
+<td>30.43%</td>
+</tr>
+<tr>
+<td><strong>2026Q2</strong></td>
+<td><strong>3.215 亿（+18.58%，环比 +19.87%）</strong></td>
+<td><strong>1287.39 万（−22.07%）</strong></td>
+<td><strong>762.89 万（−50.46%，环比 −61.47%）</strong></td>
+<td><strong>29.18%（−7.87pct）</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>营收环比增长但利润环比大幅下滑</strong>，核心是<strong>毛利率承压 + 汇率影响</strong>（公司披露扣非下降"主要受外币汇率影响所致"）。</p>
+<p><strong>核心产品</strong>："冷山风翼"专业徒步帐篷、"冷山龙脊"登山杖、"冷山极境攀登系统"（2026H1 随专业登山团队完成<strong>努子峰、珠穆朗玛峰和洛子峰三峰连登</strong>，在高海拔低氧、暴风、极寒环境完成实测）、"耐造王岩羊硬壳"冲锋衣。</p>
+<p><strong>主要客户/下游</strong>：<br />
+- 自主品牌：国内终端消费者（线上天猫/抖音/直播电商 + 线下直营/经销门店 + 社群）<br />
+- OEM/ODM：欧洲、澳大利亚、新西兰、亚洲、美国的全球户外品牌商</p>
+<p><strong>境内外收入占比</strong>：自主品牌以国内为主；OEM/ODM 以出口为主。<strong>海外收入占比高（OEM 为主），汇率与关税是核心变量。</strong></p>
+<p><strong>股东背景</strong>：法定代表人陆暾华；控股股东宁波大牧投资有限公司；注册地浙江衢州，办公地宁波。2026 年 5 月作为 2026 世界品牌莫干山大会官方合作伙伴（<strong>连续第三年</strong>）。</p>
+<p><strong>资产状况（2026H1 末）</strong>：总资产 9.914 亿，归母净资产 <strong>4.977 亿</strong>（每股 <strong>5.34 元</strong>，较上年末 +6.55%）；<strong>资产负债率 49.8%</strong>；流动比率 <strong>1.67</strong>、速动比率 <strong>1.02</strong>；短期借款较上年末 <strong>−29.19%</strong>，货币资金较上年末 <strong>+22.84%</strong>。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+<th>对公司的方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>《体育强国建设"十五五"规划》</strong>（7 万亿目标）</td>
+<td>国务院 / 体育总局</td>
+<td><strong>国家级专项规划</strong></td>
+<td>已发布</td>
+<td><strong>核心利好</strong>：<strong>户外运动被列为八大专栏工程之一</strong>，户外装备大盘 2025 年 6021 亿元</td>
+</tr>
+<tr>
+<td>扩大内需 / 促消费系列政策</td>
+<td>中央及各部委</td>
+<td>国家级</td>
+<td>持续</td>
+<td>正向：户外属受益消费品类</td>
+</tr>
+<tr>
+<td>跨境电商与出口退税政策</td>
+<td>商务部 / 税务总局</td>
+<td>国家级</td>
+<td>持续</td>
+<td>正向：利好 OEM/ODM 出口</td>
+</tr>
+<tr>
+<td><strong>美国对华关税</strong></td>
+<td>美国政府</td>
+<td><strong>国际，重大风险</strong></td>
+<td>持续波动</td>
+<td><strong>重大利空</strong>：OEM/ODM 出口美国市场受直接冲击，传导率仅 0.4–0.5（需与客户分摊）</td>
+</tr>
+<tr>
+<td>绿色/可持续材料标准（出口市场）</td>
+<td>欧盟等</td>
+<td>国际</td>
+<td>持续</td>
+<td>中性偏正：可持续材料产品份额从 2023 年 8% 升至 2026 年 19%，公司需跟进</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全球户外用品市场</strong></td>
+<td>2025 年 <strong>581.2 亿美元</strong> → 2026 年预计 <strong>652.8 亿美元</strong>；2026–2035 年均增速 <strong>5.8%</strong>，2035 年有望达 1117 亿美元</td>
+</tr>
+<tr>
+<td><strong>全球露营装备市场</strong></td>
+<td>2025 年 <strong>967.5 亿美元</strong> → 2026 年 <strong>1044.6 亿美元</strong>；2026–2034 年均增速 <strong>8.94%</strong></td>
+</tr>
+<tr>
+<td>帐篷细分</td>
+<td>2025 年创造约 <strong>43 亿美元</strong>收入；背包、睡袋等硬装备增长率 <strong>11.3%</strong></td>
+</tr>
+<tr>
+<td><strong>中国户外运动用品市场</strong></td>
+<td>2020 年 299.24 亿美元 → 2025 年 <strong>365.42 亿美元</strong>（另一口径 414.04 亿美元）；<strong>2026 年预计 425.3 亿美元（折合人民币超 3000 亿元）</strong></td>
+</tr>
+<tr>
+<td>2026 年中国户外用品</td>
+<td><strong>零售额同比 +9%，出货量同比 +8.8%</strong>；品牌数量将达 <strong>993 个</strong></td>
+</tr>
+<tr>
+<td><strong>增速拐点（关键）</strong></td>
+<td>2024 年 +6.6% → 2025 年 <strong>+13.3%</strong> → <strong>2026 年预计放缓至 +2.7%</strong>，行业从高速扩张转向高质量平稳增长</td>
+</tr>
+<tr>
+<td>中国露营经济核心市场</td>
+<td>2025 年 <strong>2483.2 亿元</strong> → 2026 年预计突破 <strong>2900 亿元</strong>；上下游产业链规模 2025 年超 <strong>1.44 万亿元</strong></td>
+</tr>
+<tr>
+<td>全球户外行业（宏观口径）</td>
+<td>2025 年 <strong>1480 亿美元</strong>，较 2020 年 +38%，年均增速约 6.7%；全球约 35% 成年人每周至少参与一次户外活动（较疫情前 +9pct）</td>
+</tr>
+<tr>
+<td>消费趋势</td>
+<td>① 产品向<strong>轻量化、功能化、环保化</strong>转型（可持续材料份额 2023 年 8% → 2026 年 <strong>19%</strong>）；② <strong>"轻户外"</strong>兴起，从专业场景融入日常生活；③ <strong>智能化</strong>渗透（智能穿戴在户外场景渗透率 2024 年 21% → 2026 年 <strong>34%</strong>）</td>
+</tr>
+<tr>
+<td>渠道趋势</td>
+<td>2026 年全球户外用品<strong>线上销售占比约 26.8%–48%</strong>，DTC 与内容电商影响力持续增强</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>中国户外品牌数量 2026 年将达 <strong>993 个</strong>；国际巨头亚玛芬体育 2025 年营收 <strong>65.66 亿美元（+27%）</strong>，<strong>大中华区 18.62 亿美元（+43.4%）</strong> → <strong>高端市场被国际品牌挤压，中低端内卷</strong></td>
+</tr>
+<tr>
+<td><strong>公司最新季度（2026H1）</strong></td>
+<td>营收 5.897 亿（−2.61%），归母 <strong>+3334.50 万</strong>（−29.37%），扣非 +2742.68 万（−33.17%），<strong>经营现金流 +1.313 亿（+44.42%）</strong></td>
+</tr>
+<tr>
+<td><strong>存货（关键改善指标）</strong></td>
+<td>2026H1 末存货账面价值 <strong>3.09 亿</strong>，较上年末 <strong>−27.87%</strong>（减少 1.19 亿），占总资产比重下降 <strong>11.36pct</strong>；存货跌价准备 <strong>7600.55 万</strong>，计提比例 <strong>19.74%</strong></td>
+</tr>
+<tr>
+<td><strong>应收账款（风险点）</strong></td>
+<td>应收票据及应收账款较上年末 <strong>+70.52%</strong>，占总资产比重上升 <strong>7.65pct</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：面料（尼龙、涤纶、TPU 复合布）、铝杆/玻杆（帐篷支架）、羽绒、保温材料、化工辅料。属<strong>充分竞争的大宗化原料</strong>，公司议价能力中等。</p>
+<p><strong>下游</strong>：① 自主品牌 → 国内消费者（线上 + 线下）；② OEM/ODM → 海外品牌商（欧洲、澳新、亚洲、美国）。</p>
+<p><strong>议价权</strong>：<strong>中等偏弱</strong>。三条佐证：<br />
+- ① OEM/ODM 模式下定价权在品牌商，且美国关税需与客户分摊（传导率仅 0.4–0.5）；<br />
+- ② 2026Q2 毛利率 <strong>−7.87pct 至 29.18%</strong>，主因汇率（美元结算）与产品结构，<strong>说明成本与汇率压力无法完全转嫁</strong>；<br />
+- ③ 行业品牌数量 993 个，中低端内卷严重。<br />
+- <strong>正向</strong>：自主品牌占比提升 + 产品高端化（冷山极境攀登系统三峰实测）可部分改善议价权。</p>
+<h4>第二步进阶：原料成本 → 毛利结构四因子</h4>
+<ul>
+<li><strong>因子1 成本传导弹性（pass-through）</strong>：<br />
+  | 模式 | 传导率 | 依据 |<br />
+  |---|---|---|<br />
+  | 自主品牌（国内零售） | <strong>约 0.85–0.9</strong> | 自主定价，可随成本与品牌力调价；但 993 个品牌竞争下调价空间受限 |<br />
+  | OEM/ODM（出口代工） | <strong>约 0.7–0.8</strong>（年度议价） | 成本加成报价，年度重议；汇率与关税无法即时传导 |<br />
+  | <strong>美国关税冲击</strong> | <strong>约 0.4–0.5</strong> | 外生政策冲击，需与客户分摊（<strong>最弱环节</strong>） |<br />
+  → 上游面料/铝杆涨价 ×(1−0.8) = 实际毛利承压约 20%；<strong>关税 ×(1−0.45) = 55% 由公司自扛</strong>。</li>
+<li><strong>因子2 毛利结构再平衡（分业务线毛利率 + 原料敏感权重）</strong>：<br />
+  | 业务线 | 估算毛利率 | 面料/金属杆敏感权重 | 汇率/关税敏感权重 | 结构变化 |<br />
+  |---|---|---|---|---|<br />
+  | <strong>自主原创品牌</strong>（国内） | <strong>约 35–40%</strong>（品牌溢价） | 中（约 0.4） | <strong>极低（约 0.05）</strong>——人民币结算，无关税 | 公司战略重心，占比持续提升（扩品类、扩人群、扩渠道） |<br />
+  | <strong>OEM/ODM</strong>（出口） | <strong>约 22–25%</strong>（代工） | 高（约 0.7） | <strong>极高（约 0.9）</strong>——美元结算 + 美国关税 | 2026H1 出货恢复（Q2 营收 +18.58%）但利润受汇率侵蚀 |<br />
+  → <strong>核心结构判断</strong>：2026H1 综合毛利率 29.75%（同比 −1.62pct）、<strong>Q2 骤降至 29.18%（−7.87pct）</strong>，正是<strong>低毛利 OEM 出货占比提升（Q2 营收环比 +19.87%）+ 汇率侵蚀 OEM 毛利</strong>共同作用的结果。<strong>禁止用单一综合毛利率 29.75% 代表全结构</strong>——两条产线毛利率差 13–18pct，且汇率敏感度相差 18 倍。</li>
+<li><strong>因子3 库存与采购节奏（timing）—— ⚠️ 本股最关键的积极因子</strong>：</li>
+<li><strong>高价接货的教训已消化</strong>：2025Q4 单季亏损 <strong>7083 万元</strong>，主因<strong>去库存 + 存货跌价计提</strong>（露营热退潮后的库存积压）。</li>
+<li><strong>去库已基本完成（真实改善）</strong>：2026H1 末存货 3.09 亿，<strong>较上年末 −27.87%</strong>（减少 1.19 亿），占总资产比重<strong>下降 11.36pct</strong>；存货跌价准备 7600.55 万、计提比例 19.74%。</li>
+<li><strong>现金流改善是硬证据</strong>：经营活动现金流净额 <strong>+1.313 亿（+44.42%）</strong>，公司明确说明"主要系本期调整去库策略，加速存货去化，提高资产周转率所致"；<strong>营业收入现金比 113.13%、净现比 393.91%</strong> → <strong>利润有真实现金支撑</strong>。</li>
+<li><strong>区分当期 vs 远期</strong>：2025 年的亏损是"<strong>存货跌价一次性事件</strong>"，2026H1 的盈利是"<strong>去库后轻装上阵</strong>"的真实盈利。<strong>但需提示：已计提的 7600 万跌价准备若未来转回，将贡献非经常性收益，不可视为经常性盈利。</strong></li>
+<li><strong>因子4 政策 / 市场锚点（原料成本驱动变量）</strong>：<br />
+  | 变量 | 情景假设 | 可观测验证点 | 证伪信号 |<br />
+  |---|---|---|---|<br />
+  | <strong>美国对华关税（OEM 最大风险）</strong> | 中性：维持现行税率；悲观：再加征 10–20% | 美国贸易代表办公室公告；公司 OEM 订单与毛利率 | 关税再加征且客户拒绝分摊，OEM 毛利率跌破 18% |<br />
+  | <strong>人民币汇率（美元结算）</strong> | 中性：双向波动；2026Q2 已造成扣非 −50.46% | 美元兑人民币中间价；公司汇兑损益 | 人民币单边升值 5% 以上且持续 |<br />
+  | <strong>《体育强国"十五五"规划》户外专栏</strong> | 正向：7 万亿体育产业目标，户外装备大盘 6021 亿元 | 体育总局年度户外运动产业数据；地方配套政策 | 规划执行力度不足、无实质投资 |<br />
+  | 出口退税率 | 中性维持 | 税务总局出口退税率调整公告 | 退税率下调 |<br />
+  | <strong>行业增速（2026 预计 +2.7%）</strong> | 中性：低速平稳增长 | 中国户外用品零售额季度数据 | 行业转入负增长 |</li>
+</ul>
+<p>→ <strong>四因子输出（喂给第四步毛利率假设）</strong>：中性 2029 综合毛利率取 <strong>30.5%</strong>（高于 2026H1 的 29.75%，理由：自主品牌占比提升 + 产品高端化；低于 2023 年 28.32%→2024 年 28.48% 的历史平台则因 OEM 占比回升摊薄——实为<strong>结构对冲后的净提升</strong>）。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量</th>
+<th>状态与节奏</th>
+<th>收入/利润确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>去库存完成（已兑现）</strong></td>
+<td>存货较上年末 <strong>−27.87%</strong>（减少 1.19 亿），经营现金流 <strong>+1.313 亿（+44.42%）</strong></td>
+<td>释放营运资金约 1.19 亿</td>
+<td><strong>已完成</strong></td>
+<td>2026 全年</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>降本增效（已兑现）</strong></td>
+<td>销售费用 <strong>−1.90%</strong>、管理费用 <strong>−16.58%</strong>（精简人员结构、提升人效）、研发 −8.05%</td>
+<td>期间费用减少 746.36 万，费用率 −0.68pct</td>
+<td><strong>已实现</strong></td>
+<td>2026–2027</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>产品矩阵扩张</strong></td>
+<td>"冷山风翼"专业徒步帐篷、"冷山龙脊"登山杖、"耐造王岩羊硬壳"冲锋衣、美利奴内搭、软壳</td>
+<td>从经典徒步帐篷拓展至<strong>全品类户外装备与服饰</strong></td>
+<td>已上市</td>
+<td>2026–2029 持续</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td><strong>品牌力实证</strong></td>
+<td>"冷山极境攀登系统"完成<strong>努子峰 + 珠峰 + 洛子峰三峰连登</strong>实测</td>
+<td>极端场景验证专业性</td>
+<td>已发生（2026H1）</td>
+<td>品牌溢价于 2026H2–2029 释放</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>三地产能优化</strong></td>
+<td>中国 + <strong>孟加拉国</strong> + <strong>越南</strong> 三地产能布局，持续优化产能配置与订单分配</td>
+<td>可规避单一产地关税风险</td>
+<td>已建成，持续优化</td>
+<td>2026–2029</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td><strong>渠道建设</strong></td>
+<td>线上 + 直播电商 + 线下多场景；"专业引领 + 全民参与"社群生态</td>
+<td>连续三年成为世界品牌莫干山大会官方合作伙伴</td>
+<td>持续</td>
+<td>2026–2029</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>供应链数字化</strong></td>
+<td>智能仓储、数字化协同中台、业财一体化平台</td>
+<td>提升新品交付与经营协同效率</td>
+<td>持续投入</td>
+<td>2026–2029</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：品牌出海</td>
+<td>自主品牌走向海外（当前以 OEM 为主）</td>
+<td>无明确规划公告</td>
+<td>—</td>
+<td>不确定</td>
+<td><strong>低</strong>（不计入中性）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计新增利润（中性口径，2029E vs 2026E）</strong>：营收从约 11.8 亿增至 15.0 亿（+3.2 亿），按中性毛利率 30.5%、中性净利率 7.0% 计算，新增归母约 <strong>0.43 亿</strong>。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（增量拆解三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守（守住）</th>
+<th>中性（小幅提升）</th>
+<th>乐观（抢份额）</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>2025 年营收 10.12 亿 vs 中国户外用品市场约 2600 亿元（365 亿美元）→ 份额约 <strong>0.39%</strong>；行业品牌数 2026 年将达 993 个</td>
+<td>0.35%</td>
+<td><strong>0.40%</strong></td>
+<td>0.55%</td>
+<td>公司营收 / 中国户外用品零售额（年度）</td>
+</tr>
+<tr>
+<td>② 需求侧/客户份额</td>
+<td>OEM 客户分散（欧洲、澳新、亚洲、美国）；自主品牌靠线上 + 线下 + 社群</td>
+<td>维持现有客户</td>
+<td>自主品牌会员数与复购率提升</td>
+<td>进入国际头部品牌核心供应商名录</td>
+<td>年报客户结构；自主品牌会员数据</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>"冷山极境攀登系统"完成三峰连登实测；轻量化、功能化、环保化跟进（可持续材料份额 2026 年达 19%）</td>
+<td>维持</td>
+<td>专业线（冷山系列）形成技术口碑</td>
+<td>可持续材料产品占比超 30%</td>
+<td>新品发布；可持续材料产品占比</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td><strong>三地产能（中国/孟加拉/越南）</strong>优化订单分配 → 孟加拉/越南人工成本优势；数字化提效、材料利用率优化</td>
+<td>维持</td>
+<td>单位成本降 3%</td>
+<td>单位成本降 8%</td>
+<td>综合毛利率；OEM 毛利率</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td><strong>中性</strong>：2026H1 营收 −2.61%（Q2 +18.58% 已转正），行业 2026 预计 +2.7%（大幅放缓）→ 公司份额基本持平</td>
+<td>份额微降</td>
+<td>份额年提升 0.01pct</td>
+<td>份额年提升 0.05pct</td>
+<td>季度营收增速 vs 行业增速</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>份额假设取中性：2029 年 0.40%</strong>（对应营收 15.0 亿 / 行业约 3750 亿元）。依据：行业增速 2026 年放缓至 +2.7%，公司靠品类扩张（从帐篷到全品类）与渠道扩张获取份额，但国际品牌（亚玛芬大中华区 +43.4%）在高端市场挤压。</p>
+<p><strong>层2 扩展业务：主业迁移空间（五维检验）</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>判断</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 能力可迁移性</td>
+<td><strong>中高</strong></td>
+<td>户外装备的"面料工艺 + 结构设计 + 供应链管理"能力可迁移至<strong>户外服饰（已完成：冲锋衣、软壳、美利奴内搭）</strong>，属同源延伸</td>
+</tr>
+<tr>
+<td>② 新 TAM 弹性</td>
+<td><strong>大</strong></td>
+<td>中国户外运动鞋服 2030 年预计 <strong>2000 亿元以上</strong>；公司从"帐篷"（窄品类）迁移到"全品类户外装备 + 服饰"（宽品类），TAM 弹性 <strong>&gt; 3 倍</strong></td>
+</tr>
+<tr>
+<td>③ 切入时点与卡位</td>
+<td><strong>中期（非早期）</strong></td>
+<td>户外服饰已是红海（993 个品牌），但公司靠"专业线（冷山系列）背书 + 社群"差异化切入，属<strong>有根据地的扩张</strong>而非盲目跨界</td>
+</tr>
+<tr>
+<td>④ 客户认证门槛</td>
+<td><strong>低</strong>（C 端无认证）</td>
+<td>自主品牌面向 C 端，无认证壁垒；但也意味着无护城河，靠品牌力与渠道</td>
+</tr>
+<tr>
+<td>⑤ 信号验证</td>
+<td><strong>部分通过</strong></td>
+<td>✅ 冲锋衣/软壳/美利奴内搭已上市并集中展示（2026 年 5 月莫干山大会） ✅ 冷山极境三峰实测 ✅ "持续完善户外产品矩阵"（半年报原文） ❌ <strong>未披露服饰品类收入占比与增速</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>判定：属"品类扩张"而非"跨市场迁移"，能力同源、已在执行、已有产品落地。按期权纪律，中性情景仅按"自主品牌营收从 5.5 亿增至 7.5 亿"（对应全品类扩张）计入，不给服饰品类单独溢价；服饰超预期放量计入乐观情景。</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+- 单季扣非同比降幅 &gt; 50%（<strong>2026Q2 −50.46%，已命中</strong>）<br />
+- 毛利率跌破 28%（<strong>2026Q2 为 29.18%，逼近但未命中</strong>）<br />
+- 应收账款继续大幅增长（<strong>2026H1 +70.52%，已命中</strong>）<br />
+- 自主品牌收入占比未提升（<strong>待观察，未单独披露</strong>）<br />
+- 行业零售额转负（<strong>未命中，2026 预计 +9%</strong>）<br />
+- 美国关税再加征（<strong>待观察</strong>）</p>
+<p>→ <strong>已命中两条证伪信号（Q2 扣非 −50.46%、应收 +70.52%），层1 份额假设按"保守→中性下沿"处理，中性营收取 15.0 亿（低于乐观的 19 亿）。</strong></p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不使用历史营收/净利增速外推。因公司 TTM 亏损（PE 失真）且 2025 年刚经历一次性减值，采用 <strong>正常化净利润法</strong>：营收按「自主品牌（品类扩张 × 渠道扩张）+ OEM/ODM（三地产能 × 客户补库）」两条线自下而上推导，净利率取"行业正常水平 / 公司历史最好水平 / 产能爬坡后理论值"三者中的<strong>保守值</strong>。</p>
+</blockquote>
+<p><strong>总股本：0.9313 亿股</strong></p>
+<h3>亏损状态核实与亏损股三问（规则强制，2025 年确为亏损）</h3>
+<table>
+<thead>
+<tr>
+<th>期间</th>
+<th>营业收入</th>
+<th>归母净利润</th>
+<th>扣非净利润</th>
+<th>加权 ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>14.56 亿（+1.40%）</td>
+<td><strong>+1.068 亿</strong></td>
+<td>+1.043 亿</td>
+<td><strong>19.70%</strong>（历史最好）</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>13.04 亿（−10.42%）</td>
+<td><strong>+8376.16 万</strong></td>
+<td>+5981.26 万</td>
+<td>15.01%</td>
+</tr>
+<tr>
+<td><strong>2025</strong></td>
+<td><strong>10.12 亿（−22.40%）</strong></td>
+<td><strong>−3418.84 万</strong></td>
+<td><strong>−4515.30 万</strong></td>
+<td><strong>−6.66%</strong></td>
+</tr>
+<tr>
+<td>├ 2025Q4 单季</td>
+<td>1.933 亿</td>
+<td><strong>−7083.45 万</strong></td>
+<td>−7435.57 万</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2026H1</strong></td>
+<td><strong>5.897 亿（−2.61%）</strong></td>
+<td><strong>+3334.50 万</strong></td>
+<td><strong>+2742.68 万</strong></td>
+<td>6.91%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三问回答</strong>：</p>
+<ol>
+<li><strong>为什么亏（2025 年 −3419 万）</strong>：<strong>"一次性去库减值 + 需求退潮"型亏损，非主业现金流失血</strong>。</li>
+<li>核心原因：<strong>2025Q4 单季亏损 7083.45 万元</strong>，主因<strong>去库存 + 存货跌价计提</strong>（露营热退潮后库存积压；2026H1 末存货跌价准备余额 7600.55 万、计提比例 19.74%，即为 2025 年计提的结果）。</li>
+<li>叠加：营收从 2023 年 14.56 亿降至 2025 年 10.12 亿（−30.5%），国内露营市场回归理性 + OEM 海外去库。</li>
+<li>
+<p><strong>关键证据：2025 年经营活动现金流仍为 +0.986 亿元（为正）</strong> → 主业仍在产生现金，亏损主要来自<strong>会计计提</strong>而非经营失血。</p>
+</li>
+<li>
+<p><strong>靠什么扭亏，触发时点在哪一年</strong>：<strong>扭亏已在 2026H1 实现</strong>。四条路径：</p>
+</li>
+<li>① <strong>去库完成</strong>：存货较上年末 −27.87%（减少 1.19 亿），经营现金流 <strong>+1.313 亿（+44.42%）</strong>，净现比 393.91%；</li>
+<li>② <strong>降本增效</strong>：销售费用 −1.90%、管理费用 −16.58%（精简人员结构与低效直营门店）、研发 −8.05%，期间费用率 −0.68pct 至 21.03%；</li>
+<li>③ <strong>品类扩张</strong>：从经典徒步帐篷拓展至帐篷、睡袋、充气垫、背包、登山杖、冲锋衣、软壳、美利奴内搭<strong>全品类矩阵</strong>；</li>
+<li>
+<p>④ <strong>品牌力实证 + 三地产能</strong>：冷山极境攀登系统完成三峰连登实测；中国/孟加拉/越南三地产能优化订单分配，规避单一产地关税。<br />
+<strong>触发时点：2026 年已实现（H1 归母 +3334.50 万），2026E 全年归母预计 0.62 亿。</strong></p>
+</li>
+<li>
+<p><strong>亏得起吗</strong>：<strong>完全亏得起，且财务状况健康</strong>。</p>
+</li>
+<li>净资产 <strong>4.977 亿</strong>（每股 5.34 元，较上年末 <strong>+6.55%</strong>）；资产负债率 <strong>49.8%</strong>；</li>
+<li>流动比率 <strong>1.67</strong>、速动比率 <strong>1.02</strong>（短期偿债无压力）；</li>
+<li><strong>短期借款较上年末 −29.19%</strong>、<strong>货币资金较上年末 +22.84%</strong> → 主动降杠杆 + 增加现金储备；</li>
+<li>2025 年末有息负债 2.248 亿，2026H1 进一步下降；经营活动现金流 2025 年 +0.986 亿、2026H1 +1.313 亿，<strong>连续为正</strong>；</li>
+<li><strong>判断：无流动性风险，净资产未受损，具备穿越周期的能力。</strong> 唯一需关注：应收账款较上年末 <strong>+70.52%</strong>（OEM 放账），占总资产比重上升 7.65pct。</li>
+</ol>
+<h3>分业务测算（2029E·中性）</h3>
+<p><strong>收入端（自下而上）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>毛利率</th>
+<th>毛利额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自主原创品牌</strong>（国内）</td>
+<td>基数：2025 年估算 5.5 亿、2026H1 约 2.9 亿。<strong>增量来源</strong>：① 品类扩张（帐篷→全品类装备 + 服饰，已上市冲锋衣/软壳/美利奴内搭）；② 渠道扩张（线上 + 直播电商 + 线下多场景 + 社群）；③ 品牌力（三峰实测背书）。行业 2026 年零售额 +9%，公司份额持平微升 → 2029 年 7.5 亿</td>
+<td><strong>7.5 亿</strong></td>
+<td><strong>36.0%</strong></td>
+<td>2.70 亿</td>
+</tr>
+<tr>
+<td><strong>OEM/ODM</strong>（出口）</td>
+<td>基数：2025 年估算 4.6 亿、2026H1 约 3.0 亿。<strong>增量来源</strong>：① 三地产能（中国/孟加拉/越南）优化订单分配；② 海外品牌补库；③ 新客户拓展。<strong>约束</strong>：美国关税 + 汇率波动 → 增速低于自主品牌 → 2029 年 7.5 亿</td>
+<td><strong>7.5 亿</strong></td>
+<td><strong>25.0%</strong></td>
+<td>1.875 亿</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td></td>
+<td><strong>15.0 亿</strong></td>
+<td><strong>加权 30.5%</strong></td>
+<td><strong>4.575 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束校验</strong>：15.0 亿营收对应 2025 年 10.12 亿的 1.48 倍。公司采用<strong>轻资产模式</strong>（自主品牌设计 + OEM 自产 + 外协），三地产能（中国/孟加拉/越南）中孟加拉与越南具备低成本扩张空间，<strong>无重大资本开支瓶颈，校验通过</strong>。</p>
+<p><strong>利润端（2029E·中性）</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利额</td>
+<td>4.575 亿</td>
+<td>上表</td>
+</tr>
+<tr>
+<td>期间费用</td>
+<td><strong>2.925 亿</strong>（费用率 <strong>19.5%</strong>）</td>
+<td>2026H1 已降至 21.03%（−0.68pct）；规模效应 + 精简低效门店与人员 → 2029 年降至 19.5%</td>
+</tr>
+<tr>
+<td>营业利润</td>
+<td>1.650 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>加：其他收益（政府补助）</td>
+<td>+0.15 亿</td>
+<td>2026H1 政府补助 818.42 万（半年）→ 年化约 0.16 亿；<strong>按可持续部分保守计入 0.15 亿</strong></td>
+</tr>
+<tr>
+<td>减：资产减值（存货跌价）</td>
+<td>−0.10 亿</td>
+<td>年均计提（当前跌价准备计提比例已达 19.74%，进一步计提空间有限）</td>
+</tr>
+<tr>
+<td>利润总额</td>
+<td>1.700 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>所得税（20%）</td>
+<td>−0.340 亿</td>
+<td>浙江衢州注册，享受部分优惠</td>
+</tr>
+<tr>
+<td><strong>归母净利润</strong></td>
+<td><strong>1.36 亿</strong></td>
+<td>无少数股东</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 置信度校验（规则强制）</strong>：1.36 亿归母对应 15.0 亿营收、净利率 <strong>9.1%</strong>。对照：<br />
+- 2023 年（历史最好）：营收 14.56 亿、归母 1.068 亿 → <strong>净利率 7.34%</strong><br />
+- 2024 年：营收 13.04 亿、归母 0.838 亿 → <strong>净利率 6.42%</strong><br />
+- 2026H1：营收 5.897 亿、归母 0.333 亿 → <strong>净利率 5.65%</strong><br />
+→ <strong>9.1% 的净利率显著高于历史最好水平 7.34%，属过于激进。</strong> 修正：<strong>按历史最好净利率 7.34% 的 95 折取 7.0%</strong> → <strong>2029E 中性归母 = 15.0 亿 × 7.0% = 1.05 亿</strong>。</p>
+<h3>基准（2026E / 2027E）</h3>
+<ul>
+<li>2026H1 已实现：营收 5.897 亿、归母 <strong>0.333 亿</strong>（其中政府补助贡献 818.42 万，占 24.5%）</li>
+<li>2026H2：① 去库完成、轻装上阵；② Q3/Q4 为户外消费旺季 + 双十一；③ 但 <strong>Q2 扣非已 −50.46%</strong>（汇率），H2 仍存汇率压力；④ 2025H2 为 −0.814 亿（含大额减值），基数极低</li>
+<li><strong>2026E：营收约 11.8 亿，归母 0.62 亿</strong></li>
+<li><strong>2027E：营收 12.4 亿，净利率 6.0% → 归母 0.75 亿</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>2029E 归母</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>美国关税再加征 10–20% 且客户拒绝分摊，行业零售额转负，自主品牌品类扩张失败，存货再度积压计提，应收账款坏账</td>
+<td>11.0 亿</td>
+<td><strong>0.44 亿</strong>（净利率 4.0%，低于 2026H1）</td>
+<td>18x</td>
+<td>7.9 亿</td>
+<td><strong>8.50 元</strong></td>
+<td><strong>−54.1%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>去库红利延续，自主品牌全品类扩张至 7.5 亿，OEM 三地产能优化至 7.5 亿，费用率降至 19.5%，净利率回升至历史最好水平的 95 折（7.0%）</td>
+<td><strong>15.0 亿</strong></td>
+<td><strong>1.05 亿</strong></td>
+<td><strong>22x</strong></td>
+<td>23.1 亿</td>
+<td><strong>24.81 元</strong></td>
+<td><strong>+34.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>露营二次成长 + 户外服饰放量超预期 + 自主品牌出海 + 三地产能充分规避关税，净利率回到 2023 年 7.34% 以上并继续改善至 9%</td>
+<td>19.0 亿</td>
+<td><strong>1.71 亿</strong></td>
+<td>28x → 47.9 亿（<strong>已折让小盘流动性与股本不变假设，取 32.6 亿</strong>）</td>
+<td>32.6 亿</td>
+<td><strong>35.00 元</strong></td>
+<td><strong>+89.1%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>归母净利润</td>
+<td>0.62 亿</td>
+<td><strong>1.05 亿</strong>（正常化）</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>27x（2027E 视角 25x）</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>18.75 亿</td>
+<td>23.1 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>20.14 元</strong></td>
+<td><strong>24.81 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶：资产质量与估值校正（三道 + 期权纪律）</h3>
+<p><strong>校正1 资产质量折扣</strong><br />
+- PB 约 <strong>3.46x</strong>，<strong>远未破净</strong>，不触发破净原因说明义务。但需回答<strong>反向问题：PB 3.46x 是否偏贵？</strong><br />
+  - 理论 PB = ROE × PE。2026H1 年化 ROE = 6.91% × 2 = <strong>13.8%</strong>；对应 PE 22x → 合理 PB ≈ <strong>3.04x</strong>。<br />
+  - 现实修正：① 净资产 4.977 亿中，<strong>存货 3.09 亿占净资产 62.11%</strong>，且<strong>已计提跌价准备 7600.55 万（计提比例 19.74%）</strong> → 存货质量已较充分反映风险；② 应收账款较上年末 <strong>+70.52%</strong>，是新的资产质量隐忧；③ 货币资金 +22.84%、短期借款 −29.19% → 现金状况改善。<br />
+  - <strong>结论：PB 3.46x 略高于理论值 3.04x，溢价约 14%，属"合理偏贵"而非"泡沫"。</strong> 若 ROE 能稳定在 14% 以上（需自主品牌占比持续提升），PB 3.46x 可被消化。<br />
+- <strong>隐含负债</strong>：存货跌价（已计提 19.74%，进一步空间有限）、应收账款坏账（+70.52%，新风险）、无重大对外担保。</p>
+<p><strong>校正2 周期位置校正</strong><br />
+- 户外用品属<strong>弱周期 + 消费升级赛道</strong>，但<strong>国内露营市场刚经历一轮完整周期</strong>：2021–2022 爆发 → 2023–2025 退潮（公司营收 14.56 → 13.04 → 10.12 亿）→ 2026 企稳（H1 −2.61%，Q2 +18.58%）。<br />
+- <strong>当前周期位置：底部企稳初期</strong>（行业 2026 年增速放缓至 +2.7%，公司去库完成、现金流转正、Q2 营收转正）。<br />
+- 中性净利 <strong>未使用单年好年景</strong>（未用 2023 年 1.068 亿），<strong>未使用近三年均值</strong>（2023–2025 均值 0.521 亿，含 2025 亏损），<strong>未使用拐点年化</strong>（未把 2026H1 的 0.333 亿直接年化 0.666 亿）。而是用<strong>正常化净利率 7.0%（历史最好 7.34% 的 95 折）× 自下而上营收 15.0 亿</strong>，符合"底部不过度悲观、顶部不过度乐观"。</p>
+<p><strong>校正3 杠杆下行情景</strong><br />
+- 资产负债率 <strong>49.8%</strong>，<strong>低于 60% 阈值</strong>，有息负债 2.248 亿（2025 末）且 2026H1 短期借款 −29.19%。<strong>财务杠杆风险低。</strong><br />
+- 但需附<strong>经营杠杆 + 汇率/关税负面情景</strong>（悲观情景已建模：净利率降至 4.0%、PE 18x → 8.50 元，−54.1%）。<strong>该负面情景使空间转负，按规则不得标注"大空间 / 重点关注"，至多"纳入观察"。</strong></p>
+<p><strong>期权纪律（严格执行）</strong><br />
+- <strong>自主品牌出海</strong>：无明确规划公告，<strong>不计入中性</strong>。<br />
+- <strong>智能穿戴 / 户外智能化</strong>（渗透率 2024 年 21% → 2026 年 34%）：公司未布局，<strong>不计入中性</strong>。<br />
+- <strong>已计提存货跌价准备转回</strong>：属非经常性收益，<strong>不计入中性</strong>（中性仅计入可持续的政府补助 0.15 亿）。<br />
+- 中性 2029E 归母 1.05 亿 <strong>100% 来自自主品牌 + OEM/ODM 两条现有产线</strong>。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理略偏高</strong>。现价 18.51 元 → 市值 17.24 亿。对应：<br />
+- 2026E 归母 0.62 亿 → <strong>PE 27.8x</strong><br />
+- 2027E 归母 0.75 亿 → <strong>PE 23.0x</strong><br />
+- 2029E 中性归母 1.05 亿 → <strong>PE 16.4x</strong><br />
+- PB <strong>3.46x</strong>（理论合理值约 3.04x，溢价 14%）</p>
+<p>对一家刚完成去库、现金流显著改善（+44.42%）、三地产能布局、品类从帐篷扩张到全品类户外的小盘消费股，2027E PE 23x 属<strong>合理但已不便宜</strong>——市场已部分定价"困境反转"。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 24.81 元 → 空间 <strong>+34.0%</strong>（3 年期）<br />
+- 悲观 8.50 元 → 下行 <strong>−54.1%</strong><br />
+- 乐观 35.00 元 → 上行 <strong>+89.1%</strong><br />
+- <strong>风险收益不对称偏正</strong>：上行 89.1% vs 下行 54.1%，赔率约 1.65:1；中性 +34.0% 提供基础安全垫<br />
+- 下行保护：每股净资产 5.34 元、流动比率 1.67、速动比率 1.02、经营现金流连续为正、<strong>PB 3.46x 对应硬资产支撑较弱</strong>（轻资产公司，净资产中 62% 是存货）→ <strong>下行保护主要靠现金流而非资产</strong><br />
+- ⚠️ <strong>小盘股流动性风险</strong>：总股本仅 0.9313 亿股，流通市值小，波动放大</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价不建议追高</strong>（18.51 元，2027E PE 23.0x）。回落至 <strong>16.00 元以下</strong>（2027E PE &lt; 19.9x、PB &lt; 3.0x）为较好介入位；<strong>13.50 元以下</strong>（PB &lt; 2.5x）为强安全边际位<br />
+2. <strong>加仓信号</strong>：① 单季扣非同比转正（当前 Q2 为 −50.46%，<strong>尚未转正</strong>）；② 自主品牌收入占比首次单独披露且 &gt; 50%；③ 应收账款余额环比下降（当前 +70.52%，需改善）；④ 综合毛利率重回 31% 以上<br />
+3. <strong>观察指标</strong>：逐季毛利率（能否止住 Q2 的 −7.87pct）、单季扣非增速、存货与应收账款周转、人民币汇率</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 盈利质量环比快速弱化（首要）</strong>：2026Q2 扣非仅 762.89 万，<strong>同比 −50.46%、环比 −61.47%</strong>；毛利率 −7.87pct 至 29.18%；公司明确说明"主要受外币汇率影响" → <strong>汇率是不可控变量，若人民币持续升值，OEM 利润将持续被侵蚀</strong><br />
+2. <strong>⚠️ 应收账款 +70.52%（新风险）</strong>：较上年末大幅增长，占总资产比重上升 7.65pct，与"去库"形成对冲（存货降了但应收增了），需警惕收入质量下降与坏账<br />
+3. <strong>美国关税再加征</strong>：OEM/ODM 出口美国市场，关税传导率仅 0.4–0.5，公司需自扛一半以上<br />
+4. <strong>行业增速大幅放缓至 +2.7%</strong>：2024 年 +6.6% → 2025 年 +13.3% → <strong>2026 年预计 +2.7%</strong>，行业从高速扩张转向平稳增长，份额争夺加剧（2026 年品牌数将达 993 个）<br />
+5. <strong>估值消化依赖 ROE 持续改善</strong>：PB 3.46x 需 ROE 稳定在 14% 以上才能支撑，而 2026H1 加权 ROE 6.91%（半年）同比已 −1.27pct<br />
+6. <strong>小盘流动性</strong>：总股本 0.9313 亿股，机构参与度低，波动放大</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>情景描述</th>
+<th>重估弹性测算</th>
+<th>可验证触发点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业调整剩者红利</strong></td>
+<td>国内露营市场 2023–2025 退潮已淘汰大量中小品牌（2020 年后扩张期新增品牌出清），剩者承接让出的渠道与消费者。公司凭<strong>全品类矩阵 + 三地产能 + 连续三年莫干山大会背书</strong>具备剩者资格</td>
+<td>若行业出清后公司份额从 0.39% 升至 0.55% → 2029 营收 20.6 亿、归母 1.44 亿，PE 24x → 34.6 亿 → <strong>37.2 元（+101%）</strong></td>
+<td>① 中国户外用品品牌数量从 993 个回落；② 中小户外品牌退出/关店新闻；③ 公司营收增速持续快于行业 +2.7%</td>
+<td>品牌数量继续增加；公司营收增速落后于行业</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>《体育强国建设"十五五"规划》将<strong>户外运动列为八大专栏工程之一</strong>（7 万亿体育产业目标，户外装备大盘 6021 亿元）；若地方配套落地（营地建设、户外运动场地、消费补贴）直接拉动装备需求</td>
+<td>若政策拉动行业增速从 +2.7% 回升至 +8% → 2029 营收 16.5 亿、归母 1.16 亿，PE 24x → 27.8 亿 → <strong>29.9 元（+61.5%）</strong></td>
+<td>① 体育总局/地方体育局户外运动产业扶持文件；② 营地/步道建设投资数据；③ 户外用品消费补贴政策</td>
+<td>规划停留在文件、无地方配套投资</td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td><strong>部分成立</strong>：TTM PE 为负（−36.63x）会使部分量化/筛选策略误判为"亏损股"而回避，形成<strong>认知错杀</strong>。实际 2026H1 已恢复盈利（归母 3334.5 万、经营现金流 +1.313 亿）。若市场修正"亏损股"标签，存在估值修复</td>
+<td>修复至 2027E PE 28x（0.75 亿）→ 21.0 亿 → <strong>22.6 元（+22.1%）</strong></td>
+<td>① 2026 年报确认全年盈利且无大额减值；② TTM PE 转正（2026 年报后）；③ 单季扣非同比转正</td>
+<td>2026 年报再现大额减值 → "错杀"证伪为"持续亏损"</td>
+</tr>
+<tr>
+<td><strong>D 技术突破 / 代际跃迁期权</strong></td>
+<td><strong>部分适用（技术改良而非路线突变）</strong>：① <strong>政策驱动</strong>：可持续材料份额从 2023 年 8% 升至 2026 年 19%，轻量化/功能化/环保化是行业标准升级方向；② <strong>行业趋势</strong>：智能穿戴在户外场景渗透率 2024 年 21% → 2026 年 34%；③ <strong>公司落地</strong>："冷山极境攀登系统"完成努子峰/珠峰/洛子峰三峰连登实测，轻量化与极端环境性能获实测验证</td>
+<td>若专业线（冷山系列）形成技术口碑并带动自主品牌毛利率从 36% 升至 42% → 2029 归母 +0.45 亿 → 1.50 亿，PE 25x → 37.5 亿 → <strong>40.3 元（+117%）</strong></td>
+<td><strong>硬验证点（三选二）</strong>：① 可持续材料产品占比超 30%；② 专业线产品收入单独披露且增速 &gt; 30%；③ 三峰实测转化为可验证的销量增长（冷山系列销售额披露）</td>
+<td>三峰实测仅为营销事件、无销量转化；可持续材料产品占比停滞；智能穿戴无布局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>纪律声明</strong>：以上四类想象情景<strong>仅进入乐观/机会栏，不进入中性锚</strong>。中性锚仍为 24.81 元。</p>
+<p><strong>什么条件出现才上调至"重点关注"</strong>（需远期中性空间 &gt; +50%，即目标价 &gt; 27.77 元）：<br />
+1. <strong>单季扣非同比转正</strong>（2026Q2 为 −50.46%），使中性 2029E 归母从 1.05 亿上修至 1.30 亿以上（目标价 30.7 元，+65.8%）——<strong>这是最现实的路径</strong>；<br />
+2. <strong>自主品牌收入占比首次单独披露且 &gt; 55%</strong>，结构性提毛利率，中性毛利率上修至 32.5%；<br />
+3. <strong>应收账款余额环比下降 20% 以上</strong>，解除校正1 的资产质量隐忧，PB 可给到 4.0x；<br />
+4. <strong>股价回落至 13.50 元以下</strong>（提供至中性目标 +84%、至乐观目标 +159% 的安全边际）。</p>
+<p><strong>结论：纳入观察</strong>（现价不追高，16.00 元以下分批）</p>
+<blockquote>
+<p>理由：公司<strong>困境反转是真实的、有现金流支撑的</strong>——2026H1 归母 +3334.50 万、扣非 +2742.68 万、经营现金流 <strong>+1.313 亿（+44.42%）</strong>、存货去化 <strong>−27.87%</strong>、管理费用 <strong>−16.58%</strong>、短期借款 <strong>−29.19%</strong>、货币资金 <strong>+22.84%</strong>。<strong>2025 年的亏损是"去库减值一次性事件"（2025 年经营现金流仍 +0.986 亿），不是主业失血</strong>，财务完全亏得起。<br />
+但<strong>当前价格已部分定价"困境反转"</strong>：2027E PE 23.0x、PB 3.46x（理论值 3.04x，溢价 14%）；且 <strong>2026Q2 扣非同比 −50.46%、环比 −61.47%，毛利率 −7.87pct</strong>，盈利质量环比快速弱化（汇率所致），<strong>应收账款 +70.52%</strong> 构成新的资产质量隐忧。按校正3，悲观情景 −54.1% 使空间转负，<strong>按规则不得标注"重点关注"</strong>。<br />
+中性远期空间 <strong>+34.0%</strong>，赔率（上行 89.1% / 下行 54.1% ≈ 1.65:1）偏正但不突出，<strong>故结论为"纳入观察"</strong>。<br />
+<strong>核心跟踪点</strong>：① 单季扣非能否同比转正（汇率影响是否消退）；② 应收账款余额变化；③ 自主品牌收入占比与全品类扩张成效。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>18.51 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>20.0 元</strong>（区间 18.0–23.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+8.0%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>24.80 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+34.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 8.50 元（−54.1%）～ 乐观 35.00 元（+89.1%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>去库完成+现金流增44%+全品类扩张驱动H1恢复盈利3334万，但Q2扣非环比降61%、PB 3.46x已部分定价反转</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（16.00 元以下分批；单季扣非同比转正则上调重点关注）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：牧高笛户外用品股份有限公司 2026 年半年度报告及半年度报告摘要（2026-08-27 披露）、2025 年年度报告（2026-04-28 披露）、中国证券网《牧高笛上半年营收 5.9 亿元 持续完善户外产品矩阵》（2026-08-27）、中证智能财讯牧高笛 2026 半年报解读（2026-08-27）、扬州金泉旅游用品股份有限公司 2026 年半年度报告（户外用品行业数据）、三个皮匠报告《户外运动用品：定义、分类、产业链、市场规模与市场趋势》、智研咨询全球户外用品市场数据、iiMedia 中国露营经济核心市场规模数据、联商网《2026 中国户外消费报告》、体育强国"十五五"规划（户外运动八大专栏工程）、亚玛芬体育 2025 年年报、腾讯行情接口实测收盘价（2026-09-11）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

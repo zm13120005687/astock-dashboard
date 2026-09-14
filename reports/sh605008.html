@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>长鸿高科（605008）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>长鸿高科（605008）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>13.94 元</strong>（2026-09-14 收盘，腾讯行情实测）｜ 总市值 <strong>90.05 亿</strong> ｜ PE(TTM) <strong>−132.33x（负，亏损）</strong> ｜ PB <strong>4.69x</strong> ｜ 总股本 <strong>6.4596 亿股</strong><br />
+行业：化工新材料——苯乙烯类热塑性弹性体（TPES）/ PBAT-PBT / 碳酸钙 ｜ 板块：沪市主板<br />
+实控人：陶春风 ｜ 上市：2020-08-21（发行 4600 万股 @ 10.54 元，募资总额 4.8484 亿、净额 4.4547 亿，保荐机构华西证券）</p>
+</blockquote>
+<hr />
+<h2>⚠️ 开篇必读：亏损口径双向核查结论</h2>
+<p><strong>核查对象</strong>：队列表头给 sh605008 长鸿高科的参考值为 现价 14.13 元 / 市值 91.27 亿 / <strong>PE_TTM −134.13（亏损标记 True）</strong> / PB 4.75。</p>
+<p><strong>核查方式</strong>：不采信队列数据，直接调取 2026-08-29 披露的《宁波长鸿高分子科技股份有限公司 2026 年半年度报告》原文及其摘要（上交所 605008_20260829_LAAA）+ 腾讯行情实测。</p>
+<p><strong>核查结论（四项）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>核查项</th>
+<th>结论</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 现价是否过时？</td>
+<td><strong>是</strong>，队列 14.13 元 vs 实测 <strong>13.94 元</strong></td>
+<td>腾讯行情实测 f3 字段</td>
+</tr>
+<tr>
+<td>② PE_TTM 是否准确？</td>
+<td>队列 −134.13，实测 <strong>−132.33</strong>，基本一致</td>
+<td>腾讯行情 f39 字段</td>
+</tr>
+<tr>
+<td><strong>③ ⭐ H1 是真亏还是 TTM 误标？</strong></td>
+<td><strong>⭐ 确为真亏损，队列的"亏损"标记是正确的，不存在 TTM 误标。</strong> 2026H1 归母 <strong>−5838.66 万元</strong>（上年同期 <strong>+167.66 万元</strong>），扣非 <strong>−6806.05 万元</strong>（上年同期 −574.02 万元），利润总额 <strong>−7656.53 万元</strong>，加权 ROE <strong>−2.99%</strong></td>
+<td>2026 年半年度报告摘要原文；cnfin、中国经济网等多方交叉一致</td>
+</tr>
+<tr>
+<td>④ 处理方式</td>
+<td><strong>按亏损股完整走五步法 + 正常化净利润法估值 + 回答"三问"</strong>，不写简版、不排除</td>
+<td>RULES 第三节/第四节</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>与同批次反向核查对照</strong>：本批 sh605006 山东玻纤被队列标为 False 但 PE_TTM 高达 1679x，经核查是<strong>分母塌陷型失真</strong>（H1 已实际盈利 +2922.77 万，属盈利股）；本股 sh605008 长鸿高科被队列标为 True，经核查是<strong>真亏损</strong>。两只股票的亏损标记与真实财报口径<strong>方向相反核查、均已逐一验证</strong>，不存在"照抄队列"的偷懒。</p>
+</blockquote>
+<h3>亏损严重程度定位（不是"擦边亏损"，而是"加速恶化"）</h3>
+<table>
+<thead>
+<tr>
+<th>期间</th>
+<th>营业收入</th>
+<th>归母净利润</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020</td>
+<td>—</td>
+<td><strong>+3.02 亿</strong></td>
+<td>上市当年，历史最好</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>约 23.7 亿</td>
+<td>+1.85 亿</td>
+<td>景气延续</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>36.34 亿</td>
+<td>+1.80 亿</td>
+<td>营收跳增但净利率已下滑</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>14.16 亿</td>
+<td>+0.9501 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>36.34 亿（+156.63%）</td>
+<td>+0.9422 亿</td>
+<td><strong>净利润率跌至 2.59%</strong></td>
+</tr>
+<tr>
+<td>2025</td>
+<td>39.23 亿（+7.96%）</td>
+<td><strong>−0.0799 亿</strong></td>
+<td><strong>上市以来首次年度亏损</strong></td>
+</tr>
+<tr>
+<td><strong>2026H1</strong></td>
+<td><strong>15.46 亿（−16.11%）</strong></td>
+<td><strong>−0.5839 亿</strong></td>
+<td><strong>亏损扩大到半年度 0.58 亿量级</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>毛利率崩塌轨迹（本股最刺眼的一条曲线）</strong>：</p>
+<blockquote>
+<p>2021 年 <strong>21.6%</strong> → 2022 年 11.17% → 2023 年 11.17% → 2024 年 <strong>9.20%</strong> → 2025 年 <strong>7.39%</strong> → 2026Q1 <strong>5.57%</strong> → 2026Q2 <strong>4.85%</strong><br />
+<strong>五年时间毛利率蒸发 16.75 个百分点。</strong></p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内苯乙烯类热塑性弹性体（TPES）领域的头部企业（宣称 TPES 产能位居全国前三），走"TPES + PBAT/PBT 双轮驱动"路线，同时拥有碳酸钙业务板块，并正在向高端特种合成树脂方向做产业链延伸。</p>
+<p><strong>业务板块结构（按公司口径 + 2026H1 经营评述还原）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>主要产品</th>
+<th>状态与备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TPES 主业</strong></td>
+<td>SBS、SEBS、SEPS 等苯乙烯类热塑性弹性体；道路沥青改性（道改）、鞋材、粘合剂、塑料改性等下游</td>
+<td><strong>核心失血点</strong>。2026H1 受"高价原料库存 + 道改需求放缓"双重打击</td>
+</tr>
+<tr>
+<td><strong>PBT / PBAT</strong></td>
+<td>长鸿生物柔性化生产装置，可根据上下游行情动态切换排产</td>
+<td><strong>相对稳定</strong>。2026H1 加大 PBT 树脂生产组织力度，下游纺织、改性塑料需求结构性回暖，"该板块经营保持相对平稳"</td>
+</tr>
+<tr>
+<td><strong>TPE 黑色母粒</strong></td>
+<td>5 万吨/年 TPE 黑色母粒技改项目，已投产并持续释放产能</td>
+<td>受地缘局势与树脂价格拖累盈利</td>
+</tr>
+<tr>
+<td><strong>碳酸钙</strong></td>
+<td>矿石开采与加工</td>
+<td><strong>2026H1 明确承压</strong>：开采区域品质阶段性波动、排废及配套运营成本增加、市场价格偏弱</td>
+</tr>
+<tr>
+<td><strong>在建：广东长鸿丙烯酸产业园</strong></td>
+<td>丙烯酸及下游产业链</td>
+<td><strong>尚在建设期，一期预计 2026 年底试生产</strong>；无任何经营收益，持续发生工程建设支出与财务费用</td>
+</tr>
+<tr>
+<td><strong>拟收购：广西长科新材料</strong></td>
+<td>本体法合成树脂（透明 ABS、高透明 MS、高腈 AS、高光 ABS/HIPS 等），60 万吨/年柔性线</td>
+<td>重大资产重组进行中（详见第三步），<strong>未完成、不计入中性</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>技术地位</strong>：自成立以来聚焦 TPES 研发、生产与销售，宣称 TPES 产能位居全国前三；TPES 生产技术达到同行业先进水平；在推进高端牌号 TPES、<strong>TPEE（热塑性聚酯弹性体）</strong>的开发，并完善 PBT 全牌号产品矩阵。</p>
+<p><strong>核心原料</strong>：<strong>苯乙烯、丁二烯</strong>（二者占产品成本比重较大）；另有碳酸钙矿石、丙烯酸原料。</p>
+<p><strong>下游领域</strong>：道路沥青改性（市政道路施工）、鞋材、粘合剂、塑料改性、纺织（PBT）、可降解塑料（PBAT）、橡塑建材。</p>
+<p><strong>境内/境外</strong>：以境内为主；公司提及"积极推动产品国际化进程"，但未见境外收入占比的稳定披露。</p>
+<p><strong>股东背景与治理瑕疵（重要）</strong>：实控人陶春风；<strong>2026 年 1 月 16 日公司及董事长陶春风、董秘白骅、时任财务总监胡龙双收到宁波证监局行政监管措施决定书</strong>，认定两大问题：① 内部控制不完善（销售管理、在建工程管理执行不到位，募集资金管理制度不健全，存在部分销售发货日期早于销售合同签订日期、重大工程合同审批未按内部制度履行审议程序等）；② <strong>收入确认时点不恰当</strong>（2024 年半年度提前确认部分营业收入，导致 2024 年半年报信息披露不准确）。三名责任人被监管谈话并记入诚信档案。</p>
+<blockquote>
+<p><strong>这是本股区别于同业的一个实质性折价因素：财务报告的可信度已被监管书面质疑。</strong></p>
+</blockquote>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>间接为主，无强直接补贴</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/方向</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>量化指标 / 影响路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>治理低价无序竞争、推动落后产能退出（2025 年中央财经委员会部署的延续执行）</td>
+<td>中央财经委</td>
+<td>国家级</td>
+<td>针对化工等过剩行业；但 TPES 属"结构性过剩（低端）+ 产不足需（高端）"的混合状态，政策效果分化</td>
+</tr>
+<tr>
+<td>"十五五"规划：新材料产业、关键战略材料国产替代</td>
+<td>中共中央</td>
+<td>国家级</td>
+<td>高端 SEBS/SEPS 属于"国内产不足需、绝大部分依赖进口"的品类，<strong>是政策明确鼓励的国产替代方向</strong></td>
+</tr>
+<tr>
+<td>基础设施建设 / 道路施工投资</td>
+<td>地方政府</td>
+<td>区域级</td>
+<td><strong>2026 年反而成为拖累</strong>：道路沥青价格大幅上涨压制道路施工投资，导致公司 TPES 道改产品采购节奏明显放缓</td>
+</tr>
+<tr>
+<td>限塑令 / 可降解塑料推广</td>
+<td>国家发改委等</td>
+<td>国家级</td>
+<td>理论上利好 PBAT，但 PBAT 行业开工率仅 16.6%，政策落地未能转化为实际产量</td>
+</tr>
+<tr>
+<td>环保/能耗约束（矿山开采、化工园区）</td>
+<td>生态环境部、地方</td>
+<td>部委级</td>
+<td>抬升碳酸钙业务的排废与配套运营成本（2026H1 已明确反映）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>政策端净结论：中性偏弱。</strong> 没有强补贴，且在 2026 年，"道路基建政策"反而通过"沥青价格→施工需求"这条链路对公司形成负面冲击。</p>
+</blockquote>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全球 TPES 市场规模</strong></td>
+<td><strong>超过 250 万吨/年</strong></td>
+</tr>
+<tr>
+<td><strong>国内 TPES 产能</strong></td>
+<td><strong>约 140 万吨/年</strong></td>
+</tr>
+<tr>
+<td>低端品种（SBS/SIS）格局</td>
+<td><strong>供求平衡偏松、市场集中度高、寡头垄断</strong>：国内 SBS 生产企业十几家，主要为中石化（巴陵/燕山/茂名）、惠州李长荣橡胶、宁波长鸿、中石油独山子石化、天津乐金渤天；<strong>中石化、惠州李长荣、长鸿三家合计占总体市场 70% 以上</strong></td>
+</tr>
+<tr>
+<td>高端品种（SEBS/SEPS）格局</td>
+<td><strong>SEBS 国内仍产不足需；SEPS 尚未实现大规模产业化，绝大部分需求依赖进口</strong> → 这是公司高端化转型的理论空间所在</td>
+</tr>
+<tr>
+<td><strong>PBAT 行业（严重过剩）</strong></td>
+<td>国内产能 截至 2025 年底 <strong>149.1 万吨</strong>（另有口径约 220 万吨，占全球总产能 70% 以上）；<strong>2025 年国内 PBAT 行业整体开工率仅 16.6%</strong>，大量产能闲置</td>
+</tr>
+<tr>
+<td><strong>核心原料 丁二烯</strong></td>
+<td>自 2022 年以来波动极大；<strong>2025Q4 后快速上冲，2026Q1 接近 18000 元/吨高位，后回落至约 10000 元/吨</strong></td>
+</tr>
+<tr>
+<td>核心原料 苯乙烯</td>
+<td>随地缘局势与原油震荡上行</td>
+</tr>
+<tr>
+<td>公司自身毛利率</td>
+<td>2021 年 21.6% → <strong>2026Q2 仅 4.85%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1 / Q2）——全线恶化</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>2026H1/Q2</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入（H1）</td>
+<td>15.46 亿</td>
+<td><strong>−16.11%</strong></td>
+</tr>
+<tr>
+<td>归母净利润（H1）</td>
+<td><strong>−0.5839 亿</strong></td>
+<td>上年同期 +0.0168 亿 → <strong>由盈转亏，同比 −3582.49%</strong></td>
+</tr>
+<tr>
+<td>扣非净利润（H1）</td>
+<td><strong>−0.6806 亿</strong></td>
+<td>上年同期 −0.0574 亿（亏损扩大 10.9 倍）</td>
+</tr>
+<tr>
+<td>利润总额（H1）</td>
+<td><strong>−0.7657 亿</strong></td>
+<td>上年同期 −0.0867 亿</td>
+</tr>
+<tr>
+<td>Q2 单季毛利率</td>
+<td><strong>4.85%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Q2 单季净利率</td>
+<td><strong>−3.94%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>经营活动现金流净额（H1）</td>
+<td><strong>+0.762 亿</strong></td>
+<td><strong>−15.25%</strong>（仍为正，是唯一的正面项）</td>
+</tr>
+<tr>
+<td>加权 ROE</td>
+<td><strong>−2.99%</strong></td>
+<td>上年同期 +0.08%（减少 3.07pct）</td>
+</tr>
+<tr>
+<td>每股经营现金流（H1）</td>
+<td>0.21 元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>资产负债率（2025 年末）</td>
+<td><strong>68.44%</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>总资产（2026H1 末）</td>
+<td>68.68 亿（+8.62%）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>归母净资产（2026H1 末）</td>
+<td><strong>19.196 亿（−3.04%）</strong></td>
+<td>净资产被亏损侵蚀</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游（成本端）——地缘冲击是直接推手</strong>：<br />
+- 核心原料苯乙烯、丁二烯之和占产品成本比重较大；<strong>2026 年 3 月起地缘局势波动带动原油及基础化工原料价格明显上行</strong>。<br />
+- 丁二烯的极端行情是本轮的直接导火索：2025Q4 后上冲至接近 18000 元/吨，公司在高位形成库存；随后回落至约 10000 元/吨 → <strong>"高价原料库存 vs 跌价产品售价"的剪刀差</strong>。</p>
+<p><strong>下游（需求端）——需求疲弱使传导无法完成</strong>：<br />
+- <strong>道改（道路沥青改性）需求崩塌</strong>：道路沥青价格大幅上涨压制道路施工投资，TPES 道改产品采购节奏明显放缓，行业整体需求不及预期。<br />
+- 橡塑、建材行业复苏节奏分化。<br />
+- 新材料行业竞争加剧。</p>
+<p><strong>议价权判断：弱（且正在进一步弱化）</strong><br />
+- 对上游：原料为大宗石化品，完全价格接受者。<br />
+- 对下游：<br />
+  - 低端 SBS/SIS 属"供求平衡偏松"，公司在三寡头格局中虽有地位，但产品同质化 → <strong>提价能力弱</strong>。<br />
+  - 高端 SEBS/SEPS 国内产不足需（议价权较强），但<strong>公司的高端产能尚未放量</strong>，2026H1 明确承认"高毛利新品持续推进市场导入，新品放量、产能充分释放尚需一定周期"。<br />
+  - PBAT 行业开工率 16.6%，属全行业过剩，无议价权。<br />
+- <strong>最硬的证据</strong>：公司自己在半年报中写明"下游市场需求偏弱，<strong>产品售价向上传导存在滞后，产品价差持续收窄</strong>"——这是议价权弱的官方表述。</p>
+<blockquote>
+<p><strong>第二步核心判断</strong>：这是一次<strong>典型的"成本上行 × 需求下行 × 传导失败"三杀</strong>。公司所处的 TPES 赛道低端过剩、高端未成，导致它在成本冲击面前完全没有缓冲垫。这与玻纤（CR6&gt;70%、电子纱紧缺）、造纸（浆纸一体化可对冲）形成鲜明对照——<strong>本股所在赛道不具备"自律提价"的产业结构基础</strong>。</p>
+</blockquote>
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<p><strong>因子1 成本传导弹性（把议价权量化为转嫁系数）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>传导率估算</th>
+<th>依据</th>
+<th>丁二烯 +30% 的实际毛利冲击</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>低端 TPES（SBS/SIS，道改方向）</td>
+<td><strong>0.15–0.30</strong>（极弱）</td>
+<td>供过于求 + 同质化 + 道改需求崩溃；公司自认"传导存在滞后"</td>
+<td>原料占成本约 70% → 毛利承压 ≈ 70% × 30% × (1−0.22) ≈ <strong>−16.4pct</strong></td>
+</tr>
+<tr>
+<td>高端 TPES（SEBS/SEPS/TPEE）</td>
+<td><strong>0.60–0.75</strong>（较强）</td>
+<td>国内产不足需、依赖进口，属卖方市场</td>
+<td>同样冲击下毛利承压 ≈ <strong>−6.3pct</strong></td>
+</tr>
+<tr>
+<td>PBT/PBAT</td>
+<td><strong>0.40–0.55</strong>（中）</td>
+<td>2026H1 "该板块经营保持相对平稳"，但 PBAT 开工率仅 16.6%</td>
+<td>承压 ≈ −10.7pct</td>
+</tr>
+<tr>
+<td>黑色母粒</td>
+<td><strong>0.35–0.50</strong>（中弱）</td>
+<td>受树脂价格拖累</td>
+<td>承压约 −12pct</td>
+</tr>
+<tr>
+<td>碳酸钙（自有矿）</td>
+<td><strong>约 0.5</strong>（中）</td>
+<td>受矿石品位波动与市场价格偏弱影响；成本主要在内生开采而非外购</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>加权综合传导率 ≈ 0.25–0.35（估算约 0.30）</strong> —— 这是本报告覆盖的 5 只标的中<strong>传导率最低的一只</strong>（对照：合兴 0.63、五洲 0.55、山东玻纤 0.50→0.62）。含义：<strong>上游 70% 的成本冲击由公司自行承担。</strong><br />
+这直接解释了为什么一边是"丁二烯 +80%（10000→18000）"，另一边是"毛利率从 7.39% 崩到 4.85%"。</p>
+</blockquote>
+<p><strong>验证点</strong>：① 季度综合毛利率能否回到 7% 以上；② 丁二烯月度市场价能否稳定在 10000 元/吨以下；③ 公司是否发布产品涨价函；④ 高端 SEBS 是否公告客户定点或放量。<br />
+<strong>证伪信号</strong>：若 2026Q3 综合毛利率仍低于 5%，或丁二烯重回 15000 元/吨以上 → 传导彻底失败，中性情景需整体重置。</p>
+<p><strong>因子2 毛利结构再平衡（禁止用单一综合毛利率掩盖结构迁移）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线（2026H1 状态）</th>
+<th>定性毛利率位置</th>
+<th>收入占比倾向</th>
+<th>盈利贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高端 TPES 新品（SEBS/SEPS/TPEE）</td>
+<td><strong>高</strong>（理论 15%+）</td>
+<td><strong>极低</strong>（"新品放量尚需一定周期"）</td>
+<td>尚未成为利润来源</td>
+</tr>
+<tr>
+<td>PBT</td>
+<td>中</td>
+<td>中（2026H1 主动加大排产）</td>
+<td><strong>唯一相对平稳的板块</strong></td>
+</tr>
+<tr>
+<td>低端 TPES（SBS/SIS，含道改）</td>
+<td><strong>极低甚至负</strong></td>
+<td><strong>高</strong>（历史主力）</td>
+<td><strong>当前最大失血点</strong></td>
+</tr>
+<tr>
+<td>PBAT</td>
+<td>低</td>
+<td>低</td>
+<td>过剩拖累</td>
+</tr>
+<tr>
+<td>黑色母粒</td>
+<td>低</td>
+<td>中</td>
+<td>受拖累</td>
+</tr>
+<tr>
+<td>碳酸钙</td>
+<td>低（2026H1 同比下滑）</td>
+<td>中</td>
+<td>明确承压</td>
+</tr>
+<tr>
+<td>广东丙烯酸（在建）</td>
+<td>—</td>
+<td><strong>0</strong></td>
+<td><strong>只出不进：持续工程支出与财务费用</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>结构性洞察</strong>：这是一次<strong>"高毛利品类占比未能上升、低毛利品类又同时崩塌"的双向恶化</strong>。与山东玻纤（高附加值占比主动从 24%→42%）、五洲特纸（日用消费材料贡献 48% 毛利）不同，<strong>本股的高端替代尚未产生足够的收入权重来对冲低端的坍塌</strong>——这是它被成本冲击打穿的根本原因。</p>
+</blockquote>
+<p><strong>因子3 库存与采购节奏（timing：高价库存正是本轮亏损的直接来源）</strong><br />
+- <strong>公司自己承认</strong>："市场采购不及预期，<strong>导致形成了较多高价库存</strong>"（2026H1 业绩预告原文）。这是本轮亏损最直接的机制。<br />
+- 定量：2026Q1 丁二烯接近 18000 元/吨时形成的库存，在 Q2 原料回落至约 10000 元/吨后被迫以跌价产品消化 → <strong>库存损失直接砸在 Q2 的 4.85% 毛利率上</strong>。<br />
+- <strong>正面识别</strong>：这是<strong>可修复的一次性冲击</strong>。若高价库存已在 2026Q2–Q3 消化完毕，2026Q4 起毛利率有机会随原料常态回归而修复——这是本报告中"扭亏时点落在 2027 年"的关键依据。<br />
+- <strong>反面警示</strong>：存货周转率 1.76 次（半年口径，2025 同期 4.63 次）→ <strong>周转大幅放缓</strong>，说明高价库存的消化速度比正常情况慢，损失释放可能拖到 Q4。<br />
+- 未查到期货套保比例的公开披露 → <strong>套保覆盖度未知，构成重大不确定源</strong>（公司为石化原料重度使用者却无套保披露，是风控层面的明显缺口）。</p>
+<p><strong>因子4 政策 / 市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>变量</th>
+<th>情景</th>
+<th>验证点</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>市场层</td>
+<td><strong>丁二烯价格</strong>（10000 vs 18000 元/吨）</td>
+<td>基准：维持 10000 元/吨附近；悲观：地缘冲突再起，重回 15000+</td>
+<td>月度丁二烯市场报价</td>
+<td><strong>单一最大变量</strong>：直接影响毛利率 5–10pct</td>
+</tr>
+<tr>
+<td>市场层</td>
+<td>苯乙烯价格</td>
+<td>随原油波动</td>
+<td>华东苯乙烯现货</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>市场层</td>
+<td>道路沥青价格</td>
+<td>悲观：维持高位 → 道改需求继续萎缩</td>
+<td>道路沥青月度招标价、基建投资数据</td>
+<td><strong>反直觉</strong>：沥青涨价对本公司是<strong>负面</strong>（压制施工需求）</td>
+</tr>
+<tr>
+<td>政策层</td>
+<td>国内基建/道路施工投资力度</td>
+<td>悲观：地方财政紧张导致施工投资继续下滑</td>
+<td>季度基建投资增速</td>
+<td>负面影响道改需求</td>
+</tr>
+<tr>
+<td>政策层</td>
+<td>高端 SEBS/SEPS 国产替代支持</td>
+<td>乐观：列入《重点新材料首批次应用示范指导目录》类支持</td>
+<td>工信部目录更新</td>
+<td>正面，但需公司高端产能先行落地</td>
+</tr>
+<tr>
+<td>政策层</td>
+<td>PBAT/可降解塑料政策</td>
+<td>中性：政策在但行业开工率 16.6% 说明需求未兑现</td>
+<td>禁塑执行率</td>
+<td>短期无效</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>本因子输出（直接喂给第四步）</strong>：由于综合传导率仅 0.30，回避了不可能——公司<strong>无法通过提价来修复毛利，只能通过"原料回落 + 高价库存出清 + 高毛利新品占比提升"三条路径</strong>。据此，2029 年正常化净利率只能给到 <strong>4.0%</strong>（而非更高），因为：① 高折旧（固定资产 34.52 亿、年折旧约 1.84 亿）与高财务费用（有息负债 30.66 亿）是长期刚性的；② 传导率弱意味着即使毛利率修复，净利率的天花板也受限于高固定成本摊薄。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>增量/项目</th>
+<th>内容/设计产能</th>
+<th>进度与时点</th>
+<th>确定性</th>
+<th>收入/利润确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>⭐ 高价原料库存出清</strong>（减量项转增量）</td>
+<td>丁二烯回落至约 10000 元/吨</td>
+<td>2026Q2 起消化，<strong>预计 2026Q4 – 2027Q1 完成</strong></td>
+<td><strong>中高</strong>（时点可验证）</td>
+<td>2027 年起毛利率修复</td>
+</tr>
+<tr>
+<td><strong>⭐ 广东长鸿丙烯酸产业园项目一期</strong></td>
+<td>丙烯酸及下游（<strong>具体产能与投资额均未公开披露</strong>）</td>
+<td>按既定计划建设，<strong>预计 2026 年底进行试生产</strong></td>
+<td><strong>中</strong>（已明确时点，但规模未知）</td>
+<td><strong>2027 起逐步贡献；2026 年只出不进</strong></td>
+</tr>
+<tr>
+<td>25 万吨/年溶液丁苯橡胶扩能改造项目二期</td>
+<td>已投产</td>
+<td><strong>持续释放产能</strong></td>
+<td><strong>高</strong></td>
+<td>已在报表中</td>
+</tr>
+<tr>
+<td>5 万吨/年 TPE 黑色母粒技改项目</td>
+<td>已投产</td>
+<td><strong>持续释放产能</strong></td>
+<td><strong>高</strong></td>
+<td>已在报表中（但当前拖累盈利）</td>
+</tr>
+<tr>
+<td>长鸿生物柔性化生产装置（PBT/PBAT）</td>
+<td>可根据上下游行情动态切换排产</td>
+<td>运行稳定</td>
+<td><strong>高</strong></td>
+<td>已在报表中（唯一平稳板块）</td>
+</tr>
+<tr>
+<td>高端牌号 TPES / TPEE 开发</td>
+<td>技术储备中，推进客户结构与产品结构高端化</td>
+<td><strong>未放量</strong></td>
+<td><strong>低–中</strong></td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td>PBT 全牌号产品矩阵完善</td>
+<td>巩固纺织、电子改性领域份额</td>
+<td>进行中</td>
+<td><strong>中</strong></td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td><strong>⭐ 远期期权：收购广西长科新材料 100% 股权</strong></td>
+<td>标的拥有 <strong>60 万吨/年本体法合成树脂柔性生产线</strong>（透明 ABS、高透明 MS、高腈 AS、高光 ABS/HIPS、通用树脂、工程树脂黑色母粒）</td>
+<td><strong>重组进行中，未完成</strong>（见下）</td>
+<td><strong>低</strong>（尚存在不确定性）</td>
+<td><strong>按纪律不计入中性</strong></td>
+</tr>
+<tr>
+<td>内部降本（副产蒸汽/尾气回用、工艺优化）</td>
+<td>减少外购天然气与外采蒸汽</td>
+<td>持续</td>
+<td><strong>中</strong></td>
+<td>边际改善</td>
+</tr>
+</tbody>
+</table>
+<h3>⭐ 广西长科重组专题（唯一性：这是当前股价的核心支撑）</h3>
+<p><strong>交易结构</strong>：发行股份 + 可转换公司债券 + 支付现金购买广西长科 100% 股权，并向不超过 35 名特定投资者发行股份募集配套资金；预计构成<strong>重大资产重组且构成关联交易</strong>（标的为实控人陶春风旗下资产）；不导致控股股东及实控人变更，不构成重组上市。</p>
+<p><strong>时间线</strong>：<br />
+- 2025-07-08：筹划重大资产重组停牌<br />
+- 2025-07-19：披露交易预案并复牌<br />
+- <strong>2026-01：公司提示，受审计、评估工作尚未完成影响，预计无法在首次审议重组事项的董事会决议公告后 6 个月内发出股东大会召开通知</strong>（即重组已超期）<br />
+- 2026-08-25：披露《预案（修订稿）》，同时公告拟将 2026 年度审计机构由立信中联更换为<strong>浙江科信会计师事务所</strong>（解释：结合原审计机构实际情况 + 重组项目审计工作需要）<br />
+- <strong>至今：审计、评估仍未完成，尚未提交股东大会审议</strong></p>
+<p><strong>标的资产质量（必须做尽职判断，不能只看叙事）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>期间</th>
+<th>营业收入</th>
+<th>归母净利润</th>
+<th>资产负债率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>6.68 亿</td>
+<td><strong>−0.3360 亿</strong></td>
+<td>70%</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>10.17 亿</td>
+<td><strong>−0.7908 亿</strong></td>
+<td>72%</td>
+</tr>
+<tr>
+<td>2025H1</td>
+<td>8.08 亿</td>
+<td><strong>+0.3491 亿</strong>（刚扭亏）</td>
+<td><strong>74%（上升）</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⚠️ 三个必须写明的事实</strong>：<br />
+1. 标的在 2023、2024 连续两年亏损，<strong>2025H1 才刚扭亏</strong>，盈利质量羸弱且未经完整年度验证。<br />
+2. 标的资产负债率 <strong>70% → 72% → 74%，持续上升</strong>；注入后不会改善上市公司的杠杆结构（母公司已 68.44%）。<br />
+3. 标的在建工程与固定资产账面价值较高，二期项目陆续转固后<strong>折旧将进一步增加</strong>，可能反过来拖累合并报表。<br />
+<strong>→ 这不是一次"优质资产注入"，而是一次"控股股东向上市公司出售高杠杆弱盈利资产"的交易。按 RULES 的期权纪律，不仅不计入中性，还须在风险章节列示"注入后折旧与负债双升"的反向风险。</strong></p>
+</blockquote>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点逼近）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守（守住）</th>
+<th>中性（小幅改善）</th>
+<th>乐观（高端突破）</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>宣称 TPES 产能位居<strong>全国前三</strong>；中石化+惠州李长荣+长鸿三家占 SBS 市场 70%+</td>
+<td>份额不变</td>
+<td>份额小幅守住</td>
+<td>高端产能落地带动份额上升</td>
+<td>行业协会产能排名、公司产能公告</td>
+</tr>
+<tr>
+<td>② 需求侧/客户份额</td>
+<td>主要面向道路施工（道改）、鞋材、粘合剂；<strong>2026 年道改需求明显放缓</strong></td>
+<td>客户不流失</td>
+<td>道改需求恢复</td>
+<td>导入高端 SEBS 大客户</td>
+<td>道改订单恢复、高端客户定点公告</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>高端 SEBS/SEPS：<strong>SEPS 尚未实现大规模产业化，绝大部分需求依赖进口</strong> → 公司处于"追赶者"位置</td>
+<td>维持</td>
+<td>SEBS 实现量产并替代部分进口</td>
+<td>SEPS 实现产业化（国内首家级）</td>
+<td>SEBS/SEPS 量产公告、进口替代率</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td><strong>明显劣势</strong>：固定资产 34.52 亿（2026Q1），年折旧约 1.84 亿；有息负债 30.66 亿</td>
+<td>维持</td>
+<td>产能利用率提升摊薄</td>
+<td>柔性排产优化使单位成本下降</td>
+<td>单位固定成本、产能利用率</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td><strong>处于 S 曲线下行段</strong>：营收 2026H1 −16.11%，且在高毛利品类上的渗透尚未启动</td>
+<td>继续下滑</td>
+<td>止跌</td>
+<td>二次增长</td>
+<td><strong>季度营收同比是否转正</strong>（当前 −16.11%）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层2 扩展业务：主业迁移空间（五要点）</strong></p>
+<table>
+<thead>
+<tr>
+<th>判断项</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 能力可迁移性</td>
+<td><strong>中等</strong>。TPES 的聚合工艺能力可向丙烯酸产业链、本体法合成树脂迁移（各细分路线的催化剂与工艺包差异较大），但化工各细分路线的催化剂/工艺包差异大，迁移成本不低。</td>
+</tr>
+<tr>
+<td>② 新 TAM 弹性</td>
+<td><strong>大</strong>。透明 ABS、高透明 MS、高腈 AS 等特种树脂属于国产替代方向；丙烯酸产业链 TAM 巨大。</td>
+</tr>
+<tr>
+<td>③ 切入卡位</td>
+<td><strong>偏晚 + 靠并购</strong>。公司选择"买一条现成产线"而非自建，好处是快，坏处是<strong>买的是一条高杠杆、刚扭亏、折旧将增的产线</strong>。</td>
+</tr>
+<tr>
+<td>④ 客户认证门槛</td>
+<td><strong>高</strong>。特种树脂/透明 ABS 进入家电、电子、光学客户需较长认证周期。</td>
+</tr>
+<tr>
+<td>⑤ 信号验证</td>
+<td><strong>未通过</strong>。重组已推进<strong>逾一年</strong>（2025-07 至今），仍卡在审计评估环节，连股东大会通知都发不出去。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>纪律执行</strong>：广西长科注入属"未过验证点的中期期权"，<strong>不计入中性净利、不计入中性目标价</strong>，仅列于乐观/机会情景。</p>
+</blockquote>
+<p><strong>层3 风险折扣：证伪信号清单</strong><br />
+1. <strong>⭐ 重组在 2027 年内仍未提交股东大会审议或终止</strong> → 当前 PB 4.69 的估值支撑一次性崩塌<br />
+2. 丁二烯重回 15000 元/吨以上 → 高价库存故事重演<br />
+3. 广东丙烯酸一期 2026 年底未能试生产（延期）→ 唯一的内生新增量落空<br />
+4. 2026Q3/Q4 综合毛利率仍低于 5% → 结构升级叙事证伪<br />
+5. 出现新的监管函/问询（尤其是针对在建工程资本化、收入确认）→ 财务可信度进一步折价<br />
+6. 银行抽贷、短期债务展期失败 → 流动性事件</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>本股为当前实亏标的，按 RULES 第四节采用【正常化净利润法】三步推导，禁止硬套 PE。同时因属化工周期品 + 重资产 + 高负债，完整执行第四步进阶三道闸。</strong></p>
+</blockquote>
+<p><strong>总股本：6.4596 亿股</strong>（腾讯行情 f73 字段 645,962,414；交叉校验：6.4596 亿 × 13.94 元 = 90.05 亿 ≈ 实测总市值 90.05 亿 ✓）</p>
+<h3>🔴 亏损股"三问"（RULES 强制）</h3>
+<h4>问1：为什么亏？——五因子叠加，且是"结构 + 周期 + 会计"三重叠加</h4>
+<p><strong>（a）量化拆解 2026H1 的利润表（自下而上还原）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>科目</th>
+<th>2026H1 估算</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>15.46 亿</td>
+<td>−16.11%</td>
+</tr>
+<tr>
+<td>综合毛利</td>
+<td><strong>约 0.80 亿</strong></td>
+<td>按 Q1 5.57% / Q2 4.85% 加权，H1 毛利率约 5.2%</td>
+</tr>
+<tr>
+<td>期间费用合计</td>
+<td><strong>约 1.45–1.55 亿</strong></td>
+<td>含财务费用约 0.55–0.65 亿（有息负债 30.66 亿）、管理费用、研发费用、销售费用；折旧摊销主要在营业成本内（约 0.92 亿/半年）</td>
+</tr>
+<tr>
+<td>其他收益/投资收益</td>
+<td>约 +0.12 亿</td>
+<td>政府补助 853.32 万 + 资产处置 90.52 万 + 金融资产损益 256.87 万</td>
+</tr>
+<tr>
+<td><strong>利润总额</strong></td>
+<td><strong>−0.7657 亿</strong></td>
+<td>与半年报实际披露完全吻合 ✓</td>
+</tr>
+<tr>
+<td>归母净利润</td>
+<td><strong>−0.5839 亿</strong></td>
+<td>含所得税抵免/递延影响</td>
+</tr>
+</tbody>
+</table>
+<p><strong>（b）盈亏平衡点测算（本报告的关键量化结论）</strong>：<br />
+- 年化期间费用约 <strong>2.9–3.1 亿</strong>（这是刚性支出，不随产量线性下降）<br />
+- 若要实现盈亏平衡，需：<strong>营业收入 × 毛利率 ≥ 3.0 亿</strong><br />
+  - 毛利率 5%（当前）→ 需营收 <strong>60 亿</strong>（当前年化 30.9 亿，<strong>完全不可能</strong>）<br />
+  - 毛利率 <strong>8%</strong>（接近 2024 年 9.20% 的水平）→ 需营收 <strong>37.5 亿</strong>（当前年化 30.9 亿，<strong>缺口 21%</strong>）<br />
+  - 毛利率 <strong>10%</strong>（回到 2022–2023 年水平）→ 需营收 <strong>30 亿</strong>（<strong>当前年化 30.9 亿即可覆盖</strong>）</p>
+<blockquote>
+<p><strong>⭐ 核心结论：扭亏的关键变量不是"量"，而是"毛利率能否回到 9%–10%"。</strong> 这完全取决于丁二烯价格能否稳定在 10000 元/吨附近 + 高价库存出清。这也意味着，本股的扭亏在相当大的程度上<strong>依赖外部大宗价格，而非公司自身的经营杠杆</strong>——这是一个必须写在最前面的诚实判断。</p>
+</blockquote>
+<p><strong>（c）五大亏损原因（公司半年报官方口径，逐条列出）</strong>：<br />
+1. <strong>原材料成本上行、价格传导不畅</strong>（地缘 → 原油/苯乙烯/丁二烯上行；下游需求偏弱，售价传导滞后，价差收窄）<br />
+2. <strong>TPES 板块需求结构性走弱</strong>（道路沥青暴涨压制施工投资，道改产品需求放缓，<strong>形成较多高价原料库存</strong>）<br />
+3. <strong>产品结构转型升级爬坡期</strong>（高毛利新品尚未放量、产能尚未充分释放）<br />
+4. <strong>碳酸钙业务经营承压</strong>（矿石开采区域品质阶段性波动、排废与配套运营成本增加、市场价格偏弱）<br />
+5. <strong>新建项目暂未贡献盈利</strong>（广东长鸿丙烯酸产业园尚在建设期，无经营收益，持续发生工程支出与财务费用）</p>
+<p><strong>（d）本报告补充的第 6 个原因（结构性、长期性）</strong>：<strong>资本开支转固带来的折旧基数跃升</strong>。固定资产从 2021 年 16.59 亿飙升至 2026Q1 的 34.52 亿（翻倍），年折旧已达约 <strong>1.84 亿</strong>——这相当于公司历史最好年份（2020 年归母 3.02 亿）的 61%。<strong>在毛利率崩到 5% 的同时背负重折旧，是利润表无法承受的结构性问题。</strong></p>
+<h4>问2：靠什么扭亏？触发时点在哪一年？</h4>
+<table>
+<thead>
+<tr>
+<th>扭亏路径</th>
+<th>机制</th>
+<th>触发时点判断</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 高价库存出清 + 丁二烯回落</strong></td>
+<td>丁二烯从 18000 回落至约 10000 元/吨，高价库存消化完毕后毛利率回归常态</td>
+<td><strong>2026Q4 – 2027Q1</strong>（存货周转已从 4.63 降至 1.76，消化偏慢）</td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td><strong>② 广东丙烯酸一期投产</strong></td>
+<td>结束"只投入无产出"状态，工程支出与财务费用转为可产生收益的资产</td>
+<td><strong>2026 年底试生产 → 2027 年贡献</strong></td>
+<td><strong>中</strong>（规模未知是最大弱点）</td>
+</tr>
+<tr>
+<td><strong>③ 高端 SEBS/SEPS/TPEE 放量</strong></td>
+<td>高端品类 15%+ 毛利率替代 5% 的低端，且传导率 0.60–0.75 远高于低端的 0.15–0.30</td>
+<td><strong>2027–2028</strong></td>
+<td><strong>中低</strong>（尚未有放量证据）</td>
+</tr>
+<tr>
+<td>④ PBT 排产优化（柔性产线）</td>
+<td>已在做，下游纺织/改性塑料结构性回暖</td>
+<td>持续</td>
+<td>中（但体量有限）</td>
+</tr>
+<tr>
+<td>⑤ 内部降本（副产蒸汽/尾气回用、工艺优化）</td>
+<td>减少外购天然气与外采蒸汽</td>
+<td>持续</td>
+<td>中（边际）</td>
+</tr>
+<tr>
+<td>⑥ <strong>广西长科注入</strong>（期权）</td>
+<td>60 万吨产能并表</td>
+<td>时间不确定（已逾一年）</td>
+<td><strong>低，不计入中性</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⭐ 扭亏时点判断</strong>：<br />
+- <strong>乐观：2026Q4</strong>（丁二烯维持低位 + 库存快速出清 + 丙烯酸如期试生产，三季度三季报若毛利率回 8% 则为强信号）<br />
+- <strong>中性：2027 年</strong>（报告给它一年缓冲）<br />
+- <strong>悲观：2028 年或更晚</strong>（若丁二烯再度暴涨、或丙烯酸延期、或高端化失败）</p>
+</blockquote>
+<h4>问3：亏得起吗？——<strong>这是本股最危险的一环</strong></h4>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数据</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>货币资金（2026Q1 末）</strong></td>
+<td><strong>约 3.17 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>短期债务（短期借款 + 一年内到期非流动负债，2026Q1 末）</strong></td>
+<td><strong>超过 16 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>现金 / 短期债务比</strong></td>
+<td><strong>约 0.20</strong></td>
+<td>🔴 <strong>极度紧张</strong></td>
+</tr>
+<tr>
+<td>长期借款（2026Q1 末）</td>
+<td>14.29 亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>有息负债总额（2025 年末）</td>
+<td><strong>30.66 亿</strong>（有息负债率 70.85%）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td><strong>68.44%</strong></td>
+<td>🔴 远超 60% 警戒线</td>
+</tr>
+<tr>
+<td>流动比率 / 速动比率</td>
+<td><strong>0.64 / 0.52</strong></td>
+<td>🔴 双双严重低于安全线</td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td>2026H1 <strong>+0.762 亿</strong>（−15.25%）；2025 全年 <strong>−1.148 亿</strong>；2024 +3.486 亿</td>
+<td>⚠️ <strong>波动极大，2025 年曾为负</strong></td>
+</tr>
+<tr>
+<td>归母净资产</td>
+<td><strong>19.196 亿</strong>（−3.04%）</td>
+<td>✅ 暂无资不抵债风险</td>
+</tr>
+<tr>
+<td>未来资本开支需求</td>
+<td>广东丙烯酸一期仍在建（规模未知）、还可能有一期后续/二期</td>
+<td>🔴 继续失血</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⭐ 答："短期勉强撑得住，但缓冲区极薄，且高度依赖外部融资环境。"</strong><br />
+- <strong>支撑因素</strong>：① 经营现金流仍为正（2026H1 +0.76 亿）；② 净资产 19.196 亿，尚未资不抵债；③ 实控人可通过重组/定增注入资源；④ 国有企业背景不适用，但作为上市民企仍有再融资通道。<br />
+- <strong>危险信号</strong>：① 现金/短债比仅 0.20；② 2025 年全年经营现金流为负；③ 还要继续投广东丙烯酸项目；④ <strong>已收宁波证监局行政监管措施（内控与收入确认问题），这会实质性抬高再融资的合规成本与审核难度</strong>。<br />
+- <strong>结论</strong>：这是"<strong>高杠杆紧平衡</strong>"状态。<strong>倒在黎明前的概率不低</strong>——如果扭亏时点推迟到 2028 年，而期间出现银行抽贷或原料二次暴涨，公司将被迫在"贱卖资产 / 大幅折价定增 / 债务重组"之间做选择，届时现有股东权益会被稀释。</p>
+</blockquote>
+<hr />
+<h3>🔵 正常化净利润法（三步推导）</h3>
+<h4>第 1 步：估稳态营收（现有产能满产 + 在建项目达产 + 在手订单兑现）</h4>
+<table>
+<thead>
+<tr>
+<th>组成</th>
+<th>2029E 稳态营收测算</th>
+<th>依据与假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现有业务本体</strong>（SSBR 25 万吨 + 黑色母粒 5 万吨 + PBT/PBAT 柔性装置 + 碳酸钙）</td>
+<td><strong>35 亿</strong></td>
+<td>2025 年实际 39.23 亿；2026 年因需求疲弱年化仅 30.9 亿。假设 2029 年需求恢复到居间位置，取 2025 年的 89% = 35 亿</td>
+</tr>
+<tr>
+<td><strong>广东长鸿丙烯酸产业园一期</strong></td>
+<td><strong>8.4 亿</strong></td>
+<td>假设一期设计产能对应满产年收入约 12 亿，<strong>2029 年满产 70%</strong> = 8.4 亿</td>
+</tr>
+<tr>
+<td><strong>高端 SEBS/SEPS/TPEE 增量</strong></td>
+<td><strong>3 亿</strong></td>
+<td>在现有产能内部做品类替代的净增量（不新增 huge capex）</td>
+</tr>
+<tr>
+<td><strong>中性稳态营收合计</strong></td>
+<td><strong>约 46.4 亿，取 46 亿</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>悲观情形稳态营收</td>
+<td><strong>38 亿</strong></td>
+<td>现有业务恢复缓慢（32 亿）+ 丙烯酸延期仅 6 亿</td>
+</tr>
+<tr>
+<td>乐观情形稳态营收</td>
+<td><strong>55 亿</strong></td>
+<td>现有业务 38 亿 + 丙烯酸 12 亿 + 高端放量 5 亿</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⚠️ 主要不确定源（必须写明）</strong>：<strong>广东长鸿丙烯酸产业园一期的产能规模与总投资额均未公开披露。</strong> 本报告假设"一期满产对应年收入约 12 亿"属同业类比估算。若实际仅 8 亿，中性稳态营收降至 42 亿，中性正常化净利润从 1.84 亿降至 1.68 亿，中性目标价从 5.70 元降至 5.20 元——<strong>结论不变，但幅度会变化</strong>。这是本模型的最大敞口。</p>
+<p><strong>产能约束校验</strong>：现有已投产产能足以支撑 35 亿本体营收（2025 年已达 39.23 亿）；46 亿稳态营收需依赖丙烯酸一期落地 → <strong>该项目的投产就是产能约束能否突破的唯一开关</strong>。</p>
+</blockquote>
+<h4>第 2 步：算正常化净利率（三选一，取保守）</h4>
+<table>
+<thead>
+<tr>
+<th>参考口径</th>
+<th>数值</th>
+<th>是否采用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>行业正常净利率</strong>（化工新材料 TPES/SSBR 正常年份）</td>
+<td><strong>4%–6%</strong></td>
+<td>✅ <strong>采用下限 4.0%</strong></td>
+</tr>
+<tr>
+<td>② <strong>公司历史最好年份净利率</strong></td>
+<td>2022 年 1.80/23.72 ≈ <strong>7.59%</strong>；2023 年 0.9501/14.16 ≈ <strong>6.71%</strong></td>
+<td>❌ 不采用。该水平发生在上市初期"高毛利（21.6%）+ 低折旧（固定资产仅 16.59 亿）"的特殊窗口，与当前"毛利率 5% + 折旧 1.84 亿/年 + 财务费用高企"的结构完全不同，属不可重现</td>
+</tr>
+<tr>
+<td>③ <strong>产能爬坡后理论净利率</strong></td>
+<td>高端占比提升后理论可达 6%</td>
+<td>❌ 不用于中枢，仅用于乐观情景</td>
+</tr>
+<tr>
+<td><strong>⭐ 本报告取值（三者取保守）</strong></td>
+<td><strong>中性 4.0% / 悲观 2.0% / 乐观 6.0%</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h4>第 3 步：正常化净利润 × 远期合理 PE = 目标市值 → 目标价</h4>
+<p><strong>远期合理 PE 判断</strong>：<br />
+- 定位：化工新材料，兼具"基础原料（周期性）"与"高端改性材料（国产替代/成长性）"双重属性。<br />
+- 参考区间：纯周期化工通常 10–15x；具国产替代属性的新材料通常 20–25x。<br />
+- <strong>中性给 20x</strong>（承认其国产替代属性，但扣减"治理瑕疵 + 高杠杆 + 传导率极弱"三项折价）。<br />
+- 悲观 15x；乐观 22x。</p>
+<h3>三情景（2029E，正常化）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>稳态营收</th>
+<th>正常化净利率</th>
+<th><strong>正常化净利润</strong></th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>38 亿</td>
+<td>2.0%</td>
+<td><strong>0.76 亿</strong></td>
+<td>15x</td>
+<td>11.4 亿</td>
+<td><strong>1.76 元</strong></td>
+<td><strong>−87.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td><strong>46 亿</strong></td>
+<td><strong>4.0%</strong></td>
+<td><strong>1.84 亿</strong></td>
+<td><strong>20x</strong></td>
+<td><strong>36.8 亿</strong></td>
+<td><strong>5.70 元</strong></td>
+<td><strong>−59.1%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong>（含广西长科注入成功 + 丙烯酸超预期 + SEBS 高端放量）</td>
+<td>本体 55 亿；广西长科并表（营收 28 亿 × 5% 净利率 × 90% 权益 ≈ 1.26 亿）</td>
+<td>本体 6.0%</td>
+<td><strong>本体 3.30 + 长科 1.26 = 4.56 亿</strong>；股本摊薄至约 <strong>8.5 亿股</strong></td>
+<td>22x</td>
+<td>100.3 亿</td>
+<td><strong>11.80 元</strong></td>
+<td><strong>−15.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⭐ 必须直陈的事实：即便在乐观情景（三大期权全部兑现、且广西长科成功注入并在 2029 年贡献 1.26 亿归母净利），目标价也只有 11.80 元，仍低于现价 13.94 元。</strong><br />
+这意味着：<strong>当前股价已经把所有能想到的好消息——包括尚未完成收购的广西长科——全部定价完毕，并在此基础上有相当幅度的溢价。</strong></p>
+</blockquote>
+<h3>估值锚定表（亏损股标准格式）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td><strong>亏损 −0.63 亿</strong>（2026E 全年）</td>
+<td><strong>正常化净利润 +1.84 亿</strong></td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损期无意义）</td>
+<td>20x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>—（亏损期无意义，改用 PB 锚）</td>
+<td>36.8 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>PB 2.5x 锚 → 7.35 元</strong></td>
+<td><strong>5.70 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026E 全年盈利推算</strong>：H1 已亏 <strong>−0.5839 亿</strong>；H2 判断——丁二烯回落利好毛利修复，但广东丙烯酸项目仍在投建（工程支出+财务费用继续），且 Q4 通常计提减值 → H2 归母取 <strong>−0.20 亿 至 +0.10 亿</strong>，取 <strong>−0.05 亿</strong> → <strong>2026E 归母约 −0.63 亿</strong>（全年亏损）。</p>
+<p><strong>基准目标价说明（为什么用 PB 而非 PE）</strong>：亏损期 PE 无意义。按 2026 年底归母净资产约 <strong>19.0 亿</strong>，给 <strong>PB 2.5x</strong>（计入"周期修复预期 + 重组前景"的部分定价，但远低于当前 4.69x）→ 47.5 亿 → <strong>7.35 元</strong>；区间 PB 2.0–3.0x → <strong>6.11 – 9.17 元</strong>。</p>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸）</h3>
+<h4>校正1 资产质量折扣（本股是"亏损 + 高 PB"的极端组合）</h4>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>数据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PB 水平</strong></td>
+<td><strong>4.69x</strong>（净资产 19.196 亿 × 4.69 = 90.05 亿 ✓）</td>
+<td>一个<strong>正在亏损</strong>的公司给到 4.69x PB，其隐含假设是"重组注入后 ROE 将跃升至 20%+"</td>
+</tr>
+<tr>
+<td>资产盈利能力</td>
+<td>2025 加权 ROE <strong>−0.40%</strong>；2026H1 加权 ROE <strong>−2.99%</strong></td>
+<td><strong>PB 4.69x 完全没有任何当期盈利能力支撑</strong></td>
+</tr>
+<tr>
+<td>资产专用性</td>
+<td>固定资产 34.52 亿（2026Q1），化工专用装置（SSBR/TPES/PBT/碳酸钙线），专用性极强</td>
+<td>清算价值 &lt;&lt; 账面价值，重置成本不兜底</td>
+</tr>
+<tr>
+<td><strong>隐含负债</strong></td>
+<td>资产负债率 68.44%、有息负债 30.66 亿、短债 &gt;16 亿、货币资金仅 3.17 亿、流动比率 0.64</td>
+<td><strong>净资产存在于巨额刚性负债之上</strong>；且存在较高的资产受限比例（借款抵质押）</td>
+</tr>
+<tr>
+<td><strong>治理/会计质量折价</strong></td>
+<td>2026-01-16 宁波证监局认定"内控不完善 + 收入确认时点不恰当（2024 年半年报提前确认收入）"</td>
+<td><strong>净资产与收入的可信度已被监管书面质疑</strong>，须额外折价</td>
+</tr>
+<tr>
+<td>若重组失败</td>
+<td>PB 合理水平应回落至 1.5–2.0x → 28.8–38.4 亿 → <strong>4.46–5.94 元</strong></td>
+<td>与中性目标价 5.70 元高度吻合 → <strong>说明中性目标价本质上就是"重组失败/未兑现"情形的定价</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>校正1 结论</strong>：本股<strong>不存在"PB&lt;1 推导大空间"的伪空间问题</strong>，因为它是反过来的 <strong>PB = 4.69x（极高）</strong>。按纪律：<strong>必须写明的是——这个 PB 的唯一支撑是尚未完成的广西长科重组预期，一旦重组终止，净资产 19.196 亿只能支撑 1.5–2.0x PB，对应 4.5–5.9 元。</strong></p>
+<h4>校正2 周期位置校正 —— <strong>当前周期位置：【化工周期底部 + 产品结构转型阵痛期叠加】</strong></h4>
+<ul>
+<li><strong>位置判定依据</strong>：① 毛利率 2021 年 21.6% → 2026Q2 4.85%，五年蒸发 16.75pct；② 净利润从 2020 年 3.02 亿逐年下滑至 2025 年首次年度亏损、2026H1 亏损扩大；③ 行业层面 TPES 低端供过于求、PBAT 开工率仅 16.6%，均处于产能过剩的底部区间；④ 唯一的景气方向（高端 SEBS/SEPS 国产替代）公司尚未形成产能。</li>
+<li><strong>禁止使用方法（逐一排除）</strong>：</li>
+<li>❌ <strong>单年好年景</strong>：不能用 2020 年 3.02 亿 / 2021 年 1.85 亿作中性起点——那时期对应 21.6% 毛利率 + 16.59 亿固定资产（低折旧）的特殊窗口。</li>
+<li>❌ <strong>近三年均值</strong>：(0.9501 + 0.9422 − 0.0799)/3 = <strong>+0.604 亿</strong>。但注意这个均值处在<strong>完整的下行通道内部</strong>（三年连续下滑），且完全未反映 2026H1 的 −0.5839 亿，<strong>用于远期是严重高估</strong>。</li>
+<li>❌ <strong>拐点年化</strong>：尚无扭亏拐点可年化；即便是 2025Q3 单季 +0.1438 亿也不能年化。</li>
+<li><strong>✅ 采用</strong>：<strong>稳态营收 × 正常化净利率</strong>的正常化方法（见上），属"行业正常盈利水平"口径。</li>
+<li><strong>验证点</strong>：季度综合毛利率能否重回 7%（最低恢复线）→ 9%；丁二烯价格；高端 SEBS 放量公告。</li>
+<li><strong>证伪信号</strong>：2026Q3 毛利率仍 &lt;5% → 周期位置需重估为"结构性衰退"而非"周期底部"。</li>
+</ul>
+<h4>校正3 杠杆下行情景（资产负债率 68.44% &gt;&gt; 60%，必附负面情景）</h4>
+<p><strong>负面情景构造</strong>：<br />
+1. <strong>原料二次冲击</strong>：丁二烯因地缘事件重回 15000 元/吨以上（传导率仅 0.30，公司自担 70%）。<br />
+2. <strong>流动性事件</strong>：短期债务 &gt;16 亿 vs 货币资金 3.17 亿；若银行抽贷、或可转债/借款到期无法展期 → 被迫低价处置资产或大幅折价定增。<br />
+3. <strong>重组终止</strong>：广西长科重组因估值/合规问题终止（注意：公司已因内控问题被监管，重组审核会更严）→ PB 支撑瞬间崩塌。<br />
+4. <strong>丙烯酸项目延期且继续吞噬现金</strong>。</p>
+<p><strong>负面情景结果</strong>：<br />
+- 2029 年公司仍未能扭亏或仅微利（正常化净利润 ≤0.5 亿）<br />
+- 此时市场只肯给 <strong>PB 1.0–1.3x</strong>（周期底部 + 亏损的标准定价）× 净资产约 19–20 亿 = <strong>19–26 亿市值 → 2.94–4.03 元 → 空间 −71.1% ~ −78.9%</strong><br />
+- 若发生大幅折价定增（假设按现价 5 折发行 3 亿股融资 20 亿），股本摊薄 46% → 每股价值进一步被稀释</p>
+<blockquote>
+<p><strong>⚠️ 纪律判定：负面情景使空间显著转负（−71% ~ −79%），因此本股不得标注"重点关注"，也不得标注"大空间"。</strong></p>
+</blockquote>
+<h4>期权纪律执行陈述</h4>
+<ul>
+<li><strong>广西长科注入</strong>： tremend 重组进行中但连股东大会通知都尚未发出（2026-01 已超期提示）→ <strong>不计入中性净利、不计入中性目标价</strong>；仅在乐观情景中体现，且已标注的同时还要叠加"折旧增加 + 负债率上升"的反向效应。</li>
+<li><strong>高端 SEBS/SEPS 国产替代</strong>：无量产公告、无客户定点 → <strong>不计入中性</strong>。</li>
+<li><strong>广东丙烯酸投产</strong>：有明确时点（2026 年底试生产）→ <strong>按 70% 达产率计入中性营收</strong>（这是唯一部分计入中性的增量，因其已过"工程进行时点明确"这一档，但仍保留了 30% 的不确定性折扣）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>极度高估，且估值完全建立在未完成事件之上。</strong><br />
+- PB <strong>4.69x</strong>：一个正在亏损、ROE −2.99%、资产负债率 68.44%、现金/短债比 0.20 的化工公司，被市场给到接近 5 倍 PB。<br />
+- 2026 年 7 月 14 日业绩预告披露时公司 PB(LF) 约 3.81x，此后仍继续上行至 4.69x —— <strong>亏损扩大而估值继续抬升</strong>，这是典型的"重组预期/题材定价"。<br />
+- 股价 13.94 元 vs IPO 发行价 10.54 元，上市 6 年累计涨幅有限，说明二级市场并未长期认可其价值；当前的 PB 溢价完全由 2025 年 7 月启动的重组叙事创造。</p>
+<p><strong>安全边际</strong>：<strong>大幅为负，且三个情景全部为负。</strong><br />
+- 中性（正常化） <strong>5.70 元 → −59.1%</strong><br />
+- 悲观 <strong>1.76 元 → −87.4%</strong><br />
+- <strong>乐观（含三大期权全兑现 + 广西长科注入成功） 11.80 元 → −15.4%</strong>（且乐观情景已包含股本摊薄至 8.5 亿股）<br />
+- 唯一能做出正空间的方式，是把乐观净利再给到 28x PE（4.56 × 28 = 127.7 亿 → 15.02 元，<strong>+7.7%</strong>）——即"给一个尚未扭亏的化工公司在乐观情景下 28 倍 PE"，这已经超出合理范围。</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>价格条件</strong>：回落至 <strong>5.9 元以下</strong>（对应 PB ≈ 1.6x、接近中性目标价）才具备安全边际；<strong>4.5 元以下</strong>（PB ≈ 1.2x，接近"重组失败定价"）才构成深度价值区间。<br />
+2. <strong>信号条件（必须至少三条同时兑现）</strong>：<br />
+   ① 广西长科重组<strong>正式提交股东大会审议并通过</strong>（这是估值支撑能否成立的分水岭）；<br />
+   ② <strong>2026 年报或 2027 中报显示综合毛利率重回 8% 以上</strong>（证明扭亏不是靠会计，而是靠真实毛利修复）；<br />
+   ③ 广东长鸿丙烯酸一期<strong>如期于 2026 年底试生产</strong>，且披露明确的产能与预计年收入（消除本报告中最大的数据缺口）；<br />
+   ④ 短期债务结构改善（现金/短债比回升至 0.5 以上，或完成股权融资降低负债率）。<br />
+3. <strong>绝对禁止的买入理由</strong>："实控人会注入资产"、"SEBS 国产替代空间大"、"PB 从历史高位跌下来已经便宜了"。</p>
+<p><strong>最大风险（最可能破坏逻辑/收益的因素）——按紧迫性排序</strong>：<br />
+1. <strong>🔴 流动性/短债风险（最紧迫）</strong>：货币资金 3.17 亿 vs 短期债务 &gt;16 亿，<strong>现金/短债比 0.20</strong>；流动比率 0.64、速动比率 0.52。这是"倒在黎明前"的典型形态。若扭亏推迟到 2028 年，中间任何一个融资窗口关闭都可能触发危机。<br />
+2. <strong>🔴 重组终止风险</strong>：已推进逾一年，连股东大会通知都无法在法定期限内发出；公司刚因"内控不完善 + 收入确认不恰当"被宁波证监局采取行政监管措施，<strong>这会实质性提高重组审核难度</strong>。一旦终止，PB 从 4.69x 向 1.5–2.0x 回归意味着 −58% 至 −68% 的回撤。<br />
+3. <strong>🟠 注入资产本身就是负担</strong>：广西长科 2023/2024 连续亏损、资产负债率 70%→74% 上升、二期转固后折旧将增。<strong>即便重组成功，也≠价值创造。</strong><br />
+4. <strong>🟠 传导率天然极弱（0.30）</strong>：公司无法通过提价转移成本，这决定了它在任何一轮原料上行周期中都会受伤，属于结构性而非周期性弱点。<br />
+5. <strong>🟡 广东丙烯酸项目规模不透明</strong>：产能与投资额均未披露，2029 年达产率假设无法验证</p>
+<h3>第五步进阶：上行想象力情景（四类，必须与下行校正对称）</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>情景内容</th>
+<th>触发点（可验证）</th>
+<th>估算空间</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 剩者红利</strong></td>
+<td>TPES 低端（SBS/SIS）若发生一轮真正的产能出清，三寡头格局（中石化+李长荣+长鸿占 70%+）的剩者定价权将跳升</td>
+<td>① 中小型 TPES 装置停产/退出公告；② 低端 SBS 价格连续两个季度上行；③ 行业开工率数据回升</td>
+<td>当前赛道<strong>尚未出现出清迹象</strong>（2026H1 是需求崩而非供给出清），红利兑现概率低；若兑现，可将正常化净利率从 4% 抬至 6% → <strong>中性目标价升至 8.5 元左右，仍显著低于现价</strong></td>
+<td>未见产能退出、价格战反而加剧</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>① 若中央/地方重启大规模道路基建投资 → 道改需求直接恢复（这是对公司最直接的政策弹性）；② 高端 SEBS/SEPS 被列入《重点新材料首批次应用示范指导目录》并给首批次保险补偿</td>
+<td>① 季度基建投资增速转正且道路施工开工率回升；② 工信部目录更新函</td>
+<td>道改需求恢复可使本体营收回到 38–40 亿；两项同现可将乐观情景目标价推至 <strong>13–14 元（约 −7% ~ 0%），仍不足ias ＋50%</strong></td>
+<td>沥青价格维持高位、基建投资继续下滑</td>
+</tr>
+<tr>
+<td><strong>C 错杀修复</strong></td>
+<td><strong>⚠️ 反向不适用。</strong> 错杀三前提（估值低位、相对行业折价、基本面未恶化）<strong>全部不满足</strong>：PB 4.69x 处于高位而非低位、相对化工板块是高溢价而非折价、基本面在<strong>持续恶化</strong>（营收 −16.11%、毛利率 4.85%、亏损扩大）</td>
+<td>—</td>
+<td><strong>不构成买入理由</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>D 技术代际跃迁</strong>（高端 SEBS/SEPS 国产替代 + 丙烯酸产业链从 0 到 1）</td>
+<td>公司宣称推进高端牌号 TPES/TPEE 开发；SEPS 国内尚未大规模产业化、绝大部分依赖进口；丙烯酸产业园从建设到投产属全新技术路线落地</td>
+<td><strong>硬验证点（三者缺一即不入中性）</strong>：① 中试/新牌号跑通且良率达标（公告 SEBS/SEPS 量产）；② 拿到下游大客户定点或大额订单；③ 量产成本优于进口替代基准</td>
+<td><strong>只作机会情景</strong>：若三者全达成且广西长科注入成功，乐观情景极值约 <strong>14–15 元（+0.4% ~ +7.7%）——即便在所有想象力全部兑现的极限情形下，也几乎无法织出正向赔率</strong></td>
+<td>中试失败/良率不达标/无客户定点/成本打不过进口料/丙烯酸投产延期</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⚠️ 上调至"重点关注"的条件（明确写出）</strong>：本股<strong>在 13.94 元的价格下几乎不可能达到重点关注</strong>。数学上，要达到 +50%（即 20.91 元），在合理 PE 20x、股本摊薄至 8.5 亿股的假设下，需要 2029 年归母净利达到约 <strong>8.9 亿</strong>——而公司<strong>历史最好年份（2020 年）归母仅 3.02 亿</strong>，且当前的结构（折旧 1.84 亿/年、有息负债 30.66 亿、传导率 0.30）远不如当年。<strong>这个门槛在结构上已被封死。</strong><br />
+<strong>唯一现实的正面路径</strong>：股价回落至 <strong>5.9 元以下</strong>（此时 PB ≈ 1.6x，中性目标价 5.70 元开始提供安全边际），同时重组正式落地 + 毛利率回到 8% 以上 → 届时可上调至"纳入观察"。<strong>在此之前，任何价格都不支持"重点关注"。</strong></p>
+</blockquote>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>判定理由（严格对照 RULES 第三条与第五条）：<br />
+- <strong>为什么不判"坚决回避"</strong>：公司<strong>有真实业务</strong>（2025 年营收 39.23 亿、三条实打实的产线）、<strong>有明确扭亏路径</strong>（高价库存出清 + 丙烯酸一期 2026 年底试生产 + SEBS 高端放量）、<strong>经营现金流仍为正</strong>（2026H1 +0.762 亿）、<strong>净资产 19.196 亿尚无资不抵债风险</strong>。→ 不符合 RULES"确无扭亏可能"（要求主业持续萎缩 + 无在手订单 + 无新项目 + 现金流枯竭 + 无重组预期<strong>五项举证</strong>）、也不符合"纯概念炒作"。<strong>这是一次买了坏价格的坏时机，不是一家必须回避的公司。</strong><br />
+- <strong>为什么不判"纳入观察"</strong>：纳入观察要求远期空间 &gt;0。本股中性 <strong>−59.1%</strong>、乐观（含全部期权）<strong>−15.4%</strong>、悲观 <strong>−87.4%</strong> —— <strong>三个情景全部为负</strong>，没有任何一个达到 &gt;0 的门槛。<br />
+- <strong>为什么不判"重点关注"</strong>：空间远低于 &gt;+50%，且按第四步进阶校正3 纪律（负面情景空间 −71% ~ −79%）明确禁止。<br />
+- <strong>⭐ 一句话结论</strong>：这是一个"<strong>故事讲得很完整、数字完全对不上</strong>"的标的——重组叙事撑起了 4.69 倍 PB，而真实经营数据是：毛利率 4.85%、营收 −16.11%、半年亏 0.58 亿、货币资金 3.17 亿对 16 亿短债。<strong>不参与，等两件事：一是重组真正落地（不是预案），二是毛利率回到 8%。这两件事发生之前，13.94 元没有任何买入理由。</strong></p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.94 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>7.35 元</strong>（区间 6.1–9.2，PB 2.0–3.0x 锚，亏损期 PE 无意义）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−47.3%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>5.70 元</strong>（正常化净利润 1.84 亿 × 20x）</td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−59.1%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.76 元（−87.4%）～ 乐观 11.80 元（−15.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>TPES 低价过剩 + 高价库存致半年实亏 0.58 亿，现金/短债比 0.20，PB 4.69x 全靠未完成重组支撑</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（5.9 元以下再谈；须先见重组落地 + 毛利率回 8%）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：腾讯行情（2026-09-14 收盘实测，PE_TTM −132.33 / PB 4.69 / 总股本 6.4596 亿股）、《宁波长鸿高分子科技股份有限公司 2026 年半年度报告》及摘要（2026-08-29，上交所 605008_20260829_LAAA，中国金融信息网全文）、《关于 2026 年半年度业绩预告》（2026-07-14）、《关于发行股份、可转换公司债券及支付现金购买资产并募集配套资金暨关联交易事项的进展公告》（2026-07-28，上海证券报 2026-07-28 第 59 版）、东方财富 PC_HSF10 经营分析（含 2026-06-30 报告期经营评述原文）、中财网经营总结、网易财经《长鸿高科盈利恶化债务"爆表"？关联腾挪是否进一步拖累报表》、中国经济网《长鸿高科连亏 1 年半》（2026-09-01）、买化塑研究院 PBAT 产能监测、中国合成树脂协会可降解塑料分会数据、Wind 固定资产时序数据（引自媒体报道）。</em><br />
+<em>估值方法说明：属当前实亏标的，采用 RULES 第四节【正常化净利润法】三步推导——① 稳态营收（现有本体 35 亿 + 广东丙烯酸一期 8.4 亿 + 高端增量 3 亿 = 46 亿）；② 正常化净利率取"行业正常 4%–6% / 历史最好 6.7%–7.6% / 爬坡后理论 6%"三者中的</em><em>保守值 4.0%</em><em>；③ 正常化净利 1.84 亿 × 远期 20x = 目标市值 → 目标价。全文未使用任何历史营收或净利增速外推，并已逐一显式排除"单年好年景（2020 年 3.02 亿）"、"近三年均值（+0.604 亿，处于下行通道内部）"、"拐点年化"三种禁止方法。广西长科重组等未过验证点的期权严格执行"不计入中性"纪律。</em><br />
+<em>最大数据缺口标注：广东长鸿丙烯酸产业园一期的产能规模与总投资额均未公开披露，本报告以"满产对应年收入约 12 亿"做同业类比假设；若实际为 8 亿，中性目标价降至 5.20 元（结论不变）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
