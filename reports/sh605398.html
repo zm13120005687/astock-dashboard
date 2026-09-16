@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新炬网络（605398）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>新炬网络（605398）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14（实测收盘） ｜ 现价 <strong>20.69 元</strong> ｜ 总市值 <strong>33.67 亿</strong> ｜ PE(TTM) <strong>1383.83x</strong> ｜ PB <strong>3.29x</strong> ｜ 总股本 <strong>1.6272 亿股</strong><br />
+行业：IT 运维服务 / 数据库生态（多云全栈智能运维）+ 短剧及智能内容 ｜ 板块：沪市主板<br />
+<strong>⚠️ PE 1697x（队列口径）/ 1384x（实测）疑分母塌陷——经核实：2026H1 归母净利润 −639.90 万元，为真亏损；PE 为正纯属 TTM 分母包含 2025H2 微利所致，并非真实盈利能力</strong><br />
+亏损判定：<strong>真亏损</strong>（2026H1 归母 −639.90 万，扣非 −839.93 万）<br />
+准亏损从严：<strong>已触发</strong>（第四步以正常化净利润法 + SOTP 为主锚 + 盈利塌陷三问）<br />
+⚠️ 队列现价 25.38 元已过时，本报告全部采用 2026-09-14 实测收盘价 20.69 元</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内多云全栈智能运维（AIOps）与数据库生态服务商，给电信、金融、政府等大型政企做 IT 数据中心的"运维保姆"，2025 年起跨界做短剧及智能内容营销作为第二曲线。</p>
+<p><strong>各业务板块营收占比（2026H1，营业总收入 2.363 亿元，同比 −3.06%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>2026H1 营收</th>
+<th>占比</th>
+<th>同比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智慧运维及运营解决方案</td>
+<td><strong>2.007 亿</strong></td>
+<td><strong>85.0%</strong></td>
+<td>−1.59%</td>
+<td>含年度运营服务、专项工程服务、软件产品及开发服务（ZnAiops、ZnSQL、ZnDams）</td>
+</tr>
+<tr>
+<td>短剧及智能内容的制作和营销</td>
+<td>0.157 亿</td>
+<td>6.6%</td>
+<td><strong>+20.73%</strong></td>
+<td>子公司探云云计算，毛利率 <strong>−24.4%</strong>，H1 净亏 687.3 万</td>
+</tr>
+<tr>
+<td>原厂软硬件及服务销售</td>
+<td>0.197 亿</td>
+<td>8.3%</td>
+<td><strong>−25.55%</strong></td>
+<td>国内外厂商软硬件渠道销售，受信创转型冲击</td>
+</tr>
+</tbody>
+</table>
+<p><strong>下游行业结构（2026H1）</strong>：电信 <strong>1.36 亿</strong>（核心基本盘，占比约 58%）、金融 3112.38 万、政府（同比 <strong>+46.13%</strong>）。区域：中北地区 +18.9%，港澳台 <strong>+215.67%</strong>，海外业务实现突破性进展。</p>
+<p><strong>核心产品</strong>：<br />
+- <strong>ZnAiops 全栈智慧运维平台</strong>（V5.0）：运维垂类大模型 + 知识图谱，IT 运维智能体（Agent），赋能故障预警、根因分析、信创数据库管理；<br />
+- <strong>ZnSQL 数据库运维管理平台</strong>（V6.0）：已完成与达梦、武汉达梦、平凯星辰（TiDB）、奥星贝斯（OceanBase）、崖山数据库（YashanDB）等主流国产数据库兼容性认证；<br />
+- <strong>ZnDams 数据智能产品体系</strong>；<br />
+- 数字员工软件机器人、企业级 AI 能力平台（AIOS）。</p>
+<p><strong>主要客户</strong>：电信、金融、交通、政府等大型政企。2026H1 服务客户 <strong>225 家</strong>（同比 +40 家，+21.62%），新拓展湖南中烟、中国电信河北分公司、广东省机场集团物流、富安达基金、广东广信通信等标杆客户；短剧客户含天天兄弟（武汉）影视科技、北京越量信息技术。</p>
+<p><strong>境内外</strong>：以国内为主，港澳台 +215.67%、海外业务实现突破（占比极小，未单独披露）。</p>
+<p><strong>股东背景</strong>：上海新炬网络信息技术股份有限公司，前身成立于 2006 年，2021 年 1 月上交所主板上市；总部上海，在广州、杭州、北京设区域运营中心，全国 20 余个主要城市有分支或本地化团队。法定代表人孙正暘。</p>
+<p><strong>核心财务特征</strong>：<strong>账面现金充裕</strong>——期末货币资金 7.65 亿元，交易性金融资产 7512 万元；<strong>低负债</strong>——资产负债率 13.81%，有息负债约 3000 万元；研发费用 5450.48 万元（占营收 <strong>23.06%</strong>，超过当期归母净利润绝对值）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，但传导到公司订单慢</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策 / 事件</th>
+<th>发布主体</th>
+<th>时点</th>
+<th>量化指标 / 影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2026 年《政府工作报告》</strong></td>
+<td>国务院</td>
+<td>2026-03</td>
+<td>明确"十五五"时期<strong>数字经济核心产业增加值占 GDP 比重达 12.5%</strong>；对"打造智能经济新形态"作出安排，深化拓展"人工智能+"、推动重点行业 AI 商业化规模化应用</td>
+</tr>
+<tr>
+<td>"十五五"规划纲要</td>
+<td>全国人大</td>
+<td>2026-03</td>
+<td>推进文化建设数智化，发展短视频、微短剧等新型文化业态（支撑短剧业务合规性）</td>
+</tr>
+<tr>
+<td><strong>信创替代</strong>持续推进</td>
+<td>国家层面</td>
+<td>持续</td>
+<td>公司 ZnSQL 已完成与达梦、TiDB、OceanBase、YashanDB 等国产数据库互认证；与华为云、腾讯云、达梦新建/更新经销合作协议</td>
+</tr>
+<tr>
+<td>国新办发布会数据</td>
+<td>国务院新闻办</td>
+<td>2026-02-06</td>
+<td>"2025 年有 3.3 万部微短剧上线播出，国内用户近 7 亿，市场规模破千亿元，较 2024 年翻番"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策定性</strong>：<strong>方向明确利好</strong>（数字经济 12.5% + 人工智能+ + 信创），但传导链条长——公司收入高度依赖<strong>政企 IT 运维预算</strong>，而 2026H1 的实际情况是"核心客户延续性项目预算缩减、招投标与验收流程趋严"，<strong>政策热度没有转化为订单</strong>。这是本标的最核心的矛盾。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国数据库市场规模</td>
+<td>预计 <strong>2027 年达 837.42 亿元</strong>（CCSA《数据库发展研究报告 2025》，年均增速 11.99%，为第三方行业预测，非公司业绩预测）</td>
+</tr>
+<tr>
+<td>微短剧市场</td>
+<td>2025 年市场规模<strong>破千亿元</strong>，用户近 7 亿（国新办 2026-02-06）</td>
+</tr>
+<tr>
+<td>公司营收</td>
+<td>2026H1 <strong>2.363 亿（−3.06%）</strong>；Q2 单季 1.139 亿（<strong>同比 −7.44%、环比 −6.98%</strong>）</td>
+</tr>
+<tr>
+<td>公司利润</td>
+<td>2026H1 归母 <strong>−639.90 万</strong>（上年同期 +730.01 万）；扣非 <strong>−839.93 万</strong>（上年同期 +337.65 万）；Q2 单季归母 <strong>−953.32 万（同比 −618.43%）</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>2026H1 <strong>37.14%</strong>（−1.86pct）；<strong>Q2 单季 25.84%（同比 −13.44pct、环比 −21.82pct）——塌陷最剧烈的指标</strong></td>
+</tr>
+<tr>
+<td>净利率</td>
+<td>2026H1 −2.76%（−5.55pct）；Q2 单季 <strong>−8.44%</strong></td>
+</tr>
+<tr>
+<td>经营现金流</td>
+<td><strong>−9019.97 万</strong>（上年同期 +5676.49 万，<strong>恶化 1.47 亿</strong>）</td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td><strong>8387.45 万</strong>，较 2025 年末 3794 万<strong>激增 121.06%</strong></td>
+</tr>
+<tr>
+<td>合同资产</td>
+<td><strong>1.87 亿</strong>（占总资产 15.7%，已履约未结算）</td>
+</tr>
+<tr>
+<td>货币资金</td>
+<td>7.65 亿（较年初 −17.8%）；交易性金融资产 7512 万</td>
+</tr>
+<tr>
+<td>资产负债率</td>
+<td>13.81%；有息负债约 3033 万（2025 年报）</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>5450.48 万，占营收 <strong>23.06%</strong>；发明及软著合计 300 项</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 核心警示</strong>：营收仅 −3.06%，但 Q2 毛利率暴跌 21.82pct、经营现金流恶化 1.47 亿、应收账款翻倍——<strong>利润与现金流的塌陷幅度远大于收入塌陷幅度</strong>，说明问题不在需求，而在<strong>项目毛利与回款质量</strong>。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：人力（运维工程师、研发人员）为主，硬件为原厂采购。成本刚性高，人员成本无法随订单缩减快速下调——<strong>经营杠杆高</strong>。</p>
+<p><strong>下游</strong>：电信、金融、政府、交通等大型政企，采购流程长、预算刚性、议价权在客户侧。2026H1 明确"客户内部招投标、项目交付时间及验收管理流程趋严，导致部分项目收入和毛利确认滞后"。</p>
+<p><strong>议价权判断：弱（传导率估 0.2–0.3）</strong>。<br />
+依据三条：①核心客户预算缩减时公司无法提价；②应收账款激增 121%、账期延长，说明公司为保住收入接受了更差的付款条件；③短剧业务毛利率 −24.4%，属"烧钱换流量"，无议价权可言。<br />
+→ <strong>人力成本上升无法通过提价传导，只能通过降本或提升产品化率（软件收入占比）来对冲</strong>。</p>
+<hr />
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<p><strong>因子1 成本传导弹性（pass-through）</strong>：<strong>传导率 ≈ 0</strong>（本行业"原料"是人力）。<br />
+- 人力成本刚性：2026H1 营收降 3.06%，但研发费用仍达 5450.48 万（+占营收 23.06%），人员未同步缩减；<br />
+- 结果：Q2 单季毛利率从 Q1 的 47.66% 崩至 25.84%（−21.82pct），<strong>成本完全由公司承担</strong>；<br />
+- <strong>验证点</strong>：季度毛利率与人均创收；若毛利率回升需看到营收增长或人员优化公告。<br />
+- <strong>证伪信号</strong>：连续两季单季毛利率低于 30%（Q2 已 25.84%）。</p>
+<p><strong>因子2 毛利结构再平衡</strong>：三条线毛利差异巨大，综合毛利率 37.14% 严重掩盖结构。<br />
+| 业务线 | 收入占比 | 毛利率 / 状态 | 结构迁移方向 |<br />
+|---|---|---|---|<br />
+| 智慧运维（年度运营 + 专项工程 + 软件产品） | 85.0% | 综合约 40%+（H1 整体 37.14% 被短剧拖累） | 软件产品（ZnAiops/ZnSQL）占比提升是唯一改善路径，但<strong>当前 AI 智能体收入占比不足 1%</strong> |<br />
+| 原厂软硬件及服务销售 | 8.3% | <strong>渠道销售毛利率天然低</strong> | ⬇ −25.55%，信创增量补不上非信创萎缩 |<br />
+| 短剧及智能内容 | 6.6% | <strong>−24.4%</strong>（H1 净亏 687.3 万） | ⬆ 收入 +20.73% 但<strong>毛利为负，越做越亏</strong> |<br />
+- <strong>关键结论</strong>：短剧业务是<strong>负毛利业务</strong>，收入增长反而拉低综合毛利率。因此"营收增长"这个指标在本公司具有误导性——<strong>必须看结构性毛利而非总收入</strong>。<br />
+- 敏感测算：若短剧收入翻倍至 0.31 亿且毛利率维持 −24.4%，将再拉低综合毛利率约 3.3pct。</p>
+<p><strong>因子3 库存与采购节奏（timing）</strong>：服务业无存货，但存在等价物——<strong>合同资产 1.87 亿（占总资产 15.7%，已履约未结算）</strong>。<br />
+- 这是"已干活未收钱"，本质是收入的前置投入。若结算周期进一步延长，将触发减值（公司 H1 已因应收账款回款减少而增加信用与资产减值计提）；<br />
+- <strong>纪律</strong>：合同资产 1.87 亿 + 应收账款 0.84 亿 = 2.71 亿，接近全年营收的 1.15 倍，<strong>这是本标的最大的资产质量隐患</strong>；<br />
+- <strong>验证点</strong>：季报合同资产与应收账款周转天数、减值计提明细。</p>
+<p><strong>因子4 政策 / 市场锚点（成本驱动变量）</strong>：<br />
+| 驱动变量 | 情景假设 | 验证点 | 证伪信号 |<br />
+|---|---|---|---|<br />
+| 政企 IT 预算（市场层） | 中性：2026 年承压，2027 年随"人工智能+"落地回暖 | 客户招标量、公司新签合同额公告 | 连续两季营收负增长 |<br />
+| 信创替代节奏（政策层） | 中性：加速，但渠道销售毛利低 | ZnSQL 等自研产品收入占比、国产数据库经销合同 | 自研产品收入占比停滞 |<br />
+| AI 商业化（市场层） | 保守：当前收入占比 &lt;1%，2027 年前难成规模 | 年报"AI 智能体业务收入"披露 | 2027 年 AI 收入仍 &lt;3% |<br />
+| 短剧行业竞争（市场层） | 悲观：格局多变、投放转化效能未释放，流量成本高 | 短剧业务毛利率（当前 −24.4%） | 毛利率持续为负超过两年 |</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量 / 进度</th>
+<th>收入确认窗口</th>
+<th>利润贡献测算</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>客户数扩张</strong></td>
+<td>客户 225 家（+40 家，+21.62%），新拓湖南中烟、中国电信河北、广东省机场集团物流等</td>
+<td>已实现</td>
+<td>2026H2–2027</td>
+<td>单客户产出下滑抵消了客户数增长（H1 营收仍 −3.06%），<strong>当期净贡献为负</strong></td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>ZnSQL / ZnAiops 自研产品</strong></td>
+<td>与达梦、TiDB、OceanBase、YashanDB 完成互认证；ZnAiops V5.0 获软著</td>
+<td>认证已完成，<strong>商业化推广初期</strong></td>
+<td>2027–2029</td>
+<td>未量化；AI 智能体收入占比 <strong>不足 1%</strong></td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td><strong>AIOS 企业级 AI 能力平台（募投）</strong></td>
+<td>投入进度 <strong>70.26%</strong>，预计 2026-12 达预定可使用状态</td>
+<td>在建</td>
+<td>2027–2029</td>
+<td>未量化，尚在研发阶段</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td><strong>AI 智能内容投放平台（募投）</strong></td>
+<td>投入进度 <strong>68.66%</strong>，预计 2026-12 达预定可使用状态</td>
+<td>在建</td>
+<td>2027–2029</td>
+<td>未量化</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td>政府端业务</td>
+<td>H1 同比 <strong>+46.13%</strong>，政务数字化运维需求释放</td>
+<td>已实现</td>
+<td>2026–2028</td>
+<td>增量约 1500 万/年</td>
+<td>中</td>
+</tr>
+<tr>
+<td>港澳台及海外</td>
+<td>港澳台 +215.67%，海外突破</td>
+<td>基数极小</td>
+<td>2027–2029</td>
+<td>未量化</td>
+<td>低</td>
+</tr>
+<tr>
+<td>信创数据库云管平台</td>
+<td>2025 年 1 月已结项，<strong>商业化推广初期</strong></td>
+<td>已结项</td>
+<td>2027+</td>
+<td>未量化</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>⚠️ 负向项：短剧业务亏损</strong></td>
+<td>H1 收入 1567.6 万（+20.73%），<strong>毛利率 −24.4%，净亏 687.3 万</strong></td>
+<td>持续</td>
+<td>2026–2027</td>
+<td><strong>−687 万/半年，年化约 −0.14 亿</strong></td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>⚠️ 负向项：原厂软硬件萎缩</strong></td>
+<td>H1 1968 万（−25.55%），非信创生态萎缩快于信创增量</td>
+<td>持续</td>
+<td>2026–2028</td>
+<td>按年降 25%，2029 收入降至约 0.09 亿</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>⚠️ 负向项：应收账款减值</strong></td>
+<td>应收 8387 万（+121%），账期延长</td>
+<td>持续</td>
+<td>2026–2027</td>
+<td>H1 已增提信用+资产减值</td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计</strong>：已披露的确定性增量<strong>全部不足以对冲负向项</strong>，2026 年全年大概率亏损（−0.03 至 −0.10 亿）。真正的增量（AIOS、AI 智能体、ZnSQL 商业化）<strong>均在 2027 年后且未过验证点</strong>。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守 / 中性 / 乐观</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①供给侧份额</td>
+<td>IT 运维赛道涌入大量厂商（云厂商自带运维工具 + 垂直服务商），竞争加剧</td>
+<td>份额被挤压 / 守住 / 靠差异化回升</td>
+<td>公司营收 vs 行业规模、中标公告</td>
+</tr>
+<tr>
+<td>②客户份额</td>
+<td>225 家客户（+21.62%），但<strong>单客户产出下滑</strong>；电信贡献 58%</td>
+<td>守住电信 / 政府金融补位 / 多行业开花</td>
+<td>分行业收入披露、大客户续约</td>
+</tr>
+<tr>
+<td>③技术代际差</td>
+<td>ZnAiops V5.0 + 运维垂类大模型 + 知识图谱 RAG，<strong>技术处于第一梯队</strong></td>
+<td>持平 / 领先 / 拉开</td>
+<td>产品版本迭代、专利/软著数（现 300 项）</td>
+</tr>
+<tr>
+<td>④成本曲线位置</td>
+<td>人力成本刚性，本地化交付网络重；<strong>成本曲线未左移</strong></td>
+<td>缓慢右移（压力）</td>
+<td>人均创收、毛利率</td>
+</tr>
+<tr>
+<td>⑤份额二阶导数</td>
+<td>客户数在增但单客户产出在降，<strong>份额增速为负（二阶导为负）</strong></td>
+<td>尚未触底</td>
+<td>单客户平均收入（ARR per client）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层2 扩展业务：主业迁移空间（"IT 运维 → 短剧内容" 与 "IT 运维 → AI 智能体"）</strong></p>
+<p><strong>（A）IT 运维 → 短剧及智能内容（跨界，非同源）</strong><br />
+1. <strong>能力可迁移性</strong>：<strong>弱</strong>。唯一可复用的是"AI 投流算法"（自研算法实时建模用户行为与转化数据）——技术同源性仅此一项，内容制作、IP、演员、平台关系均需从零搭建。<br />
+2. <strong>新 TAM 弹性</strong>：微短剧市场 2025 年破千亿、用户 7 亿，<strong>TAM 弹性极大</strong>。<br />
+3. <strong>切入卡位</strong>：<strong>红海后入</strong>。抖音、红果、快手、百度、腾讯、爱奇艺、拼多多、微信视频号全域分发已拥挤，公司属跨界入局，团队与流量资源不占先天优势。<br />
+4. <strong>客户认证门槛</strong>：短剧无长认证周期（门槛低 = 竞争烈）。<br />
+5. <strong>信号验证</strong>：①已上线几十部短剧、落地天天兄弟等客户（收入已产生）；②<strong>毛利率 −24.4%、H1 净亏 687.3 万——商业化验证失败</strong>。<br />
+→ <strong>判定：跨界迁移，能力同源性弱，且已产生实亏。按纪律不计入中性情景，且需在悲观情景中计入持续拖累。</strong></p>
+<p><strong>（B）IT 运维 → AI 运维智能体（技术升级，同源）</strong><br />
+1. <strong>能力可迁移性</strong>：<strong>强</strong>（运维数据 + 垂类模型 + 知识图谱，完全同源）。<br />
+2. <strong>新 TAM 弹性</strong>：AIOps 是运维市场的升级替代，非全新市场，弹性中等。<br />
+3. <strong>切入卡位</strong>：较早（AIOS 与 AI 投放平台募投进度 70.26% / 68.66%，2026-12 达可用状态）。<br />
+4. <strong>客户认证门槛</strong>：低（现有客户即可导入）。<br />
+5. <strong>信号验证</strong>：①ZnAiops V5.0 已获软著、产品已在客户端部署；②<strong>公司公告明确 AI 智能体相关业务收入占比不足 1%，尚未规模化商业化</strong>；③募投项目尚未达预定可使用状态。<br />
+→ <strong>判定：中期期权，未过验证点（收入占比 &lt;1%），不计入中性净利，只进乐观情景。</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+- 单季毛利率连续两季低于 30%（Q2 已 25.84%）；<br />
+- 应收账款继续翻倍增长、经营现金流连续两年为负；<br />
+- 短剧业务毛利率持续为负且亏损扩大；<br />
+- AIOS 项目 2026-12 未能如期达预定可使用状态（进度 70.26%，存在延期风险）；<br />
+- 客户数增长但单客户产出继续下滑。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不使用历史增速外推。采用 <strong>SOTP（净现金 + 业务价值）</strong> 与<strong>正常化净利润法</strong>双锚：①账面净现金构成硬底；②主业按"客户数 × 单客户产出 × 正常化净利率"自下而上推算 2029 稳态净利。</p>
+</blockquote>
+<p><strong>总股本：1.6272 亿股</strong></p>
+<h3>分业务测算（2029E，自下而上）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 基数</th>
+<th>自下而上推导</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智慧运维（年度运营 + 专项工程）</td>
+<td>约 1.80 亿（H1）</td>
+<td>客户数 225 家，中性假设 2029 客户 300 家、单客户产出从 80 万降至 70 万（竞争压力）</td>
+<td><strong>4.2 亿</strong></td>
+<td>6%（产品化率提升摊薄人力）</td>
+<td><strong>0.25 亿</strong></td>
+</tr>
+<tr>
+<td>软件产品及开发（ZnAiops/ZnSQL/ZnDams）</td>
+<td>约 0.21 亿（H1）</td>
+<td>信创 + AI 落地；中性假设 2029 达 1.4 亿（含部分 AI 商业化，但不含期权级突破）</td>
+<td><strong>1.4 亿</strong></td>
+<td>15%（软件产品毛利率高）</td>
+<td><strong>0.21 亿</strong></td>
+</tr>
+<tr>
+<td>原厂软硬件及服务</td>
+<td>0.197 亿（H1，−25.55%）</td>
+<td>非信创持续萎缩、信创部分对冲；按年降 20%</td>
+<td><strong>0.4 亿</strong></td>
+<td>3%</td>
+<td><strong>0.01 亿</strong></td>
+</tr>
+<tr>
+<td>短剧及智能内容</td>
+<td>0.157 亿（H1，毛利率 −24.4%）</td>
+<td>中性假设 2029 扭亏微利；若持续亏损则关停</td>
+<td><strong>0.8 亿</strong></td>
+<td>3%（扭亏后微利）</td>
+<td><strong>0.02 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td><strong>6.8 亿</strong></td>
+<td><strong>7.2%</strong></td>
+<td><strong>0.49 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>⚠️ 校验与下修</strong>：上表分部加总 0.49 亿未扣除：①总部研发费用（2026H1 即 5450 万/半年，2029 年保守仍需 0.9 亿/年，其中部分已计入各线）；②销售与管理费用；③应收账款/合同资产的持续减值（应收 8387 万 + 合同资产 1.87 亿，年减值按 1%–2% 估约 0.02–0.05 亿）。<br />
+<strong>修正后中性 2029E 归母净利 = 0.37 亿</strong>（对应净利率 5.5%，2025 年实际净利率 2.81%、2024 年 3.98%，已考虑产品化率提升，属合理但不激进）。</p>
+</blockquote>
+<h3>SOTP 硬底测算</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>金额</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>货币资金</td>
+<td>7.65 亿</td>
+<td>2026H1 期末（较年初 −17.8%）</td>
+</tr>
+<tr>
+<td>交易性金融资产</td>
+<td>0.75 亿</td>
+<td>利用闲置资金购买的理财产品</td>
+</tr>
+<tr>
+<td>减：有息负债</td>
+<td>−0.30 亿</td>
+<td>约 3033 万（2025 年报口径）</td>
+</tr>
+<tr>
+<td><strong>净现金</strong></td>
+<td><strong>8.10 亿</strong></td>
+<td>折合每股 <strong>4.98 元</strong></td>
+</tr>
+<tr>
+<td>归母净资产</td>
+<td>10.24 亿</td>
+<td>折合每股 6.30 元</td>
+</tr>
+</tbody>
+</table>
+<h3>准亏损从严：正常化净利润法 + 盈利塌陷三问</h3>
+<p><strong>问1 为什么利润塌陷？</strong><br />
+①<strong>自有服务业务受核心客户预算缩减（主因，结构性）</strong>：电信等核心政企客户延续性项目预算缩减，可获合同额同比下降；②<strong>收入确认滞后（流程性）</strong>：客户招投标、交付、验收流程趋严，部分项目收入与毛利确认滞后——<strong>这是"递延"而非"消失"，是唯一偏正面的解释</strong>；③<strong>原厂软硬件业务结构性萎缩</strong>：客户加速向信创转型，信创增量补不上非信创生态的萎缩缺口（−25.55%）；④<strong>短剧业务负毛利</strong>：收入 +20.73% 但毛利率 −24.4%、H1 净亏 687.3 万；⑤<strong>减值增加</strong>：应收账款回款减少、账期延长导致信用与资产减值计提增加。<br />
+→ <strong>性质判定：主因是需求端（客户预算）+ 结构（信创替代阵痛）+ 新业务拖累，属"主业承压期的多重挤压"，而非一次性减值</strong>。Q2 单季毛利率 −21.82pct 的塌陷幅度说明问题比"递延"更严重。</p>
+<p><strong>问2 靠什么恢复？触发时点？</strong><br />
+- <strong>路径 A 产品化率提升（最可行）</strong>：软件产品（ZnAiops/ZnSQL/ZnDams）收入占比提升，摊薄人力成本。2026H1 ZnAiops、ZnSQL 等自研产品"保持增长，产品化转型方向明确"。<strong>触发时点：2027–2028</strong>。<br />
+- <strong>路径 B 信创替代红利兑现</strong>：已完成与达梦、TiDB、OceanBase、YashanDB 互认证，与华为云/腾讯云/达梦新建经销合作。<strong>触发时点：2027–2029</strong>。<br />
+- <strong>路径 C 短剧扭亏（不确定）</strong>：AI 投流模型优化 ROI。<strong>触发时点：不确定，2026H2 为观察窗口</strong>。<br />
+- <strong>路径 D 项目递延收入确认回补（短期）</strong>：H1 因验收趋严递延的项目若在 H2/2027 确认，将形成一次性回补。<br />
+→ <strong>中性判断：2026 全年微亏（−0.03 至 −0.10 亿），2027 年恢复微利（0.10–0.25 亿），2029 年恢复至 0.37 亿量级</strong>。</p>
+<p><strong>问3 生存能力（亏得起吗）？</strong><br />
+- <strong>这是本标的最强项</strong>：货币资金 7.65 亿 + 交易性金融资产 0.75 亿 − 有息负债 0.30 亿 = <strong>净现金 8.10 亿</strong>，占总市值 33.67 亿的 <strong>24.1%</strong>；<br />
+- 资产负债率 13.81%，速动比率 7.51（Q1），<strong>无偿债风险</strong>；<br />
+- 按当前亏损速度（年化 0.1 亿）与 8.10 亿净现金，<strong>可支撑数十年</strong>；<br />
+- <strong>结论：完全亏得起</strong>。真正的风险不是生存，而是"现金不断被应收账款和研发消耗，却换不来利润增长"的价值毁灭。<br />
+- <strong>⚠️ 但需警惕</strong>：2026H1 经营现金流 −9019.97 万、货币资金较年初 −17.8%，若持续，净现金底会被逐步侵蚀。</p>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸）</h3>
+<p><strong>校正1 资产质量折扣（破净？）</strong>：<strong>未破净，PB 3.29x</strong>。资产质量的关键不在固定资产（轻资产服务业），而在<strong>应收类资产</strong>：<br />
+- 应收账款 8387.45 万（较年初 +121.06%）；<br />
+- <strong>合同资产 1.87 亿（占总资产 15.7%，已履约未结算）</strong>；<br />
+- 二者合计 2.71 亿，占归母净资产 10.24 亿的 <strong>26.5%</strong>。<br />
+- 若按 15% 折扣计提（考虑账期延长与政府/电信客户的信用风险虽低但结算慢），净资产折价约 0.41 亿 → <strong>调整后有形净资产约 9.83 亿</strong>。<br />
+- <strong>结论：净资产真实度较高（现金占比大），但应收类资产需打 10%–15% 折扣。</strong></p>
+<p><strong>校正2 周期位置校正</strong>：IT 服务属弱周期，公司处于<strong>"主业承压 + 新业务投入期"的底部</strong>。中性净利<strong>不使用</strong> 2024/2025 年（0.214/0.161 亿），也<strong>不把 2026H1 亏损年化</strong>，而是按 2029 年客户数 × 单客户产出重构的稳态 <strong>0.37 亿</strong>。明确标注：<strong>当前周期位置 = 底部，尚未见单季毛利拐点（Q2 毛利率 25.84% 仍在恶化）</strong>。</p>
+<p><strong>校正3 杠杆下行情景</strong>：财务杠杆极低（13.81%），<strong>但经营杠杆高</strong>（毛利率 37.14% vs 期间费用率 40.06%，营业利润率为负）。<br />
+- 下行情景：若核心客户预算继续缩减、短剧不扭亏、AI 商业化落空，2029E 营收降至 5.5 亿、净利率 2.7% → 净利 0.15 亿；<br />
+- 悲观目标价 = 净现金 <strong>7.5 亿</strong>（考虑持续消耗）+ 业务价值（0.15 亿 × 25x = 3.75 亿）= 11.25 亿 → 6.91 元；<strong>PB 兜底 1.5x × 10.0 亿 = 15.0 亿 → 9.22 元</strong>（取高者，因净现金真实存在）；<br />
+- 该负面情景下空间 <strong>−55.4%</strong>，<strong>不得标注"大空间 / 重点关注"</strong>。</p>
+<p><strong>期权纪律</strong>：AI 运维智能体（收入占比 &lt;1%）、AIOS 平台（未达可用状态）、短剧扭亏、海外突破——<strong>全部未过验证点，不计入中性净利</strong>，只进乐观情景。</p>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+<th>合理 PE</th>
+<th>业务市值</th>
+<th>加净现金</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>核心客户预算续减、短剧不扭亏、AI 落空；净现金消耗至 7.5 亿</td>
+<td>5.5 亿</td>
+<td>2.7%</td>
+<td>0.15 亿</td>
+<td>25x</td>
+<td>3.75 亿</td>
+<td>+7.5 亿</td>
+<td>11.25 亿（PB 兜底取 15.0 亿）</td>
+<td><strong>9.22 元</strong></td>
+<td><strong>−55.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>产品化率提升、信创增量兑现、短剧微利</td>
+<td><strong>6.8 亿</strong></td>
+<td><strong>5.5%</strong></td>
+<td><strong>0.37 亿</strong></td>
+<td><strong>35x</strong></td>
+<td>12.95 亿</td>
+<td>+8.10 亿</td>
+<td><strong>21.05 亿</strong></td>
+<td><strong>12.94 元</strong></td>
+<td><strong>−37.5%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>AI 智能体规模化（收入占比 &gt;10%）+ 信创放量 + 短剧扭亏</td>
+<td>9.5 亿</td>
+<td>9.0%</td>
+<td>0.855 亿</td>
+<td>45x</td>
+<td>38.5 亿</td>
+<td>+8.10 亿</td>
+<td>46.6 亿</td>
+<td><strong>28.64 元</strong></td>
+<td><strong>+38.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026年底）</h3>
+<ul>
+<li>H1 归母 −639.90 万（Q2 单季 −953.32 万）；H2 为政企项目验收与回款旺季，递延项目部分确认，但短剧拖累与减值延续 → H2 归母 <strong>+0.03 至 +0.10 亿</strong>；</li>
+<li><strong>2026E 归母 −0.03 至 +0.04 亿，取 0.00 亿（盈亏平衡）</strong>；</li>
+<li>基准目标价 = 净现金 <strong>8.10 亿</strong> + 业务价值（2027E 净利 0.18 亿 × 30x = 5.40 亿）= <strong>13.50 亿 → 8.30 元</strong>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td><strong>约 0.00 亿</strong>（盈亏平衡）</td>
+<td><strong>+0.37 亿</strong></td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>—（微利期无意义）</td>
+<td>35x（业务口径）+ 净现金</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>13.50 亿（SOTP）</td>
+<td>21.05 亿（SOTP）</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>8.30 元</strong></td>
+<td><strong>12.94 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 20.69 元对应 2029E 中性净利 0.37 亿的 <strong>PE 高达 91x</strong>；剔除净现金后，市场为 6.8 亿营收的主业支付 <strong>25.6 亿</strong>（对应 PS 3.8x、2029E PE 69x）。对照 IT 服务行业 30–50x PE 中枢，<strong>现价已把"AI 智能体 + 信创"的乐观预期充分定价</strong>——而 AI 智能体收入占比官方明确不足 1%。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置：显著高估</strong>。现价 20.69 元对应 PB 3.29x、2029E 中性 PE 91x（剔除净现金后 69x）。公司当期已转亏、Q2 单季毛利率崩至 25.84%、经营现金流 −0.90 亿、应收账款翻倍。市场给的是"AI 运维智能体"的估值，而公司自己公告该业务收入占比不足 1%。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 12.94 元 → 空间 <strong>−37.5%</strong>，不满足"纳入观察"的 &gt;0 门槛；<br />
+- 悲观 9.22 元 → 下行 <strong>−55.4%</strong>；<br />
+- 乐观 28.64 元 → 上行 <strong>+38.4%</strong>（需 AI 智能体规模化 + 信创放量 + 短剧扭亏三重共振）；<br />
+- <strong>硬下行保护（本股最大亮点）</strong>：净现金 8.10 亿 = 每股 4.98 元，占总市值 24.1%；每股净资产 6.30 元。PB 1.5x ≈ 9.22 元构成较强支撑区。</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价不介入</strong>。合理买点在 <strong>12.9 元以下</strong>（对应 2029E 中性 PE 35x + 净现金），或 <strong>10.0 元以下</strong>（PB 1.6x，接近净现金 + 少量业务溢价）才具安全边际；<br />
+2. <strong>建仓信号（需两条以上）</strong>：①单季毛利率连续两季回升至 40% 以上；②经营活动现金流回正且应收账款余额下降；③AI 智能体业务收入占比突破 3% 并在年报中单独披露；④短剧业务毛利率转正；⑤AIOS 募投项目如期（2026-12）达预定可使用状态并披露首批商业化合同。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 应收账款与合同资产持续膨胀（首要）</strong>：应收 8387 万（+121%）+ 合同资产 1.87 亿，合计 2.71 亿占净资产 26.5%。若结算周期继续延长，将持续计提减值并侵蚀现金流（H1 经营现金流已 −0.90 亿）；<br />
+2. <strong>Q2 单季毛利率 25.84% 若成常态</strong>：说明人力成本刚性 + 议价权丧失，主业盈利能力结构性下移；<br />
+3. <strong>短剧业务持续失血</strong>：毛利率 −24.4%、H1 亏 687.3 万，且行业竞争极度内卷，跨界团队无先天优势；<br />
+4. <strong>AI 商业化不及预期</strong>：公司公告 AI 智能体收入占比不足 1%，题材与业绩存在巨大时间差；<br />
+5. <strong>净现金被消耗</strong>：货币资金较年初已 −17.8%，研发费用率 23.06%，若持续无产出将侵蚀硬底。</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<p><strong>类型A 行业调整剩者红利</strong><br />
+IT 运维赛道涌入大量厂商（云厂商自带运维工具 + 众多垂直服务商），行业正处于<strong>洗牌期</strong>。若中小运维商在价格战中出清，具备"企业级产品 + 本地化服务"双轮能力、拥有 225 家政企客户与全栈国产数据库适配能力的公司将获得集中度提升红利。<br />
+- <strong>验证点</strong>：行业并购/退出案例、公司中标份额、单客户产出止跌回升。<br />
+- <strong>证伪信号</strong>：客户数增但单客户产出继续降、毛利率继续下探。<br />
+- <strong>弹性</strong>：若单客户产出企稳 + 毛利率回 42%，2029E 净利可上修至 0.6 亿。</p>
+<p><strong>类型B 政策反转期权</strong><br />
+"人工智能+"与数字经济 12.5% 的政策已明确，若<strong>政企 IT 预算在 2027 年随"十五五"落地而回暖</strong>，公司作为政企运维供应商将直接受益。信创替代加速亦属政策驱动。<br />
+- <strong>验证点</strong>：2027 年中央及地方政企信息化预算增速、信创采购目录扩容、公司新签合同额公告。<br />
+- <strong>证伪信号</strong>：2027 年政企 IT 预算继续零增长或负增长。<br />
+- <strong>纪律</strong>：未过验证点，<strong>只作机会情景，不计入中性锚</strong>。</p>
+<p><strong>类型C 市场错杀修复</strong><br />
+<strong>本类不成立，明确排除</strong>。现价 PB 3.29x、PS(TTM) 6.26x，估值分位不低；且基本面确实在恶化（Q2 毛利率崩 21.82pct、应收翻倍），不构成"情绪误伤"。<strong>不为看涨凑理由。</strong></p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权</strong> ⭐（本股最主要的上行来源）<br />
+公司以"垂类大模型 + 知识图谱"双轮驱动，构建具备"感知-决策-执行"闭环能力的 <strong>IT 运维智能体</strong>，推动运维从"自动化"向"智能化、自主化"代际跃迁。这是<strong>技术升级型跃迁</strong>（非跨界），能力完全同源。<br />
+- <strong>三要素核查（防画饼）</strong>：<br />
+  - ①政策驱动 / 行业趋势：<strong>已满足</strong>（"人工智能+"写入 2026 年政府工作报告；运维从人力密集向 AI 替代收敛）；<br />
+  - ②公司技术投产落地：<strong>部分满足</strong>——ZnAiops V5.0 已获软著、AIOS 募投进度 70.26% 预计 2026-12 达可用状态，<strong>但"中试良率达标"等价于"客户侧跑通"，尚未公告</strong>；<br />
+  - ③量产成本优于旧路线 + 客户定点：<strong>未满足</strong>——AI 智能体收入占比不足 1%，无大额客户定点公告。<br />
+- <strong>判定：三缺一（缺客户定点与规模化验证），仅作机会情景，不计入中性锚。</strong><br />
+- <strong>硬验证点</strong>：AIOS 项目 2026-12 如期达可用状态；首个千万级 AI 运维智能体合同公告；年报单独披露 AI 业务收入且占比 &gt;3%。<br />
+- <strong>证伪信号</strong>：AIOS 延期、AI 收入占比连续两年 &lt;1%、客户流失至云厂商自带运维工具。<br />
+- <strong>弹性（若命中）</strong>：AI 收入达 1.5 亿、净利率 25% → 0.375 亿，给 60x = 22.5 亿，目标价可上修至 <strong>28.64 元</strong>（即乐观情景）。</p>
+<p><strong>什么条件出现才上调至"重点关注"</strong>（需同时满足）：<br />
+① 单季毛利率连续两季回升至 40% 以上；② 经营现金流全年回正、应收账款余额下降；③ AI 智能体业务收入占比突破 3% 并单独披露；④ 股价回落至 12.9 元以下建仓。<br />
+四条全中，2029E 中性净利可上修至 0.6 亿以上，目标价 28.64 元相对 12.9 元建仓价空间 &gt;120%，届时才具备"重点关注"资格。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>−37.5%</strong>，不满足"纳入观察"的 &gt;0 门槛。公司质地有两面性——<strong>优势面</strong>：净现金 8.10 亿（占市值 24.1%）、资产负债率 13.81%、零偿债风险、客户数 +21.62%、研发投入 23.06%、技术护城河（300 项发明及软著）真实；<strong>劣势面</strong>：Q2 单季毛利率崩至 25.84%、经营现金流 −0.90 亿、应收账款 +121%、合同资产 1.87 亿、短剧负毛利、AI 收入占比不足 1%。<br />
+<strong>核心矛盾</strong>：市场按"AI 运维智能体"给估值，而该业务收入占比官方明确不足 1%。现价 20.69 元剔除净现金后为主业支付 25.6 亿，对应 2029E 中性 PE 69x——<strong>在为尚未兑现的期权付全款</strong>。<br />
+<strong>核心跟踪点（按优先级）</strong>：①单季毛利率能否回到 40%（最关键）；②应收账款与合同资产的结算进度；③AIOS 项目 2026-12 能否如期达可用状态；④短剧业务毛利率能否转正。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>20.69 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>8.3 元</strong>（区间 7.5–9.5）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−59.9%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>12.94 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−37.5%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 9.22 元（−55.4%）～ 乐观 28.64 元（+38.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>净现金8.1亿占市值24%是硬底，但Q2毛利率崩至25.84%、AI收入占比不足1%，现价为未兑现期权付全款</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（12.9 元以下 + 毛利率回升至40% + AI收入占比破3%三重验证后再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-31 披露）、2026 年半年度业绩预告（2026-07-15）、2025 年年度报告、上海证券报、中国证券报中证智能财讯、新浪财经 2026 中报解读、CCSA《数据库发展研究报告 2025》、2026 年《政府工作报告》、国新办 2026-02-06 新闻发布会（微短剧市场数据）。行情数据为 2026-09-14 实测收盘价（腾讯行情接口），财务底稿经 akshare 交叉核验。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

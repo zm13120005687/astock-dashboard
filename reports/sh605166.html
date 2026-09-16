@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>聚合顺（605166）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>聚合顺（605166）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>8.33 元</strong>（2026-09-14 收盘，腾讯行情 curl 实测）｜ 总市值 <strong>26.22 亿</strong> ｜ PE(TTM) <strong>约 28.3x</strong> ｜ PB <strong>1.31x</strong> ｜ 总股本 <strong>3.147 亿股</strong> ｜ 归母净资产 <strong>20.20 亿</strong><br />
+行业：尼龙 6（PA6）切片 · 聚酰胺新材料（化工中间体）｜ 板块：沪市主板<br />
+<strong>盈亏双向核查</strong>：队列"亏损"列 = False；2026H1 归母 <strong>+6300.10 万元</strong>、扣非 <strong>+6217.68 万元</strong>（非经常性损益仅 82 万元，利润质量真实），<strong>非亏损</strong>。但同比 <strong>−43.05%</strong>，单吨净利已压缩至 259 元/吨，行业开工率 60%（历史低位）→ 属<strong>强周期底部</strong>，按铁律二与第四步进阶，估值锚采用<strong>周期归一化（正常化净利润法）</strong>，并写「准亏损从严」小节。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内尼龙 6（PA6）切片专业制造商——买<strong>己内酰胺（CPL）</strong>做原料，经聚合切成 PA6 切片，卖给下游纺丝厂（做锦纶纤维）、改性塑料厂（做工程塑料）、膜厂（做 BOPA 薄膜），<strong>赚的是"聚合加工费"，是典型的产业链中间体，被上游原料与下游需求两头挤压</strong>。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 26.49 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>收入</th>
+<th>占比</th>
+<th>下游</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>纤维级切片</strong></td>
+<td>15.93 亿</td>
+<td><strong>60.16%</strong></td>
+<td>民用纺丝（防晒服、户外服）+ 工业丝（轮胎帘线、安全带、渔网丝）</td>
+</tr>
+<tr>
+<td><strong>工程塑料级切片</strong></td>
+<td>9.11 亿</td>
+<td><strong>34.38%</strong></td>
+<td>汽车、电子、交通运输、机械（齿轮、外壳、软管、电缆护套）</td>
+</tr>
+<tr>
+<td><strong>薄膜级切片</strong></td>
+<td>1.01 亿</td>
+<td>3.81%</td>
+<td>BOPA 薄膜（食品包装、医药包装）</td>
+</tr>
+<tr>
+<td>其他切片 / 材料</td>
+<td>0.44 亿</td>
+<td>1.66%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>境内外收入占比（2026H1）</strong>：<strong>境内 23.62 亿（89.18%）</strong>，境外 2.87 亿（10.82%）。</p>
+<p><strong>核心产能布局</strong>：浙江（杭州钱塘，本部）、山东（聚合顺鲁化 + 山东聚合顺，与兖矿鲁南化工合作）、湖南（常德聚合顺）——<strong>三省四市四大基地</strong>。</p>
+<p><strong>量价（2026H1）</strong>：<br />
+- 产量 <strong>24.44 万吨</strong>（−18.32%）、销量 <strong>24.32 万吨</strong>（−17.05%）<br />
+- 单吨售价 = 26.49 亿 / 24.32 万吨 = <strong>10892 元/吨</strong><br />
+- 单吨毛利 = 26.49 亿 × 7.81% / 24.32 万吨 = <strong>851 元/吨</strong><br />
+- 单吨净利 = 6300 万 / 24.32 万吨 = <strong>259 元/吨</strong></p>
+<p><strong>主要客户/下游</strong>：纺丝企业、改性塑料企业、BOPA 膜厂；终端为纺服、汽车、电子、食品包装。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>量化指标</th>
+<th>对本股影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>"反内卷"自律性减产（己内酰胺行业）</strong></td>
+<td>行业协会/企业自律</td>
+<td>2025 年末起持续</td>
+<td>己内酰胺行业<strong>整体开工负荷维持低位（&lt;70%）</strong>；2025 年末通过"自律性调减产能负荷"缓解行业失速下滑</td>
+<td><strong>直接决定原料价格与加工费</strong>——CPL 减产 → CPL 挺价 → PA6 加工费被压缩（<strong>对本股偏空</strong>）</td>
+</tr>
+<tr>
+<td>《"十五五"规划》（2026 为开局之年）</td>
+<td>国务院</td>
+<td>2026</td>
+<td>稳中求进、结构优化</td>
+<td>中性</td>
+</tr>
+<tr>
+<td>十五五原材料工业提质增效相关部署（预期）</td>
+<td>工信部</td>
+<td>待落地</td>
+<td>若将 PA6 纳入"落后产能退出"名单</td>
+<td><strong>潜在重大利好（未落地）</strong></td>
+</tr>
+<tr>
+<td>纺织行业旺季/淡季周期性政策</td>
+<td>—</td>
+<td>—</td>
+<td>秋冬纺织旺季到来</td>
+<td>季节性利好</td>
+</tr>
+</tbody>
+</table>
+<p><strong>判断</strong>：政策端<strong>无直接利好</strong>。本股的核心变量是<strong>行业自律（反内卷）与产能出清节奏</strong>，而非政策补贴。值得注意的反常识点：<strong>己内酰胺行业的"反内卷"减产对本股是利空而非利好</strong>——因为公司在产业链的位置是"买 CPL 卖 PA6"，CPL 减产挺价会直接压缩 PA6 的加工费（价差）。</p>
+<h3>（2）市场端（量价数据）——<strong>当前处于历史级的"两头挤压"位置</strong></h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>最新数据</th>
+<th>对比/趋势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PA6 行业总产能</strong></td>
+<td>2026 年中 <strong>893 万吨</strong>（年内已新增 22.5 万吨）</td>
+<td><strong>下半年新增计划 69 万吨，年底或突破 962 万吨</strong></td>
+</tr>
+<tr>
+<td><strong>PA6 聚合开工率</strong></td>
+<td><strong>约 60%（历史低位）</strong></td>
+<td>极度过剩</td>
+</tr>
+<tr>
+<td><strong>己内酰胺（CPL）行业总产能</strong></td>
+<td><strong>821 万吨</strong>（年内新增 18 万吨、淘汰 15 万吨，净增仅 3 万吨）</td>
+<td>下半年技改 10 万吨 + 新增 30 万吨 → 年底 861 万吨，<strong>仍不及 PA6 产能规模</strong></td>
+</tr>
+<tr>
+<td><strong>CPL 行业开工率</strong></td>
+<td><strong>&lt;70%</strong>（自律减产）</td>
+<td>供给偏紧</td>
+</tr>
+<tr>
+<td>CPL 华东现货价</td>
+<td><strong>11800 元/吨</strong>（承兑送到，2026-08）</td>
+<td>液体 CPL 11400 元/吨（2026-07-13）</td>
+</tr>
+<tr>
+<td>PA6 常规纺中粘有光</td>
+<td><strong>12000–12100 元/吨</strong>（现金送到，华东，2026-08）</td>
+<td>高速纺约 12600 元/吨；11725 元/吨（2026-07-13）</td>
+</tr>
+<tr>
+<td><strong>PA6 − CPL 价差</strong></td>
+<td><strong>仅 300–400 元/吨</strong></td>
+<td><strong>极窄</strong>。聚合加工成本约 800–1000 元/吨 → <strong>行业普遍现金流亏损</strong></td>
+</tr>
+<tr>
+<td>PA6/CPL 价格相关系数</td>
+<td><strong>0.98</strong>（2026 年）</td>
+<td>PA6 几乎完全跟随 CPL，<strong>无独立定价权</strong></td>
+</tr>
+<tr>
+<td>CPL 2026 上半年产量</td>
+<td><strong>325 万吨</strong>（同比 −4%）</td>
+<td>供给收缩</td>
+</tr>
+<tr>
+<td>CPL 2026 年均价预测</td>
+<td>参考 8900 元/吨附近，跌幅 &lt;5%，<strong>显著低于 PA6 跌幅</strong></td>
+<td>原料相对抗跌 → 加工费继续被压缩</td>
+</tr>
+</tbody>
+</table>
+<p><strong>供需格局核心矛盾（结构性，非周期性短期波动）</strong>：</p>
+<blockquote>
+<p><strong>CPL 供给紧（开工 &lt;70%、自律减产、产能 821 万吨 &lt; PA6 的 893 万吨）vs PA6 供给松（开工 60%、产能 893→962 万吨、产能基数大且分散）</strong><br />
+→ <strong>"原料货紧、切片货松"，定价话语权在原料供应商手里</strong><br />
+→ 聚合企业面临"<strong>原料紧、产品难卖</strong>"的双重压力，进一步降负荷不可避免</p>
+</blockquote>
+<p><strong>量价结论</strong>：公司销量 −17.05%、单吨净利 259 元、毛利率 7.81%、行业开工率 60%——<strong>这是典型的中游加工环节被上下游同时挤压的底部状态</strong>。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：己内酰胺（CPL）→ 上游再追溯是纯苯 → 原油。CPL 供给紧、行业自律减产，价格相对抗跌（2026 年均价跌幅 &lt;5%，显著小于 PA6 跌幅）。</p>
+<p><strong>下游</strong>：纺丝（纺服，处消费淡季）、工程塑料（汽车/电子）、BOPA 膜（包装）。终端需求修复不及预期，切片采购放缓，PA6 价格持续下行。</p>
+<p><strong>产业链位置与议价权</strong>：<strong>弱——这是本股最根本的问题</strong>。<br />
+- 对上游：<strong>弱</strong>。CPL 定价权在原料供应商（隆众/卓创原文："<strong>原料货紧，定价话语权仍倾向原料供应商</strong>"）<br />
+- 对下游：<strong>弱</strong>。PA6 供给宽松、产能分散、下游议价能力强<br />
+- <strong>议价权证据</strong>：PA6/CPL 价格相关系数 0.98（无独立定价权）；价差仅 300–400 元/吨而加工成本 800–1000 元/吨；公司毛利率仅 7.81%、单吨净利 259 元</p>
+<hr />
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>客户结构</th>
+<th>传导率估计</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>纤维级切片</td>
+<td>纺丝厂，同质化最严重、竞争最激烈</td>
+<td><strong>0.5–0.6</strong></td>
+<td>占比 60%，行业开工 60%，价格战激烈</td>
+</tr>
+<tr>
+<td>工程塑料级切片</td>
+<td>改性塑料厂，有一定牌号差异化</td>
+<td><strong>0.7–0.8</strong></td>
+<td>差异化牌号有溢价</td>
+</tr>
+<tr>
+<td>薄膜级切片</td>
+<td>BOPA 膜厂，技术要求高</td>
+<td><strong>0.8–0.9</strong></td>
+<td>占比仅 3.81%，技术壁垒最高</td>
+</tr>
+</tbody>
+</table>
+<p>按 2026H1 收入结构加权传导率 ≈ <strong>0.63</strong>。但需注意<strong>传导率的非对称性</strong>：<br />
+- CPL <strong>涨价</strong>时：PA6 跟涨（相关系数 0.98），传导率约 0.95——但<strong>跟涨不等于保住加工费</strong><br />
+- CPL <strong>跌价</strong>时：PA6 跌得更多（2026 年 CPL 跌幅 &lt;5% 而 PA6 跌幅更大）→ <strong>传导率 &gt;1</strong><br />
+- <strong>结论：真正的杀手不是"传导率"，而是"价差（PA6 − CPL）被压缩到 300–400 元/吨"</strong>。传导率再高，价差不够覆盖 800–1000 元/吨的加工成本，就是亏损。这是本股与典型加工企业的关键差异——<strong>必须用"价差"而非"传导率"来建模</strong>。<br />
+- <strong>验证点</strong>：月度 PA6−CPL 价差（当前 300–400 元/吨）；<strong>证伪信号</strong>：价差跌破 250 元/吨 → 全行业现金亏损，需下修中性净利</p>
+<p><strong>因子2 毛利结构再平衡</strong><br />
+禁用"综合毛利率 7.81%"掩盖结构迁移：</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>2026H1 收入</th>
+<th>占比</th>
+<th>估毛利率</th>
+<th>对 CPL 敏感权重</th>
+<th>毛利贡献占比（估）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>纤维级切片</td>
+<td>15.93 亿</td>
+<td>60.2%</td>
+<td>约 <strong>6.5%</strong></td>
+<td><strong>极高</strong>（同质化，纯拼价差）</td>
+<td><strong>约 50%</strong></td>
+</tr>
+<tr>
+<td>工程塑料级切片</td>
+<td>9.11 亿</td>
+<td>34.4%</td>
+<td>约 <strong>9.5%</strong></td>
+<td>中高</td>
+<td><strong>约 42%</strong></td>
+</tr>
+<tr>
+<td>薄膜级切片</td>
+<td>1.01 亿</td>
+<td>3.8%</td>
+<td>约 <strong>13%</strong></td>
+<td>中</td>
+<td><strong>约 6%</strong></td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.44 亿</td>
+<td>1.7%</td>
+<td>—</td>
+<td>—</td>
+<td>约 2%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构迁移结论</strong>：<strong>工程塑料级以 34% 的收入贡献 42% 的毛利，薄膜级以 3.8% 的贡献 6%</strong>——高附加值产品（工程塑料级 + 薄膜级）合计 38% 收入贡献 48% 毛利。公司战略明确"<strong>进一步优化差异化产品的结构布局，持续拓展海外差异化市场</strong>"。<br />
+→ <strong>这是唯一可行的毛利修复路径</strong>：提高工程塑料级/薄膜级/差异化牌号占比。若工程塑料级占比从 34% 提至 45%，综合毛利率可提升约 1.2pct。<br />
+- <strong>验证点</strong>：半年报分产品收入结构变化；<strong>证伪信号</strong>：工程塑料级占比不升反降 → 差异化战略失败</p>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+- 2026Q1 归母 3404 万 → 2026Q2 归母 2894 万（环比 <strong>−15.03%</strong>），而 Q2 毛利率 7.44%（环比 −0.83pct）<br />
+- Q1 业绩较好源于"<strong>一季度事件驱动性回暖</strong>"（CPL 价格因事件驱动上涨，公司持低价库存获益）<br />
+- Q2 CPL 价格持续走弱（二季度倒 V 走势下行段）→ 高价库存损失<br />
+- <strong>关键判断</strong>：2026H1 的 7.81% 毛利率中，Q1 含<strong>低价库存收益</strong>，Q2 已在还回去。<strong>不可将 Q1 状态年化</strong><br />
+- 公司存货周转率 2.63 次（2026Q2 单季），周转较快，库存敞口相对可控；CPL 以液态为主，储存成本高，囤货空间有限<br />
+- <strong>验证点</strong>：Q3 毛利率（旺季 + 原料成本重心下移）；<strong>证伪信号</strong>：Q3 毛利率跌破 7%<br />
+- <strong>套保/长协</strong>：未披露具体比例。但公司与<strong>兖矿鲁南化工</strong>合资（聚合顺鲁化），具备一定的原料供应保障优势——这是相对同业的<strong>结构性优势</strong></p>
+<p><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong><br />
+| 变量 | 情景 | 影响 | 验证点 |<br />
+|---|---|---|---|<br />
+| 市场层：原油/纯苯 | 2026 年 WTI 77.29→、Brent 82.49 美元/桶，8 月初环比 −8.7%；中石化纯苯挂牌两次下调累计 550 元至 7350 元/吨 | 成本端下移，<strong>利好</strong>（若 PA6 跌幅小于 CPL） | 原油、纯苯周度价格 |<br />
+| <strong>政策层：己内酰胺"反内卷"自律减产</strong> | 持续，开工 &lt;70% | <strong>利空</strong>（CPL 挺价 → 价差压缩） | CPL 行业开工率月度数据 |<br />
+| 政策层：PA6 落后产能退出（预期） | 未落地 | <strong>重大利好</strong>（若落地） | 工信部/石化联合会文件 |<br />
+| 政策层：地缘冲突/贸易壁垒 | 持续扰动 | 原料波动加大 | 地缘事件、关税公告 |<br />
+| 市场层：鲁南化工 8 月末检修 | CPL 现货进一步趋紧 | 短期利空（价差再压缩） | 检修公告 |</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量</th>
+<th>进度/确认时点</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>四大产能基地（浙/鲁/湘）</strong></td>
+<td>已建成，广域布局</td>
+<td>设计产能未单独披露；2026H1 产量 24.44 万吨 → 年化约 49 万吨</td>
+<td><strong>已投产</strong></td>
+<td>提供销量上限</td>
+<td>高</td>
+</tr>
+<tr>
+<td>产能利用率提升</td>
+<td>当前开工率约 70%（高于行业 60%）→ 若提至 90%</td>
+<td>增量销量约 <strong>14 万吨/年</strong></td>
+<td>取决于价差修复与需求</td>
+<td>按 400 元/吨 → <strong>0.56 亿</strong></td>
+<td>中</td>
+</tr>
+<tr>
+<td>差异化/高附加值产品结构优化</td>
+<td>工程塑料级 + 薄膜级 + 差异化牌号</td>
+<td>当前合计 38.2% 收入</td>
+<td>持续推进</td>
+<td>每提升 5pct 占比 → 毛利率 +0.6pct → 净利 +0.16 亿</td>
+<td>中</td>
+</tr>
+<tr>
+<td>海外差异化市场拓展</td>
+<td>境外收入 2.87 亿（10.82%）</td>
+<td>—</td>
+<td>持续推进</td>
+<td>海外毛利率通常高于内销</td>
+<td>中低</td>
+</tr>
+<tr>
+<td><strong>与兖矿鲁南化工合资（聚合顺鲁化）</strong></td>
+<td>原料供应保障</td>
+<td>—</td>
+<td>已运营</td>
+<td>原料成本/供应稳定性优势</td>
+<td>高（结构性）</td>
+</tr>
+<tr>
+<td>经营现金流改善</td>
+<td>2026H1 经营现金流 <strong>1.50 亿（+30.59%）</strong>，净现比 <strong>238.1%</strong></td>
+<td>—</td>
+<td>已实现</td>
+<td>安全垫</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：行业产能出清 / 落后产能退出</td>
+<td>PA6 产能 893→962 万吨，若政策强制退出</td>
+<td>—</td>
+<td><strong>未发生</strong></td>
+<td>弹性极大</td>
+<td>低（未过验证点）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计</strong>：<strong>无新增大型在建产能项目披露</strong>——公司当前处于"已建产能消化期"而非"扩产期"。增量主要来自<strong>存量开工率提升 + 产品结构优化</strong>，这是本股与典型成长股的关键差别。</p>
+<p><strong>⚠️ 主要不确定源</strong>：四大基地分项设计产能、开工率、长协/套保比例<strong>均未定量披露</strong>，无法做精确吨毛利倒推。本报告采用"单吨净利 × 销量"的周期归一化方法处理，并放宽情景区间。</p>
+<hr />
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层1 现有业务：市场容量 × 份额变量</strong><br />
+以 PA6 行业总产能 893 万吨为分母，公司 2026 年销量年化约 49 万吨 → <strong>份额约 5.5%</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>保守（守住）</th>
+<th>中性（小幅提升）</th>
+<th>乐观（抢份额）</th>
+<th>验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供给侧份额</td>
+<td>行业开工 60%，公司约 70%</td>
+<td>5.5%</td>
+<td>6.5%</td>
+<td>8.0%</td>
+<td>公司产销量 vs 行业产量</td>
+</tr>
+<tr>
+<td>客户份额</td>
+<td>纺丝/改性塑料/膜厂</td>
+<td>守住核心客户</td>
+<td>差异化牌号切入新客户</td>
+<td>进入汽车/电子头部供应链</td>
+<td>前五大客户占比、新客户公告</td>
+</tr>
+<tr>
+<td>技术代际</td>
+<td>差异化牌号（有光/半消光/全消光/共聚/改性）</td>
+<td>持平</td>
+<td>差异化占比提升</td>
+<td>高端牌号领先</td>
+<td>研发费用率、专利</td>
+</tr>
+<tr>
+<td>成本曲线</td>
+<td>四大基地 + 鲁化合资原料保障 + 多基地协同</td>
+<td>持平</td>
+<td>左移 100 元/吨</td>
+<td>左移 200 元/吨</td>
+<td>单吨毛利（当前 851 元）</td>
+</tr>
+<tr>
+<td>份额二阶导</td>
+<td>销量 −17.05%（主动降负荷而非丢份额）</td>
+<td>持平</td>
+<td>+5%/年</td>
+<td>+12%/年</td>
+<td>季度销量环比</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键判断</strong>：公司销量下滑 17.05% 主要是<strong>主动降负荷</strong>（应对价差过窄），而非份额丢失——证据：公司开工率（约 70%）<strong>高于行业平均（60%）</strong>，说明公司位于成本曲线左侧，<strong>在行业普遍降负荷时公司降得更少，实际份额在被动提升</strong>。</p>
+<p><strong>层2 扩展业务：主业迁移空间</strong><br />
+- <strong>能力可迁移性</strong>：<strong>强</strong>。PA6 聚合能力可迁移至：① <strong>PA66（尼龙 66）</strong>——原料己二胺/己二酸，工艺同源度高；② <strong>特种聚酰胺（高温尼龙 PA6T/PA9T、长碳链尼龙）</strong>；③ <strong>己内酰胺上游一体化</strong>（向上游延伸，破解"原料受制"的根本问题）<br />
+- <strong>新 TAM 弹性</strong>：特种聚酰胺单吨售价是 PA6 的 2–4 倍、毛利率 20%+，TAM 弹性大<br />
+- <strong>切入卡位</strong>：早中期。公司已有"聚合顺特种"（杭州聚合顺特种材料科技有限公司）实体<br />
+- <strong>客户认证门槛</strong>：高（工程塑料/特种材料需下游长周期认证）<br />
+- <strong>信号验证</strong>：<strong>当前无一项通过</strong>——无 PA66/特种聚酰胺的产能公告、无收入单独披露、无大客户定点 → <strong>按纪律仅作中期期权，不计入中性情景</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+① PA6−CPL 价差跌破 250 元/吨并持续；② 工程塑料级收入占比不升反降；③ 公司开工率跌至行业平均 60% 以下（成本曲线优势证伪）；④ 特种聚酰胺/PA66 未在任何定期报告披露；⑤ 经营现金流再度转负。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法声明</strong>：<strong>严禁历史增速外推</strong>。公司 2022→2025 营收 60.37→60.18→71.68→55.24 亿（剧烈波动，主要受 CPL 价格驱动而非销量），归母 2.42→1.97→3.00→1.45 亿。若按营收或净利增速外推会完全失真。本报告采用<strong>周期归一化单吨净利 × 满产销量</strong>的正常化净利润法。</p>
+</blockquote>
+<p><strong>总股本：3.147 亿股</strong></p>
+<h3>⚠️ 准亏损从严：正常化净利润法 + 盈利塌陷三问</h3>
+<blockquote>
+<p>说明：公司 H1 仍盈利 6300 万元，但因①行业开工率 60% 历史低位、②价差仅 300–400 元/吨低于加工成本、③本报告以<strong>正常化净利润法</strong>为主估值锚，按纪律必须写本节。</p>
+</blockquote>
+<p><strong>问1：为什么利润塌陷（同比 −43.05%）？</strong><br />
+| 原因 | 量化 |<br />
+|---|---|<br />
+| <strong>价差被压缩（首要）</strong> | PA6−CPL 价差仅 <strong>300–400 元/吨</strong>，低于聚合加工成本 800–1000 元/吨 |<br />
+| 主动降负荷 | 产量 −18.32%、销量 <strong>−17.05%</strong> |<br />
+| 终端需求淡季 | 纺服消费淡季，切片采购放缓 |<br />
+| 原料价格波动 | 地缘冲突致原油/纯苯波动，二季度 CPL 倒 V 走势 |<br />
+| 财务费用 | 期间费用 1.11 亿（<strong>+1488.64 万元</strong>）；筹资活动现金流 +4.70 亿（同比 +5.27 亿）说明有息负债上升 |<br />
+| <strong>利润质量</strong> | 非经常性损益仅 82 万元，<strong>扣非 6217.68 万 ≈ 归母 6300.10 万，利润真实</strong> |</p>
+<p><strong>问2：靠什么修复？触发时点？</strong><br />
+- <strong>路径一（主）</strong>：<strong>PA6−CPL 价差修复</strong>。触发条件：① 己内酰胺新增产能投放（2026H2 技改 10 万吨 + 新增 30 万吨，年底 861 万吨）；② PA6 落后产能退出；③ 秋冬纺织旺季 + 行业控产 → 隆众预测"<strong>行业盈利水平期待阶段性有修复的可能</strong>" → <strong>触发时点 2026H2–2027</strong><br />
+- <strong>路径二</strong>：产品结构优化（工程塑料级 + 薄膜级 + 差异化），每提升 5pct 高附加值占比 → 净利 +0.16 亿 → <strong>2027–2029</strong><br />
+- <strong>路径三</strong>：开工率从 70% 提至 90% → 增量销量 14 万吨<br />
+- <strong>路径四</strong>：海外差异化市场（当前仅 10.82%）</p>
+<p><strong>问3：亏得起吗（能否撑到修复）？</strong><br />
+| 指标 | 数值 | 判断 |<br />
+|---|---|---|<br />
+| 归母净资产 | <strong>20.20 亿</strong> | 厚实 |<br />
+| 资产负债率（2026Q1 / 2025 年报） | <strong>62.40% / 61.67%</strong> | <strong>偏高</strong> |<br />
+| 有息负债（2025 年报） | <strong>9.84 亿</strong> | 中等 |<br />
+| 经营现金流（2026H1） | <strong>+1.50 亿（+30.59%）</strong> | <strong>健康，是关键安全垫</strong> |<br />
+| 净现比 | <strong>238.1%</strong> | 极高，利润含金量好 |<br />
+| 营收现金比 | 123.26% | 回款良好 |<br />
+| 速动比率 / 流动比率 | 1.16 / 1.37 | 尚可 |</p>
+<p><strong>结论</strong>：<strong>完全亏得起</strong>。经营现金流 1.50 亿、净现比 238%、净资产 20.2 亿，即便行业底部再延续 2 年也无生存风险。风险在于<strong>负债率 62% 偏高</strong>，若扩产需继续加杠杆。</p>
+<h3>周期归一化（正常化净利润法）</h3>
+<p><strong>第一步：估稳态销量（满产）</strong><br />
+- 2026H1 销量 24.32 万吨 → 年化 48.6 万吨，开工率约 <strong>70%</strong>（高于行业 60%）<br />
+- 现有四大基地设计产能推算：48.6 / 0.70 ≈ <strong>70 万吨</strong><br />
+- 稳态（开工率 90%）：<strong>63 万吨</strong></p>
+<p><strong>第二步：算正常化单吨净利（周期归一化）</strong></p>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>营收</th>
+<th>归母</th>
+<th>推算销量</th>
+<th>单吨净利</th>
+<th>周期位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>60.37 亿</td>
+<td>2.42 亿</td>
+<td>约 40 万吨</td>
+<td><strong>605 元/吨</strong></td>
+<td>中高位</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>60.18 亿</td>
+<td>1.97 亿</td>
+<td>约 44.6 万吨</td>
+<td><strong>442 元/吨</strong></td>
+<td>中位</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>71.68 亿</td>
+<td>3.00 亿</td>
+<td>约 51 万吨</td>
+<td><strong>589 元/吨</strong></td>
+<td><strong>高点</strong></td>
+</tr>
+<tr>
+<td>2025</td>
+<td>55.24 亿</td>
+<td>1.45 亿</td>
+<td>约 48 万吨</td>
+<td><strong>302 元/吨</strong></td>
+<td>下行</td>
+</tr>
+<tr>
+<td>2026H1</td>
+<td>26.49 亿</td>
+<td>0.63 亿</td>
+<td>24.32 万吨</td>
+<td><strong>259 元/吨</strong></td>
+<td><strong>底部</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>归一化取值逻辑</strong>：<br />
+- <strong>禁用</strong> 2024 年高点（589 元/吨，属景气年）<br />
+- <strong>禁用</strong>近三年均值（(442+589+302)/3 = 444 元/吨，恰逢下行段，会高估）<br />
+- <strong>禁用</strong>拐点年化（Q2 单季 2894 万元 → 年化 1.16 亿，属单季反弹非稳态）<br />
+- <strong>采用 trough-to-peak 中值</strong>：排序 259、302、442、589、605 → 中值 <strong>442 元/吨</strong>；再因行业产能 893→962 万吨、供过于求格局<strong>较 2022–2024 年更差</strong>，向下修正 → <strong>正常化单吨净利取 400 元/吨</strong></p>
+<p><strong>第三步：正常化净利润 × 远期 PE</strong><br />
+- 中性正常化净利 = 63 万吨 × 400 元/吨 = <strong>2.52 亿</strong><br />
+- 远期 PE：PA6 属强周期化工中间体，正常年份给 <strong>13–15x</strong> → 取 <strong>14x</strong><br />
+- 中性目标市值 = 2.52 × 14 = <strong>35.3 亿</strong> → 目标价 <strong>11.22 元</strong></p>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>销量</th>
+<th>单吨净利</th>
+<th>净利</th>
+<th>PE/PB</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>价差维持 300 元/吨、行业产能破 962 万吨、公司降负荷至 60%</td>
+<td>50 万吨</td>
+<td>150 元/吨</td>
+<td>0.75 亿</td>
+<td>PB <strong>0.9x</strong>（净资产约 22 亿）</td>
+<td>19.8 亿</td>
+<td><strong>6.29 元</strong></td>
+<td><strong>−24.5%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>价差修复至 700–800 元/吨、开工率升至 90%、高附加值占比提升</td>
+<td>63 万吨</td>
+<td><strong>400 元/吨</strong></td>
+<td><strong>2.52 亿</strong></td>
+<td>PE <strong>14x</strong></td>
+<td>35.3 亿</td>
+<td><strong>11.22 元</strong></td>
+<td><strong>+34.7%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>反内卷见效 + 落后产能退出 + 高附加值占比达 50% + 海外放量</td>
+<td>68 万吨</td>
+<td>600 元/吨</td>
+<td>4.08 亿</td>
+<td>PE <strong>15x</strong></td>
+<td>61.2 亿</td>
+<td><strong>19.45 元</strong></td>
+<td><strong>+133.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>1.30 亿</td>
+<td>2.52 亿（正常化）</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>周期底部按 PB（1.3x）</td>
+<td>14x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>26.3 亿</td>
+<td>35.3 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>8.36 元</strong></td>
+<td><strong>11.22 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>基准（2026 年底）</strong>：2026E 归母 = H1 0.63 亿 + H2 0.67 亿（秋冬旺季 + 原料成本重心下移）= <strong>1.30 亿</strong>。周期底部市场按 PB 定价，净资产约 20.5 亿，给 <strong>PB 1.3x</strong> → 26.7 亿 → 8.48 元。取 <strong>基准 8.5 元</strong>。</p>
+<hr />
+<h4>第四步进阶：重资产 / 周期股估值校正（三道闸，逐条做实）</h4>
+<p><strong>校正1 资产质量折扣（PB 1.31x，接近但未破净）</strong><br />
+- <strong>未破净，但已接近</strong>。总资产 56.97 亿（2025 年报）、归母净资产 20.20 亿 → <strong>固定资产 + 在建工程占比高</strong>（四大基地重资产）<br />
+- <strong>资产专用性风险</strong>：PA6 聚合装置<strong>专用性强</strong>，但相对可改产 PA66/共聚牌号（有一定柔性），专用性风险<strong>低于</strong>钢铁高炉、路产等纯专用资产 → <strong>中等</strong><br />
+- <strong>隐含负债</strong>：有息负债 9.84 亿、资产负债率 62.40%；存货若 CPL 跌价存在跌价风险（但存货周转 2.63 次/季，周转较快）<br />
+- <strong>反向证明（金融资产未重估型）</strong>：<strong>不适用</strong>——公司无大额上市股权投资，无"真安全边际"来源<br />
+- → <strong>结论</strong>：<strong>PB 1.31x 对一家 ROE 仅 3.14%（2026H1 加权）的重资产周期企业，属"合理但不便宜"</strong>。若价差持续不修复，PB 有下探至 0.9–1.0x 的空间（悲观情景已体现）</p>
+<p><strong>校正2 周期位置校正（关键）</strong><br />
+- <strong>当前位置：周期底部</strong>。证据：行业开工率 60%（历史低位）、价差 300–400 元/吨（低于加工成本）、单吨净利 259 元、公司归母同比 −43.05%<br />
+- <strong>禁止</strong>用 2024 年好年景（3.00 亿）<br />
+- <strong>禁止</strong>用近三年均值（(1.97+3.00+1.45)/3 = 2.14 亿，恰逢下行段会高估——<strong>注意：此值与本报告中性的 2.52 亿接近，但中性还叠加了销量从 48.6 万吨增至 63 万吨的产能利用率提升，两者性质不同</strong>）<br />
+- <strong>禁止</strong>把 Q2 单季反弹年化<br />
+- <strong>采用</strong>：周期归一化单吨净利 400 元/吨 × 满产 63 万吨 = 2.52 亿<br />
+- <strong>底部不过度悲观</strong>：故未采用 2026 的 259 元/吨作为中性<br />
+- <strong>验证点</strong>：月度 PA6−CPL 价差能否修复至 700 元/吨以上；行业开工率能否回升至 70%+；<strong>证伪信号</strong>：2027 年价差仍 &lt;500 元/吨 → 下修至悲观</p>
+<p><strong>校正3 杠杆下行情景（必附）</strong><br />
+| 情景 | 假设 | 结果 |<br />
+|---|---|---|<br />
+| 利率上行 100bp | 有息负债 9.84 亿 → 新增利息约 <strong>0.10 亿/年</strong> | 吃掉 2026E 归母 1.30 亿的 <strong>7.7%</strong>（影响可控，因有息负债规模不大） |<br />
+| 需求下行 10% + 价差再压缩 100 元/吨 | 销量 45 万吨、单吨净利 100 元 | 净利 <strong>0.45 亿</strong> → PE 14x = 6.3 亿，但按 PB 0.9x = 19.8 亿 → <strong>6.29 元（−24.5%）</strong> |<br />
+| <strong>双高共振</strong> | 价差 200 元/吨 + 开工率 55% + 利率上行 + 存货跌价 0.3 亿 | 净利 <strong>≈0.2 亿</strong>，PB 0.8x → 17.6 亿 → <strong>5.59 元（−32.9%）</strong> |</p>
+<p><strong>经营杠杆</strong>（固定折旧大）显著，但<strong>财务杠杆中等</strong>（负债率 62%、有息负债 9.84 亿）。下行情景使空间转负 → <strong>按纪律不得标"大空间/重点关注"</strong>（本报告结论为"纳入观察"，符合）。</p>
+<p><strong>期权纪律</strong>：PA66/特种聚酰胺迁移、落后产能退出、海外放量、行业出清——<strong>均未过验证点，全部不计入中性净利 2.52 亿</strong>，只在乐观情景体现。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>周期底部、估值合理偏低</strong>。现价 8.33 元、PB <strong>1.31x</strong>、PE(TTM) 28.3x（周期底部高 PE 属正常）、2026E PE 20.2x。PB 1.31x 对周期股而言<strong>未透支</strong>，且低于自身历史中枢。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 11.22 元 → <strong>+34.7%</strong><br />
+- 悲观 6.29 元 → <strong>−24.5%</strong><br />
+- 乐观 19.45 元 → <strong>+133.5%</strong>（需反内卷落地 + 产能出清）<br />
+- 双高共振下行情景 5.59 元 → <strong>−32.9%</strong><br />
+- <strong>风险收益比偏正</strong>：上行 +34.7%（中性）/ +133.5%（乐观·未验证），下行 −24.5%（悲观）/ −32.9%（双高共振）→ <strong>赔率约 1.4:1，且中性为负的可能性低于周期底部平均</strong><br />
+- <strong>下行保护</strong>：PB 1.31x（未破净）、经营现金流 1.50 亿正流入、净现比 238%、净资产 20.2 亿</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>可小仓位建仓</strong>，但建议<strong>分批</strong>。8.0 元以下（PB &lt; 1.25x）为较好介入位；<strong>6.5 元以下（PB &lt; 1.0x）为重仓位</strong><br />
+2. <strong>加仓信号（需至少 2 项）</strong>：① PA6−CPL 价差修复至 <strong>700 元/吨以上</strong>并维持一个月；② 行业开工率回升至 70%+；③ 工程塑料级 + 薄膜级收入占比突破 <strong>45%</strong>；④ 单季销量环比 +15% 以上；⑤ 出台 PA6 落后产能退出政策<br />
+3. <strong>证伪/止损</strong>：价差跌破 250 元/吨；公司开工率跌破 60%（成本曲线优势证伪）；经营现金流转负</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 结构性产能过剩（首要）</strong>：PA6 产能 893 万吨→年底 <strong>962 万吨</strong>，下半年新增计划 <strong>69 万吨</strong>；而需求端纺服消费淡季、终端修复不及预期。<strong>供给增速远超需求，价差修复的时间和幅度都不可控</strong><br />
+2. <strong>产业链位置劣势</strong>：公司"买 CPL 卖 PA6"，CPL 因自律减产而挺价（开工 &lt;70%），<strong>上游议价权强于公司</strong>。这是一个<strong>结构性的、非周期性的劣势</strong>——除非公司向上游一体化或迁移至差异化产品<br />
+3. <strong>负债率偏高</strong>：62.40%，若行业底部延长且需维持营运资金，财务费用会持续侵蚀利润（2026H1 期间费用已 +1488.64 万元）<br />
+4. <strong>无新增产能项目披露</strong>：公司当前无大型在建项目，增量完全依赖存量开工率提升与结构优化，<strong>增长天花板清晰可见</strong><br />
+5. <strong>存货跌价风险</strong>：CPL 价格波动大，若原料急跌，高价库存会造成损失（Q2 已部分体现）</p>
+<hr />
+<h4>第五步进阶：上行想象力情景（对冲系统性保守偏置）</h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>情景</th>
+<th>触发点（可观测）</th>
+<th>重估弹性</th>
+<th>证伪信号</th>
+<th>计入中性？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 行业调整剩者红利（本股最主要上行来源）</strong></td>
+<td>PA6 行业开工率 60%、价差 300–400 元/吨低于加工成本，<strong>全行业现金亏损必然引发落后产能退出</strong>；公司开工率 70% 高于行业、四基地协同 + 鲁化原料保障 = 成本曲线左侧 → 出清后剩者份额与加工费双升</td>
+<td>① 行业产能连续两季度不增反减；② 开工率跌破 55% 后企业数下降；③ 价差修复至 900 元/吨以上</td>
+<td>单吨净利 400→700 元，销量 65 万吨 → 净利 4.55 亿，PE 15x → <strong>目标价 21.7 元（+160%）</strong></td>
+<td>产能继续增至 962 万吨以上；无企业退出；价差维持 &lt;500 元</td>
+<td><strong>否</strong>（乐观栏）</td>
+</tr>
+<tr>
+<td><strong>B 政策反转期权</strong></td>
+<td>"反内卷"从<strong>己内酰胺自律减产</strong>（对本股利空）转向 <strong>PA6 落后产能强制退出</strong>（对本股利多）；或十五五原材料工业提质增效政策将 PA6 纳入限制类</td>
+<td>工信部/石化联合会出台 PA6 产能置换或落后产能退出文件</td>
+<td>若淘汰 10% 产能（96 万吨），价差修复至 1000 元/吨 → 净利 +2.5 亿 → <strong>目标价 +12 元</strong></td>
+<td>政策未出台；仅针对 CPL 不针对 PA6</td>
+<td><strong>否</strong>（乐观栏，未过验证点）</td>
+</tr>
+<tr>
+<td><strong>C 市场错杀修复</strong></td>
+<td>PB 1.31x、市值 26 亿的小盘化工，若市场风格回归顺周期/低位价值，或单季业绩因库存 timing 打压后被证伪</td>
+<td>单季归母环比 +50% 以上；PB 分位回落至历史 15% 以下</td>
+<td>修复至 PB 1.8x → 37.8 亿 → <strong>12.01 元（+44.2%）</strong></td>
+<td>单季续亏或价差再压缩</td>
+<td><strong>否</strong>（乐观栏）</td>
+</tr>
+<tr>
+<td><strong>D 技术突破/代际跃迁</strong></td>
+<td><strong>PA66 / 特种聚酰胺（高温尼龙 PA6T、长碳链尼龙）迁移</strong>——聚合工艺同源，但单吨售价 2–4 倍、毛利率 20%+，属真正的<strong>产品代际跃迁</strong>；公司已设"聚合顺特种"实体</td>
+<td>① 中试/工业化装置跑通且良率达标；② 拿到汽车/电子客户定点或大额订单；③ 特种聚酰胺收入单独披露且占比 &gt;10%；④ 量产成本优于进口替代</td>
+<td>若特种产品占比 20%、毛利率 20%，净利 +1.5 亿 → <strong>目标价 +6.7 元</strong></td>
+<td>无产能公告；无客户定点；收入未单独披露；成本打不过进口</td>
+<td><strong>否</strong>（乐观栏，未过任一硬验证点）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>纪律执行</strong>：四类想象情景<strong>全部只进乐观/机会栏，不进中性锚</strong>。中性 2.52 亿净利只认"63 万吨 × 400 元/吨周期归一化单吨净利"，不含产能出清红利、政策强制退出、错杀修复或特种聚酰胺迁移的任何正贡献。</p>
+</blockquote>
+<p><strong>什么条件出现才上调至"重点关注"</strong>：需同时满足——① <strong>价差条件</strong>：PA6−CPL 价差修复至 <strong>900 元/吨以上</strong>并维持一个季度（对应单吨净利 600 元）；② <strong>结构条件</strong>：工程塑料级 + 薄膜级收入占比突破 <strong>45%</strong>（差异化战略验证）；③ <strong>产能条件</strong>：开工率提升至 85% 以上且行业总产能停止增长。<strong>满足 ①③ 即可将中性净利上修至 3.9 亿以上、目标价 ≥17.4 元（空间 &gt;+100%），届时上调至"重点关注"</strong>。在此之前维持"纳入观察"。</p>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>8.33 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>9.0 元</strong>（区间 7.8–10.5，基于 2027E 净利 1.75 亿 × 16x）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+8.0%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>11.22 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+34.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 6.29 元（−24.5%）～ 乐观 19.45 元（+133.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>PA6周期底部，价差300-400元/吨近现金亏损；开工率70%高于行业60%，出清后剩者弹性大</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（8.0 元以下分批，重点跟踪 PA6−CPL 价差与高附加值占比）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-14 披露）、2025 年年报、2026 年一季报、半年报管理层讨论与分析（证券之星/巨潮）、腾讯行情（2026-09-14 收盘）、卓创资讯 PA6 市场月报（2026-07）、隆众资讯己内酰胺行业数据、Chempricehub 己内酰胺产业链分析（2026-08）、2026 年己内酰胺市场展望（产能增速 1.96%）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

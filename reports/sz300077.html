@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>国民技术（300077）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>国民技术（300077）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-16 ｜ 现价 <strong>19.88 元</strong>（2026-09-15 收盘） ｜ 总市值 <strong>约 134.8 亿</strong> ｜ PE(TTM) <strong>−181x</strong>（TTM 口径失真） ｜ PB <strong>7.68x</strong> ｜ 总股本 <strong>约 6.78 亿股</strong>（含 2026 年 3 月发行的 9500 万股 H 股）<br />
+行业：半导体（MCU/安全芯片）+ 锂电负极材料 ｜ 板块：创业板 ｜ 港股：02701.HK（2026-03-23 挂牌，A+H）<br />
+<strong>亏损核实</strong>：队列"亏损"列为 <strong>TTM 口径误标</strong>。真实最新财报 2026 半年报归母净利 <strong>+441.49 万元（扭亏为盈）</strong>，但<strong>扣非净利仍 −2356.87 万元</strong>，主业尚未真正盈利。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内"安全 MCU"差异化芯片设计公司 + 二三线锂电负极材料厂商，"芯片+材料"双主业，2026 年完成 A+H 两地上市。</p>
+<p><strong>各业务板块营收占比（2026 半年报，营收 9.06 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>负极材料（含石墨化代加工）</td>
+<td>4.55 亿</td>
+<td>50.19%</td>
+<td>9.29%</td>
+<td>+56.39%</td>
+</tr>
+<tr>
+<td>集成电路及关键元器件</td>
+<td>4.35 亿</td>
+<td>48.06%</td>
+<td>32.16%</td>
+<td>+35.17%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.16 亿</td>
+<td>1.75%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2025 年全年：营收 13.60 亿（+16.51%），其中芯片 6.62 亿（48.68%）、负极 6.98 亿（51.32%）——负极材料收入占比已首次超过芯片，成为第一大收入来源。</p>
+</blockquote>
+<p><strong>核心产品</strong>：<br />
+- <strong>芯片</strong>：通用 MCU（N32 系列 26 大系列百余款，Cortex-M0/M4F/M7，含车规 N32A、高性能 N32H7 双核异构）、安全芯片（N32S032 通过 EAL5+ 与 AEC-Q100 认证，安全芯片年出货超 1 亿颗，唯一通过银联认证的国产安全芯片）、BMS 电池管理芯片、无线射频（N32WB BLE）。2026 年推出面向 800G/1.6T 高速光模块的 N32H493 专属主控 MCU。<br />
+- <strong>负极材料</strong>：人造石墨与复合石墨负极（覆盖动力、储能、快充），并提供石墨化代加工服务。</p>
+<p><strong>主要客户/下游</strong>：<br />
+- 芯片：AI 服务器电源管理大厂（电源监控芯片已稳定量产，单价 1.5–2 美元）、上汽集团等车厂（车规芯片）、物联网/工控/家电方案商。<br />
+- 负极：国轩高科（第一大客户，2024 年签 3 万吨采购合同）、天津力神（2.64 万吨保供协议）、宁德时代、星恒电源。<strong>前五大客户收入占比约 47.8%，负极业务对单一第一大客户依赖度高达 65.5%</strong>。</p>
+<p><strong>境内外收入占比（2025）</strong>：境内 13.04 亿（95.87%）；境外约 0.59 亿（4.13%），境外占比极低，芯片加速出海（美、新加坡、日有机构）。</p>
+<p><strong>股东背景</strong>：股权极度分散，<strong>无控股股东、无实际控制人</strong>（第一大股东董事长孙迎彤仅持股 2.65%，部分质押）。2000 年源于国家"909"集成电路专项工程，2010 年创业板上市。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，MCU 国产替代 + 车规芯片专项</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加快补齐汽车芯片、基础软件短板</td>
+<td>工信部、发改委等三部门联合会议（2026-03）</td>
+<td>国家级</td>
+<td>已推进，车载 MCU 对外依存度超 90% 为"卡脖子"</td>
+</tr>
+<tr>
+<td>车规级 MCU 技术路线图（2028 车规国产化率 25% 目标）</td>
+<td>工信部（2025 年底）</td>
+<td>国家级专项</td>
+<td>已发布</td>
+</tr>
+<tr>
+<td>深圳支持 14nm 及以下车规 MCU 国产替代</td>
+<td>深圳市政府</td>
+<td>地方级</td>
+<td>已落地</td>
+</tr>
+<tr>
+<td>大基金三期首批 800 亿重点扶持特色工艺产线</td>
+<td>国家集成电路产业投资基金</td>
+<td>国家级资金</td>
+<td>已投放</td>
+</tr>
+<tr>
+<td>港股 IPO 获证监会备案（境外发行不超 1.46 亿股 H 股）</td>
+<td>中国证监会（2025-12-01）</td>
+<td>融资支持</td>
+<td>已完成（2026-03-23 挂牌）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化指标</strong>：2026 年全球 MCU 市场规模约 <strong>383 亿美元（+10.3%）</strong>；中国 MCU 市场 <strong>547.5 亿元（+12.3%）</strong>；车载 MCU 对外依存度超 90%；国产厂商全球份额从 3.3% 升至 4.5%；车规级 MCU 国产化率从不足 5% 提升至 18%。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球 MCU 市场</td>
+<td>2026 年 383 亿美元 → 2031 年 627 亿美元（CAGR 10.3%）</td>
+</tr>
+<tr>
+<td>中国 MCU 市场</td>
+<td>2026 年 547.5 亿元（+12.3%）</td>
+</tr>
+<tr>
+<td>MCU 涨价潮</td>
+<td>国产厂商 2026 年 1 月起先涨 15%–50%；意法半导体年内三轮涨价、英飞凌/TI 跟进；国民技术 4 月 7 日起部分产品提价 15%–20%</td>
+</tr>
+<tr>
+<td>8 英寸成熟制程产能</td>
+<td>连续两年收缩，2026 年同比 <strong>−2.4%</strong>；40–90nm 车载 MCU 代工订单排至 2027 年末，主流晶圆厂产能利用率超 108%</td>
+</tr>
+<tr>
+<td>光模块 MCU</td>
+<td>800G/1.6T 出货爆发，1.6T 光模块 2026 年出货超 2000 万支；光通信 MCU 价格年内累计涨约 40%</td>
+</tr>
+<tr>
+<td>负极材料（人造石墨）</td>
+<td>供需偏紧，储能级人造石墨 6 月报价较 2025 年底 <strong>+10%</strong>；石墨化代工价涨至 0.9–1.0 万元/吨（近三年高位）</td>
+</tr>
+<tr>
+<td>负极石墨化产能</td>
+<td>中国人造石墨成品产能 450–500 万吨 vs 配套石墨化产能 420–460 万吨，<strong>石墨化产能吃紧</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：营收 9.06 亿（+43.39%），量在增（芯片销量 +30%、负极销量 +39%、石墨化代加工数量 <strong>+154%</strong>）；价在升（芯片毛利率 32.16% 同比 +1.01pct；负极毛利率 9.29% 基本持平）。Q2 单季营收 5.11 亿（+55.95%）、归母 +2016 万（+230.86%），环比大幅改善。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：芯片为 Fabless 模式，上游为晶圆代工（成熟制程 28–90nm）与封测，受 AI 虹吸效应影响成熟制程产能被挤压、代工价上行——这是 MCU 涨价的成本端推手；负极上游为低硫石油焦、高端针状焦（价格回升，形成成本支撑）。</p>
+<p><strong>下游</strong>：芯片下游 AI 电源、光模块、汽车电子、工业控制需求爆发；负极下游动力电池/储能需求增长，但负极行业整体结构性过剩、二三线厂商议价弱。</p>
+<p><strong>议价权</strong>：芯片端<strong>偏强</strong>（涨价 15–20% 落地，缺货周期 + 国产替代双驱动）；负极端<strong>弱</strong>（依赖单一客户 65.5%，毛利率仅 9.29%，被大客户"绑架"压价）。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<ul>
+<li><strong>因子 1 成本传导弹性（pass-through）</strong>：芯片代工成本上行 → 国民技术 4 月提价 15–20%，传导率 ≈ <strong>0.8–1.0（强）</strong>，因 MCU 缺货周期 + 国产替代，客户接受涨价。负极石油焦/针状焦涨价 → 传导率 ≈ <strong>0.3–0.5（弱）</strong>，因负极结构性过剩、对单一客户依赖度高，成本难全转嫁。</li>
+<li><strong>因子 2 毛利结构再平衡</strong>：芯片（毛利率 32.16%，原料敏感度低）与负极（毛利率 9.29%，对石油焦/石墨化电价敏感度高）两条线敏感度截然不同。2026H1 负极收入占比 50% 但毛利率仅 9%，利润贡献占比被芯片（48% 收入、32% 毛利）反超——<strong>估值必须分业务线测算，禁止用单一综合毛利率（20.65%）代表全结构</strong>。</li>
+<li><strong>因子 3 库存与采购节奏（timing）</strong>：2026H1 经营现金流 −2.73 亿，主因加大晶圆备货采购（囤货应对缺货周期），当期现金流承压但为涨价周期囤库存，属"低价囤货收益"逻辑；负极石墨化产能自供（内蒙古 2.5 万吨 + 湖北），对冲外协石墨化涨价。</li>
+<li><strong>因子 4 政策/市场锚点</strong>：关税/出口管制（美对华半导体管制加码，加速国产 MCU 替代，直接利好）；战略收储/能耗双控（负极石墨化属高耗能，内蒙电价优势为成本锚点）；国产替代补贴（大基金三期扶持成熟特色工艺）。<strong>验证点</strong>：MCU 涨价延续（Q3 10 月 1 日生效后三季报检验）、石墨化代工价走势、针状焦价格。<strong>证伪信号</strong>：MCU 涨价退坡致毛利率回落、负极成本传导失败致毛利率破 5% 阈值。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 服务器电源 MCU</td>
+<td>对全球顶级电源管理大厂批量供货，电源监控芯片稳定量产</td>
+<td>单价 1.5–2 美元</td>
+<td><strong>已量产</strong>；7 月两款通信类芯片送样</td>
+<td>2026 持续放量</td>
+<td>高</td>
+</tr>
+<tr>
+<td>1.6T 光模块主控 MCU（N32H493）</td>
+<td>填补国内高端光模块主控国产化缺口</td>
+<td>—</td>
+<td>已推出，多家光模块厂商导入</td>
+<td>2026–2027</td>
+<td>中</td>
+</tr>
+<tr>
+<td>车规 MCU（N32A 系列）</td>
+<td>已进上汽供应链，座舱/灯控/T-BOX/V2X</td>
+<td>—</td>
+<td>持续导入</td>
+<td>2026–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td>芯片涨价</td>
+<td>4 月 7 日起部分产品提价 15–20%</td>
+<td>—</td>
+<td><strong>已生效</strong></td>
+<td>2026H2 兑现</td>
+<td>高</td>
+</tr>
+<tr>
+<td>负极材料产能释放</td>
+<td>内蒙古呼和浩特 2.5 万吨 + 湖北随州 10 万吨一体化（一期 5 万吨 2024 投产，总产能 7.5 万吨；二期 7.5 万吨在建，进度 <strong>90.23%</strong>）</td>
+<td>总投资约 30 亿</td>
+<td><strong>投产放量在即</strong></td>
+<td>2026–2027 达产</td>
+<td>中</td>
+</tr>
+<tr>
+<td>石墨化代加工</td>
+<td>数量 +154%，代工价涨至 0.9–1.0 万元/吨</td>
+<td>—</td>
+<td>满负荷运行</td>
+<td>2026 持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>H 股上市募资</td>
+<td>2026-03-23 港股挂牌，净募资 8.33 亿人民币</td>
+<td>8.33 亿</td>
+<td>已到账，货币资金大增 236.58%</td>
+<td>已兑现（融资，非利润）</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：斯诺业绩补偿款</td>
+<td>原业绩承诺方欠补偿款 6.17 亿，已申请强制执行</td>
+<td>6.17 亿</td>
+<td><strong>回款存不确定性</strong></td>
+<td>未兑现，仅作期权</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>远期期权</strong>：湖北二期负极（7.5 万吨）</td>
+<td>达产后负极总产能约 17.5 万吨</td>
+<td>—</td>
+<td>进度 90.23%</td>
+<td>2027 后</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：① 2026H1 归母 +441 万中，公允价值变动收益贡献 <strong>+2674 万</strong>（持有金融资产浮盈），<strong>主业扣非仍亏 −2356 万</strong>——扭亏依赖非经常损益，主业盈利尚未实质修复。② 负极业务毛利率仅 9.29%，产能释放能否转化为利润，取决于石墨化自供率提升与石油焦成本控制。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层 1 现有业务（市场容量 × 份额变量）</strong>：</li>
+<li>供给侧份额：MCU 国产厂商全球份额 3.3%→4.5%，国民技术国内 MCU 排名第五，安全 MCU 差异化；负极二三线，全国产能过剩但石墨化吃紧。</li>
+<li>客户份额：AI 电源 MCU 已进顶级电源厂（认证周期=粘性）；负极绑定国轩/力神（但对单一大客户 65.5% 依赖为双刃剑）。</li>
+<li>技术代际差：1.6T 光模块 MCU 领先切入高端增量（技术差异化）；通用 MCU 处主流代（Cortex-M）。</li>
+<li>成本曲线位置：石墨化自供（内蒙电价优势）左移，负极行业降价时能保毛利。</li>
+<li>份额二阶导数：MCU 在加速渗透（S 曲线早期），负极在底部企稳（产能出清中）。<br />
+  → 份额假设：芯片中性 2029 年营收 16 亿（保守守住 12 亿 / 中性 16 亿 / 乐观 20 亿），验证点为下季度出货与涨价公告。</li>
+<li><strong>层 2 主业迁移空间（芯片 → 边缘 AI/机器人/数字能源）</strong>：能力可迁移（MCU 技术同源），新 TAM 弹性大（AI 边缘 + 机器人），但 12nm AI 算力芯片仍在流片阶段、尚未量产，<strong>未过验证点，仅作中期期权，不计入中性</strong>。</li>
+<li><strong>层 3 证伪信号</strong>：MCU 涨价退坡、芯片毛利率跌破 28%、负极毛利率破 5%、光模块 MCU 无客户定点公告、湖北二期投产延期。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：国民技术当期扣非亏损，采用<strong>正常化净利润法</strong>（估稳态营收 → 保守正常化净利率 → × 远期合理 PE → 目标市值 → 目标价）。分芯片 / 负极两条线测算，用产能与订单校验。<strong>严禁用"营收 CAGR 43%"外推。</strong></p>
+</blockquote>
+<p><strong>总股本：约 6.78 亿股</strong>（含 2026 年 3 月发行的 9500 万股 H 股，原 A 股约 5.83 亿股）</p>
+<h3>分业务测算（2029 年）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据（自下而上）</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>集成电路（MCU+安全芯片）</td>
+<td>2026E 约 9.5 亿（H1 4.35 亿 + 涨价 15–20% 生效）；MCU 国产替代 + AI 电源 + 1.6T 光模块 + 车规放量，中性营收 16 亿</td>
+<td>16 亿</td>
+<td>12%（毛利率 32%，规模摊薄费用）</td>
+<td><strong>1.92 亿</strong></td>
+</tr>
+<tr>
+<td>负极材料（含石墨化）</td>
+<td>2026E 约 8 亿；湖北 10 万吨一体化达产后总产能 17.5 万吨，负极涨价 + 石墨化自供，中性营收 14 亿</td>
+<td>14 亿</td>
+<td>5%（毛利率 10–12%，行业正常）</td>
+<td><strong>0.70 亿</strong></td>
+</tr>
+<tr>
+<td>期间费用抵减</td>
+<td>研发 2.25 亿 + 管理 1.02 亿 + 销售 0.69 亿 + 财务（有息负债 18.6 亿×4%）≈ 5.8 亿，占 30 亿营收 19%</td>
+<td>—</td>
+<td>—</td>
+<td>−5.8 亿（费用）</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>约 30 亿</strong></td>
+<td>正常化净利率 4%</td>
+<td><strong>约 1.2 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>校验：30 亿营收 × 正常化净利率 4%（保守）= 1.2 亿正常化净利。公司历史最好年份也未稳定盈利，故取 4% 保守净利率，对应市值见下。</p>
+</blockquote>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>2026E：营收约 19–20 亿（H1 9.06 亿 + H2 涨价放量），扣非全年仍约 −0.3 至 −0.5 亿，归母靠非经常损益维持微利</li>
+<li><strong>正常化净利取 0.6 亿</strong>（芯片业务盈利约 0.8 亿，被负极微亏 + 费用超支侵蚀）</li>
+<li>合理 PE 40x（MCU 涨价高景气溢价）→ 市值 24 亿 → <strong>股价约 3.5 元</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>MCU 涨价退坡、负极过剩加剧、湖北二期延期、补偿款无回款</td>
+<td>0.30 亿</td>
+<td>30x</td>
+<td>9 亿</td>
+<td><strong>1.33 元</strong></td>
+<td><strong>−93.3%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>MCU 国产替代稳步、负极涨价+产能释放，正常化净利率 4%</td>
+<td><strong>1.20 亿</strong></td>
+<td>40x</td>
+<td>48 亿</td>
+<td><strong>7.08 元</strong></td>
+<td><strong>−64.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>MCU+负极双景气、光模块 MCU 放量、补偿款 6.17 亿回款</td>
+<td>2.80 亿</td>
+<td>45x</td>
+<td>126 亿</td>
+<td><strong>18.58 元</strong></td>
+<td><strong>−6.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>正常化 0.6 亿（扣非仍亏）</td>
+<td>正常化 1.2 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>40x</td>
+<td>40x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>24 亿</td>
+<td>48 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>约 3.5 元</strong></td>
+<td><strong>7.08 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 19.88 元对应市值 134.8 亿，隐含 2029E 净利 1.2 亿的 <strong>PE 高达 112 倍</strong>，即使按乐观 2.8 亿也达 48 倍——<strong>现价严重透支 MCU 涨价 + AI 概念预期</strong>。分部估值（芯片 16 亿 × PS 6 倍 = 96 亿 + 负极 14 亿 × PS 1.5 倍 = 21 亿）合计约 117 亿，对应股价 17.3 元，仍低于现价 19.88 元。PB 7.68 倍（半导体板块高位）亦印证估值已脱离基本面。</p>
+<h4>第四步进阶：重资产/周期股估值校正</h4>
+<ul>
+<li><strong>校正 1 资产质量折扣（破净说明）</strong>：PB 7.68 倍非破净，而是<strong>高溢价</strong>——每股净资产仅 2.59 元，现价 19.88 元对应 PB 7.68 倍，估值泡沫风险高。净资产质量存瑕疵：斯诺 6.17 亿补偿款挂账、前海旗隆 5 亿暴雷未追回、历史商誉减值超 10 亿，<strong>净资产含历史烂账虚高风险</strong>。</li>
+<li><strong>校正 2 周期位置校正</strong>：MCU 处于<strong>涨价上行周期</strong>（缺货 + 国产替代），负极处于<strong>底部企稳</strong>（人造石墨供需转紧、石墨化吃紧）。中性净利已用正常化（未用单年好年景/拐点年化），且取保守 4% 净利率。</li>
+<li><strong>校正 3 杠杆下行情景</strong>：资产负债率 73.82%（高），有息负债 18.6 亿。<strong>利率上行/需求下行负面情景</strong>：若 MCU 涨价退坡叠加负极价格回落，经营杠杆 + 财务杠杆双高 → 净利转负、空间转负（悲观情景已体现 −93%）。<strong>该负面情景使空间大幅转负，不得标"重点关注"，至多"纳入观察/暂不介入"</strong>。</li>
+<li><strong>期权纪律</strong>：斯诺 6.17 亿补偿款、边缘 AI 算力芯片（12nm 流片阶段）、机器人 MCU 等未过验证点期权，<strong>不计入中性净利</strong>，仅放乐观情景。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>高估，泡沫区间</strong>。现价 19.88 元对应 PB 7.68 倍、2029E 正常化净利 PE 112 倍，已严重透支 MCU 涨价与 AI 概念预期。2026 年 7 月炒作至 33.51 元（市值 227 亿）后回落 40%，但仍处高位。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 7.08 元 → 空间 <strong>−64.4%</strong>，<strong>远期空间为负</strong><br />
+- 悲观 1.33 元 → 下行 <strong>−93.3%</strong><br />
+- 乐观 18.58 元 → <strong>−6.5%</strong>，即使乐观情景也无正空间<br />
+- 无安全边际：PB 7.68 倍高位、扣非亏损、高负债 73.82%、历史烂账缠身</p>
+<p><strong>介入条件</strong>：仅当股价回落至 <strong>8 元以下</strong>（对应 2029E 正常化净利 PE 45 倍以内）才具观察价值；需同时满足：① 扣非扭亏且 MCU 涨价延续（三季报检验）；② 负极材料毛利率升至 12% 以上；③ 斯诺补偿款有回款实质进展。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>估值泡沫破裂（首要）</strong>：PB 7.68 倍 + 扣非亏损 + AI 概念，一旦 MCU 涨价退坡或市场风格切换，杀估值空间巨大（历史上已从 33.51 元回落 40%）。<br />
+2. <strong>主业扭亏不及预期</strong>：扭亏依赖公允价值变动 2674 万，扣非仍亏，若 MCU 涨价被负极成本端吃掉，三季报即证伪。<br />
+3. <strong>财务杠杆反噬</strong>：资产负债率 73.82%、有息负债 18.6 亿，经营+财务杠杆双高，下行时净利几倍跳负。<br />
+4. <strong>历史烂账与治理风险</strong>：无实控人、高管 IPO 前减持、斯诺 6.17 亿补偿款回款存疑、前海旗隆 5 亿暴雷。</p>
+<h4>第五步进阶：上行想象力情景（仅进乐观栏，不进中性锚）</h4>
+<ul>
+<li><strong>类型 A 行业调整剩者红利</strong>：负极行业出清后，石墨化自供（内蒙电价优势）使公司成本曲线左移，若二三线产能退出，国民技术负极份额与盈利中枢跳升。<strong>验证点</strong>：石墨化代工价持续上涨 + 负极产能利用率回升；<strong>证伪</strong>：负极毛利率长期低于 8%。</li>
+<li><strong>类型 B 政策反转期权</strong>：美对华半导体管制加码 → 国产 MCU 替代加速（直接利好，非反转型）。车规 MCU 国产化率 25% 目标（2028）为确定性政策红利。</li>
+<li><strong>类型 C 市场错杀修复</strong>：当前非错杀，而是高估。若系统性恐慌致股价跌至 8 元以下，或构成错杀修复机会。</li>
+<li><strong>类型 D 技术突破期权</strong>：12nm AI 算力芯片、边缘 AI/机器人 MCU 若流片成功 + 客户定点 + 量产成本优于海外，可打开全新曲线。<strong>硬验证点</strong>：中试良率达标 + 客户定点 + 量产——三者缺一，仅作机会情景，不计入中性。</li>
+</ul>
+<blockquote>
+<p><strong>上调"重点关注"条件</strong>：需同时出现——① 股价回落至 8 元以下；② 扣非净利连续两季为正；③ MCU 涨价周期确认延续且负极毛利率升至 12% 以上。当前无一满足。</p>
+</blockquote>
+<p><strong>结论：暂不介入</strong>（远期空间 −64.4%，为负，按规则负空间应判"暂不介入"）</p>
+<blockquote>
+<p>理由：国民技术是"TTM 误标"而非真实持续亏损（2026H1 归母已 +441 万扭亏），但扣非仍亏 −2356 万、主业盈利未实质修复；现价 PB 7.68 倍已严重透支 MCU 涨价 + AI 概念，正常化净利润法测算远期目标价 7.08 元，远期空间 −64.4%。核心跟踪点：三季报扣非能否扭亏 + MCU 涨价延续性 + 负极毛利率。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>19.88 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>3.5 元</strong>（区间 3.0–5.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−82.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>7.08 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−64.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.33 元（−93.3%）～ 乐观 18.58 元（−6.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>MCU 涨价+AI 电源/光模块放量+负极产能释放，但扣非仍亏、PB7.68 倍严重透支，正常化净利法下远期空间为负</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（回落至 8 元以下且扣非扭亏后再观察）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-22 披露）、2025 年年报、中证智能财讯、界面新闻《硬科技头条》、壹壹捌芯城、三个皮匠 MCU 行业研究、经济观察报、公司港股招股书、WSTS/GGII/SMM 行业数据。</em><br />
+<em>亏损核实：队列"亏损"列为 TTM 口径误标，真实 2026H1 归母净利 +441.49 万（扭亏），但扣非 −2356.87 万，主业未实质盈利，故仍以正常化净利润法为估值主锚，并回答三问：① 为什么亏——负极业务低毛利（9.29%）+ 研发/管理/财务费用高企拖累整体，历史斯诺并购商誉减值超 10 亿；② 靠什么扭亏——MCU 涨价（15–20%）+ AI 电源/光模块/车规 MCU 放量 + 负极涨价与产能释放，触发时点 2026–2027 年；③ 亏得起吗——H 股募资 8.33 亿到账、货币资金大增，短期偿债压力不大，但负债率 73.82% 与有息负债 18.6 亿仍构成杠杆风险。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

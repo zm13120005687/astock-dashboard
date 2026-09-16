@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>向日葵（300111）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>向日葵（300111）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-16 ｜ 现价 <strong>2.93 元</strong> ｜ 总市值 <strong>约 37.7 亿</strong> ｜ PE(TTM) <strong>-211.64x（负）</strong> ｜ PB <strong>5.67x</strong> ｜ 总股本 <strong>12.87 亿股</strong><br />
+行业：医药制造（原料药 + 制剂）｜ 板块：创业板<br />
+<strong>亏损判定</strong>：2026H1 归母净利 <strong>-1239.65 万元</strong>，2025 全年 <strong>-438.48 万元</strong>，为<strong>真实亏损股</strong>（非 TTM 误标）。本报告采用正常化净利润法估值并回答三问。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：前身为光伏企业"向日葵光能"，2019 年收购浙江贝得药业转型医药制造，现为一家聚焦抗感染类、心血管类、消化系统类药物的"原料药-制剂"一体化小药企，年营收仅 2.7 亿元级别。</p>
+<p><strong>各业务板块营收占比（2026 半年报，营收 1.086 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原料类产品</td>
+<td>7828.69 万</td>
+<td>72.11%</td>
+<td>克拉霉素原料药为核心，销往国内外制剂厂与贸易商</td>
+</tr>
+<tr>
+<td>制剂药产品</td>
+<td>2829.23 万</td>
+<td>26.06%</td>
+<td>克拉霉素片、辛伐他汀片、阿奇霉素分散片等</td>
+</tr>
+<tr>
+<td>其他（非主营）</td>
+<td>199.21 万</td>
+<td>1.83%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：克拉霉素原料药（拳头产品，已在美国、欧盟、日本注册，主要销往印度、韩国、土耳其、巴基斯坦等）；制剂端克拉霉素片、辛伐他汀片（均通过一致性评价、入国家医保目录）、阿奇霉素分散片、罗红霉素胶囊、拉西地平分散片、注射用奥美拉唑钠等。拥有药品注册批件 18 个，9 种入医保、4 种入基药。</p>
+<p><strong>主要客户/下游</strong>：国内外克拉霉素制剂生产企业 + 外贸贸易商；集采体系内医院渠道。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：国内 6989.57 万（64.38%）；国外 3867.56 万（35.62%）。</p>
+<p><strong>股东背景/实控人</strong>：实际控制人 <strong>吴建龙</strong>（持股约 28.79%），控制权集中但公司治理风险高。</p>
+<blockquote>
+<p>⚠️ <strong>重大治理风险（第一步即须提示）</strong>：公司 2025 年 9 月筹划跨界收购漳州兮璞材料（半导体材料）100% 股权并停牌，2026 年 1 月因重组预案涉嫌<strong>误导性陈述</strong>被浙江证监局立案调查、重组终止；2026 年 4 月被<strong>警告并罚款 300 万元</strong>。公司历史上多次转型失败（2023 年拟重返光伏 TOPCon 终止、2024 年金属基陶瓷项目因技术不达标终止）。</p>
+</blockquote>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国家组织药品集中带量采购协议期满品种接续采购</td>
+<td>国家医保局</td>
+<td>国家级</td>
+<td>克拉霉素片、辛伐他汀片 2026 年 2 月拟中选，<strong>3 月底陆续落地执行</strong></td>
+</tr>
+<tr>
+<td>药品集采常态化制度化</td>
+<td>国家医保局</td>
+<td>行业性</td>
+<td>仿制药持续降价放量</td>
+</tr>
+<tr>
+<td>原料药行业产能过剩与外贸环境</td>
+<td>市场性</td>
+<td>—</td>
+<td>出口端承压</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：公司集采续约的两个品种（克拉霉素片、辛伐他汀片）2026 年 3 月底起落地执行；罗沙司他胶囊仿制药（20mg/50mg）2026 年 6 月取得药品注册证书，且为 2025 年国家医保目录品种，可直接对接医保市场。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司营收规模</td>
+<td>2024 年 3.30 亿 → 2025 年 2.72 亿（-17.81%）→ 2026H1 1.086 亿（-24.82%）</td>
+</tr>
+<tr>
+<td>公司归母净利</td>
+<td>2023 年 +2174.79 万 → 2024 年 +782.73 万 → 2025 年 <strong>-438.48 万</strong> → 2026H1 <strong>-1239.65 万</strong>（亏损逐季扩大）</td>
+</tr>
+<tr>
+<td>原料类产品收入</td>
+<td>2025 年 1.90 亿 → 2026H1 7828.69 万（-26.19%）</td>
+</tr>
+<tr>
+<td>制剂药产品收入</td>
+<td>2025 年 7969.88 万 → 2026H1 2829.23 万（-25.71%）</td>
+</tr>
+<tr>
+<td>外贸渠道收入</td>
+<td>2025 年占比 48.88% → 2026H1 该渠道收入 <strong>-39.49%</strong>（最大拖累）</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>克拉霉素原料药产能过剩、仿制药同质化严重，公司为典型小市值、无差异化壁垒的药企</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势</strong>：2026H1 量价齐跌——原料药与制剂双线收缩，外贸通道大幅萎缩（通过外贸公司销售收入 -39.49%），直接销售相对平稳（-2.89%）。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：化工基础原料（起始物料、中间体、溶媒），原料药企业对上游议价能力弱，成本传导率低。</p>
+<p><strong>下游</strong>：国内外制剂生产企业、集采医院渠道、外贸贸易商。下游买方集中且强势，公司议价权<strong>弱</strong>。</p>
+<p><strong>议价权判断</strong>：<strong>弱</strong>。原料药端面临行业产能过剩 + 外贸环境冲击；制剂端集采降价 + 产品同质化，公司既无成本优势也无差异化壁垒，2025 年以来毛利率约 20% 上下且持续承压。</p>
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性（pass-through）</strong>：传导率≈<strong>0.2–0.3（极弱）</strong>。原料药为大宗同质化产品，下游制剂厂与贸易商议价强势，公司无定价权；2026H1 营收 -24.82% 但毛利率仅约 20%（同比微降），说明成本涨跌难转嫁、价格战由自身承担。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：分业务线看——原料类（占 72%）毛利率低且受产能过剩压制，是<strong>失血主力</strong>；制剂类（占 26%）毛利率略高但受集采降价侵蚀。二者均无高毛利业务可对冲，利润贡献结构持续恶化，无"再平衡"能力。</li>
+<li><strong>因子3 库存与采购节奏（timing）</strong>：无低价囤货收益或长协套保对冲；外贸渠道（代理/投标）收入大幅收缩（-34.78% 至 -39.49%），应收账款周转率仅 1.44 次，回款放缓，当期毛利率未含库存收益虚高。</li>
+<li><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong>：</li>
+<li>市场层：克拉霉素原料药全球产能过剩、外贸关税/贸易摩擦 → 出口量与价格双承压（验证点：外贸渠道收入是否继续 -30% 以上）。</li>
+<li>政策层：集采续约（降价放量，验证点：集采品种执行后销量是否显著放量、金额是否覆盖降价）；出口退税政策变化。</li>
+<li><strong>证伪信号</strong>：若集采续约品种放量后收入仍不回升、毛利率跌破 15%，则主业扭亏证伪。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>确定性等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>集采续约</td>
+<td>克拉霉素片、辛伐他汀片中选接续采购</td>
+<td>未披露具体量</td>
+<td><strong>2026 年 3 月底落地执行</strong></td>
+<td>中（放量但降价，利润贡献薄）</td>
+</tr>
+<tr>
+<td>罗沙司他胶囊仿制药</td>
+<td>20mg/50mg 两个规格获批</td>
+<td>未披露</td>
+<td><strong>2026 年 6 月获注册证</strong>，为 2025 医保目录品种</td>
+<td>中（仿制药竞争激烈）</td>
+</tr>
+<tr>
+<td>在研项目</td>
+<td>美沙拉秦肠溶片仿制药等 7 项</td>
+<td>未披露</td>
+<td>注册/临床早期</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>跨界半导体重组（已终止）</strong></td>
+<td>收购漳州兮璞材料 100% 股权</td>
+<td>已终止</td>
+<td><strong>2026 年 1 月终止 + 立案</strong></td>
+<td>无（不可计入）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：上述增量均为<strong>小额仿制药/集采续约</strong>，规模不足以对冲原料药主业下滑。测算：集采续约 + 罗沙司他合计乐观新增收入不足 3000 万元、新增净利不足 200 万元，而 2025→2026H1 主业已下滑约 3600 万元收入，<strong>增量无法填补存量缺口</strong>。公司无在建产能、无大额订单、无并购并表（重组已终止），自下而上找不到扭亏到支撑 38 亿市值的增量来源。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong>：克拉霉素原料药全球市场稳定但供过于求，公司在<strong>成本曲线右端</strong>（小产能、无规模优势），份额呈<strong>二阶导数转负</strong>（外贸渠道份额连续流失），供给侧无扩张、需求侧无绑定大客户。三档均向下——保守/中性/乐观份额均趋降。</li>
+<li><strong>层2 扩展业务：主业迁移空间</strong>：历史上三次迁移全部失败（光伏 TOPCon 终止、金属基陶瓷终止、半导体重组终止+被罚）。能力可迁移性、新 TAM、切入卡位、认证门槛四项<strong>均无通过验证点的证据</strong>，迁移空间为零（非期权）。</li>
+<li><strong>层3 风险折扣：证伪信号</strong>：主业营收连续两年下滑、亏损逐季扩大、外贸渠道坍塌——均已命中证伪信号，增量下调至接近零。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：本股为真实亏损股，采用<strong>正常化净利润法</strong>。先估稳态营收，再取保守正常化净利率，乘远期合理 PE 得目标市值/股价。</p>
+</blockquote>
+<p><strong>总股本：12.87 亿股</strong>（注册资本 128,721.07 万元）</p>
+<h3>分业务测算（2029 年，稳态）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>正常化净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原料类产品</td>
+<td>产能过剩 + 外贸收缩，集采续约对原料药无直接拉动，稳态约 2.0–2.2 亿</td>
+<td>2.1 亿</td>
+<td>3–5%</td>
+<td>630–1050 万</td>
+</tr>
+<tr>
+<td>制剂药产品</td>
+<td>集采续约放量 + 罗沙司他，稳态约 0.9–1.1 亿</td>
+<td>1.0 亿</td>
+<td>5–8%</td>
+<td>500–800 万</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>3.1 亿</strong></td>
+<td><strong>约 4.7%</strong></td>
+<td><strong>约 1450 万</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>取保守正常化净利率：公司历史最好 2023 年净利 2174 万（净利率 6.4%）、2024 年 782 万（2.4%），行业小仿制药企正常净利率 8–10%。取 <strong>4.7%</strong>（低于历史最好与行业，反映产能过剩与集采压力）。</p>
+</blockquote>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>2026H1 已亏 -1239.65 万，下半年集采续约落地或小幅减亏，<strong>2026E 全年仍亏损约 -1500 万至 -2000 万</strong>（无正净利可锚）。</li>
+</ul>
+<h3>三情景（2029E·正常化）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>主业继续萎缩，集采降价放量不足以对冲，净利率 3%</td>
+<td>900 万</td>
+<td>18x</td>
+<td>1.62 亿</td>
+<td><strong>0.13 元</strong></td>
+<td><strong>−95.6%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>集采续约 + 罗沙司他稳定放量，主业止跌，净利率 4.7%</td>
+<td><strong>1450 万</strong></td>
+<td>22x</td>
+<td>3.19 亿</td>
+<td><strong>0.25 元</strong></td>
+<td><strong>−91.5%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>罗沙司他放量超预期 + 原料药出口回暖，净利率 6%</td>
+<td>1900 万</td>
+<td>25x</td>
+<td>4.75 亿</td>
+<td><strong>0.37 元</strong></td>
+<td><strong>−87.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026 年底）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>亏损 −0.18 亿</td>
+<td>正常化 +0.145 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损期无意义）</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>—</td>
+<td>3.19 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td>—</td>
+<td><strong>0.25 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 2.93 元对应总市值 37.7 亿、PB 5.67x。即便按最乐观情景（净利 1900 万、25x PE）也仅值 4.75 亿市值、0.37 元/股。<strong>现价是正常化价值的 8–11 倍</strong>，市场计价的是"壳价值 + 重组预期"而非基本面——但重组已终止且公司被证监会处罚，壳价值逻辑坍塌。</p>
+<h3>⚠️ 准亏损从严：正常化净利润法 + 三问</h3>
+<ul>
+<li><strong>为什么亏</strong>：主业持续萎缩（原料药产能过剩 + 外贸渠道坍塌 -39.49%）+ 集采降价 + 产品同质化竞争，原料药与制剂双线失血，叠加一次性资产减值；2026H1 亏损同比扩大 1168%。</li>
+<li><strong>靠什么扭亏</strong>：仅靠集采续约（克拉霉素片/辛伐他汀片）与罗沙司他胶囊放量，属<strong>小额仿制药增量</strong>，按自下而上测算乐观新增净利不足 200 万元，远无法扭亏到正利润并支撑现价；跨界半导体重组是唯一有想象空间的路径但<strong>已终止且被罚</strong>。<strong>当前无可靠扭亏触发点</strong>。</li>
+<li><strong>亏得起吗</strong>：账上现金与净资产尚可（资产负债率仅 16.77%、净资产 6.70 亿、无有息负债），短期无债务爆雷风险；但 2026H1 经营现金流 <strong>-1751 万元</strong>，主业仍在失血，若营收继续下滑、无外部输血（重组已无），净资产将被逐步消耗。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>严重高估</strong>。现价 2.93 元对应 PB 5.67x、总市值 37.7 亿，而正常化净利润法测算合理市值仅 3–5 亿、合理股价 0.25–0.37 元，高估 8–11 倍。</p>
+<p><strong>安全边际</strong>：<strong>无，且为深度负值</strong>。中性远期 0.25 元对应空间 <strong>−91.5%</strong>，悲观 −95.6%，即便乐观也 −87.4%。</p>
+<p><strong>介入条件</strong>：<strong>无合理介入条件</strong>。该股为壳股/重组预期股，重组已终止 + 被证监会立案处罚，不满足任何价值投资介入标准。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>壳价值坍塌（首要）</strong>：重组终止 + 立案 + 罚款后，市场唯一的"想象空间"消失，估值中枢向净资产/正常化盈利回归，股价存在大幅下跌风险。<br />
+2. <strong>主业持续失血</strong>：原料药产能过剩 + 外贸渠道收缩 + 集采降价，营收连续下滑，亏损扩大，经营现金流转负。<br />
+3. <strong>治理与合规风险</strong>：实控人多次跨界失败，公司被立案处罚，存在再融资、退市警示等后续风险。</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：克拉霉素原料药若出现行业出清、价格回升（验证点：原料药价格指数反弹、行业产能退出公告），公司作为注册齐全的存量厂商或受益——但公司产能小、成本无优势，剩者红利空间有限。<strong>未兑现，不进中性</strong>。</li>
+<li><strong>类型B 政策反转期权</strong>：集采若转为"保供+合理利润"导向、或原料药出口获政策扶持（验证点：政策发文）。目前无反转信号。</li>
+<li><strong>类型C 市场错杀修复</strong>：不存在——现价是"虚高"而非"错杀"，PB 5.67x 显示市场仍在给重组溢价。</li>
+<li><strong>类型D 技术突破/技术代际跃迁期权</strong>：跨界半导体（兮璞材料）本属此类，但<strong>重组已终止 + 被处罚</strong>，期权清零。</li>
+</ul>
+<blockquote>
+<p><strong>纪律</strong>：以上情景均未通过验证点，不计入中性锚。<strong>即使乐观情景（+0.37 元）也远低于现价</strong>，故无论何种条件出现，本股都不构成价值投资标的；除非公司发生"优质资产注入 + 主业扭亏 + 监管解除"三重逆转，否则不进入研究池。</p>
+</blockquote>
+<p><strong>结论：坚决回避</strong></p>
+<blockquote>
+<p>判定依据：本股命中 RULES.md 排除标准——①主业持续萎缩（营收连续两年下滑）+ 亏损扩大（2026H1 -1239.65 万）；②无明确扭亏路径（增量仅小额仿制药，跨界重组已终止）；③总市值 37.7 亿、PB 5.67x 严重脱离净资产 6.70 亿与正常化盈利 0.145 亿，属"纯概念炒作/壳股"特征；④被证监会立案处罚。正常化净利润法测算合理股价 0.25 元，远期空间 −91.5%，为深度负空间。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>2.93 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>0.30 元</strong>（区间 0.25–0.37）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−89.8%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>0.25 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−91.5%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 0.13 元（−95.6%）～ 乐观 0.37 元（−87.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>医药主业萎缩亏损、跨界重组终止被罚，市值37.7亿脱离净资产6.7亿，壳股深度高估</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>坚决回避</strong>（无合理介入条件）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年年报、2026 年半年度报告（2026-08-27 披露）、公司公告、浙江证监局行政处罚决定书、证券之星中报解读、腾讯行情。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

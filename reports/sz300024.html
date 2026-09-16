@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>机器人（300024）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>机器人（300024）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-15 ｜ 现价 <strong>13.04 元</strong>（2026-09-14 收盘，腾讯行情实测校验）<br />
+总市值 <strong>204.16 亿</strong> ｜ PE(TTM) <strong>−41.53x</strong> ｜ PB <strong>5.04x</strong> ｜ 总股本 <strong>15.6562 亿股</strong><br />
+行业：机械行业—工业机器人｜ 板块：创业板（2009-10-30 首批上市）｜ 全称：<strong>沈阳新松机器人自动化股份有限公司</strong></p>
+<h2>⚠️ 口径核实（按规则必须逐只查真实财报）</h2>
+<p><strong>本股是"真亏损"，不是 TTM 误标。</strong><br />
+- 2026H1（2026-08-23 披露）营收 <strong>14.51 亿（−12.57%）</strong>，归母 <strong>−1.89 亿</strong>（上年同期 −0.95 亿，<strong>亏损扩大 98.30%</strong>），扣非 <strong>−2.12 亿</strong><br />
+- <strong>扣非归母连续 5 年为负</strong>：2022 −6.13 亿、2023 −1.92 亿、2024 −2.82 亿、2025 −4.57 亿、2026H1 −1.12→−2.12 亿<br />
+- 因此本报告按<strong>正常化净利润法</strong>估值，并完整回答"为什么亏 / 靠什么扭亏及触发时点 / 亏得起吗"三问。</p>
+<h2>⚠️ 估值位置警示</h2>
+<p>市值 <strong>204.16 亿</strong> 对应 2025 年营收 41.22 亿 → <strong>PS 4.95x</strong>；对应归母净资产 40.5 亿 → <strong>PB 5.04x</strong>。<br />
+在七家机器人上市公司横向对比中（2026H1），新松是<strong>唯一营收负增长、毛利率垫底（16.53%，行业均值约 37.5%）、亏损最重（−1.89 亿）</strong>的一家。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：中国第一家从事机器人产业化和实现机器人出口的企业（脱胎于中科院沈阳自动化所）——业务横跨工业机器人本体、自动化装配与检测生产线、物流与仓储自动化、交通自动化系统、半导体装备五大板块，并正在投入具身智能（人形机器人）前沿研发。</p>
+<p><strong>各业务板块营收（2026H1，营收 14.51 亿，同比 −12.57%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>同比</th>
+<th>毛利率</th>
+<th>趋势判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工业机器人</td>
+<td><strong>6.05 亿</strong></td>
+<td><strong>+124.36%</strong></td>
+<td>14.08%</td>
+<td><strong>核心支柱，高速增长</strong>（汽车焊装国产替代）</td>
+</tr>
+<tr>
+<td>自动化装配与检测生产线及系统集成</td>
+<td>3.55 亿</td>
+<td><strong>−52.00%</strong></td>
+<td>10.54%</td>
+<td><strong>主动收缩，低毛利</strong></td>
+</tr>
+<tr>
+<td>物流与仓储自动化成套装备</td>
+<td>1.27 亿</td>
+<td><strong>−61.05%</strong></td>
+<td>9.03%</td>
+<td><strong>主动收缩，低毛利</strong></td>
+</tr>
+<tr>
+<td>交通自动化系统</td>
+<td>0.90 亿</td>
+<td><strong>+77.05%</strong></td>
+<td><strong>29.81%</strong></td>
+<td>高毛利，快速放量</td>
+</tr>
+<tr>
+<td><strong>半导体装备</strong></td>
+<td>2.70 亿</td>
+<td>+0.20%</td>
+<td><strong>27.86%</strong></td>
+<td><strong>全板块最高毛利率</strong>，稳定</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>结构性解读</strong>：2026H1 营收 −12.57% <strong>不是全面萎缩，而是"主动砍掉低毛利业务"</strong>——自动化装配线 −52%、物流仓储 −61%，两者合计减少约 5.8 亿收入；而工业机器人 +124%（增加约 3.4 亿）、交通自动化 +77%（增加约 0.4 亿）。<strong>"减收增质"是理解本股的第一把钥匙</strong>：毛利率因此同比提升 <strong>1.91pct 至 16.53%</strong>。</p>
+</blockquote>
+<p><strong>核心产品/服务</strong><br />
+- <strong>工业机器人</strong>：多关节机械手、SCARA、协作机器人；核心应用于<strong>汽车焊装</strong>（2026 年 6 月国产工业机器人汽车焊装解决方案入选《智能制造系统解决方案参考目录（2026）》）。<br />
+- <strong>半导体装备</strong>：<strong>真空直驱机械手</strong>（两轴/三轴/四轴）、AMHS（自动化物料搬运系统）。公司是国家科技重大专项"<strong>02 专项</strong>"AMHS 课题承接单位。<br />
+- <strong>自动化装配与检测生产线</strong>：面向汽车、3C 的整线集成。<br />
+- <strong>物流与仓储自动化</strong>：智能仓储、AGV、数字孪生仓储大脑。<br />
+- <strong>交通自动化</strong>：轨道交通/城市交通自动化系统（毛利率最高 29.81%）。<br />
+- <strong>具身智能（前沿）</strong>：半身人形双臂机器人、"<strong>松羿</strong>"轮式人形机器人、"<strong>松行</strong>"双足人形机器人三大产品线；同步开展四足机器人技术攻关。</p>
+<p><strong>主要客户/下游</strong><br />
+- 汽车及汽车零部件（占工业机器人下游 49.2%）、3C 电子、新能源、一般制造业、半导体 FAB 厂、轨道交通。<br />
+- 海外业务存在（汇兑损益影响显著），2026H1 汇兑损失增加 2422.76 万。</p>
+<p><strong>境内外收入占比</strong>：以国内为主；海外有业务但规模未单独披露，汇率波动对利润有实质影响。</p>
+<p><strong>股东背景 / 治理</strong><br />
+- 母公司：<strong>沈阳中科天盛自动化技术有限公司</strong>（中科院沈阳自动化所体系）→ <strong>中科院背景，是"人形机器人国家队"叙事的来源</strong><br />
+- 2026-08-21 董事会通过《关于新增 2026 年度日常关联交易预计额度的公告》：<strong>新增 1.11 亿</strong>，全年关联交易总盘子扩容至 <strong>3.21 亿</strong>（关联交易规模较大，需持续跟踪定价公允性）</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，但行业竞争同步升级</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度级别</th>
+<th>量化指标 / 内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《机械行业稳增长工作方案（2025—2026 年）》</td>
+<td><strong>工信部等六部门</strong></td>
+<td>2025-09</td>
+<td>国家级</td>
+<td>明确将工业机器人作为机械行业稳增长重点领域；提出扩大智能制造装备应用，推广焊接、装配、喷涂等工业机器人<strong>及人形机器人</strong>在制造业场景的应用</td>
+</tr>
+<tr>
+<td>《关于加快场景培育和开放推动新场景大规模应用的实施意见》</td>
+<td><strong>国务院办公厅</strong></td>
+<td>2025-11</td>
+<td><strong>国办级</strong></td>
+<td>推动工业机器人、人形机器人<strong>进工厂</strong>，优先在焊接、装配、喷涂、搬运等细分场景实现规模化落地应用</td>
+</tr>
+<tr>
+<td>《人形机器人创新发展指导意见》</td>
+<td>工信部</td>
+<td>2023-10</td>
+<td>部委级</td>
+<td>部署在 3C、汽车等工业场景打造示范产线，推动与现有工业机器人体系融合</td>
+</tr>
+<tr>
+<td>《工业机器人行业规范条件（2024 版）》及实施办法</td>
+<td>工信部</td>
+<td>2024-07</td>
+<td>部委级</td>
+<td>从产品质量、研发创新、供应链安全设定准入门槛，<strong>引导高端化、淘汰落后产能</strong></td>
+</tr>
+<tr>
+<td>《推动工业领域设备更新实施方案》</td>
+<td>工信部等七部门</td>
+<td>2024-07</td>
+<td>部委级</td>
+<td>将工业机器人列为智能制造装备更新重点</td>
+</tr>
+<tr>
+<td>《产业结构调整指导目录（2024 年本）》</td>
+<td>发改委</td>
+<td>2023-12</td>
+<td>国家级</td>
+<td>工业机器人本体及核心部件（精密减速器、伺服电机、控制器）列入"<strong>鼓励类</strong>"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策节奏判断</strong>：政策密集且方向明确——<strong>工业机器人国产替代 + 人形机器人场景开放</strong>双主线。但政策红利面向全行业，<strong>不构成单一公司的护城河</strong>；相反，政策鼓励的"规模化应用"往往伴随<strong>价格战</strong>，对新松这种毛利率仅 16.53% 的公司是"<strong>双刃剑</strong>"。</p>
+<h3>（2）市场端（量价数据）</h3>
+<p><strong>行业总量（景气向上）</strong><br />
+| 指标 | 数据 |<br />
+|---|---|<br />
+| 中国工业机器人产量 | 2024 年 <strong>55.64 万套（+29.53%）</strong>；2025 年 <strong>77.31 万套（+28%）</strong>；2026E <strong>&gt;80 万套</strong> |<br />
+| 中国工业机器人销量 | 2024 年 30.2 万台（−4.50%）；2025E 33.20 万台；2026E <strong>36.19 万台</strong> |<br />
+| 中国工业机器人市场规模 | 2024 年 467 亿；2025 年 527 亿；<strong>2026E 600 亿</strong>（另一口径 MIR：2025 年 195 亿 → 2026E 209 亿，口径差异大） |<br />
+| <strong>内资厂商市占率</strong> | 2025 年 <strong>&gt;54%</strong>（历史首超外资）；2026E <strong>57%</strong> |<br />
+| 下游应用占比（2025） | 汽车及汽车零部件 <strong>49.2%</strong>、一般制造业 24.1%、3C 电子 10.3%、新能源 9.2% |<br />
+| 竞争格局（2025 销量） | <strong>埃斯顿第一（10.5%）</strong>、发那科、库卡、汇川、ABB、爱普生、埃夫特、安川、珞石、雅马哈；前十中国产合计份额首破 54% |</p>
+<p><strong>⚠️ 同业对比（2026H1，七家机器人上市公司）—— 本股处于最不利位置</strong><br />
+| 公司 | 营收 | 同比 | 归母净利 | 毛利率 |<br />
+|---|---|---|---|---|<br />
+| <strong>新松机器人</strong> | <strong>14.51 亿（规模第一）</strong> | <strong>−12.57%（唯一负增长，垫底）</strong> | <strong>−1.89 亿（亏损最重）</strong> | <strong>16.53%（垫底）</strong> |<br />
+| 极智嘉 | 12.84 亿 | +25.3% | −1.77 亿 | — |<br />
+| 优必选 | 12.69 亿 | +104.22% | −3.39 亿（收窄） | 44.7% |<br />
+| 宇树科技 | 11.52 亿 | +48.54% | <strong>+2.74 亿（唯一盈利）</strong> | <strong>56.01%</strong> |<br />
+| 珞石机器人 | 4.15 亿 | +135.8% | −0.79 亿（收窄） | 29.8% |<br />
+| 越疆科技 | 3.16 亿 | +106.6% | −1.08 亿 | 47.4% |<br />
+| 华沿机器人 | 1.74 亿 | +0.6% | −0.57 亿 | — |</p>
+<blockquote>
+<p><strong>关键结论</strong>：行业均值毛利率约 <strong>37.5%</strong>，新松 16.53% <strong>低于倒数第二（珞石 29.8%）13.3pct、低于宇树 39.5pct</strong>。这意味着：<strong>当竞争对手手握 40%+ 毛利率、可随时通过价格战争夺份额时，新松几乎没有降价空间——"不降价丢份额、降价则亏本"的两难处境已经形成。</strong></p>
+</blockquote>
+<p><strong>公司最新季度量价趋势（2026H1）</strong><br />
+- <strong>量在缩</strong>：营收 14.51 亿（−12.57%）；Q2 单季 8.21 亿；Q1 6.30 亿（−8.43%）<br />
+- <strong>价在改善</strong>：毛利率 <strong>16.53%（+1.91pct）</strong>，Q2 单季 <strong>18.36%</strong> —— <strong>这是全篇最重要的正面数据</strong><br />
+- <strong>利在恶化</strong>：归母 −1.89 亿（亏损扩大 98.30%）<br />
+- <strong>费用失控</strong>：期间费用率 <strong>27.82%</strong>（去年同期 19.32%，<strong>+8.5pct</strong>）<br />
+- <strong>现金流恶化</strong>：经营性净现金流 <strong>−4.33 亿</strong>（去年同期 −2.68 亿）<br />
+- <strong>订单在增</strong>：<strong>合同负债 20.41 亿（+19.48%）</strong> —— 在手订单充足，是未来收入的可见性来源</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游（成本端）</strong><br />
+- 核心零部件：精密减速器（RV/谐波）、伺服电机、控制器、传感器——<strong>国产化率持续提升</strong>（2025 年内资市占率 &gt;54%），对新松是<strong>成本利好</strong>。<br />
+- 半导体装备：真空机械手核心为精密加工件、直驱电机、真空部件，公司有自主知识产权。<br />
+- <strong>⚠️ 联营公司拖累</strong>：联营企业<strong>苏州新施诺</strong> 2026H1 亏损 <strong>1.09 亿</strong>，导致投资收益 <strong>−4771.71 万</strong>——这是<strong>非经营性失血</strong>，且不在并表主营范围内。</p>
+<p><strong>下游（需求端）</strong><br />
+- 汽车（49.2%）、一般制造业（24.1%）、3C（10.3%）、新能源（9.2%）、半导体 FAB。<br />
+- 需求景气但<strong>客户议价权强</strong>：汽车主机厂招标压价，是行业毛利率分化的根源。</p>
+<p><strong>议价权判断</strong><br />
+| 环节 | 议价权 | 佐证 |<br />
+|---|---|---|<br />
+| 工业机器人 | <strong>弱</strong> | 毛利率 14.08%（虽 +124% 放量但毛利仍低）；行业价格战 |<br />
+| 半导体装备 | <strong>中强</strong> | 毛利率 <strong>27.86%</strong>（全板块最高）；02 专项承接单位，真空机械手国产替代，已导入北方华创/中微产业链 |<br />
+| 交通自动化 | <strong>中强</strong> | 毛利率 <strong>29.81%</strong>，+77.05% 放量 |<br />
+| 自动化装配/物流仓储 | <strong>极弱</strong> | 毛利率 9–10.5%，公司正主动收缩 |</p>
+<hr />
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产线</th>
+<th>核心成本</th>
+<th>传导率估计</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工业机器人</td>
+<td>减速器/伺服/控制器（占成本 60%+）</td>
+<td><strong>0.3–0.4</strong></td>
+<td>下游汽车主机厂强势招标，且埃斯顿/汇川等对手毛利 30%+ 可打价格战 → <strong>新松几乎无转嫁能力</strong>；毛利率仅 14.08%</td>
+</tr>
+<tr>
+<td>半导体装备</td>
+<td>精密加工件、直驱电机、真空部件</td>
+<td><strong>0.7–0.8</strong></td>
+<td>国产替代稀缺性 + 客户为 FAB 厂（关注良率胜于价格）→ 毛利率 27.86% 得以维持</td>
+</tr>
+<tr>
+<td>交通自动化</td>
+<td>电气设备、系统集成</td>
+<td><strong>0.8–0.9</strong></td>
+<td>轨交项目制，有主材调价机制，毛利率 29.81%</td>
+</tr>
+<tr>
+<td>自动化装配/物流</td>
+<td>外购设备 + 集成</td>
+<td><strong>0.2–0.3</strong></td>
+<td>纯集成商，毛利率 9–10.5%，<strong>成本几乎全部自扛</strong>（正是被砍掉的原因）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>加权传导率约 0.45</strong>，属于<strong>很低</strong>水平。这是新松与同业（毛利率 37.5%）最本质的差距：<strong>同样的上游降本（零部件国产化），同业能留下利润，新松只能让给客户。</strong></p>
+<p><strong>因子2 毛利结构再平衡（禁单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入占比</th>
+<th>毛利率</th>
+<th>毛利贡献占比</th>
+<th>对零部件成本敏感权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工业机器人</td>
+<td>41.7%</td>
+<td>14.08%</td>
+<td><strong>35.5%</strong></td>
+<td><strong>高（0.65）</strong></td>
+</tr>
+<tr>
+<td>自动化装配与检测</td>
+<td>24.5%</td>
+<td>10.54%</td>
+<td>13.6%</td>
+<td>高（0.70）</td>
+</tr>
+<tr>
+<td>物流与仓储</td>
+<td>8.8%</td>
+<td>9.03%</td>
+<td>4.2%</td>
+<td>高（0.75）</td>
+</tr>
+<tr>
+<td>交通自动化</td>
+<td>6.2%</td>
+<td><strong>29.81%</strong></td>
+<td><strong>9.7%</strong></td>
+<td>中（0.20）</td>
+</tr>
+<tr>
+<td><strong>半导体装备</strong></td>
+<td>18.6%</td>
+<td><strong>27.86%</strong></td>
+<td><strong>27.2%</strong></td>
+<td>中（0.25）</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.2%</td>
+<td>—</td>
+<td>19.8%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>加权综合</strong></td>
+<td>100%</td>
+<td><strong>16.53%</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>结构性迁移结论（本股核心逻辑）</strong>：<br />
+- <strong>半导体装备以 18.6% 的收入贡献 27.2% 的毛利</strong>，交通自动化以 6.2% 收入贡献 9.7% 毛利 → <strong>两者合计 24.8% 收入贡献 36.9% 毛利</strong><br />
+- 反之，<strong>工业机器人 + 装配 + 物流（74.9% 收入）只贡献 53.3% 毛利</strong><br />
+- <strong>→ 公司的估值重估，唯一的现实路径是把半导体装备和交通自动化的收入占比从 24.8% 提到 40% 以上。</strong> 2026H1 相比 2025 年已经在发生（毛利率 12.48% → 16.53%），这是 +1.91pct 的来源。</p>
+</blockquote>
+<p><strong>因子3 库存与采购节奏（timing）</strong></p>
+<ul>
+<li><strong>⚠️ 存货 40.51 亿，占总资产 32%</strong>（2026H1）；存货周转天数 <strong>530.36 天</strong>（2025 全年 318.48 天，2026H1 大幅拉长）。</li>
+<li><strong>这是本股最大的资产质量隐患</strong>：机器人项目周期长、定制化程度高，<strong>530 天周转意味着大量在产品和发出商品未验收</strong>。若技术迭代（具身智能/AI 大模型重构产品）或客户需求变更，<strong>减值风险极高</strong>。</li>
+<li><strong>存货收益/损失判断</strong>：公司<strong>不存在"低价囤货收益"</strong>（零部件价格长期下行，囤货只能贬值）；<strong>存在显著的"高价接货 + 呆滞"风险</strong>。</li>
+<li>应收账款周转天数 <strong>196.98 天</strong>（2025 全年 132.14 天）→ 同步拉长，<strong>收入质量在恶化</strong>。</li>
+<li><strong>无长协/套保披露</strong>，汇率敞口未对冲（2026H1 汇兑损失 +2422.76 万）。</li>
+</ul>
+<p><strong>因子4 政策 / 市场锚点（成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>层级</th>
+<th>情景假设</th>
+<th>验证点</th>
+<th>证伪信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心零部件（减速器/伺服）国产化率</td>
+<td>市场 + 政策层</td>
+<td>中性：内资市占率 54%→57%（2026E）持续提升，采购成本年降 5–8%</td>
+<td>内资厂商市占率数据；公司季度毛利率</td>
+<td>零部件涨价而公司毛利率未改善 → 说明传导率更差</td>
+</tr>
+<tr>
+<td><strong>关税 / 出口管制</strong>（海外业务 + 进口高端部件）</td>
+<td>政策层</td>
+<td>中性：现行关税维持；悲观：欧美对华机器人/半导体设备出口管制升级，进口精密部件断供或涨价</td>
+<td>商务部/海关关税公告；公司海外收入占比</td>
+<td>海外收入占比骤降；关键部件交期延长</td>
+</tr>
+<tr>
+<td>半导体设备国产替代政策（02 专项等）</td>
+<td>政策层</td>
+<td>中性：持续支持；乐观：大基金三期加大设备投入</td>
+<td>国家科技重大专项立项；北方华创/中微等客户订单</td>
+<td>晶圆厂扩产放缓；真空机械手被海外对手降价挤压</td>
+</tr>
+<tr>
+<td>人民币汇率</td>
+<td>市场层</td>
+<td>中性：双向波动；悲观：单边升值 5% → 汇兑损失 + 海外收入折算损失</td>
+<td>公司汇兑损益科目</td>
+<td>汇兑损失连续两季超 2000 万</td>
+</tr>
+<tr>
+<td>能耗双控 / 环保</td>
+<td>政策层</td>
+<td>影响小（机器人制造非高耗能）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>金额/体量</th>
+<th>进度与节奏</th>
+<th>收入确认窗口</th>
+<th>利润贡献（估）</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>合同负债（在手订单）</strong></td>
+<td><strong>20.41 亿（+19.48%）</strong></td>
+<td>已签约，待交付</td>
+<td>2026H2–2027</td>
+<td>按 2029 综合净利倒推，年化贡献收入约 <strong>15–18 亿</strong></td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>工业机器人放量（汽车焊装国产替代）</strong></td>
+<td>2026H1 收入 6.05 亿（<strong>+124.36%</strong>）</td>
+<td>入选《智能制造系统解决方案参考目录（2026）》</td>
+<td>持续</td>
+<td>毛利率仅 14.08%，<strong>增收不增利</strong></td>
+<td><strong>中高</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>半导体装备（真空直驱机械手）</strong></td>
+<td>2026H1 收入 2.70 亿；子公司<strong>沈阳新松半导体 2026H1 营收 2.69 亿、净利 265.96 万（已盈利）</strong></td>
+<td>两轴/三轴<strong>已批量导入成熟制程 FAB</strong>，向先进制程渗透；<strong>四轴完成客户端现场验证，进入小批量交付</strong></td>
+<td>2026–2029</td>
+<td>毛利率 27.86%，是<strong>唯一有真实利润的板块</strong></td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>沈阳新松半导体引入战投增资 1.78 亿</strong></td>
+<td>盛京金控机器人智能制造产业投资基金、<strong>北方华创、中微公司</strong>等</td>
+<td>2026 年 7 月完成</td>
+<td>—</td>
+<td>增强资本实力，为扩产与研发供血</td>
+<td><strong>高（已完成）</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>交通自动化系统</strong></td>
+<td>2026H1 收入 0.90 亿（<strong>+77.05%</strong>），毛利率 <strong>29.81%</strong></td>
+<td>快速放量</td>
+<td>2027–2029</td>
+<td>高毛利，利润弹性大</td>
+<td>中</td>
+</tr>
+<tr>
+<td>6</td>
+<td>技术积累</td>
+<td>累计专利 <strong>764 项</strong>（发明 477 项）、软著 232 项；2026-05"数字化车间建设标准群"入选全国首批智能制造标准应用试点十大标准群</td>
+<td>已形成</td>
+<td>—</td>
+<td>间接</td>
+<td>中</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>主动收缩低毛利业务</strong></td>
+<td>自动化装配线 −52.00%、物流仓储 −61.05%</td>
+<td>已执行</td>
+<td>2026</td>
+<td><strong>减收但提毛利率</strong>（+1.91pct）</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>具身智能 / 人形机器人</strong></td>
+<td>松羿（轮式）、松行（双足）、半身双臂三条产品线；四足在攻关</td>
+<td>⚠️ 2026-08-11 董秘明确回复："具身智能产品<strong>已试验应用，未规模化量产</strong>"；财报原文："已在物料搬运、上下料、快递分拣等场景开展<strong>测试及模拟应用</strong>，商业化落地仍需时间验证"</td>
+<td>—</td>
+<td><strong>未过验证点 → 不计入中性</strong></td>
+<td><strong>低</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>关联交易扩容</td>
+<td>2026 年度日常关联交易预计额度增至 <strong>3.21 亿</strong>（新增 1.11 亿）</td>
+<td>2026-08-21 董事会通过</td>
+<td>2026</td>
+<td>中（需跟踪定价公允性）</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计（已落定、可量化部分）</strong><br />
+- 在手订单（合同负债）<strong>20.41 亿</strong>，为 2026H1 营收的 1.41 倍 → 短期收入可见性<strong>尚可</strong><br />
+- <strong>真正能产生利润的增量只有半导体装备（毛利率 27.86%、子公司已盈利）与交通自动化（29.81%）</strong><br />
+- 工业机器人虽 +124% 但毛利率 14.08%，<strong>规模扩张无法转化为利润</strong></p>
+<p><strong>⚠️ 关键提示</strong>：本股的"增量"本质是<strong>结构切换</strong>而非"规模扩张"——砍掉低毛利的装配/物流（−5.8 亿收入），用半导体 + 交通 + 工业机器人填补（+3.8 亿），净效果是<strong>收入下降 12.57%、毛利率提升 1.91pct</strong>。<strong>这在会计上是正确的战略，但在估值上意味着：不能给"营收增长"溢价，只能给"毛利率修复"定价。</strong></p>
+<hr />
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层1 现有业务：市场容量 × 份额变量（五锚点 + 三档）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>当前位置</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td>2026H1 营收 14.51 亿为七家上市机器人公司<strong>规模第一</strong>；但行业 2025 年销量榜前十无新松（埃斯顿 10.5% 第一、发那科、库卡、汇川、ABB、爱普生、埃夫特、安川、珞石、雅马哈）</td>
+<td><strong>⚠️ 整机销量未进前十</strong>——规模大是靠系统集成（低毛利）撑起来的，本体份额实际在流失</td>
+</tr>
+<tr>
+<td>② 需求侧/客户份额</td>
+<td>汽车焊装国产替代取得突破（入选工信部参考目录）；半导体客户已导入北方华创、中微产业链</td>
+<td>半导体侧<strong>客户粘性已建立</strong>（认证周期长 = 护城河）；汽车侧客户为价格敏感型</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td>专利 764 项、02 专项 AMHS 承接单位、真空机械手自主知识产权</td>
+<td><strong>半导体装备处于代际优势</strong>；工业机器人本体相对埃斯顿/汇川<strong>无代际优势</strong>（毛利率 14% vs 30%+ 即为证据）</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td>毛利率 16.53%，行业垫底</td>
+<td><strong>成本曲线严重偏右</strong>——这是全部问题的根源</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td>工业机器人 +124.36%（加速），但装配/物流 −52%/−61%（主动放弃）</td>
+<td><strong>在优势赛道加速渗透，在劣势赛道主动退出</strong>——S 曲线位置分化明显</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三档份额情景（2029E 工业机器人 + 半导体）</strong></p>
+<table>
+<thead>
+<tr>
+<th>档位</th>
+<th>假设</th>
+<th>2029E 收入</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守守住</td>
+<td>工业机器人维持 2026 水平不再增长，半导体 +20%</td>
+<td>工机 13 亿 + 半导体 5.5 亿</td>
+<td>季度收入同比；行业价格战加剧</td>
+</tr>
+<tr>
+<td><strong>中性小幅提升</strong></td>
+<td>汽车焊装国产替代持续，半导体随 FAB 扩产增长</td>
+<td>工机 <strong>18 亿</strong> + 半导体 <strong>8 亿</strong></td>
+<td><strong>季度毛利率连续两季 ≥ 20%；半导体装备收入同比 ≥ +20%</strong></td>
+</tr>
+<tr>
+<td>乐观抢份额</td>
+<td>人形机器人/具身智能兑现 + 半导体先进制程突破</td>
+<td>工机 25 亿 + 半导体 12 亿</td>
+<td>人形机器人量产订单公告；四轴机械手批量合同</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层2 扩展业务：主业迁移空间（"工业机器人 → 半导体装备"——已在发生）</strong></p>
+<table>
+<thead>
+<tr>
+<th>检验维度</th>
+<th>评估</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 能力可迁移性</td>
+<td><strong>强</strong>：机器人运动控制 + 精密传动 + 真空环境适应性 → 真空直驱机械手是机器人技术的<strong>直接同源迁移</strong>（公司已是 02 专项 AMHS 承接单位）</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>② 新 TAM 弹性</td>
+<td><strong>大</strong>：半导体设备国产替代是千亿级市场；真空机械手是 AMHS 核心部件，国产化率仍低</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>③ 切入时点与卡位</td>
+<td><strong>早期且卡位好</strong>：02 专项承接单位；已导入北方华创、中微等头部客户产业链；2026-07 获北方华创/中微/盛京金控战投</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>④ 客户认证门槛</td>
+<td><strong>高（已跨过）</strong>：FAB 厂认证周期长、切换成本高——<strong>这既是护城河也是已验证的事实</strong>（子公司 2026H1 已盈利 265.96 万）</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>⑤ 信号验证</td>
+<td>✅ <strong>全部通过</strong>：子公司已盈利（营收 2.69 亿、净利 265.96 万）；客户定点（北方华创/中微/盛京金控战略投资）；四轴机械手完成验证进入小批量交付</td>
+<td>✅ <strong>已过验证点</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>迁移空间定性</strong>：<strong>"工业机器人 → 半导体装备"的迁移已过全部五维验证，可计入中性情景</strong>（2029 半导体收入 8 亿，毛利率 27%）。这是本报告唯一认可并计入中性的迁移逻辑。<br />
+→ <strong>"工业机器人 → 具身智能/人形机器人"的迁移未过验证点</strong>，见层3 与第五步类型D 检验。</p>
+<p><strong>层3 风险折扣：证伪信号</strong></p>
+<table>
+<thead>
+<tr>
+<th>证伪信号</th>
+<th>触发后处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>综合毛利率跌回 <strong>14% 以下</strong></td>
+<td>结构切换失败，中性净利下调至 −0.5 亿，目标价下调 25%</td>
+</tr>
+<tr>
+<td>半导体装备收入同比<strong>连续两季负增长</strong></td>
+<td>迁移逻辑证伪，剔除半导体估值加成，目标价下调 30%</td>
+</tr>
+<tr>
+<td>存货周转天数突破 <strong>600 天</strong> 或计提大额减值（&gt;3 亿）</td>
+<td>资产质量重估，对净资产打 20% 折扣</td>
+</tr>
+<tr>
+<td>合同负债连续两季下降</td>
+<td>订单可见性丧失，中性营收下调 15%</td>
+</tr>
+<tr>
+<td>具身智能持续 3 年无量产订单（2028 年底）</td>
+<td>题材溢价完全消退，PB 从 5x 回落至 2.5x</td>
+</tr>
+<tr>
+<td>联营公司（苏州新施诺）继续大额亏损</td>
+<td>投资收益持续拖累，每年下调中性净利 0.5–1.0 亿</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：<strong>严禁历史增速外推</strong>。公司 2022–2026H1 归母在 +0.49 亿至 −3.98 亿间剧烈波动，<strong>扣非连续 5 年为负</strong>，任何历史增速外推都是无意义的。本测算以①合同负债 20.41 亿（在手订单）、②半导体子公司已盈利的确定性、③主动收缩低毛利业务的已执行事实、④研发投入刚性为输入，<strong>分五条业务线自下而上测算至 2029 年</strong>。</p>
+<p>因<strong>正常化净利极低（接近盈亏平衡）</strong>，PE 法完全失效 → 主用 <strong>SOTP（PS 分部）</strong>，并用 <strong>PB 法</strong>交叉验证。</p>
+</blockquote>
+<p><strong>总股本：15.6562 亿股</strong><br />
+<strong>归母净资产（2026H1）：40.5 亿</strong>（每股净资产 2.589 元）；所有者权益合计 44.26 亿（少数股东 3.76 亿）<br />
+<strong>总资产 125.10 亿</strong>（较上年末 +7.77%）</p>
+<h3>亏损三问（规则强制回答）</h3>
+<p><strong>① 为什么亏？</strong><br />
+| 亏损来源 | 2026H1 金额 | 性质 |<br />
+|---|---|---|<br />
+| 研发投入 | <strong>1.96 亿（+43.24%）</strong>（另一口径研发费用 1.48 亿，+58.33%） | <strong>主动加码</strong>（半导体、具身智能），非被动失血 |<br />
+| 投资收益 | <strong>−4771.71 万</strong>（联营公司苏州新施诺亏损 <strong>1.09 亿</strong>） | <strong>外部因素</strong>，非核心业务恶化 |<br />
+| 汇兑损失 | <strong>增加 2422.76 万</strong> | 汇率波动，非经营问题 |<br />
+| 低毛利业务收缩 | 装配 −52%、物流 −61%（合计减收约 5.8 亿） | <strong>主动战略收缩</strong>，短期减收 |<br />
+| 刚性费用 | 期间费用率 27.82%（+8.5pct） | 收入下滑 + 费用刚性 → 费用率失控 |<br />
+| <strong>综合判断</strong> | | <strong>毛利率在改善（+1.91pct）、亏损在扩大</strong>——这是"主动转型阵痛 + 费用失控"的叠加，<strong>不是核心竞争力的崩塌，但也远未到"扭亏在即"</strong> |</p>
+<p><strong>② 靠什么扭亏？触发时点在哪一年？</strong><br />
+| 路径 | 机制 | 触发时点 |<br />
+|---|---|---|<br />
+| <strong>毛利率修复</strong> | 高毛利板块（半导体 27.86% + 交通 29.81%）占比提升；低毛利板块继续收缩 | 2026H2–2028，毛利率从 16.53% → 21–22% |<br />
+| <strong>半导体装备放量</strong> | 子公司已盈利；四轴机械手小批量交付；先进制程渗透 | 2027–2029，收入 2.7 亿 → 8 亿 |<br />
+| <strong>研发投入企稳</strong> | 前沿研发（具身智能）从"投入期"转向"收获期"，研发费用增速回落至 &lt;10% | 2028–2029 |<br />
+| <strong>联营公司扭亏</strong> | 苏州新施诺不再大额亏损，投资收益从 −0.48 亿回到 0 | 2027–2028（不确定） |<br />
+| <strong>规模效应</strong> | 工业机器人放量摊薄固定费用 | 2028+ |<br />
+| <strong>→ 中性判断：最早 2028 年单季扭亏，2029 年全年归母微利（0.15–0.30 亿）。</strong> |</p>
+<p><strong>③ 亏得起吗？</strong><br />
+| 指标 | 数值 | 判断 |<br />
+|---|---|---|<br />
+| 归母净资产 | <strong>40.5 亿</strong> | 2026 年预亏 3.5–4.0 亿 → 尚可承受约 <strong>10 年</strong>（但每年消耗 10%） |<br />
+| 资产负债率 | <strong>64.62%</strong>（2025 年末 61.76%） | <strong>偏高但在可控范围</strong> |<br />
+| 有息负债 | <strong>21.01 亿</strong>（2025 年末，有息负债率 29.30%） | 年利息约 0.8 亿 |<br />
+| 速动比率 | <strong>0.627</strong> | <strong>偏低</strong>（存货 40.51 亿占资产 32%，变现能力弱） |<br />
+| 经营性现金流 | <strong>−4.33 亿</strong>（2026H1）；2025 全年 +1.61 亿 | <strong>持续为负是最大隐患</strong> |<br />
+| 融资能力 | 沈阳新松半导体 2026-07 引入战投 1.78 亿（北方华创、中微、盛京金控） | <strong>子公司层面融资能力已验证</strong>；上市公司层面有中科院背景，融资渠道通畅 |<br />
+| <strong>结论</strong> | | <strong>短期（3–5 年）亏得起</strong>——净资产 40.5 亿、子公司能独立融资、国资背景。<strong>但若存货 40.51 亿集中减值 + 现金流持续为负，2028 年后将面临再融资压力。</strong> |</p>
+<h3>分业务测算（2029E 中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026E 收入</th>
+<th>2029E 收入</th>
+<th>测算依据（订单/产能/份额）</th>
+<th>毛利率</th>
+<th>PS 估值倍数</th>
+<th>分部市值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工业机器人</td>
+<td>13.0 亿</td>
+<td><strong>18.0 亿</strong></td>
+<td>汽车焊装国产替代（入选工信部参考目录）；合同负债 20.41 亿支撑；份额中性档</td>
+<td>15%</td>
+<td><strong>2.0x</strong></td>
+<td><strong>36.0 亿</strong></td>
+</tr>
+<tr>
+<td><strong>半导体装备</strong></td>
+<td>5.4 亿</td>
+<td><strong>8.0 亿</strong></td>
+<td>子公司 2026H1 已盈利（2.69 亿/266 万）；四轴机械手小批量交付；北方华创/中微/盛京金控战投到位</td>
+<td>27%</td>
+<td><strong>8.0x</strong></td>
+<td><strong>64.0 亿</strong> × 持股 75% = <strong>48.0 亿</strong></td>
+</tr>
+<tr>
+<td>交通自动化</td>
+<td>2.0 亿</td>
+<td><strong>3.0 亿</strong></td>
+<td>2026H1 +77.05%，毛利率 29.81%（最高）</td>
+<td>29%</td>
+<td>2.5x</td>
+<td><strong>7.5 亿</strong></td>
+</tr>
+<tr>
+<td>自动化装配 + 物流仓储</td>
+<td>9.0 亿</td>
+<td><strong>10.0 亿</strong></td>
+<td>主动收缩后止跌（2026H1 已 −52%/−61%）</td>
+<td>10%</td>
+<td>1.2x</td>
+<td><strong>12.0 亿</strong></td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>29.4 亿</strong></td>
+<td><strong>39.0 亿</strong></td>
+<td></td>
+<td><strong>21.5%</strong></td>
+<td>—</td>
+<td><strong>SOTP = 103.5 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 2026E 营收校正</strong>：H1 14.51 亿；按 2025 年 H2/H1 = 1.48 的节奏，考虑工业机器人放量 → 2026E 营收 <strong>33–36 亿</strong>。上表 2026E 合计 29.4 亿偏保守，取 <strong>34.0 亿（−17.5%）</strong> 为基准。</p>
+<p><strong>损益表校验（2029E 中性）</strong><br />
+- 毛利 = 18×15% + 8×27% + 3×29% + 10×10% = 2.70 + 2.16 + 0.87 + 1.00 = <strong>6.73 亿</strong>（综合毛利率 <strong>17.3%</strong>）<br />
+  - ⚠️ 注意：SOTP 中我用了 21.5% 综合毛利率，与实际分业务测算的 17.3% 不一致 → <strong>以分业务测算为准，取 18.5%</strong>（考虑交通/半导体占比继续提升）<br />
+  - 修正后毛利 = 39.0 × 18.5% = <strong>7.22 亿</strong><br />
+- 期间费用：研发 3.2 亿（2026 年化约 3.9 亿，假设增速放缓）+ 销售管理 3.8 亿 + 财务 0.8 亿 = <strong>7.80 亿</strong>（费用率 20.0%）<br />
+- 减值（存货 40 亿 + 应收账，按年 0.5 亿计提）→ <strong>0.50 亿</strong><br />
+- 投资收益：假设联营公司扭亏 → <strong>0</strong><br />
+- 营业利润 = 7.22 − 7.80 − 0.50 = <strong>−1.08 亿</strong></p>
+<blockquote>
+<p><strong>⚠️ 重要发现</strong>：即使按"毛利率修复至 18.5%、收入 39 亿"的中性假设，<strong>2029 年仍然亏损</strong>。原因是<strong>期间费用刚性过高</strong>（研发 3.2 亿 + 财务 0.8 亿 = 4.0 亿的刚性支出）。</p>
+</blockquote>
+<p><strong>修正中性假设（必须让费用率下降）</strong>：<br />
+- 若研发投入增速回落（从 +43.24% 降至 +5%），2029 研发费用约 <strong>2.6 亿</strong>（而非 3.2 亿）<br />
+- 销售管理费用随收入优化至 3.5 亿<br />
+- 期间费用 = 2.6 + 3.5 + 0.8 = <strong>6.90 亿</strong>（费用率 17.7%）<br />
+- 营业利润 = 7.22 − 6.90 − 0.50 = <strong>−0.18 亿</strong> → <strong>仍接近盈亏平衡</strong><br />
+- <strong>进一步</strong>：若毛利率达 <strong>20%</strong>（半导体 + 交通占比提升至 30%），毛利 7.80 亿 → 营业利润 <strong>+0.40 亿</strong> → 税后（亏损弥补后实际税率低）约 <strong>0.35 亿</strong> → 归母 <strong>0.33 亿</strong></p>
+<p><strong>→ 2029E 中性归母净利润取 0.30 亿</strong>（对应归母净利率 <strong>0.77%</strong>，为<strong>刚过盈亏平衡</strong>的保守值）。</p>
+<p><strong>⚠️ 这意味着 PE 法完全失效</strong>：0.30 亿 × 任何合理 PE（30–50x）= 9–15 亿，仅相当于现市值 204 亿的 <strong>5–7%</strong>。→ <strong>必须用 SOTP / PS 法估值，这也说明市场当前定价完全建立在"人形机器人 + 半导体国产替代"的题材与期权之上，而非当期或可预见盈利。</strong></p>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>H1 归母 −1.89 亿；H2 按在手订单交付节奏，预计 −1.5 至 −2.0 亿</li>
+<li><strong>2026E 营收 34 亿（−17.5%），归母 −3.60 亿</strong></li>
+<li>2026 年末归母净资产 ≈ 40.5 − 3.6 = <strong>36.9 亿</strong>（每股 2.36 元）</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>2029E 归母</th>
+<th>估值方法</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>价格战加剧，毛利率跌回 14%；存货减值 3 亿；半导体增长停滞（5 亿）；具身智能无产出</td>
+<td>30.0 亿</td>
+<td><strong>−1.40 亿</strong></td>
+<td>PB 1.2x（2029 净资产约 33 亿）</td>
+<td><strong>39.6 亿</strong></td>
+<td><strong>2.53 元</strong></td>
+<td><strong>−80.6%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>毛利率修复至 20%，费用率降至 17.7%，半导体 8 亿 + 交通 3 亿；<strong>具身智能不计入</strong></td>
+<td>39.0 亿</td>
+<td><strong>0.30 亿</strong></td>
+<td><strong>SOTP</strong>：半导体 8 亿×8PS×75% = 48.0 + 工机 18 亿×2.0PS = 36.0 + 交通 3 亿×2.5PS = 7.5 + 装配物流 10 亿×1.2PS = 12.0 = <strong>103.5 亿</strong></td>
+<td><strong>103.5 亿</strong></td>
+<td><strong>6.61 元</strong></td>
+<td><strong>−49.3%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>半导体 12 亿（先进制程突破）+ 具身智能 2029 收入 10 亿 + 工机 25 亿；毛利率 23%</td>
+<td>57.0 亿</td>
+<td><strong>2.10 亿</strong></td>
+<td>SOTP + 具身智能期权：半导体 12×10×75% = 90 + 工机 25×3 = 75 + 人形 10×10 = 100 + 其他 24 = <strong>289 亿</strong></td>
+<td><strong>289 亿</strong></td>
+<td><strong>18.46 元</strong></td>
+<td><strong>+41.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营业收入</td>
+<td>34.0 亿</td>
+<td>39.0 亿</td>
+</tr>
+<tr>
+<td>净利润（归母）</td>
+<td><strong>−3.60 亿</strong></td>
+<td><strong>0.30 亿</strong></td>
+</tr>
+<tr>
+<td>归母净利率</td>
+<td>−10.6%</td>
+<td>0.77%</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损期无意义）</td>
+<td>—（净利过低失效，改 SOTP）</td>
+</tr>
+<tr>
+<td>合理PB</td>
+<td>3.9x（净资产 36.9 亿）</td>
+<td><strong>2.55x</strong>（净资产 40.6 亿，与 SOTP 103.5 亿对应）</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td><strong>144.0 亿</strong></td>
+<td><strong>103.5 亿</strong></td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>9.20 元</strong></td>
+<td><strong>6.61 元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>基准价 vs 远期价的说明</strong>：基准（2026 年底）9.20 元 <strong>高于</strong> 远期（2029 中性）6.61 元。这不是笔误，而是<strong>题材股价值回归的标准路径</strong>：2026 年底人形机器人题材热度与中科院背景溢价尚未完全消退（PB 3.9x）；到 2029 年，若具身智能仍未兑现规模化收入、且公司仅实现微利，市场将按基本面（SOTP 103.5 亿、PB 2.55x）重新定价。<strong>这一路径的风险在于：基准价本身依赖情绪维持，若市场风格切换，基准价可能在 2026 年内即跌破。</strong></p>
+</blockquote>
+<p><strong>⚠️ 交叉校验</strong><br />
+- 现价 13.04 元 = 市值 204.16 亿 = <strong>PS(TTM) 4.95x</strong>、<strong>PB 5.04x</strong><br />
+- 参照系：埃斯顿（盈利、PS ~4.5x）、汇川（盈利、PS ~4x）、埃夫特（亏损、PS ~6x）、优必选（亏损高成长、PS 20x+）<br />
+- 新松的问题：<strong>营收不增长（2029E 39 亿 &lt; 2025 年 41.2 亿）、毛利率垫底、扣非连亏 5 年</strong> → 理应给<strong>低于</strong>埃夫特、远低于优必选的 PS<br />
+- SOTP 中性 103.5 亿对应 PS <strong>2.65x</strong>（103.5/39.0）→ <strong>这已是相对宽容的假设</strong>（半导体分部给 8x PS 已属充分）<br />
+- → <strong>现价 204 亿对应 PS 5.26x（对 2029E 营收），即市场为 2029 年营收支付了 SOTP 中性估值的 2 倍</strong>，溢价部分（约 100 亿）全部是"人形机器人 + 中科院国家队"的题材定价。</p>
+<hr />
+<h4>第四步进阶：重资产 / 周期股估值校正（三道闸）</h4>
+<p><strong>校正1 资产质量折扣（未破净，但 PB 5.04x 且资产质量存疑）</strong></p>
+<table>
+<thead>
+<tr>
+<th>科目</th>
+<th>金额/状态</th>
+<th>折扣判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>存货</strong></td>
+<td><strong>40.51 亿</strong>，占总资产 <strong>32%</strong>；周转天数 <strong>530.36 天</strong></td>
+<td><strong>⚠️ 最大隐患</strong>。定制化在产/发出商品，技术迭代（具身智能）与需求变更下有减值风险。<strong>隐含折扣 15–20%</strong>（对应 6–8 亿）</td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td>周转天数 <strong>196.98 天</strong>（2025 全年 132.14 天）</td>
+<td>账期拉长，收入质量恶化 → 折扣 8%</td>
+</tr>
+<tr>
+<td>固定资产/在建</td>
+<td>总资产 125.10 亿</td>
+<td>机器人制造资产通用性尚可，但定制化产线专用性强 → 折扣 10%</td>
+</tr>
+<tr>
+<td>长期股权投资（联营）</td>
+<td>苏州新施诺等，2026H1 亏损 1.09 亿</td>
+<td><strong>持续失血资产</strong> → 折扣 30%</td>
+</tr>
+<tr>
+<td>商誉</td>
+<td>规模较小</td>
+<td>无明显减值信号</td>
+</tr>
+<tr>
+<td>有息负债</td>
+<td><strong>21.01 亿</strong></td>
+<td>杠杆压力中等</td>
+</tr>
+<tr>
+<td><strong>无形资产（专利 764 项）</strong></td>
+<td>未充分资本化</td>
+<td><strong>这是唯一未被账面反映的正资产</strong>（账面低估）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结论</strong>：净资产 40.5 亿的<strong>可置信价值约 33–36 亿</strong>（隐含折扣 12–19%）。<strong>PB 5.04x 意味着市场为每 1 元可置信净资产支付约 5.7–6.2 元</strong>——这是本股最大的估值风险。</p>
+<p><strong>校正2 周期位置校正</strong></p>
+<ul>
+<li>工业机器人行业<strong>处于景气上行段</strong>（2025 产量 +28%、内资份额 54%→57%），但<strong>竞争烈度同步升级</strong>（价格战）。</li>
+<li>公司自身<strong>处于"主动转型的底部区"</strong>：毛利率从 2022 年 8.62% → 2025 年 12.48% → 2026H1 16.53%，<strong>处于修复通道的中段，尚未回到健康水平（需 ≥20%）</strong>。</li>
+<li><strong>中性净利禁止使用"单年好年景/近三年均值/拐点年化"</strong>：</li>
+<li>❌ 不可用 2023 年归母 +0.486 亿（含大额政府补助与投资收益，扣非为 −1.92 亿）</li>
+<li>❌ 不可用 2026Q2 单季毛利率 18.36% 年化（结构性改善尚不稳固）</li>
+<li>✅ <strong>采用"分业务线自下而上 + 费用刚性约束"测算，得 2029E 归母 0.30 亿（刚过盈亏平衡）</strong></li>
+<li><strong>周期位置标注：行业＝上行段；公司个体＝底部修复中段。</strong></li>
+</ul>
+<p><strong>校正3 杠杆下行情景（负债率 64.62% &gt; 60%，必须附负面情景）</strong></p>
+<table>
+<thead>
+<tr>
+<th>负面情景</th>
+<th>假设</th>
+<th>2029E 归母</th>
+<th>目标市值</th>
+<th>目标价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>利率上行 100bp</strong></td>
+<td>有息负债 21 亿，年增利息 0.21 亿</td>
+<td>0.12 亿</td>
+<td>95 亿</td>
+<td><strong>6.07 元</strong></td>
+<td><strong>−53.4%</strong></td>
+</tr>
+<tr>
+<td><strong>需求下行 + 价格战</strong></td>
+<td>毛利率跌回 14%，收入 32 亿，存货减值 2 亿</td>
+<td>−1.10 亿</td>
+<td>60 亿</td>
+<td><strong>3.83 元</strong></td>
+<td><strong>−70.6%</strong></td>
+</tr>
+<tr>
+<td><strong>存货集中减值 20%（8.1 亿）</strong></td>
+<td>一次性冲击净资产</td>
+<td>—</td>
+<td>净资产降至 28.8 亿，PB 2.0x = 57.6 亿</td>
+<td><strong>3.68 元</strong></td>
+<td><strong>−71.8%</strong></td>
+</tr>
+<tr>
+<td><strong>双杀（价格战 + 减值 + 利率上行）</strong></td>
+<td>上述叠加</td>
+<td>−1.60 亿</td>
+<td>39.6 亿</td>
+<td><strong>2.53 元</strong></td>
+<td><strong>−80.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>结论</strong>：杠杆下行情景可使空间转负至 <strong>−80.6%</strong>。根据规则，<strong>不得标注"大空间"或"重点关注"</strong>；且<strong>中性情景本身已为 −49.3%</strong>，结论为<strong>暂不介入</strong>。</p>
+<p><strong>期权纪律（严格执行）</strong><br />
+以下<strong>未过验证点，不计入中性 NAV/净利，仅列示</strong>：<br />
+- <strong>具身智能 / 人形机器人全系产品</strong>（松羿、松行、半身双臂、四足）：董秘 2026-08-11 明确"未规模化量产"；财报称"测试及模拟应用""商业化落地仍需时间验证"<br />
+- 四轴真空机械手的先进制程大规模放量（仅完成验证、小批量交付）<br />
+- 苏州新施诺扭亏</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置：显著高估——现价约 100 亿（49%）是"人形机器人题材溢价"</strong><br />
+- 现价 13.04 元 = 市值 204.16 亿<br />
+- SOTP 中性 103.5 亿 → <strong>题材溢价约 100.7 亿（49.3%）</strong><br />
+- PB 5.04x、PS(TTM) 4.95x、2026E 归母 −3.60 亿<br />
+- 正面：毛利率 +1.91pct 改善、半导体子公司已盈利、合同负债 +19.48%、中科院背景<br />
+- 负面：<strong>营收唯一负增长、毛利率七家垫底、亏损最重、存货 40.51 亿周转变现 530 天、经营现金流 −4.33 亿、资产负债率 64.62%</strong></p>
+<p><strong>安全边际</strong><br />
+- 中性远期 6.61 元 → <strong>−49.3%</strong>（无安全边际，负空间）<br />
+- 悲观 2.53 元 → <strong>−80.6%</strong><br />
+- 乐观 18.46 元 → <strong>+41.6%</strong>（且需具身智能兑现）<br />
+- <strong>赔率结构</strong>：上行 +41.6%（概率约 20%）/ 中性 −49.3%（概率约 50%）/ 悲观 −80.6%（概率约 30%）<br />
+- 期望值 ≈ 0.20×41.6% + 0.50×(−49.3%) + 0.30×(−80.6%) = +8.3% − 24.7% − 24.2% = <strong>−40.6%</strong><br />
+- → <strong>期望值深度为负，不构成买入理由</strong></p>
+<p><strong>介入条件（具体）</strong><br />
+1. <strong>价格条件</strong>：若坚持参与，<strong>6.50 元以下</strong>（对应 SOTP 中性市值 102 亿、PB 2.5x）才具备基本面安全边际；<strong>5.00 元以下</strong>（PB 1.9x）为深度价值区。<br />
+2. <strong>加仓信号（需至少 2 条）</strong>：<br />
+   - <strong>单季综合毛利率连续两季 ≥ 20%</strong>（结构切换成功的最硬指标）<br />
+   - <strong>半导体装备单季收入同比 ≥ +30%</strong> 且子公司净利率 ≥ 8%（迁移逻辑兑现）<br />
+   - <strong>人形机器人获得首个 ≥1 亿元的量产订单公告</strong>（类型D 硬验证点达标）<br />
+   - <strong>单季经营性现金流转正</strong>且存货周转天数回落至 400 天以下<br />
+   - 2029 年前出现<strong>单季扣非扭亏</strong><br />
+3. <strong>清仓/回避信号</strong>：存货计提大额减值（&gt;3 亿）；毛利率跌回 14% 以下；合同负债连续两季下降；2028 年底具身智能仍无量产订单。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong><br />
+1. <strong>⚠️ 毛利率垫底引发"不降价丢份额、降价则亏本"的死局（首要）</strong>：16.53% 毛利率 vs 行业均值 37.5%、宇树 56.01%、越疆 47.4%。当同业手握 40%+ 毛利随时可打价格战时，新松<strong>没有战略回旋余地</strong>。<br />
+2. <strong>⚠️ 存货 40.51 亿（占总资产 32%）+ 周转 530 天</strong>：一旦技术迭代或需求变更，减值将直接吞噬净资产（40.5 亿的 15–20% = 6–8 亿）。<br />
+3. <strong>⚠️ 期间费用率失控（27.82%，+8.5pct）</strong>：研发 1.96 亿（+43.24%）+ 财务费用刚性，<strong>收入下降 12.57% 的同时费用上升 → 经营杠杆反向放大</strong>。<br />
+4. <strong>⚠️ 具身智能题材溢价证伪</strong>：现价 49% 由人形机器人预期支撑，而董秘明确"未规模化量产"。若 2027–2028 年仍无量产订单，PB 从 5x 回落至 2.5x 即 <strong>−50%</strong>。<br />
+5. <strong>联营公司持续失血</strong>：苏州新施诺 2026H1 亏损 1.09 亿，投资收益 −4771.71 万。<br />
+6. <strong>现金流</strong>：经营现金流 2026H1 −4.33 亿（去年同期 −2.68 亿），速动比率 0.627，<strong>短期偿付能力偏弱</strong>。</p>
+<hr />
+<h4>第五步进阶：上行想象力情景（四类，认真建模上行侧）</h4>
+<p><strong>类型A 行业调整剩者红利 —— 中适用度（Score: ★★★☆）</strong><br />
+- 逻辑：工业机器人行业正从"通用型价格战"向"高端化与智能化"转型，政策（《工业机器人行业规范条件（2024 版）》）<strong>从产品质量、研发创新、供应链安全设定准入门槛，明确"淘汰落后产能"</strong>。若中小集成商与低毛利玩家出清，具备全产业链能力（核心零部件—本体—系统）的新松将受益。<br />
+- 测算：若行业出清后新松份额提升 1.5pct，2029 工机收入从 18 亿升至 24 亿，按 PS 2.5x → 60 亿（vs 中性 36 亿），<strong>增厚 24 亿 → 目标市值 127.5 亿 → 8.14 元（−37.6%）</strong><br />
+- <strong>验证点</strong>：行业集中度（CR5/CR10）提升数据；中小机器人企业退出/破产公告；《规范条件》执行与落后产能淘汰公告。<br />
+- <strong>证伪信号</strong>：价格战进一步加剧、行业玩家不减反增；新松份额继续下滑（2025 年销量榜前十已无新松）。</p>
+<p><strong>类型B 政策反转期权 —— 中适用度（Score: ★★★☆）</strong><br />
+- 逻辑：工业机器人已在政策顺风侧（非被打压），真正的"反转"来自<strong>半导体设备国产替代的政策加码</strong>（02 专项延续、大基金三期对设备端的倾斜）以及<strong>人形机器人"进工厂"场景开放</strong>（国办 2025-11《实施意见》）。<br />
+- 具体政策与弹性：<br />
+  - 国办《关于加快场景培育和开放推动新场景大规模应用的实施意见》（2025-11）：推动人形机器人进工厂，优先在焊接、装配、喷涂、搬运场景规模化落地——<strong>这恰好是新松的存量场景</strong><br />
+  - 若新松在"人形机器人进工厂"首批示范产线中拿到 3–5 条线（单线 0.5–1 亿）→ 2028–2029 新增收入 2–5 亿<br />
+- <strong>重估弹性</strong>：半导体装备若从 8 亿升至 12 亿（政策加码 + 先进制程突破），按 PS 10x × 75% = 90 亿（vs 中性 48 亿），<strong>增厚 42 亿 → 目标市值 145.5 亿 → 9.29 元（−28.8%）</strong><br />
+- <strong>验证点</strong>：①大基金三期对半导体设备的具体投向公告；②工信部"人形机器人进工厂"示范产线名单；③公司首个 ≥1 亿人形机器人订单。<br />
+- <strong>证伪信号</strong>：晶圆厂扩产放缓；示范产线名单无新松；政策从"鼓励"转向"规范整顿"。</p>
+<p><strong>类型C 市场错杀修复 —— 不适用（Score: ☆☆☆☆）</strong><br />
+- 证据检查（<strong>逐条核对，本股不满足任何一条</strong>）：<br />
+  - 估值分位：PB 5.04x 为<strong>极高分位</strong>，非低分位 ❌<br />
+  - 相对行业折价：PS 4.95x <strong>高于</strong>埃斯顿、汇川（均盈利），无折价 ❌<br />
+  - 基本面未恶化：<strong>基本面确实在恶化</strong>——营收 −12.57%（七家唯一负增长）、亏损扩大 98.30%、毛利率垫底、经营现金流 −4.33 亿 ❌<br />
+- → <strong>本股不是被错杀，而是被追捧</strong>。规则要求"必须认真评估是否属市场错杀"，经核查<strong>明确不属于</strong>。<br />
+- 唯一可能的"情绪修复"情景：若人形机器人板块整体 Beta 上行（如国家出台重大产业基金），新松可能因Beta 跟涨，但<strong>这是行业 Beta 而非个股 Alpha，不构成买入理由</strong>，且下跌时同样放大。</p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权 —— 严格按硬验证点检验（Score: ★★☆☆，未达标 → 只进机会栏）</strong></p>
+<table>
+<thead>
+<tr>
+<th>检验维度</th>
+<th>要求</th>
+<th>新松现状</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>要素①政策驱动技术路线</strong></td>
+<td>补贴/强制替代/标准升级</td>
+<td>✅ 工信部《人形机器人创新发展指导意见》（2023-10）+ 国办场景开放实施意见（2025-11）；中央与地方具身智能基金密集设立</td>
+<td>✅ 满足</td>
+</tr>
+<tr>
+<td><strong>要素②行业趋势向该技术收敛</strong></td>
+<td>成本曲线交叉/渗透率拐点</td>
+<td>⚠️ 行业趋势明确（优必选 +104%、越疆 +107%、珞石 +136% 均由具身智能驱动），但<strong>新松是七家中唯一营收负增长的</strong>——趋势在收敛，但<strong>新松不在收敛的中心</strong></td>
+<td>⚠️ 部分满足</td>
+</tr>
+<tr>
+<td><strong>要素③公司技术投产落地</strong></td>
+<td>三选一：中试跑通且良率达标 / 客户定点·大额订单 / 量产成本优于旧路线</td>
+<td>❌ <strong>硬验证点三项全部未达标</strong>：<br>① <strong>中试良率</strong>：无数据，产品"已试验应用、<strong>未规模化量产</strong>"（2026-08-11 董秘回复）<br>② <strong>客户定点/大额订单</strong>：<strong>无任何金额披露的人形机器人订单公告</strong>；财报原文"开展<strong>测试及模拟应用</strong>，商业化落地仍需时间验证"<br>③ <strong>量产成本优于旧路线</strong>：<strong>无数据</strong>，且研发投入"短期内将持续对利润形成压力"</td>
+<td>❌ <strong>未达标</strong></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>纪律执行</strong>：<strong>三缺一即只作机会情景，本股三缺一（要素③全缺），因此具身智能/人形机器人期权严格不计入中性锚，仅列示于乐观情景。</strong><br />
+- <strong>乐观情景测算（若 2029 年前三要素全部达标）</strong>：人形机器人 2029 收入 10 亿，按 PS 10x = <strong>100 亿</strong> → 乐观目标市值 289 亿 → <strong>18.46 元（+41.6%）</strong><br />
+- <strong>验证点（硬，缺一不可）</strong>：①中试线跑通且良率达标公告；②<strong>首个 ≥1 亿元的人形机器人量产订单/客户定点公告</strong>；③量产成本数据披露且优于传统工业机器人路线<br />
+- <strong>证伪信号</strong>：中试失败 / 良率长期不达标 / 已测试客户流失 / 成本打不过旧路线 / 政策退坡早于量产 / <strong>2028 年底仍无量产订单</strong></p>
+<p><strong>综合上行触发：什么时候上调至"重点关注"？</strong><br />
+必须<strong>同时</strong>满足以下 <strong>4 条中的 3 条</strong>：<br />
+1. <strong>单季综合毛利率连续两季 ≥ 20%</strong>（结构切换成功，毛利 — 费用剪刀差转正）<br />
+2. <strong>半导体装备收入 2029 年达 10 亿以上</strong>且子公司净利率 ≥ 8%（高毛利板块成为支柱）<br />
+3. <strong>人形机器人获得首个 ≥1 亿元量产订单</strong>（类型D 硬验证点达标，题材转业绩）<br />
+4. <strong>存货周转天数回落至 400 天以下 + 单季经营性现金流转正</strong>（资产质量与现金流风险解除）</p>
+<p>若满足条件 1 + 2 + 3，2029E 中性市值可上修至 <strong>200–230 亿 → 12.8–14.7 元（−2%~+13%）</strong>；若再满足条件 4，可上修至 <strong>260 亿 → 16.6 元（+27.3%）</strong>。<br />
+<strong>⚠️ 注意：即便四条全部满足，空间也仅约 +27%，仍达不到"重点关注"的 &gt;+50% 门槛。</strong> 这说明<strong>以当前 13.04 元的起点，本股几乎不可能在 2029 年前提供"重点关注"级别的赔率</strong>——除非市场给予远超基本面的情绪溢价。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p><strong>不给"重点关注"的理由</strong>：中性远期空间 <strong>−49.3%</strong>，深度为负；期望值 <strong>−40.6%</strong>；且四道上行触发条件全部满足也仅 +27%，无法突破 +50% 门槛。<br />
+<strong>不给"纳入观察"的理由</strong>：规则要求"纳入观察"需远期空间 &gt;0。本股中性空间为 <strong>−49.3%</strong>，且下行幅度（−80.6%）远大于上行（+41.6%），不符合"逻辑正确但需等拐点"的定义。<br />
+<strong>不给"坚决回避"的理由</strong>：公司<strong>明确不满足排除标准</strong>——①主业未"持续萎缩"而是<strong>主动战略收缩低毛利业务</strong>（营收 −12.57% 是主动选择，毛利率反而 +1.91pct）；②<strong>有在手订单</strong>（合同负债 20.41 亿，+19.48%）；③<strong>有新项目与新增长极</strong>（半导体装备子公司已盈利、获北方华创/中微战投）；④<strong>有扭亏路径且时点可判断</strong>（2028–2029 靠毛利率修复 + 研发投入企稳 + 联营公司止血）；⑤<strong>亏得起</strong>（净资产 40.5 亿、子公司可独立融资、中科院背景）。按规则"<strong>亏损 + 看不到任何扭亏路径才回避</strong>"，本股<strong>有明确路径</strong>，故不回避。<br />
+<strong>最终判断</strong>：这是一家<strong>战略方向正确、执行尚未兑现</strong>的老牌机器人企业。行业景气向上、政策强支持、半导体装备迁移已验证，但<strong>毛利率垫底（16.53% vs 行业 37.5%）+ 存货 40.51 亿/530 天 + 期间费用率 27.82% + 经营现金流 −4.33 亿</strong>四重压力，使得"扭亏"最早也要等到 2028–2029 年且幅度极微（0.30 亿）。而现价 13.04 元已为人形机器人题材支付了约 <strong>100 亿（49%）</strong>的溢价——<strong>在硬验证点（中试良率 / 客户定点 / 量产成本）达标前，这个溢价没有任何业绩支撑。</strong><br />
+<strong>核心跟踪点</strong>：①单季综合毛利率能否连续两季 ≥ 20%；②半导体装备收入增速与子公司净利率；③<strong>是否有 ≥1 亿元人形机器人量产订单公告</strong>（最关键）；④存货周转天数与经营性现金流。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.04 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>9.50 元</strong>（区间 7.80–11.80，题材溢价渐次消化）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−27.1%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>6.61 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−49.3%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 2.53 元（−80.6%）～ 乐观 18.46 元（+41.6%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>毛利率垫底16.53%+存货530天+费用率27.82%，扭亏最早2029，现价49%为人形机器人题材溢价</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（6.50 元以下或人形机器人量产订单落地再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年年度报告（2026-04-24 披露）、2026 年半年度报告（2026-08-23 披露）、公司公告（新增 2026 年度日常关联交易预计额度，2026-08-21）、同花顺财经《净利润最高增长 2314%！三大国产工业机器人龙头 2026 半年报出炉》（2026-08-24）、网易/财中社新松 2026 半年报解读（2026-08）、新浪财经上市公司研究院《七家机器人中报谁是倒数第一》（2026-09-12）、三个皮匠报告《机器人（SZ300024）2026 年半年度报告》（财报解读）、格隆汇（2026-08-23）、中商产业研究院《2025-2030 全球与中国工业机器人市场现状及未来发展趋势》、工信部等六部门《机械行业稳增长工作方案（2025—2026 年）》、国务院办公厅《关于加快场景培育和开放推动新场景大规模应用的实施意见》（2025-11）、工信部《人形机器人创新发展指导意见》（2023-10）、腾讯行情接口（qt.gtimg.cn，2026-09-14 收盘）、akshare 财务摘要（新浪财经口径）。</em><br />
+<em>估值方法说明：未使用任何历史增速外推。因公司扣非归母连续 5 年为负，采用</em><em>正常化净利润法</em><em>：稳态营收由合同负债 20.41 亿 + 半导体子公司已盈利事实 + 主动收缩低毛利业务的执行情况自下而上测算；正常化净利率由分业务毛利率（半导体 27.86%、交通 29.81%、工机 14.08%）与刚性费用（研发 2.6 亿 + 财务 0.8 亿）倒推，得 2029E 归母 0.30 亿。因净利过低导致 PE 法失效，主用 SOTP（PS 分部）估值并以 PB 交叉验证。</em><em>具身智能/人形机器人期权因硬验证点（中试良率/客户定点/量产成本）三项全缺，严格不计入中性锚</em><em>，仅列示于乐观情景。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

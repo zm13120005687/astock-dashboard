@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新开源（300109）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>新开源（300109）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-16 ｜ 现价 <strong>12.55 元</strong> ｜ 总市值 <strong>约 72.4 亿</strong> ｜ PE(TTM) <strong>47.85x</strong> ｜ PB <strong>2.16x</strong> ｜ 总股本 <strong>5.769 亿股</strong><br />
+行业：精细化工（PVP 聚乙烯吡咯烷酮）/精准医疗 ｜ 板块：创业板 ｜ 地域：河南焦作<br />
+定位：国内首家专注 PVP 系列产品的高新技术企业，PVP 国内市占率约 50%、出口约 50%</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：PVP（聚乙烯吡咯烷酮）国内龙头 + 精准医疗双主业——PVP 是应用广泛的非离子型水溶性高分子聚合物（下游日化/医药/食品/材料/新能源），精准医疗布局体外诊断与细胞治疗。</p>
+<p><strong>各业务板块营收占比（2026 半年报，营收 6.78 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>精细化工（PVP 系列）</td>
+<td>6.07 亿</td>
+<td>89.46%</td>
+</tr>
+<tr>
+<td>精准医疗（医疗服务）</td>
+<td>0.71 亿</td>
+<td>10.54%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PVP 细分产品（2026H1）</strong>：PVP 其他 2.78 亿（40.95%）、PVP K30 粉 2.06 亿（30.36%）、欧瑞姿系列 0.74 亿（10.84%）、其他（含 PVP-I）1.21 亿。</p>
+<p><strong>主要客户/下游</strong>：日化、医药、食品饮料、材料、新能源（光伏辅料）等，累计 1000 多家客户，出口全球多国。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：境内 7.82 亿 / 境外 3.48 亿（分部口径含抵销），出口占比约 50%。</p>
+<blockquote>
+<p>结构要点：体量最大的"PVP 其他"毛利率 48.98%（−6pct）、欧瑞姿 61.76%（−8.81pct），是盈利支柱；PVP K30 粉、PVP-I 毛利率分别 +3.73/+2.27pct，印证价格企稳。</p>
+</blockquote>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>中性，无直接强政策</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/变量</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国产替代（PVP 高端牌号）</td>
+<td>产业趋势</td>
+<td>—</td>
+<td>公司 1.5 万吨高端 PVP 生产线在建</td>
+</tr>
+<tr>
+<td>精准医疗/细胞治疗</td>
+<td>政策鼓励</td>
+<td>—</td>
+<td>上海松江基地布局</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>PVP 是成熟的化工品，无针对性产业政策，业绩驱动主要来自<strong>全球供需与价格周期</strong>。</p>
+</blockquote>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PVP 全球市场规模</td>
+<td>预计 2026 年底 <strong>10.34 亿美元</strong></td>
+</tr>
+<tr>
+<td>公司 PVP 销量</td>
+<td>2025 年 <strong>2.32 万吨</strong>，创历史新高</td>
+</tr>
+<tr>
+<td>国内市占率 / 出口占比</td>
+<td>约 <strong>50% / 50%</strong></td>
+</tr>
+<tr>
+<td>在建工程</td>
+<td><strong>4.27 亿</strong>（1.5 万吨高端 PVP 生产线在建）</td>
+</tr>
+<tr>
+<td>欧瑞姿出货量（2025）</td>
+<td>约 900 吨，毛利率维持 60–70%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：<br />
+- 2026H1 营收 6.78 亿（+5.29%，恢复正增长），归母 1.01 亿（−27.31%），扣非 1.11 亿（−13.97%）<br />
+- <strong>PVP 价格已趋于稳定</strong>：PVP K30 粉收入 +12.77%、PVP-I +12.34%，毛利率同步回升<br />
+- 经营现金流 1.00 亿（+34.79%），质量改善<br />
+- 但归母净利仍在同比下滑（−27.31%），处于"量增价稳、利降收窄"的修复初期</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：BDO（1,4-丁二醇）、NVP 单体（公司中站区 NVP 项目已投产，向上游一体化）。原料价格下行利于成本。</p>
+<p><strong>下游</strong>：日化、医药、食品、新能源（光伏）。下游分散，需求相对稳定。</p>
+<p><strong>议价权</strong>：<strong>中强</strong>。PVP 国内市占率 50% 的龙头地位带来一定定价权，但 PVP 属于成熟化工品，2024–2025 年价格战（行业扩产）曾致价格下行，议价权受行业产能周期制约。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：NVP 单体是核心原料，公司中站区 NVP 项目投产实现向上游一体化，<strong>降低了对原料价格波动的暴露（传导率提升）</strong>；PVP 价格下行期公司被迫降价（传导率≈0.4–0.6），毛利率从 2024 年 46.95% 降至 2026H1 39.31%。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：不同 PVP 牌号毛利率差异大——欧瑞姿 61.76%（高毛利）、PVP 其他 48.98%、PVP K30 粉 23.31%（低毛利）。<strong>高端牌号（欧瑞姿、高纯 PVP）占比提升是毛利率修复的关键</strong>，禁单一综合毛利率。</li>
+<li><strong>因子3 库存与采购节奏</strong>：2025 年 PVP 价格下行期，公司高价原料库存与产品跌价并存，侵蚀利润；2026H1 价格企稳，库存损失收敛，<strong>"当期 vs 远期"毛利可比性正在修复</strong>。</li>
+<li><strong>因子4 政策/市场锚点</strong>：核心成本/价格驱动 = <strong>BDO-NVP-PVP 产业链价格（市场层）</strong>。政策层无直接关税/出口管制扰动；国产高端替代是长期变量。验证点：PVP 季度价格、NVP 一体化成本下降；证伪信号：PVP 价格再度下行、毛利率跌破 35%。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.5 万吨高端 PVP 生产线</td>
+<td>在建</td>
+<td>在建工程 4.27 亿</td>
+<td>在建，投产爬坡</td>
+<td>高端牌号放量</td>
+<td>中</td>
+</tr>
+<tr>
+<td>中站区 NVP 项目</td>
+<td>上游一体化</td>
+<td>已投产</td>
+<td>降本</td>
+<td>成本改善</td>
+<td>高</td>
+</tr>
+<tr>
+<td>PVP 销量增长</td>
+<td>2025 年 2.32 万吨创新高</td>
+<td>持续增长</td>
+<td>新能源/医药需求</td>
+<td>量增</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>欧瑞姿系列</td>
+<td>口腔护理聚合物</td>
+<td>约 900 吨/年</td>
+<td>毛利率 60–70%</td>
+<td>高毛利支撑</td>
+<td>中</td>
+</tr>
+<tr>
+<td>精准医疗</td>
+<td>上海松江基地</td>
+<td>0.71 亿</td>
+<td>布局细胞治疗/基因</td>
+<td>第二曲线</td>
+<td>低</td>
+</tr>
+</tbody>
+</table>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层1 现有业务 = 市场容量 × 份额变量</strong>：PVP 全球市场 10.34 亿美元（约 75 亿人民币），公司国内市占率约 50%，<strong>份额已高、二阶导数为负（接近饱和）</strong>——增量只能来自"全球市场扩容 + 高端牌号结构升级"，而非国内份额大幅提升。验证点：PVP 销量、高端牌号出货占比。</li>
+<li><strong>层2 主业迁移空间（精准医疗）</strong>：能力可迁移性<strong>弱</strong>（精细化工 → 医疗诊断是跨行业），新 TAM 弹性大（细胞治疗/基因技术）但<strong>竞争激烈、认证门槛高、目前营收占比仅 10.54% 且亏损收敛中</strong>。<strong>未过验证点，仅作中期期权，不计入中性净利</strong>。</li>
+<li><strong>层3 证伪信号</strong>：PVP 价格再度下行、高端牌号放量不及预期、精准医疗持续亏损扩大。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：新开源是持续盈利股（但经历 2024–2025 年 PVP 价格下行周期，净利从 4.93 亿高点降至 1.90 亿）。按分业务自下而上测算，不用历史增速外推。核心变量是 PVP 价格企稳后的回升节奏与高端产能放量。</p>
+</blockquote>
+<p><strong>总股本：5.769 亿股</strong>（现价 12.55 元对应总市值 72.40 亿）</p>
+<h3>分业务测算（2029 年）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>精细化工（PVP 等）</td>
+<td>2025 年 10.40 亿，价格企稳 + 1.5 万吨高端产能满产 + 新能源/医药放量</td>
+<td>14.0 亿</td>
+<td>16%</td>
+<td>2.24 亿</td>
+</tr>
+<tr>
+<td>精准医疗</td>
+<td>2026H1 0.71 亿，亏损收敛，温和增长</td>
+<td>1.2 亿</td>
+<td>10%</td>
+<td>0.12 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>约 2.36 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>校验：2024 年精细化工峰值约 14.5 亿（16.06 亿总营收−医疗），2029E 精细化工 14 亿是"价格企稳 + 高端产能满产"下的合理恢复，<strong>不超过历史峰值</strong>，无产能/订单支撑更高的增长。</p>
+</blockquote>
+<h3>基准（2026E）</h3>
+<ul>
+<li>2026H1 归母 1.01 亿（−27.31%），PVP 价格已企稳，下半年量增 + 价格稳 → H2 约 1.0–1.1 亿</li>
+<li><strong>2026E 净利 2.0–2.2 亿，取 2.0 亿</strong></li>
+<li><strong>基准目标价 = 2.0 亿 × 20x = 40 亿 → 6.93 元</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>PVP 价格再度下行、高端产能过剩、医疗亏损扩大</td>
+<td>1.60 亿</td>
+<td>15x</td>
+<td>24 亿</td>
+<td><strong>4.16 元</strong></td>
+<td><strong>−66.9%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>价格企稳 + 高端产能满产 + 医疗收敛</td>
+<td><strong>2.40 亿</strong></td>
+<td>20x</td>
+<td>48 亿</td>
+<td><strong>8.32 元</strong></td>
+<td><strong>−33.7%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>PVP 价格回升至 2023 年高位 + 医疗突破</td>
+<td>3.30 亿</td>
+<td>24x</td>
+<td>79.2 亿</td>
+<td><strong>13.73 元</strong></td>
+<td><strong>+9.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>2.0 亿</td>
+<td>2.40 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>20x</td>
+<td>20x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>40 亿</td>
+<td>48 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>6.93 元</strong></td>
+<td><strong>8.32 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 12.55 元对应 2026E 净利 2.0 亿的 PE 约 <strong>36x</strong>、PB 2.16x。市场已隐含"净利恢复到 3.6 亿+"的预期（72.4 亿 / 20x），这需要 PVP 价格大幅回升至接近 2023 年高点（当年净利 4.93 亿）才能兑现——而目前 PVP 价格仅"企稳"而非"回升"，预期偏乐观。</p>
+<h4>第四步进阶：重资产/周期股估值校正三道闸</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：PB 2.16x 是<strong>溢价而非破净</strong>，不存在"PB&lt;1 推大空间"问题；但需警惕<strong>商誉减值风险</strong>（2025 年已减 4045 万，精准医疗板块账面价值待观察）。</li>
+<li><strong>校正2 周期位置校正</strong>：PVP 属<strong>化工周期品</strong>，当前处于"价格下行后企稳（周期底部）"位置。中性净利用<strong>2.4 亿</strong>（价格企稳 + 高端产能满产），<strong>未用 2023 年高点 4.93 亿外推</strong>，符合周期归一化要求。</li>
+<li><strong>校正3 杠杆下行情景</strong>：负债率 22.46%（低），杠杆风险小；但需附"扩产反噬（1.5 万吨产能投产恰逢过剩）+ 价格再下行"负面情景——已含于悲观情景（净利 1.60 亿、空间 −66.9%）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>高估</strong>。现价 12.55 元对应 2026E PE 约 36x、PB 2.16x，已隐含 PVP 价格大幅回升的乐观预期，而公司净利仍处下滑后的修复初期（2026H1 归母仍 −27.31%）。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 8.32 元 → 空间 <strong>−33.7%</strong><br />
+- 悲观 4.16 元 → 下行 <strong>−66.9%</strong><br />
+- 乐观 13.73 元 → <strong>+9.4%</strong>（需 PVP 价格回升至 2023 年高位 + 医疗突破）<br />
+- 下行保护：BPS 5.80 元、负债率 22.46%、经营现金流改善，7 元附近（PB 1.2x）有支撑</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价不介入</strong>。需回落至 <strong>9 元以下</strong>（2026E PE 约 26x）才具备安全边际<br />
+2. <strong>上调信号</strong>：① PVP 价格环比持续回升（而非仅企稳）；② 1.5 万吨高端 PVP 产能投产并满产；③ 精准医疗减亏或扭亏<br />
+3. <strong>观察指标</strong>：PVP 季度价格、高端牌号出货占比、单季归母净利同比转正</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>PVP 价格再度下行</strong>：行业扩产（含公司自身 1.5 万吨）若需求跟不上，可能加剧过剩，价格战重演<br />
+2. <strong>扩产反噬</strong>：1.5 万吨高端产能投产恰逢行业过剩周期，折旧 + 价格双杀<br />
+3. <strong>业绩下滑惯性</strong>：2026H1 归母仍 −27.31%，下滑尚未完全止住<br />
+4. <strong>精准医疗不确定性</strong>：跨行业布局，持续亏损收敛慢，商誉减值风险（2025 年已减 4045 万）</p>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：PVP 行业若经历出清（小产能退出），公司作为 50% 市占率龙头享份额与定价权提升。验证点：行业开工率、PVP 价格环比；证伪：新产能持续投放致过剩。</li>
+<li><strong>类型B 政策反转期权</strong>：无直接政策打压，不适用。</li>
+<li><strong>类型C 市场错杀修复</strong>：不成立——现价是"价格企稳 + 高端产能 + 医疗"预期的定价，非错杀。</li>
+<li><strong>类型D 技术突破期权</strong>：精准医疗（细胞治疗/基因技术）是跨行业第二曲线，若上海基地取得突破，弹性大，但<strong>未过验证点（无商业化成果公告），仅作机会情景</strong>。证伪：医疗持续亏损无起色。</li>
+<li><strong>什么条件出现才上调重点关注</strong>：PVP 价格环比持续回升 + 高端产能满产 + 归母净利同比转正，且股价回落至 9 元以下。</li>
+</ul>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>公司是 PVP 国内龙头（市占率 50%）、质地不差（毛利率 39%、低负债、现金流改善），当前处于"价格企稳、业绩降幅收窄"的修复期。但<strong>现价 12.55 元已隐含 PVP 价格大幅回升的乐观预期（2026E PE 36x）</strong>，中性远期空间 −33.7%，安全边际不足。符合"暂不介入"标准（估值已高、空间为负）。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>12.55 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>6.9 元</strong>（区间 6.2–7.6）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−45.0%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>8.32 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−33.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 4.16 元（−66.9%）～ 乐观 13.73 元（+9.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>PVP国内龙头价格企稳+高端产能放量，但现价已隐含价格大幅回升的乐观预期</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（9 元以下且 PVP 价格环比持续回升再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年年报、2026 年半年度报告（2026-08-25 披露）、公司公告、金融界/新浪财经/证券之星、PVP 全球市场数据。</em><br />
+<em>亏损口径核实：本股任务清单未标亏损，且为持续盈利股——2026 半年报归母净利 +1.01 亿（同比 −27.31%），非亏损。本报告采用分业务自下而上 + 常规 PE 法，无需正常化净利润法三问。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

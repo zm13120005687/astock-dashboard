@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>奥锐特（605116）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>奥锐特（605116）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-14 ｜ 现价 <strong>19.12 元</strong>（2026-09-14 收盘，curl 腾讯行情实测）｜ 总市值 <strong>77.66 亿</strong> ｜ PE(TTM) <strong>20.82x</strong> ｜ PB <strong>2.92x</strong> ｜ 总股本 <strong>4.0618 亿股</strong><br />
+行业：医药生物 · 化学原料药（特色复杂原料药 + 多肽/寡核苷酸 + 制剂）｜ 板块：沪市主板<br />
+注：队列现价已过时，本报告全部采用实测收盘价。腾讯接口实测 PE 20.82x、总市值 77.66 亿、流通市值 77.66 亿（全流通）。<br />
+<strong>Q2 拐点确认</strong>：Q2 单季归母 0.948 亿，<strong>环比 +48%</strong>，毛利率环比回升至 56.15%——2026H1 的业绩下滑是"折旧 + 汇兑"两个过渡性因素所致，主业基本面未恶化。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：特色复杂原料药与医药中间体制造商，正从"传统小分子原料药"向<strong>多肽（TIDES）与寡核苷酸</strong>升级，同时向下游制剂延伸形成"原料药 + 制剂"一体化，八成收入来自海外规范市场。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 8.2837 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>原料药及中间体销售</strong></td>
+<td><strong>7.13 亿</strong></td>
+<td><strong>86.11%</strong></td>
+<td>核心：女性健康、神经系统、抗感染、心血管、抗肿瘤、<strong>TIDES（多肽/寡核苷酸）</strong></td>
+</tr>
+<tr>
+<td><strong>成品药销售</strong></td>
+<td>0.9416 亿</td>
+<td><strong>11.37%</strong></td>
+<td>地屈孕酮片（奥舒桐®）、恩扎卢胺片等制剂</td>
+</tr>
+<tr>
+<td>原料药及中间体贸易</td>
+<td>0.1702 亿</td>
+<td>2.06%</td>
+<td>低毛利贸易</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.0384 亿</td>
+<td>0.46%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：<br />
+- <strong>原料药</strong>：女性健康类（地屈孕酮、炔雌醇等）、神经系统类（布立西坦等）、抗感染类、心血管类、抗肿瘤类、<strong>TIDES 类（司美格鲁肽、英克司兰钠等）</strong><br />
+- <strong>制剂</strong>：<strong>地屈孕酮片（奥舒桐®）</strong>——治疗内源性孕酮不足；<strong>恩扎卢胺片</strong>——前列腺癌治疗</p>
+<p><strong>主要客户 / 下游</strong>：欧美、印度规范市场仿制药企与创新药企。公司从"单一产品供应"向 <strong>CMO 定制化生产服务</strong>延伸（客户深度合作模式）。2026 年 6 月全资子公司<strong>扬州奥锐特通过美国 FDA cGMP 现场检查</strong>。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：<strong>境外 6.51 亿，占 78.56%</strong>；境内 1.78 亿，占 21.44%。</p>
+<blockquote>
+<p>境外占比高 → 汇率是利润扰动项，但同时也意味着<strong>产品已通过欧美规范市场准入</strong>，质量体系是硬资产。</p>
+</blockquote>
+<p><strong>股东背景</strong>：浙江台州民营企业（浙江奥锐特药业）。总资产 <strong>41.71 亿</strong>、归母净资产 <strong>26.76 亿</strong>，<strong>资产负债率约 35.8%</strong>——<strong>在重资产扩张的原料药企业中属偏低水平，财务结构健康</strong>。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，三个政策级催化在 2026 年内集中落地</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度</th>
+<th>对公司的量化影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>司美格鲁肽核心化合物专利（CN200680006674.6）在中国到期</strong></td>
+<td>国家知识产权局</td>
+<td><strong>2026-03-20</strong></td>
+<td><strong>决定性事件</strong></td>
+<td><strong>开启中国仿制药市场</strong>。十余家本土企业生物类似药进入审评收尾。公司司美格鲁肽原料药（半发酵法，成本 <strong>低至 30 美元/克</strong>）直接受益</td>
+</tr>
+<tr>
+<td><strong>降糖版司美格鲁肽纳入《国家基本药物目录（2026 版）》</strong></td>
+<td>国家卫健委</td>
+<td>2026 年 9 月落地</td>
+<td>国家级</td>
+<td>入选品种纳入基层常态化采购清单，终端铺货速度平均提升 <strong>40%+</strong></td>
+</tr>
+<tr>
+<td><strong>地屈孕酮片纳入《国家基本药物目录（2026 年版）》</strong></td>
+<td>国家卫健委</td>
+<td>2026</td>
+<td>国家级</td>
+<td>公司核心制剂品种，<strong>大幅助力基层医疗市场渗透</strong></td>
+</tr>
+<tr>
+<td><strong>地屈孕酮片、恩扎卢胺片中选第十二批国家集采</strong></td>
+<td>国家医保局</td>
+<td><strong>2026-07</strong></td>
+<td>国家级</td>
+<td>以价换量：奥舒桐®价格同比下降 4%，换取集采量。<strong>集采明确仅纳入成熟仿制药，专利期内创新药不被纳入——政策定位从"控费降价"转向"扶优做强"</strong></td>
+</tr>
+<tr>
+<td>《国民健康"十五五"规划》</td>
+<td><strong>国务院</strong></td>
+<td>2026-07-13</td>
+<td><strong>国家级</strong></td>
+<td>全链条支持创新药</td>
+</tr>
+<tr>
+<td>医保"双目录"改革</td>
+<td>国家医保局</td>
+<td>2026</td>
+<td>国家级</td>
+<td>557 款品种通过医保初审、53 款高价创新药通过商保目录初审</td>
+</tr>
+<tr>
+<td><strong>FDA cGMP 现场检查通过</strong></td>
+<td>美国 FDA</td>
+<td><strong>2026-06</strong></td>
+<td><strong>国际准入</strong></td>
+<td>扬州奥锐特通过：英克司兰钠<strong>批准前检查</strong> + 司美格鲁肽、柯拉特龙、布立西坦等原料药常规 GMP 符合性检查</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策力度判断</strong>：<strong>三个国家级催化（司美专利到期、基药目录纳入、第 12 批集采中选）+ 一个国际准入（FDA cGMP）在 12 个月内集中落地</strong>，这是罕见的政策密集利好期。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+<th>对公司的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球 GLP-1 受体激动剂市场</td>
+<td><strong>2025 年超 600 亿美元</strong></td>
+<td>多肽原料药需求的总盘子</td>
+</tr>
+<tr>
+<td>2030 年全球多肽药物市场</td>
+<td><strong>突破 2,300 亿美元</strong></td>
+<td>长期 TAM</td>
+</tr>
+<tr>
+<td><strong>中国多肽原料药市场</strong></td>
+<td><strong>2021 年 76 亿 → 2030 年 653 亿</strong></td>
+<td>公司所在赛道的国内空间</td>
+</tr>
+<tr>
+<td><strong>司美格鲁肽原料药需求</strong></td>
+<td>当前不足 2 吨 → <strong>2030 年 152 吨</strong>（注射 5 吨 + 口服 147 吨），<strong>增长超 76 倍</strong></td>
+<td>⚠️ <strong>最大的量增来源</strong></td>
+</tr>
+<tr>
+<td><strong>司美格鲁肽原料药价格</strong></td>
+<td>当前注射级 <strong>2,800–2,900 元/克</strong>、口服级 1,400–1,500 元/克 → <strong>2026 专利到期后降至 1,500–1,600 元/克</strong> → 2030 年可能 <strong>800–1,000 元/克</strong></td>
+<td>⚠️ <strong>量增 76 倍 vs 价降约 3 倍 → 净额仍是大幅增长，但价格战风险真实存在</strong></td>
+</tr>
+<tr>
+<td>中国多肽原料药总产能</td>
+<td><strong>32.05 吨/年</strong>（药明 15–20 吨、诺泰 10–11.6 吨、凯莱英 3 吨、健元 2 吨、翰宇 1 吨、圣诺 0.95 吨、<strong>奥锐特 0.3 吨</strong>）</td>
+<td>⚠️ <strong>公司产能排名靠后（0.3 吨），但半发酵法成本 30 美元/克显著低于行业</strong></td>
+</tr>
+<tr>
+<td>全球多肽 CDMO 市场</td>
+<td>2021 年 22 亿美元 → 2030 年 118 亿美元</td>
+<td>行业景气</td>
+</tr>
+<tr>
+<td>印度对中国原料药依赖度</td>
+<td>2022.03–2024.02 印度自中国进口原料药和中间体规模占比稳定在 <strong>约 75%</strong></td>
+<td>需求端刚性</td>
+</tr>
+<tr>
+<td>中国 GLP-1 市场规模</td>
+<td>2025 年司美格鲁肽国内 <strong>127 亿元</strong>，2026 年末 GLP-1 整体有望突破 <strong>150 亿元</strong></td>
+<td>国内终端放量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：<br />
+- <strong>量在增</strong>：女性健康类、神经系统类、抗感染类和 <strong>TIDES 原料药销量同比增长</strong>，其中<strong>女性健康类大幅增长</strong>——"有效对冲了产品价格下滑的压力"<br />
+- <strong>价在降</strong>：综合毛利率 <strong>54.85%（−5.26pct）</strong>，净利率 <strong>19.16%（−9.42pct）</strong><br />
+- <strong>⚠️ 利润下滑的两个明确原因（均为过渡性）</strong>：<br />
+  1. <strong>折旧费用同比增加 0.36 亿（+78.30%）</strong>——募投及其他项目陆续转固投产，<strong>产能尚处爬坡阶段</strong>。这是"产能先投、收入后至"的典型阶段<br />
+  2. <strong>汇兑损失 2,973.31 万元</strong>——2026 上半年人民币对美元大幅升值，既削弱外销价格竞争力，又产生直接汇兑损失<br />
+- <strong>✅ Q2 已现拐点</strong>：Q2 营收 4.39 亿（<strong>+4.56% 同比、+12.8% 环比</strong>），归母 <strong>0.948 亿（−17.9% 同比、+48% 环比）</strong>，毛利率环比回升至 <strong>56.15%</strong>，净利率 <strong>21.59%</strong><br />
+- <strong>剔除折旧 + 汇兑两个因素后</strong>（0.36 亿 + 0.297 亿 = 0.657 亿，税后约 0.49 亿），H1 可比净利约 <strong>2.08 亿</strong>，同比降幅由 −32.42% 收窄至约 <strong>−11%</strong>——<strong>主业的实际恶化程度远小于表观</strong></p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：医药中间体、化工原料、溶剂、氨基酸（多肽合成原料）、固相合成树脂。<br />
+- <strong>议价权：中等偏强</strong>。原料药企业上游为大宗化工品，供应商分散</p>
+<p><strong>下游</strong>：全球仿制药企、创新药企、CMO 客户。<br />
+- <strong>议价权：强</strong>。①<strong>认证壁垒</strong>：FDA/EMA 的 GMP 核查与 DMF 备案是准入门槛，客户切换供应商需重新验证（周期 1–2 年）；②公司 2026 年 6 月新获 FDA cGMP 通过，<strong>准入资质再加码</strong>；③从"卖产品"转向 <strong>CMO 定制服务</strong>，绑定更深</p>
+<p><strong>产业链位置</strong>：<strong>中游原料药，处于"技术密集 + 认证密集"环节</strong>，是整条链上议价权最强的位置之一（相比上游大宗化工与下游仿制药制剂）。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<p><strong>因子1 成本传导弹性（pass-through）</strong><br />
+- <strong>原料药（86.11%）传导率约 0.6–0.7</strong>：公司向下游供应的是<strong>认证过的合规原料药</strong>，客户切换成本高（重新验证 1–2 年），且原料药在制剂成本中占比通常 &lt;10%，客户对价格敏感度低 → <strong>传导能力较强</strong><br />
+- <strong>制剂（11.37%）传导率约 0</strong>：<strong>集采中标价是刚性的，成本上涨完全无法转嫁</strong>（奥舒桐®集采价格同比 −4%）<br />
+- <strong>贸易（2.06%）传导率约 1.0</strong>：纯转手，价格联动<br />
+- <strong>加权传导率约 0.6</strong> → 上游化工原料涨价 10%，实际毛利承压约 10%×(1−0.6)×原料成本占比(约 30%) ≈ <strong>1.2pct</strong><br />
+- <strong>验证点</strong>：①单季毛利率能否维持在 55%+；②公司是否对长协客户发起调价；③FDA/EMA 新认证产品是否获得溢价<br />
+- <strong>证伪信号</strong>：毛利率跌破 50% 且收入未同步增长 → 传导失败 + 价格战</p>
+<p><strong>因子2 毛利结构再平衡（分业务线敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>收入占比</th>
+<th>毛利率特征</th>
+<th>主要成本</th>
+<th>敏感权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>原料药-小分子（女性健康/神经/抗感染/心血管）</strong></td>
+<td>约 65%</td>
+<td><strong>高</strong>（历史综合 60%+）</td>
+<td>化工中间体、溶剂</td>
+<td>中（化工原料）</td>
+</tr>
+<tr>
+<td><strong>原料药-TIDES（多肽/寡核苷酸）</strong></td>
+<td>约 21%（含在小分子口径内，2025 年 10 月数据产能 0.3 吨）</td>
+<td><strong>高但波动大</strong>——价格从 2,900 元/克降至 800–1,000 元/克是主要风险</td>
+<td><strong>氨基酸、固相合成树脂、纯化溶剂</strong></td>
+<td><strong>极高</strong>（价格是唯一主导变量）</td>
+</tr>
+<tr>
+<td><strong>制剂（成品药）</strong></td>
+<td>11.37%</td>
+<td>中（集采降价压制）</td>
+<td>自产原料药（<strong>成本优势</strong>）+ 销售费用</td>
+<td>低（原料自给）</td>
+</tr>
+<tr>
+<td>贸易</td>
+<td>2.06%</td>
+<td><strong>极低</strong></td>
+<td>采购成本</td>
+<td>高（但绝对值小）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>关键结构迁移</strong>：<strong>TIDES（多肽）是未来增量主力，但也是毛利率波动最大的线</strong>——它的毛利率由"司美格鲁肽原料药价格"单一变量决定，而这个价格正从 2,900 元/克向 800–1,000 元/克下行。<br />
+→ <strong>这意味着</strong>：TIDES 放量会<strong>同时带来收入增长与毛利率下拉</strong>。用单一 54.85% 综合毛利率推未来会严重失真。<br />
+→ <strong>对冲因素</strong>：①公司<strong>半发酵法成本仅 30 美元/克</strong>（约 215 元/克），即便价格跌到 800 元/克仍有厚利；②<strong>制剂占比提升</strong>（自产原料药→制剂，内部消化，综合毛利提升）<br />
+→ <strong>中性假设</strong>：2029E 综合毛利率 <strong>52%</strong>（低于 2025 年的 60%，因 TIDES 价格下行 + 制剂占比提升）</p>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+- 原料药企业<strong>库存收益/损失不显著</strong>（化工原料采购周期短，无战略储备）<br />
+- <strong>真正的 timing 问题是"产能投产节奏 vs 需求节奏"</strong>：公司募投项目陆续转固，折旧 +78.30%，但<strong>产能尚处爬坡</strong> → <strong>当前是"折旧已发生、收入未跟上"的最差时点</strong>，2027—2028 年达产后<strong>单位折旧将大幅摊薄</strong><br />
+- <strong>验证点</strong>：在建工程转固金额、产能利用率、单季折旧费用同比增速（<strong>当前 +78.30%，需看到增速回落</strong>）<br />
+- <strong>证伪信号</strong>：折旧继续 +50% 以上而收入增速 &lt;5% → 产能过剩，中性净利须下修</p>
+<p><strong>因子4 政策 / 市场锚点（成本驱动变量）</strong><br />
+| 层级 | 变量 | 情景 | 验证点 |<br />
+|---|---|---|---|<br />
+| 政策层 | <strong>司美格鲁肽中国专利 2026-03 到期</strong> | 已发生，仿制药审评收尾 → 原料药需求爆发 | 本土司美仿制药获批数量、原料药订单公告 |<br />
+| 政策层 | <strong>第 12 批国家集采（地屈孕酮、恩扎卢胺中选）</strong> | 价降 4% 换量；集采规则明确"只纳成熟仿制药" | 集采执行量、公司制剂收入增速 |<br />
+| 政策层 | 出口管制/关税（原料药出口退税、印度对华依赖 75%） | 中性：稳定；风险：印度推动原料药自主 | 中印贸易政策、印度 PLI 计划进展 |<br />
+| 市场层 | <strong>司美格鲁肽原料药价格 2,900 → 800–1,000 元/克</strong> | <strong>最大的价格变量</strong> | 原料药情报局报价、行业订单价格 |<br />
+| 市场层 | <strong>汇率（人民币对美元）</strong> | 2026H1 已升值造成 2,973 万损失 | 美元兑人民币中间价 |<br />
+| 政策层 | 环保/能耗双控（医药化工属重点监管） | 抬升合规成本，利好已合规龙头 | 环保督察公告 |</p>
+<p>→ 本因子输出：<strong>中性情景综合毛利率取 52%</strong>，<strong>2029E 正常化净利率取 23%</strong>（低于 2025 年 26.5%，反映 TIDES 价格下行 + 制剂占比提升 + 折旧仍在高位）。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>内容</th>
+<th>体量</th>
+<th>进度</th>
+<th>确认时点</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>司美格鲁肽原料药（TIDES）</strong></td>
+<td>半发酵法，<strong>成本 30 美元/克</strong>；现有产能 <strong>0.3 吨/年</strong>；2026-06 通过 FDA cGMP（含司美格鲁肽常规 GMP 符合性检查）</td>
+<td>需求端：中国专利 2026-03 到期，2030 年需求 152 吨</td>
+<td><strong>已具备产能 + 已获 FDA 准入</strong></td>
+<td>2027–2029 放量</td>
+<td><strong>中高</strong>（产能排名靠后 0.3 吨是约束）</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>英克司兰钠原料药</strong></td>
+<td>2026-06 通过 FDA <strong>批准前检查（PAI）</strong></td>
+<td>寡核苷酸（siRNA）降脂药，原研 Novartis</td>
+<td><strong>PAI 通过 = 商业化前最后一步</strong></td>
+<td>2027–2028</td>
+<td><strong>中高</strong>（PAI 是强信号）</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>地屈孕酮片（奥舒桐®）</strong></td>
+<td>①<strong>纳入《国家基本药物目录（2026 版）》</strong>；②<strong>中选第 12 批国家集采</strong>；③新增进院 <strong>598 家医疗机构（含 88 家三级医院）</strong>；④完成全国除青海外所有省份挂网</td>
+<td>集采以价换量（价格 −4%）</td>
+<td><strong>全部已落地</strong></td>
+<td>2026H2–2029 放量</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>恩扎卢胺片</strong></td>
+<td>2026-07 <strong>中选第 12 批国家集采</strong>（前列腺癌）</td>
+<td>集采放量</td>
+<td>已中选</td>
+<td>2026H2–2029</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>女性健康类原料药</strong></td>
+<td>2026H1 <strong>销量大幅增长</strong></td>
+<td>—</td>
+<td>已兑现</td>
+<td>持续</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>募投项目转固投产</strong></td>
+<td>折旧 H1 同比 <strong>+0.36 亿（+78.30%）</strong>，产能爬坡中</td>
+<td>总投资与达产产能未完整披露</td>
+<td>陆续转固</td>
+<td>2027–2028 达产</td>
+<td><strong>中高</strong>（折旧已发生 = 资产已建成）</td>
+</tr>
+<tr>
+<td>7</td>
+<td>CMO 定制化生产延伸</td>
+<td>"从单一产品供应向 CMO 定制化生产服务延伸"</td>
+<td>—</td>
+<td>推进中</td>
+<td>持续</td>
+<td><strong>中</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>柯拉特龙、布立西坦等原料药</td>
+<td>2026-06 通过 FDA 常规 GMP 符合性检查</td>
+<td>—</td>
+<td>已获准入</td>
+<td>2027+</td>
+<td><strong>中</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：第 1、2、6 项的<strong>产能数字与订单金额均未完整披露</strong>（仅从第三方研报得知司美产能 0.3 吨）。<strong>公司未公告多肽产能扩建计划与在手订单</strong>，这是本报告最大的数据缺口与不确定源。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层1 现有业务：市场容量 × 份额变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>当前位置</th>
+<th>保守</th>
+<th>中性</th>
+<th>乐观</th>
+<th>可观测验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 供给侧份额</td>
+<td><strong>司美原料药产能 0.3 吨 / 国内总产能 32.05 吨 ≈ 0.94%</strong></td>
+<td>份额守住 0.9%</td>
+<td>扩产后份额升至 1.5–2%</td>
+<td>靠成本优势抢至 5%+</td>
+<td>公司是否公告多肽产能扩建（<strong>当前无公告</strong>）</td>
+</tr>
+<tr>
+<td>② 需求侧份额</td>
+<td>欧美 + 印度规范市场客户，向 CMO 深度合作延伸</td>
+<td>存量客户维持</td>
+<td>CMO 绑定加深，客户数 +20%</td>
+<td>切入创新药企供应链</td>
+<td>前五大客户占比、新签 CMO 协议</td>
+</tr>
+<tr>
+<td>③ 技术代际差</td>
+<td><strong>半发酵法成本 30 美元/克 vs 行业固相合成</strong></td>
+<td>成本优势被价格战抹平</td>
+<td><strong>成本优势保持，行业价格战中胜出</strong></td>
+<td>半发酵法成为主流路线</td>
+<td>行业司美原料药价格 vs 公司单位成本</td>
+</tr>
+<tr>
+<td>④ 成本曲线位置</td>
+<td><strong>成本曲线最左端（30 美元/克最低）</strong></td>
+<td>优势缩小</td>
+<td>优势维持</td>
+<td>价格跌至 800 元/克仍盈利，对手亏损退出</td>
+<td>公司毛利率 vs 同业（诺泰、圣诺、翰宇）</td>
+</tr>
+<tr>
+<td>⑤ 份额二阶导数</td>
+<td>TIDES 销量同比增长，<strong>仍在加速渗透期</strong></td>
+<td>增速放缓</td>
+<td>2027–2028 加速（仿制药获批潮）</td>
+<td>持续加速至 2029</td>
+<td><strong>季度 TIDES 收入/销量披露</strong>（当前未单列）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>核心判断</strong>：公司在多肽赛道的<strong>产能份额仅 0.94%，但成本曲线位置最优（30 美元/克）</strong>。这是典型的"<strong>份额小但成本领先</strong>"格局——<strong>若价格战开打（2,900 → 800 元/克），高成本的固相合成产能会先退出，低成本的半发酵法是剩者</strong>。这是本票最重要的上行逻辑。</p>
+</blockquote>
+<p><strong>层2 扩展业务：主业迁移空间（新易盛范式）</strong></p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>小分子原料药 → 多肽/寡核苷酸（TIDES）</th>
+<th>原料药 → 制剂（垂直一体化）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 能力可迁移性</td>
+<td><strong>中</strong>。同为化学合成 + 纯化 + GMP 体系，但多肽/寡核苷酸的合成与纯化技术与小分子差异大（固相/液相合成、HPLC 纯化、杂质控制）</td>
+<td><strong>高</strong>。自产原料药 → 制剂，技术与质量体系完全同源</td>
+</tr>
+<tr>
+<td>② 新 TAM 弹性</td>
+<td><strong>极大</strong>。中国多肽原料药 76 亿 → 653 亿；司美需求 2 吨 → 152 吨</td>
+<td><strong>大</strong>。制剂 TAM 是原料药的 5–10 倍，且议价权更接近终端</td>
+</tr>
+<tr>
+<td>③ 切入卡位</td>
+<td><strong>中期</strong>。2026-03 专利到期，公司已有 0.3 吨产能 + FDA 准入 → 卡位不早不晚，属"第二梯队但有成本优势"</td>
+<td><strong>早期偏中期</strong>。地屈孕酮、恩扎卢胺已获批并中选集采，处于放量初期</td>
+</tr>
+<tr>
+<td>④ 客户认证门槛</td>
+<td><strong>已完成</strong>。FDA DMF 备案 + 2026-06 cGMP 现场检查（含司美格鲁肽）通过</td>
+<td><strong>已完成</strong>。国内获批 + 集采中选 + 省级挂网</td>
+</tr>
+<tr>
+<td>⑤ 信号验证</td>
+<td>✅ <strong>FDA cGMP 通过（硬信号）</strong>；✅ 英克司兰钠 PAI 通过（商业化前最后一步）；❌ <strong>无多肽订单公告、无产能扩建公告</strong></td>
+<td>✅ <strong>基药目录纳入 + 集采中选 + 598 家医疗机构进院</strong>（三重硬信号，且已产生收入 0.94 亿）</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>判定</strong>：<br />
+- <strong>制剂一体化</strong>：<strong>已通过验证</strong>（有收入、有三重政策落地），<strong>可计入中性情景</strong><br />
+- <strong>TIDES 多肽</strong>：<strong>部分通过验证</strong>（FDA 准入是硬信号，但无订单、无产能扩建公告）→ <strong>按期权纪律，多肽放量只进乐观情景，中性情景仅给保守份额</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+- 司美原料药价格跌破 800 元/克且公司成本未同步下降<br />
+- 多肽产能长期停留在 0.3 吨无扩建公告 → 份额假设落空<br />
+- 集采续约降价超预期（&gt;10%）<br />
+- 折旧继续 +50% 而收入增速 &lt;5% → 产能过剩<br />
+- 汇率持续单边升值，汇兑损失常态化</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：<strong>不使用历史增速外推</strong>——公司 2022→2025 营收从 10.08 亿到 16.97 亿，但 2026H1 仅 +0.78%，历史曲线已明显拐头。本报告按<strong>分业务线 × 产能 × 单价 × 政策落地节奏</strong>逐条测算，并用产能约束校验。<strong>多肽业务因无订单与扩产公告，中性情景只给保守份额，主力增量放在已验证的制剂与存量原料药</strong>。</p>
+</blockquote>
+<p><strong>总股本：4.0618 亿股</strong>（全流通）</p>
+<h3>分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026E 收入</th>
+<th>2029E 收入</th>
+<th>自下而上依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>原料药-小分子</strong>（女性健康/神经/抗感染/心血管）</td>
+<td>约 12.6 亿（H1 7.13×1.77 剔除 TIDES 增量）</td>
+<td><strong>15.0 亿</strong></td>
+<td>女性健康类 H1 大幅增长；FDA cGMP 通过打开新客户；CMO 延伸。<strong>产能约束</strong>：募投项目 2027–2028 达产提供支撑</td>
+</tr>
+<tr>
+<td><strong>原料药-TIDES（多肽/寡核苷酸）</strong></td>
+<td>约 4.0 亿（估）</td>
+<td><strong>7.5 亿</strong></td>
+<td><strong>中性保守</strong>：现有 0.3 吨产能按 1,200 元/克满产 ≈ 3.6 亿；假设 2029 年扩至 0.7 吨、价格跌至 1,000 元/克 → 7.0 亿。<strong>因无扩产公告，不假设更大规模</strong></td>
+</tr>
+<tr>
+<td><strong>制剂（成品药）</strong></td>
+<td>约 1.9 亿（H1 0.9416 年化）</td>
+<td><strong>6.5 亿</strong></td>
+<td><strong>已验证的确定性增量</strong>：①地屈孕酮纳入基药目录（基层铺货提速 40%+）②中选第 12 批集采 ③恩扎卢胺中选 ④已完成除青海外全国挂网 ⑤新增 598 家医疗机构。<strong>按集采约定采购量 × 挂网省份数 × 进院数（H1 已 598 家）逐年铺开测算</strong></td>
+</tr>
+<tr>
+<td>贸易 + 其他</td>
+<td>约 0.42 亿</td>
+<td>0.5 亿</td>
+<td>稳定</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>约 18.9 亿</strong></td>
+<td><strong>29.5 亿</strong></td>
+<td>2029 较 2026 增加 10.6 亿（+56%）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束校验</strong>：2029 年原料药 22.5 亿（小分子 15 + TIDES 7.5），较 2026 年 16.6 亿增加 5.9 亿（+36%）。募投项目折旧已同比 +78.30%，说明<strong>产能已建成或在建</strong>，2027–2028 达产后可支撑该增量。<strong>TIDES 的 0.7 吨假设需要扩产公告支撑——当前无公告，构成主要不确定源，故中性情景已按保守处理（若维持 0.3 吨则 TIDES 仅 3.6 亿，总收入降至 25.6 亿）</strong>。</p>
+<p><strong>正常化净利率（周期归一化）</strong></p>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>净利率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025</td>
+<td><strong>26.5%</strong></td>
+<td>周期顶部（折旧未上、汇率有利）</td>
+</tr>
+<tr>
+<td>2026H1</td>
+<td><strong>19.16%</strong></td>
+<td>周期底部（折旧 +78.30% + 汇兑 2,973 万）</td>
+</tr>
+<tr>
+<td>2026Q2</td>
+<td><strong>21.59%</strong></td>
+<td>环比改善中</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>禁止</strong>用 2025 年 26.5%（顶部，折旧高峰未到、汇率顺风）</li>
+<li><strong>禁止</strong>用 2026H1 的 19.16%（底部，含两个过渡性因素）</li>
+<li><strong>中性取 23%</strong>：低于 2025 顶部 3.5pct（TIDES 价格下行 + 制剂占比提升 + 折旧仍高位），高于 2026H1 底部 3.8pct（折旧摊薄 + 汇率回归中性）</li>
+</ul>
+<p><strong>2029E 中性归母净利 = 29.5 亿 × 23% = 6.785 亿，取 6.75 亿</strong><br />
+<strong>下行校验（TIDES 不扩产）</strong>：收入 25.6 亿 × 23% = <strong>5.89 亿</strong> → 本报告在中性情景中取两者中值偏保守 <strong>6.30 亿</strong></p>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>H1 已实现归母 <strong>1.587 亿</strong></li>
+<li>H2：Q2 已环比 +48%，折旧压力延续但不再边际恶化，汇率假设不再单边升值 → H2 归母 <strong>1.85–2.05 亿</strong>，取 <strong>1.95 亿</strong></li>
+<li><strong>2026E 归母净利 = 1.587 + 1.95 = 3.54 亿</strong>，EPS 0.87 元</li>
+<li>合理 PE：特色原料药 + 多肽 + 制剂一体化，成长性明确，负债率仅 35.8% → 给 <strong>22x</strong></li>
+<li>合理市值 <strong>77.9 亿</strong> → <strong>对应股价 19.18 元</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>司美价格战至 800 元/克 + 多肽产能维持 0.3 吨无扩产 + 集采续约降价 15% + 汇率持续升值</td>
+<td>22.0 亿</td>
+<td>17%</td>
+<td><strong>3.74 亿</strong></td>
+<td>18x</td>
+<td>67.3 亿</td>
+<td><strong>16.57 元</strong></td>
+<td><strong>−13.3%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>多肽小幅扩产至 0.7 吨 + 制剂集采放量 + 折旧摊薄 + 汇率中性</td>
+<td>27.5 亿</td>
+<td>23%</td>
+<td><strong>6.30 亿</strong></td>
+<td>24x</td>
+<td>151.2 亿</td>
+<td><strong>37.22 元</strong></td>
+<td><strong>+94.7%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>多肽扩至 1.5 吨 + 英克司兰钠商业化 + 制剂放量超预期 + 半发酵法赢下价格战（对手退出）</td>
+<td>34.0 亿</td>
+<td>26%</td>
+<td><strong>8.84 亿</strong></td>
+<td>26x</td>
+<td>229.8 亿</td>
+<td><strong>56.58 元</strong></td>
+<td><strong>+195.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>3.54 亿</td>
+<td>6.30 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>22x</td>
+<td>24x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>77.9 亿</td>
+<td>151.2 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>19.18 元</strong></td>
+<td><strong>37.22 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶：重资产 / 周期股估值校正（三道闸）</h3>
+<p><strong>校正1 资产质量折扣</strong><br />
+<strong>PB 2.92x，显著高于 1，不适用破净折扣</strong>。资产质量说明：<br />
+- 总资产 41.71 亿、净资产 26.76 亿，<strong>资产负债率仅 35.8%</strong>——<strong>在重资产原料药企业中属优秀水平</strong><br />
+- 资产以<strong>符合 FDA/EMA 标准的 GMP 产能</strong>为主，<strong>专用性中等</strong>（同一车间可产多品类原料药，切换需验证但可行），<strong>重置成本高</strong>（新建一个通过 FDA 认证的车间需 3–5 年 + 数亿投资）→ <strong>重置成本构成真实壁垒</strong><br />
+- <strong>隐含负债风险低</strong>：无大额商誉、环保整改风险可控（已通过 FDA 检查）<br />
+- <strong>结论</strong>：PB 2.92x 的溢价来自"认证资产 + ROE 高（2025 年 ROE 约 17%）"，<strong>属合理溢价而非泡沫</strong></p>
+<p><strong>校正2 周期位置校正</strong><br />
+原料药属<strong>弱周期</strong>（医药刚需），但<strong>存在"产能投放周期"与"价格周期"</strong>：<br />
+- <strong>产能周期</strong>：募投项目转固 → 折旧 +78.30% → <strong>当前处于"折旧高峰、产能爬坡"的最差时点</strong>，2027–2028 达产后单位成本下降<br />
+- <strong>价格周期</strong>：<strong>司美格鲁肽原料药价格正从 2,900 元/克向 800–1,000 元/克下行</strong>——<strong>这是明确的下行周期，但公司成本 30 美元/克（约 215 元/克）位于成本曲线最左端</strong><br />
+- <strong>周期位置标注：原料药产能周期底部（爬坡期）+ 多肽价格周期下行初期</strong><br />
+- → 中性净利率取 23%：<strong>不因 2025 年 26.5% 的顶部而乐观，也不因 2026H1 的 19.16% 底部而悲观</strong></p>
+<p><strong>校正3 杠杆下行情景（高负债必附负面情景）</strong><br />
+<strong>资产负债率 35.8%，远低于 60% 阈值，不需要高杠杆负面情景</strong>。<br />
+但需单列<strong>价格战下行情景</strong>（这是本票的真实风险，非杠杆风险）：<br />
+- 若司美原料药 2028 年即跌至 800 元/克，且公司 TIDES 收入 5 亿对应的毛利率由 60% 降至 35% → 减少毛利 1.25 亿，税后 −0.94 亿 → 2029E 净利降至 <strong>5.36 亿</strong>，PE 22x → 118 亿 → <strong>股价 29.05 元（+51.9%）</strong><br />
+- <strong>该情景下空间仍为正（+51.9%），故不触发"不得标大空间"条款</strong></p>
+<p><strong>期权纪律</strong>：多肽扩产（无公告）、英克司兰钠商业化（PAI 通过但未获批上市）、CMO 延伸——<strong>未完整验证，不计入中性净利</strong>，只进乐观情景与上行想象力栏。<strong>已验证的制剂放量（基药 + 集采 + 598 家进院）计入中性</strong>。</p>
+<h3>准亏损从严：正常化净利润法 + 盈利塌陷三问</h3>
+<blockquote>
+<p>说明：奥锐特 2026H1 归母 <strong>1.587 亿</strong>、Q2 环比 <strong>+48%</strong>，<strong>当期明确盈利且已现拐点</strong>，不存在亏损。但本报告估值锚采用"分业务自下而上 + 正常化净利率（周期归一化 23%）"，按规则须从严作答以下三问。</p>
+</blockquote>
+<p><strong>问1：会不会塌陷（利润下滑会不会持续）？</strong><br />
+- <strong>不会持续</strong>。利润下滑的两个原因均为过渡性：①折旧 +78.30% 是<strong>产能先投、收入后至</strong>的阶段性问题，2027–2028 达产后摊薄；②汇兑 2,973 万是<strong>汇率单向波动</strong>，不可持续（公司有 78.56% 海外收入，可通过结算货币结构优化对冲）<br />
+- <strong>Q2 已给出答案</strong>：营收环比 +12.8%、归母环比 +48%、毛利率环比回升至 56.15%<br />
+- <strong>真实塌陷风险</strong>：<strong>多肽价格战</strong>——若司美原料药 2028 年前即跌至 800 元/克，TIDES 线毛利会显著压缩（但公司成本 215 元/克仍盈利）</p>
+<p><strong>问2：靠什么维持盈利、触发时点？</strong><br />
+- 靠<strong>制剂放量（已验证）+ 多肽放量（待验证）+ 折旧摊薄</strong>三条腿<br />
+- <strong>已落地触发点</strong>：地屈孕酮纳入基药目录（2026 年 9 月）、第 12 批集采中选（2026-07）、FDA cGMP 通过（2026-06）<br />
+- <strong>待落地触发点</strong>：多肽产能扩建公告、英克司兰钠获批上市、募投项目达产</p>
+<p><strong>问3：亏得起吗？</strong><br />
+- <strong>完全亏得起，且在盈利</strong>。净资产 26.76 亿、负债率 35.8%、H1 经营现金流 <strong>2.08 亿</strong>（−3.5%，基本稳定）<br />
+- <strong>即使多肽价格战到极限，公司小分子原料药 + 制剂基本盘仍可贡献 3 亿+ 净利</strong>（2022 年净利已达 2.11 亿，且当时收入仅 10.08 亿）<br />
+- 结论：<strong>下行风险是估值与价格风险，不是生存风险</strong></p>
+<p><strong>交叉校验</strong>：现价 19.12 元对应 2026E PE <strong>22.0x</strong>（EPS 0.87 元）、2029E 中性 PE <strong>12.3x</strong>（6.30 亿净利）。PE(TTM) 20.82x 略低于 2026E 的 22.0x——<strong>TTM 分母仍含 2025 年的高利润，2026 年是业绩低点年，现价对应 2026E 22x 属合理，但对应 2029E 仅 12.3x，明显低估了三年后的成长</strong>。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>低估</strong>。<br />
+- 现价 19.12 元 ≈ 基准目标价 19.18 元，<strong>市场定价 2026 年的业绩低点</strong><br />
+- 但 2029E 中性 PE 仅 <strong>12.3x</strong>——<strong>市场完全没有为"多肽放量 + 制剂集采放量"定价</strong><br />
+- <strong>核心错配</strong>：市场把 2026 年"折旧 + 汇兑"造成的 −32.42% 利润下滑<strong>当作趋势</strong>，而 Q2 环比 +48% 已经证明这是<strong>阶段性低点</strong></p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 37.22 元 → 空间 <strong>+94.7%</strong>，<strong>显著超过"重点关注"的 &gt;50% 门槛</strong><br />
+- 悲观 16.57 元 → 下行 <strong>−13.3%</strong><br />
+- <strong>赔率比 = 94.7 / 13.3 = 7.1:1</strong> —— 这是本组 5 只中<strong>赔率结构最好的</strong><br />
+- <strong>下行保护</strong>：PB 2.92x、每股净资产约 6.59 元（26.76 亿/4.0618 亿股），净资产兜底在 6.6 元（−65%），<strong>但真正的下行保护来自"小分子原料药 + 制剂基本盘 3 亿+ 净利"的盈利底</strong>，而非净资产<br />
+- <strong>2026E 净利 3.54 亿 × 18x = 63.7 亿 → 15.68 元，这是极端悲观下的估值底（−18%）</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>现价 19.12 元即可建仓</strong>（2026E PE 22x，对应业绩低点年，安全边际充足）<br />
+2. <strong>19 元以下加仓</strong>，<strong>16.5 元以下（悲观情景价）重仓</strong><br />
+3. <strong>加仓信号</strong>：①公司公告<strong>多肽产能扩建</strong>（份额假设从"保守"升级为"可验证"）；②英克司兰钠获批上市；③单季毛利率稳定在 56%+ 且折旧增速回落至 30% 以内；④地屈孕酮/恩扎卢胺集采执行量公告<br />
+4. <strong>观察指标</strong>：季度毛利率与折旧同比增速、TIDES 收入是否单列、司美原料药行业报价</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>⚠️ 多肽价格战（首要）</strong>：司美原料药从 2,900 元/克向 800–1,000 元/克下行。虽然公司成本 215 元/克仍能盈利，但<strong>若跌破 500 元/克则 TIDES 的利润贡献将大打折扣</strong>。国内 32.05 吨产能 vs 2030 年 152 吨需求，看似供不应求，但产能规划已达 60 吨+，<strong>2029—2030 年供过于求风险真实</strong><br />
+2. <strong>⚠️ 产能份额过小（0.3 吨，占国内 0.94%）</strong>：<strong>若无扩产公告，多肽放量的中性假设（0.7 吨）落空</strong>，2029E 收入降至 25.6 亿、净利降至 5.89 亿，目标价降至 34.8 元（+82%，仍达标）<br />
+3. <strong>汇率持续升值</strong>：78.56% 海外收入，人民币每升值 3% 约影响净利率 1pct<br />
+4. <strong>集采续约降价超预期</strong>：制剂放量假设建立在"以价换量"上，若续约降价 &gt;15% 而量未兑现<br />
+5. <strong>折旧持续高企</strong>：若新项目继续投产而收入跟不上，2026 年的利润低点可能延续到 2028 年</p>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<p><strong>类型A 行业调整剩者红利</strong> — <strong>高度适用，本票最强上行逻辑</strong><br />
+多肽原料药正在走向<strong>结构性过剩</strong>：国内总产能 32.05 吨、规划产能 60 吨+，而 2030 年需求 152 吨看似充足，但<strong>价格从 2,900 → 800–1,000 元/克的下行会先淘汰高成本产能</strong>。<br />
+- <strong>公司的位置</strong>：<strong>半发酵法成本 30 美元/克（约 215 元/克），是全行业成本曲线最左端</strong>。行业固相合成路线的成本远高于此<br />
+- <strong>上行弹性测算</strong>：若价格跌至 800 元/克（2030 年预期），<strong>采用传统固相合成的企业将接近盈亏平衡甚至亏损，而公司仍有 585 元/克的毛利空间</strong>。假设 2029—2030 年行业出清 30% 高成本产能，公司份额由 0.94% 提升至 <strong>5%</strong>（对应约 1.6 吨产能、按 1,000 元/克 → 16 亿收入），仅 TIDES 一项即可贡献净利 <strong>5 亿+</strong><br />
+- <strong>验证点</strong>：①行业司美原料药报价跌破 1,200 元/克时公司毛利率是否仍维持 50%+（<strong>成本优势的直接证据</strong>）；②同业（诺泰、圣诺、翰宇）多肽业务毛利率变化；③公司是否在此期间公告扩产<br />
+- <strong>证伪信号</strong>：价格战下公司毛利率同样塌陷 → 成本优势是伪命题；公司不扩产，眼睁睁看着份额流失</p>
+<p><strong>类型B 政策反转期权</strong> — <strong>适用，且已在兑现中</strong><br />
+- <strong>《国家基本药物目录（2026 版）》纳入地屈孕酮</strong>：入选品种纳入基层常态化采购清单，<strong>终端铺货速度平均提升 40%+</strong>，2026 年 9 月落地<br />
+- <strong>第 12 批国家集采明确"仅纳入成熟仿制药，专利期内创新药不被纳入"</strong>——政策定位从"控费降价"转向"扶优做强"，<strong>对原料药企业是明确的政策友好转向</strong><br />
+- <strong>司美格鲁肽中国专利 2026-03-20 到期</strong>——这不是政策，但是<strong>政策级的供给释放事件</strong><br />
+- <strong>重估弹性</strong>：制剂收入由 2026E 的 1.9 亿增至 2029 年的 6.5 亿（中性），若政策力度超预期（基药 + 集采 + 新基药目录续约），可增至 8–9 亿 → 净利 +0.35~+0.58 亿 → <strong>股价 +2.1~+3.5 元</strong><br />
+- <strong>验证点</strong>：2026 年报制剂收入、集采执行量、基药目录落地后的季度进院数（H1 已 598 家）<br />
+- <strong>证伪信号</strong>：基药目录落地后基层铺货未提速；集采执行量低于约定量</p>
+<p><strong>类型C 市场错杀修复</strong> — <strong>适用，本票的核心机会来源</strong><br />
+- <strong>错杀证据</strong>：<br />
+  1. <strong>估值分位</strong>：PE(TTM) 20.82x 处于公司历史低位（2023—2025 年净利从 2.89 亿增至 4.49 亿，PE 曾长期在 25–35x）<br />
+  2. <strong>利润下滑的性质被误读</strong>：−32.42% 中，<strong>折旧 +0.36 亿 + 汇兑 0.297 亿 = 0.657 亿（税后约 0.49 亿）是过渡性的</strong>，剔除后同比仅约 −11%<br />
+  3. <strong>基本面未恶化</strong>：营收仍 +0.78%，<strong>女性健康、神经系统、抗感染、TIDES 销量全部同比增长</strong>，毛利率下滑是价格与折旧，不是需求<br />
+  4. <strong>Q2 已反转</strong>：环比 +48%，<strong>市场尚未定价这个拐点</strong><br />
+- <strong>修复触发点</strong>：2026 年三季报若继续环比改善（折旧增速回落 + 汇率企稳），市场会重新按 2027 年业绩定价<br />
+- <strong>弹性测算</strong>：若市场从"按 2026E 22x"切换为"按 2027E（约 4.6 亿）25x" → 市值 115 亿 → <strong>股价 28.3 元（+48%）</strong>，这还不含多肽期权</p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权</strong> — <strong>高度适用，硬验证点部分通过</strong><br />
+公司<strong>半发酵法生产司美格鲁肽</strong>，成本 <strong>30 美元/克</strong>，<strong>这是全行业最低成本路线之一</strong>，属于"新工艺从 0 到 1 投产"的技术跃迁。<br />
+- <strong>三要素共振检查</strong>：<br />
+  1. <strong>政策驱动技术路线</strong>：司美中国专利 2026-03 到期 + 基药目录纳入 → ✓<br />
+  2. <strong>行业趋势向该技术收敛</strong>：<strong>多肽需求 2 吨 → 152 吨，成本曲线交叉点已过，低成本路线必然胜出</strong> → ✓<br />
+  3. <strong>公司技术投产落地</strong>：<strong>2026-06 扬州奥锐特通过 FDA cGMP 现场检查（含司美格鲁肽常规 GMP 符合性检查）</strong> → ✓（<strong>这是硬验证点：量产线已通过国际监管核查</strong>）<br />
+- <strong>硬验证点三选三</strong>：中试/量产跑通且良率达标 ✓（FDA cGMP 通过即证明）/ 客户定点或大额订单 <strong>✗（无公告）</strong> / 量产成本优于旧路线 <strong>✓（30 美元/克 vs 行业固相合成成本显著更高）</strong><br />
+- <strong>当前状态：2/3 通过</strong> → <strong>接近可计入，但按纪律仍只作机会情景，不计入中性锚</strong><br />
+- <strong>弹性</strong>：若 2027 年公告多肽扩产至 1 吨以上 + 首个大额订单，可立即将 TIDES 中性收入由 7.5 亿上调至 12 亿+，对应净利 +1.0~+1.5 亿 → <strong>股价 +6~+9 元</strong><br />
+- <strong>证伪信号</strong>：无扩产公告 / 无订单 / 价格战下毛利率同样塌陷 / 半发酵法纯度或杂质指标不达标</p>
+<blockquote>
+<p><strong>什么条件出现才维持/强化"重点关注"</strong>：当前远期空间 <strong>+94.7%</strong> 已远超门槛，结论成立。<strong>维持条件</strong>：① 2026 三季报继续环比改善（折旧增速回落）；② 公司公告多肽扩产或大额订单（<strong>若出现，可将乐观情景部分转入中性，目标价上调至 45 元+</strong>）；③ 司美原料药价格维持在 1,200 元/克以上。<strong>若出现"多肽价格跌破 800 元/克 + 公司无扩产公告"双信号，则下调至"纳入观察"。</strong></p>
+</blockquote>
+<p><strong>结论：重点关注</strong></p>
+<blockquote>
+<p>核心矛盾：一家<strong>利润表因为"折旧 + 汇兑"两个过渡性因素被砸出 −32% 跌幅、但 Q2 已环比 +48% 反转</strong>的公司，市场仍按业绩低点年定价（2026E PE 22x、2029E 中性 PE 仅 12.3x）。<br />
+它的确定性来自<strong>制剂的三重政策落地（基药目录 + 集采中选 + 598 家进院）</strong>，它的弹性来自<strong>多肽赛道的成本领先（半发酵法 30 美元/克，全行业最左端）</strong>。<br />
+下行保护扎实：小分子原料药 + 制剂基本盘可贡献 3 亿+ 净利，极端悲观（价格战 + 无扩产）仍有 −13.3% 的下限。<br />
+上行空间来自三个尚未被定价的期权：多肽放量、英克司兰钠商业化、折旧摊薄。<strong>赔率 7.1:1，是本组最优。</strong></p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>19.12 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>19.2 元</strong>（区间 17.5–21.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+0.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>37.22 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+94.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 16.57 元（−13.3%）～ 乐观 56.58 元（+195.9%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>特色原料药龙头，Q2环比+48%已反转；半发酵法多肽成本30美元/克全行业最低；制剂三重政策落地放量</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>重点关注</strong>（19 元以下加仓，等多肽扩产公告）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-28/29 披露）、2025 年年报、腾讯行情接口（2026-09-14 实测）、上海证券报/财中社/新浪财经中报解读、开源证券 2026 中报点评、国家卫生健康委《国家基本药物目录（2026 年版）》、国家医保局第十二批国家药品集中带量采购中选结果（2026-07）、国务院《国民健康"十五五"规划》（2026-07-13）、美国 FDA cGMP 现场检查（2026-06 扬州奥锐特）、中研普华/中金公司/华鑫证券/国联证券多肽原料药行业研究。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

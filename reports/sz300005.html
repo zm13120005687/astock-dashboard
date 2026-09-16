@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>探路者（300005）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>探路者（300005）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-15 ｜ 现价 <strong>10.27 元</strong> ｜ 总市值 <strong>90.76 亿</strong> ｜ PE(TTM) <strong>82.40x</strong> ｜ PB <strong>4.23x</strong> ｜ 总股本 <strong>约 8.84 亿股</strong><br />
+行业：户外用品（服装/鞋品）＋ 半导体芯片（触控 IC / Mini LED 驱动 / 指纹 / 视频压缩 IP）｜ 板块：创业板<br />
+<strong>注</strong>：公司已完成"户外 + 芯片"双主业转型，2026 年 1 月起深圳贝特莱、上海通途并表，本报告须按<strong>双主业分部</strong>建模，禁止用单一综合口径。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：原国内户外用品龙头（探路者 TOREAD），经五年并购转型为 <strong>"户外 + 芯片"双主业科技集团</strong>——芯片侧已形成"感知 + 显示 + 控制 + 应用"全链条与"设计—IP—封装"一体化能力。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 9.29 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>2026H1 营收</th>
+<th>占比</th>
+<th>同比</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>户外服装</td>
+<td>4.42 亿</td>
+<td>47.56%</td>
+<td>—</td>
+<td>户外板块合计 5.71 亿（+6.05%）</td>
+</tr>
+<tr>
+<td><strong>芯片类产品</strong></td>
+<td><strong>3.58 亿</strong></td>
+<td><strong>38.49%</strong></td>
+<td><strong>+212.83%</strong></td>
+<td>2025 年末占比约 16.65% → 2026H1 <strong>38.6%</strong></td>
+</tr>
+<tr>
+<td>户外鞋品</td>
+<td>0.93 亿</td>
+<td>10.04%</td>
+<td>—</td>
+<td>户外板块内</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>0.36 亿</td>
+<td>3.92%</td>
+<td>—</td>
+<td>装备/配件/服务</td>
+</tr>
+</tbody>
+</table>
+<p><strong>按渠道（2026H1）</strong>：电子商务 2.12 亿（22.79%）、华南 2.10 亿（22.55%）、华东 2.07 亿（22.27%）、其他 3.01 亿（32.40%）。<strong>海外收入未单列</strong>——公司披露海外进展（蒙古国代理商新开专卖店、进军波兰、海外团购模式开启），但体量未达披露标准，<strong>境内外占比 ≈ 国内 95%+、海外 &lt;5%</strong>（<strong>该比例未明确披露，构成不确定源</strong>）。</p>
+<p><strong>芯片板块五家子公司与定位</strong></p>
+<table>
+<thead>
+<tr>
+<th>子公司</th>
+<th>持股</th>
+<th>主攻方向</th>
+<th>2026H1 进展</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>深圳贝特莱</strong></td>
+<td><strong>51%</strong></td>
+<td>触控 IC、指纹识别、专用 MCU</td>
+<td>H1 净利 <strong>1591.11 万</strong>；触控导入三星/戴尔/惠普/华硕/小米/荣耀；指纹通过美国 FBI PIV 认证；业绩承诺 2026–2028 归母 <strong>3370/4770/6860 万</strong></td>
+</tr>
+<tr>
+<td><strong>上海通途</strong></td>
+<td><strong>51%</strong></td>
+<td>视频/大模型压缩 IP、画质 ISP、屏幕桥接</td>
+<td>H1 净利 <strong>1551.13 万</strong>；IP 已授权 <strong>20+ 家芯片公司</strong>；2026-06 与<strong>地平线</strong>签战略合作；业绩承诺 2026–2028 <strong>累计 ≥1.5 亿</strong></td>
+</tr>
+<tr>
+<td>北京芯能</td>
+<td>控股</td>
+<td>Mini/Micro LED 显示驱动 IC</td>
+<td>背光驱动核心客户量产导入；玻璃基透明屏年内量产；国内首家同时具备直显 + 背光主动式驱动设计能力</td>
+</tr>
+<tr>
+<td>G2 Touch</td>
+<td>控股</td>
+<td>车载 OLED 触控（On-Cell）</td>
+<td>京东方笔记本 + 三星显示车载项目稳定供货；布局 LTDI 触控显示集成</td>
+</tr>
+<tr>
+<td>江苏鼎茂</td>
+<td>控股</td>
+<td>芯片封测（COB 产线）</td>
+<td>营收已超去年全年，COB 良率稳定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>主要客户/下游</strong>：<br />
+- <strong>芯片</strong>：三星、戴尔、惠普、华硕、小米、荣耀（笔电/平板/穿戴）；京东方、三星显示（车载 OLED）；凯迪仕、德施曼、小米、绿米、萤石（智能门锁）；多家头部芯片设计公司（IP 授权）；地平线（端侧 AI 联合开发）<br />
+- <strong>户外</strong>：线上（抖音官方旗舰店、天猫自营）+ 线下（"关低效+开优质"，六级城市渗透，十代店）；集团客户团购；航天装备（新签空间站产品研制合同）</p>
+<p><strong>财务体检（2026H1 末）</strong>：总资产 <strong>33.53 亿</strong>（+26.28%，主要因芯片资产并表），归母净资产 <strong>20.30 亿</strong>（+1.12%，<strong>未依赖股权融资稀释</strong>），每股净资产约 <strong>2.30 元</strong>。研发投入 <strong>5204.96 万（+46.69%）</strong>，研发强度 5.60%；其中<strong>芯片研发投入 3578 万，占芯片收入 9.98%</strong>。芯片板块累计知识产权 <strong>584 项</strong>（发明专利 326、实用新型 104、集成电路布图设计 40、软著 98）。</p>
+<p><strong>历史业绩</strong></p>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>营收</th>
+<th>归母净利</th>
+<th>扣非净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>13.91 亿</td>
+<td>7179.79 万</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>15.92 亿</td>
+<td>1.07 亿</td>
+<td>8412.42 万</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>13.81 亿</td>
+<td>7898.80 万</td>
+<td><strong>−343.06 万</strong></td>
+</tr>
+<tr>
+<td>2026H1</td>
+<td>9.29 亿</td>
+<td>5125.31 万</td>
+<td>4585.54 万</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键结构警示</strong>：2026H1 归母 5125.31 万中，通途（1551.13 万）+ 贝特莱（1591.11 万）= <strong>3142.24 万，占比 61.3%</strong>——但这两家均为 <strong>51% 控股</strong>，其净利中 <strong>49% 归少数股东</strong>。Q2 单季数据显示：<strong>净利润 +75.76 万，归母 −519.26 万，少数股东损益 +595.02 万</strong>——即<strong>子公司赚钱、母体亏损</strong>的结构，少数股东权益稀释效应显著，<strong>这是本报告估值中必须显式处理的要点</strong>。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>时间</th>
+<th>力度</th>
+<th>对探路者的方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>《电子信息制造业"十五五"发展规划》方向：AI 终端、端侧智能、新型显示</strong></td>
+<td>工信部</td>
+<td>2026 编制中</td>
+<td>国家级五年规划</td>
+<td>利好触控 IC、Mini LED 驱动、端侧 AI 压缩 IP</td>
+</tr>
+<tr>
+<td><strong>国产替代与集成电路税收优惠延续</strong></td>
+<td>财政部/税务总局</td>
+<td>持续</td>
+<td>部委级</td>
+<td>芯片子公司享受所得税优惠（贝特莱/通途净利率明显高于传统制造业即为佐证）</td>
+</tr>
+<tr>
+<td><strong>汽车智能化/车载显示渗透率提升</strong></td>
+<td>行业趋势 + 政策引导</td>
+<td>2026</td>
+<td>中</td>
+<td>利好 G2 Touch 车载 OLED 触控、北京芯能 Mini LED 背光（车载显示）</td>
+</tr>
+<tr>
+<td><strong>"AI+"行动与端侧大模型部署</strong></td>
+<td>国务院</td>
+<td>2025–2026</td>
+<td>国家级</td>
+<td>利好上海通途大模型带宽压缩技术（2026-06 与地平线战略合作）</td>
+</tr>
+<tr>
+<td>户外运动产业政策（全民健身、户外运动产业发展规划）</td>
+<td>体育总局等</td>
+<td>持续</td>
+<td>部委级</td>
+<td>中性偏正面，但户外行业已进入存量竞争</td>
+</tr>
+<tr>
+<td>消费提振/以旧换新</td>
+<td>商务部</td>
+<td>2026</td>
+<td>中</td>
+<td>温和利好户外消费</td>
+</tr>
+</tbody>
+</table>
+<p><strong>政策判断</strong>：芯片侧政策环境<strong>显著优于</strong>户外侧。国家层面对集成电路、AI 端侧、新型显示的扶持是长期且确定的；户外侧政策为"普惠型消费促进"，不构成强驱动。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全球半导体 2026 年市场规模</strong></td>
+<td>预计突破 <strong>1.5 万亿美元</strong>（WSTS 2026 春季预测；存储器与逻辑芯片为核心引擎）</td>
+</tr>
+<tr>
+<td>公司 2026H1 营收 / 归母 / 扣非</td>
+<td>9.29 亿（<strong>+42.34%</strong>）／ 5125.31 万（<strong>+155.06%</strong>）／ 4585.54 万（<strong>+191.05%</strong>）</td>
+</tr>
+<tr>
+<td><strong>Q1 芯片收入</strong></td>
+<td>1.79 亿（<strong>同比 +206.92%</strong>）</td>
+</tr>
+<tr>
+<td><strong>Q2 单季</strong></td>
+<td>营收 4.34 亿；<strong>归母 −519.26 万（单季亏损）</strong>；扣非 <strong>−1808.42 万</strong>；毛利率 48.09%</td>
+</tr>
+<tr>
+<td>H1 综合毛利率</td>
+<td>约 <strong>50%</strong>（Q2 单季 48.09%），芯片业务毛利率显著高于户外</td>
+</tr>
+<tr>
+<td>H1 归母净利率</td>
+<td><strong>5.51%</strong>（上年同期 3.08%），扣非净利率 4.93%</td>
+</tr>
+<tr>
+<td>加权 ROE</td>
+<td>由 1.02% 提升至 <strong>2.54%</strong></td>
+</tr>
+<tr>
+<td>户外板块 H1</td>
+<td>5.71 亿（<strong>+6.05%</strong>），毛利率稳定在 50% 以上，但<strong>受业务调整费用投入加大影响，经营利润同比下降</strong></td>
+</tr>
+<tr>
+<td>芯片板块 H1</td>
+<td>3.585 亿（<strong>+212.83%</strong>），占比由 2025 年末 16.65% → <strong>38.6%</strong></td>
+</tr>
+<tr>
+<td>非经常性损益</td>
+<td>约 540 万，占净利比重 &lt;11%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量价趋势判断</strong>：<br />
+- <strong>芯片：量价齐升，是唯一真引擎</strong>。Q1 1.79 亿、Q2 1.795 亿，<strong>环比持平</strong>——说明 Q1 的高增长主要来自并表（一次性台阶），<strong>内生环比增长尚未启动</strong>，这是最需要警惕的信号<br />
+- <strong>户外：收入小增但利润下降</strong>。渠道转型（抖音自营、天猫转自营、关低效店）带来一次性费用，短期侵蚀利润，长期看是渠道质量改善<br />
+- <strong>Q2 单季归母转亏</strong>（−519 万）与"H1 归母 +155%"形成强烈反差——<strong>H1 的亮眼数据几乎全部由 Q1 贡献</strong></p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：<br />
+- 芯片：晶圆代工（台积电/中芯/华虹等）、封测（自有江苏鼎茂 + 外协）、EDA/IP。<strong>晶圆产能与代工价格是核心变量</strong>；2026 年半导体景气上行 → <strong>代工涨价 → 成本压力</strong><br />
+- 户外：面料（GORE-TEX/自研纳米膜/极地仿生材料）、鞋底橡胶、羽绒。公司披露上半年新准入 10 家合格供应商、综合成本有效压降</p>
+<p><strong>下游</strong>：<br />
+- 芯片：面板厂、ODM/OEM 厂、消费电子品牌（三星/戴尔/惠普/小米/荣耀）、车载 Tier1、智能门锁厂、AI 算力客户。<strong>下游集中度较高（大客户制）</strong><br />
+- 户外：C 端消费者 + 集团客户团购 + 航天装备</p>
+<p><strong>议价权</strong>：<br />
+- <strong>芯片（IP/驱动 IC）：中等偏强</strong>——技术壁垒 + 认证周期长（导入三星/戴尔供应链需 1–2 年验证），且 IP 授权模式毛利极高；但<strong>触控 IC、Mini LED 驱动面临价格战</strong>（国内竞争激烈）<br />
+- <strong>指纹识别：中等</strong>——通过涨价修复毛利率（说明有一定定价权，但也反映此前价格战惨烈）<br />
+- <strong>户外：中等</strong>——品牌力仍在但行业存量竞争，靠渠道优化与产品科技化（智能外骨骼）维持溢价<br />
+- <strong>综合传导率估算 0.5–0.6</strong></p>
+<h4>第二步进阶：原料成本 → 毛利结构四因子</h4>
+<p><strong>因子1 成本传导弹性（pass-through，量化）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>传导率</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP 授权（通途）</td>
+<td><strong>≈1.0</strong></td>
+<td>授权模式几乎无边际成本，议价权来自技术独特性；H1 净利率极高</td>
+</tr>
+<tr>
+<td>触控 IC / 指纹（贝特莱）</td>
+<td><strong>0.6–0.7</strong></td>
+<td>已导入国际大客户，认证粘性高；公司披露指纹产品"通过涨价修复毛利率"，证明有传导能力</td>
+</tr>
+<tr>
+<td>Mini LED 驱动（芯能）</td>
+<td><strong>0.3–0.4</strong></td>
+<td>国内玩家多、价格战激烈，代工涨价难转嫁</td>
+</tr>
+<tr>
+<td>封测（鼎茂）</td>
+<td><strong>0.4–0.5</strong></td>
+<td>产能利用率与良率决定，议价权弱</td>
+</tr>
+<tr>
+<td>户外服装/鞋品</td>
+<td><strong>0.7–0.8</strong></td>
+<td>品牌定价 + 供应链成本压降；公司披露"综合成本在品质不降前提下有效压降"</td>
+</tr>
+<tr>
+<td>→ <strong>加权传导率约 0.65</strong>：晶圆代工每涨价 10%，芯片业务毛利承压约 3.5pct（未传导部分）。</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>因子2 毛利结构再平衡（禁单一综合毛利率）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>2026H1 收入</th>
+<th>估算毛利率</th>
+<th>晶圆/原料敏感权重</th>
+<th>利润贡献性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP 授权 + 桥接（通途）</td>
+<td>估算 ~1.5 亿</td>
+<td><strong>55–65%</strong></td>
+<td><strong>极低</strong>（无流片成本）</td>
+<td>最高质量利润</td>
+</tr>
+<tr>
+<td>触控 + 指纹 + MCU（贝特莱）</td>
+<td>估算 ~1.5 亿</td>
+<td>35–45%</td>
+<td><strong>高</strong>（需流片）</td>
+<td>主力，受代工价影响</td>
+</tr>
+<tr>
+<td>Mini LED 驱动（芯能）</td>
+<td>估算 ~0.4 亿</td>
+<td>25–35%</td>
+<td><strong>高</strong></td>
+<td>价格战敏感</td>
+</tr>
+<tr>
+<td>车载触控（G2）</td>
+<td>估算 ~0.1 亿</td>
+<td>40–50%</td>
+<td>高</td>
+<td>增量，爬坡中</td>
+</tr>
+<tr>
+<td>封测（鼎茂）</td>
+<td>估算 ~0.1 亿</td>
+<td>15–25%</td>
+<td>中</td>
+<td>低毛利，配套</td>
+</tr>
+<tr>
+<td>户外服装</td>
+<td>4.42 亿</td>
+<td><strong>约 50%+</strong></td>
+<td>中（面料）</td>
+<td>现金牛</td>
+</tr>
+<tr>
+<td>户外鞋品</td>
+<td>0.93 亿</td>
+<td>约 45–50%</td>
+<td>中</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>关键结构变化</strong>：H1 综合毛利率约 50% 看似稳定，实则<strong>内部三升三降</strong>——IP 授权（极高质量）与车载触控（高毛利）占比上升，Mini LED 驱动与封测（低毛利、高敏感）占比亦在上升，户外毛利率靠成本压降维持。<strong>单一"综合毛利率 50%"完全掩盖了"利润质量在改善但波动性在加大"这一事实</strong>，必须分线建模。</p>
+<p><strong>因子3 库存与采购节奏</strong>：2026H1 存货周转率 0.43 次（半年度口径），<strong>处于低位</strong>——芯片业务备货（晶圆 + 成品）与户外季节性备货叠加。<strong>判断</strong>：①芯片侧 2026 年景气上行，若提前锁定低价晶圆产能，则为<strong>库存收益，当期毛利虚高、远期回落</strong>；②户外侧存货需关注跌价（行业普遍问题）。<strong>验证点</strong>：2026 年报存货跌价准备计提比例、存货周转率是否回升。<strong>证伪信号</strong>：存货周转率持续低于 0.5 次（半年）且跌价计提比例上升 → 说明备货变成了积压。</p>
+<p><strong>因子4 政策/市场锚点（原料成本驱动变量）</strong><br />
+- <strong>市场层</strong>：晶圆代工报价（成熟制程 2026 年涨价压力）、存储/逻辑产能紧张度、金属/稀土（户外辅料）、棉/化纤价格<br />
+- <strong>政策层</strong>：①<strong>出口管制</strong>（若美方扩大对华半导体设备/EDA 管制 → 间接推高代工与流片成本）；②<strong>国产替代补贴与税收优惠</strong>（集成电路设计企业所得税优惠 — 直接降成本，公司芯片子公司净利率高即有此因素）；③<strong>关税</strong>（户外品出口美国关税，海外占比极低故影响小）<br />
+→ <strong>情景</strong>：中性 = 晶圆代工年涨 5–8%、税收优惠延续；悲观 = 出口管制升级导致代工涨价 15%+ 且优惠退坡；乐观 = 成熟制程产能释放、代工降价。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量/金额</th>
+<th>进度与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>贝特莱并表（51%）</strong></td>
+<td>触控 IC + 指纹 + 专用 MCU</td>
+<td>H1 净利 <strong>1591.11 万</strong></td>
+<td><strong>2026-01 已并表</strong></td>
+<td>业绩承诺 26/27/28 年 <strong>3370/4770/6860 万</strong>（100% 口径，归母 51%）</td>
+<td><strong>高</strong>（有业绩承诺与补偿条款）</td>
+</tr>
+<tr>
+<td><strong>上海通途并表（51%）</strong></td>
+<td>视频/大模型压缩 IP、画质 ISP、屏幕桥接</td>
+<td>H1 净利 <strong>1551.13 万</strong></td>
+<td><strong>2026-01 已并表</strong></td>
+<td>承诺 26–28 <strong>累计 ≥1.5 亿</strong>（归母 51%）</td>
+<td><strong>高</strong></td>
+</tr>
+<tr>
+<td><strong>地平线战略合作</strong></td>
+<td>大模型带宽压缩技术联合开发，面向智驾/机器人</td>
+<td>未披露金额</td>
+<td><strong>2026-06 签约</strong></td>
+<td>尚未贡献</td>
+<td>中（战略协议，无金额）</td>
+</tr>
+<tr>
+<td>Mini LED 背光驱动放量</td>
+<td>北京芯能，核心客户已量产导入</td>
+<td>未披露</td>
+<td>2026–2028 爬坡</td>
+<td>增量</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>玻璃基透明屏</strong></td>
+<td>北京芯能</td>
+<td>未披露</td>
+<td><strong>预计 2026 年内量产</strong></td>
+<td>增量</td>
+<td>中（时点待验证）</td>
+</tr>
+<tr>
+<td>车载 OLED 触控（G2 Touch）</td>
+<td>京东笔记本 + 三星显示车载稳定供货；布局 LTDI</td>
+<td>未披露</td>
+<td>2026–2029 爬坡</td>
+<td>高毛利增量</td>
+<td>中</td>
+</tr>
+<tr>
+<td>封测 COB 产能释放（鼎茂）</td>
+<td>良率稳定、产能释放；拓展工业线扫相机封装</td>
+<td>营收已超 2025 全年</td>
+<td>持续</td>
+<td>配套利润</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>户外渠道重构</strong></td>
+<td>抖音自营 + 天猫转自营 + "关低效/开优质" + 十代店</td>
+<td>—</td>
+<td>2026 全年投入期</td>
+<td><strong>短期侵蚀利润，2027–2028 释放</strong></td>
+<td>中</td>
+</tr>
+<tr>
+<td>智能运动外骨骼 / 航天装备</td>
+<td>全域首发；新签空间站产品研制合同</td>
+<td>未披露</td>
+<td>早期</td>
+<td>期权</td>
+<td>低</td>
+</tr>
+<tr>
+<td>定增（实控人）</td>
+<td>待落地，将提升资金实力也<strong>摊薄股本</strong></td>
+<td>未披露</td>
+<td>未完成</td>
+<td>—</td>
+<td>待观察</td>
+</tr>
+<tr>
+<td><strong>一次性因素（须剔除）</strong></td>
+<td>H1 汇兑收益（去年同期为汇兑损失）正向贡献；芯片并表属结构性变化非一次性</td>
+<td>—</td>
+<td>—</td>
+<td>汇兑收益不可持续</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计新增（中性，2026→2029 累计）</strong>：芯片收入由 2026E 约 7.8 亿增至 2029E 约 18 亿（<strong>+10.2 亿</strong>），户外由 12.5 亿增至 14.5 亿（+2.0 亿）；<strong>合计新增收入约 12 亿，对应新增归母净利约 0.9 亿</strong>（已按 51%/80% 不同持股比折算归母）。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<p><strong>层1 现有业务：市场容量 × 份额变量（5 锚点）</strong></p>
+<p><em>芯片侧</em><br />
+1. <strong>供给侧份额</strong>：触控 IC / 指纹 / Mini LED 驱动国内玩家众多（汇顶、敦泰、集创北方、明微等），<strong>供给侧拥挤</strong>，公司靠"差异化场景（笔电触控板、智能门锁指纹、车载 OLED）+ IP 授权"避开正面价格战<br />
+2. <strong>需求侧/客户份额</strong>：<strong>已进核心客户供应链</strong>——三星、戴尔、惠普、华硕、小米、荣耀（触控）；京东方、三星显示（车载）；凯迪仕、德施曼、小米、绿米、萤石（指纹）。<strong>认证周期 1–2 年 = 强粘性</strong>，这是份额的最可靠锚点<br />
+3. <strong>技术代际差</strong>：<strong>分层</strong>——通途的大模型压缩 IP（输入数据压缩至 1/5、中间态再压缩 50%、模型参数压缩 30% 且即插即用）<strong>属全球范围内稀缺能力</strong>（公司称"尚无同类产品上市"的纳米炭铁是莱美的，这里是通途的压缩 IP）；触控 On-Cell 公司自称"全球领先"；Mini LED "国内首家同时具备直显+背光主动式驱动设计能力" → <strong>局部领先一代</strong><br />
+4. <strong>成本曲线位置</strong>：<strong>设计 + IP 轻资产模式，位于成本曲线左侧</strong>；但封测（鼎茂）属重资产、规模小，位于右侧<br />
+5. <strong>份额二阶导数</strong>：触控/指纹 = <strong>S 曲线中段</strong>（已导入头部客户，正在放量，二阶导仍为正）；Mini LED 背光 = <strong>加速段起点</strong>；IP 授权 = <strong>早期高斜率段</strong><br />
+→ <strong>三档</strong>：保守守住（芯片 2029 收入 13 亿）/ 中性小幅提升（<strong>18 亿</strong>）/ 乐观抢份额（25 亿，需 AI 端侧 IP 大规模落地）<br />
+→ <strong>验证点</strong>：①通途/贝特莱季度净利是否达成承诺节奏（2026 年贝特莱 ≥3370 万、通途累计进度）；②Mini LED 背光驱动是否进入更多核心客户量产；③玻璃基透明屏是否按"2026 年内量产"兑现。<strong>证伪信号</strong>：贝特莱/通途任一年度未达承诺（触发补偿说明业务失速）；Mini LED 驱动毛利率跌破 25%。</p>
+<p><em>户外侧</em><br />
+1. <strong>供给侧</strong>：行业产能过剩，公司在收缩低效门店<br />
+2. <strong>需求侧</strong>：存量竞争，靠品牌 + 科技化（极地仿生、纳米膜、智能外骨骼）维持<br />
+3. <strong>技术代际差</strong>：环保材料工程化落地获 ISPO 认可、纳米膜入选行业重点推广项目 → <strong>小幅领先</strong><br />
+4. <strong>成本曲线</strong>：供应链优化（新准入 10 家供应商）→ 缓慢左移<br />
+5. <strong>份额二阶导数</strong>：<strong>已进入平台期</strong>，份额提升难度大于芯片<br />
+→ 三档：保守 13 亿 / 中性 14.5 亿 / 乐观 16 亿（2029）</p>
+<p><strong>层2 扩展业务：主业迁移空间（新易盛范式）</strong><br />
+- <strong>能力可迁移性</strong>：<strong>高</strong>。探路者在芯片侧已形成"设计—IP—封装"一体化能力 + 触控/显示/感知三条技术栈，向<strong>端侧 AI（与地平线合作）、车载电子、AI 服务器/算力（压缩 IP 面向云端 AI 场景）</strong>迁移属技术同源<br />
+- <strong>新 TAM 弹性</strong>：<strong>极大</strong>。端侧 AI、车载电子、AI 算力基础设施的 TAM 远大于原户外市场（户外全球 TAM 数百亿人民币级 vs 半导体 1.5 万亿美元级）<br />
+- <strong>切入时点与卡位</strong>：<strong>早期且卡位较好</strong>——2026-06 与地平线签战略合作，压缩 IP 已授权 20+ 家芯片公司，属于"技术已被验证、商业化刚起步"<br />
+- <strong>客户认证门槛</strong>：<strong>高</strong>（车规认证、AI 芯片厂商 IP 验证周期长）——既是护城河也是放量阻力<br />
+- <strong>信号验证</strong>：<strong>部分通过</strong> —— ①通途 IP 已授权 20+ 家芯片公司（<strong>已过"客户采用"验证点</strong>）；②与地平线战略合作（<strong>已过"头部客户认可"验证点</strong>）；③<strong>但无金额披露、无批量出货数据、未单独披露该业务收入</strong> —— <strong>未过"收入兑现"验证点</strong><br />
+→ <strong>判定：属"中期期权"，已过技术与客户验证点但未过收入验证点，按纪律不计入中性情景</strong>，仅计入乐观情景（乐观情景中端侧 AI 贡献约 0.5 亿净利）。<br />
+- <strong>反向迁移（芯片→户外）</strong>：芯片的触控/显示/传感技术为户外装备智能化（智能外骨骼、可穿戴）提供底层支撑；户外场景为芯片提供应用落地入口——"科技提升户外、场景定义芯片"。<strong>此协同目前停留在叙事层面，无量化数据，不计入中性。</strong></p>
+<p><strong>层3 风险折扣：证伪信号</strong><br />
+①贝特莱/通途任一年度未达业绩承诺；②Q3 继续单季亏损（Q2 已亏 519 万）；③Mini LED 驱动毛利率持续下滑；④商誉减值（收购形成商誉，2025 年末总资产 26.55 亿 → 2026H1 33.53 亿，增幅主要来自并表，商誉规模需查年报）；⑤实控人定增摊薄超预期；⑥户外渠道重构费用持续超支。命中两条 → 下调中性假设。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：<strong>不使用"历史 CAGR 外推"</strong>（2023–2025 营收 13.91→15.92→13.81 波动，且业务结构在 2026 年发生并表式突变，外推无任何意义）。按<strong>户外 / 芯片（按子公司拆分）两条主线</strong>，用"各子公司现有基数 × 产能/客户导入节奏 × 业绩承诺 × 持股比例折算归母"自下而上推导，并用"少数股东损益占比"做交叉校验。</p>
+</blockquote>
+<p><strong>总股本：约 8.84 亿股</strong>（总市值 90.76 亿元；<strong>注</strong>：实控人定增尚未落地，若完成将摊薄，本报告按当前股本测算，摊薄风险见第五步）</p>
+<h3>分业务测算（2029E，自下而上）</h3>
+<p><strong>A. 户外板块</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2026E</th>
+<th>2029E 中性</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收</td>
+<td>12.5 亿</td>
+<td><strong>14.5 亿</strong></td>
+<td>H1 5.71 亿；渠道重构后 2027–2029 恢复个位数增长；航天/团购补充</td>
+</tr>
+<tr>
+<td>净利率</td>
+<td>约 4.5%</td>
+<td><strong>5.5%</strong></td>
+<td>2026 年受渠道转型费用侵蚀；2029 年效率释放</td>
+</tr>
+<tr>
+<td>归母净利</td>
+<td>0.56 亿</td>
+<td><strong>0.80 亿</strong></td>
+<td>户外资产基本全资，无少数股东稀释</td>
+</tr>
+</tbody>
+</table>
+<p><strong>B. 芯片板块（★ 必须按持股比例折算归母）</strong></p>
+<table>
+<thead>
+<tr>
+<th>子公司</th>
+<th>持股</th>
+<th>2026E 净利（100%口径）</th>
+<th>2029E 净利（100%口径）</th>
+<th>归母折算</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>深圳贝特莱</strong></td>
+<td><strong>51%</strong></td>
+<td>0.34 亿（承诺 3370 万）</td>
+<td><strong>0.85 亿</strong></td>
+<td><strong>0.43 亿</strong></td>
+<td>承诺 2028 →6860 万，2029 按 +24% 外推至 8500 万（承诺期后的合理延续，非历史增速外推，因有承诺基数锚定）</td>
+</tr>
+<tr>
+<td><strong>上海通途</strong></td>
+<td><strong>51%</strong></td>
+<td>0.35 亿</td>
+<td><strong>0.85 亿</strong></td>
+<td><strong>0.43 亿</strong></td>
+<td>承诺 26–28 累计 1.5 亿（2026 约 0.35 亿、2027 约 0.50 亿、2028 约 0.65 亿），2029 按 +30%</td>
+</tr>
+<tr>
+<td>北京芯能（Mini LED）</td>
+<td>按 80% 估算</td>
+<td>0.10 亿</td>
+<td><strong>0.35 亿</strong></td>
+<td><strong>0.28 亿</strong></td>
+<td>背光驱动量产 + 玻璃基透明屏；价格战压制净利率至 12%</td>
+</tr>
+<tr>
+<td>G2 Touch（车载触控）</td>
+<td>按 80% 估算</td>
+<td>0.05 亿</td>
+<td><strong>0.20 亿</strong></td>
+<td><strong>0.16 亿</strong></td>
+<td>车载 OLED 渗透 + LTDI 布局</td>
+</tr>
+<tr>
+<td>江苏鼎茂（封测）</td>
+<td>按 80% 估算</td>
+<td>0.04 亿</td>
+<td><strong>0.10 亿</strong></td>
+<td><strong>0.08 亿</strong></td>
+<td>COB 良率稳定、产能释放</td>
+</tr>
+<tr>
+<td><strong>芯片归母小计</strong></td>
+<td></td>
+<td>0.45 亿</td>
+<td></td>
+<td><strong>1.38 亿</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>C. 合并与扣减</strong></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2029E 中性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>户外归母</td>
+<td>0.80 亿</td>
+</tr>
+<tr>
+<td>芯片归母</td>
+<td>1.38 亿</td>
+</tr>
+<tr>
+<td>减：总部费用、财务费用、商誉减值风险、汇兑不可持续</td>
+<td><strong>−0.23 亿</strong></td>
+</tr>
+<tr>
+<td><strong>2029E 归母净利（中性）</strong></td>
+<td><strong>1.95 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>注：贝特莱/通途持股 51%，其净利 49% 计入少数股东损益；2026Q2 已出现"子公司盈利、归母亏损"的稀释实证（少数股东损益 +595.02 万 vs 归母 −519.26 万），本报告已在折算中完整处理。</em></p>
+<p><strong>交叉校验（产能/收入约束）</strong>：<br />
+- 2029E 芯片收入测算约 18 亿 = 贝特莱 5.5 亿 + 通途 4.5 亿 + 芯能 4.0 亿 + G2 2.5 亿 + 鼎茂 1.5 亿<br />
+- 研发投入按芯片收入 10%/年（H1 实测 9.98%）→ 2029 年芯片研发 1.8 亿，与"研发强度维持"假设一致<br />
+- 18 亿芯片收入 / 现有五家子公司 = 平均每家 3.6 亿，<strong>对已导入三星/戴尔/惠普/小米等大客户的设计公司是可实现的规模</strong>，无产能硬约束（Fabless + 外协封测 + 自有鼎茂）<br />
+- 校验通过</p>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 5125.31 万；Q2 已单季亏损（−519.26 万），H2 为户外旺季 + 芯片爬坡，但渠道重构费用仍在</li>
+<li>H2 归母 4500–6000 万 → <strong>2026E 归母 0.96–1.11 亿，取 1.05 亿</strong></li>
+<li>对应 EPS 约 0.119 元，现价 10.27 元 → <strong>2026E PE 约 86x</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 归母</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>芯片价格战（触控/Mini LED 驱动毛利破阈值）；贝特莱/通途未达承诺；户外渠道重构失败继续下滑</td>
+<td>1.05 亿</td>
+<td>32x</td>
+<td>33.6 亿</td>
+<td><strong>3.80 元</strong></td>
+<td><strong>−63.0%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>贝特莱/通途按承诺兑现并延续；Mini LED 背光与车载触控稳步爬坡；户外恢复个位数增长</td>
+<td><strong>1.95 亿</strong></td>
+<td><strong>50x</strong></td>
+<td><strong>97.5 亿</strong></td>
+<td><strong>11.03 元</strong></td>
+<td><strong>+7.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>端侧 AI 压缩 IP 大规模授权（地平线合作落地）+ Mini LED 玻璃基透明屏放量 + 车载 OLED 高增 + 持续外延并购</td>
+<td>3.20 亿</td>
+<td>55x</td>
+<td>176.0 亿</td>
+<td><strong>19.92 元</strong></td>
+<td><strong>+94.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润（归母）</td>
+<td>1.05 亿</td>
+<td>1.95 亿</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>72x（芯片转型溢价，低于当前 TTM 82x）</td>
+<td>50x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>75.6 亿</td>
+<td>97.5 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>8.55 元</strong></td>
+<td><strong>11.03 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验（关键）</strong>：<br />
+- 现价 10.27 元 = 2026E PE <strong>86x</strong>、2029E 中性 PE <strong>46.6x</strong>、PB <strong>4.23x</strong>（每股净资产仅 2.30 元）<br />
+- 市场已按"2029 年归母约 2.0 亿、PE 45x"提前定价——<strong>即中性情景已被充分定价，现价买入几乎赚不到中性情景的钱，等于免费赠送了悲观情景的全部下行风险</strong><br />
+- <strong>基准目标价取 9.5 元</strong>（按 2026 年底市场将切换至 2027E 估值：2027E 归母约 1.35 亿 × 65x ≈ 87.8 亿 → 9.93 元；与 2026E 口径 8.55 元取中，并考虑定增摊薄折让）</p>
+<h4>第四步进阶：重资产 / 周期股估值校正</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：<strong>PB 4.23x，远未破净，反向需查虚高</strong>。归母净资产 20.30 亿，总资产 33.53 亿（+26.28% 主要来自并表）。<strong>核心风险点：收购贝特莱（估值 6.51 亿）+ 通途（估值 7.03 亿）合计 6.78 亿对价将形成约 4–5 亿商誉</strong>。若业绩承诺未达成 → <strong>商誉减值将直接吞噬净资产</strong>。<strong>这是本股最大的资产质量瑕疵</strong>，已在悲观情景（2029 归母降至 1.05 亿）中部分反映。</li>
+<li><strong>校正2 周期位置校正</strong>：半导体是<strong>强周期行业</strong>。当前位置：<strong>上行期偏后段</strong>（2026 全球半导体规模预计创新高、存储与逻辑为核心引擎）。<strong>中性净利禁止用"周期顶部的单年好年景"</strong>——本报告 2029E 中性 1.95 亿，是按"各子公司业绩承诺锚定 + 客户导入节奏"自下而上推导，而非把 2026 年景气峰值年化。但<strong>仍需警惕：若 2027–2028 半导体周期下行，贝特莱/通途承诺可能无法达成</strong>，此风险已在悲观情景体现。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率 26.80%（2025 年末）、有息负债 1.62 亿、有息负债率 22.76% —— <strong>不构成高负债</strong>。但存在<strong>经营杠杆 + 估值杠杆双高</strong>：PB 4.23x 意味着净资产每减值 10%，股价需下跌约 2.4% 才能恢复原 PB；若市场从 50x 切换至 25x（半导体杀估值常态），<strong>即便净利达标，股价仍可腰斩</strong>。负面情景：半导体周期下行 + 估值切换至 25x，2029 归母 1.5 亿 × 25x = 37.5 亿 → 4.24 元（<strong>−58.7%</strong>）。<strong>该负面情景使空间大幅转负，故不得标注大空间。</strong></li>
+<li><strong>期权纪律</strong>：端侧 AI 压缩 IP（地平线合作）、智能外骨骼、航天装备、持续外延并购 —— <strong>均未过"收入兑现"验证点</strong>（无金额、无批量出货数据、未单独披露收入），<strong>零计入中性 1.95 亿</strong>，仅在乐观情景 3.20 亿中体现（端侧 AI 贡献约 0.5 亿、外延并购约 0.45 亿）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>明显偏贵，且已充分定价中性情景</strong>。现价 10.27 元 = 2026E PE 86x、PB 4.23x（每股净资产 2.30 元）。按中性 2029E 归母 1.95 亿 × 50x 折算回今天，几乎没有剩余空间（+7.4%/3年，年化约 2.4%）。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 11.03 元 → 空间 <strong>+7.4%</strong>（<strong>年化不足 3%，等于无风险利率水平</strong>）<br />
+- 悲观 3.80 元 → 下行 <strong>−63.0%</strong>（价格战 + 商誉减值 + 估值切换三重打击）<br />
+- 乐观 19.92 元 → <strong>+94.0%</strong>，需端侧 AI IP 大规模兑现 + 持续并购<br />
+- <strong>赔率特征：上行依赖未兑现的期权，中性年化不足 3%，下行深不见底</strong> → <strong>风险收益严重不对称（负向）</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>价格条件</strong>：回落至 <strong>7.0 元以下</strong>（对应 2026E PE 约 59x、PB 约 2.9x）才具备安全边际；<strong>6.0 元以下</strong>（PB 2.5x）为强安全边际<br />
+2. <strong>信号条件（须至少两项成立）</strong>：①贝特莱/通途 2026 年度业绩承诺<strong>足额达成</strong>（贝特莱 ≥3370 万、通途累计进度达标）——这是最硬的验证点；②<strong>Q3/Q4 单季归母转正且同比改善</strong>（Q2 亏损 519 万必须被证伪）；③玻璃基透明屏 2026 年内如期量产；④端侧 AI 压缩 IP 首次披露授权收入金额<br />
+3. <strong>观察指标</strong>：逐季少数股东损益占比（若持续高于 50%，说明归母质量恶化）、商誉规模与减值测试、存货周转率</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>业绩承诺未达成 → 商誉减值</strong>：收购形成约 4–5 亿商誉，而 Q2 已现单季亏损。<strong>这是最致命的风险</strong>——一旦贝特莱/通途承诺失约，减值将同时打击净资产与利润<br />
+2. <strong>"并表增长"被误读为"内生增长"</strong>：H1 营收 +42.34% 中<strong>逾八成来自并表</strong>；Q1 芯片 1.79 亿、Q2 1.795 亿<strong>环比几乎零增长</strong>，说明内生增长尚未启动。若 2027 年并表基数效应消退后内生乏力，增长将断档<br />
+3. <strong>Q2 单季已亏损</strong>（归母 −519 万、扣非 −1808 万）——H1 的亮眼几乎全靠 Q1<br />
+4. <strong>半导体周期下行</strong>：当前处于上行期偏后段，2027–2028 若周期回落，触控/Mini LED 驱动价格战将直接击穿毛利率<br />
+5. <strong>实控人定增摊薄</strong>：定增尚未落地，若按市价折扣发行，股本摊薄将稀释每股价值<br />
+6. <strong>估值切换风险</strong>：PB 4.23x、PE 86x，一旦市场风格从"芯片概念"切回"业绩兑现"，估值中枢可从 50x 降至 25x</p>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<p><strong>类型A 行业调整剩者红利</strong>：触控 IC、指纹、Mini LED 驱动三个细分均经历过惨烈价格战，中小设计公司持续出清。<strong>若 2027–2028 年行业出清完成</strong>，剩者（已导入三星/戴尔/惠普/小米等头部客户的贝特莱、具备"直显+背光"双能力的芯能）份额与定价权跳升。指纹业务已"通过涨价修复毛利率"，是<strong>出清已现的早期证据</strong>。<strong>验证点</strong>：触控/指纹/Mini LED 驱动毛利率是否连续两季回升；行业设计公司数量是否减少。<strong>证伪</strong>：价格战重启、毛利率再度下探。弹性：毛利率回升 3pct → 2029 归母 +0.35 亿，目标价 +18%。</p>
+<p><strong>类型B 政策反转期权</strong>：<strong>不适用</strong>。本股未被政策打压，反而是政策受益方（集成电路税收优惠、AI+ 行动、新型显示扶持）。<strong>无反转空间可挖</strong>。</p>
+<p><strong>类型C 市场错杀修复</strong>：<strong>不适用</strong>。现价 PB 4.23x、PE 86x 处于<strong>历史高位而非低位</strong>，且基本面（Q2 单季亏损、内生环比零增长）确有瑕疵，<strong>"错杀证据"不成立</strong>。真正的错杀机会需等待：若半导体板块系统性回调 30–40% 而公司业绩承诺正常达成，届时才可能出现错杀窗口。</p>
+<p><strong>类型D 技术突破 / 技术代际跃迁期权</strong>：<strong>上海通途的全栈数据压缩技术是本股唯一具备此属性的资产</strong>——覆盖输入数据（压缩至 1/5）、中间态数据（再压缩 50%）、模型参数（压缩 30% 且<strong>无需重训、即插即用</strong>），直接切中<strong>端侧 AI 部署的带宽/内存瓶颈</strong>；2026-06 与<strong>地平线</strong>签署战略合作，面向智能驾驶与机器人。<br />
+<strong>硬验证点三要素核查</strong>：<br />
+- ①<strong>政策驱动技术路线</strong>：AI+ 行动、端侧智能 —— <strong>具备</strong><br />
+- ②<strong>行业趋势向该技术收敛</strong>：端侧 AI 大模型部署的带宽/内存瓶颈确实是 2026 年最确定的产业痛点 —— <strong>具备</strong><br />
+- ③<strong>公司技术投产落地</strong>：<strong>部分具备</strong> —— IP 已授权 <strong>20+ 家芯片公司</strong>（技术被验证）、与地平线战略合作（头部客户认可）；<strong>但缺"大额订单/批量出货"、"收入单独披露"、"量产成本优于旧路线"的量化证据</strong><br />
+→ <strong>判定：缺关键落地验证点，严格按纪律只作"机会情景"，零计入中性锚。</strong> 乐观情景中该项贡献约 0.5 亿净利、约 27 亿市值。<br />
+→ <strong>证伪信号</strong>：2027 年前未披露任何授权收入金额；地平线合作无后续订单公告；压缩技术被更优路线（如稀疏化/量化硬件化）替代；大模型压缩需求随硬件内存成本下降而消失。</p>
+<p><strong>什么条件出现才上调至"重点关注"</strong>：需<strong>同时</strong>满足 ①<strong>股价回落至 7.0 元以下</strong>（使中性空间重新 &gt;50%）；②<strong>贝特莱 + 通途 2026 年度业绩承诺足额兑现</strong>（证明并表质量）；③<strong>端侧 AI 压缩 IP 首次披露 ≥1 亿元授权/订单金额</strong>（把类型D从机会情景升格为可计入中性的确定性增量）。三者齐备则中性 2029E 归母可上调至 2.5 亿以上。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>+7.4%</strong>，虽为正但<strong>年化不足 3%</strong>，且需以承担 <strong>−63%</strong> 的悲观下行风险为代价——<strong>风险收益严重不对称</strong>。<br />
+公司转型方向正确且已见实效：芯片收入占比 38.6%、通途+贝特莱贡献 61.3% 净利、通途 IP 授权 20+ 家、与地平线合作、户外毛利率稳在 50%+、研发强度 5.60%（芯片 9.98%）。<strong>技术卡位是真的，客户名单是真的。</strong><br />
+<strong>但价格把这个"真"提前透支了</strong>：86x 2026E PE、4.23x PB，市场已经按"2029 年赚 2 亿、给 50 倍"定价完毕。而 Q2 单季归母 −519 万、扣非 −1808 万、芯片收入环比零增长——<strong>内生增长尚未接力并表增长</strong>，业绩承诺能否兑现（对应约 4–5 亿商誉）是悬在头上的剑。<br />
+<strong>核心矛盾：好故事 + 坏价格。</strong> 建议等 7.0 元以下，或等 2026 年报验证业绩承诺后再评估。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>10.27 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>9.5 元</strong>（区间 8.6–10.5）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−7.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>11.03 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+7.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 3.80 元（−63.0%）～ 乐观 19.92 元（+94.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>户外+芯片双主业转型兑现，但86xPE已透支中性预期，内生增长未接力并表</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（7.0 元以下或 2026 年报验证业绩承诺后再介入）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：探路者 2025 年年度报告、2026 年半年度报告（2026-08-21/22 披露）、2025 年度网上业绩说明会（2026-05-15，深交所互动易）、公司收购公告（贝特莱 51% 作价 3.21 亿、上海通途 51% 作价 3.57 亿）、中恒/华福等机构公司点评、WSTS 2026 年春季半导体市场预测、证券时报/中国日报/新华网 2026-08 中报报道、国家医保局与工信部相关政策文件（芯片侧政策参考工信部《电子信息制造业"十五五"规划》方向）。</em><br />
+<em>估值说明：芯片板块已按各子公司实际持股比例（贝特莱/通途 51%，其余按 80% 估算）折算归母，已处理 2026Q2"子公司盈利、归母亏损"的少数股东稀释效应（少数股东损益 +595.02 万 vs 归母 −519.26 万）。实控人定增尚未落地，本报告按当前 8.84 亿股测算，未计入摊薄。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
