@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>硕贝德（300322）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>硕贝德（300322）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-16 ｜ 现价 <strong>17.64 元</strong>（2026-09-16 收盘，腾讯行情实测） ｜ 总市值 <strong>约 77.6 亿</strong> ｜ PE(TTM) <strong>约 144x</strong> ｜ PB <strong>约 7.9x</strong> ｜ 总股本 <strong>约 4.40 亿股</strong><br />
+行业：电子—天线/散热/连接器（消费电子 + 汽车电子 + AIDC 液冷）｜ 板块：创业板<br />
+盈利股但<strong>净利润质量偏弱</strong>（2026H1 归母 2528 万、净利率仅 1.58%、经营现金流 −1427 万、PE(TTM) 144x 分母过小），按规则从严说明，估值以 2029 液冷放量为核心期权。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：以天线射频为起家主业、散热为第二主业的精密电子部件厂商，当前最大看点是 AIDC 液冷散热（Busbar 液冷 + 1.6T 光模块液冷 Cage + GPU 冷板）切入英伟达供应链，客户含泰科、安费诺及北美头部云厂。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 15.56 亿，同比 +28.75%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天线及模组</td>
+<td>—</td>
+<td>第一大主业</td>
+<td>28.39%（−1.06pct）</td>
+<td>稳增</td>
+</tr>
+<tr>
+<td>散热器件及模组</td>
+<td>1.40 亿</td>
+<td>9.0%</td>
+<td>3.10%（−5.80pct）</td>
+<td>+31.14%</td>
+</tr>
+<tr>
+<td>线束及连接件</td>
+<td>4.07 亿</td>
+<td>26.2%</td>
+<td>18.35%（−2.71pct）</td>
+<td>+27.97%</td>
+</tr>
+<tr>
+<td>传感器智能模组</td>
+<td>2.98 亿</td>
+<td>19.1%</td>
+<td>—</td>
+<td>+115.08%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：<br />
+- 天线射频：笔电/手机/汽车/卫通天线（含 Meta Quest/AR 眼镜结构件、星网/垣信地面终端）。<br />
+- 散热：热管/VC/液冷（AIDC 光模块液冷 Cage、Busbar 液冷、GPU 冷板、UQD 快接头）。<br />
+- 线束：新能源车 BMS 信号线（比亚迪、欣旺达、中创新航）。<br />
+- 传感器：与森萨塔合作代工汽车/工业压力传感器。</p>
+<p><strong>主要客户/下游</strong>：泰科、安费诺（液冷）、北美头部云厂（液冷验证）、比亚迪（线束）、森萨塔（传感器）、Meta（可穿戴天线）、星网/垣信（卫通）。</p>
+<p><strong>境内外收入占比</strong>：境内为主，惠州 + 越南基地服务海外（规避关税、贴近泰科全球供应链）。</p>
+<p><strong>股东背景</strong>：民营，管理层产业积淀深（散热团队来自富士康/讯强/AVC）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，AI 算力液冷强制标配</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/趋势</th>
+<th>主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 算力基础设施爆发（GB200/GB300/Rubin）</td>
+<td>英伟达/云厂</td>
+<td>全球级</td>
+<td>1.6T 光模块功耗 45–60W，风冷上限 35W，液冷强制标配</td>
+</tr>
+<tr>
+<td>液冷渗透率提升</td>
+<td>行业共识</td>
+<td>强</td>
+<td>1.6T 光模块液冷渗透 2026 约 30%→2027 50–60%+</td>
+</tr>
+<tr>
+<td>越南 301 调查</td>
+<td>美国贸易代表</td>
+<td>风险变量</td>
+<td>部分海外订单推迟（公司降本对冲）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：液冷 Busbar 市场 2026–2027 约 130 亿；1.6T 光模块液冷 Cage 市场约 100 亿；公司单柜 Busbar 价值 2–4 万、Cage 单价 150–200 元、毛利率 35–38%。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 营收</td>
+<td>15.56 亿（+28.75%），传感器模组 +115% 拉动</td>
+</tr>
+<tr>
+<td>2026H1 归母净利润</td>
+<td>2528 万（−24.59%），扣非 2699 万（−5.05%）</td>
+</tr>
+<tr>
+<td>2026H1 毛利率</td>
+<td>20.51%（−3.22pct），散热/线束毛利率承压</td>
+</tr>
+<tr>
+<td>2026H1 经营现金流</td>
+<td>−1427 万（净现比 −56%），盈利质量偏弱</td>
+</tr>
+<tr>
+<td>液冷产能</td>
+<td>Busbar 一期匹配 2 万台机柜、二期 2026Q3 翻倍；光模块液冷热板年产能 8 万套→年底 18–20 万套；GPU 冷板年产能 100 万片</td>
+</tr>
+<tr>
+<td>客户定点</td>
+<td>泰科 4 个项目定点、安费诺突破；Busbar 获北美客户供应商资质</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：Q2 营收 8.09 亿（+17.09%），归母 1486 万（+42.45% 环比）；液冷 Q2 起小批量出货，但财务费用（汇兑 +74%）+ 资产减值 1530 万拖累净利。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：铜（Busbar 正负极占价值 6 成）、铝、液冷管材——铜价波动影响成本；公司通过客户定价传导 + 长协部分对冲。</p>
+<p><strong>下游</strong>：英伟达供应链（泰科/安费诺/ODM 英业达/台达/美超微）——客户认证壁垒极高（大陆少数通过 GPU 冷板认证的内资厂），卖方议价权中等（依赖大客户但技术稀缺）。</p>
+<p><strong>议价权</strong>：液冷<strong>中偏强</strong>（认证壁垒 + 缺货），传统天线/线束<strong>中</strong>（客户集中）。</p>
+<h4>第二步进阶：原料成本→毛利结构（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性（转嫁系数）</strong>：液冷 Busbar 铜占价值 6 成，大客户年降 + 铜价波动下转嫁系数≈0.6–0.8；光模块 Cage 技术壁垒高转嫁系数≈0.9。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：高毛利液冷（35–38%）占比提升 vs 低毛利散热传统（3.10%）、线束（18.35%）稀释。综合 20.51% 掩盖——液冷放量后加权毛利率可升至 25%+。</li>
+<li><strong>因子3 库存与采购节奏</strong>：铜价高位接货（2026H1 散热毛利率 −5.80pct 部分因原料），长协/套保比例待披露；需区分当期 vs 远期。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 铜价周期（验证点：LME 铜）；② 英伟达机柜出货节奏（验证点：泰科 forecast）；③ 越南 301 关税（证伪：关税扩大致订单流失）。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Busbar 液冷（泰科/Rubin）</td>
+<td>单柜 2–4 万，4 个项目定点，Q2 小批量</td>
+<td>一期匹配 2 万台机柜，二期 2026Q3 翻倍</td>
+<td>小批量出货中</td>
+<td>2026H2–2029</td>
+</tr>
+<tr>
+<td>1.6T 光模块液冷 Cage</td>
+<td>单价 150–200 元，泰科 ~30% 外包份额</td>
+<td>惠州年产能 200 万套，越南基地</td>
+<td>完成部分国际头部客户验证</td>
+<td>2026H2–2029</td>
+</tr>
+<tr>
+<td>GPU 冷板 + UQD 快接头</td>
+<td>送样英业达/台达/美超微，适配 GB200/300</td>
+<td>年产能 100 万片</td>
+<td>小批量试产</td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td>卫通天线</td>
+<td>星网/垣信地面终端 + 吉利船载 + 华为车载</td>
+<td>已量产交付</td>
+<td>持续</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>传感器模组（森萨塔）</td>
+<td>汽车/工业压力传感器代工</td>
+<td>2.98 亿（H1，+115%）</td>
+<td>持续上量</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>线束（新能源）</td>
+<td>比亚迪等，年增约 1 亿营收</td>
+<td>4.07 亿（H1）</td>
+<td>持续</td>
+<td>持续</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：液冷为最大弹性，但当前仍"小批量验证期"——2026H1 散热毛利率仅 3.10%（传统业务拖底），液冷高毛利尚未规模体现。华安预测 2026–2027 液冷带来 4–5 亿 + 4 亿利润增量为乐观口径，审慎计入中性需打折。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong></li>
+<li>供给侧：液冷 Cage 供应商约 3–4 家、Busbar 2–3 家，公司位置不错（泰科第二供应商）。</li>
+<li>需求侧：泰科/安费诺主导，公司份额待爬坡验证。</li>
+<li>技术代际：微通道密封/防漏液车规级工艺，大陆少数通过英伟达 GPU 冷板认证。</li>
+<li>成本曲线：惠州 + 越南双基地，贴近客户降本。</li>
+<li>份额二阶导：液冷渗透加速期（30%→60%）。<br />
+  → 三档：保守（份额守成）、中性（泰科 20–30% 份额）、乐观（泰科 30%+ 安费诺突破）。</li>
+<li><strong>层2 扩展业务：主业迁移空间</strong>：天线散热→AIDC 液冷（同源散热技术迁移至算力），能力可迁移；卫通天线→卫星互联网（新 TAM）。液冷已过客户验证（部分），计部分入中性；卫通/AR 结构件为中期期权。</li>
+<li><strong>层3 证伪信号</strong>：英伟达认证失败、泰科份额流失、液冷毛利率破 25%、越南订单停滞、铜价暴涨未转嫁。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：主业（天线/线束/传感/传统散热）微利 + 液冷期权双线测算。因当前 PE(TTM) 144x 分母过小无意义，远期以液冷放量后的正常化净利锚定。不采用历史增速外推。</p>
+</blockquote>
+<p><strong>总股本：约 4.40 亿股</strong></p>
+<p><strong>净利润质量提示</strong>：2026H1 归母 2528 万、净利率 1.58%、经营现金流 −1427 万，盈利质量偏弱（汇兑 + 减值拖累 + 主业微利），PE(TTM) 144x 不反映真实盈利能力，估值核心是 2029 液冷规模化后的净利。</p>
+<h3>分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主业（天线/线束/传感/传统散热）</td>
+<td>2026H1 15.56 亿，稳增</td>
+<td>20 亿</td>
+<td>5%</td>
+<td>1.00 亿</td>
+</tr>
+<tr>
+<td>AIDC 液冷（Busbar+Cage+GPU 冷板）</td>
+<td>审慎取公司占部分份额（非华安全量）</td>
+<td>15 亿</td>
+<td>18%（高毛利但含费用）</td>
+<td>2.70 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>35 亿</strong></td>
+<td></td>
+<td><strong>3.70 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 2528 万，H2 液冷小批量 + 主业，全年归母 <strong>0.60 亿</strong>（谨慎）</li>
+<li>合理 PE 40x（成长期权溢价） → 基准市值 24 亿 → 5.45 元</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>液冷验证慢/份额低，主业微利</td>
+<td>1.7 亿</td>
+<td>25x</td>
+<td>42.5 亿</td>
+<td><strong>9.66 元</strong></td>
+<td><strong>−45.2%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>液冷稳步放量（审慎份额），主业稳增</td>
+<td><strong>3.70 亿</strong></td>
+<td>30x</td>
+<td>111 亿</td>
+<td><strong>25.20 元</strong></td>
+<td><strong>+42.9%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>液冷大放量（泰科 30%+ 安费诺突破）</td>
+<td>7.5 亿</td>
+<td>35x</td>
+<td>262 亿</td>
+<td><strong>59.50 元</strong></td>
+<td><strong>+237%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>0.60 亿（微利）</td>
+<td>3.70 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>40x（期权溢价）</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>24 亿</td>
+<td>111 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>5.45 元</strong></td>
+<td><strong>25.20 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 17.64 元对应 2026E PE 约 129x，<strong>已含液冷期权溢价</strong>；2029E 中性 PE 30x（含成长）对应空间 +42.9%，但高度依赖液冷放量验证，置信度中等。</p>
+<h4>第四步进阶：重资产/周期股估值校正（三道闸）</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：轻资产（制造），PB 7.9x 偏高（反映期权溢价），非破净。</li>
+<li><strong>校正2 周期位置校正</strong>：非强周期，但液冷处渗透早期；中性净利按审慎份额（非拐点年化），未计入华安全量乐观。</li>
+<li><strong>校正3 杠杆下行情景</strong>：经营现金流为负（−1427 万）、资产负债率偏高需关注；若液冷验证失败 + 铜价暴涨，悲观情景空间 −45.2%，转负则不得标大空间，故仅"纳入观察"。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏高（含液冷期权溢价）</strong>。现价 17.64 对应 2026E PE 129x，已提前定价 2027–2029 液冷放量。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 25.20 元 → 空间 <strong>+42.9%</strong>，不达"重点关注" &gt;50% 门槛<br />
+- 悲观 9.66 元 → 下行 <strong>−45.2%</strong>，期权证伪则深跌<br />
+- 乐观 59.50 元 → <strong>+237%</strong>（液冷大放量）</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>不追高</strong>。现价已含期权溢价，等回落至 <strong>13 元以下</strong>（2029E PE &lt;20x 或市值 &lt;57 亿）具安全边际<br />
+2. <strong>加仓信号</strong>：① 液冷 Busbar/Cage 大额订单公告（披露金额）；② 英伟达 GPU 冷板批量认证；③ 单季液冷营收占比跳升 + 毛利率 &gt;30%；④ 经营现金流转正<br />
+3. <strong>观察指标</strong>：逐季液冷收入与毛利率——若液冷毛利率站稳 30%+ 且营收占比 &gt;15%，中性上修</p>
+<p><strong>最大风险</strong>：① 液冷验证/量产不及预期（最大风险）；② 英伟达供应链份额流失；③ 经营现金流持续为负；④ 铜价暴涨未转嫁；⑤ 越南 301 关税扩大；⑥ 高 PE 估值回撤。</p>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>依据：AIDC 液冷切入英伟达供应链（泰科定点 + 北美资质）逻辑硬、弹性大（乐观 +237%），但当前 PE 129x 已含期权溢价、经营现金流为负、液冷仍小批量验证期，中性远期空间 +42.9% 不达重点关注门槛。等液冷大额订单落地或回调至 13 元以下再介入。核心跟踪点：液冷订单金额披露 + 毛利率兑现。</p>
+</blockquote>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：AIDC 液冷供应商稀缺（Cage 3–4 家、Busbar 2–3 家），英伟达供应链"淘汰存量厂商"壁垒下剩者份额集中。<strong>验证点</strong>：泰科/安费诺份额公告；<strong>证伪</strong>：份额流失。</li>
+<li><strong>类型B 政策反转期权</strong>：无压制性政策，AI 算力液冷为强制标配趋势（已落地）。<strong>验证点</strong>：GB200/300 出货节奏。</li>
+<li><strong>类型C 市场错杀修复</strong>：当前 PE 129x 含期权溢价，若液冷验证不及预期易被错杀；反之验证落地则估值重估。<strong>验证点</strong>：液冷营收占比跳升 + 毛利率 &gt;30%；<strong>证伪</strong>：验证失败。</li>
+<li><strong>类型D 技术突破/代际跃迁期权</strong>：英伟达 GPU 冷板（微通道密封/防漏液车规级）认证突破 + 卫通天线/AR 结构件新场景，属技术代际跃迁。<strong>硬验证点</strong>：英伟达 GPU 冷板批量认证 + 客户定点 + 量产成本优于旧路线；未过验证点仅作机会情景，不计入中性（乐观 +237% 即源于此）。</li>
+</ul>
+<blockquote>
+<p><strong>上调重点关注的触发条件</strong>：液冷 Busbar/Cage 大额订单公告（披露金额）+ 单季液冷毛利率 &gt;30%，中性锚上修至 +50% 以上时，由"纳入观察"上调"重点关注"。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>17.64 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.45 元</strong>（区间 5.0–6.5，现价含液冷期权溢价）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−69.1%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>25.20 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+42.9%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 9.66 元（−45.2%）～ 乐观 59.50 元（+237%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>AIDC液冷切入英伟达供应链弹性大，但PE129x含期权溢价、现金流为负，等液冷订单验证</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（等回调至13元以下或液冷大额订单落地再加仓）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-22 披露）、业绩预告（2026-07-15）、投资者互动（2026-07-28）、2026Q1 业绩说明会纪要、华安/华金证券液冷测算、爱集微、腾讯行情（2026-09-16 收盘实测）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
