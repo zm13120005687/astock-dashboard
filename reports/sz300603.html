@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>立昂技术（sz300603）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>立昂技术（sz300603）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-18 ｜ 现价 <strong>8.00 元</strong> ｜ 总市值 <strong>约 37.18 亿</strong> ｜ PE(TTM) <strong>负值（真实亏损）</strong> ｜ PB <strong>3.11x</strong> ｜ 总股本 <strong>约 4.648 亿股</strong><br />
+行业：数字城市系统服务 + 数据中心/云计算（IDC）+ 通信网络技术服务 ｜ 板块：创业板<br />
+<strong>核验结论（关键）</strong>：2026H1 归母净利润 <strong>−4891.93 万元（真实亏损）</strong>，同比减亏 18.06%；扣非 −5319 万。队列"亏损"标记为<strong>真实</strong>。本报告按亏损股完整五步法 + 正常化净利润法 + 三问。公司 2025 全年曾扭亏（+3200 万），2026H1 再现亏损，属"扭亏反复型"，需审慎。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：新疆起家的数字基建服务商，传统主业为通信网络技术服务和数字城市系统集成，正转型切入数据中心（IDC）与算力租赁、边缘 AI，是"A股少有的新疆本地算力运营方"。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 3.59 亿，同比 −4.49%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数字城市系统服务</td>
+<td>未单列（主营之一）</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>数据中心与云计算</td>
+<td>转型核心增量</td>
+<td>提升中</td>
+<td>较高（约 24%+）</td>
+<td>增长</td>
+</tr>
+<tr>
+<td>通信网络技术服务</td>
+<td>基本盘（现金牛）</td>
+<td>—</td>
+<td>中等</td>
+<td>平稳</td>
+</tr>
+<tr>
+<td>运营商增值 + 新媒体</td>
+<td>增值业务</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>合计</td>
+<td>3.59 亿</td>
+<td>100%</td>
+<td>8.74%（综合，+1.99pct）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：2026H1 未披露分业务精确占比；据公开信息，收入结构"三分天下"：算力中心与 IDC（增量）、通信技术服务（基本盘）、AI 应用与数字政府（期权）。</p>
+</blockquote>
+<p><strong>核心产品/服务</strong>：IDC 机柜租赁、AI 推理算力租赁、边缘 AI 盒子（"立昂脑核"系列，获华为鲲鹏认证）、通信运维、数字城市系统集成、雪亮工程/明厨亮灶等政企 AI 应用。</p>
+<p><strong>主要客户/下游</strong>：中国移动/电信新疆区域（长期运维商）、地方政府（数字政府/政务云）、中亚跨境数据（一带一路）、AI 推理/渲染客户。</p>
+<p><strong>境内外收入占比</strong>：以境内（新疆为核心）为主，中亚数据走廊为潜在出海。</p>
+<p><strong>股东背景</strong>：民营，实控人王刚（持股 19.58%，质押 4310 万股）；无国资背景。</p>
+<blockquote>
+<p>结构判断：传统工程/系统集成毛利低（综合仅 8.74%），算力/IDC 与边缘 AI 是高毛利增量（24%+/40%+），转型方向正确但尚处投入期，规模不足以覆盖固定成本，导致整体仍亏。</p>
+</blockquote>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，国家级，新疆+东数西算主线</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>东数西算 / 西部枢纽能耗指标倾斜</td>
+<td>国家发改委</td>
+<td>国家级</td>
+<td>新疆节点批复加快，已在执行</td>
+</tr>
+<tr>
+<td>新疆自贸试验区 + 一带一路中亚数字化</td>
+<td>国务院/商务部</td>
+<td>国家级</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>AI 推理降本潮（训练→推理下沉）</td>
+<td>市场驱动</td>
+<td>—</td>
+<td>边缘算力需求碎片化爆发</td>
+</tr>
+<tr>
+<td>城市全域数字化转型试点</td>
+<td>国家数据局/住建部</td>
+<td>部委级</td>
+<td>专项债+超长期特别国债倾斜</td>
+</tr>
+<tr>
+<td>新疆低电价政策（工业用电 &lt;0.35 元/度）</td>
+<td>地方</td>
+<td>区域红利</td>
+<td>持续</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>东数西算板块（2026-09-17）</td>
+<td>指数 1560 点，较年初 −0.98%，区间振幅 41%</td>
+</tr>
+<tr>
+<td>数据中心板块</td>
+<td>指数 1970 点，较年初 +2.38%</td>
+</tr>
+<tr>
+<td>公司算力规模</td>
+<td>机架超 8000 架、机柜超 12000 台、算力 3000P+（广州/成都/新疆）</td>
+</tr>
+<tr>
+<td>新疆算力可比</td>
+<td>元道通信在手 1 万 P、日科化学自持 4000P、立昂乌鲁木齐 800PFlops</td>
+</tr>
+<tr>
+<td>边缘 AI 硬件（2025）</td>
+<td>出货超 1.2 万台，单项目客单价 30–80 万，毛利率 40%+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：营收 3.59 亿（−4.49%），归母 −4892 万（减亏 18%）；Q2 单季营收 2.18 亿（+9.58% 同比、+54.24% 环比），归母 −1821 万（环比减亏 40.7%）——<strong>环比改善但仍在亏损</strong>，印证转型爬坡期。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：电力（新疆低电价核心优势）、服务器/GPU（算力硬件，受芯片供应/价格影响）、机房建设。电力成本优势是新疆节点的核心壁垒。</p>
+<p><strong>下游</strong>：政企客户（算力租赁、政务云）、运营商（运维）、AI 推理/渲染需求方。下游 AI 推理需求高增，但上架率与回款是关键。</p>
+<p><strong>议价权</strong>：<strong>中</strong>。IDC/算力租赁面对大客户（运营商/云厂）议价中等；边缘 AI 盒子差异化（华为认证）议价略强；传统工程面对政府/运营商偏弱。</p>
+<hr />
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<ul>
+<li>
+<p><strong>因子1 成本传导弹性（pass-through）</strong><br />
+  IDC/算力核心成本是电力+折旧（非传统原料）。电力占运营成本约 40–50%，新疆低电价（&lt;0.35 元/度，东部 0.7–0.9 元）构成天然成本壁垒，传导系数高（成本优势直接转化为毛利）。服务器硬件涨价（GPU 供需）则难转嫁（系数 0.3–0.5）。验证：高毛利算力/IDC 拉动综合毛利 +1.99pct。</p>
+</li>
+<li>
+<p><strong>因子2 毛利结构再平衡（分业务线）</strong><br />
+  | 业务线 | 毛利率 | 成本敏感 | 利润贡献 |<br />
+  |---|---|---|---|<br />
+  | 传统工程/系统集成 | 低（拉低综合至 8.74%） | 人工/材料 | 收入主力但利润薄 |<br />
+  | IDC/算力租赁 | 约 24%+ | 电力/折旧 | 增量弹性点 |<br />
+  | 边缘 AI 盒子 | 40%+ | 硬件 | 高毛利小体量 |<br />
+  结构正从"低毛利工程"向"高毛利算力/AI"迁移，但算力占比仍不足以覆盖总部固定成本（期间费用率 16.82% 仍高），<strong>综合毛利提升但净利仍负</strong>。</p>
+</li>
+<li>
+<p><strong>因子3 库存与采购节奏（timing）</strong><br />
+  算力硬件（GPU/服务器）采购若遇价格上涨，前期低价采购有"接货收益"；但折旧随产能投放刚性增加（H1 投资现金流 −9388 万）。需警惕上架率不足时折旧吞毛利。</p>
+</li>
+<li>
+<p><strong>因子4 政策/市场锚点（成本/价格驱动变量）</strong></p>
+</li>
+<li><strong>市场层</strong>：GPU 供应与价格、算力租赁市场价格（上架率）。</li>
+<li><strong>政策层</strong>：① 新疆低电价+东数西算能耗倾斜→成本锚（利好）；② 西部枢纽批复节奏→产能释放；③ 专项债/特别国债→数字政府订单。</li>
+<li><strong>证伪信号</strong>：上架率 &lt;60%、算力租赁价格战、GPU 涨价致毛利破 20%。</li>
+</ul>
+<blockquote>
+<p>输出喂给第四步毛利率假设：中性综合毛利率随算力占比提升升至 18–22%（2029），传统工程维持低毛利。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乌鲁木齐/喀什边缘算力节点</td>
+<td>低电价+政务云准入</td>
+<td>800PFlops 已建</td>
+<td>上架爬坡中</td>
+<td>2026–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td>广州/成都算力中心（简阳接入国家算力网）</td>
+<td>机架 8000+、算力 3000P+</td>
+<td>已投运</td>
+<td>上架率提升</td>
+<td>2026–2028</td>
+<td>中</td>
+</tr>
+<tr>
+<td>边缘 AI 盒子（华为鲲鹏认证）</td>
+<td>单项目 30–80 万、毛利 40%+</td>
+<td>2025 出货 1.2 万+</td>
+<td>持续放量</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td>中亚数据走廊（一带一路）</td>
+<td>跨境冷数据处理</td>
+<td>早期</td>
+<td>概念期</td>
+<td>2028+</td>
+<td>低</td>
+</tr>
+<tr>
+<td>数字政府/雪亮工程二期</td>
+<td>政策驱动</td>
+<td>碎片化订单</td>
+<td>持续</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计增量判断</strong>：最确定性增量是<strong>已有算力产能的上架率提升</strong>（8000+ 机架、3000P 算力从低上架向 65%+ 爬坡）与<strong>边缘 AI 硬件放量</strong>；最大期权是中亚跨境数据。无重大新募投扩产（现有产能足以支撑 2–3 年）。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务 = 市场容量 × 份额变量</strong></li>
+<li><strong>供给侧份额</strong>：新疆本地算力运营方稀缺（A 股少有），但全国 IDC 竞争激烈（元道/日科等），公司份额小。</li>
+<li><strong>需求侧/客户份额</strong>：绑定移动/电信新疆区域运维（粘性高），算力客户待拓展。</li>
+<li><strong>技术代际差</strong>：边缘 AI 盒子获华为认证，有差异化；IDC 属主流代。</li>
+<li><strong>成本曲线位置</strong>：新疆低电价使成本曲线左移（区域壁垒）。</li>
+<li>
+<p><strong>份额二阶导数</strong>：算力上架率处于爬坡早期（加速渗透）。<br />
+  → <strong>三档</strong>：保守上架率 60%/中性 68%/乐观 75%。验证点：下季度算力业务收入占比、上架率披露。</p>
+</li>
+<li>
+<p><strong>层2 扩展业务 = 主业迁移空间</strong>：从"通信运维"迁移至"算力运营+AI 应用"，能力部分同源（政企客户/运维），新 TAM（AI 推理）远大于旧（工程）。<strong>已过部分验证点（产能已建、盒子出货），但上架率与盈利未验证，中性仅部分计入，乐观全额计入</strong>。</p>
+</li>
+<li>
+<p><strong>层3 风险折扣（证伪信号）</strong>：上架率持续 &lt;60%、算力租赁价格战、客户集中（运营商资本开支下行）、股东质押风险。</p>
+</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法</strong>：亏损股（扭亏反复），用<strong>正常化净利润法</strong>。估稳态营收→保守正常化净利率→×远期 PE。</p>
+</blockquote>
+<p><strong>总股本：约 4.648 亿股</strong>（PB 3.11x → 归母净资产约 12.43 亿，H1 末）</p>
+<h3>稳态营收与正常化净利率（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>正常化净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>算力/IDC</td>
+<td>现有 3000P+，上架率 68%，单机柜年收假设</td>
+<td>6.0 亿</td>
+<td>15%（含折旧后）</td>
+<td><strong>0.90 亿</strong></td>
+</tr>
+<tr>
+<td>通信运维+数字城市</td>
+<td>基本盘稳定 2025 约 7.3 亿，给 5.5 亿</td>
+<td>5.5 亿</td>
+<td>5%</td>
+<td><strong>0.28 亿</strong></td>
+</tr>
+<tr>
+<td>边缘 AI+应用</td>
+<td>盒子放量</td>
+<td>1.5 亿</td>
+<td>20%</td>
+<td><strong>0.30 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>13.0 亿</strong></td>
+<td></td>
+<td><strong>约 1.48 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>保守（上架率 60%、净利率降）：净利约 0.9 亿；乐观（上架 75%+中亚突破）：净利约 2.2 亿。</p>
+</blockquote>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 营收 3.59 亿（−4.5%），归母 −4892 万。H2 上架率提升+工程回款 → 全年营收约 8 亿，归母约 −0.5 亿（减亏但未扭亏）。</li>
+<li>基准估值锚：仍亏损，按资产/期权价值。</li>
+</ul>
+<h3>三情景（2029E，正常化口径）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>上架率 &lt;60%、价格战、转型失败</td>
+<td>0.5 亿</td>
+<td>资产折价 0.7x PB</td>
+<td>9 亿</td>
+<td><strong>1.94 元</strong></td>
+<td><strong>−75.8%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>上架率 68%、算力/AI 放量、净利率恢复</td>
+<td><strong>1.48 亿</strong></td>
+<td>25x（成长折价）</td>
+<td>37 亿 → 加资产底 11 亿</td>
+<td><strong>8.00 元</strong></td>
+<td><strong>0.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>上架 75%+中亚突破+净利率 18%</td>
+<td>2.2 亿</td>
+<td>28x</td>
+<td>62 亿 → 加资产底 13 亿</td>
+<td><strong>13.40 元</strong></td>
+<td><strong>+67.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>−0.5 亿（减亏）</td>
+<td>正常化 +1.48 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损）</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>资产底约 11 亿</td>
+<td>约 37 亿（盈利驱动）</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>约 2.4 元（资产底）</strong></td>
+<td><strong>8.00 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 8.00 元恰好等于中性远期目标价（8.00 元），即市场已定价"上架率 68%+转型成功"的中性情景。PB 3.11x、市值 37 亿对应当年亏损、净资产仅 12.4 亿——<strong>当前价格完全依赖转型成功预期，无安全边际</strong>。若转型不及预期（悲观），下行至 1.94 元（−76%）。</p>
+<h3>重资产/周期校正</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：PB 3.11x 非破净，但市值远超净资产（因含算力期权溢价）；IDC 资产专用性强（机房/服务器），清算折扣中等。</li>
+<li><strong>校正2 周期位置</strong>：算力/IDC 处于<strong>投入爬坡期（非周期顶部）</strong>，中性净利按爬坡恢复假设，未给过热溢价。</li>
+<li><strong>校正3 杠杆下行</strong>：资产负债率约 52–54%（H1 约 52%），有息负债可控但折旧+利息（可转债/借款）在下行需求下放大亏损，悲观情景空间转负（−76%）。</li>
+</ul>
+<h3>亏损三问（RULES 要求）</h3>
+<ol>
+<li><strong>为什么亏（2026H1 再现）</strong>：传统低毛利工程占比高（综合毛利仅 8.74%），算力/IDC 尚处上架爬坡、折旧刚性，期间费用率 16.82% 仍高；2025 曾扭亏（+3200 万，轻装上阵）但 2026H1 再现亏损，说明<strong>扭亏未稳固</strong>。</li>
+<li><strong>靠什么扭亏，触发时点</strong>：① 算力上架率突破 65%+，规模效应覆盖固定成本；② 边缘 AI 硬件持续放量（毛利 40%+）；③ 降本增效。经营扭亏看 2027（上架率拐点），非短期。</li>
+<li><strong>亏得起吗</strong>：净资产 12.43 亿、资产负债率 52%、筹资现金流 H1 +8120 万（融资能力尚可），<strong>账面可支撑转型 2–3 年</strong>；但经营现金流 −6754 万恶化，依赖融资续血，若上架率持续低迷将侵蚀净资产。</li>
+</ol>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏贵，已定价转型中性情景</strong>。现价 8.00 元=中性目标价，需上架率如期兑现才合理；若延迟则偏贵。</p>
+<p><strong>安全边际</strong>：中性远期 8.00 元 → 空间 <strong>0.0%</strong>；悲观 1.94 元（−75.8%）；乐观 13.40 元（+67.5%）。下行风险极大（−76%），上行需强兑现，不对称明显。</p>
+<p><strong>介入条件</strong>：① 现价 8.00 元安全边际薄，<strong>等回落至 5 元以下（接近资产底/悲观上沿）</strong>再布局；② 加仓信号：算力业务毛利率站稳 24%+、上架率破 65%、边缘 AI 硬件持续放量、中亚订单落地。</p>
+<p><strong>最大风险</strong>：① 上架率长期 &lt;60%，折旧吞毛利；② 客户集中（运营商资本开支下行）；③ 股东质押（王刚质押 4310 万股）引发抛压；④ 题材抢跑后估值回归（动态 PE 曾冲 50x+）。</p>
+<p><strong>结论：暂不介入</strong>（中性空间 0%、下行 −76% 风险大、转型未验证；若上架率拐点验证可上调纳入观察）。</p>
+<h3>第五步进阶：上行想象力情景（四类）</h3>
+<ul>
+<li><strong>A 行业调整剩者红利</strong>：IDC 行业出清（高能耗小厂淘汰），西部低电价节点（新疆）剩者份额提升。验证点：行业上架率回升、公司份额公告。→ 支撑中性。</li>
+<li><strong>B 政策反转期权</strong>：东数西算能耗倾斜+新疆自贸+专项债，算力需求政策托底。验证点：西部枢纽批复、订单公告。未过验证点仅作机会情景。</li>
+<li><strong>C 市场错杀修复</strong>：若题材退潮砸至 5 元以下（接近资产底），则修复弹性大（回归中性 8 元 +60%）。验证点：板块情绪企稳+上架率数据。</li>
+<li><strong>D 技术突破/代际跃迁期权</strong>：边缘 AI 盒子获华为鲲鹏认证并规模放量，从中"卖铲子"到"应用分润"。硬验证点：盒子出货量破 3 万台+客单价稳+毛利 40%。缺一则仅机会情景。→ 乐观情景 +67.5%。</li>
+</ul>
+<blockquote>
+<p><strong>上调至纳入观察/重点关注的条件</strong>：连续两季算力上架率 &gt;65% 且经营扭亏 + 边缘 AI 硬件放量，使 2029 净利上修至 2 亿+（乐观情景），中性空间 &gt;50% → 重点关注。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>8.00 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>2.40 元</strong>（区间 1.94–8.00，资产底主导）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−70.0%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>8.00 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+0.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.94 元（−75.8%）～ 乐观 13.40 元（+67.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>新疆算力/IDC转型股，2026H1仍亏但环比改善，现价已定价上架率中性情景，下行风险大</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（等回落至 5 元以下或上架率拐点验证再布局）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-27 披露）、中国证券报/中国基金报中报解读、雪球/全民K线立昂技术分析、爱企查新疆算力企业对比、东数西算板块行情数据。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

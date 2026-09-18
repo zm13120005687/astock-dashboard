@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>华测导航（300627）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>华测导航（300627）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-18 ｜ 现价 <strong>26.35 元</strong>（2026-09-17 收盘，腾讯行情昨收字段）｜ 总市值 <strong>约 209.2 亿</strong> ｜ PE(TTM) <strong>约 30.5x</strong>（基于 2026H1+2025H2 归母约 6.86 亿，非队列过时值）｜ PB <strong>约 4.8x</strong> ｜ 总股本 <strong>约 7.94 亿股</strong>（793,970,662 股）<br />
+行业：高精度定位（GNSS/RTK/农机自动驾驶/智能建造/地信/时空感知）｜ 板块：创业板<br />
+声明：业绩预测自下而上（农机/海外/时空感知三引擎+产能），非增速外推，由订单/定点驱动。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内高精度定位龙头（"芯片+算法+平台"全自主），三大核心技术（定位导航/感知测量/智能控制），农机自动驾驶+海外+时空感知三线高增。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 19.29 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>增速</th>
+<th>毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>农机导航与机器人</td>
+<td>6.38 亿</td>
+<td>33.09%</td>
+<td>+28.5%</td>
+<td>高</td>
+</tr>
+<tr>
+<td>智能建造与数字施工</td>
+<td>6.33 亿</td>
+<td>32.82%</td>
+<td>−4.23%</td>
+<td>中</td>
+</tr>
+<tr>
+<td>地信与时空智能</td>
+<td>4.27 亿</td>
+<td>22.13%</td>
+<td>−13.6%</td>
+<td>中</td>
+</tr>
+<tr>
+<td>时空感知与定位服务</td>
+<td>2.31 亿</td>
+<td>11.96%</td>
+<td>+27.0%</td>
+<td>60.31%（+7.3pct）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：高精度 GNSS 接收机/RTK、农机自动驾驶系统（领航员 NX600）、智能喷雾/灌溉、位移监测、StellaX 基带射频一体化芯片、PointX 星地融合增强平台。</p>
+<p><strong>主要客户/下游</strong>：农业（农机厂前装定点+后装）、基建/建筑（数字施工）、测绘地信、车企自动驾驶位置单元（定点量产）、低空经济/机器人。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：国内 12.21 亿（63.32%，毛利率 54.32%），国外 7.07 亿（36.68%，毛利率 <strong>71.50%</strong>，高溢价）。</p>
+<p><strong>股东背景</strong>：民企，实控人赵延平；自研 StellaX 芯片 + PointX 平台，技术壁垒高。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，农业现代化+北斗</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《全国智慧农业行动计划（2024–2028）》</td>
+<td>农业农村部</td>
+<td>国家级</td>
+<td>持续，农机数字化加速</td>
+</tr>
+<tr>
+<td>"十五五" 规划（农业现代化+北斗应用）</td>
+<td>国务院</td>
+<td>国家级</td>
+<td>2026 起</td>
+</tr>
+<tr>
+<td>新基建/数字施工/低空经济</td>
+<td>多部门</td>
+<td>强</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>车企自动驾驶位置单元定点</td>
+<td>市场</td>
+<td>强（订单）</td>
+<td>已量产</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球高精度 GNSS 市场</td>
+<td>持续增长，海外空间远大于国内</td>
+</tr>
+<tr>
+<td>中国农机自动驾驶渗透率</td>
+<td>低（后装为主），前装刚起步，空间大</td>
+</tr>
+<tr>
+<td>海外业务</td>
+<td>2025 营收 12.67 亿（+35.16%），毛利率 76.56%</td>
+</tr>
+<tr>
+<td>农机导航板块</td>
+<td>2025 营收 7.52 亿（+41.49%），国内市占率领先</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>国内高精度定位龙头，海外对标 Trimble（性价比优势）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：营收 19.29 亿（+5.2%），归母 3.33 亿（+2.05%），扣非 2.72 亿（−9.07% 因股份支付+汇兑）；剔除股份支付后净利 +15.82%；毛利率 60.62%（+2.49pct，结构升级验证）；Q2 归母环比 +65.7%。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：芯片（自研 StellaX）、元器件。自主可控，成本可控。</p>
+<p><strong>下游</strong>：农业/基建/车企/低空，需求高景气。海外高毛利。</p>
+<p><strong>议价权</strong>：<strong>强</strong>（技术壁垒+全自主芯片+平台粘性，海外毛利 71.5% 佐证）。</p>
+<hr />
+<h3>第二步进阶：原料成本 → 毛利结构（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性（转嫁系数）</strong>：高精度定位为技术密集型，转嫁系数 <strong>≈0.9</strong>（技术壁垒高，海外可溢价）；芯片自研降本进一步强化。综合毛利 60%+ 稳定。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：分业务——海外 71.5%、时空感知 60.3%（+7.3pct）、系统方案 58.97%（+6.28pct）、国内 54.32%。高毛利海外+解决方案占比升，结构性抬升综合毛利（已验证 +2.49pct）。</li>
+<li><strong>因子3 库存与采购节奏</strong>：芯片自研+标准元器件，无显著囤货收益/损失；毛利为真实技术溢价。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 智慧农业补贴（利好农机）；② 北斗/低空政策（利好时空感知）；③ 汇率（2026H1 汇兑损失 5069 万，负面；远期结售汇对冲）；④ 关税（海外拓展中性）。情景：政策延续+海外高增则毛利稳升；证伪：国内财政持续承压、汇兑损失扩大、海外拓展放缓。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>农机导航与机器人</td>
+<td>2026H1 6.38 亿（+28.5%），全球拖拉机前装定点</td>
+<td>高增</td>
+<td>已放量</td>
+<td>2026–2029</td>
+</tr>
+<tr>
+<td>海外业务</td>
+<td>2025 12.67 亿（+35%），销 140+ 国</td>
+<td>占比→超国内</td>
+<td>高增</td>
+<td>2026–2029</td>
+</tr>
+<tr>
+<td>时空感知与定位</td>
+<td>2026H1 2.31 亿（+27%），车企定点量产</td>
+<td>高增</td>
+<td>已量产</td>
+<td>2026–2029</td>
+</tr>
+<tr>
+<td>智能建造/地信</td>
+<td>2026H1 12.6 亿（短期承压）</td>
+<td>企稳</td>
+<td>新品 H2 交付</td>
+<td>2027+</td>
+</tr>
+<tr>
+<td>StellaX 芯片/PointX 平台</td>
+<td>降本+增强粘性</td>
+<td>期权</td>
+<td>已商用</td>
+<td>持续</td>
+</tr>
+</tbody>
+</table>
+<p><strong>自下而上 2029 营收推导</strong>：农机 2026E ~13 亿→2029 ~19 亿；海外 2026E ~14 亿→2029 ~19 亿（占比升）；时空感知 ~5 亿；智能建造/地信 ~9 亿；合计 ~52 亿。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务 市场容量×份额变量</strong>：① 供给侧：高精度定位国产替代（对标 Trimble）；② 客户份额：农机国内市占率领先+全球前装定点；③ 技术代际：StellaX 芯片自研领先；④ 成本曲线：芯片自研降本；⑤ 份额加速度：海外占比 32.8%→36.68% 快速升。三档：保守守份额 / 中性抢份额（海外高增）/ 乐观份额跃升。</li>
+<li><strong>层2 扩展业务 主业迁移空间</strong>：低空经济+ robots 定位（能力可迁移同源）；新 TAM（低空/机器人定位蓝海）；切入卡位（已定点车企）；认证门槛（车规级）；信号验证（车企量产定点+低空订单）。<strong>部分已验证（车企定点量产），可计入中性边际贡献</strong>。</li>
+<li><strong>层3 证伪信号</strong>：国内财政持续承压致地信下滑、海外拓展放缓、车企定点流失、毛利破 55%。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p>总股本约 7.94 亿股。分农机/海外/时空感知/智能建造四线，结合结构升级（海外高毛利占比升）。</p>
+</blockquote>
+<h3>分业务测算（2029E 中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>农机导航与机器人</td>
+<td>智慧农业+前装，~19 亿</td>
+<td>19 亿</td>
+<td>20%</td>
+<td>3.80 亿</td>
+</tr>
+<tr>
+<td>海外（RTK/农业/三维）</td>
+<td>占比升、毛利 71%，~19 亿</td>
+<td>19 亿</td>
+<td>22%</td>
+<td>4.18 亿</td>
+</tr>
+<tr>
+<td>时空感知与定位</td>
+<td>车企定点+低空，~5 亿</td>
+<td>5 亿</td>
+<td>20%</td>
+<td>1.00 亿</td>
+</tr>
+<tr>
+<td>智能建造/地信</td>
+<td>企稳，~9 亿</td>
+<td>9 亿</td>
+<td>14%</td>
+<td>1.26 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>约 10.2 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>公司 2026 经营目标归母 <strong>7.88 亿</strong>（+15%，含约 1.6 亿股份支付）；剔除后核心净利更优。预估 2026E 归母 <strong>7.9 亿</strong>。</li>
+<li>基准合理 PE：高精度定位龙头 27–30x → 市值 213–237 亿 → 股价 26.8–29.8 元。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>国内财政持续承压、海外放缓</td>
+<td>7.2 亿</td>
+<td>26x</td>
+<td>187 亿</td>
+<td><strong>23.6 元</strong></td>
+<td><strong>−10.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>三线高增+海外占比升+结构升级</td>
+<td><strong>10.2 亿</strong></td>
+<td>32x</td>
+<td>326 亿</td>
+<td><strong>41.1 元</strong></td>
+<td><strong>+55.9%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>海外超预期+低空/机器人放量</td>
+<td>12.5 亿</td>
+<td>35x</td>
+<td>438 亿</td>
+<td><strong>55.2 元</strong></td>
+<td><strong>+109.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>7.9 亿</td>
+<td>10.2 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>27–30x</td>
+<td>32x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>213–237 亿</td>
+<td>326 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>26.8–29.8 元</strong></td>
+<td><strong>41.1 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 26.35 对应 2026E PE 约 26.5x，处于合理区间下沿，市场尚未充分定价 2027–2029 海外+农机高增。</p>
+<h3>第四步进阶：重资产/周期股估值校正（三道闸）</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：华测轻资产（芯片设计+软件+服务），PB 4.8x 为技术/平台溢价，非破净，无破净误判。</li>
+<li><strong>校正2 周期位置校正</strong>：高精度定位为成长赛道非强周期；国内地信短期承压属财政节奏，已分业务（海外+农机+时空感知）对冲，中性净利未用周期外推。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率约 30%、现金流健康，无高杠杆下行；汇率（汇兑损失 5069 万）为可对冲负面，已用远期结售汇管理。</li>
+<li><strong>期权纪律</strong>：低空经济/机器人定位部分已验证（车企定点量产）边际计入中性；纯低空未定点部分仅入乐观。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏低</strong>，对应 2026E PE 26.5x，低于基准合理区间下沿（26.8 元），具修复空间。</p>
+<p><strong>安全边际</strong>：中性远期 41.1 元（<strong>+55.9%</strong>，达重点关注门槛）；悲观 23.6 元（−10.4%，下行有限）；乐观 55.2 元（+109.5%）。</p>
+<p><strong>介入条件</strong>：① 现价 26.35 即可分批；② 加仓信号：海外占比突破 40%、农机前装定点新增、低空/车企定点扩量、汇兑转正。</p>
+<p><strong>最大风险</strong>：① 国内财政承压致地信/建造短期下滑；② 汇兑损失（已对冲）；③ 股份支付费用扰动；④ 海外拓展不及预期；⑤ 估值体系受板块风格影响。</p>
+<p><strong>结论：重点关注</strong></p>
+<blockquote>
+<p>技术壁垒（芯片+平台全自主）+ 农机/海外/时空感知三线高增 + 结构升级毛利稳升，2026E PE 仅 26.5x，中性远期 +55.9% 达重点关注门槛。下行有海外高毛利+农业刚性需求托底，赔率优。</p>
+</blockquote>
+<h3>第五步进阶：上行想象力情景（四类，对冲保守偏置）</h3>
+<ul>
+<li><strong>A 行业调整剩者红利</strong>：高精度定位国产替代出清，份额从 Trimble 等海外厂回流（性价比优势）。验证点：国内份额/出口占比；证伪：海外拓展放缓。</li>
+<li><strong>B 政策反转期权</strong>：智慧农业/北斗/低空经济政策加码，数字化升级加速。验证点：政策发文+补贴；重估弹性：农机/时空感知放量。仅作机会情景。</li>
+<li><strong>C 市场错杀修复</strong>：成长股风格修复，PE 回 35x+。验证点：板块估值分位；证伪：基本面恶化。</li>
+<li><strong>D 技术突破/代际跃迁期权</strong>：低空经济+机器人定位从 0 到 1 爆发（同源定位技术迁移）。三要素：政策低空开放+成本曲线交叉+定点落地。硬验证点：低空/车企定点扩量+量产交付；证伪：定点流失/政策退坡。<strong>上调重点关注条件：海外占比&gt;45% 或低空经济定点订单实质落地</strong>（当前已重点关注，信号触发可上调仓位）。</li>
+</ul>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>26.35 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>28.3 元</strong>（区间 26.8–29.8）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+7.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>41.1 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+55.9%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 23.6 元（−10.4%）～ 乐观 55.2 元（+109.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>高精度定位龙头，芯片+平台全自主，农机/海外/时空感知三线高增，结构升级毛利稳升</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>重点关注</strong>（现价26.35即可分批，海外占比破40%或农机定点新增加仓）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-14 披露）、公司投资者关系活动记录、新浪财经/集微网机构调研、全国智慧农业行动计划、腾讯行情（2026-09-17 收盘昨收）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

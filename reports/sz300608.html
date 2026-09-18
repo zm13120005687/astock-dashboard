@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>思特奇（300608）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>思特奇（300608）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-18 ｜ 现价 <strong>9.62 元</strong>（2026-09-17 收盘，取腾讯行情昨收字段）｜ 总市值 <strong>约 34.6 亿</strong> ｜ PE(TTM) <strong>−17.82x（亏损）</strong> ｜ PB <strong>2.40x</strong> ｜ 总股本 <strong>约 3.60 亿股</strong><br />
+行业：电信级 IT 支撑软件（BOSS/BSS/OSS）/ 运营商 AI 与算力调度 ｜ 板块：创业板<br />
+<strong>亏损股处理</strong>：队列 TTM 列误标"亏损"，经核实 2026H1 归母净利 <strong>−1.02 亿元</strong>（真实亏损），按规则做完整五步法 + 正常化净利润法 + 亏损股三问。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内电信级 IT 支撑（BOSS/BSS/OSS）老牌厂商，给三大运营商做 CRM、计费、云管、大数据平台，并自研"九思大模型"切入运营商 AI 与算力调度（东数西算 / Token 工厂）新赛道。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 1.81 亿，同比 +0.63%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>同比</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRM（客户关系管理）</td>
+<td>7027 万</td>
+<td>38.8%</td>
+<td>+6.48%</td>
+<td>运营商政企/公众客户域核心系统</td>
+</tr>
+<tr>
+<td>云计算（云管/算力）</td>
+<td>2711 万</td>
+<td>15.0%</td>
+<td>+14.54%</td>
+<td>云管平台、算力调度，新增长极</td>
+</tr>
+<tr>
+<td>BILLING（计费）</td>
+<td>2421 万</td>
+<td>13.4%</td>
+<td>−11.7%</td>
+<td>传统计费系统，略有下滑</td>
+</tr>
+<tr>
+<td>大数据</td>
+<td>2046 万</td>
+<td>11.3%</td>
+<td>−12.7%</td>
+<td>数据中台/分析</td>
+</tr>
+<tr>
+<td>其他（含 AI 中台等）</td>
+<td>约 3896 万</td>
+<td>21.5%</td>
+<td>—</td>
+<td>九思大模型、城市中枢等</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：BOSS/BSS 运营支撑系统、云管平台（算力统一纳管调度）、"易问·九思"大模型（2025 年 7 月通过生成式 AI 服务"双备案"，累计 30 项专利 + 10 项软著）、城市中台/城市大脑、算力超市/算力银行。</p>
+<p><strong>主要客户/下游</strong>：三大运营商集团及 31 省分公司（电信/移动/联通），覆盖全国 32 省 + 香港及海外，承载用户规模超 10 亿，合作运营商机构超 80 家。</p>
+<p><strong>境内外收入占比</strong>：以境内运营商为主（&gt;95%），海外占比小；战略布局"东数西算"算力网（贵州算力一张网、华中并网调度、甘肃庆阳"数盾"平台）。</p>
+<p><strong>实控人/股东</strong>：创始人吴飞舟团队，民营；注册资本 3.31 亿元。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，国家级，已落地</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《"十四五"软件和信息技术服务业发展规划》收官示范</td>
+<td>工信部</td>
+<td>国家级</td>
+<td>思特奇 2026-05 入选"十四五"软件示范案例（算力网安全）</td>
+</tr>
+<tr>
+<td>东数西算工程</td>
+<td>国家发改委等四部门</td>
+<td>国家级战略</td>
+<td>持续建设，多省算力调度平台招标中</td>
+</tr>
+<tr>
+<td>运营商"Token 经营"转型</td>
+<td>中国电信等</td>
+<td>企业级战略</td>
+<td>2026-05 中国电信推系列试商用 Token 套餐，思特奇列入"Token 工厂"核心生态</td>
+</tr>
+<tr>
+<td>"人工智能+"行动</td>
+<td>发改委/工信部</td>
+<td>国家级</td>
+<td>思特奇 2026-04 入选全国"人工智能+"创新案例 TOP100</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：中国电信 Token 套餐按"1 元 = 25 万额度点"计量，催生算力调度+Token 计费新商业模式；运营商省级云管平台集采单笔数百万至千万级（思特奇 2026-03 中标某省 2026–2027 云管软件集采，覆盖 3000+ 通算/250+ 智算设备）。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>运营商 IT 支撑（BSS/OSS）市场</td>
+<td>国内年规模约数百亿，格局稳定（亚信、中兴、思特奇等），增速个位数</td>
+</tr>
+<tr>
+<td>算力调度/智算运营</td>
+<td>伴随东数西算与智算中心建设高速扩张，2025–2027 景气上行</td>
+</tr>
+<tr>
+<td>公司最新季度</td>
+<td>2026H1 营收 1.81 亿（+0.63%，近乎零增长）；毛利率 <strong>2.30%</strong>（同比 −13.17pct，异常低）</td>
+</tr>
+<tr>
+<td>季节性</td>
+<td>运营商项目验收高度集中在下半年，H1 为收入淡季、固定成本摊薄致毛利率失真</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：人力成本（研发/实施人员）为主，硬件/云资源为辅；无大宗原料波动，成本刚性。存储/算力硬件若涨价由客户预算承担（项目制）。<strong>议价权</strong>：对运营商中等偏弱（客户强势、项目招标压价），但省级算力调度平台具一定黏性。</p>
+<p><strong>下游</strong>：三大运营商 CAPEX 向算力/AI 倾斜，传统 BSS 投资平稳。需求端 2026 年算力调度新需求放量，是主要增量来源。</p>
+<p><strong>▎第二步进阶·原料成本→毛利结构（四因子）</strong><br />
+- <strong>①成本传导弹性</strong>：软件业成本以人力为主，传导率≈0（无法转嫁工资）；但项目制合同可约定人力单价上调（传导率部分≈0.3）。2026H1 毛利率 2.30% 非原料问题，而是<strong>收入确认少 + 低毛利集成占比升</strong>导致的结构失真。<br />
+- <strong>②毛利结构再平衡</strong>：高毛利软件（CRM/大数据 历史 30–40%）vs 低毛利云管集成（云管平台含硬件集成，毛利率偏低）。H1 低毛利集成与云管占比上升，加权综合毛利率被拉垮——属结构迁移，非单一业务恶化。<br />
+- <strong>③库存与采购节奏</strong>：无存货周期（软件业），不适用；但项目成本前置、收入后置，H1 成本已发生而收入未确认，致当期毛利虚低，H2 确认后回升（验证点：2026 年报毛利率是否回到 25%+）。<br />
+- <strong>④政策/市场锚点</strong>：无关税/收储类原料变量；政策锚点为"东数西算+AI+"带来的算力调度需求（正向驱动收入，非成本驱动）。情景：算力集采持续→云管收入占比升→毛利结构企稳；证伪：运营商削减 IT 资本开支。</p>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>省级云管平台集采</td>
+<td>某省 2026–2027 云管软件（东数西算底座）</td>
+<td>未披露（数百万~千万）</td>
+<td>2026-03 中标，两年服务期</td>
+<td>2026H2–2027</td>
+</tr>
+<tr>
+<td>九思大模型商业化</td>
+<td>电信运营商智能中台、AI 应用生产</td>
+<td>早期</td>
+<td>已双备案，进入运营商试点</td>
+<td>2026H2 起逐步</td>
+</tr>
+<tr>
+<td>中国电信 Token 工厂生态</td>
+<td>算力调度+Token 计费平台</td>
+<td>期权级</td>
+<td>2026-05 入生态，未量化收入</td>
+<td>2027+</td>
+</tr>
+<tr>
+<td>贵州/华中/甘肃庆阳算力调度</td>
+<td>算力发布-交易撮合-计量结算闭环</td>
+<td>已落地部分</td>
+<td>持续运营</td>
+<td>经常性收入</td>
+</tr>
+<tr>
+<td>运营商日常需求升级扩容</td>
+<td>河北/吉林/天津/湖南等省直接采购</td>
+<td>单笔 70–150 万</td>
+<td>2026 年多省中标</td>
+<td>2026H2–2027</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：增量多为"框架/生态"级，单笔金额小、且高度依赖运营商下半年验收节奏；九思大模型与 Token 工厂尚未形成可量化收入，构成主要不确定源。</p>
+<p><strong>▎第三步进阶·份额变量与主业迁移空间（三层法）</strong><br />
+- <strong>层1 现有业务（市场容量×份额变量）</strong>：运营商 BSS 市场容量稳、思特奇份额约中低位（亚信/中兴领先）。供给侧份额稳定；需求侧绑定三大运营商 80+ 机构（粘性高）；技术代际：九思大模型使公司从"支撑软件商"升级为"AI 中台商"，具代际溢价。份额假设三档：保守守住（份额不变）、中性小幅提升（算力调度中标增）、乐观抢份额（Token 生态主供应商）。验证点：下季度省级算力平台中标数、云管收入占比。<br />
+- <strong>层2 扩展业务（主业迁移·算力调度）</strong>：能力可迁移（BOSS 调度→算力调度同源）、新 TAM（算力运营远大于 BSS）、切入早（先发）；客户认证门槛高（运营商准入）；信号验证：已中标省级云管+入 Token 生态。→ <strong>中期期权</strong>，未过"收入规模化"验证点，不计入中性。<br />
+- <strong>层3 证伪信号</strong>：运营商削减 IT CAPEX、云管中标断档、九思大模型无商业化订单、H2 毛利率未回 25%+。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，正常化净利润法）</h2>
+<blockquote>
+<p><strong>亏损股估值方法</strong>：无正净利可锚，改用"估稳态营收→保守正常化净利率→×远期合理 PE→目标市值→目标价"。非增速外推，由订单/产能驱动。</p>
+</blockquote>
+<p><strong>总股本：约 3.60 亿股</strong> ｜ 归母净资产 14.45 亿 ｜ 总资产 20.39 亿 ｜ 经营现金流 H1 +2732 万（正）</p>
+<h3>稳态营收与正常化净利（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>稳态营收</th>
+<th>正常化净利率</th>
+<th>正常化净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统运营商 IT（CRM/计费/大数据）</td>
+<td>H1 1.81 亿×2 偏弱，历史全年 5–6 亿，考虑 H2 集中确认</td>
+<td>5.0 亿</td>
+<td>8%</td>
+<td>0.40 亿</td>
+</tr>
+<tr>
+<td>云管/算力调度</td>
+<td>东数西算+Token 工厂，保守给增量</td>
+<td>1.0 亿</td>
+<td>12%</td>
+<td>0.12 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>6.0 亿</strong></td>
+<td><strong>~9%</strong></td>
+<td><strong>约 0.52 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>稳态营收</th>
+<th>净利率</th>
+<th>正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>运营商 IT 停滞，AI 新业务未变现</td>
+<td>4.5 亿</td>
+<td>5%</td>
+<td>0.23 亿</td>
+<td>20x</td>
+<td>4.6 亿</td>
+<td><strong>1.28 元</strong></td>
+<td><strong>−86.7%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>算力调度稳步兑现，传统业务企稳</td>
+<td>6.0 亿</td>
+<td>8%</td>
+<td>0.48 亿</td>
+<td>25x</td>
+<td>12 亿</td>
+<td><strong>3.33 元</strong></td>
+<td><strong>−65.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>Token 工厂主供应商，AI 中台规模化</td>
+<td>7.5 亿</td>
+<td>12%</td>
+<td>0.90 亿</td>
+<td>30x</td>
+<td>27 亿</td>
+<td><strong>7.50 元</strong></td>
+<td><strong>−22.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>亏损（全年减亏至微亏）</td>
+<td>正常化 +0.48 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损期无意义）</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>—</td>
+<td>12 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td>—</td>
+<td><strong>3.33 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>亏损股三问</strong>：<br />
+1. <strong>为什么亏</strong>：①营收季节性（H1 仅 1.81 亿，运营商项目下半年集中验收，收入确认少）；②综合毛利率异常低至 2.30%（固定成本摊薄 + 低毛利云管集成占比升）；③费用刚性（研发/销售/管理），上半年为投入期。非大额减值主导（H1 信用+资产减值仅约 868 万）。<br />
+2. <strong>靠什么扭亏·触发时点</strong>：运营商 H2 项目集中验收→2026 全年减亏或微利；算力调度/Token 工厂从 2026H2 起贡献收入；九思大模型商业化。扭亏触发时点 <strong>2026H2–2027</strong>。<br />
+3. <strong>亏得起吗</strong>：总资产 20.39 亿、归母净资产 14.45 亿、H1 经营现金流 +2732 万（正），账面无重大有息负债风险，<strong>能撑到扭亏</strong>；但连续亏损持续侵蚀净资产，需关注回款。</p>
+<p><strong>▎第四步进阶·重资产/周期校正</strong>：轻资产软件公司，无破净（PB 2.40x）、无强周期；杠杆低（经营现金流正），不触发下行杠杆情景。期权纪律：Token 工厂/九思大模型未过收入验证点，<strong>不计入中性净利</strong>，仅放乐观情景。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>显著高估</strong>。现价 9.62 元对应中性正常化目标价 3.33 元，即使乐观情景 7.50 元仍低于现价 −22%。当前市值 34.6 亿已远超任何合理盈利锚（正常化净利 0.48 亿 × 25x = 12 亿）。</p>
+<p><strong>安全边际</strong>：无。净资产 14.45 亿对应每股 4.0 元（PB 2.4x），下行至净资产 −58%；中性情景 −65.4%，悲观 −86.7%。</p>
+<p><strong>介入条件</strong>：仅当股价回落至 <strong>3.5 元以下</strong>（对应正常化 PE &lt; 25x 且接近净资产）才具安全边际；加仓信号为省级算力平台中标金额披露 ≥ 5000 万、九思大模型商业化订单落地、H2 毛利率回升至 25%+。</p>
+<p><strong>最大风险</strong>：①毛利率 2.30% 反映定价权弱化，若非季节性则盈利模型破坏；②运营商 IT 资本开支下滑；③AI/算力调度叙事长期不兑现收入；④连续亏损侵蚀净资产。</p>
+<p><strong>▎第五步进阶·上行想象力情景（四类，只进乐观/机会栏）</strong><br />
+- <strong>A 行业剩者红利</strong>：运营商 IT 支撑格局出清，思特奇凭省级算力平台卡位提升份额——验证点：云管收入占比 &gt; 25%。<br />
+- <strong>B 政策反转期权</strong>：不适用（非政策打压）。<br />
+- <strong>C 市场错杀修复</strong>：若 H2 毛利率回升至 25%+ 且全年扭亏，估值修复——验证点：2026 年报盈利。<br />
+- <strong>D 技术突破/代际跃迁期权</strong>：九思大模型 + 中国电信 Token 工厂生态，公司从支撑软件商跃迁为"算力调度+Token 经营"核心标的（政策驱动 AI 算力、行业向 Token 经营收敛、公司技术已落地三要素共振）。<strong>硬验证点</strong>：中试良率不适用（软件），替代验证点 = 省级 Token 调度平台大额订单 + 商业化收入占比 &gt; 10%。未过验证点仅作机会情景，不计入中性。<br />
+- <strong>上调至重点关注的触发条件</strong>：Token 工厂/算力调度形成可量化年收入 ≥ 1 亿且毛利率 &gt; 30%，或 2026 全年归母转正且 H2 毛利率 &gt; 25%。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>当前市值 34.6 亿已透支扭亏与 AI 叙事，中性正常化目标价 3.33 元较现价 −65%，下行无安全边际。公司质地（运营商生态+东数西算卡位+九思大模型）提供期权价值，但盈利拐点未现、毛利率异常，等回落至 3.5 元以下或 Token 工厂收入规模化再评估。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>9.62 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>3.50 元</strong>（区间 1.28–7.50）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−63.6%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>3.33 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−65.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.28 元（−86.7%）～ 乐观 7.50 元（−22.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>运营商IT支撑老业务停滞+毛利率崩塌，AI/算力调度叙事未兑现收入，当前市值已透支扭亏</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（回落至 3.5 元以下或 Token 工厂收入规模化再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-22 披露）、公司公告（省级云管中标、九思大模型双备案）、中国电信 Token 套餐报道、腾讯行情（qt.gtimg.cn，2026-09-17 收盘昨收 9.62 元）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
