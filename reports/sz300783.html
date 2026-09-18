@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三只松鼠（300783）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>三只松鼠（300783）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-18 ｜ 现价 <strong>16.65 元</strong>（腾讯行情 2026-09-18 收盘价） ｜ 总市值 <strong>约 65.8 亿</strong>（3.95 亿股 × 16.65） ｜ PE(TTM) <strong>约 24.7x（TTM 净利约 2.66 亿）</strong> ｜ PB <strong>约 2.12x</strong> ｜ 总股本 <strong>约 3.95 亿股</strong><br />
+行业：休闲零食（坚果炒货龙头）｜ 板块：创业板<br />
+<strong>2026H1 归母核验结论：真实盈利且高增</strong>——2026 上半年归母净利润 <strong>+2.49 亿元（同比 +79.94%）</strong>、扣非 +1.92 亿（+276.94%）、营收 52.80 亿（−3.61%）。队列"未标亏损·PE 27.47"标记正确，确为盈利股，且盈利质量显著改善（净利率由 2025 年约 1.5% 升至 2026H1 约 4.7%）。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内坚果炒货线上第一品牌，从"规模优先"转向"质量优先"，推进"制造+品牌+零售"一体化与全渠道（D+N）精益运营，主打"高端性价比"总战略。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 52.80 亿，同比 −3.61%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收占比</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>坚果炒货（核心）</td>
+<td>约 47%</td>
+<td>每日坚果、夏威夷果、开心果、腰果等多款单品破亿</td>
+</tr>
+<tr>
+<td>烘焙类</td>
+<td>约 19%</td>
+<td>千层吐司、曲奇、沙琪玛等</td>
+</tr>
+<tr>
+<td>肉制品/其他零食</td>
+<td>其余</td>
+<td>螺蛳粉、轻食、果蔬脆、膨化等</td>
+</tr>
+<tr>
+<td>渠道结构</td>
+<td>线上约 70%</td>
+<td>线下分销 + 新鲜零食店中店 + 即时零售生活馆（全国 30+ 家）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：每日坚果、紫皮腰果、夏威夷果、开心果、千层吐司、螺蛳粉、每日纯坚果（七日鲜）。<br />
+<strong>主要客户/下游</strong>：C 端消费者；线上天猫/京东/抖音/拼多多，线下分销 + 商超店中店 + 即时零售门店。<br />
+<strong>境内外收入占比</strong>：以境内为主（坚果全球直采 + 广西/云南/新疆产地工厂，原料全球化、销售境内化）。</p>
+<p><strong>供应链布局（核心壁垒）</strong>：无为坚果产业园 + 弋江、南陵两大零食园区全面投产（烘焙/肉食/饼膨/沙琪玛/螺蛳粉），全国四大集约基地；广西龙州、云南永德、吉林东丰三大产地工厂（年采坚果超 8500 吨）；全球优质农场长期直采。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>中性偏规范</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《直播电商监督管理办法》施行</td>
+<td>监管</td>
+<td>部门级</td>
+<td>规范内容电商，头部合规品牌受益</td>
+</tr>
+<tr>
+<td>食品安全/清洁标签监管趋严</td>
+<td>监管</td>
+<td>持续</td>
+<td>利好标准化龙头</td>
+</tr>
+<tr>
+<td>"高端性价比"消费导向</td>
+<td>市场自发</td>
+<td>—</td>
+<td>性价比零食需求上行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化指标</strong>：无强刺激政策；行业进入存量调整周期，政策以规范为主。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国休闲零食整体市场</td>
+<td>2026 年预计约 <strong>1.21 万亿元</strong>（中研普华）/ 11472 亿元（报告大厅口径），增速 2.5~6.8%</td>
+</tr>
+<tr>
+<td>坚果炒货赛道</td>
+<td>规模约 <strong>2700 亿元</strong>，占休闲零食 17.3%（第一大细分）</td>
+</tr>
+<tr>
+<td>行业集中度</td>
+<td><strong>CR5 仅 5.9%</strong>，蚂蚁市场，整合空间巨大（美国 CR5 42.9%）</td>
+</tr>
+<tr>
+<td>量贩零食渠道</td>
+<td>双寡头占约 70% 份额，2025 年集合店市场 1239 亿，重塑格局</td>
+</tr>
+<tr>
+<td>公司最新季度</td>
+<td>2026H1 营收 −3.61%、归母 +79.94%、净利率约 4.7%（+2pct+）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新趋势（2026H1）</strong>：行业总量增速放缓（1.4%~2.5%），但公司靠"产品迭代 + 全渠道 + 供应链降本"实现盈利跨越式提升，走差异化穿越周期之路。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：坚果原料（夏威夷果、开心果、巴旦木全球直采 + 国内产地工厂）、农副产品。公司对上游议价权<strong>中等偏强</strong>（全球直采 + 产地工厂锁成本）。<br />
+<strong>下游</strong>：消费者，渠道分散（线上 70% + 线下分销 + 量贩 + 即时零售）。议价权<strong>中等</strong>——品牌心智强但渠道博弈激烈。<br />
+<strong>议价权判断</strong>：品牌 + 供应链一体化赋予一定定价权，"高端性价比"即在成本与品质间平衡。</p>
+<h3>第二步进阶：原料成本 → 毛利结构四因子</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：坚果原料全球定价，公司通过直采 + 产地工厂（自套期）降低波动，传导率约 0.5~0.6（部分自消化、部分随终端调价）。验证点：2026H1 毛利率提升印证成本管控；证伪：原料大涨而终端无法提价致毛利破阈。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：坚果（高毛利主力）vs 烘焙/肉制品（中毛利）vs 长尾（低毛利已收缩）。公司主动收缩低效长尾、聚焦高毛利核心单品，结构优化。须分品类盯毛利率。</li>
+<li><strong>因子3 库存与采购节奏</strong>：全球直采 + 产地锁价有对冲，但坚果价格波动具季节性；公司未披露套保比例。</li>
+<li><strong>因子4 政策/市场锚点</strong>：坚果主产区气候/产量（澳、美、国内）驱动原料价；关税（进口坚果）影响成本。情景：丰产年→成本降→毛利升；减产/加税→成本升。验证点：坚果期货/产地报价。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品结构化升级</td>
+<td>收缩长尾、聚焦高毛利核心单品</td>
+<td>净利率由 1.5%→4.7%</td>
+<td>已兑现 H1</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>供应链降本</td>
+<td>四大基地 + 三大产地工厂满产</td>
+<td>降本增效</td>
+<td>2026 全面投产</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>新鲜零食店中店</td>
+<td>入驻大润发等 30+ 门店 + 芜湖测试店</td>
+<td>新模式</td>
+<td>试点期</td>
+<td>增量</td>
+<td>中</td>
+</tr>
+<tr>
+<td>即时零售生活馆</td>
+<td>全国 30+ 家，拓展生鲜/米面粮油</td>
+<td>新品类</td>
+<td>扩张期</td>
+<td>增量</td>
+<td>中</td>
+</tr>
+<tr>
+<td>核心单品放量</td>
+<td>每日坚果/腰果/夏威夷果等破亿单品</td>
+<td>持续</td>
+<td>进行中</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计增量判断</strong>：增量来自"净利率修复（非收入扩张）+ 新渠道（新鲜零食/即时零售）"，收入端行业低速，利润端靠结构与供应链。</p>
+<h3>第三步进阶：份额变量与主业迁移三层法</h3>
+<ul>
+<li><strong>层1 现有业务（市场容量 × 份额变量）</strong>：</li>
+<li>供给侧：坚果赛道 2700 亿，公司坚果收入约 25 亿，份额 &lt;1%，提升空间巨大。</li>
+<li>客户份额：线上心智第一，但量贩渠道（鸣鸣很忙/万辰）崛起分流。</li>
+<li>技术代际：供应链一体化（制造+品牌+零售）领先多数纯品牌商。</li>
+<li>份额加速度：行业 CR5 5.9%、整合初期，公司凭效率可抢份额。</li>
+<li>三档：保守守住、中性小幅提升（高端性价比抢量贩外份额）、乐观抢份额。</li>
+<li><strong>层2 扩展业务（主业迁移）</strong>：从"线上坚果品牌"向"全渠道零食零售平台（新鲜零食/即时零售）"迁移，能力可迁移（同源供应链+品牌），新 TAM（万亿零食+生鲜）弹性大；切入卡位早（30+ 门店试点）；认证门槛低。<strong>部分已验证（门店落地），计入中性须谨慎</strong>。</li>
+<li><strong>层3 风险折扣（证伪信号）</strong>：量贩渠道挤压份额、新门店模型跑不通、毛利率回落、原料大涨——命中则下调。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p>盈利公司，按"净利率修复 + 新渠道增量"自下而上测算，非历史增速外推（行业收入增速仅 2~3%，不沿用历史高增长）。</p>
+</blockquote>
+<p><strong>总股本：约 3.95 亿股</strong></p>
+<h3>分业务测算（2029 年）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统电商+分销坚果/零食</td>
+<td>收入企稳 55~60 亿，净利率修复至 5~6%</td>
+<td>55~60 亿</td>
+<td>5~6%</td>
+<td><strong>2.8~3.5 亿</strong></td>
+</tr>
+<tr>
+<td>新鲜零食/即时零售新渠道</td>
+<td>门店扩张 + 品类延伸</td>
+<td>5~8 亿</td>
+<td>3~5%</td>
+<td><strong>0.2~0.4 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>约 4.2 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 +2.49 亿（扣非 +1.92 亿）；Q2 单季归母 −2428 万（季节性 + 费用，H2 含年货节峰值）。</li>
+<li>H2 预计较 2025H2（仅 0.17 亿）改善，但弱于 H1。</li>
+<li><strong>2026E 归母净利 3.0~3.3 亿，取 3.2 亿</strong>。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>量贩挤压份额、毛利率回落、新渠道失败</td>
+<td>3.00 亿</td>
+<td>22x</td>
+<td>66 亿</td>
+<td><strong>16.71 元</strong></td>
+<td><strong>+0.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>净利率维持 6%+、新渠道稳步放量</td>
+<td><strong>4.20 亿</strong></td>
+<td>22x</td>
+<td>92 亿</td>
+<td><strong>23.29 元</strong></td>
+<td><strong>+39.9%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>份额抢升 + 新渠道高增 + 净利率 7%+</td>
+<td>5.50 亿</td>
+<td>22x</td>
+<td>121 亿</td>
+<td><strong>30.63 元</strong></td>
+<td><strong>+83.9%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>3.20 亿</td>
+<td>4.20 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>22x</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>70 亿</td>
+<td>92 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>17.72 元</strong></td>
+<td><strong>23.29 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：当前市值 65.8 亿，对应 2026E 净利 3.2 亿的 PE 约 <strong>20.6x</strong>，处于合理区间；对应 2029E 中性 4.2 亿 PE 15.7x——<strong>现价已部分反映修复，但中性仍有约 +40% 空间</strong>。</p>
+<h3>第四步进阶：重资产/周期股三道闸</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：非重资产，PB 2.12x 合理，无破净。</li>
+<li><strong>校正2 周期位置</strong>：零食为弱消费周期，中性净利已用保守正常化（未用 2026H1 异常高增年化）。</li>
+<li><strong>校正3 杠杆下行</strong>：资产负债率健康（净资产 31 亿），下行情景空间仅 +0.4%（接近持平），下行保护较好。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏低</strong>。现价 16.65 元对应 2026E PE 20.6x，低于消费成长中枢。</p>
+<p><strong>安全边际</strong>：中性远期 23.29 元 → 空间 <strong>+39.9%</strong>；悲观 16.71 元（+0.4%，几乎不亏）；乐观 30.63 元（+83.9%）——<strong>下行保护强、上行弹性充足</strong>。</p>
+<p><strong>介入条件</strong>：① 现价 16.65 元已具安全边际，可分批布局；② 加仓信号：净利率持续 &gt;5%、新门店模型跑通（单店盈利）、份额数据回升。</p>
+<p><strong>最大风险</strong>：① 量贩零食双寡头挤压份额；② 原料（坚果）涨价侵蚀毛利；③ 消费疲软致行业量价齐跌；④ 新渠道投入回报不及预期。</p>
+<p><strong>上行想象力四类情景（仅进乐观栏，不进中性锚）</strong>：<br />
+- <strong>A 行业剩者红利</strong>：CR5 仅 5.9%、整合初期，公司凭供应链效率抢份额——验证点：市占率数据、收入份额提升；证伪：份额连降。<br />
+- <strong>B 政策反转期权</strong>：消费刺激/促内需政策若加码，休闲食品受益——验证点：促消费政策落地；证伪：政策空窗。<br />
+- <strong>C 市场错杀修复</strong>：若随消费板块杀跌至 15 元以下，具修复弹性——验证点：估值分位；证伪：基本面恶化。<br />
+- <strong>D 技术代际跃迁期权</strong>：供应链一体化（制造+品牌+零售）重构行业效率，属模式迭代而非技术突变——硬验证点：新渠道规模化盈利、净利率结构性突破 7%；证伪：门店模型亏损。<br />
+- <strong>上调至"重点关注"的条件</strong>：2029E 净利上修至 ≥5.5 亿（乐观兑现）且现价 &lt;18 元，使中性空间 &gt;+50%。</p>
+<p><strong>结论：纳入观察</strong>（中性远期空间 +39.9% &gt; +0% 但 &lt; +50%；逻辑正确、估值合理、下行保护强，可逢低布局，待新渠道验证或空间打开至重点关注）。</p>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>16.65 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>17.72 元</strong>（区间 16.00–19.00）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+6.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>23.29 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+39.9%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 16.71 元（+0.4%）～ 乐观 30.63 元（+83.9%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>坚果龙头盈利跨越式修复（净利率1.5%→4.7%），供应链一体化+全渠道新零售驱动份额与效率双升</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（现价 16.65 元已具安全边际可分批，重点跟踪新门店模型盈利与份额数据）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-29 披露）、2025 年年报、央广财经/中泰证券行业解读、中研普华/中国报告大厅零食行业数据、腾讯行情 2026-09-18 收盘价。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
