@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>谱尼测试（300887）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>谱尼测试（300887）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-19 ｜ 现价 <strong>6.81 元</strong> ｜ 总市值 <strong>40.77 亿</strong> ｜ PE(TTM) <strong>−24.37x</strong> ｜ PB <strong>1.50x</strong> ｜ 总股本 <strong>约 5.99 亿股</strong>（按总市值 40.77 亿 / 现价 6.81 元折算）｜ 行业：第三方检验检测（TIC）｜ 板块：创业板 ｜ 数据基准日 <strong>2026-09-18 收盘</strong>（财务数据来自 2026 年半年度报告，披露日 2026-08-26）。</p>
+<p><strong>亏损口径核查结论：真亏（TTM 误标已核实为真亏，非误标）</strong>。2026H1 归母净利润 <strong>−1.01 亿元</strong>（上年同期 −1.80 亿，亏损同比收窄 43.81%），扣非 −1.09 亿，TTM 归母 −1.67 亿。队列"亏损"列（TTM 口径）<strong>标注正确，非误标</strong>。按亏损股完整五步法 + 正常化净利润法 + 三问。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内综合性第三方检验检测龙头，提供检测、计量校准、验货审厂、认证评价一体化技术服务，覆盖生命科学/健康环保、汽车及消费品、安全保障三大板块，公信力+全国实验室网络构成壁垒。</p>
+<p><strong>主营业务构成（2026H1，营收 5.69 亿，同比 +0.81%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生命科学与健康环保</td>
+<td>3.63 亿</td>
+<td>63.82%</td>
+<td>24.07%</td>
+<td>食品/环境/医药/化妆品检测，基本盘</td>
+</tr>
+<tr>
+<td>汽车及其他消费品</td>
+<td>1.19 亿</td>
+<td>20.87%</td>
+<td>42.08%</td>
+<td>汽车、新能源、电子消费品检测，高毛利</td>
+</tr>
+<tr>
+<td>安全保障</td>
+<td>6060 万</td>
+<td>10.64%</td>
+<td>25.60%</td>
+<td>军工/可靠性/安规</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：食品农产品检测、环境检测、医疗器械/医药研发（CRO）检测、新能源汽车（电池/整车）检测、低空飞行检测、计量校准、验货认证。<br />
+<strong>主要客户/下游</strong>：政府监管、食品/医药/汽车/电子企业、出口贸易商；全国实验室布局，服务遍布全球。<br />
+<strong>境内外收入</strong>：以境内为主，出口相关检测随贸易复苏。<br />
+<strong>股东背景</strong>：民营企业，董事长宋薇；总部北京，实验室网络全国覆盖。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）—— 强政策红利，行业进入战略机遇期（来自 2026-08 投资者关系）</h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体 / 时间</th>
+<th>力度</th>
+<th>关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CMA 资质全国联网"一单一库"</td>
+<td>市场监管总局，<strong>2026-04</strong></td>
+<td>国家级</td>
+<td>规范行业、淘汰不规范小机构，头部集中</td>
+</tr>
+<tr>
+<td>《检验检测智慧监管能力提升攻坚行动方案》</td>
+<td>市场监管总局等，<strong>2026-06</strong></td>
+<td>国家级</td>
+<td>2027 年底建成全国统一监管平台（报告赋码、AI 画像、穿透式监管）</td>
+</tr>
+<tr>
+<td>《服务业扩能提质意见》</td>
+<td>国务院，<strong>2026-06</strong></td>
+<td>国家级</td>
+<td>首次将检验检测认证列为"生产性服务业补强关键环节"，定位跃升至战略性新兴服务业</td>
+</tr>
+<tr>
+<td>医药研发全面松绑（"818 新政"）</td>
+<td>药监局等，<strong>2026-08</strong></td>
+<td>国家级</td>
+<td>临床审评 60→30 天、IND 12 周启动临床、细胞/基因治疗全链条合规 → 推高临床前 CRO 需求</td>
+</tr>
+<tr>
+<td>《电动汽车用动力蓄电池安全要求》</td>
+<td>强制标准，<strong>2026-07-01 施行</strong></td>
+<td>强制</td>
+<td>电池/整车安全性测试要求提高 → 检测需求</td>
+</tr>
+<tr>
+<td>低空飞行检测</td>
+<td>低空经济政策的延伸</td>
+<td>国家级</td>
+<td>飞行器性能/安全保障检测需求</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<ul>
+<li>中国检验检测行业市场规模数千亿级，近年增速放缓但结构性机会突出；政策规范化（一单一库、智慧监管）加速<strong>行业出清与头部集中</strong>。</li>
+<li>医药研发（CRO 检测）、新能源汽车检测、低空经济检测为高景气增量细分；传统食品/环境检测价格战趋缓。</li>
+<li><strong>关键矛盾</strong>：行业过去几年产能扩张+价格战致盈利塌陷，公司营收停滞（2026H1 +0.81%）但亏损同比收窄 43.8%，处于"出清后期、拐点未至"阶段。</li>
+</ul>
+<h3>（3）产业链传导</h3>
+<ul>
+<li><strong>上游</strong>：实验室设备、试剂、人力（工程师）。固定成本（实验室折旧+人员）刚性，利用率决定盈利。</li>
+<li><strong>下游</strong>：政府/企业客户，议价中等；强制检测（政策驱动）需求刚性。</li>
+<li><strong>议价权</strong>：头部机构公信力强、客户粘性高，政策规范化后定价权有望回升（中小机构出清）。</li>
+</ul>
+<h4>原料成本 → 毛利结构（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：检测业"原料"实为人力+设备折旧（占成本 70%+），对下游转嫁系数随行业规范提升而回升（~0.5→0.7）；当前价格战期转嫁系数偏低。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：生命科学与健康环保（占 64%）毛利率仅 24.07%（价格战重灾区）；汽车/消费品 42.08%（高壁垒、强需求）。结构再平衡方向：高毛利汽车/新能源/医药检测占比提升 → 加权毛利回升。2026H1 综合毛利率 28.31%（+3.95pct），已现改善。</li>
+<li><strong>因子3 库存与采购节奏</strong>：无存货成本问题（服务业）；成本端为人员与折旧，降本靠关停低效实验室+提升产能利用率。</li>
+<li><strong>因子4 政策/市场锚点</strong>：成本侧主要为人力（市场层）；政策层"强制检测+行业规范"直接扩大需求、加速出清（一单一库/智慧监管/818 新政/电池安全）。验证点：行业集中度数据、公司产能利用率、新签订单。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>行业出清+头部集中</td>
+<td>一单一库/智慧监管淘汰不规范机构</td>
+<td>份额提升</td>
+<td>2026–2027 政策落地</td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td>医药研发松绑（818 新政）</td>
+<td>临床前 CRO 检测需求</td>
+<td>增量，金额未披露</td>
+<td>政策已落地，需求释放中</td>
+<td>2026H2–2029</td>
+</tr>
+<tr>
+<td>新能源汽车检测</td>
+<td>电池安全强制标准 2026-07-01 施行</td>
+<td>增量，金额未披露</td>
+<td>已施行，检测需求刚性</td>
+<td>2026H2–2029</td>
+</tr>
+<tr>
+<td>低空飞行检测</td>
+<td>飞行器性能/安全检测</td>
+<td>期权增量</td>
+<td>早期</td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td>降本增效</td>
+<td>关停低效实验室、人员优化</td>
+<td>减亏</td>
+<td>进行中（亏损已收窄 43.8%）</td>
+<td>2026–2027</td>
+</tr>
+</tbody>
+</table>
+<p><strong>自下而上增量小结</strong>：中性情景下，营收由 2026 年化 ~11.4 亿恢复至 2029 ~13 亿（政策驱动+份额提升）；毛利率由 28% 回升至 33–35%（高毛利板块占比提升+价格战缓和）；费用率随出清下降。</p>
+<h4>份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong>：检测行业分散、出清加速，头部（华测检测、谱尼等）份额提升。供给侧（中小机构出清）、需求侧（强制检测刚性）、技术代际（智慧监管 AI 画像利好数字化头部）。<strong>中性假设份额小幅提升</strong>，验证点：行业集中度公告、公司新签订单增速。</li>
+<li><strong>层2 主业迁移空间（新易盛范式）</strong>：由"传统食品/环境检测"迁移至"医药 CRO 检测 + 新能源/低空检测"——能力可迁移（实验室资质同源），新 TAM（医药/新能源）远大于旧；切入卡位早。<strong>部分已验证（新能源汽车检测资质齐全），作中期增量计入中性偏保守</strong>。</li>
+<li><strong>层3 证伪信号</strong>：价格战未缓和、毛利率再破 25%、营收持续零增长、新业务无正式大单。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推 —— 正常化净利润法）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：亏损股无正净利可锚，改用<strong>正常化净利润法</strong>：①估稳态营收（产能+政策+份额）→ ②算正常化净利率（取保守）→ ③×远期 PE = 目标市值。业绩预测为自下而上（政策+订单驱动），<strong>非增速外推</strong>。</p>
+</blockquote>
+<p><strong>总股本：约 5.99 亿股</strong>；归母净资产 27.2 亿，每股净资产约 4.54 元（PB 1.50）。</p>
+<h3>正常化净利润测算（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>稳态营收（2029E）</td>
+<td>13.0 亿（政策+份额驱动，非增速外推）</td>
+</tr>
+<tr>
+<td>正常化净利率（保守）</td>
+<td>11%（行业正常 12–15%，取保守 11%；历史最好年份更高）</td>
+</tr>
+<tr>
+<td>正常化净利润</td>
+<td><strong>约 1.43 亿</strong></td>
+</tr>
+<tr>
+<td>远期合理 PE</td>
+<td>22x（检测服务龙头折价后，华测等历史 20–25x）</td>
+</tr>
+<tr>
+<td>目标市值</td>
+<td>31.5 亿</td>
+</tr>
+<tr>
+<td>目标股价</td>
+<td><strong>5.26 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 −1.01 亿，年化约 −2.0 亿；全年仍大额亏损。</li>
+<li>基准估值用 PB 法：净资产 27.2 亿 × 合理 PB 1.0–1.2x（出清期折价）= 27–33 亿 → 股价 <strong>4.5–5.5 元</strong>。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>价格战延续，净利率仅 5%</td>
+<td>0.65 亿</td>
+<td>18x</td>
+<td>11.7 亿</td>
+<td><strong>1.95 元</strong></td>
+<td><strong>−71.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>出清+政策兑现，净利率 11%</td>
+<td><strong>1.43 亿</strong></td>
+<td>22x</td>
+<td>31.5 亿</td>
+<td><strong>5.26 元</strong></td>
+<td><strong>−22.8%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>强出清+医药/新能源放量，净利率 15%</td>
+<td>2.50 亿</td>
+<td>25x</td>
+<td>62.5 亿</td>
+<td><strong>10.4 元</strong></td>
+<td><strong>+53.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>亏损 −2.0 亿</td>
+<td>正常化 +1.43 亿</td>
+</tr>
+<tr>
+<td>合理PE / PB</td>
+<td>PB 1.0–1.2x</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>27–33 亿</td>
+<td>31.5 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>4.5–5.5 元</strong></td>
+<td><strong>5.26 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>重资产/周期股校正三道闸</strong>：<br />
+- 校正1 资产质量折扣：轻资产（实验室+设备），PB 1.50 未破净；净资产 27.2 亿扎实（无金融未重估型破净），属公允定价。<br />
+- 校正2 周期位置：处行业出清底部（价格战尾声），中性净利按正常化（非单年巨亏、非拐点年化），已标注底部位置。<br />
+- 校正3 杠杆下行：资产负债率约 16.6%（低），现金类资产充足，无高杠杆下行；但持续亏损消耗现金，悲观情景空间 −71%。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>亏损股三问</strong>：</p>
+<ol>
+<li><strong>为什么亏</strong>：① 检测行业过去几年产能扩张+价格战，固定成本（实验室/人员）刚性，营收停滞（2026H1 +0.81%）难覆盖；② 部分实验室产能利用率低；③ 费用率高（销售+管理+研发占营收 &gt;40%）。属<strong>行业周期底部+价格战</strong>型亏损，非主业持续恶化或资产减值型。</li>
+<li><strong>靠什么扭亏，触发时点</strong>：① 政策强制检测扩容（818 新政、电池安全 2026-07-01、低空检测）+ 行业出清（一单一库/智慧监管 2027 底统一平台）带来份额与定价权回升；② 降本增效（关停低效实验室、人员优化）已使 2026H1 亏损同比收窄 43.8%；③ 中性假设 <strong>2027–2028 年扭亏</strong>（净利率恢复至 11%）。</li>
+<li><strong>亏得起吗</strong>：归母净资产 27.2 亿、资产负债率仅约 16.6%、现金类资产较充足；半年亏 1.01 亿（年化 ~2 亿），按当前净资产可支撑 10+ 年，<strong>亏得起</strong>，不存在退市/破产紧迫风险。</li>
+</ol>
+<p><strong>当前价格位置</strong>：<strong>接近净资产、合理偏低</strong>。现价 6.81 元（PB 1.50），已反映亏损预期，下行有净资产托底。</p>
+<p><strong>安全边际</strong>：中性远期 5.26 元 → 空间 <strong>−22.8%</strong>（当前仍小幅高于正常化价值）；悲观 1.95 元 → <strong>−71.4%</strong>；乐观（强出清+政策重估）10.4 元 → <strong>+53.0%</strong>。净资产 4.54 元/股为硬支撑。</p>
+<p><strong>介入条件</strong>：① 回落至 <strong>5.5 元以下</strong>（接近净资产+中性价值）；② 加仓信号：单季净利率转正、毛利率稳站 33% 以上、行业集中度数据印证头部集中、医药/新能源检测大单公告。</p>
+<p><strong>最大风险</strong>：① 价格战延续致扭亏推迟；② 实验室资产减值（若利用率长期低）；③ 政策落地慢于预期。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>−22.8%</strong>（&lt; +0），不满足纳入观察门槛；但 PB 1.50 接近净资产、亏得起、政策催化明确（出清+医药/新能源检测），属"观察级转折票"。<strong>若行业集中度数据验证头部集中、公司单季净利率转正（硬验证点），可上调至纳入观察</strong>。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>6.81 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.0 元</strong>（区间 4.5–5.5，贴近净资产）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−26.6%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>5.26 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−22.8%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.95 元（−71.4%）～ 乐观 10.4 元（+53.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>检测龙头处行业出清底部、PB 1.5 近净资产、政策（一单一库/818 新政/电池安全）催化扭亏，但中性仍小幅高于正常化价值</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（5.5 元以下再考虑，跟踪单季净利率转正与行业集中度）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-26 披露）、2026 年投资者关系活动记录（2026-08-26 至 09-02 电话会议/业绩说明会）、市场监管总局《检验检测智慧监管能力提升攻坚行动方案》（2026-06）、国务院《服务业扩能提质意见》（2026-06）、药监局"818 新政"（2026-08）、强制性国标《电动汽车用动力蓄电池安全要求》（2026-07-01 施行）、证券之星中报解读。</em><br />
+<em>亏损核查：2026H1 归母 −1.01 亿、扣非 −1.09 亿、TTM −1.67 亿，确为真亏；队列 TTM 口径"亏损"标注正确，非误标。已按亏损股完整五步法 + 正常化净利润法 + 三问分析。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

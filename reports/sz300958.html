@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>建工修复（300958）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>建工修复（300958）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-19 ｜ 现价 <strong>11.87 元</strong>（2026-09-18 收盘）｜ 总市值 <strong>18.60 亿</strong> ｜ PE(TTM) <strong>−39.41x（亏损）</strong> ｜ PB <strong>1.51x</strong> ｜ 总股本 <strong>1.567 亿股</strong><br />
+行业：环境修复（土壤/水体/地下水一体化解决方案）+ 固废资源化 ｜ 板块：创业板 ｜ 背景：北京建工集团<br />
+<strong>盈利判定（从严）</strong>：2026H1 归母净利 <strong>+201.43 万元（同比扭亏）</strong>，但<strong>扣非 −2775.58 万元仍亏</strong>——靠应收款项减值转回 3102 万等非经常性。按铁律②"归母已扭亏为正则按盈利股处理，若扣非仍亏则从严"，本报告<strong>从严按盈利股处理、以扣非/正常化经常性净利为锚</strong>，不把非经常性扭亏计入稳态。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：依托核心技术为土壤、水体、地下水提供"咨询—设计—治理—运营—管理"一体化生态环境解决方案，固废资源化已成第二大支柱。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 2.20 亿，同比 −32.30%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>环境修复整体解决方案</td>
+<td>1.92 亿</td>
+<td>87.08%</td>
+<td>9.17%</td>
+<td>−31.46%</td>
+</tr>
+<tr>
+<td>技术服务</td>
+<td>2840 万</td>
+<td>12.89%</td>
+<td>33.13%</td>
+<td>−37.05%</td>
+</tr>
+<tr>
+<td>修复商品销售</td>
+<td>6.64 万</td>
+<td>0.03%</td>
+<td>65.20%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品/服务</strong>：工业污染场地修复、矿山/地下水风险管控、垃圾填埋场治理、"修复+资源化"一体化、固废资源化利用。</p>
+<p><strong>主要客户/下游</strong>：地方政府平台、工业园区、化工/冶金退役企业、地产开发商。背靠北京建工集团（央企背景，拿单优势）。</p>
+<p><strong>境内外收入占比</strong>：以境内为主，无显著境外。</p>
+<p><strong>关键财务底色（2026H1）</strong>：归母 +201 万（减值转回驱动）、扣非 −2776 万；经营现金流 <strong>+1374 万</strong>（去年同期 −6664 万，改善显著）；新签合同 <strong>6.79 亿</strong>（+304.29%）；期末在手订单 <strong>8.89 亿</strong>（+44.89%）；净资产 12.32 亿，总资产 26.23 亿；涉案法律催收 4.53 亿（已收回 9677 万）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，刚性需求</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《土壤污染防治行动计划（2025版）》</td>
+<td>生态环境部等</td>
+<td>部门级</td>
+<td>2030 污染地块安全利用率 ≥95%</td>
+</tr>
+<tr>
+<td>"十四五"土壤与地下水防治规划</td>
+<td>生态环境部/自然资源部</td>
+<td>国家级收官</td>
+<td>2026 收官执行期</td>
+</tr>
+<tr>
+<td>固废资源化/无废城市建设</td>
+<td>多部门</td>
+<td>政策红利</td>
+<td>扩至 113 城</td>
+</tr>
+<tr>
+<td>地方债务化解专项政策</td>
+<td>国务院/财政部</td>
+<td>化债窗口</td>
+<td>助力应收账款回收</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化指标</strong>：2026 中国土壤修复市场约 <strong>530 亿元</strong>；土壤与地下水治理合同总额约 <strong>680 亿元</strong>（其中工程类 61%、地下水 29%、调查评估 10%）；中央财政土壤污染防治专项资金约 112 亿（+8.7%），社会资本 EOD 投入约 236 亿（首超财政）；十四五收官倒逼存量地块治理提速。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全球土壤修复（2026）</td>
+<td>约 1280 亿美元（+12.5%），中国占亚太 58% 增量</td>
+</tr>
+<tr>
+<td>中国土壤修复（2026E）</td>
+<td>约 530 亿元（GEP），增速高于欧美</td>
+</tr>
+<tr>
+<td>中国地下水治理（2026E）</td>
+<td>合同 680 亿元</td>
+</tr>
+<tr>
+<td>固废资源化</td>
+<td>政策驱动新增长极，公司第二大支柱</td>
+</tr>
+<tr>
+<td>公司订单</td>
+<td>2026H1 新签 6.79 亿（+304%）、在手 8.89 亿（+44.89%）</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：药剂、设备（热脱附/原位注入）、分包工程。竞争充分、成本可控。</p>
+<p><strong>下游</strong>：政府/园区平台（付款节奏受财政/化债影响）。回款是核心变量——公司 2026H1 借化债窗口收回历史欠款 2967 万 + 法律途径 9677 万，现金流显著改善。</p>
+<p><strong>议价权</strong>：<strong>中</strong>。技术型 EPC 有差异化（原位/微生物修复），但下游为政府，回款被动；央企背景部分对冲。</p>
+<hr />
+<h3>第二步进阶：原料成本 → 毛利结构四因子</h3>
+<ul>
+<li><strong>因子1 成本传导弹性（转嫁系数）</strong>：环境修复多为项目制 EPC，成本（药剂/分包/设备）通过投标报价覆盖，<strong>转嫁系数 ≈ 0.8</strong>（技术壁垒项目更高）。但政府项目压价使综合毛利仅 9–12%。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：工程解决方案（9.17%）vs 技术服务（33.13%）vs 商品销售（65%）。提升技术服务/资源化占比→结构优化；但工程仍占 87%，结构改善慢。验证点：分业务毛利率与收入结构。</li>
+<li><strong>因子3 库存与采购节奏</strong>：无大宗库存，timing 风险低；主要"timing"变量是<strong>政府付款节奏</strong>（化债窗口决定回款，2026H1 已兑现）。</li>
+<li><strong>因子4 政策/市场锚点（成本驱动变量）</strong>：① <strong>政策锚点</strong>= 化债进度（决定应收账款回收→减值转回→利润）、十四五收官订单释放；② <strong>市场锚点</strong>= 地方财政、EOD 融资。情景：化债加速→回款+减值转回（利好，2026H1 已现）；财政紧张→回款慢、减值扩大（利空）。验证点：经营现金流、应收账款余额、新签合同额。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新签合同 6.79 亿</td>
+<td>2026H1 新签</td>
+<td>6.79 亿（+304%）</td>
+<td>已签</td>
+<td>2026H2–2027</td>
+</tr>
+<tr>
+<td>在手订单 8.89 亿</td>
+<td>期末未确认</td>
+<td>8.89 亿（+44.89%）</td>
+<td>稳步交付</td>
+<td>2026H2–2028</td>
+</tr>
+<tr>
+<td>固废资源化</td>
+<td>第二大支柱，6 项目中标</td>
+<td>云南/重庆/四川/安徽</td>
+<td>拓展中</td>
+<td>2026–2028</td>
+</tr>
+<tr>
+<td>化工园区地下水管控</td>
+<td>高壁垒细分，3 项目中标</td>
+<td>—</td>
+<td>拓展中</td>
+<td>2026–2028</td>
+</tr>
+<tr>
+<td>垃圾填埋场治理</td>
+<td>"风险管控—修复—再利用"模式，2 项目中标</td>
+<td>—</td>
+<td>拓展中</td>
+<td>2026–2028</td>
+</tr>
+</tbody>
+</table>
+<p><strong>增量合计判断</strong>：在手 8.89 亿支撑营收恢复至 6–7 亿；固废资源化+高壁垒细分打开增量，2029 年营收有望达 7 亿。</p>
+<h3>第三步进阶：份额变量与主业迁移三层法</h3>
+<ul>
+<li><strong>层1 现有业务（市场容量 × 份额变量）</strong>：中国土壤修复 530 亿且 CR10 约 47.8%（集中度提升），建工修复背靠北京建工、技术型 EPC，份额稳中提升。锚点：① 供给侧——具一级资质+自有设备企业 &lt;17 家；② 客户份额——政府/央企平台；③ 技术代际——原位/微生物修复差异化；④ 成本曲线——资源化降本；⑤ 份额加速度——新签 +304%。验证点：逐季新签、在手订单。</li>
+<li><strong>层2 扩展业务（主业迁移空间）</strong>：从"修复工程"→"修复+资源化+运营"全生命周期（修复后土地增值分成），TAM 大于纯工程。未过验证点前部分计入中性（资源化已中标），更大运营分成作中期期权。</li>
+<li><strong>层3 证伪信号</strong>：新签合同同比转负、应收账款再恶化、毛利率跌破 8%。<strong>命中则下调中性</strong>。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：归母虽扭亏但扣非仍亏（减值转回驱动），<strong>从严按盈利股处理、以经常性/正常化净利为锚</strong>。估稳态营收 → 保守经常性净利率 → × 远期合理 PE。严禁增速外推。</p>
+</blockquote>
+<p><strong>总股本：1.567 亿股</strong></p>
+<h3>分业务测算（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>环境修复工程</td>
+<td>在手订单兑现，稳 5.5 亿</td>
+<td>5.5 亿</td>
+<td>4–5%</td>
+<td><strong>0.22–0.28 亿</strong></td>
+</tr>
+<tr>
+<td>技术服务</td>
+<td>高毛利，稳 1.0 亿</td>
+<td>1.0 亿</td>
+<td>20–25%</td>
+<td><strong>0.20–0.25 亿</strong></td>
+</tr>
+<tr>
+<td>固废资源化</td>
+<td>新中标项目放量</td>
+<td>0.8 亿</td>
+<td>8%</td>
+<td><strong>0.06 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>7.3 亿</strong></td>
+<td>~7%</td>
+<td><strong>约 0.50 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>交叉校验：2029 营收 7.3 亿 × 7% ≈ 0.51 亿（经常性净利率保守取 7%，剔除一次性减值转回）。</p>
+</blockquote>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>2026E：H1 归母 +201 万（含减值转回 3102 万），扣非 −2776 万；全年经常性净利仍微亏或盈亏平衡。按 P/S 2.5x（营收 ~5 亿 + 订单溢价）或 BVPS 7.86×1.1x → 取 <strong>8.5 元</strong>（区间 6.0–11.0）。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 经常性净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>订单转化慢+毛利承压，净利率 2%</td>
+<td>0.10 亿</td>
+<td>20x</td>
+<td>2.0 亿</td>
+<td><strong>1.30 元</strong></td>
+<td><strong>−89.1%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>在手订单兑现+资源化放量</td>
+<td><strong>0.50 亿</strong></td>
+<td>25x</td>
+<td>12.5 亿</td>
+<td><strong>7.98 元</strong></td>
+<td><strong>−32.8%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>固废+资源化高增，净利率 8%</td>
+<td>0.85 亿</td>
+<td>28x</td>
+<td>23.8 亿</td>
+<td><strong>15.20 元</strong></td>
+<td><strong>+28.1%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：中性目标价 7.98 元（约 8.0 元）；为与基准区间衔接，远期中性取整 <strong>7.98 元</strong>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>经常性微亏/盈亏平衡</td>
+<td>正常化经常性 +0.50 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（经常性未稳）</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>9–13 亿</td>
+<td>12.5 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>6.0–11.0 元</strong></td>
+<td><strong>7.98 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：当前市值 18.60 亿，相对中性经常性净利 0.50 亿（25x=12.5 亿）溢价约 <strong>49%</strong>；更关键的是 2026H1 归母扭亏完全依赖 3102 万减值转回（扣非仍亏），<strong>当前股价已把订单增长与一次性收益双重定价</strong>，安全边际薄。</p>
+<h3>第四步进阶：重资产/周期股三道闸</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：PB 1.51x 不破净，但应收账款/存货占资产比重高（回款风险隐含），无虚假破净；净资产 12.32 亿中需注意应收减值。</li>
+<li><strong>校正2 周期位置校正</strong>：环保工程受化债/财政周期影响，当前处化债窗口（现金流改善），中性净利已用经常性口径（剔除减值转回的一次性），避免误把 2026H1 非经常性扭亏当年化。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率约 53%（工程类偏高），若财政/回款再恶化、减值扩大，悲观情景净利降至 0.10 亿、股价 −89%，已附负面情景。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵（相对经常性盈利）</strong>。现价 11.87 元，相对中性经常性锚 7.98 元溢价约 49%；且 2026H1 归母扭亏靠减值转回、扣非仍亏。</p>
+<p><strong>安全边际</strong>：中性远期 7.98 元 → 空间 <strong>−32.8%</strong>；悲观 1.30 元 → 下行 <strong>−89.1%</strong>；乐观 15.20 元 → <strong>+28.1%</strong>（需资源化高增）。下行靠 PB 1.51x 与央企背景，但应收/负债是隐忧。</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>不追高</strong>。回落至 <strong>6 元以下</strong>（接近基准区间下沿、PB 约 0.8x）才具安全边际。<br />
+2. <strong>加仓信号</strong>：① 扣非净利连续两季转正；② 经营现金流持续为正；③ 应收账款余额下降、减值不再扩大；④ 固废资源化收入占比跳升。</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>盈利质量（首要）</strong>：2026H1 归母扭亏完全靠减值转回 3102 万，扣非仍亏 −2776 万——若回款不改善，非经常性不可持续。<br />
+2. <strong>回款/应收账款</strong>：涉案催收 4.53 亿，若化债窗口关闭则减值扩大。<br />
+3. <strong>低毛利率+高负债</strong>：工程毛利率仅 9–12%、负债率 ~53%，盈利弹性弱。<br />
+4. <strong>订单转化节奏</strong>：新签 6.79 亿能否如期确认存不确定性。</p>
+<p><strong>结论：暂不介入</strong>（归母扭亏靠减值转回、扣非仍亏，估值偏高且盈利质量差；等回调至 6 元以下 + 扣非扭亏验证）。</p>
+<blockquote>
+<p><strong>上行想象力四类（第五步进阶）</strong>：<br />
+- A 行业出清剩者红利：环保工程集中度提升（CR10 47.8%），技术型 EPC 份额扩大——已锚定中性上行。<br />
+- B 政策反转期权：化债窗口 + 十四五收官 + 无废城市扩围，订单/回款超预期——<strong>验证点</strong>：专项债/化债资金、新签合同；触发可将中性上调。<br />
+- C 市场错杀修复：若因短期扣非亏损错杀至 PB&lt;1x，修复弹性大。<br />
+- D 技术突破/代际跃迁期权："修复+资源化+运营"全生命周期模式从 0 到 1 跑通（土地增值分成）——<strong>硬验证点</strong>=运营项目稳定盈利、客户定点；目前仅部分验证，作机会情景。<br />
+<strong>上调至"重点关注"的条件</strong>：扣非连续两季转正 + 资源化收入占比跳升 + 2029 经常性净利上看 0.85 亿（乐观情景，空间 &gt;+50%）。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>11.87 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>8.5 元</strong>（区间 6.0–11.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−28.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>7.98 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−32.8%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.30 元（−89.1%）～ 乐观 15.20 元（+28.1%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>环境修复+固废资源化，订单高增但归母扭亏靠减值转回、扣非仍亏、估值偏高</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（回调至 6 元以下且扣非扭亏验证）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-21 披露）、证券时报/中国证券报中报解读、GEP Research 土壤与地下水治理数据、生态环境部政策文件。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>松原安全（300893）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>松原安全（300893）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-19 ｜ 现价 <strong>13.70 元</strong> ｜ 总市值 <strong>68.49 亿</strong> ｜ PE(TTM) <strong>20.80x</strong> ｜ PB <strong>3.21x</strong> ｜ 总股本 <strong>约 5.00 亿股</strong>（= 总市值 68.49 亿 ÷ 现价 13.70）<br />
+行业：汽车被动安全系统（安全带/气囊/方向盘/汽车电子）｜ 板块：创业板<br />
+数据基准日：2026-09-18 收盘（腾讯行情，最近交易日 09-19 周六休市）<br />
+<strong>亏损核查结论：盈利股</strong>（队列未标亏损正确）。2026H1 归母 +1.24 亿（同比 −23.05%，受年降+折旧+研发等投入期影响）、扣非 +1.22 亿；2025 全年归母 +3.66 亿（+40.70%）。连续盈利，非亏损股，按标准五步法。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内汽车被动安全系统头部供应商，全产业链"松原模式"（精密件/冲压/压铸/注塑/模具/纺织/电子/气体发生器自制），提供安全带总成、安全气囊、方向盘、汽车电子一体化解决方案，国产替代 + 全球化双主线。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 13.89 亿，同比 +21.01%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安全带总成</td>
+<td>主体业务</td>
+<td>约 50%+</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>安全气囊</td>
+<td>重要组成</td>
+<td>约 25%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>方向盘</td>
+<td>约 13%</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>汽车电子（气囊控制器等）</td>
+<td>增量</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2026H1 综合毛利率 24.58%（−4.01pct），净利率 8.94%（−5.12pct），处于产能爬坡/投入期。</p>
+</blockquote>
+<p><strong>核心产品</strong>：安全带总成、安全气囊（含远端气囊/中央气囊）、方向盘、汽车电子（气囊控制器 ECU）、气体发生器（自制中）。</p>
+<p><strong>主要客户/下游</strong>：奇瑞、吉利、上汽通用五菱、理想、蔚来、东风、斯特兰蒂斯等；新获 137 个新品研发项目（安全带 64/气囊 34/方向盘 19/控制器 20）；国际突破——2026-04 通过梅赛德斯奔驰供应商体系审核、马来西亚基地过斯特兰蒂斯准入、与福特泰国/现代印尼交流。</p>
+<p><strong>境内外收入占比</strong>：以境内为主，马来西亚基地（2025Q3 量产，进 Perodua 名录）开启东南亚本地化。</p>
+<p><strong>产能布局</strong>：巢湖二期（气体发生器厂区主体完成，2026H2 搬迁/小批试产）、临山基地（安全带零部件，2026 年底投产）、西安基地（气囊/方向盘逐步投用）、马来西亚基地（已量产）。</p>
+<p><strong>股东背景</strong>：民营控股，实控人胡铲明；2025 获奔驰资质背书，机构持仓提升（香港结算新进）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/趋势</th>
+<th>主体</th>
+<th>力度</th>
+<th>对公司影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-NCAP 2027 版新规（新增第二排远端乘员保护评价）</td>
+<td>中汽研</td>
+<td>强</td>
+<td>刺激远端气囊/中央气囊需求，ASP 提升</td>
+</tr>
+<tr>
+<td>商用车安全气囊强制标准升级（9 米客车/重卡年检）</td>
+<td>工信部</td>
+<td>中</td>
+<td>商用车气囊渗透率 30%→38%，增量</td>
+</tr>
+<tr>
+<td>欧盟 GSR2（2027 标配事故数据记录）</td>
+<td>欧盟</td>
+<td>中</td>
+<td>海外标配化，利好全球化</td>
+</tr>
+<tr>
+<td>汽车以旧换新/消费刺激</td>
+<td>国务院</td>
+<td>中</td>
+<td>拉动整车产销，间接利好零部件</td>
+</tr>
+</tbody>
+</table>
+<h3>（2）市场端（量价数据）</h3>
+<ul>
+<li><strong>市场容量</strong>：全球汽车被动安全 2024–2028 由 1645 亿 → 1845 亿元；国内 356 亿 → 430 亿元（CAGR 4.8%）。</li>
+<li><strong>ASP 提升</strong>：基础配置单车 ASP 约 1300 元，高安全配置可达 2100 元+；随安全法规升级与高端化，ASP 稳步提升。</li>
+<li><strong>国产替代空间</strong>：全球 CR3（奥托立夫/均胜/采埃孚）&gt;80%，国内 CR3 &gt;85%，自主品牌市占率不足 10% → 国产替代大空间。</li>
+<li><strong>格局</strong>：高度寡头垄断、高壁垒（技术/资质/客户），公司凭全产业链"松原模式"差异化突围。</li>
+</ul>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>（钢材/织带/电子元件/气体发生剂）：大宗涨价推高成本，但公司通过织带/气囊布/OPW/气体发生器自制 + 大宗预判 + 供应商整合降本，转嫁系数≈0.6–0.7。</p>
+<p><strong>下游</strong>（整车厂）：年降压力存在（2026H1 毛利率 −4pct 部分因年降），但公司凭自制率提升 + 新项目量产对冲。</p>
+<p><strong>议价权</strong>：<strong>中偏强</strong>（全产业链自制 + 客户认证壁垒，但受整车厂年降约束）。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性（转嫁系数）</strong>：≈0.65。整车厂年降压制短期毛利，但自制率提升（气体发生器/织带/气囊布）内生化降本，部分对冲；2026H1 毛利率 −4pct 含年降+爬坡+结构波动。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：安全带（高毛利、占比高）与气囊/方向盘（爬坡期占比变动）结构迁移；气囊布委外转自制、气体发生器自制将抬升气囊业务毛利。分业务毛利率未完全披露，按综合 24.58% 中枢。</li>
+<li><strong>因子3 库存与采购节奏</strong>：大宗预判采购平滑成本；无显著囤货收益虚增。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 钢/化工原料价（成本锚）；② 整车年降幅度（验证点：年降谈判结果）；③ C-NCAP 2027/商用车法规（需求+ASP 锚）。证伪：年降超预期+原料暴涨。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137 个新品研发项目</td>
+<td>奇瑞/吉利/五菱/理想/蔚来/斯特兰蒂斯等</td>
+<td>—</td>
+<td>2026H1 新获，陆续量产</td>
+<td>2027–2029 增量主来源</td>
+<td>高</td>
+</tr>
+<tr>
+<td>巢湖二期气体发生器</td>
+<td>自制降本，提升气囊成本竞争力</td>
+<td>主体建成，2026H2 搬迁/小批</td>
+<td>2026H2 起</td>
+<td>降本+毛利改善</td>
+<td>高</td>
+</tr>
+<tr>
+<td>临山基地（安全带零部件）</td>
+<td>完善全产业链、降零部件成本</td>
+<td>单体封顶，2026 年底投产</td>
+<td>2026 年底</td>
+<td>降本+产能</td>
+<td>高</td>
+</tr>
+<tr>
+<td>西安基地</td>
+<td>气囊/方向盘产线投用，西北本地化</td>
+<td>逐步投用</td>
+<td>进行中</td>
+<td>配套增量</td>
+<td>高</td>
+</tr>
+<tr>
+<td>马来西亚基地</td>
+<td>进 Perodua 名录，过斯特兰蒂斯审核</td>
+<td>2025Q3 量产，设计年产值近亿</td>
+<td>量产爬坡</td>
+<td>海外增量</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>奔驰供应商审核通过</td>
+<td>切入全球高端供应链</td>
+<td>2026-04 通过</td>
+<td>项目导入中</td>
+<td>高端 ASP 提升</td>
+<td>中高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：增量来自"新项目量产 + 基地投产 + 自制率提升 + 海外突破"，均为已公告/已获审核的确定性事件，非增速外推。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong></li>
+<li>供给侧：国内自主品牌市占&lt;10%，公司凭全产业链成本优势扩产抢份额。</li>
+<li>需求侧/客户份额：已进入主流自主+合资+外资（奔驰/斯特兰蒂斯），137 项目保障。</li>
+<li>技术代际差：全产业链自制构筑差异化壁垒，气体发生器自制对标国际。</li>
+<li>成本曲线：自制率提升使成本曲线左移，年降中能以价换量扩份额。</li>
+<li>份额二阶导数：国产替代加速渗透期。验证点：下季度营收、新项目定点公告。</li>
+<li><strong>层2 扩展业务：主业迁移空间</strong>：从国内 → 全球（依托马来西亚+奔驰/斯特兰蒂斯资质），TAM 由国内 430 亿扩至全球 1845 亿，弹性大。验证点：海外基地放量、奔驰/斯特兰蒂斯批量。未过验证点（海外大规模批量）仅作中期期权。</li>
+<li><strong>层3 证伪信号</strong>：① 新项目量产延期；② 年降致毛利率破 20%；③ 海外拓展不及预期；④ 客户流失。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：本报告采用自下而上订单/项目驱动测算，非增速外推。按"现有客户放量 + 137 新项目 + 基地投产 + 自制率提升 + 海外突破"推导 2029 营收与保守净利率。</p>
+</blockquote>
+<p><strong>总股本：约 5.00 亿股。</strong></p>
+<h3>稳态营收与净利（2029E，中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 营收</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安全带总成</td>
+<td>国产替代+新项目，稳健增长</td>
+<td>30 亿</td>
+<td>13%</td>
+<td>3.90 亿</td>
+</tr>
+<tr>
+<td>安全气囊（含自制气体发生器）</td>
+<td>自制降本+ASP 提升+C-NCAP 2027</td>
+<td>20 亿</td>
+<td>12%</td>
+<td>2.40 亿</td>
+</tr>
+<tr>
+<td>方向盘/汽车电子</td>
+<td>基地投产放量</td>
+<td>10 亿</td>
+<td>11%</td>
+<td>1.10 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>60 亿</strong></td>
+<td><strong>≈12.3%</strong></td>
+<td><strong>≈7.40 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 营收</th>
+<th>净利率</th>
+<th>净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>年降超预期+需求下行+海外慢</td>
+<td>45 亿</td>
+<td>9%</td>
+<td>4.05 亿</td>
+<td>15x</td>
+<td>60.8 亿</td>
+<td><strong>12.16 元</strong></td>
+<td><strong>−11.2%</strong></td>
+</tr>
+<tr>
+<td>中性</td>
+<td>新项目稳步量产+自制率提升+海外突破</td>
+<td>60 亿</td>
+<td>12.3%</td>
+<td>7.40 亿</td>
+<td>18x</td>
+<td>133.2 亿</td>
+<td><strong>26.64 元</strong></td>
+<td><strong>+94.5%</strong></td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>全球化加速+ASP 提升+自制率高位</td>
+<td>75 亿</td>
+<td>14%</td>
+<td>10.50 亿</td>
+<td>20x</td>
+<td>210.0 亿</td>
+<td><strong>42.00 元</strong></td>
+<td><strong>+206.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>约 3.0 亿（H1 1.24 亿 + H2 投入期，机构预测 3.6–4.8 亿，取保守 3.0 亿）</td>
+<td>7.40 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>20x（对应 TTM 水平）</td>
+<td>18x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>60 亿</td>
+<td>133.2 亿</td>
+</tr>
+<tr>
+<td>对应股价</td>
+<td><strong>12.0 元</strong></td>
+<td><strong>26.64 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 13.70 元对应市值 68.49 亿，对应 2026E 净利 3.0 亿 PE 22.8x、2029E 中性 7.40 亿 PE 9.3x。现价已部分反映成长，但中性仍有 +94.5% 空间。</p>
+<h4>第四步进阶：重资产/周期股估值校正（三道闸）</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：非重资产为主（零部件+装配），固定资产适中；PB 3.21x 反映成长预期，非破净误杀，但需注意投入期折旧压制短期利润。</li>
+<li><strong>校正2 周期位置校正</strong>：汽车被动安全弱周期（安全要求刚性，非强周期），中性采用保守净利率 12.3%（低于 2025 年 13.7% 高位，未用单年好年景），符合周期归一化。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率 50.10%（2025）、有息负债率 53.24%，中等；若车市需求下行+年降，净利可降至 4.05 亿（悲观 −11.2%），高 beta 但下行可控（仍正空间）。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏低/具性价比</strong>。现价 13.70 元对应中性目标价 26.64 元，PE(TTM) 20.8x 在成长零部件中合理。</p>
+<p><strong>安全边际</strong>：中性远期 +94.5%（&gt;50% 重点关注门槛），悲观 −11.2%（仍接近现价），乐观 +206.6%。风险收益不对称偏正。</p>
+<p><strong>介入条件</strong>：① 现价 13.70 可布局；② 加仓信号：2026H2 毛利率回升至 26%+（自制率兑现）、奔驰/斯特兰蒂斯项目定点公告、马来西亚放量；③ 观察：年降幅度、新项目量产节奏。</p>
+<p><strong>最大风险</strong>：① 整车厂年降超预期致毛利破阈；② 新基地投产爬坡不及预期；③ 海外拓展（奔驰/斯特兰蒂斯）节奏慢；④ 行业价格战传导；⑤ 高 beta（需求下行时净利几倍波动）。</p>
+<p><strong>结论：重点关注</strong>（远期空间 +94.5%&gt;50%，逻辑扎实：国产替代+全球化+全产业链降本+客户突破；高 beta 但下行仍正）。</p>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<ul>
+<li><strong>A 行业出清剩者红利</strong>：被动安全外资寡头垄断，公司凭成本优势在国产替代中份额加速提升 → 验证点：国内市占率公告；证伪：份额流失。</li>
+<li><strong>B 政策反转期权</strong>：C-NCAP 2027 新规、商用车强制气囊 → ASP 与用量提升 → 验证点：新规落地、商用车渗透率；证伪：法规推迟。</li>
+<li><strong>C 市场错杀修复</strong>：若板块因车市担忧回调，低估值修复弹性大 → 验证点：板块估值分位。</li>
+<li><strong>D 技术突破/代际跃迁期权</strong>：气体发生器全自制+远端气囊/遮阳板气囊量产（2026 上市），从 0 到 1 切入新品类 → 硬验证点：新品量产+客户定点+成本优于外购；计入乐观。</li>
+</ul>
+<blockquote>
+<p><strong>上调/维持重点关注的条件</strong>：2026H2 毛利率回升 + 海外批量确认 → 中性净利上修至 8 亿+，空间突破 +100%，维持重点关注。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.70 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>12.0 元</strong>（区间 11.0–13.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−12.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>26.64 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+94.5%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 12.16 元（−11.2%）～ 乐观 42.00 元（+206.6%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>汽车被动安全国产替代+全球化（奔驰/斯特兰蒂斯突破）+全产业链降本+137新项目，自下而上测算中性空间+95%</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>重点关注</strong>（现价具性价比，毛利率回升+海外批量验证后维持）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-24 披露）、2025 年年报、东北证券《产业链进一步完善，国际高端客户持续突破》（2026-08-28）、中金/天风研报、中国证券报/爱集微中报解读、华经产业研究院/源达信息被动安全行业数据（2026）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
