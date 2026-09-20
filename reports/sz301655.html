@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>绿控传动（301655）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>绿控传动（301655）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-21 ｜ 现价 <strong>23.48 元</strong> ｜ 总市值 <strong>106.98 亿</strong> ｜ PE(TTM) <strong>51.38x</strong> ｜ PB <strong>6.90x</strong> ｜ 总股本 <strong>4.556 亿股</strong><br />
+行业：新能源商用车电驱动系统（重卡电驱第三方龙头）｜ 板块：创业板<br />
+数据口径：行情取自腾讯 gtimg（2026-09-18 收盘）；财务取自 2025 年报、2026 半年报。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内新能源中重型商用车电驱动系统第三方龙头，为重卡、非道路移动机械、客车提供"电机+电控+变速箱"一体化电驱总成，是新能源重卡渗透率爆发的核心零部件受益者。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 23.66 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>电驱动系统-货车</td>
+<td>20.29 亿</td>
+<td>85.76%</td>
+<td>12.08%</td>
+<td>+115.84%</td>
+</tr>
+<tr>
+<td>电驱动系统-非道路移动机械</td>
+<td>1.63 亿</td>
+<td>6.87%</td>
+<td>33.28%</td>
+<td>+13.29%</td>
+</tr>
+<tr>
+<td>电驱动系统-客车</td>
+<td>0.52 亿</td>
+<td>2.19%</td>
+<td>41.10%</td>
+<td>+16.72%</td>
+</tr>
+<tr>
+<td>零部件与配件</td>
+<td>0.48 亿</td>
+<td>2.04%</td>
+<td>28.63%</td>
+<td>+49.86%</td>
+</tr>
+<tr>
+<td>技术开发与服务</td>
+<td>0.03 亿</td>
+<td>0.11%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：中重型商用车用AMT自动变速箱、电机控制器、驱动电机、电驱桥总成；重卡场景为主，覆盖纯电/混动/燃料电池三种技术路线。</p>
+<p><strong>主要客户/下游</strong>：下游为新能源重卡整车厂（远程、三一、徐工、宇通、福田等），独立第三方定位服务全行业整车厂，避免绑定单一车企。2025 年电驱动系统销量 <strong>12.97 万套</strong>，产能利用率 <strong>98.21%</strong>（产线接近满负荷）。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：境内 22.87 亿（96.66%，毛利率约 14%）；境外 2646 万（1.12%）——以内需为主，海外尚处起步。</p>
+<p><strong>股权背景</strong>：民营控股，实控人李磊（技术出身），国家级专精特新"小巨人"，创业板 IPO 募资 5.81 亿。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，国家级，已在执行</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>量化目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《推动新能源重卡规模化应用实施方案》</td>
+<td>交通运输部、发改委等<strong>十一部门</strong></td>
+<td>国家级专项</td>
+<td>到 2030 年新能源重卡<strong>渗透率 40%</strong>、<strong>保有量突破 160 万辆</strong>、占比约 20%；京津冀/汾渭平原固定线路短倒电动化比例<strong>超 80%</strong>；引导建设重卡充换电站<strong>约 3000 个</strong></td>
+</tr>
+<tr>
+<td>《关于 2026 年实施老旧营运货车报废更新的通知》</td>
+<td>交通运输部、发改委</td>
+<td>部门级+超长期特别国债</td>
+<td>国三/国四报废更新优先电动货车，<strong>最高补贴 14 万元/辆</strong>；安排 <strong>220 亿元</strong>超长期特别国债支持置换</td>
+</tr>
+<tr>
+<td>"十五五"规划纲要</td>
+<td>国务院</td>
+<td>顶层规划</td>
+<td>"推动交通动力低碳替代，加快货运、公共领域电动化"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：2025.1–2026.5 全国累计销售新能源重卡 <strong>33.7 万辆</strong>，渗透率超 <strong>29.5%</strong>；2026 年 5 月单月销量 3.08 万辆（同比 +104%），渗透率 40.88%；2026 年前 7 月累计 16.65 万辆（同比 +74%）。GGII 测算 2026 全年国内新能源重卡销量有望冲击 <strong>40 万辆</strong>。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新能源重卡销量</td>
+<td>2026H1 高增，前 7 月 16.65 万辆（同比 +74%）；华泰预测 2026 年电动重卡渗透率近 37%、销量同比 +28%</td>
+</tr>
+<tr>
+<td>重卡电驱单价</td>
+<td>2025 年电驱系统均价约 2.59 万元/套（33.54 亿营收 ÷ 12.97 万套）；规模效应下年降约 3–5%</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>重卡电驱第三方供应商集中度高，绿控为独立第三方龙头；整车厂自供（比亚迪、宇通）与第三方并存</td>
+</tr>
+<tr>
+<td>TCO 优势</td>
+<td>纯电重卡每公里电费 1.2–1.5 元 vs 柴油 2.8–3.0 元，十年运营周期省约 120 万元，经济性驱动渗透</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：稀土永磁（电机）、IGBT/功率器件（电控）、钢材/铝（结构件）、齿轮轴承（变速箱）。其中功率器件与稀土价格随行就市。</p>
+<p><strong>下游</strong>：新能源重卡整车厂，需求由补贴+ TCO+ 路权（限行政策）三重驱动，2026 年处于"规模替代"加速期。</p>
+<p><strong>议价权</strong>：<strong>中等偏强</strong>（第三方龙头+产能接近满产+技术壁垒），但面对大客户年降压力，货车业务毛利率仅 12.08%，靠非道路（33.28%）、客车（41.10%）高毛利业务平衡结构。</p>
+<h3>第二步进阶：原料成本 → 毛利结构（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：重卡电驱年降是大客户强制条款，议价权量化转嫁系数约 <strong>0.5–0.6</strong>（上游稀土/器件涨 10%，公司仅能转嫁 5–6%，其余靠内部降本吸收）。2026H1 综合毛利率 14.41%（同比 -4.97pct）即反映降价+结构影响。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：货车（12.08%）占 86%，非道路（33.28%）、客车（41.10%）占小。原料（稀土/铜）涨价主要压货车线，但非道路/客车线对价格不敏感、毛利厚。募投产能释放后，非道路/客车占比若提升，可结构性抬升综合毛利——禁单一综合毛利率。</li>
+<li><strong>因子3 库存与采购节奏</strong>：IGBT/稀土采用长协+滚动备货，低价囤货收益已部分体现在 2025–2026H1 毛利；若进入降价周期则库存收益转为损失，需区分当期与远期可比性。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 稀土出口管制/收储抬升磁材成本（政策变量，情景：管制升级→毛利承压，验证点：稀土价格）；② 220 亿报废更新国债是需求端强锚（情景：补贴退坡→渗透放缓，验证点：2027 年国债额度）；③ 碳酸锂降价降低电池包成本、利好整车 TCO（正向锚）。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IPO 募投：年产 10 万套中重型商用车电驱项目</td>
+<td>新增产能 + 自动化产线</td>
+<td>总投资约 5.81 亿（募资额）</td>
+<td>2025 年上市后启动，建设期约 2 年</td>
+<td>2027–2029 分批达产</td>
+</tr>
+<tr>
+<td>现有产能挖潜</td>
+<td>13.2 万套/年（利用率 98.21%）→ 技改微增</td>
+<td>—</td>
+<td>已满产，靠募投扩产解瓶颈</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>非道路移动机械电驱</td>
+<td>高毛利（33.28%）增量</td>
+<td>2026H1 1.63 亿</td>
+<td>随工程机械电动化渗透</td>
+<td>2026–2029</td>
+</tr>
+<tr>
+<td>客车电驱</td>
+<td>高毛利（41.10%）</td>
+<td>2026H1 0.52 亿</td>
+<td>稳定配套</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>海外出口</td>
+<td>境外仅 1.12%，早期</td>
+<td>在途认证</td>
+<td>东南亚/中东重卡电动化</td>
+<td>2028+（期权）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>产能约束测算（核心）</strong>：现有产能 ≈13.2 万套，募投 +10 万套 → <strong>2029 满产约 23 万套</strong>。按稳态均价 2.4 万元/套（年降后），货车收入 ≈ 18 万套 × 2.4 万 = 43.2 亿；加非道路 2 万套（高单价）、客车、零部件 → <strong>2029 总营收约 62 亿</strong>（非道路/客车占比提升优化结构）。</p>
+<p><strong>⚠️ 关键提示</strong>：2025 销量 12.97 万套已近满产，2026 增长受产能瓶颈约束，<strong>募投达产节奏是 2027–2029 增量的唯一来源</strong>，须逐季跟踪在建工程转固进度。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 市场容量 × 份额变量</strong>：① 供给侧——现有产能 13.2 万套/全国新能源重卡年销 40 万辆，份额约 1/3（第三方口径领先）；募投后产能翻倍。② 需求侧——前五大客户占比适中（独立第三方定位），认证周期长=粘性。③ 技术代际——多挡 AMT 电驱桥领先一代。④ 成本曲线——规模+自动化左移。⑤ 份额加速度——渗透 S 曲线早期，份额仍有提升空间。<strong>中性的份额小幅提升验证点</strong>：2026 下半年单季出货环比续增、募投一期转固。</li>
+<li><strong>层2 主业迁移空间</strong>：能力可迁移至工程机械/矿卡/农机电驱（技术同源），新 TAM 弹性大；但客户认证门槛高。未过验证点（海外/新场景大额订单公告）仅作中期期权，不计入中性。</li>
+<li><strong>层3 证伪信号</strong>：价格战致货车毛利率破 10%、份额连续下滑、募投延期——命中则下修增量。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不用历史 CAGR 外推。按"现有产能满产 + 募投 10 万套达产 + 非道路/客车结构优化"自下而上测算，并用产能上限校验。</p>
+</blockquote>
+<p><strong>总股本：4.556 亿股</strong></p>
+<h3>分业务测算（到 2029 年）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据（产能×单价）</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>货车电驱</td>
+<td>18 万套 × 2.4 万（年降后）</td>
+<td>43.2 亿</td>
+<td>5.5%（毛利 12%→规模降本）</td>
+<td>2.38 亿</td>
+</tr>
+<tr>
+<td>非道路电驱</td>
+<td>2 万套 × 高单价，毛利 33%</td>
+<td>8.0 亿</td>
+<td>12%</td>
+<td>0.96 亿</td>
+</tr>
+<tr>
+<td>客车电驱</td>
+<td>稳定配套</td>
+<td>3.5 亿</td>
+<td>15%</td>
+<td>0.53 亿</td>
+</tr>
+<tr>
+<td>零部件及服务</td>
+<td>随存量增长</td>
+<td>7.3 亿</td>
+<td>10%</td>
+<td>0.73 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>62.0 亿</strong></td>
+<td><strong>约 7.4%</strong></td>
+<td><strong>约 4.6 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>H1 归母 1.23 亿（同比 +80.6%），H2 重卡旺季+募投小批量 → H2 约 1.6 亿</li>
+<li><strong>2026E 净利约 2.83 亿</strong>，净利率约 5.4%</li>
+<li>基准合理 PE：高景气成长期给 30–34x → 市值 85–96 亿 → <strong>股价 18.7–21.1 元</strong></li>
+</ul>
+<h3>三情景（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>渗透放缓至 35%、价格战致毛利率塌、募投延期</td>
+<td>3.0 亿</td>
+<td>18x</td>
+<td>54 亿</td>
+<td><strong>11.85 元</strong></td>
+<td><strong>−49.5%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>募投 2028 达产、行业渗透 40%、结构优化</td>
+<td><strong>4.6 亿</strong></td>
+<td>22x</td>
+<td>101 亿</td>
+<td><strong>22.20 元</strong></td>
+<td><strong>−5.5%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>产能翻倍+非道路/客车高毛利放量+海外突破</td>
+<td>6.5 亿</td>
+<td>26x</td>
+<td>169 亿</td>
+<td><strong>37.10 元</strong></td>
+<td><strong>+58.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>2.83 亿</td>
+<td>4.6 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>30–34x</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>85–96 亿</td>
+<td>101 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>18.7–21.1 元</strong></td>
+<td><strong>22.20 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 23.48 元对应 2026E PE <strong>37.8x</strong>、2029E 中性 PE <strong>48x</strong>——市场已透支远期产能释放。当前价高于基准估值区间上沿（21.1 元），中性远期目标价 22.20 元仅与现价持平，<strong>安全边际薄</strong>。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵</strong>。现价已高于基准估值区间，中性远期仅 22.20 元（−5.5%），反映市场充分定价 2026–2027 高增长。</p>
+<p><strong>安全边际</strong>：中性远期空间 −5.5%；悲观 11.85 元（−49.5%）下行大；乐观 37.10 元（+58.0%）需产能+海外双兑现。PB 6.90x 不低，但负债率健康（无大额定增摊薄预期）。</p>
+<p><strong>介入条件</strong>：① 等回落至 <strong>19 元以下</strong>（2026E PE &lt; 24x）再具安全边际；② 加仓信号：募投一期转固公告、海外重卡客户定点、非道路/客车营收占比突破 12%。</p>
+<p><strong>最大风险</strong>：① 募投达产不及预期（产能瓶颈未解，增长断档）；② 货车年降+价格战致毛利率破 10%；③ 新能源重卡补贴退坡后渗透放缓；④ 整车厂自供电驱替代第三方。</p>
+<p><strong>结论：纳入观察</strong>（质地优秀——重卡电驱第三方龙头、政策强驱动、产能翻倍在途，但现价已透支，等回调至 19 元以下或募投兑现验证后再上修至重点关注）。</p>
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>23.48 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>19.9 元</strong>（区间 18.7–21.1）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−15.2%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>22.20 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−5.5%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 11.85 元（−49.5%）～ 乐观 37.10 元（+58.0%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>重卡电驱第三方龙头，十一部门方案强驱动+募投10万套产能翻倍，结构优化抬毛利</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（回落至 19 元以下或募投转固验证后介入）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2025 年报、2026 年半年报（2026-08-29 披露）、交通运输部等十一部门《推动新能源重卡规模化应用实施方案》（2026-05）、交通运输部/发改委《关于 2026 年实施老旧营运货车报废更新的通知》、GGII/第一商用车网销量数据、腾讯行情 gtimg。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
