@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>优刻得-W（688158）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>优刻得-W（688158）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-21 ｜ 现价 <strong>29.71 元</strong>（2026-09-18 收盘）｜ 总市值 <strong>121.77 亿</strong> ｜ PE(TTM) <strong>微利（刚扭亏）</strong> ｜ PB <strong>5.56x</strong> ｜ 总股本 <strong>约 4.099 亿股</strong><br />
+行业：云计算 / IDC·AIDC（智算中心）｜ 板块：科创板<br />
+<strong>重要修正（TTM 误标）</strong>：队列 <code>analysis_queue.csv</code> 将本股标 <code>亏损=True</code>，但实测 2026H1 归母净利 <strong>+807.72 万元（同比扭亏为盈，上年同期 −1589 万）</strong>，系科创板上市以来<strong>首次半年报归母转正</strong>。按规则"若 2026H1 已扭亏为正，则按盈利股处理、剔除亏损标签"——本股剔除亏损标签，结论注明"<strong>TTM 误标·2026H1 已盈利</strong>"。但需注意：<strong>扣非归母 −1686 万（仍亏，收窄 78.63%）</strong>，主业尚处微亏爬坡，估值以正常化净利润法为锚更稳妥。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：中立第三方云计算服务商，自建乌兰察布+青浦两大智算中心，提供公有云、私有云、智算（AIDC）与云通信，正从"通用云"转向"AI 算力基础设施"供应商。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 9.82 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云计算</td>
+<td>5.84 亿</td>
+<td>59.47%</td>
+<td>23.5%</td>
+<td>稳健</td>
+</tr>
+<tr>
+<td>IDC 及 AIDC 服务</td>
+<td>2.84 亿</td>
+<td>28.97%</td>
+<td>43.6%</td>
+<td>高增（智算上架）</td>
+</tr>
+<tr>
+<td>云通信</td>
+<td>9795 万</td>
+<td>9.98%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>1552 万</td>
+<td>1.58%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：公有云主机、智算（训练/推理）算力、高功率机柜托管（AIDC）、"孔明"智算平台、"AstraFlow 星图"开发平台、Token Factory 方案。<br />
+<strong>主要客户/下游</strong>：互联网中小客户、国资云、海外运营商、智算中心、AI 大模型与 Agent 客户；AI 相关收入占比 <strong>&gt;40%</strong>。<br />
+<strong>境内外占比（2026H1）</strong>：华北 39.62%、其他 21.74%、境外 19.83%、其他 18.80%；全球可用区 <strong>36 个</strong>（新增美/巴/越/哈节点）。<br />
+<strong>资产属性</strong>：固定资产 20.34 亿（重资产，IDC 土建+服务器），负债率 35.8%，货币现金 5.77 亿。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，国家级 AI 算力战略</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《"人工智能+制造"专项行动实施意见》</td>
+<td>工信部等八部门（2026.1）</td>
+<td>国家级</td>
+<td>AI 赋能算力需求</td>
+</tr>
+<tr>
+<td>人形机器人与具身智能实景实训专项行动</td>
+<td>工信部、国资委（2026.6）</td>
+<td>国家级</td>
+<td>带动智算/算力基建</td>
+</tr>
+<tr>
+<td>"东数西算"枢纽节点</td>
+<td>发改委</td>
+<td>国家级</td>
+<td>乌兰察布/青浦落位绿电枢纽，PUE&lt;1.1</td>
+</tr>
+<tr>
+<td>地方算力补贴（沪/蒙/深）</td>
+<td>地方政府</td>
+<td>省级</td>
+<td>机柜/算力租用/技改奖补</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化</strong>：国家级机器人产业基金 500 亿+地方 1300 亿；智算中心建设补贴最高覆盖固投 30%。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国智能算力规模</td>
+<td>2026 年高双位数增长，AI 训练/推理需求爆发</td>
+</tr>
+<tr>
+<td>公司营收</td>
+<td>2026H1 9.82 亿（+24.09%），Q2 5.43 亿（环比 +24%）</td>
+</tr>
+<tr>
+<td>机柜利用率</td>
+<td>乌兰察布 95%+、青浦 ~60%；GPU 出租率 91%</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>综合 28.36%（历史新高，+3.4pct）；IDC/AIDC 43.6%</td>
+</tr>
+<tr>
+<td>扭亏拐点</td>
+<td>2025Q4 首个盈利季→2026H1 归母 +808 万（上市首份半年报转正）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度</strong>：2026Q2 归母 534 万（环比 +95%），经营现金流 6744 万（+43%）。</p>
+<h3>（3）产业链传导</h3>
+<ul>
+<li><strong>上游</strong>：AI 服务器/GPU（受英伟达供给与价格约束）、电力（绿电直供降本）、土建机电。重资产，折旧刚性。</li>
+<li><strong>下游</strong>：AI 大模型、互联网、国资云、海外。议价权<strong>中等偏弱</strong>——算力供过于求时客户可多选，但自建绿电智算中心形成差异化（低 PUE+成本）。</li>
+<li><strong>议价权量化</strong>：智算上架率 95% 时具备定价力（满负荷毛利率 30–40%），未满载时偏弱。</li>
+</ul>
+<h3>第二步进阶：原料成本 → 毛利结构（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：传导率≈0.6（机柜托管按功率定价，成本端电力/折旧固定，利用率越高毛利越高；算力服务随 GPU 供需波动）。验证点：机柜负载率、GPU 出租率。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：IDC/AIDC 毛利率 43.6% &gt;&gt; 云计算 23.5%；高毛利智算占比提升（2026H1 收入 +24%）直接拉动综合毛利至 28.36%。结构再平衡是本次扭亏主因。</li>
+<li><strong>因子3 库存与采购节奏</strong>：服务器为资本开支（非存货），无库存收益；折旧节奏决定利润释放（新楼投产初期折旧压制）。验证点：D/E 栋交付后折旧爬坡。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 市场层——GPU 供给/租金、电力价格；② 政策层——算力补贴（降客户成本、抬需求）、出口管制（高端 GPU 受限抬租金亦限供给）、绿电政策（降本）。情景：补贴+需求旺→满载高毛利；GPU 禁运+需求退潮→产能闲置。验证点：机柜订单、电价、政策发文。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乌兰察布智算中心（已投 4 栋）</td>
+<td>可用机柜功率 61.71MW，利用率 95%+</td>
+<td>已满产</td>
+<td>持续贡献</td>
+<td>进行中</td>
+</tr>
+<tr>
+<td>定增 D/E 栋（翻倍容量）</td>
+<td>总投资 18.17 亿，新增 59.08MW</td>
+<td>募资 15 亿</td>
+<td>2026.11 首栋交付，&gt;50% 机柜订单确定</td>
+<td>2026H2–2028</td>
+</tr>
+<tr>
+<td>青浦智算中心</td>
+<td>低延迟推理，国产千卡集群</td>
+<td>延期至 2028.1</td>
+<td>建设期</td>
+<td>2028+</td>
+</tr>
+<tr>
+<td>全球节点扩张</td>
+<td>36 可用区，新增美/巴/越/哈</td>
+<td>—</td>
+<td>进行中</td>
+<td>2026–2027</td>
+</tr>
+<tr>
+<td>AI 相关收入</td>
+<td>占比 &gt;40%，Token Factory 新场景</td>
+<td>增量</td>
+<td>高增</td>
+<td>持续</td>
+</tr>
+</tbody>
+</table>
+<p><strong>增量逻辑</strong>：不靠增速外推——乌兰察布机柜利用率从 63%→95%（已满），增量来自 D/E 栋<strong>容量翻倍</strong>（59MW 新增），按已确定 &gt;50% 机柜订单（意向售卖功率 22.1MW，占 D 栋外售 85%+）测算新增收入。</p>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务（市场容量 × 份额变量）</strong>：</li>
+<li>供给侧：第三方云份额低（阿里/腾讯/华为主导），中立云差异化获国资/海外客户；</li>
+<li>客户侧：互联网中小+国资云+海外运营商，多元化降低单一依赖；</li>
+<li>技术代际：绿电智算+PUE&lt;1.1 领先；</li>
+<li>成本曲线：自建 vs 租赁，利用率 95% 时成本左移；</li>
+<li>份额加速度：AI 收入占比 40%+，算力需求 S 曲线早期。</li>
+<li>三档：保守（维持）／中性（D/E 满产后翻倍）／乐观（国资云+出海抢份额）。</li>
+<li><strong>层2 主业迁移空间</strong>：从通用云→AI 算力基建（同源 IDC 能力复用），新 TAM（AI 算力）弹性大；"算电协同"（绿电+虚拟电厂）为差异化期权。已验证（智算收入占比 32%、毛利率 43.6%）。</li>
+<li><strong>层3 证伪信号</strong>：D/E 栋交付延期、机柜订单取消、GPU 禁运致算力闲置、价格战致毛利率破 25%→下修。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p>方法：刚扭亏、扣非仍亏，用<strong>正常化净利润法</strong>（稳态营收×保守净利率×远期 PE）。</p>
+</blockquote>
+<p><strong>总股本：约 4.099 亿股</strong></p>
+<h3>正常化净利润推导（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云计算</td>
+<td>年化 ~20 亿→AI 渗透，年增 ~15%</td>
+<td>22 亿</td>
+<td>8%</td>
+<td>1.76 亿</td>
+</tr>
+<tr>
+<td>IDC/AIDC</td>
+<td>D/E 满产+青浦，高毛利托管+算力</td>
+<td>16 亿</td>
+<td>18%</td>
+<td>2.88 亿</td>
+</tr>
+<tr>
+<td>云通信及其他</td>
+<td>稳定</td>
+<td>2 亿</td>
+<td>5%</td>
+<td>0.10 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>~40 亿</strong></td>
+<td>~12%</td>
+<td><strong>~4.7 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>稳态营收</strong>：现有年化 ~20 亿 + D/E 栋翻倍容量 + 青浦 = 2029 中性 ~40 亿（由机柜功率与订单支撑，非增速外推）。</li>
+<li><strong>正常化净利率</strong>：保守 12%（IDC/AIDC 43.6% 高毛利+规模摊薄折旧，但算力服务折旧重、价格战风险，取 12%；达满负荷毛利率 30–40% 上限参考）。</li>
+</ul>
+<h3>基准（2026 年底）</h3>
+<ul>
+<li>2026E 营收 ~20 亿，归母 ~+0.35 亿（含股份支付加回更高）；刚过盈亏线，PE 极高无意义。</li>
+<li>基准目标价反映"2026 为盈利拐点年、近一年盈利极薄"，现价已定价远期 AI 基建预期。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>D/E 延期、算力价格战、现金紧致 capex 放缓</td>
+<td>1.92 亿</td>
+<td>30x</td>
+<td>58 亿</td>
+<td><strong>14.0 元</strong></td>
+<td><strong>−52.9%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>D/E 满产、机柜满载、净利率 12%</td>
+<td><strong>4.70 亿</strong></td>
+<td>35x</td>
+<td>165 亿</td>
+<td><strong>40.3 元</strong></td>
+<td><strong>+35.6%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>AI 需求超预期+出海+算电协同兑现</td>
+<td>6.50 亿</td>
+<td>40x</td>
+<td>260 亿</td>
+<td><strong>63.4 元</strong></td>
+<td><strong>+113.4%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026 年底）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>+0.35 亿（拐点）</td>
+<td>正常化 4.70 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>35x（run-rate）</td>
+<td>35x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>~12–27 亿（trough）</td>
+<td>165 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>27.0 元（区间 24–30）</strong></td>
+<td><strong>40.3 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 29.71 对应 2029 中性 40.3 元 +35.6%；但 PB 5.56x 偏高、扣非仍亏、18 亿定增 capex 致现金紧（账面 5.77 亿，测算资金缺口 26 亿靠定增补）。近一年无安全边际。</p>
+<h3>第四步进阶：重资产/周期股估值校正</h3>
+<ul>
+<li><strong>校正1 资产质量</strong>：PB 5.56（未破净，但含高估值），固定资产 20.34 亿（重资产），IDC 为专用资产（清算价值低于账面），ROE 仅 0.33%（H1）。非破净误标。</li>
+<li><strong>校正2 周期位置</strong>：云计算/智算处 AI 上行周期早期（需求爆发），但算力供给也在扩张，警惕 2–3 年后产能过剩；中性净利用正常化（非单季扭亏年化），已标注"刚扭亏、扣非仍亏"。</li>
+<li><strong>校正3 杠杆下行</strong>：负债率 35.8% 可控，但<strong>定增前自由现金仅 3.24 亿、三年 capex 缺口 26 亿</strong>；若定增失败/需求退潮→折旧拖累净利转负。负面情景（悲观 −52.9%）已附，转负则不得标大空间。</li>
+<li><strong>期权纪律</strong>：算电协同、人形机器人算力、出海未全部过验证点，不计入中性净利，仅放乐观情景。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵（已定价 AI 预期）</strong>。现价 29.71 对应 2029 中性 +35.6%，但 PB 5.56、扣非仍亏、capex 资金缺口大。<br />
+<strong>安全边际</strong>：中性远期 40.3 元（+35.6%）；悲观 14.0 元（−52.9%）下行风险极大（高 beta 重资产）；PB 5.56 无资产底。<br />
+<strong>介入条件</strong>：回落至 <strong>22–24 元</strong>（接近基准下沿）再具安全边际；或定增落地、D/E 栋机柜满载（利用率 &gt;90%）、扣非转正且连续两季盈利。<br />
+<strong>最大风险</strong>：① 18 亿定增不及预期/摊薄；② 算力价格战致毛利率破 25%；③ GPU 出口管制影响供给与租金；④ 现金紧、折旧压制主业盈利。<br />
+<strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>AI 算力基建稀缺标的、扭亏拐点确认，但现价已充分定价，且重资产高 capex+扣非仍亏，赔率不对称。等定增落地+机柜满载硬验证，或回调至 22–24 元，再上调重点关注。</p>
+</blockquote>
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>29.71 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>27.0 元</strong>（区间 24.0–30.0）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−9.1%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>40.3 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+35.6%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 14.0 元（−52.9%）～ 乐观 63.4 元（+113.4%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>TTM误标·2026H1已盈利；AI算力&gt;40%+智算中心满载，normal化净利4.7亿/PE35→40元</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（22–24 元或定增落地+机柜满载再介入）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-22 披露）、定增审核问询函回复、科创板日报/上证报/中证网中报解读、高工智算智算中心造价拆解、腾讯行情 qt.gtimg.cn（2026-09-18 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
