@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>盛邦安全（688651）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>盛邦安全（688651）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-22 ｜ 现价 <strong>24.23 元</strong>（2026-09-21 收盘）｜ 总市值 <strong>24.83 亿</strong> ｜ PE(TTM) <strong>−48 倍（亏损）</strong> ｜ PB <strong>2.80x</strong> ｜ 总股本 <strong>1.025 亿股</strong><br />
+行业：网络安全（空间安全/网络空间地图/卫星互联网安全）｜ 板块：科创板<br />
+<strong>关键结论前置</strong>：TTM 与 2026H1 均亏损（H1 归母 −0.405 亿），<strong>真实最新财报确认仍亏损</strong>——属真亏损股，必须用"正常化净利润法"估值，并回答三问。净资产为正（约 8.9 亿），无退市风险，不因亏损回避。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国家级专精特新"小巨人"网络安全企业，聚焦"卫星互联网与低空通信安全+网络空间地图+网络安全基础/业务场景安全+安全服务"，向空天地一体化新型安全企业升级。</p>
+<p><strong>各业务板块营收占比（2025 年报，营收 3.08 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网络安全产品与服务</td>
+<td>2.42 亿</td>
+<td>78.32%</td>
+<td>66.92%</td>
+<td>+6.10%</td>
+</tr>
+<tr>
+<td>网络空间地图</td>
+<td>0.51 亿</td>
+<td>16.62%</td>
+<td>62.45%</td>
+<td>+7.55%</td>
+</tr>
+<tr>
+<td>卫星互联网安全业务</td>
+<td>0.15 亿</td>
+<td>4.95%</td>
+<td>52.42%</td>
+<td>−14.85%</td>
+</tr>
+<tr>
+<td>合计信息安全行业</td>
+<td>3.08 亿</td>
+<td>99.89%</td>
+<td>65.45%</td>
+<td>+5.07%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：安全服务、中端入侵防御、车联网安全监测、网络空间地图平台、卫星互联网安全（RayHLink 高速链路加密网关、巨型星座测运控安全、星间激光链路安全）、AIInside 智能化安全产品。</p>
+<p><strong>主要客户/下游</strong>：运营商、金融、政企、军工科研院所；服务超 3000 家行业用户；区域以华北（58.84%）为主。</p>
+<p><strong>境内外收入占比</strong>：基本境内（境外仅 0.16%）。</p>
+<p><strong>股东/实控</strong>：2023-07 科创板上市（IPO 1888 万股、募资 7.53 亿，净额 6.72 亿）；持续督导至 2026-12-31。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，卫星互联网/低空/数据安全驱动</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/趋势</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网络安全法/数据安全法/等保 2.0 持续执行</td>
+<td>国家</td>
+<td>长期基础</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>卫星互联网（星网）建设加速</td>
+<td>国家/航天局</td>
+<td>国家级</td>
+<td>组网期</td>
+</tr>
+<tr>
+<td>低空经济安全（无人机/通航）</td>
+<td>国务院/民航局</td>
+<td>国家级</td>
+<td>2026 试点扩围</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化信号</strong>：公司自主研发 RayHLink 获商用密码产品认证；巨型星座测运控/地面承载网/星间激光链路/卫星终端安全方案完善——卫星互联网安全订单化落地中。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 营收</td>
+<td><strong>0.89 亿（同比 −16.10%）</strong>，承压</td>
+</tr>
+<tr>
+<td>2026H1 归母净利</td>
+<td><strong>−0.405 亿（上年同期 −0.364 亿，亏损扩大 11%）</strong></td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>2026H1 <strong>65.38%</strong>（−5.81pct）仍高</td>
+</tr>
+<tr>
+<td>期间费用率</td>
+<td><strong>130.61%</strong>（研发占营收 45.13%，极高）</td>
+</tr>
+<tr>
+<td>研发投入</td>
+<td>H1 0.38 亿（占营收 45%），同比 −6.41%</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>网络空间地图细分龙头，卫星互联网安全先发布局；对手含绿盟、奇安信等 535 家</td>
+</tr>
+</tbody>
+</table>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：纯软件/服务，无重资产原料成本，上游为云/算力（成本占小）。</p>
+<p><strong>下游</strong>：运营商/政企/军工，项目制、回款周期长（H1 经营现金流 −0.357 亿）。</p>
+<p><strong>议价权</strong>：<strong>中</strong>。细分领域技术领先但客户强势、价格竞争存在；高毛利（65%）反映产品溢价但费用率吞噬净利。</p>
+<h4>第二步进阶：原料成本 → 毛利结构传导（四因子）</h4>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：软件业无实物原料，成本主体为研发/人力；转嫁系数不适用，毛利结构由"费用率"决定——核心是研发/销售费率能否随收入规模摊薄。</li>
+<li><strong>因子2 毛利结构再平衡（分业务线）</strong>：网络安全产品 66.9%、网络空间地图 62.5%、卫星互联网安全 52.4%——卫星互联网安全毛利偏低（早期产品化）。随该线占比提升，加权毛利或略降，但收入弹性大。</li>
+<li><strong>因子3 库存与采购节奏</strong>：无存货囤货问题（轻资产）；现金流波动来自项目回款节奏。</li>
+<li><strong>因子4 政策/市场锚点（成本驱动变量）</strong>：①市场层——人力/研发成本刚性；②政策层——等保/数据安全合规（托底需求）、卫星互联网/低空安全专项（新增需求）、政府预算（影响政企订单）。情景：合规+新安全需求放量→收入增、费用摊薄；预算收缩→收入承压。验证点：订单公告、费用率、政策发文。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网络安全基本盘</td>
+<td>2025 2.42 亿，产品化稳固</td>
+<td>稳态 ~2.5–3 亿</td>
+<td>交付中</td>
+<td>持续</td>
+<td>中（H1 下滑需扭转）</td>
+</tr>
+<tr>
+<td>网络空间地图</td>
+<td>2025 0.51 亿，细分龙头</td>
+<td>~0.6 亿</td>
+<td>稳增</td>
+<td>持续</td>
+<td>中</td>
+</tr>
+<tr>
+<td>卫星互联网安全</td>
+<td>2025 0.15 亿 → 新曲线</td>
+<td>目标 0.5–1 亿</td>
+<td>产品化落地</td>
+<td>2027–2029</td>
+<td>中-低</td>
+</tr>
+<tr>
+<td>RayHLink 认证+星网方案</td>
+<td>获商密认证、方案完善</td>
+<td>早期订单</td>
+<td>拓展中</td>
+<td>2027–2029</td>
+<td>低-中</td>
+</tr>
+<tr>
+<td>AIInside 降本增效</td>
+<td>研发效率提升、费用优化</td>
+<td>降费</td>
+<td>进行中</td>
+<td>2026–2027</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2026 全年测算</strong>：H1 0.89 亿（−16%），H2 若基本盘恢复 → 全年 <strong>~1.9–2.1 亿、仍亏损（费用率高）</strong>，归母约 −0.6 亿。</p>
+<h4>第三步进阶：份额变量与主业迁移空间（三层法）</h4>
+<ul>
+<li><strong>层1 现有业务</strong>：①供给侧——轻资产，产能随人效弹性；②需求侧——客户 3000+，认证周期中；③技术代际——网络空间地图领先、卫星互联网安全先发；④成本曲线——规模摊薄费用；⑤份额加速度——卫星互联网安全处 0→1。三档：保守（基本盘守成）、中性（基本盘恢复+卫星线起量）、乐观（卫星线抢份额）。验证点：季度营收、订单公告。</li>
+<li><strong>层2 扩展业务（主业迁移·新易盛范式）</strong>：能力可迁移（安全平台复用至卫星/低空）；新 TAM：卫星互联网/低空安全远大于传统网安；卡位先发；认证门槛高。信号验证：RayHLink 获认证、星网方案完善——<strong>部分过验证点，收入占比&lt;5%，作中期期权不计入中性</strong>。</li>
+<li><strong>层3 证伪信号</strong>：营收持续下滑（H1 −16% 若延续）、卫星互联网安全订单落空、费用率居高不下。命中则下修。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推 + 正常化净利润法）</h2>
+<blockquote>
+<p><strong>亏损股特别处理</strong>：无正净利可锚，用"正常化净利润法"——估稳态营收×正常化净利率×远期 PE。先回答亏损三问。</p>
+</blockquote>
+<p><strong>总股本：1.025 亿股</strong>｜ 净资产约 <strong>8.9 亿</strong>（H1）｜ 资产负债率仅 <strong>~16%</strong>（低负债）。</p>
+<h3>亏损股三问</h3>
+<ol>
+<li><strong>为什么亏</strong>：① 高研发投入（H1 研发占营收 45%，行业研发强度领跑）；② 销售网络建设+费用刚性；③ 2026H1 营收同比 −16% 致费用率飙至 130%；④ 应收账款计提。属"成长期战略性亏损+短期收入波动"，非主业恶化。</li>
+<li><strong>靠什么扭亏，触发时点</strong>：费用管控（AIInside 提效已使 H1 研发费 −6%）+ 营收恢复增长（卫星互联网安全订单落地）+ 规模摊薄费用率（从 130%→行业正常 80–90%）。<strong>触发时点：2027–2028 年</strong>，若营收恢复至 4–5 亿且费用率降至 85%，即可扭亏。</li>
+<li><strong>亏得起吗</strong>：账面现金 1.28 亿 + 低负债（16%）+ 募资净额 6.72 亿历史留存，年亏约 0.8 亿 → <strong>可支撑 3–4 年</strong>，倒在黎明前风险低。</li>
+</ol>
+<h3>正常化净利润测算（2029E·中性）</h3>
+<ul>
+<li><strong>稳态营收</strong>：基本盘 3.5 亿 + 网络空间地图 0.8 亿 + 卫星互联网安全 1.0 亿 ≈ <strong>5.3 亿</strong>（保守）</li>
+<li><strong>正常化净利率</strong>：毛利率 65% − 正常费用率 85%? 修正：网络安全软件正常净利率 15–20%，取保守 <strong>15%</strong></li>
+<li><strong>正常化净利润</strong>：5.3 亿 × 15% = <strong>0.80 亿</strong></li>
+</ul>
+<h3>基准（2026E，亏损期用 PS）</h3>
+<ul>
+<li>2026E 营收 ~2.0 亿 × 8x PS = 16 亿 → 15.6 元（亏损无 PE）</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>正常化失败、营收停滞</td>
+<td>—（PS 6x on 3 亿）</td>
+<td>—</td>
+<td>18 亿</td>
+<td><strong>17.6 元</strong></td>
+<td><strong>−27.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>费用管控+营收恢复至 5.3 亿</td>
+<td><strong>0.80 亿</strong></td>
+<td>35x</td>
+<td>28 亿</td>
+<td><strong>27.3 元</strong></td>
+<td><strong>+12.7%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>卫星互联网安全爆发+费用率降至 80%</td>
+<td>1.10 亿</td>
+<td>38x</td>
+<td>42 亿</td>
+<td><strong>41.0 元</strong></td>
+<td><strong>+69.2%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>亏损 −0.6 亿</td>
+<td>正常化 +0.80 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>—（亏损）</td>
+<td>35x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>16 亿（PS 8x）</td>
+<td>28 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>15.6 元</strong>（PS 法）</td>
+<td><strong>27.3 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 24.23 对应正常化 2029 市值 28 亿仅溢价 13%，中性空间有限（+12.7%）；若正常化证伪则回落至 17.6 元（−27%）。</p>
+<h4>第四步进阶：重资产/周期股估值校正</h4>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：轻资产，PB 2.80x（净资产 8.9 亿为正），<strong>非破净，无退市风险</strong>，不适用破净误判。</li>
+<li><strong>校正2 周期位置校正</strong>：非周期股，但处"亏损→正常化"经营周期底部，中性净利取正常化值（非 2026 亏损年化）。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率仅 16%，财务杠杆低；下行主要来自"营收持续下滑+费用失控"导致亏损延续、PS 压缩至 6x（悲观 −27%），未转负，但回撤显著。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>合理偏高</strong>。现价 24.23 已部分定价正常化预期（中性仅 +12.7%），且当前仍实亏、营收下滑。</p>
+<p><strong>安全边际</strong>：中性远期 27.3 元 → +12.7%；悲观 17.6 元 → −27.4%（正常化证伪）；乐观 41.0 元 → +69.2%（需卫星线爆发）。下行保护：低负债、现金充裕、净资产为正。</p>
+<p><strong>介入条件</strong>：① <strong>低于 17 元（悲观情景价）具备高安全边际</strong>；② 加仓信号：单季营收恢复正增长、费用率降至 100% 以下、卫星互联网安全大额订单公告、单季扣非转正；③ 现价仅适合小仓博弈反转。</p>
+<p><strong>最大风险</strong>：① 营收持续下滑（H1 −16% 若延续，正常化逻辑崩塌）；② 高费用率（130%）短期难摊薄；③ 卫星互联网安全新曲线订单落地不及预期；④ net income 连续亏损致估值锚缺失、波动放大。</p>
+<p><strong>结论：暂不介入</strong>（中性空间仅 +12.7% 且当前仍实亏、营收下滑，空间有限+不确定性大；亏损非回避理由，但安全边际不足，待扭亏信号）。</p>
+<blockquote>
+<p>上调至纳入观察/重点关注条件：连续两季营收正增长 + 单季扣非转正 + 费用率降至 100% 以下，证明正常化路径兑现。</p>
+</blockquote>
+<h4>第五步进阶：上行想象力情景（四类）</h4>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：网络安全出清期，公司细分龙头份额提升——已计入中性。</li>
+<li><strong>类型B 政策反转期权</strong>：卫星互联网/低空安全获国家级专项订单，需求爆发——机会情景（+69.2% 乐观），验证点：星网/低空安全大单公告。</li>
+<li><strong>类型C 市场错杀修复</strong>：若因亏损+营收下滑情绪致股价跌至 17 元以下（PS&lt;6x），修复弹性大——验证点：板块企稳+单季盈利证伪恐慌。</li>
+<li><strong>类型D 技术突破/代际跃迁期权</strong>：卫星互联网安全从 0→1 量产（RayHLink+星网方案），若获客户定点+量产成本优于旧路线，打开全新曲线——硬验证点（客户定点/大单）未全满足，作机会情景。</li>
+</ul>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>24.23 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>15.6 元</strong>（PS 法，区间 14–17）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−35.6%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>27.3 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+12.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 17.6 元（−27.4%）～ 乐观 41.0 元（+69.2%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>网安细分龙头（网络空间地图+卫星互联网安全先发），仍实亏但净资产为正、正常化净利0.8亿期权，待扭亏验证</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（17 元以下高安全边际，等营收恢复+单季扣非转正信号）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年报（2026-08-29 披露）、2025 年年报、公司"提质增效重回报"半年度评估报告、国泰海通持续督导跟踪报告、腾讯行情（2026-09-21 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
