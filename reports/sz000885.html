@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>城发环境（sz000885）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>城发环境（sz000885）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-26 ｜ 现价 <strong>11.63 元</strong> ｜ 总市值 <strong>74.67 亿</strong> ｜ PE(TTM) <strong>6.13x</strong> ｜ PB <strong>0.76x</strong> ｜ 总股本 <strong>约 6.42 亿股</strong><br />
+行业：环保（固废/环卫/水处理）+ 高速公路运营 ｜ 实控人：河南投资集团（河南省国资）<br />
+注：当前 PB 0.76 破净，按第四步进阶三道闸处理资产质量折扣（见第四步）。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：河南省国资旗下的区域环境综合服务商与收费公路运营商，以生活垃圾焚烧发电为核心，协同环卫、水处理、高速公路运营，并正切入供热、绿电直连、再生资源。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 32.70 亿，同比 +1.67%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>同比</th>
+<th>毛利率/特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固体废弃物处理</td>
+<td>15.92 亿</td>
+<td>48.69%</td>
+<td>+9.16%</td>
+<td>核心现金牛，发电+处理费</td>
+</tr>
+<tr>
+<td>高速公路业务</td>
+<td>6.11 亿</td>
+<td>18.68%</td>
+<td>通行费 −6.57%</td>
+<td>特许经营权，折旧高</td>
+</tr>
+<tr>
+<td>环境卫生服务</td>
+<td>5.53 亿</td>
+<td>16.92%</td>
+<td>+34.94%</td>
+<td>省外拓展提速，毛利偏低</td>
+</tr>
+<tr>
+<td>水处理业务</td>
+<td>2.87 亿</td>
+<td>8.78%</td>
+<td>+23.66%</td>
+<td>供排水一体化复制</td>
+</tr>
+<tr>
+<td>其他（设备/技术/回收）</td>
+<td>2.25 亿</td>
+<td>6.89%</td>
+<td>—</td>
+<td>含"嘚嗒回收"平台</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：生活垃圾焚烧发电（投资-建设-运营）、餐厨/污泥/建筑垃圾协同处置、静脉产业园、环卫一体化、城镇供水/污水、高速公路通行费。<br />
+<strong>主要客户/下游</strong>：河南省内各地住建/城管（政府付费，特许经营）、车主（通行费）；省外环卫/水务客户。<br />
+<strong>境内外收入占比（2026H1）</strong>：河南省内 24.72 亿（75.60%），省外 7.98 亿（24.40%，环卫与水务跨省复制中）。海外处"阶段性成果"早期，体量小。<br />
+<strong>经营数据（2026H1）</strong>：发电量超 19 亿千瓦时（+6.69%），垃圾进厂 644.53 万吨（+6.43%），供热改造落地 5 个、外供蒸汽 +19.05%。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月，国家级+地方，已在执行）</h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>与公司的关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《"十四五"城镇生活垃圾分类和处理设施发展规划》收官年</td>
+<td>发改委、住建部</td>
+<td>国家级</td>
+<td>焚烧能力目标 80 万吨/日+，存量项目精益运营、协同处置导向</td>
+</tr>
+<tr>
+<td>设备更新/绿色低碳改造（2026 推进）</td>
+<td>发改委、财政部</td>
+<td>国家级</td>
+<td>水厂、垃圾电站设备更新、绿电直连试点支持</td>
+</tr>
+<tr>
+<td>可再生能源绿证全覆盖 + 非水可再生能源消纳</td>
+<td>发改委、能源局</td>
+<td>国家级</td>
+<td>垃圾发电绿证申领、碳资产开发，提升附加收益</td>
+</tr>
+<tr>
+<td>河南"无废城市"/静脉产业园政策</td>
+<td>河南省政府</td>
+<td>省级</td>
+<td>城发为省内固废龙头，受托资产整合储备产能</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：全国生活垃圾焚烧能力已超"十四五"目标，行业由"增量建设"转入"存量运营+协同处置"阶段；2026H1 公司垃圾进厂量、发电量双位数增长，印证存量产能利用率提升。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>垃圾焚烧行业阶段</td>
+<td>新增产能放缓，运营期项目占主导，单位盈利靠"处理费+发电+协同"</td>
+</tr>
+<tr>
+<td>公司 2026H1 处理量/发电量</td>
+<td>垃圾进厂 644.53 万吨（+6.43%）、发电量 19 亿 kWh（+6.69%）</td>
+</tr>
+<tr>
+<td>供热/供蒸汽</td>
+<td>外供蒸汽 +19.05%，5 个供热改造落地，绿电直连推进</td>
+</tr>
+<tr>
+<td>高速公路</td>
+<td>通行费收入 −6.57%（路网分流+经济承压），255.36 km 运营里程</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>河南区域固废国资龙头，份额领先；环卫/水务处跨省扩张早期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度趋势（2026Q2）</strong>：营收 16.44 亿（环比 +1.1%），归母 2.56 亿（环比 −18.36%），主因高速承压+信用减值超预期（华泰点评）。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：燃煤/天然气（发电燃料）、设备（CAPEX）、药剂。发电端受"国补退坡"影响——存量项目国补到期后电价回落，靠"绿证+供热+协同处置"补缺口。<br />
+<strong>下游</strong>：地方政府（处理费，特许经营，回款有账期）、车主（通行费，政府定价）。<br />
+<strong>议价权</strong>：固废<strong>中等偏强</strong>（特许经营+调价机制，处理费随 CPI/煤价联动转嫁系数约 0.6–0.7）；高速公路<strong>弱</strong>（通行费政府定价，成本无法转嫁，转嫁系数≈0）。</p>
+<h3>第二步进阶·原料成本→毛利结构（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：固废发电燃料（煤/气）变动 ×（1−0.65）≈ 实际毛利承压；处理费有联动调价，转嫁系数 ~0.65。高速养护/财务成本完全自扛（转嫁 0）。</li>
+<li><strong>因子2 毛利结构再平衡</strong>（分业务线）：固废毛利率高（发电+处理费，约 40%+）、环卫毛利偏低（约 15–20%，对人力成本敏感）、高速毛利率约 40% 但折旧重、水务约 25–30%。<strong>人力成本是环卫主线敏感变量</strong>（无法转嫁），协同处置/供热提升固废线毛利权重→结构再平衡向上。</li>
+<li><strong>因子3 库存与采购节奏</strong>：固废"即收即处理"无产成品库存；设备 CAPEX 集中招标，低价期采购利好远期折旧基数；无囤货损益干扰。</li>
+<li><strong>因子4 政策/市场锚点</strong>：①<strong>国补退坡</strong>（运营期电价下行，收入驱动变量，情景：退坡致度电收入 −0.05~0.1 元→验证点=各省国补清单到期公告）；②<strong>绿证/绿电直连</strong>（托底收益，上行验证点=绿证签发量）；③<strong>能耗双控</strong>（利好供热/光伏附加收益）。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量/节奏</th>
+<th>收入确认窗口</th>
+<th>利润贡献(年化)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>协同处置扩容</td>
+<td>餐厨/污泥/建筑垃圾协同，静脉产业园</td>
+<td>存量项目精益，2026H1 固废 +9.16%</td>
+<td>持续</td>
+<td>+0.3~0.5 亿</td>
+</tr>
+<tr>
+<td>供热改造</td>
+<td>漯河等 5 个供热改造，外供蒸汽 +19.05%</td>
+<td>已落地，爬坡中</td>
+<td>2026H2–2028</td>
+<td>+0.2~0.3 亿</td>
+</tr>
+<tr>
+<td>污水新增产能</td>
+<td>长垣二污/睢阳/内黄/巩义 4 项目，新增 16.24 万吨/日</td>
+<td>在建/筹备</td>
+<td>2027–2029</td>
+<td>+0.3~0.4 亿</td>
+</tr>
+<tr>
+<td>绿电直连/光伏</td>
+<td>园区零碳转型，光伏创效</td>
+<td>早期</td>
+<td>2028–2030（期权）</td>
+<td>+0.2~0.3 亿</td>
+</tr>
+<tr>
+<td>环卫跨省</td>
+<td>省外拓展，H1 营收 +34.94%</td>
+<td>持续拿单</td>
+<td>2026–2029</td>
+<td>+0.2~0.3 亿</td>
+</tr>
+<tr>
+<td>再生资源"嘚嗒回收"</td>
+<td>县域三级回收体系</td>
+<td>铺点期</td>
+<td>2028+（期权）</td>
+<td>不确定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计自下而上中性增量</strong>：至 2029 年较 2025 基准新增年化净利约 <strong>1.5~2.0 亿</strong>（协同+供热+污水+环卫），均由已披露项目/产能支撑，非增速外推。</p>
+<h3>第三步进阶·份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务（市场容量×份额变量）</strong>：河南固废份额领先（供给侧锚：省内产能利用率提升）；环卫省外份额低、处加速渗透（S 曲线早期，份额二阶导数正）。验证点：逐季省外环卫营收占比、污水新项目投产。</li>
+<li><strong>层2 扩展业务（主业迁移·新易盛范式）</strong>：能力由"固废运营"迁移至"供热/绿电/再生资源"——技术同源（园区能源管理）、新 TAM（零碳园区）弹性大；客户认证门槛低（政府端延续）。<strong>未过验证点仅作中期期权</strong>（绿电直连/再生资源营收占比仍小）。</li>
+<li><strong>层3 证伪信号</strong>：国补退坡致电价降幅超预期、信用减值扩大、省外环卫拿单停滞、污水项目延期。命中则下调增量。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<p><strong>总股本：约 6.42 亿股。</strong> 方法：分"固废运营/高速/环卫水务"三线与增量项目测算，剔除一次性因素（无大额一次性）。</p>
+<h3>分业务测算（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据（产能/项目驱动）</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固废运营</td>
+<td>存量+协同处置+供热，处理量随垃圾进厂量+6%趋势提升、单价稳</td>
+<td>~36 亿</td>
+<td>~22%</td>
+<td>7.9 亿</td>
+</tr>
+<tr>
+<td>高速公路</td>
+<td>通行费持平略降（−2%/年），255km 里程</td>
+<td>~13 亿</td>
+<td>~35%</td>
+<td>4.5 亿</td>
+</tr>
+<tr>
+<td>环卫+水务</td>
+<td>省外拓展+4 污水项目，H1 +34.9%/+23.7% 延续</td>
+<td>~14 亿</td>
+<td>~8%</td>
+<td>1.1 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td>~63 亿</td>
+<td>~17.5%</td>
+<td><strong>约 13.0 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）与三情景</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>11.5 亿（H1 5.71+ H2 高速承压）</td>
+<td>13.0 亿</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>6.5~7.0x</td>
+<td>8.5x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>75~80 亿</td>
+<td>110.5 亿</td>
+</tr>
+<tr>
+<td>对应股价</td>
+<td>11.7~12.5 元</td>
+<td>17.20 元</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悲观</td>
+<td>高速续降+减值扩大+国补退坡超预期</td>
+<td>10.5 亿</td>
+<td>7x</td>
+<td>73.5 亿</td>
+<td>11.40 元</td>
+<td>−1.7%</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>协同/供热/污水增量兑现，估值修复至 8.5x</td>
+<td>13.0 亿</td>
+<td>8.5x</td>
+<td>110.5 亿</td>
+<td>17.20 元</td>
+<td>+47.9%</td>
+</tr>
+<tr>
+<td>乐观</td>
+<td>绿电/再生资源期权兑现+破净修复至 10.5x</td>
+<td>15.0 亿</td>
+<td>10.5x</td>
+<td>157.5 亿</td>
+<td>24.50 元</td>
+<td>+110.7%</td>
+</tr>
+</tbody>
+</table>
+<h3>第四步进阶·重资产/周期股估值校正（三道闸）</h3>
+<ul>
+<li><strong>校正1 资产质量折扣（破净原因说明）</strong>：PB 0.76 破净源于①<strong>重资产属性</strong>——垃圾电站/路产专用性强、清算价值&lt;&lt;账面，重置成本不兜底；②<strong>应收账款减值</strong>——政府付费回款慢，2026H1 信用减值超预期（华泰提示）；③<strong>高速承压</strong>拖累整体 ROE。但<strong>特许经营权现金流稳定</strong>（2026H1 经营现金流 8.93 亿 &gt; 归母 5.71 亿），非"金融资产未重估型真破净"，故<strong>破净部分公允，不单凭 PB&lt;1 推大空间</strong>，中性仅给 8.5x（对应 PB~0.95，仍&lt;1）。</li>
+<li><strong>校正2 周期位置校正</strong>：环保运营非强周期，处"存量精益+协同扩容"平稳期；高速处下行承压期。中性净利取多年中枢（非单年好/坏年），当前非周期顶部。</li>
+<li><strong>校正3 杠杆下行情景</strong>：重资产运营资产负债率约 55–60%（行业属性），有息负债适中；经营现金流稳健覆盖利息。利率上行/需求下行负面情景下净利降至 10.5 亿（悲观），<strong>不转负</strong>，故可不降级结论，但空间上限受限。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>低估（破净）</strong>。现价 11.63 对应 2026E PE 6.5x、PB 0.76x，市场给予重资产环保低估值+减值折价。<br />
+<strong>安全边际</strong>：中性远期 17.20 元 → 空间 <strong>+47.9%</strong>（接近但未达重点关注 50% 门槛）；悲观 11.40 元仅 −1.7%，下行有限；乐观 24.50 元 +110.7%（含绿电期权）。破净+稳健现金流构成底线。<br />
+<strong>介入条件</strong>：① 现价已具配置价值，<strong>&lt;10.5 元（PB&lt;0.7）</strong> 加仓更安全；② 加仓信号=信用减值环比收窄、绿电直连/再生资源营收占比跳升、省外环卫持续拿单。<br />
+<strong>最大风险</strong>：① 应收账款（政府付费）减值扩大；② 高速公路车流持续承压；③ 国补退坡致度电收入下滑；④ 破净估值惯性（市场长期不给重资产环保高 PB）。<br />
+<strong>结论：纳入观察</strong>（接近重点关注阈值，破净部分公允令空间未稳超 50%）。</p>
+<h3>第五步进阶·上行想象力情景（四类，对称于下行）</h3>
+<ul>
+<li><strong>A 行业调整剩者红利</strong>：环保出清+国资整合，区域龙头份额与定价权提升（验证点=省内受托资产整合公告、份额数据）。</li>
+<li><strong>B 政策反转期权</strong>：国补清单到期后的"绿证+绿电直连"托底政策加码（验证点=绿证签发量、零碳园区试点批复）。</li>
+<li><strong>C 市场错杀修复</strong>：破净（PB0.76）重估至 PB 0.95~1.1（验证点=PB 分位回升、机构持仓回升）。</li>
+<li><strong>D 技术突破/代际跃迁期权</strong>：绿电直连+光伏+再生资源从 0 到 1 投产（政策=零碳园区；趋势=园区能源管理；落地=中试/量产成本优于外购电）。硬验证点=绿电直连项目度电成本优于旧路线+客户（园区）定点。<strong>未过验证点仅作机会情景，不计入中性</strong>。<blockquote>
+<p><strong>上调重点关注的条件</strong>：信用减值连续两季收窄 + 绿电/再生资源营收占比跳升 + 估值修复至 PB&gt;1（对应股价&gt;15 元），则中性空间破 50%，上调重点关注。</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>11.63 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>12.2 元</strong>（区间 11.6–12.8）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>+4.9%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>17.20 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>+47.9%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 11.40 元（−1.7%）～ 乐观 24.50 元（+110.7%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>河南固废运营龙头破净(PB0.76)，现金流稳健+供热/污水/绿电增量，估值修复空间可观</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（PB&lt;0.7 即&lt;10.5 元再加仓，跟踪减值收窄与绿电兑现）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年报（2026-08-21 披露）、中证报/大河财立方中报解读、华泰证券 000885 中报点评、发改委/住建部"十四五"垃圾处理规划、腾讯行情接口（2026-09-24 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
