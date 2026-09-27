@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>七匹狼（002029）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>七匹狼（002029）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-27 ｜ 现价 <strong>9.26 元</strong>（腾讯行情 2026-09-24 收盘；参考价 9.10，以接口实测为准） ｜ 总市值 <strong>61.6 亿</strong> ｜ PE(TTM) <strong>约 44x（标记"盈利"）</strong> ｜ PB <strong>0.98x（破净）</strong> ｜ 总股本 <strong>约 7.05 亿股</strong>（705,023,537 股）<br />
+行业：纺织服饰 / 男装（非运动服装） ｜ 板块：深市主板<br />
+<strong>亏损核实结论</strong>：<code>next_batch</code> 标记七匹狼为"盈利"（PE 44x），但<strong>2026H1 归母净利润 −2730 万元（由盈转亏）</strong>——亏损主因持有交易性金融资产（腾讯等股票）公允价值变动 <strong>−1.75 亿元</strong>拖累；<strong>扣非归母净利润 +1.43 亿元（+392.14%）</strong>，主业实际盈利且改善。属"投资波动致归母亏、主业不亏"，不做亏损股三问，但 PB&lt;1 破净须做资产质量折扣闸（见第四步）。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>："七匹狼"品牌男装及针纺产品的设计、制造与销售商，定位"夹克专家"，并运营国际轻奢品牌 Karl Lagerfeld，同时持有一定规模的金融/股权投资组合（投资业务是业绩重要扰动源）。</p>
+<p><strong>各业务板块营收占比（2026H1 营收 14.15 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务/产品</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>服装主业（合计）</td>
+<td>约 13.5 亿</td>
+<td>95.30%</td>
+<td>约 50%+</td>
+<td>微增</td>
+</tr>
+<tr>
+<td>外套类（夹克）</td>
+<td>3.14 亿</td>
+<td>22.2%</td>
+<td>59.18%</td>
+<td>+28.83%</td>
+</tr>
+<tr>
+<td>裤子类</td>
+<td>2.73 亿</td>
+<td>19.3%</td>
+<td>—</td>
+<td>+14.29%</td>
+</tr>
+<tr>
+<td>T 恤类</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>-8.05%</td>
+</tr>
+<tr>
+<td>衬衫类</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>-4.39%</td>
+</tr>
+<tr>
+<td>其他（投资/服务）</td>
+<td>约 0.65 亿</td>
+<td>4.70%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：夹克、衬衫、西服、裤装、针织衫、内衣/内裤/袜子及其他针纺产品；国际轻奢品牌 Karl Lagerfeld 产品。</p>
+<p><strong>主要客户/下游</strong>：国内男士服装消费者；渠道为直营+加盟+线上全渠道。2026H1 直营 5.69 亿（+22.89%）、加盟 2.30 亿（-14.61%）、线上 4.75 亿（占比 &gt;30%，-2.98%）。地区：华北 +54.41%、华南 +28.51%、华东（传统优势区）-7.93%。</p>
+<p><strong>境内外收入占比</strong>：以境内为主；门店新开 43 家、关闭 127 家（渠道优化调整）。</p>
+<p><strong>股东背景</strong>：民营（福建晋江），实控人周氏家族；公司长期保有现金+金融资产+长期股权投资组合，投资业务历史曾贡献收益红利，2026H1 转为波动拖累。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/方向</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>相关性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>消费品以旧换新/消费提振（汽车家电为主，服饰间接受益）</td>
+<td>发改委、财政部</td>
+<td>国家级</td>
+<td>间接，服饰非核心受益</td>
+</tr>
+<tr>
+<td>纺织服装行业稳增长相关指导</td>
+<td>工信部</td>
+<td>部委级</td>
+<td>温和利好</td>
+</tr>
+<tr>
+<td>企业所得税优惠/小微扶持</td>
+<td>财税部门</td>
+<td>常规</td>
+<td>有限</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>服装家纺非政策强驱动行业，缺少类似海特/达安的专项政策红利；行业景气更多由居民消费意愿与渠道库存周期决定。</p>
+</blockquote>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 公司量价</td>
+<td>营收 14.15 亿（+2.93%）；归母 −2730 万；扣非 +1.43 亿（+392%）；毛利率 50.93%（-1.33pct）</td>
+</tr>
+<tr>
+<td>男装行业（闽派对标）</td>
+<td>利郎 2026H1 营收 20.65 亿（+19.5%）、九牧王营收 15.55 亿（+3.92% 扣非 +44%），七匹狼复苏弱于行业头部</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>男装集中度低、分散；七匹狼品牌份额承压，夹克品类有差异化优势（外套 +28.83%）</td>
+</tr>
+<tr>
+<td>渠道趋势</td>
+<td>直营占比提升（掌控力增强），加盟收缩，线上占比 &gt;30%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度趋势（2026Q2）</strong>：营收 5.29 亿（-0.21%），归母 −7713 万（投资浮亏扩大），扣非 −1235 万（主业亦承压），毛利率 52.86%。</p>
+<h3>（3）产业链传导</h3>
+<ul>
+<li><strong>上游</strong>：面料、棉花、化纤、辅料。成本随棉价/油价波动；品牌方有一定调价权但需求弱时难以完全转嫁。</li>
+<li><strong>下游</strong>：终端消费者，需求受居民消费信心、天气、时尚周期影响；渠道库存高则被迫打折去化。</li>
+<li><strong>议价权</strong>：中游品牌商对上游中等（可谈判），对下游消费者弱（供过于求、价格竞争）。</li>
+</ul>
+<h3>第二步进阶：原料成本 → 毛利结构四因子</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：面料/棉价上涨时，品牌可通过产品提价部分转嫁（传导率约 0.3–0.5），但男装需求弹性大、提价空间有限，成本多自我消化。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：分产品看，外套/夹克毛利率 59.18% 最高且高增长（+28.83%），是结构亮点；裤装稳健；T 恤/衬衫下滑。综合毛利率 50.93% 维持高位但同比下降，反映非夹克品类与折扣压力。禁止用单一综合毛利率代表结构。</li>
+<li><strong>因子3 库存与采购节奏</strong>：服装季末/换季库存高，2026H1 计提资产减值 4406 万（减少归母 3175 万），存在库存损失；需区分当季正价毛利与打折清库毛利。</li>
+<li><strong>因子4 政策/市场锚点</strong>：①市场层——棉花/化纤价格、居民消费信心、电商流量成本；②政策层——消费提振政策（间接）、税收优惠。情景：棉价下行→毛利扩张（验证点：棉花期货价）；证伪：需求持续疲软致折扣加深、毛利破 45%。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"夹克专家"战略</td>
+<td>聚焦外套/夹克高毛利品类</td>
+<td>2026H1 外套 +28.83%、毛利 59.18%</td>
+<td>持续推进</td>
+<td>2026–2028</td>
+</tr>
+<tr>
+<td>直营渠道提质</td>
+<td>直营收入 +22.89%，增强终端掌控</td>
+<td>5.69 亿</td>
+<td>扩张中</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>Karl Lagerfeld 轻奢运营</td>
+<td>国际轻奢品牌，差异化定位</td>
+<td>未单拆</td>
+<td>培育期</td>
+<td>中期</td>
+</tr>
+<tr>
+<td>线上渠道</td>
+<td>收入占比 &gt;30%</td>
+<td>4.75 亿</td>
+<td>稳健</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>华北/华南区域拓展</td>
+<td>华北 +54.41%、华南 +28.51%</td>
+<td>区域高增</td>
+<td>拓展中</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>投资业务（金融资产/股权）</td>
+<td>腾讯等股票+长期股权，波动大</td>
+<td>2026H1 浮亏 −1.75 亿</td>
+<td>扰动项，非增量</td>
+<td>不确定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>增量小结（自下而上）</strong>：最确定增量=夹克品类聚焦+直营提质带来的主业毛利率与利润修复（扣非已 +392%）；区域拓展（华北/华南）提供营收增量。投资业务为利润扰动而非确定性增量。</p>
+<h3>第三步进阶：份额变量与主业迁移空间三层法</h3>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong></li>
+<li>供给侧：男装行业分散，七匹狼产能/渠道充裕，无供给约束。</li>
+<li>客户份额：品牌男装份额承压（复苏弱于利郎/九牧王），但夹克细分品类份额领先。</li>
+<li>技术代际差：服装无强技术代际，靠设计与品牌。</li>
+<li>成本曲线：规模+供应链成熟，成本曲线平稳。</li>
+<li>份额加速度：整体份额饱和微降，夹克品类逆势提升（S 曲线分化）。<br />
+  → 三档：保守（守基本盘）、中性（夹克份额小幅提升）、乐观（品牌焕新抢份额）。验证点：下季度外套营收、直营同店。</li>
+<li><strong>层2 扩展业务：主业迁移空间（新易盛范式）</strong>：从"大众男装"向"轻奢 Karl Lagerfeld + 高毛利夹克"迁移，属品牌定位上移；新 TAM（轻奢/高端）利润池更大但竞争更激烈；切入卡位中（已运营 KL）。信号验证：KL 营收占比跳升、夹克持续高增。未过验证点仅作中期期权。</li>
+<li><strong>层3 风险折扣（证伪信号）</strong>：主业营收转负、毛利率破 45%、投资再大额浮亏、KL 培育失败。命中则下调增量。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法</strong>：七匹狼是"主业盈利 + 投资扰动 + 破净"复合情形。估值以<strong>主业扣非盈利</strong>与<strong>质量折扣后净资产（NAV）</strong>双锚定，不依赖 PB&lt;1 单一信号外推大空间。</p>
+</blockquote>
+<p><strong>总股本：约 7.05 亿股</strong>（705,023,537 股）。<strong>净资产约 62.9 亿</strong>（总市值 61.6 亿 / PB 0.98）。</p>
+<h3>⚠️ 资产质量折扣闸（破净原因必须说明）</h3>
+<p>七匹狼 PB 0.98&lt;1（破净），<strong>禁止单凭"PB&lt;1"推导大空间</strong>，须回答"为什么破净"：</p>
+<ol>
+<li><strong>主业增长乏力</strong>：2026H1 营收仅 +2.93%，复苏弱于利郎（+19.5%）、九牧王（扣非 +44%），市场质疑内生增长持续性 → 净资产盈利能力弱（ROE 低），破净是公允偏谨慎定价。</li>
+<li><strong>投资资产质量存疑</strong>：交易性金融资产按市值计量，2026H1 因腾讯等股价下跌计提公允价值变动 <strong>−1.75 亿</strong>，直接吞噬归母；该类资产波动大、非持续收益，市场对其"安全垫"打折。长期股权投资（成本/权益法）未反映公允价值，但也不构成明确低估缓冲。</li>
+<li><strong>隐含资产瑕疵</strong>：账面含存货（服装，有跌价风险，本期计提减值 4406 万）、应收、长期资产，未充分出清 → 净资产虚高成分存在。</li>
+<li><strong>非"金融资产未重估型真安全边际"</strong>：与规则所述"持股上市公司市值≈总市值"的真破净安全垫不同，七匹狼的金融资产的浮亏<strong>已实时计入利润</strong>，并非隐藏价值；其破净更接近"盈利能力弱+资产质量折价"，故不构成无风险低估。</li>
+</ol>
+<p>→ 结论：破净是结构性公允定价，<strong>不支撑"大空间"推断</strong>；中性估值须对净资产打质量折扣（约 0.85–0.92x）。</p>
+<h3>分业务测算（2029E·中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>服装主业（扣非）</td>
+<td>2026H1 扣非年化 ~2.5 亿；夹克战略+直营提质，2029 营收 ~30 亿</td>
+<td>30 亿</td>
+<td>10%</td>
+<td><strong>3.0 亿</strong></td>
+</tr>
+<tr>
+<td>投资业务</td>
+<td>正常化假设持平（不计入增益，仅作缓冲）</td>
+<td>—</td>
+<td>—</td>
+<td><strong>0（中性不计）</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>3.0 亿（扣非口径）</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>earnings-based 估值：3.0 亿 × 13x（男装低增长溢价有限）= 39 亿 → 5.5 元；asset-based（折扣后 NAV）：62.9 亿 × 0.88 = 55.4 亿 → 7.9 元。双锚取折中偏资产端。</p>
+</blockquote>
+<h3>基准（2026 年底）与远期（2029E·中性）对照表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026 年底）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主业扣非净利</td>
+<td>2.50 亿</td>
+<td>3.00 亿</td>
+</tr>
+<tr>
+<td>估值锚</td>
+<td>折扣后 NAV 0.90x = 56.6 亿</td>
+<td>折扣后 NAV 0.88x = 55.4 亿（主业盈利支撑有限上修）</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>约 57 亿</td>
+<td>约 56 亿</td>
+</tr>
+<tr>
+<td>对应股价</td>
+<td><strong>8.1 元</strong></td>
+<td><strong>7.9 元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>估值基准</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>投资继续浮亏+主业下滑，NAV 折扣 0.75x</td>
+<td>0.75x NAV</td>
+<td>47 亿</td>
+<td><strong>6.7 元</strong></td>
+<td><strong>−27.6%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>主业稳增、投资正常化，NAV 折扣 0.88x</td>
+<td>0.88x NAV</td>
+<td>56 亿</td>
+<td><strong>7.9 元</strong></td>
+<td><strong>−14.7%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>投资资产（腾讯等）回升+夹克/KL 显效，NAV 1.05x</td>
+<td>1.05x NAV</td>
+<td>66 亿</td>
+<td><strong>9.4 元</strong></td>
+<td><strong>+1.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 9.26 元 ≈ 1.0x NAV（62.9 亿 cap），已高于质量折扣后合理值（7.9–8.1 元），且主业扣非仅支撑 5.5 元 earnings-based 估值，<strong>当前价格缺乏基本面安全边际</strong>。</p>
+<h3>第四步进阶：重资产/周期股估值校正三道闸</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：已详述（破净原因=主业弱+投资波动+资产瑕疵），折扣 0.85–0.92x，非真安全边际。</li>
+<li><strong>校正2 周期位置校正</strong>：服装消费处弱复苏周期（非顶部），中性按温和增长，未用历史高景气外推。</li>
+<li><strong>校正3 杠杆下行情景</strong>：公司负债率低（现金/资产充裕），无高负债危机；但投资资产价格下行（如腾讯等持续下跌）可使归母再亏、NAV 进一步下修，悲观情景 −27.6%，不构成"大空间"。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵（相对基本面）</strong>。现价 9.26 已高于质量折扣后 NAV 锚（7.9–8.1 元），主业扣非盈利仅支撑 5.5 元，破净未提供真实安全边际。</p>
+<p><strong>安全边际</strong>：中性远期 −14.7%（不满足纳入观察 &gt;0 门槛）；悲观 6.7 元（−27.6%）；乐观 9.4 元（+1.5%，几近持平）。低负债提供尾部保护，但主业成长天花板低。</p>
+<p><strong>介入条件</strong>：<br />
+1. 回落至 <strong>7.5 元以下</strong>（对应折扣后 NAV &lt;0.85x、主业扣非 PE &lt;11x）方具安全边际。<br />
+2. 加仓信号：① 投资浮亏逆转（腾讯等回升）且不再大额扰动归母；② 夹克/KL 持续高增、扣非净利率稳于 10%+；③ 营收增速重回中双位数。<br />
+3. 观察指标：逐季扣非净利、金融资产公允价值变动、存货跌价计提、直营同店。</p>
+<p><strong>最大风险</strong>：① 投资资产（腾讯等股票）继续下跌致归母再亏；② 男装需求疲软、折扣加深侵蚀毛利；③ 存货/应收减值扩大；④ 品牌老化、份额流失。</p>
+<p><strong>结论：暂不介入</strong>（中性远期 −14.7%，破净非真低估、主业成长有限，当前价格已反映资产面值；投资回升方可能修复至持平）。</p>
+<h3>第五步进阶：上行想象力情景（四类，仅进乐观/机会栏）</h3>
+<ul>
+<li><strong>类型A 行业调整剩者红利</strong>：男装出清后头部集中，七匹狼凭夹克差异化守份额——验证点：行业 CR5 提升、公司份额数据；证伪：份额流失。</li>
+<li><strong>类型B 政策反转期权</strong>：消费提振若扩围至服饰/个税减免，终端需求修复——重估弹性有限；验证点：消费刺激加码；不计入中性。</li>
+<li><strong>类型C 市场错杀修复</strong>：若股价因投资浮亏跌至 7 元以下，而扣非主业稳健（已 +392%），则修复弹性大；验证点：投资企稳、扣非连续高增。</li>
+<li><strong>类型D 技术突破/代际跃迁期权</strong>：不适用硬技术突破；对应"品牌焕新跃迁"——KL 轻奢放量或国潮品牌重塑成功，打开新曲线；验证点：KL 营收占比跳升、品牌年轻化数据。三者缺一则仅作机会情景。<blockquote>
+<p><strong>上调至重点关注的触发条件</strong>：投资资产企稳回升 + 主业扣非净利稳定 ≥3 亿且营收增速重回双位数，使 NAV 重估至 ≥1.1x（目标价 ≥10.5 元，空间 &gt;50%）。</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>9.26 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>8.1 元</strong>（区间 7.5–8.8）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−12.5%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>7.9 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−14.7%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 6.7 元（−27.6%）～ 乐观 9.4 元（+1.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>男装主业扣非改善但破净非真低估（投资浮亏+资产瑕疵），当前价高于质量折扣NAV</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（7.5元以下或投资企稳+主业加速后提升关注度）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-27 披露）、中国证券报/新浪财经/搜狐财经中报解读、泉州晚报闽派男装中报透视、腾讯行情接口（2026-09-24 收盘）。注：2026H1 归母亏系交易性金融资产公允价值变动 −1.75 亿所致，扣非净利 +1.43 亿。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
