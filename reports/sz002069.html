@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>獐子岛（002069）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>獐子岛（002069）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-28 ｜ 现价 <strong>3.67 元</strong>（腾讯 2026-09-24 收盘，归一化基准）｜ 总市值 <strong>约 26.1 亿</strong> ｜ PE(TTM) <strong>−306.25x（失真，见下）</strong> ｜ PB(LF) <strong>85.8x</strong> ｜ PS(TTM) <strong>约 1.99x</strong> ｜ 总股本 <strong>约 7.11 亿股</strong>（定增后约 8.8 亿股）<br />
+行业：海洋水产养殖 / 海珍品加工 ｜ 板块：深市主板 ｜ 实控人：大连市国资委（海发集团）<br />
+<strong>亏损核查结论</strong>：next_batch 的 TTM 列标注「亏损」，但经查 <strong>2026 半年报真实归母净利 +1287.14 万元（同比 +26.82%，已扭亏为盈）</strong>，TTM 负值系 2025 全年亏损拖累所致——属典型「TTM 误标」。本报告按<strong>盈利股</strong>处理（PE/PS 估值），但完整保留扭亏路径与净资产薄风险分析。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：獐子岛是大连国资控股的海洋食品企业，以海珍品种业、底播增养殖、海产品加工与品牌营销为主业，曾是「扇贝第一股」，目前处于国资入主后的「换骨转型、扭亏增效」阶段。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 7.31 亿元，同比 −5.31%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>同比</th>
+<th>毛利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海参</td>
+<td>1.06 亿</td>
+<td>14.47%</td>
+<td>+40.53%</td>
+<td>46.79%</td>
+</tr>
+<tr>
+<td>虾夷扇贝</td>
+<td>9521.57 万</td>
+<td>13.02%</td>
+<td>−34.57%</td>
+<td>22.01%</td>
+</tr>
+<tr>
+<td>海螺</td>
+<td>1255.75 万</td>
+<td>1.72%</td>
+<td>−3.00%</td>
+<td>−122.50%</td>
+</tr>
+<tr>
+<td>鲍鱼</td>
+<td>1057.08 万</td>
+<td>1.45%</td>
+<td>+318.98%</td>
+<td>27.62%</td>
+</tr>
+<tr>
+<td>海胆</td>
+<td>511.50 万</td>
+<td>0.70%</td>
+<td>−36.11%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>其他（贸易/加工）</td>
+<td>约 4.99 亿</td>
+<td>68.64%</td>
+<td>收缩</td>
+<td>偏低</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：海参、虾夷扇贝、鲍鱼、海胆、海螺等海珍品鲜活/加工品；海参加工品（即食、盐渍、拉缸盐）、水产预制菜。</p>
+<p><strong>主要客户/下游</strong>：商超、电商、餐饮供应链、批发流通渠道；水产加工出口；B 端食品企业与 C 端品牌消费者。</p>
+<p><strong>境内外收入占比</strong>：以境内为主，境外占比很小（海产品加工出口为辅）。</p>
+<p><strong>股东背景</strong>：2024 年 12 月大连市国资委整合市属海洋资源组建「大连獐子岛海洋发展集团（海发集团）」，注册资本 10 亿元，将上市公司纳入权属体系；2025 年 5 月公司披露向海发集团定增预案，拟以 3.09 元/股募资不超 5.22 亿元，全部用于偿还银行借款及补充流动资金（尚未完成）；2026 年 3 月与海发集团共设「大连海发生态渔业」（各出资 1 亿元），推进「陆海接力」产业协同。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>强利好，国家级海洋战略 + 地方国资重组</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《加快建设农业强国规划（2024—2035年）》海洋渔业章节</td>
+<td>中共中央、国务院</td>
+<td>国家级</td>
+<td>持续执行</td>
+</tr>
+<tr>
+<td>大连「疏近用远」近海养殖清退、生态养殖引导</td>
+<td>大连市海洋发展局</td>
+<td>地方级</td>
+<td>执行中，2026 年扩大</td>
+</tr>
+<tr>
+<td>大连海发集团组建（注册资本 10 亿）</td>
+<td>大连市国资委</td>
+<td>国资战略重组</td>
+<td>2024-12 成立，2025-2026 并表协同</td>
+</tr>
+<tr>
+<td>水产新品种审定：长牡蛎「海蛎 2 号」等获批</td>
+<td>农业农村部</td>
+<td>种业扶持</td>
+<td>2026 年落地</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化指标</strong>：2026 海洋合作发展论坛（9 月青岛）明确「种业创新、拓海扩容、数智赋能」三主线；福建霞浦/罗源南方海参 2026 春产量同比 +12%、鲜参批发价 35–45 元/斤（同比涨 10–15 元）；全国海参 2024 产量 32.6 万吨见顶，2025–2026 连续缩减，供给缺口扩大。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 海参价格</td>
+<td>成参 40–45 元/斤（北方），较往年降 30%；但南方量价齐升、结构性上行</td>
+</tr>
+<tr>
+<td>扇贝价格</td>
+<td>市场价 5–7 元/斤（平价化，包振民院士团队 8 个国审扇贝新品种带动产量提升）</td>
+</tr>
+<tr>
+<td>海参种苗价格</td>
+<td>山东 80→120 元/斤（+50%）、辽宁 180–200 元/斤，成本推升成参价</td>
+</tr>
+<tr>
+<td>海参加工新标</td>
+<td>2026 年实施，出成率降约 20%，加工厂锁货量 +35%，放大原料涨价</td>
+</tr>
+<tr>
+<td>行业库存</td>
+<td>霞浦盐渍库存降至去年 1/3，现货偏紧</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价（2026H1）</strong>：营收 7.31 亿（−5.31%，主动收缩低效贸易）；归母 +1287 万（+26.82%）；毛利率 18.16%（+2.09pct），系「瘦身增效」+高毛利海参/鲍鱼占比提升。Q2 单季营收 4.14 亿（+14.27% 环比 +30.48%）、归母 1031 万（环比 +303%）。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：苗种（海参苗、扇贝苗）、饲料、海域租金。2026 年参苗涨价近翻倍→养殖成本上行，但公司通过「北苗南养」、自育苗降本；海域租金受「疏近用远」政策影响，近海退出、深远海拓张。</p>
+<p><strong>下游</strong>：商超/电商/餐饮。消费偏弱压制海参等高端品价格（成参 40–45 元/斤较历史高位回落），但全民养生扩容、淡旺季价差收窄，中低端海珍（扇贝、鲍鱼）走大众化放量。</p>
+<p><strong>议价权</strong>：<strong>中等偏弱</strong>——上游苗种/租金成本刚性强（传导系数约 0.3，自身扛大部分），下游面对分散消费者议价权有限；但国资背书+种业资质（国家水产种业阵型企业）带来政策与渠道协同，逐步改善。</p>
+<h4>第二步进阶：原料成本 → 毛利结构四因子</h4>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：苗种涨价（海参苗 +50%）传导率约 0.3——公司通过自育苗、北苗南养、规模化摊薄对冲，约 70% 成本自我消化；海螺业务毛利率 −122.5%（养殖亏损+减值）显示弱议价线已崩，需收缩。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：高毛利海参（46.79%）占比升至 14.47%、鲍鱼（27.62%）放量，对冲低毛利/负毛利贸易与海螺。分业务毛利率：海参 46.79% / 扇贝 22.01% / 鲍鱼 27.62% / 海螺 −122.5% / 加工贸易偏低。<strong>原料敏感权重</strong>：海参对苗种敏感最高，扇贝次之。禁止用单一综合 18.16% 代表结构。</li>
+<li><strong>因子3 库存与采购节奏</strong>：2026H1 经营现金流 2598 万（−49.69%），部分因原料/在养资产投入；国资定增补血后将改善采购节奏，降低高价接货风险。</li>
+<li><strong>因子4 政策/市场锚点</strong>：①市场层——参苗供需缺口、南方量价齐升；②政策层——大连「疏近用远」清退近海（收缩供给、抬升合规产能价值）、种业振兴补贴、海发集团资源协同。情景：若海参价格重回 50 元/斤以上→毛利弹性显著；证伪：价格战致综合毛利率跌破 15%。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海参放量</td>
+<td>高毛利品类，2026H1 +40.53%</td>
+<td>1.06 亿</td>
+<td>持续</td>
+<td>毛利主力</td>
+</tr>
+<tr>
+<td>鲍鱼放量</td>
+<td>2026H1 +318.98%</td>
+<td>1057 万</td>
+<td>持续</td>
+<td>边际改善</td>
+</tr>
+<tr>
+<td>一龄贝收获</td>
+<td>超万吨创历史新高</td>
+<td>未披露</td>
+<td>2026 已收获</td>
+<td>增量</td>
+</tr>
+<tr>
+<td>定增补血</td>
+<td>3.09 元/股募资≤5.22 亿偿债补流</td>
+<td>5.22 亿</td>
+<td>预案待批</td>
+<td>降财务费用</td>
+</tr>
+<tr>
+<td>海发生态渔业</td>
+<td>与海发集团各 1 亿设合资，「陆海接力」</td>
+<td>1 亿注册资本</td>
+<td>2026-03 设立</td>
+<td>协同增量</td>
+</tr>
+<tr>
+<td>深海筏式养殖</td>
+<td>报告期内启动</td>
+<td>未披露</td>
+<td>在建</td>
+<td>远期</td>
+</tr>
+<tr>
+<td>水下机器人</td>
+<td>与大连海事大学合作，年内产业化样机</td>
+<td>未披露</td>
+<td>研发</td>
+<td>期权</td>
+</tr>
+<tr>
+<td>种业储备</td>
+<td>长牡蛎「海蛎 2 号」等新品种</td>
+<td>—</td>
+<td>已获批</td>
+<td>长期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键</strong>：H1 归母仅 1287 万，绝对利润薄；增量确定性来自「品类结构优化 + 国资协同 + 定增降负」，而非产能大幅扩张。</p>
+<h4>第三步进阶：份额变量与主业迁移三层</h4>
+<ul>
+<li><strong>层1 现有业务（市场容量 × 份额变量）</strong>：①供给侧——大连海域国有资源向海发集团集中，公司获合规海域倾斜；②客户份额——国资渠道+品牌复兴；③技术代际——国家水产种业阵型企业、8 个国审扇贝品种的技术红利；④成本曲线——北苗南养/自育苗左移；⑤份额二阶导——海参/鲍鱼份额加速提升。三档：保守守住 / 中性小幅提升 / 乐观借海发资源跃升。验证点：逐季海参营收占比与毛利率。</li>
+<li><strong>层2 扩展业务（主业迁移）</strong>：「陆海接力」+深远海养殖=从近海走向工业化深海，TAM 弹性来自海洋食品大众化（扇贝 5–7 元/斤平价放量）。认证门槛低（食品资质已有）。未过验证点仅作中期期权。</li>
+<li><strong>层3 证伪信号</strong>：海螺等负毛利业务未剥离、综合毛利率跌破 15%、定增失败致财务费高企、海参价格回落至 35 元/斤以下。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p>方法：因盈利薄且波动，采用「稳态营收 × 正常化净利率」+ PS 交叉验证，杜绝 CAGR 外推。</p>
+</blockquote>
+<p><strong>总股本</strong>：当前约 7.11 亿股；定增完成后约 8.80 亿股（5.22 亿/3.09 元 ≈ 1.69 亿股）。</p>
+<h3>分业务测算（2029E，定增后股本）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海参/鲍鱼等高毛利</td>
+<td>结构优化，价格中性</td>
+<td>4–5 亿</td>
+<td>15–20%</td>
+<td>0.6–1.0 亿</td>
+</tr>
+<tr>
+<td>扇贝/海螺/加工贸易</td>
+<td>平稳，剔除负毛利线</td>
+<td>10–11 亿</td>
+<td>2–3%</td>
+<td>0.2–0.3 亿</td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td><strong>约 15 亿</strong></td>
+<td><strong>约 4%</strong></td>
+<td><strong>约 0.60 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 1287 万（已扭亏），H2 受季节性与贸易收缩影响，预计全年归母 <strong>2500–3500 万</strong>，取 3000 万。</li>
+<li>定增若年内落地，财务费用下降，2027 起盈利增厚。</li>
+</ul>
+<h3>三情景（2029E，定增后股本 8.8 亿股）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE/PS</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>海参价回落、负毛利线未剥离、定增失败</td>
+<td>0.20 亿</td>
+<td>PS 1.2x（营收13亿）</td>
+<td>16 亿</td>
+<td><strong>1.82 元</strong></td>
+<td><strong>−50.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>结构优化兑现、净利率 4%、定增落地</td>
+<td>0.60 亿</td>
+<td>PE 25x / PS 1.6x</td>
+<td>28 亿</td>
+<td><strong>3.18 元</strong></td>
+<td><strong>−13.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>海发资产协同注入、净利率 6%+</td>
+<td>1.20 亿</td>
+<td>PE 30x / PS 2.2x</td>
+<td>48 亿</td>
+<td><strong>5.45 元</strong></td>
+<td><strong>+48.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>0.30 亿</td>
+<td>0.60 亿</td>
+</tr>
+<tr>
+<td>合理估值倍数</td>
+<td>PS 1.8x</td>
+<td>PE 25x / PS 1.6x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>约 24 亿</td>
+<td>约 28 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>约 3.38 元</strong></td>
+<td><strong>3.18 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>交叉校验</strong>：现价 3.67 元对应市值 26 亿，已高于中性 2029 目标（28 亿/8.8 亿股=3.18），说明当前 price 已嵌入「国资资产注入」期权溢价。PB(LF) 85.8x 反映净资产极低（约 0.30 亿），定增后净资产将修复至约 5.5 亿，PB 降至约 4.7x，仍不低。</p>
+<h4>第四步进阶：亏损股/薄利股校正</h4>
+<ul>
+<li><strong>资产质量</strong>：净资产极薄（定增前约 0.3 亿）因历年亏损累积，定增 5.22 亿补血是生存关键——<strong>亏得起吗？</strong> 账上现金+经营现金流+定增募资可覆盖转型期，但依赖定增过会。</li>
+<li><strong>周期位置</strong>：水产养殖受自然与价格双周期，当前海参处结构性上行、扇贝平价化，非单边周期。</li>
+<li><strong>杠杆下行</strong>：若定增失败+债务压力→退市/ST 风险，已计入悲观情景（1.82 元）。</li>
+<li><strong>期权纪律</strong>：海发集团资产注入未公告，仅入乐观情景，不计入中性。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵</strong>。3.67 元已高于中性 2029 目标 3.18 元，定价含资产注入期权。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 3.18 元 → 空间 <strong>−13.4%</strong>（基本面不支持当前价）<br />
+- 悲观 1.82 元 → 下行 <strong>−50.4%</strong><br />
+- 乐观 5.45 元 → <strong>+48.5%</strong>（需资产注入兑现）<br />
+- 下行保护弱：净资产薄、盈利微，定增是核心变量。</p>
+<p><strong>介入条件</strong>：<br />
+1. 定增完成且股价回落至 <strong>3.0 元以下</strong>（对应市值 &lt;21 亿、PS&lt;1.4x）<br />
+2. 连续两季综合毛利率 &gt;20% 且单季归母 &gt;800 万（证明结构优化可持续）<br />
+3. 海发集团明确资产注入/海域资源划转公告</p>
+<p><strong>最大风险</strong>：①定增未过会致财务持续承压；②海螺等负毛利业务拖累；③海参价格回落；④净资产薄、历史「扇贝事件」信誉折价。</p>
+<p><strong>结论：纳入观察</strong>（当前不追高，等定增落地+盈利结构验证）</p>
+<blockquote>
+<p>升级至「重点关注」的条件：海发集团实质性资产注入公告落地，或 2026 全年归母 &gt;5000 万且毛利率持续 &gt;20%。</p>
+</blockquote>
+<h4>第五步进阶：上行想象力情景（仅入乐观栏）</h4>
+<ul>
+<li><strong>A 行业出清剩者红利</strong>：近海清退+合规产能集中，公司凭国资合规海域获份额红利。验证点：合规海域面积公告；证伪：清退放缓。</li>
+<li><strong>B 政策反转期权</strong>：大连海发集团资源协同/资产注入预期。验证点：划转公告；证伪：无实质动作。</li>
+<li><strong>C 市场错杀修复</strong>：微利小市值，情绪修复弹性大。验证点：成交额放大+板块轮动。</li>
+<li><strong>D 技术突破期权</strong>：水下机器人产业化、种业新品种放量。验证点：样机交付+新品种推广；证伪：研发失败。</li>
+</ul>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>3.67 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>3.40 元</strong>（区间 3.00–3.90）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−7.4%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>3.18 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−13.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.82 元（−50.4%）～ 乐观 5.45 元（+48.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>大连国资入主扭亏，海参景气回升+定增补血，但盈利薄净资产微，看资产注入期权</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（定增落地且毛利率持续&gt;20%再介入）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-21 披露）、中国证券报/证券时报/上证报中报解读、大连海发集团组建公告、定增预案、2026 海洋合作发展论坛公开报道、文登区海洋发展局提案答复、海参行业行情资讯。</em><br />
+<em>亏损核查：TTM 列标注「亏损」系 2025 全年亏损拖累，2026H1 真实归母 +1287.14 万已扭亏，本报告按盈利股处理并保留薄利/净资产风险分析。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

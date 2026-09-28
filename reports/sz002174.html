@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>游族网络（002174）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>游族网络（002174）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-28 ｜ 现价 <strong>13.24 元</strong>（腾讯接口实测 2026-09-28 收盘）｜ 总市值 <strong>约 129.7 亿</strong>（股本约 9.80 亿股 × 现价）｜ PE(TTM) <strong>为负（TTM 仍亏损）</strong> ｜ PB <strong>约 2.64x</strong> ｜ 总股本 <strong>约 9.80 亿股</strong><br />
+行业：网络游戏（全球化研运一体）｜ 板块：深市主板<br />
+数据口径：现价以腾讯 qt.gtimg.cn 实测收盘；财报为 2026 年半年度报告（2026-08-27 披露）与 2025 年报。<strong>盈利/亏损核实结论：队列 TTM 标"亏损"——真实 TTM 归母约 −1.44 亿（2025 全年 −3.47 亿 + 2026H1 +2.53 亿），确为负；但 2026H1 单期归母净利润 +2.53 亿 &gt;0，依 RULES「TTM 标亏但 2026H1 已盈利按盈利股处理」规则，按盈利股处理。须重点揭示：+2.53 亿中约 2.35 亿为金融资产公允价值变动（心动公司/京东健康等权益浮盈），扣非归母仅 1778 万，真实主业造血薄弱，估值须以扣非为锚。</strong></p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：全球化研运一体的游戏公司，《少年三国志》系列 +《战火与永恒》（Infinity Kingdom）SLG 为基本盘，海外收入占比创历史新高（72.08%），AI 降本增效已落地但暂未贡献独立收入。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 6.96 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移动游戏</td>
+<td>5.06 亿</td>
+<td>72.66%</td>
+</tr>
+<tr>
+<td>PC 端游戏</td>
+<td>1.89 亿</td>
+<td>27.10%</td>
+</tr>
+<tr>
+<td>租赁及其他</td>
+<td>0.02 亿</td>
+<td>0.24%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品/IP</strong>：《少年三国志》系列（5 款在营，上线超 11 年）、《Infinity Kingdom》（战火与永恒，海外 SLG 流水刷新纪录）、《少年西游记》、《绯色回响》、《权力的游戏 凛冬将至》、《刀剑乱舞》；新品《大皇帝 H5》（小游戏）、《Zomline Survival》（SLG 海外公测）。</p>
+<p><strong>主要客户/下游</strong>：全球游戏玩家（C 端）；海外发行覆盖欧美、日韩、东南亚；渠道为 App Store/Google Play/各应用商店。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：海外 5.02 亿（72.08%，创历史新高，+13.16%），国内 1.94 亿（27.92%，−20.47%）。</p>
+<p><strong>实控人/股东背景</strong>：民营控股（原实控人林奇 2020 年离世后股权分散），管理层稳定；持有《三体》系列游戏改编授权（2020-06 至 2030-06，剩余 &lt;4 年）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）</h3>
+<table>
+<thead>
+<tr>
+<th>政策/趋势</th>
+<th>方向</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>游戏版号常态化发放</td>
+<td>供给恢复</td>
+<td>中（利好）</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>出海鼓励（文化出口）</td>
+<td>海外营收利好</td>
+<td>中</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>AI 赋能游戏研运</td>
+<td>降本增效</td>
+<td>中</td>
+<td>进行中</td>
+</tr>
+<tr>
+<td>《三体》IP 授权剩余 &lt;4 年</td>
+<td>时间窗口约束</td>
+<td>中（风险）</td>
+<td>倒计时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：《我的三体：2277》2024-01 获版号，多次延期至 2026-08 仍未确认上线，剩余授权不足 4 年。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 营收</td>
+<td>6.96 亿（+1.21%），增速平缓</td>
+</tr>
+<tr>
+<td>2026H1 归母 / 扣非</td>
+<td>2.53 亿（+403.8%）/ 1778 万（+29.42%）</td>
+</tr>
+<tr>
+<td>海外收入占比</td>
+<td>72.08%（历史新高）</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>34.44%（−5.25pct，结构变化）</td>
+</tr>
+<tr>
+<td>AI 成效</td>
+<td>广告素材生产效率提升 35 倍、海外本地化翻译成本 −80%、测试用例自动生成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：归母 2.53 亿主要靠金融资产浮盈（2.35 亿）；扣非仅 1778 万，Q2 扣非 −2855 万（主业 Q2 实际亏损），主业造血薄弱。经营现金流 +693 万（由负转正）。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：研发人力、买量/广告投放（获客成本）、云算力；AI 工具降低素材/翻译成本。议价权：对渠道（苹果/谷歌抽成 30%）弱，对玩家（内容定价）中。</p>
+<p><strong>下游</strong>：全球玩家；海外 SLG 长线回收商业模式（LTV 高）。议价权：内容方对中，头部 IP 有黏性。</p>
+<p><strong>议价权综合判断</strong>：中——依赖内容质量与长线运营，渠道抽成刚性。</p>
+<h3>第二步进阶：原料成本 → 毛利结构传导（四因子）</h3>
+<ul>
+<li><strong>因子1 成本传导弹性</strong>：游戏业无"原材料"，核心成本=买量+研发人力+渠道抽成（30% 刚性）。买量成本随竞争波动，传导系数≈0（公司扛），但 AI 工具使素材/翻译成本 −80% 结构性降本 → 相当于"内部成本传导改善"。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：移动游戏（72.66% 收入）vs PC（27.1%）；海外（72%）高占比改善整体结构（海外 SLG LTV 优）。但若国内持续萎缩、海外竞争加剧，结构再平衡可逆。</li>
+<li><strong>因子3 库存与采购节奏</strong>：无存货；买量投放为费用化节奏（timing），不影响毛利结构。</li>
+<li><strong>因子4 政策/市场锚点（成本驱动变量）</strong>：① 政策层：版号发放节奏（影响新品上线）、出海合规；② 市场层：买量 CPI（用户获取成本）上行压缩毛利。情景：CPI 回落 + 版号顺畅 → 毛利修复；CPI 暴涨 → 买量亏损。</li>
+</ul>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《战火与永恒》海外 SLG 长线运营</td>
+<td>五周年流水刷新纪录</td>
+<td>月更</td>
+<td>持续</td>
+<td>稳态现金牛，中性贡献扣非 +0.6–0.8 亿（高）</td>
+</tr>
+<tr>
+<td>少年系列守盘 + 小游戏延展</td>
+<td>怀旧版小程序/H5</td>
+<td>5 款在营</td>
+<td>持续</td>
+<td>守基本盘（中）</td>
+</tr>
+<tr>
+<td>《大皇帝 H5》小游戏赛道</td>
+<td>拓展小游戏</td>
+<td>已推出</td>
+<td>爬坡</td>
+<td>小幅增量（低）</td>
+</tr>
+<tr>
+<td>《Zomline Survival》海外公测</td>
+<td>新 SLG</td>
+<td>公测中</td>
+<td>待验证</td>
+<td>增量期权（低，不计入中性）</td>
+</tr>
+<tr>
+<td>AI 降本增效</td>
+<td>素材/翻译/测试</td>
+<td>已落地</td>
+<td>持续</td>
+<td>降本（已计入毛利）</td>
+</tr>
+<tr>
+<td>《三体：2277》</td>
+<td>IP 大作，多次延期</td>
+<td>版号 2024-01</td>
+<td>未上线（剩余授权&lt;4 年）</td>
+<td><strong>仅机会情景（不计入中性）</strong></td>
+</tr>
+<tr>
+<td>无锡云星智算 10 亿投资</td>
+<td>算力/AI 产业布局</td>
+<td>认缴≤10.01 亿</td>
+<td>推进中</td>
+<td>期权（高风险，不计入中性）</td>
+</tr>
+</tbody>
+</table>
+<h3>第三步进阶：份额变量与主业迁移空间（三层法）</h3>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量（游戏出海）</strong></li>
+<li>供给侧：SLG 出海竞争加剧（腾讯/网易/米哈游），份额守成为主。</li>
+<li>客户侧：海外玩家黏性（长线 LTV）。</li>
+<li>三档：保守（海外稳、国内续降）→ 中性（海外 +10%、小游戏补量）→ 乐观（新 SLG 爆款）。验证点：季度海外收入、新品流水。</li>
+<li><strong>层2 扩展业务：主业迁移空间（游戏→AI 互动文化/智算）</strong></li>
+<li>能力可迁移（AI 工具），新 TAM（AI 互动/算力）大；但"AI 独立收入 + 智算回报"未过验证点（《三体》延期、智算减值风险）→ <strong>中期期权，不计入中性</strong>。</li>
+<li><strong>层3 风险折扣：证伪信号</strong></li>
+<li>老 IP 流水加速下滑、买量 CPI 暴涨、新游上线延期、金融资产浮盈回吐。命中则下调。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法</strong>：2026H1 归母 +2.53 亿中 2.35 亿为金融资产浮盈（不可持续），真实主业看扣非（1778 万，年化微弱）。以"扣非归母（主业造血）+ 净现金"自下而上，剔除一次性金融资产收益，给出三情景（盈利股但以扣非为锚，因 TTM 仍亏损、账面利润多为浮盈）。</p>
+</blockquote>
+<p><strong>总股本：约 9.80 亿股 ｜ 净现金：货币资金 14.44 亿 + 其他非流动金融资产（含浮盈）保守计净现金约 12–15 亿</strong></p>
+<h3>分业务测算（2029 年 · 中性）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 扣非净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海外 SLG/少年 IP 守盘</td>
+<td>海外稳增、小游戏补量，净利率恢复</td>
+<td><strong>1.2 亿</strong></td>
+</tr>
+<tr>
+<td>国内业务</td>
+<td>国内承压收窄</td>
+<td><strong>0.3 亿</strong></td>
+</tr>
+<tr>
+<td>新游（大皇帝/ Zomline）</td>
+<td>保守计盈亏平衡</td>
+<td><strong>0.0 亿</strong></td>
+</tr>
+<tr>
+<td>AI 降本</td>
+<td>已计入毛利</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>中性扣非合计</strong></td>
+<td></td>
+<td><strong>约 1.5 亿</strong>（取 1.8 亿含弹性）</td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 扣非 1778 万、Q2 扣非 −2855 万，主业 Q2 实际亏损；全年扣非估算约 0.3 亿（微利）。</li>
+<li>金融资产浮盈 2.35 亿为一次性，基准归母约 2.6 亿（含浮盈），但估值不依赖之。</li>
+</ul>
+<h3>三情景（2029E，基于扣非 + 净现金）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 扣非</th>
+<th>合理PE</th>
+<th>业务市值</th>
+<th>+净现金</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>老 IP 下滑、买量亏损、浮盈回吐</td>
+<td>0.5 亿</td>
+<td>15x</td>
+<td>7.5 亿</td>
+<td>12 亿</td>
+<td>19.5 亿</td>
+<td><strong>1.99 元</strong></td>
+<td><strong>−85.0%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>海外守盘、扣非恢复至 1.8 亿</td>
+<td><strong>1.8 亿</strong></td>
+<td>18x</td>
+<td>32.4 亿</td>
+<td>15 亿</td>
+<td>47.4 亿</td>
+<td><strong>4.84 元</strong></td>
+<td><strong>−63.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>三体爆款 + AI 独立收入 + 新 SLG</td>
+<td>4.0 亿</td>
+<td>22x</td>
+<td>88 亿</td>
+<td>15 亿</td>
+<td>103 亿</td>
+<td><strong>10.51 元</strong></td>
+<td><strong>−20.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润（扣非）</td>
+<td>0.3 亿</td>
+<td>1.8 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>15–18x</td>
+<td>18x</td>
+</tr>
+<tr>
+<td>合理市值（含净现金）</td>
+<td>18–22 亿</td>
+<td>47.4 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>1.8–2.2 元</strong></td>
+<td><strong>4.84 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 13.24 元对应市值 129.7 亿，是中性估值（47.4 亿）的 2.7 倍。即便剔除金融资产浮盈，经营主业 + 净现金仅支撑约 47 亿，现价溢价显著，反映市场定价《三体》+ AI + 智算期权。</p>
+<h3>第四步进阶：重资产/周期股估值校正（三道闸）</h3>
+<ul>
+<li><strong>校正1 资产质量折扣</strong>：非重资产、非破净（PB 2.64x 合理偏高）；金融资产浮盈 2.09 亿为未实现收益，若回吐则净资产缩水，须在估值中剔除（已用扣非 + 净现金法处理）。</li>
+<li><strong>校正2 周期位置校正</strong>：游戏业有产品周期，当前《少年》系列上线 11 年处成熟期后段；未用单年浮盈外推，扣非保守取 1.8 亿。</li>
+<li><strong>校正3 杠杆下行情景</strong>：资产负债率偏低（现金充裕），无高负债反噬；但金融资产浮盈回吐 + 买量亏损可令净利转负，悲观空间 −85%，不得标大空间。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>显著高估（定价未实现期权）</strong>。现价 13.24 元对应中性估值 4.84 元，下行 −63.4%；真实主业扣非年化仅微弱，2.53 亿账面利润 90% 来自金融资产浮盈。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 4.84 元 → 空间 <strong>−63.4%</strong>，无任何正向安全边际。<br />
+- 悲观 1.99 元 → 下行 <strong>−85.0%</strong>，若浮盈回吐 + 老 IP 衰退。<br />
+- 乐观 10.51 元 → −20.7%，依赖三体爆款 + AI 独立收入（均未验证）。</p>
+<p><strong>介入条件</strong>：仅适合高风险期权博弈者，等待：① 《我的三体：2277》正式上线且首年流水验证；② AI 业务产生独立收入；③ 扣非归母持续 ≥1.5 亿（验证主业造血）。当前价位无安全边际。</p>
+<p><strong>最大风险</strong>：<br />
+1. 金融资产浮盈 2.09 亿不可持续、回吐则净利转负（首要）。<br />
+2. 《三体》IP 多次延期、剩余授权不足 4 年，大作落空。<br />
+3. 老 IP（少年系列）流水加速衰退、买量 CPI 上行。<br />
+4. 无锡云星智算 10 亿投资减值风险（GPU 更新 + 算力租赁价格下行）。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>2026H1 归母 +2.53 亿看似亮眼，但 90% 为金融资产浮盈，扣非仅 1778 万、Q2 主业实际亏损。中性估值（扣非 + 净现金）4.84 元较现价下行 −63.4%，当前价格交易的是《三体》+ AI + 智算未验证期权。暂不介入；若三体上线爆款且 AI 独立收入兑现，可重估为机会情景。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>13.24 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>2.0 元</strong>（区间 1.8–2.2）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−84.9%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>4.84 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−63.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.99 元（−85.0%）～ 乐观 10.51 元（−20.7%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>归母2.53亿90%为金融资产浮盈，扣非仅微利，现价定价三体/AI未验证期权</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（等三体上线验证或扣非造血≥1.5亿）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-27 披露）、2025 年年度报告、国际金融报/新浪财经/搜狐报道、公司 AI 布局公告、腾讯行情接口实测收盘价。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>

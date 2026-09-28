@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三维通信（002115）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>三维通信（002115）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-28 ｜ 现价 <strong>9.59 元</strong>（qt.gtimg 最新可得收盘，2026-09-24）｜ 总市值 <strong>77.20 亿</strong> ｜ PE(TTM) <strong>约 280x（薄利，参考意义弱）</strong> ｜ PB <strong>约 4.7x</strong> ｜ 总股本 <strong>约 8.05 亿股</strong><br />
+行业：互联网营销（短剧/AI 漫剧）+ 通信设备/卫星通信（双主业）｜ 板块：深市主板<br />
+<strong>TTM 误标纠正</strong>：<code>next_batch</code> 的"亏损"列（TTM 口径）很可能将本公司误标为亏损——公司 2025 全年归母 <strong>−1318.51 万元</strong>、2024 年更亏 <strong>−2.71 亿元</strong>，TTM 在 2026 年初仍为负。但 <strong>2026H1 归母净利已 +5039.35 万元、同比扭亏（+1825.74%）</strong>，真实最新财报已盈利，<strong>按盈利股处理</strong>，不做亏损股简版。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：国内"通信装备 + 互联网营销（短剧/AI 漫剧）"双主业公司，收入绝对主体是子公司巨网科技的数字营销，卫星通信（海卫通）是通信板块的高毛利成长极。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 120.73 亿）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>互联网营销（巨网科技）</td>
+<td>116.48 亿</td>
+<td>96.48%</td>
+<td>1.55%</td>
+<td>+192.60%</td>
+</tr>
+<tr>
+<td>网优覆盖（通信）</td>
+<td>2.12 亿</td>
+<td>1.76%</td>
+<td>37.63%</td>
+<td>+0.10%</td>
+</tr>
+<tr>
+<td>卫星通信（海卫通）</td>
+<td>9506.06 万</td>
+<td>0.79%</td>
+<td>49.15%</td>
+<td>+1.72%</td>
+</tr>
+<tr>
+<td>通信设施运营（铁塔等）</td>
+<td>8182.08 万</td>
+<td>0.68%</td>
+<td>41.07%</td>
+<td>−5.57%</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>3575.73 万</td>
+<td>0.30%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品/服务</strong>：① 互联网营销——短剧/AI 漫剧投流、创意策划、全渠道投放、变现分账，自研 AI 内容平台"平行视界"；② 网优覆盖设备（DAS 室分、微功率直放站）；③ 海卫通海事卫星通信及船舶智能应用；④ 通信铁塔运营。</p>
+<p><strong>主要客户/下游</strong>：字节系（巨量引擎三星级服务商）、腾讯、微博（短剧行业独家代理）等流量平台；远洋船东（海卫通）；国内三大运营商、中国铁塔。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：国内 118.64 亿（98.27%）；国外 2.09 亿（1.73%，主要为通信海外与铁塔业务）。</p>
+<p><strong>股东背景</strong>：民营控股；子公司巨网科技为收入与利润核心载体。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>规范与扶持并举，整体利好内容生态</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>《微短剧发展管理办法》（广电总局令第 16 号）</td>
+<td>国家广播电视总局</td>
+<td><strong>部门规章（首部专项）</strong></td>
+<td><strong>2026-09-01 起施行</strong></td>
+</tr>
+<tr>
+<td>《"微短剧精品创作传播计划"实施方案》</td>
+<td>广电总局</td>
+<td>国家级扶持</td>
+<td>2026 年目标推出千部优秀微短剧</td>
+</tr>
+<tr>
+<td>微短剧写入国家"十五五"规划纲要</td>
+<td>国务院</td>
+<td>新型文化业态定位</td>
+<td>已落地</td>
+</tr>
+<tr>
+<td>商业航天/卫星互联网列入战略性新兴产业</td>
+<td>发改委、工信部</td>
+<td>国家级</td>
+<td>持续推进</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：全国微短剧用户已超 <strong>8 亿</strong>；<strong>2025 年市场规模突破千亿元</strong>；AI 漫剧规模逼近 <strong>200 亿元、同比 +270%</strong>；2026 年前 8 个月上线微短剧 <strong>43 万部（为 2025 全年 13 倍）</strong>，其中 AI 剧占比超九成。监管从"引导"转向"法治化"，抬高合规门槛但利好头部正规玩家。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025 国内微短剧市场</td>
+<td>突破 <strong>千亿元</strong>；AI 漫剧规模近 <strong>200 亿元</strong>，同比 +270%</td>
+</tr>
+<tr>
+<td>2026 前 8 月上线微短剧</td>
+<td><strong>43 万部</strong>（去年全年 13 倍），AI 剧占比超九成</td>
+</tr>
+<tr>
+<td>平台扶持资金</td>
+<td>抖音 2026 超 15 亿保底、腾讯视频 12–15 亿</td>
+</tr>
+<tr>
+<td>公司 2026H1 互联网营销</td>
+<td>收入 116.48 亿，同比 +192.6%，毛利率仅 1.55%</td>
+</tr>
+<tr>
+<td>卫星通信</td>
+<td>海卫通商船市占率居国内前列，2026H1 收入 9506 万、稳步增</td>
+</tr>
+<tr>
+<td>供给格局</td>
+<td>短剧产能极度分散，AI 降低生产门槛，2026H1 AI 剧爆款率仅 0.47%，同质化严重</td>
+</tr>
+<tr>
+<td>竞争格局</td>
+<td>互联网营销代理赛道竞争激烈、毛利薄；卫星海事通信壁垒较高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：营收 120.73 亿（+173.76%），归母净利 5039 万（+1825.74%）；综合毛利率 3.05%（−2.02pct），净利率 0.49%——<strong>增收但不增厚利</strong>，利润弹性完全取决于低毛利的互联网营销能否放量且守毛利。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：流量采买成本（向字节/腾讯采买）、AI 制作算力租赁；海卫通上游为卫星转发器带宽、船端设备。</p>
+<p><strong>下游</strong>：广告主（电商、游戏、APP 拉新）、船东、运营商。互联网营销对下游议价权<strong>中偏弱</strong>（代理属性，流量成本由平台定）；卫星通信对船东议价权<strong>强</strong>（稀缺资质+市占率）。</p>
+<p><strong>议价权判断</strong>：互联网营销为"流量二道贩子"，成本端被头部平台锁定，转嫁系数低（≈0.2），毛利极薄；通信/卫星板块技术资质壁垒高，转嫁系数高（≈0.8）。</p>
+<hr />
+<h2>第二步进阶：原料成本 → 毛利结构（四因子）</h2>
+<ul>
+<li><strong>因子1 成本传导弹性（pass-through）</strong>：互联网营销的核心"原料"是流量采买成本，由字节/腾讯等平台定价，公司转嫁系数≈0.2（成本涨只能自己扛或向广告主小幅提价，空间有限），故毛利率长期压在 1.5% 左右。通信/卫星板块转嫁系数≈0.8（项目制+资质稀缺），可较好传导。</li>
+<li><strong>因子2 毛利结构再平衡</strong>：综合毛利率 3.05% 完全被 96.48% 占比、1.55% 毛利的互联网营销"稀释"。分业务看，卫星通信 49.15%、通信设施运营 41.07%、网优 37.63% 才是利润池。按毛利额拆：互联网营销贡献毛利约 1.80 亿（占毛利约 49%），通信三块合计约 1.86 亿（占约 51%）——<strong>利润结构与营收结构严重倒挂</strong>，估值不能用单一综合毛利率。</li>
+<li><strong>因子3 库存与采购节奏</strong>：互联网营销几乎无存货（轻资产、按投放结算），但存在"大客户账期"导致的应收占用（经营现金流 H1 为 −1896 万）；通信板块有备货与项目周转。低价囤货收益不适用本类轻资产模式。</li>
+<li><strong>因子4 政策/市场锚点</strong>：① 流量成本受平台算法与广告竞价影响（市场层）；② 广电《微短剧发展管理办法》提高合规与投资额门槛（政策层）——利于头部正规代理、出清小作坊，但也可能抬高内容制作与审核成本；③ 商业航天政策补贴与海事宽带需求（政策+市场层）支撑海卫通。</li>
+</ul>
+<blockquote>
+<p><strong>验证点</strong>：抖音/腾讯年度扶持资金规模、互联网营销毛利率能否守住 1.5% 以上、海卫通收入增速。<strong>证伪信号</strong>：平台上调流量底价致毛利率破 1.2%、短剧监管趋严致投流需求骤降。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>利润贡献</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短剧/AI 漫剧投流</td>
+<td>巨网科技抓住 2025Q4 起的行业红利窗口</td>
+<td>2026H1 互联网营销 116.48 亿</td>
+<td>已放量，行业第一梯队，微博短剧独家代理</td>
+<td>毛利约 1.80 亿（薄）</td>
+</tr>
+<tr>
+<td>"平行视界"AI 平台</td>
+<td>压缩中短篇漫剧制作周期至 3–7 天、单部成本降超 50%</td>
+<td>自制内容+技术服务双变现</td>
+<td>已商用，获巨量引擎年度创意突破奖</td>
+<td>降本增效、提升净利率</td>
+</tr>
+<tr>
+<td>海卫通陆地卫星</td>
+<td>面向电力等行业的 All-in-One 卫星组网，已取得核准/进网许可</td>
+<td>新赛道 0→1</td>
+<td>专项团队组建、样板市场开拓</td>
+<td>2029 前小体量</td>
+</tr>
+<tr>
+<td>海外通信/铁塔</td>
+<td>欧洲渠道签约并交付首批、亚太斩获新加坡地铁覆盖、北美在手订单落地</td>
+<td>境外收入 2.09 亿</td>
+<td>进行中</td>
+<td>边际改善</td>
+</tr>
+<tr>
+<td>铁塔存量优化</td>
+<td>浙江/陕西/四川站点转签优化，单站盈利夯实</td>
+<td>—</td>
+<td>持续</td>
+<td>稳定现金流</td>
+</tr>
+</tbody>
+</table>
+<p><strong>远期期权</strong>：① 海卫通陆海协同 + 商业航天股权布局（星途智联、箭元科技等），未过验证点，仅作中期期权；② AI 漫剧出海（重庆对出海微短剧单项最高补 50 万，政策催化）。</p>
+<hr />
+<h2>第三步进阶：份额变量与主业迁移空间（三层法）</h2>
+<ul>
+<li><strong>层1 现有业务：市场容量 × 份额变量</strong></li>
+<li>供给侧：互联网营销代理赛道极度分散，公司凭"巨量引擎三星级+微博独家"占头部份额，但整体仍是红海。</li>
+<li>客户份额：深度绑定字节/腾讯，前两大客户占比高（粘性=被绑定双刃剑）。</li>
+<li>技术代际：AI 制作能力（平行视界）领先同业 1 代，是份额溢价来源。</li>
+<li>成本曲线：AI 降本 50% 使其在单位经济上优于纯人工作坊。</li>
+<li>份额加速度：短剧行业从"流量红利"转向"创作红利"，监管抬高门槛，头部份额有望提升。</li>
+<li>三档：保守守住（市占微升、毛利率 1.5%）/ 中性小幅提升（AI 降本推毛利至 0.6%）/ 乐观抢份额（监管出清+AI 壁垒，毛利 1.0%）。验证点：下季度毛利率、前五大客户公告。</li>
+<li><strong>层2 扩展业务：主业迁移空间（新易盛范式）</strong>：海卫通由"海事"向"陆地卫星（电力/应急/偏远）"迁移，能力可复用（卫星组网+船舶智能应用→行业专网），新 TAM 远大于海事。当前仅处"组建团队+样板"阶段，<strong>未过正式订单验证点，仅作中期期权，不计入中性</strong>。</li>
+<li><strong>层3 风险折扣（证伪信号）</strong>：毛利率破 1.2%、份额连续下滑、海卫通陆地无正式大单、平台流量成本单边上涨。</li>
+</ul>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：不用"历史营收 CAGR 外推"。按"互联网营销（量×薄利）+ 通信三块（量价）"分业务测算，并用 2026H1 实际毛利结构校验。因盈利极薄、对毛利率高度敏感，给三情景。</p>
+</blockquote>
+<p><strong>总股本：约 8.05 亿股</strong></p>
+<h3>分业务测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>业务线</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>互联网营销</td>
+<td>2026H1 116 亿（年化约 230 亿），监管出清+AI 降本，中性给年化 200 亿、净利率 0.55%</td>
+<td>200 亿</td>
+<td>0.55%</td>
+<td><strong>1.10 亿</strong></td>
+</tr>
+<tr>
+<td>通信三块（网优+卫星+铁塔+设施运营）</td>
+<td>2026H1 约 4.25 亿、高毛利，海卫通+海外稳健增，中性 2029 收入 6 亿、净利率 12%</td>
+<td>6 亿</td>
+<td>12%</td>
+<td><strong>0.72 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>约 1.82 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026E）</h3>
+<ul>
+<li>H1 归母 5039 万；H2 短剧旺季延续但环比难超 H1，给 H2 约 0.55–0.65 亿</li>
+<li><strong>2026E 归母净利 ~1.10 亿</strong></li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>互联网营销毛利率跌至 1.2%、监管致投流需求降、通信板块停滞</td>
+<td>1.15 亿</td>
+<td>25x</td>
+<td>29 亿</td>
+<td><strong>3.60 元</strong></td>
+<td><strong>−62.5%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>中性毛利率 0.55%+通信稳健增，净利 1.82 亿</td>
+<td><strong>1.82 亿</strong></td>
+<td>28x</td>
+<td>51 亿</td>
+<td><strong>6.33 元</strong></td>
+<td><strong>−34.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>监管出清+AI 壁垒使互联网营销毛利升至 1.5%、海卫通陆地突破</td>
+<td>3.20 亿</td>
+<td>32x</td>
+<td>102 亿</td>
+<td><strong>12.67 元</strong></td>
+<td><strong>+32.1%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>1.10 亿</td>
+<td>1.82 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>28–30x</td>
+<td>28x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>31–33 亿</td>
+<td>51 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>3.85–4.10 元</strong></td>
+<td><strong>6.33 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验</strong>：现价 9.59 元对应 2026E PE 约 <strong>87x</strong>、对应 2029E 中性 PE 约 <strong>44x</strong>。当前市值 77 亿已远超自下而上测算的合理市值（中性 51 亿），<strong>市场已把"短剧/AI 漫剧高速增长+扭亏"预期充分甚至过度定价</strong>。</p>
+<h4>第四步进阶：估值纪律校正（非重资产、盈利极薄）</h4>
+<ul>
+<li><strong>资产质量折扣（破净原因）</strong>：公司轻资产、无破净（PB 约 4.7x），不适用破净校正；但高 PB 反映"概念/景气"溢价，须证明合理性——合理性仅来自 AI 短剧赛道高增长，若毛利不守 1.5% 则高 PB 不成立。</li>
+<li><strong>周期位置校正</strong>：互联网营销代理非强周期，但短剧内容景气处于"爆发早期→监管规范化"阶段，非顶部；中性净利采用稳态薄利（净利率 0.55%），非单季高增年化。</li>
+<li><strong>杠杆下行情景</strong>：轻资产、低有息负债，无高杠杆致净利转负风险；但经营现金流 H1 为 −1896 万（大客户账期），若回款恶化将侵蚀净利——最坏情景空间 −62.5%，不转负，不强制降级。</li>
+</ul>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>显著高估</strong>。77 亿市值对应 2029E 中性净利仅 44x PE，且盈利高度依赖 0.5% 净利率的薄利大盘。</p>
+<p><strong>安全边际</strong>：中性远期 6.33 元 → 空间 <strong>−34.0%</strong>；悲观 3.60 元 → 下行 <strong>−62.5%</strong>；乐观 12.67 元 → +32.1% 但需多重条件共振。下行保护弱（PB 约 4.7x、轻资产无重估安全垫）。</p>
+<p><strong>介入条件</strong>：① 回落至 <strong>4.5 元以下</strong>（对应 2029E 中性 PE &lt; 21x）才具安全边际；② 加仓信号：互联网营销毛利率连续两季 &gt; 1.2%、海卫通陆地卫星签下首个千万级行业订单；③ 观察：前五大客户依赖度、经营现金流转正。</p>
+<p><strong>最大风险</strong>：① 互联网营销毛利仅 1.55%，流量成本单边上涨或监管致投流需求骤降，净利对毛利率极度敏感；② 收入 96% 集中于单一薄利业务，结构性脆弱；③ 2025 仍亏损、TTM 曾为负，反转持续性需多个季度验证；④ 客户集中度（字节/腾讯）政策与算法风险。</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>公司处于 AI 短剧/微短剧高景气赛道、2026H1 确已扭亏，故事有想象力；但现价的市值已透支中性情景下的盈利，且盈利质量薄、结构性脆弱。若回调至 4.5 元以下或出现"毛利率实质提升 + 海卫通陆地订单落地"验证信号，可上调至"纳入观察"。</p>
+</blockquote>
+<hr />
+<h2>第五步进阶：上行想象力情景（四类）</h2>
+<ul>
+<li><strong>A 行业调整剩者红利</strong>：《微短剧发展管理办法》抬高合规/投资额门槛，出清小作坊，头部正规代理（巨网科技）份额与议价权跳升。验证点：行业集中度数据、公司市占率公告；证伪：监管误伤致整体投流需求塌缩。</li>
+<li><strong>B 政策反转期权</strong>：微短剧获"十五五"新型文化业态定位 + 各地真金白银扶持（深圳最高 500 万、湖北 1 亿基金），内容精品化带动单剧变现提升。验证点：扶持资金落地、分账比例上调；证伪：政策退坡。</li>
+<li><strong>C 市场错杀修复</strong>：若因大盘或风格切换被打到 4 元以下，而基本面（毛利率、订单）未恶化，存在修复弹性。验证点：估值分位、基本面未恶化；证伪：毛利破阈。</li>
+<li><strong>D 技术突破/代际跃迁期权</strong>："平行视界"AI 制作平台将漫剧周期压至 3–7 天、成本降 50%，若技术外溢为行业标准、海卫通陆地卫星从 0 到 1 量产，可能重构估值。硬验证点（缺一则仅机会情景）：中试/商用良率达标 + 客户定点/大额订单 + 量产成本优于旧路线——当前海卫通陆地仅"组建团队+样板"，<strong>未过验证点，不计入中性</strong>。</li>
+</ul>
+<blockquote>
+<p><strong>上调至重点关注的条件</strong>：股价回落至 4.5 元以下（安全边际显现）<strong>且</strong>连续两季互联网营销毛利率 &gt; 1.2% <strong>且</strong>海卫通陆地签下首个行业级订单。三者同时出现方上调。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>9.59 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>4.00 元</strong>（区间 3.85–4.10，现价显著高估）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−58.3%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>6.33 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−34.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 3.60 元（−62.5%）～ 乐观 12.67 元（+32.1%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>双主业：AI 短剧营销高景气但毛利极薄（1.55%），通信/卫星高毛利小体量；现价已透支扭亏预期</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（回调至 4.5 元以下且毛利率/海卫通订单验证后再评估）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-08-18 披露）、公司投资者关系活动记录表（2026-08-19）、广电总局令第 16 号《微短剧发展管理办法》、国家广电总局 2026-09-17 国新办发布会、腾讯行情 qt.gtimg.cn。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
