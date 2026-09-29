@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>雷科防务（002413）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>雷科防务（002413）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-09-29 ｜ 现价 <strong>8.78 元</strong> ｜ 总市值 <strong>115.84 亿</strong> ｜ PE(TTM) <strong>−183.23x（TTM 亏损）</strong> ｜ PB <strong>3.52x</strong> ｜ 总股本 <strong>13.19 亿股</strong><br />
+行业：军工电子（雷达/卫星应用/智能控制/智算存储/智能网联）｜ 板块：深市主板 ｜ 属性：军工电子信息平台<br />
+<strong>重要说明（亏损判定·必须按亏损股处理）</strong>：队列"亏损"列 PE_TTM −170 属实——<strong>真实最新财报 2026 半年报归母净利 −1812.04 万元（仍亏损，但同比减亏 56.52%）</strong>。按规则③，本股为亏损股，<strong>完整五步法 + 正常化净利润法 + 三问</strong>，不写简版、不排除。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：军工电子信息平台，自主掌握新体制雷达、卫星应用、智能控制、智算存储（国产 GPU）核心技术，由军用配套向"系统解决方案 + 民品（低空/商业航天/养老）"拓展。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 5.61 亿，同比 +3.62%）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>雷达系统</td>
+<td>1.64 亿</td>
+<td>29.23%</td>
+<td>20.51%</td>
+<td>−9.54%</td>
+</tr>
+<tr>
+<td>智能控制</td>
+<td>1.45 亿</td>
+<td>25.75%</td>
+<td>49.96%</td>
+<td>−10.55%</td>
+</tr>
+<tr>
+<td>卫星应用</td>
+<td>1.20 亿</td>
+<td>21.34%</td>
+<td>36.64%</td>
+<td>+5.70%</td>
+</tr>
+<tr>
+<td>智算存储（原安全存储）</td>
+<td>1.03 亿</td>
+<td>18.29%</td>
+<td>50.91%</td>
+<td>+45.19%</td>
+</tr>
+<tr>
+<td>智能网联</td>
+<td>0.17 亿</td>
+<td>2.98%</td>
+<td>—</td>
+<td>+139.34%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心产品</strong>：新体制雷达（毫米波/相控阵/SAR）、鸟情探驱管/反无人机雷达/探虫雷达/生命雷达、卫星遥感导航通信、国产化智能计算（国产 GPU）/高可靠存储、智能网联测试设备。</p>
+<p><strong>主要客户/下游</strong>：国防军工（核心）、民航、低空安全、农业、养老、智慧城市、气象海洋、商业航天。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：国内 5.59 亿（99.65%），海外 197 万（0.35%，起步）。</p>
+<p><strong>股东背景</strong>：民营军工集团，下属雷科电子、雷科空天、爱科特、奇维科技、恒达微波、尧云科技等（国家级专精特新"小巨人"）。</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——强利好，军工+低空+商业航天+国产算力四轮驱动</h3>
+<table>
+<thead>
+<tr>
+<th>政策/事件</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"十四五"后期装备放量 + 军工电子国产化</td>
+<td>中央军委/国资委</td>
+<td>国家级</td>
+<td>已在执行（订单修复）</td>
+</tr>
+<tr>
+<td>低空经济发展（反无人机雷达受益）</td>
+<td>发改委/民航局</td>
+<td>国家级</td>
+<td>多地试点</td>
+</tr>
+<tr>
+<td>商业航天/卫星互联网（卫星应用受益）</td>
+<td>工信部/国资委</td>
+<td>国家级</td>
+<td>加速</td>
+</tr>
+<tr>
+<td>全国产化算力（智算存储受益）</td>
+<td>工信部/国资委</td>
+<td>国家级</td>
+<td>自主可控紧迫</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化</strong>：军工电子国产化率要求提升；低空经济 2026 年多地出台细则；商业航天发射频次创新高；国产 GPU 替代加速。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026H1 营收</td>
+<td>5.61 亿（同比 +3.62%，连续回升）</td>
+</tr>
+<tr>
+<td>2026H1 归母净利</td>
+<td>−1812 万（同比减亏 56.52%）；Q2 −218 万（环比 +86.33%）</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td>36.81%（同比 +0.38pct）</td>
+</tr>
+<tr>
+<td>净利率</td>
+<td>−3.22%（同比 +3.53pct，改善）</td>
+</tr>
+<tr>
+<td>历史净利</td>
+<td>2022 −9.35 亿 → 2023 −4.43 亿 → 2024 −3.96 亿 → 2025 −8677 万 → 2026H1 −1812 万（减亏趋势明确）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势</strong>：营收回升、亏损持续收窄，智算存储（+45%）、智能网联（+139%）高增，雷达/智能控制短期承压但转型系统方案。</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：电子元器件/芯片（国产 GPU 替代降本）、结构件。<strong>下游</strong>：军方（强议价、定价审价）、民航/低空/农业（民品价格竞争）。<strong>议价权</strong>：军品中等（审价制），民品（反无/探虫）新兴竞争；技术壁垒高。</p>
+<blockquote>
+<p><strong>第二步进阶·原料成本→毛利结构（四因子）</strong><br />
+- <strong>因子1 成本传导弹性</strong>：军品审价制，成本传导率≈0.3（降价压力自担）；民品（反无雷达等）新兴，传导率≈0.6。实际毛利承压 = 元器件涨价×(1−传导率)。验证点：军品审定价、民品中标价。<br />
+- <strong>因子2 毛利结构再平衡</strong>：分业务——雷达 20.51%（偏低、拖累）、智能控制 49.96%、卫星 36.64%、智算存储 50.91%（高、高增）。智算存储占比提升将结构性抬升综合毛利；雷达系统（占比最高）毛利偏低是减亏关键。禁止用综合 36.81% 代表全结构。原料敏感权重：雷达/智能控制对元器件敏感。<br />
+- <strong>因子3 库存与采购节奏</strong>：军品交付节奏（按合同确认）造成季度波动；国产 GPU 长协/备货对冲。验证点：存货、合同负债。<br />
+- <strong>因子4 政策/市场锚点</strong>：①市场层——电子元器件价格、军品交付节奏；②政策层——军费增长（利好）、低空/商业航天（需求）、国产算力补贴（降本）、出口管制（国产替代加速）。情景：军品订单放量+国产替代降本→毛利改善（正面）；审价降价→毛利破阈值（负面）。验证点：新增订单、军费预算。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>智算存储（国产 GPU）</td>
+<td>云-边-端系列，高增长</td>
+<td>2026H1 1.03 亿（+45.19%）</td>
+<td>放量</td>
+<td>2026–2029</td>
+</tr>
+<tr>
+<td>卫星应用</td>
+<td>遥感/导航/通信，商业航天</td>
+<td>2026H1 1.20 亿（+5.7%）</td>
+<td>稳健</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>雷达系统（民品）</td>
+<td>鸟情/反无/探虫/生命雷达</td>
+<td>2026H1 1.64 亿</td>
+<td>转型系统方案</td>
+<td>2026H2–2028</td>
+</tr>
+<tr>
+<td>智能控制</td>
+<td>国产化计算机/组合导航</td>
+<td>2026H1 1.45 亿</td>
+<td>平稳</td>
+<td>持续</td>
+</tr>
+<tr>
+<td>智能网联</td>
+<td>毫米波/卫星测试设备</td>
+<td>2026H1 0.17 亿（+139%）</td>
+<td>高增起步</td>
+<td>2027–2029</td>
+</tr>
+<tr>
+<td>军工型号批产</td>
+<td>某毫米波雷达批产签单、某超宽带 MIMO 初样验证</td>
+<td>—</td>
+<td>推进</td>
+<td>2026H2–2028</td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 关键提示</strong>：增量来自"智算存储/卫星/智能网联高增 + 雷达系统方案化转型 + 军工订单修复"，结构性（非增速外推）。民品（低空/商业航天）为中期期权。</p>
+<blockquote>
+<p><strong>第三步进阶·份额变量与主业迁移空间（三层法）</strong><br />
+- <strong>层1 现有业务：市场容量 × 份额变量</strong>：①供给侧——军工电子细分领域多（雷达/卫星/存储），份额分散，扩产靠研发；②需求侧——军方核心客户认证（高粘性）；③技术代际——新体制雷达领先；④成本曲线——国产 GPU 替代降本（左移）；⑤份额二阶导数——军工信息化渗透期（S 曲线早期）。三档：保守（守存量）、中性（军工修复+民品起量）、乐观（低空/商业航天抢份额）。验证点：新增订单、民品签单。<br />
+- <strong>层2 扩展业务：主业迁移空间（民品新池塘）</strong>：①能力可迁移——雷达技术→民航/低空/农业/养老；②新 TAM——低空经济/商业航天/养老万亿级；③卡位——早期（反无雷达先发）；④认证门槛——行业资质（已齐）；⑤信号验证——鸟情系统交付、反无课题、探虫站点、生命雷达批量交付（已验证部分）。属"中期期权"，未完全过验证点仅作机会情景。<br />
+- <strong>层3 证伪信号</strong>：军工订单续签落空、民品拓展缓慢、雷达毛利持续偏低、审价降价超预期 → 下调增量。</p>
+</blockquote>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推；亏损股用正常化净利润法）</h2>
+<p><strong>总股本：13.19 亿股</strong>（总市值 115.84 亿 ÷ 现价 8.78）。</p>
+<blockquote>
+<p><strong>方法说明（亏损股·正常化净利润法）</strong>：公司 2026H1 仍亏 −1812 万，无正净利可锚。按 RULES 第四步亏损股方法：①估稳态营收 → ②算正常化净利率 → ③×远期合理 PE → 目标市值 → 目标价。同时回答三问。</p>
+</blockquote>
+<h3>亏损股三问（必答）</h3>
+<p><strong>① 为什么亏</strong>：多年商誉减值（历史商誉从 9.5 亿减值至 3.95 亿）+ 军工研发/费用高 + 军品交付节奏波动 + 雷达系统毛利率仅 20.51%（偏低）拖累。2026H1 亏幅已收窄至 −1812 万，接近扭亏。</p>
+<p><strong>② 靠什么扭亏，时点在哪</strong>：智算存储（国产 GPU，+45% 高增、毛利 50.91%）、卫星应用（+5.7%）、智能网联（+139%）高增；雷达系统由单机配套→系统方案（民航鸟情/低空反无/农业探虫/养老生命雷达）打开民品；费用管控（AI 降本）；军工"十四五"后期订单放量。<strong>扭亏时点：2026H2 或 2027 年</strong>（H1 −1812 万、Q2 仅 −218 万，拐点临近）。</p>
+<p><strong>③ 亏得起吗</strong>：净资产 33.13 亿、总资产规模大、军工背景融资能力强；商誉已减值至 3.95 亿（风险大部分释放）；经营现金流 H1 −1.47 亿但季节性（军品回款集中于下半年）。<strong>能撑到扭亏</strong>。</p>
+<h3>正常化净利润测算（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>测算依据</th>
+<th>2029E 收入</th>
+<th>正常化净利率</th>
+<th>2029E 净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>军工电子整体</td>
+<td>军工订单修复 + 民品（低空/商业航天/养老）放量，营收 ~18–20 亿</td>
+<td>19 亿</td>
+<td>保守 10%（行业正常）</td>
+<td><strong>1.9 亿</strong>（取 2.0 亿中性）</td>
+</tr>
+</tbody>
+</table>
+<h3>基准（2026 年底，以扭亏拐点看 2027E）</h3>
+<ul>
+<li>2026E 微亏（−0.2 亿），2027E 扭亏 ~1.0 亿（拐点确认）</li>
+<li>基准 PE（扭亏/成长）：38x → 基准市值 38 亿 → <strong>基准股价 2.88 元</strong></li>
+</ul>
+<h3>三情景（2029E，正常化）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 净利</th>
+<th>合理 PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>军品续弱、民品不及预期、维持微利/微亏</td>
+<td>0.6 亿</td>
+<td>30x</td>
+<td>18 亿</td>
+<td><strong>1.37 元</strong></td>
+<td><strong>−84.4%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>军工修复 + 智算/卫星/民品放量，正常化净利 2.0 亿</td>
+<td><strong>2.0 亿</strong></td>
+<td>38x</td>
+<td>76 亿</td>
+<td><strong>5.76 元</strong></td>
+<td><strong>−34.4%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>低空/商业航天/国产算力三期权共振，净利 4.0 亿</td>
+<td>4.0 亿</td>
+<td>45x</td>
+<td>180 亿</td>
+<td><strong>13.65 元</strong></td>
+<td><strong>+55.5%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2027E 扭亏）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>1.0 亿（扭亏）</td>
+<td>2.0 亿（正常化）</td>
+</tr>
+<tr>
+<td>合理 PE</td>
+<td>38x</td>
+<td>38x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>38 亿</td>
+<td>76 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>2.88 元</strong></td>
+<td><strong>5.76 元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>第四步进阶·重资产/周期股估值校正（亏损股三道闸）</strong><br />
+- <strong>校正1 资产质量折扣</strong>：PB 3.52（未破净），但净资产 33.13 亿含商誉 3.95 亿（已减值）；军工资产（资质/技术）有溢价，非单纯账面。无破净伪空间问题。<br />
+- <strong>校正2 周期位置校正</strong>：军工属"订单周期"，当前处"十四五"后期修复初期。中性净利 2.0 亿采用正常化（非历史 peak ~2 亿、非 trough 亏损）。验证点：军品新增订单。<br />
+- <strong>校正3 杠杆下行情景</strong>：负债率中等（军工平台），悲观情景（军品续弱）净利 0.6 亿 → 1.37 元（−84.4%），<strong>中性空间为负，不得标大空间</strong>，至多"纳入观察"。期权纪律：低空/商业航天/国产算力为中期期权，未过完全验证点<strong>不计入中性净利</strong>，仅放乐观情景。<br />
+- <strong>亏损股纪律</strong>：现价 8.78 已隐含三期权预期（市值 115.84 亿 &gt;&gt; 中性 76 亿），当前溢价明显。</p>
+</blockquote>
+<p><strong>⚠️ 交叉校验</strong>：现价 8.78 对应中性 2029E 仅 5.76 元（−34.4%），当前价已透支扭亏+期权；须等回调至 PB&lt;2.6x（≈6.5 元）或扭亏正式确认。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵（已透支期权）</strong>。现价 8.78 对应中性 2029E 5.76 元（−34.4%），市场已计入低空/商业航天/国产算力三期权。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 5.76 元 → 空间 <strong>−34.4%</strong>（中性不达重点关注）<br />
+- 悲观 1.37 元 → 下行 <strong>−84.4%</strong>（军品续弱极端风险）<br />
+- 乐观 13.65 元 → <strong>+55.5%</strong>（三期权共振）<br />
+- 下行保护：PB 3.52x（偏高）、军工资质壁垒、减亏临近拐点</p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>不追高</strong>。等回落至 <strong>6.5 元以下（PB&lt;2.6x）</strong> 或 <strong>2026H2 正式扭亏公告</strong>确认<br />
+2. <strong>加仓信号</strong>：① 军工大单新增公告；② 低空反无雷达批量订单；③ 商业航天/国产 GPU 客户定点；④ 智算存储持续 &gt;40% 高增<br />
+3. <strong>观察指标</strong>：逐季净利（是否转正）、合同负债、毛利率</p>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>扭亏不及预期（首要）</strong>：军品交付波动、雷达毛利偏低，延后扭亏<br />
+2. <strong>民品拓展缓慢</strong>：低空/商业航天落地慢于预期<br />
+3. <strong>商誉/资产减值</strong>：历史减值风险未完全出清<br />
+4. <strong>估值回撤</strong>：当前溢价高，期权证伪则大幅回撤</p>
+<blockquote>
+<p><strong>第五步进阶·上行想象力情景（四类，对冲系统性保守偏置）</strong><br />
+- <strong>A 行业调整剩者红利</strong>：军工电子国产化剩者（资质/技术壁垒），"十四五"后期装备放量份额向龙头集中。验证点：军品新增订单。证伪：订单落空。<br />
+- <strong>B 政策反转期权</strong>：军工装备放量 + 低空经济（反无人机雷达）+ 商业航天（卫星应用）政策加码。验证点：政策发文、订单公告。证伪：政策退坡。<br />
+- <strong>C 市场错杀修复</strong>：从多年亏损（2022 −9.35 亿→2025 −0.87 亿）预期修复为扭亏，估值重估。验证点：2026H2 扭亏公告。证伪：再度转亏。<br />
+- <strong>D 技术突破/代际跃迁期权</strong>：国产 GPU 智算存储从 0 到 1、低空反无雷达新场景。政策（国产算力/低空）+ 趋势（渗透率拐点）+ 落地（已签单/批量交付）三要素共振。硬验证点：良率达标 + 客户定点 + 量产成本优。已部分满足，计入机会情景（非中性）。证伪：民品拓展落空/成本打不过旧路线。<br />
+- <strong>上调"重点关注"条件</strong>：2026H2 正式扭亏 + 低空/商业航天/国产算力任一期权客户大单兑现 → 中性上修至乐观（+55.5%）。</p>
+</blockquote>
+<p><strong>结论：纳入观察</strong></p>
+<blockquote>
+<p>理由：中性远期空间 <strong>−34.4%</strong>（当前价已透支），不满足重点关注；但减亏趋势明确、拐点临近，且低空/商业航天/国产算力三期权提供上行想象力（乐观 +55.5%）。逻辑正确但需等拐点确认与更低价格。若 2026H2 正式扭亏 + 民品订单兑现（乐观情景），可上调至重点关注。<br />
+<strong>核心跟踪点</strong>：2026H2 扭亏公告 + 军工/民品新增订单。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>8.78 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>2.88 元</strong>（区间 1.4–6.5，以2027E扭亏为锚）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−67.2%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>5.76 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−34.4%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 1.37 元（−84.4%）～ 乐观 13.65 元（+55.5%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>军工电子(雷达/卫星/智算存储)平台+低空反无/商业航天/国产算力三期权+减亏临近拐点；当前价已透支，等扭亏确认与回调</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>纳入观察</strong>（等回落至≤6.5元/PB&lt;2.6x或2026H2正式扭亏公告确认）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：2026 年半年度报告（2026-07-31/08 披露）、中国证券报/中证智能财讯中报解读、公司官网业务介绍、腾讯行情（qt.gtimg.cn，2026-09-29 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
