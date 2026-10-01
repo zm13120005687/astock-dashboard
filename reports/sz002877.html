@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>智能自控（002877）五步法分析报告</title>
+<style>
+:root{--bg:#0f1115;--fg:#e6e8ec;--muted:#9aa4b2;--line:#262b36;--acc:#4da3ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:940px;margin:0 auto;padding:26px 20px 70px}
+a.back{display:inline-block;margin-bottom:18px;color:var(--acc);text-decoration:none;
+font-size:14px;border:1px solid var(--line);padding:6px 14px;border-radius:6px}
+.rp h1{font-size:25px;margin:6px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--line)}
+.rp h2{font-size:20px;margin:32px 0 14px;padding-left:11px;border-left:4px solid var(--acc)}
+.rp h3{font-size:16px;margin:22px 0 10px;color:var(--acc)}
+.rp p{margin:10px 0}
+.rp table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+.rp th{background:#1e2430;padding:10px 12px;text-align:left;font-weight:600;
+border:1px solid var(--line)}
+.rp td{padding:9px 12px;border:1px solid var(--line);vertical-align:top}
+.rp blockquote{margin:14px 0;padding:12px 16px;background:#1a1f2b;
+border-left:3px solid var(--acc);border-radius:0 6px 6px 0;color:#cfd6e0}
+.rp blockquote p{margin:4px 0}
+.rp code{background:#1e2430;padding:2px 6px;border-radius:4px;font-size:13px}
+.rp hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.rp strong{color:#fff}
+.rp ul,.rp ol{padding-left:22px}
+.rp li{margin:5px 0}
+.rp em{color:var(--muted);font-style:normal;font-size:13px}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 返回总览表格</a>
+<div class="rp">
+<h1>智能自控（002877）五步法分析报告</h1>
+<blockquote>
+<p>分析日期：2026-10-01 ｜ 现价 <strong>7.46 元</strong>（2026-09-30 收盘）｜ 总市值 <strong>26.55 亿</strong> ｜ PE(TTM) <strong>162.94x</strong>（利润极薄，指标失真）｜ PB <strong>2.19x</strong> ｜ 总股本 <strong>约 3.5584 亿股</strong>（流通 2.4051 亿股）｜ 行业：机械设备—通用设备（工业控制阀）<br />
+板块：深市主板 ｜ 全称：无锡智能自控工程股份有限公司 ｜ 2026H1 归母净利 <strong>+1343.36 万元（真实盈利，同比 −34.09%）</strong></p>
+<p><strong>框架说明</strong>：公司 2026H1 归母 1343.36 万元为<strong>真实盈利</strong>（非亏损），但 PE(TTM) 162.94x 已完全失真，按"微利股"处理——估值采用<strong>正常化净利润法</strong>（同亏损股框架），并回答扭亏／盈利修复三问：<strong>为什么亏 / 靠什么扭亏（触发时点）/ 亏得起吗</strong>。</p>
+</blockquote>
+<hr />
+<h2>第一步：公司是干什么的？</h2>
+<p><strong>一句话定位</strong>：中石化／中石油／中海油三大石油公司入网的控制阀供应商，靠"PTA 大型装置国产替代经验 + SIL-3 功能安全认证"在石化主战场拿份额，当前正被下游石化资本开支下行拖累，等待 2026 年底募投新基地投产与国产替代提速。</p>
+<p><strong>各业务板块营收占比（2026H1，营收 4.0599 亿元）</strong></p>
+<table>
+<thead>
+<tr>
+<th>业务板块</th>
+<th>营收</th>
+<th>占比</th>
+<th>毛利率</th>
+<th>同比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>控制阀</td>
+<td>3.4323 亿</td>
+<td>84.54%</td>
+<td><strong>28.95%</strong>（+1.66pct）</td>
+<td><strong>−21.14%</strong></td>
+</tr>
+<tr>
+<td>检维修业务</td>
+<td>0.3666 亿</td>
+<td>9.03%</td>
+<td><strong>50.12%</strong>（<strong>−14.91pct</strong>）</td>
+<td>−22.49%</td>
+</tr>
+<tr>
+<td>配件</td>
+<td>0.2516 亿</td>
+<td>6.20%</td>
+<td>—</td>
+<td><strong>+29.40%</strong></td>
+</tr>
+<tr>
+<td>其他业务</td>
+<td>0.0093 亿</td>
+<td>0.23%</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>各地区收入（2026H1）</strong>：华东 2.07 亿（51.00%，同比 −25.79%）、华南 0.5114 亿（12.60%）、西北 0.4829 亿（11.89%，<strong>+28.56%</strong>）、其他合计 0.9952 亿（24.51%）。</p>
+<p><strong>核心产品</strong>：智能控制阀（调节阀、球阀、蝶阀、闸阀）、高温特种控制阀、高压差蝶阀、双向密封蝶阀、高纯耐腐蚀阀门；提供"产品 + 系统 + 运维"的一体化成套解决方案与检维修服务（4S 售后服务站）。多个产品系列取得 <strong>SIL-3 安全完整性等级认证</strong>；拥有发明专利 72 项、实用新型 182 项、外观设计 20 项。</p>
+<p><strong>主要客户/下游</strong>：<strong>已正式成为中石化、中石油、中海油三大石油公司物资供应商单位</strong>；主要合作伙伴包括荣盛石化、恒逸石化、恒力石化、万华集团、宝钢集团；在大型 PTA 装置领域业绩突出（中石化扬子石化、仪征化纤、浙江逸盛石化等）。下游覆盖石油化工、钢铁冶金、能源、市政水务，并向<strong>氢能、储能、光热发电、半导体</strong>等新兴领域拓展。</p>
+<p><strong>境内外收入占比（2026H1）</strong>：<strong>港澳台及海外收入仅 98.98 万元，占 0.24%</strong>——<strong>几乎纯内销</strong>，海外市场尚未破局。</p>
+<p><strong>股东与治理</strong>：无锡民营控股，拥有全资子公司 5 家，其中<strong>江苏智能特种阀门</strong>（特种阀门）、<strong>无锡莱谱尔科技</strong>（电气执行器）形成协同；舟山化服、无锡工服为检维修服务子公司（<strong>报告期延续亏损</strong>）。</p>
+<p><strong>关键变化（2026H1）</strong>：<br />
+- 营收 <strong>4.06 亿元（−19.28%）</strong>，Q2 单季 2.09 亿元（−34.5%）<br />
+- 归母 <strong>1343.36 万元（−34.09%）</strong>，Q2 单季 736 万元（−50.8%）<br />
+- <strong>核心矛盾</strong>：营收与利润双降，但<strong>控制阀毛利率逆势提升 1.66pct 至 28.95%</strong>、<strong>配件业务 +29.40%</strong>、<strong>西北地区 +28.56%</strong>、<strong>经营现金流大幅收窄（−165 万元 vs 上年 −971 万元）</strong>、<strong>财务费用同比 −40.61%</strong>（可转债兑付完成、利息支出减少）<br />
+- <strong>拖累项</strong>：检维修业务收入 −22.49%、毛利率<strong>大跌 14.91pct 至 50.12%</strong>；募投项目"开关控制阀制造基地"进度滞后（公司称"基于市场需求收缩及原材料波动对投资节奏进行审慎调整"）<br />
+- 2025 年度分红每 10 股派 0.25 元（实际现金分红 889.61 万元），高于 2024 年度的每 10 股 0.20 元</p>
+<hr />
+<h2>第二步：行业景气度 + 政策/市场数据</h2>
+<h3>（1）政策端（近 6–12 个月）——<strong>国产替代强驱动，与需求端下行形成对冲</strong></h3>
+<table>
+<thead>
+<tr>
+<th>政策</th>
+<th>发布主体</th>
+<th>力度</th>
+<th>落地节奏</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>央企供应链控制阀国产化率考核</strong></td>
+<td>国资委／相关主管部门</td>
+<td><strong>央企考核指标</strong></td>
+<td>已明确阶段性国产化指标要求，<strong>重点炼化领域控制阀国产化率纳入央企供应链考核体系</strong>，国内企业在中标规模上稳步提升</td>
+</tr>
+<tr>
+<td>高端控制阀纳入制造业关键基础件重点扶持范畴</td>
+<td>工信部</td>
+<td>国家级</td>
+<td>行业准入及产品安全可控认证体系持续完善，成为能源、化工重点项目招标的重要依据</td>
+</tr>
+<tr>
+<td><strong>新版《承压类特种设备安全附件安全技术规程》</strong></td>
+<td>市场监管总局</td>
+<td>强制性安全技术规范</td>
+<td><strong>2026 年 7 月正式实施</strong>；对阀门出厂检测、在线运维、失效追溯、材质溯源提出强制新规，推行 <strong>"一阀一码"全流程追溯</strong>，<strong>淘汰无仿真验证、低密封等级低端阀门</strong></td>
+</tr>
+<tr>
+<td>2026 年能源央企新建项目国产化率硬性指标</td>
+<td>多家能源央企</td>
+<td>企业级</td>
+<td>新建项目明确国产化率指标，<strong>LNG 深冷阀、煤化工高压调节阀、长输管线球阀等高端产品优先采购国产</strong></td>
+</tr>
+<tr>
+<td>设备更新 / 城市管网改造 / 核电及氢能产业配套专项</td>
+<td>多部委</td>
+<td>国家级</td>
+<td>有序落地，持续拓宽行业市场空间</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键量化指标</strong>：高端阀门国产化率目标由 <strong>32% 提升至 40%</strong>（"十四五"智能制造规划口径）；核电阀门国产化率目标 <strong>≥92%</strong>、氢能阀门关键材料自主保障率 <strong>85%</strong>；《工业阀门碳足迹核算通则》（HJ 1327—2025）为全球首个阀门全生命周期碳排放核算标准。</p>
+<p><strong>政策判定</strong>：★★★（强利好，且直击公司主战场）。公司的核心客户（中石化／中石油／中海油）正是国产化率考核的执行主体；"一阀一码 + 淘汰低端产能"将加速中小厂商出清，<strong>利好具备 SIL-3 认证与央企入网资质的头部企业</strong>。</p>
+<h3>（2）市场端（量价数据）</h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国阀门行业市场规模</td>
+<td>2026 年突破 <strong>1285 亿元</strong></td>
+</tr>
+<tr>
+<td>高端阀门市场</td>
+<td>已突破 <strong>500 亿元</strong>，<strong>年增速 &gt;15%</strong>（超临界火电、核电、深海油气、大型乙烯等极端工况）</td>
+</tr>
+<tr>
+<td>氢能储运阀门</td>
+<td>年复合增长率 <strong>41.5%</strong>；锂电用精密阀门全球市场 2026 年预计突破 42 亿美元</td>
+</tr>
+<tr>
+<td>行业集中度</td>
+<td>控制阀 TOP50 企业销售额占整体市场 <strong>85% 以上</strong>（集中度极高）；国产品牌占比由 2021 年 40.35% 跃升至 2022 年 <strong>44.38%</strong>（一年提升超 4pct）</td>
+</tr>
+<tr>
+<td>存量替换需求</td>
+<td>控制阀常规寿命 <strong>8–10 年</strong>；上世纪 90 年代至 21 世纪初投产的石化、电力产能自 2010 年后陆续进入更换周期——<strong>受宏观波动影响小的稳定基本盘</strong></td>
+</tr>
+<tr>
+<td>增量新建</td>
+<td>煤化工、石油炼化新建产能向大型化集约化发展，<strong>单套产能对控制阀需求量较老旧产能提升 30% 以上</strong>，且智能化改造要求配智能定位器，<strong>带动单台价值量提升</strong></td>
+</tr>
+<tr>
+<td>上游成本</td>
+<td>某上市企业年报披露：<strong>控制阀产品中原材料成本占总成本比重高达 75% 以上</strong>；高性能密封材料、精密智能定位器芯片仍依赖进口</td>
+</tr>
+<tr>
+<td>国产 vs 进口价差</td>
+<td>国产产品性能已接近国际水平，<strong>价格仅为同规格进口产品的 60%–70%</strong>，服务响应更快</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最新季度量价趋势（2026H1）</strong>：<br />
+- <strong>量在减</strong>：营收 4.06 亿（−19.28%），Q2 环比与同比双降（Q2 −34.5%）——<strong>下游石化、冶金固定资产投资增速放缓，订单减少</strong><br />
+- <strong>价／毛利在改善</strong>：控制阀毛利率 <strong>28.95%（+1.66pct）</strong>——<strong>核心产品盈利能力逆势提升，是本期最重要的积极信号</strong><br />
+- <strong>结构调整</strong>：配件业务 +29.40%（存量装机规模扩大带来后市场需求）；检维修 −22.49% 且毛利率大跌 14.91pct（<strong>最大拖累项</strong>）<br />
+- <strong>区域分化</strong>：华东 −25.79%（主战场承压），西北 <strong>+28.56%</strong>（新增区域增长极）<br />
+- <strong>现金流改善</strong>：经营活动现金流净额 −165 万元（上年同期 −971 万元，<strong>改善 83.02%</strong>）；2025 年全年经营现金流 0.52 亿元（同比 +230.15%，连续改善）</p>
+<h3>（3）产业链传导</h3>
+<p><strong>上游</strong>：<strong>铸件、密封件、电机及智能定位器</strong>。<strong>原材料成本占控制阀总成本 75% 以上</strong>——这是行业最重要的成本结构特征。其中<strong>高性能密封材料、精密智能定位器芯片仍对进口存在依赖</strong>（卡脖子环节）。</p>
+<p><strong>下游</strong>：石油化工、钢铁冶金、能源（核电）、市政水务为传统基本盘；<strong>氢能、储能、光热发电、半导体为新兴增量</strong>。2026H1 传统领域固定资产投资放缓是营收下滑的直接原因。</p>
+<p><strong>议价权判断</strong>：<br />
+- <strong>对上游（铸件／密封件／定位器）：中偏弱</strong>。原材料占成本 75%+，且高端密封材料与定位器芯片依赖进口，<strong>成本转嫁能力受限</strong>；但公司有子公司江苏智能特种阀门与无锡莱谱尔（电气执行器）形成部分内部配套。<br />
+- <strong>对下游（石化央企）：中偏弱</strong>。央企集中采购压价强，但<strong>国产化率考核为国产供应商提供了政策性的份额保障</strong>；公司在 PTA 大型装置有国产替代业绩，具备一定议价基础。国产产品价格仅为进口的 60–70%，<strong>本质是"以价换量"的份额策略</strong>。</p>
+<hr />
+<h3>第二步进阶 · 原料成本 → 毛利结构传导（四因子）</h3>
+<p><strong>因子 1 · 成本传导弹性（pass-through 量化）</strong><br />
+控制阀<strong>原材料成本占总成本 75% 以上</strong>，是重原料型制造。<br />
+- <strong>转嫁系数估 0.3–0.4</strong>：央企集中采购压价强、行业"低端内卷"，成本上行难以提价；但国产化率考核下公司在<strong>高端替代订单</strong>中议价力稍强（价格仅为进口 60–70%，仍有成本空间）。<br />
+- 即：铸件／钢材价格上行 10%，公司实际毛利承压约 <strong>6–7%</strong>（10%×(1−0.35)）——<strong>敏感度显著高于一般机械企业</strong>。<br />
+- 依据：控制阀毛利率 28.95% 且同比 +1.66pct，说明本期原料端无重大冲击，且产品结构（高附加值产品占比）在改善。<br />
+- 验证点：铸造生铁／废钢价格指数、不锈钢冷轧价、公司季度毛利率。<br />
+- 证伪信号：钢材价格上行 15% 以上而控制阀毛利率连续两季下滑 &gt;2pct，则转嫁系数须下调至 0.2。</p>
+<p><strong>因子 2 · 毛利结构再平衡（分业务线敏感权重）</strong></p>
+<table>
+<thead>
+<tr>
+<th>产线</th>
+<th>收入占比</th>
+<th>毛利率</th>
+<th>核心原料</th>
+<th>原料敏感权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>控制阀</td>
+<td>84.54%</td>
+<td>28.95%</td>
+<td>铸件、密封件、定位器</td>
+<td><strong>极高（0.85）</strong></td>
+</tr>
+<tr>
+<td>检维修业务</td>
+<td>9.03%</td>
+<td><strong>50.12%</strong>（−14.91pct）</td>
+<td>备件、人工</td>
+<td>低（0.3，服务为主）</td>
+</tr>
+<tr>
+<td>配件</td>
+<td>6.20%</td>
+<td>未披露（估 35–40%）</td>
+<td>铸件、密封件</td>
+<td>高（0.7）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构迁移判断（本期最关键的毛利结构变化）</strong>：<br />
+- <strong>高毛利业务（检维修 50.12%）</strong> 收入占比 9.03%、收入 −22.49% 且<strong>毛利率暴跌 14.91pct</strong>；<br />
+- <strong>低毛利主业务（控制阀 28.95%）</strong> 收入占比 84.54%、收入 −21.14%，但<strong>毛利率逆势 +1.66pct</strong>；<br />
+- <strong>结果</strong>：加权毛利率被<strong>检维修业务的"收入下滑 + 毛利率崩塌"双重冲击</strong>拖累，而控制阀的结构改善不足以完全对冲。<br />
+- <strong>严禁用"综合毛利率 29.38%"代表全结构</strong>：估值须按 <strong>控制阀（29%）+ 检维修（下滑中，须下修至 40%）+ 配件（35–40%）</strong> 三条线分别建模。<strong>检维修毛利率从 65% 跌至 50% 是本期盈利下滑的核心原因之一</strong>，必须单独跟踪其能否企稳。</p>
+<p><strong>因子 3 · 库存与采购节奏（timing）</strong><br />
+- 2026H1 经营活动现金流 <strong>−165 万元</strong>（上年同期 −971 万元），<strong>改善 83.02%</strong>；2025 年全年经营现金流 0.52 亿元（+230.15%）——<strong>现金回款明显改善，未见靠囤货做高毛利的迹象</strong>。<br />
+- 公司称"货币资金占比上升 2.07pct、短期借款占比上升 1.55pct，系阶段性流动资金需求增加"——<strong>营运资金压力仍在</strong>。<br />
+- <strong>应收账款 5.51 亿元，占总资产比例 22.75%，仍处高位</strong>——这是比库存更值得警惕的科目（回款周期长、坏账风险）。<br />
+- 验证点：年报"存货—原材料"明细、"应收账款账龄结构"与"信用减值损失"科目。<br />
+- 证伪信号：应收账款周转天数继续拉长、信用减值损失大幅计提 → 前期收入质量存疑，需重估盈利。</p>
+<p><strong>因子 4 · 政策／市场锚点（原料成本驱动变量）</strong></p>
+<table>
+<thead>
+<tr>
+<th>驱动变量</th>
+<th>情景</th>
+<th>验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>钢材／铸件价格（市场层）</td>
+<td>中枢上行 10% → 毛利承压 6–7%（转嫁系数仅 0.35，敏感度极高）</td>
+<td>废钢／铸造生铁价格指数</td>
+</tr>
+<tr>
+<td>国产化率考核（政策层）</td>
+<td>央企供应链国产化率指标落地 → 高端控制阀国产订单放量</td>
+<td>央企招标公告、公司中标公告</td>
+</tr>
+<tr>
+<td>"一阀一码"强制追溯（政策层）</td>
+<td>2026 年 7 月起实施，淘汰无仿真验证、低密封等级低端阀门 → <strong>中小产能出清，头部份额提升</strong></td>
+<td>新版《承压类特种设备安全附件安全技术规程》执行数据</td>
+</tr>
+<tr>
+<td>石化固定资产投资（市场层）</td>
+<td>传统下游投资放缓 → 订单减少（2026H1 营收 −19.28% 的直接原因）</td>
+<td>国家统计局石化行业固定资产投资增速</td>
+</tr>
+<tr>
+<td>氢能／核电配套政策（政策层）</td>
+<td>氢能阀门关键材料自主保障率 85%、核电阀门国产化率 ≥92% → 新能源特种阀需求起量</td>
+<td>政策落地与公司新兴领域订单</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>以上输出直接喂给第四步：<strong>控制阀毛利率取 28–29%</strong>，<strong>检维修毛利率保守下修至 40%（不沿用 50.12%）</strong>，综合毛利率以 28–29% 建模。</p>
+</blockquote>
+<hr />
+<h2>第三步：确定性增量量化（自下而上清单）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+<th>金额/体量</th>
+<th>状态与节奏</th>
+<th>收入确认窗口</th>
+<th>确定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>开关控制阀制造基地（募投）</strong></td>
+<td>预算 <strong>4.5 亿元</strong>；累计投入 3.02 亿元，<strong>工程进度 67.20%</strong>（募集资金投入 4533.33 万元，投资进度 35.93%）</td>
+<td>4.5 亿元</td>
+<td><strong>预定可使用状态 2026-12-31</strong>；但公司称"基于市场需求收缩及原材料波动对投资节奏进行审慎调整，进度较原计划滞后"</td>
+<td>2027–2028</td>
+<td><strong>中（进度已滞后）</strong></td>
+</tr>
+<tr>
+<td>配件后市场</td>
+<td>2026H1 收入 0.2516 亿（<strong>+29.40%</strong>），随存量装机规模持续扩大</td>
+<td>—</td>
+<td>报告期内增速最快</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>西北区域增长极</td>
+<td>2026H1 收入 0.4829 亿（<strong>+28.56%</strong>），在传统优势市场之外形成新极</td>
+<td>—</td>
+<td>已兑现</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>财务费用压降</td>
+<td>可转债兑付完成，财务费用同比 <strong>−40.61%</strong></td>
+<td>半年节省约百万元级</td>
+<td>已发生（<strong>结构性</strong>）</td>
+<td>持续</td>
+<td>高</td>
+</tr>
+<tr>
+<td>控制阀毛利率修复</td>
+<td>28.95%（+1.66pct），产品结构与成本控制成效</td>
+<td>—</td>
+<td>已兑现</td>
+<td>持续</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>国产替代（央企考核）</td>
+<td>炼化领域控制阀国产化率纳入央企供应链考核；公司已入网三桶油</td>
+<td>行业级</td>
+<td>政策已落地</td>
+<td>2027 年后</td>
+<td>中</td>
+</tr>
+<tr>
+<td>新能源特种阀</td>
+<td>氢能、储能、光热发电、半导体用高温特种阀与高纯耐腐蚀阀</td>
+<td>未披露</td>
+<td>布局期</td>
+<td>2028 年后</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td>海外市场</td>
+<td>2026H1 港澳台及海外收入仅 98.98 万元（占比 0.24%）；2025 年报计划"东盟、中东市场攻坚、斩获突破性订单"<strong>尚未在收入端印证</strong></td>
+<td>近乎为零</td>
+<td>未破局</td>
+<td>不确定</td>
+<td><strong>低（须证伪）</strong></td>
+</tr>
+<tr>
+<td>资本运营（"双轨道经营"）</td>
+<td>2025 年报提出投资、持股、孵化及收并购；报告期内<strong>未披露任何收并购或对外投资落地事项</strong>；委托理财余额 2000 万元</td>
+<td>—</td>
+<td>未落地</td>
+<td>不确定</td>
+<td><strong>低（期权）</strong></td>
+</tr>
+<tr>
+<td>特色业务（检维修子公司）</td>
+<td>舟山化服、无锡工服<strong>延续亏损</strong>，特色业务板块尚未形成盈利支撑</td>
+<td>—</td>
+<td>亏损中</td>
+<td>不确定</td>
+<td><strong>负贡献</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>合计</strong>：可量化的确定性增量 = <strong>配件后市场（+29.40%）+ 西北区域（+28.56%）+ 财务费用压降</strong>；<strong>募投新基地为中期增量但进度已滞后</strong>；<strong>海外、新能源、收并购均为未过验证点的期权</strong>。</p>
+<hr />
+<h3>第三步进阶 · 份额变量与主业迁移空间（三层法）</h3>
+<p><strong>层 1 · 现有业务：市场容量 × 份额变量（5 锚点）</strong></p>
+<table>
+<thead>
+<tr>
+<th>锚点</th>
+<th>现状</th>
+<th>三档假设</th>
+<th>验证点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供给侧份额</td>
+<td>控制阀 TOP50 占市场 85%+，公司为央企入网供应商之一；行业"低端内卷、高端紧缺"</td>
+<td>保守：份额随行业收缩；中性：凭 SIL-3 认证与央企资质守住份额；乐观："一阀一码"出清中小厂后份额跳升</td>
+<td>央企中标份额、行业 CR 变化</td>
+</tr>
+<tr>
+<td>需求侧／客户份额</td>
+<td>已入网中石化／中石油／中海油，客户包括荣盛、恒逸、恒力、万华、宝钢</td>
+<td>中性：存量装置份额稳；乐观：新建大型炼化项目突破</td>
+<td>客户公告、重大合同公告</td>
+</tr>
+<tr>
+<td>技术代际差</td>
+<td>SIL-3 功能安全认证 + 72 项发明专利；在 PTA 大型装置国产替代业绩突出</td>
+<td>中性：维持；乐观：核电／LNG 高端突破</td>
+<td>高端产品认证与定点</td>
+</tr>
+<tr>
+<td>成本曲线位置</td>
+<td>国产价格仅为进口 60–70%，具备成本优势；但原材料占成本 75%+ 是软肋</td>
+<td>中性：成本优势维持；乐观：定位器／密封件国产化降本</td>
+<td>季度毛利率</td>
+</tr>
+<tr>
+<td>份额二阶导</td>
+<td>营收 −19.28%，<strong>份额仍在收缩</strong>，尚未见拐点</td>
+<td>—</td>
+<td>季度营收同比</td>
+</tr>
+</tbody>
+</table>
+<p><strong>层 2 · 扩展业务：主业迁移空间（"旧池塘→新池塘"）</strong><br />
+- <strong>能力可迁移性</strong>：<strong>中高</strong>。控制阀的耐压、密封、调节、执行机构能力，可迁移至<strong>氢能储运阀、储能／光热特种阀、半导体高纯阀</strong>——技术同源。<br />
+- <strong>新 TAM 弹性</strong>：<strong>大</strong>。氢能储运阀门年复合增长率 <strong>41.5%</strong>；锂电精密阀门全球市场 2026 年预计破 42 亿美元；核电阀门国产化率目标 ≥92%。<br />
+- <strong>切入时点与卡位</strong>：<strong>早期但基础薄弱</strong>。公司"加大对新能源、新材料和环保等新兴行业的研发投入"，但<strong>未披露任何新能源订单金额或客户定点</strong>。<br />
+- <strong>客户认证门槛</strong>：<strong>极高</strong>。核电、氢能、半导体用阀认证周期长、安全等级要求严苛。既是护城河，也是最大阻力。<br />
+- <strong>信号验证</strong>：<strong>未过</strong>。新能源订单、海外订单、大额合同均无公告。<strong>按纪律：仅作中期期权，不计入中性净利。</strong></p>
+<p><strong>层 3 · 风险折扣：证伪信号</strong><br />
+1. 募投"开关控制阀制造基地"2027 年仍未投产、或投产后产能利用率 &lt;50% → 产能增量假设作废；<br />
+2. 营收连续三季同比跌幅 &gt;15% → 石化资本开支下行周期延长，中性情景须下修至悲观；<br />
+3. 检维修毛利率未能企稳于 45% 以上 → 加权毛利继续被拖累；<br />
+4. 海外与新能源连续 12 个月无订单公告 → 迁移期权归零；<br />
+5. 应收账款周转天数继续拉长、信用减值损失大增 → 前期收入质量存疑。</p>
+<hr />
+<h2>第四步：估值锚定（自下而上，非增速外推）</h2>
+<blockquote>
+<p><strong>方法说明</strong>：公司为<strong>微利股</strong>（PE 162.94x 失真），采用<strong>正常化净利润法</strong>：① 估稳态营收 → ② 取保守正常化净利率 → ③ × 远期合理 PE → 目标市值 → 目标价。海外、新能源、收并购均为未过验证点的期权，<strong>不计入中性</strong>。</p>
+</blockquote>
+<p><strong>总股本：约 3.5584 亿股</strong> ｜ 每股净资产 <strong>3.433 元</strong>（2026-06-30）｜ 归母净资产 <strong>12.22 亿元</strong> ｜ 资产负债率 <strong>49.52%</strong></p>
+<h3>稳态营收测算（自下而上）</h3>
+<table>
+<thead>
+<tr>
+<th>收入线</th>
+<th>测算依据</th>
+<th>稳态收入</th>
+<th>稳态净利率</th>
+<th>稳态净利</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>控制阀</td>
+<td>2026H1 3.4323 亿 → 全年约 6.9 亿；募投基地 2027 年投产后产能扩张 + 央企国产化替代，给稳态 8.6 亿</td>
+<td>8.6 亿</td>
+<td>8–9%（新产能折旧后）</td>
+<td><strong>0.69–0.77 亿</strong></td>
+</tr>
+<tr>
+<td>检维修业务</td>
+<td>2026H1 0.3666 亿 → 全年约 0.75 亿；子公司持续亏损，给稳态 0.60 亿（保守）</td>
+<td>0.60 亿</td>
+<td>10%</td>
+<td><strong>0.06 亿</strong></td>
+</tr>
+<tr>
+<td>配件</td>
+<td>2026H1 0.2516 亿（+29.40%）→ 全年约 0.55 亿；随存量装机扩大，给稳态 0.80 亿</td>
+<td>0.80 亿</td>
+<td>12%</td>
+<td><strong>0.10 亿</strong></td>
+</tr>
+<tr>
+<td>其他</td>
+<td>小项</td>
+<td>0.10 亿</td>
+<td>5%</td>
+<td><strong>0.005 亿</strong></td>
+</tr>
+<tr>
+<td><strong>中性合计（不含新能源／海外）</strong></td>
+<td></td>
+<td><strong>约 10.1 亿</strong></td>
+<td><strong>约 8.5%</strong></td>
+<td><strong>约 0.86 亿</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>产能约束校验</strong>：稳态营收 10.1 亿元，与公司 2023 年峰值营收 10.24 亿元相当；募投基地投产后产能上限更高，<strong>校验通过</strong>（未超越产能上限）。</p>
+</blockquote>
+<h3>正常化净利推导</h3>
+<ul>
+<li><strong>正常化净利率 = 8.5%</strong>：参照公司 <strong>2023 年净利率 10.25%</strong>（归母 1.05 亿 / 营收 10.24 亿，为近年最好水平）、2024 年 2.08%、2025 年 2.23%。<strong>取 8.5%，明显低于 2023 年峰值</strong>——保守（因新产能折旧较重、检维修毛利率下修）。</li>
+<li><strong>正常化净利（中性）≈ 0.86 亿元</strong>。</li>
+</ul>
+<h3>三情景（2029E）</h3>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>2029E 正常化净利</th>
+<th>合理PE</th>
+<th>目标市值</th>
+<th>目标股价</th>
+<th>较现价空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>悲观</strong></td>
+<td>石化资本开支持续下行 + 募投基地产能闲置 + 检维修毛利继续下滑</td>
+<td>0.45 亿</td>
+<td>22x</td>
+<td>9.9 亿</td>
+<td><strong>2.78 元</strong></td>
+<td><strong>−62.7%</strong></td>
+</tr>
+<tr>
+<td><strong>中性</strong></td>
+<td>石化投资温和修复 + 配件后市场增长 + 募投投产贡献，<strong>新能源/海外不计入</strong></td>
+<td><strong>0.86 亿</strong></td>
+<td>25x</td>
+<td>21.5 亿</td>
+<td><strong>6.04 元</strong></td>
+<td><strong>−19.0%</strong></td>
+</tr>
+<tr>
+<td><strong>乐观</strong></td>
+<td>央企国产化替代放量 + 氢能／核电特种阀订单落地 + 海外破局</td>
+<td>1.60 亿</td>
+<td>28x</td>
+<td>44.8 亿</td>
+<td><strong>12.59 元</strong></td>
+<td><strong>+68.8%</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>基准（2026E·正常化）</th>
+<th>远期（2029E·中性）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>净利润</td>
+<td>0.62 亿（正常化）</td>
+<td>0.86 亿</td>
+</tr>
+<tr>
+<td>合理PE</td>
+<td>28–32x</td>
+<td>25x</td>
+</tr>
+<tr>
+<td>合理市值</td>
+<td>17.4–19.8 亿</td>
+<td>21.5 亿</td>
+</tr>
+<tr>
+<td><strong>对应股价</strong></td>
+<td><strong>4.89–5.56 元</strong></td>
+<td><strong>6.04 元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>⚠️ 交叉校验与 PB 校验</strong>：<br />
+- 现价 7.46 元 = <strong>PB 2.19x</strong>（每股净资产 3.433 元）；中性目标 6.04 元 = <strong>PB 1.76x</strong><br />
+- <strong>PB 2.19x 对应的 ROE 极低</strong>：2026H1 加权 ROE 仅 1.11%（年化约 2.2%），2025 全年 ROE 约 2.0%——<strong>PB 2.19x 与 2% 的 ROE 严重不匹配</strong><br />
+- 现价对应 2026E 正常化净利 0.62 亿的 PE 为 <strong>42.8x</strong>，对应 2026H1 年化净利（0.27 亿）的 PE 为 <strong>99x</strong><br />
+- <strong>PB 1.5x 对应 5.15 元（−31.0%）</strong>，PB 1.0x 对应 3.43 元（−54.0%）——<strong>账面净资产构成下限，但当前 PB 无保护</strong></p>
+<hr />
+<h3>第四步进阶 · 重资产／周期股估值校正（三道闸）</h3>
+<p><strong>校正 1 · 资产质量折扣</strong>：PB <strong>2.19x，不破净</strong>，无"低 PB 伪空间"问题。但须注意资产质量三项：<br />
+- <strong>应收账款 5.51 亿元，占总资产 22.75%</strong>，处于高位——<strong>这构成对净资产的实质性折扣</strong>（若坏账计提增加，净资产将缩水）；<br />
+- <strong>归母净资产 12.22 亿元</strong>中，固定资产与在建工程（募投基地）占比不低，且阀门产线<strong>专用性较强</strong>（不能转产），清算价值低于账面；<br />
+- <strong>结论：不存在低 PB 伪空间，且应收账款质量使净资产的实际保护力弱于账面。</strong> PB 2.19x 对一家 ROE 约 2% 的公司而言<strong>并不便宜</strong>。</p>
+<p><strong>校正 2 · 周期位置校正</strong>：控制阀为<strong>工业资本开支强周期品种</strong>（下游石化、冶金固定资产投资驱动）。当前周期位置判定：<strong>底部区域</strong>——2026H1 营收 −19.28%、Q2 −34.5%，为近年最低点（2023 年营收 10.24 亿 → 2026E 约 8.5 亿）。<br />
+- <strong>中性净利不取 2023 年峰值</strong>（归母 1.05 亿元，为下游资本开支与产品结构双高年），<strong>不取 2026H1 单期年化</strong>（0.27 亿元，为周期底部），<strong>不取近三年均值</strong>（受单年波动扭曲）；<br />
+- 取 <strong>0.86 亿元的稳态归一化净利</strong>（对应营收 10.1 亿元、净利率 8.5%，<strong>取的是"下游正常资本开支 + 募投达产"的行业正常周期单位盈利</strong>，且低于 2023 年峰值）；<br />
+- 明确标注：<strong>当前处于周期底部，中性不额外悲观；但因 ROE 长期低迷，"底部"不代表"便宜"。</strong></p>
+<p><strong>校正 3 · 杠杆下行情景</strong>：资产负债率 <strong>49.52%</strong>（2026-06-30，较 2025 年末 49.45% 基本持平），处于中等水平，非高负债。但须附"需求下行"负面情景：<br />
+- <strong>经营杠杆高</strong>：营收 −19.28% 而净利 −34.09%，<strong>利润跌幅是收入跌幅的 1.77 倍</strong>——下行时净利放大收缩；<br />
+- 若 2027–2028 年石化固定资产投资继续负增长、募投基地产能利用率不足，<strong>正常化净利将下修至 0.45 亿以下 → 对应悲观情景 2.78 元（−62.7%）</strong>；<br />
+- <strong>该负面情景使空间大幅转负——故不得标"大空间／重点关注"，至多"暂不介入"</strong>。</p>
+<p><strong>期权纪律</strong>：新能源特种阀订单、海外市场破局、资本运营收并购——<strong>全部未过验证点，不计入中性 NAV / 中性净利</strong>，仅列示于乐观情景。</p>
+<hr />
+<h2>第五步：综合赔率判断（买不买？）</h2>
+<p><strong>当前价格位置</strong>：<strong>偏贵（相对盈利）／中性（相对周期底部）</strong>。现价 7.46 元对应 PB <strong>2.19x</strong>、PE(TTM) 162.94x、2026H1 加权 ROE 仅 1.11%（年化 2.2%）、2026E 正常化 PE 约 42.8x。中性正常化目标 6.04 元（PB 1.76x）低于现价 19.0%。</p>
+<p><strong>三问（微利股／正常化估值必答）</strong>：<br />
+1. <strong>为什么亏</strong>——严格说公司<strong>不亏</strong>：2026H1 归母 +1343.36 万元、扣非 +1296.91 万元，为真实盈利，但<strong>利润已降至近乎盈亏平衡线</strong>。原因是：① <strong>行业周期底部</strong>：石油化工、钢铁冶金等传统下游固定资产投资增速放缓 → 控制阀与检维修订单减少，<strong>营收 −19.28%</strong>；② <strong>产品结构恶化</strong>：高毛利的检维修业务收入 −22.49% 且<strong>毛利率暴跌 14.91pct 至 50.12%</strong>，成为最大拖累；③ <strong>经营杠杆放大</strong>：营收 −19.28% 引发净利 −34.09%；④ <strong>特色业务失血</strong>：检维修子公司舟山化服、无锡工服延续亏损。<strong>注：控制阀主业毛利率逆势 +1.66pct 至 28.95%，说明并非产品竞争力下降，而是需求端周期性收缩。</strong><br />
+2. <strong>靠什么扭亏（盈利修复）</strong>，触发时点在哪一年——<strong>不需扭亏，需修复</strong>。四条路径：① <strong>募投投产</strong>：开关控制阀制造基地（预算 4.5 亿元，工程进度 67.20%）<strong>预定可使用状态 2026-12-31</strong>，2027 年起贡献新增产能；② <strong>政策红利</strong>：央企供应链控制阀国产化率考核 + "一阀一码"2026 年 7 月实施淘汰低端产能 → 头部份额提升；③ <strong>后市场支撑</strong>：配件业务 +29.40%，随存量装机规模扩大形成稳定现金流；④ <strong>财务费用压降</strong>：可转债兑付完成，财务费用同比 −40.61%。<strong>触发时点判断：2027 年是收入端修复观察年（募投投产 + 石化投资是否企稳），2028–2029 年利润修复至 0.86 亿量级。</strong><br />
+3. <strong>亏得起吗</strong>——<strong>完全亏得起</strong>。截至 2026-06-30：总资产 24.2 亿元、归母净资产 12.22 亿元、资产负债率 <strong>49.52%</strong>（中等）；经营活动现金流净额 −165 万元（上年同期 −971 万元，<strong>改善 83.02%</strong>），2025 年全年经营现金流 0.52 亿元（+230.15%）；可转债已兑付、利息压力解除。<strong>但须提示：应收账款 5.51 亿元、占总资产 22.75%，处于高位，是资产负债表上最需要跟踪的科目。</strong> 公司<strong>无流动性风险</strong>。</p>
+<p><strong>安全边际</strong>：<br />
+- 中性远期 6.04 元 → <strong>−19.0%</strong>（低于现价）<br />
+- 悲观 2.78 元 → <strong>−62.7%</strong>（经营杠杆放大下的下行情形）<br />
+- 乐观 12.59 元 → <strong>+68.8%</strong>（需国产替代放量 + 新能源订单）<br />
+- <strong>净资产硬底</strong> 3.433 元/股（PB 1.0x，−54.0%）；PB 1.5x 对应 5.15 元（−31.0%）<br />
+- <strong>结论：现价不提供安全边际。PB 2.19x 对应 ROE 约 2%，估值与盈利严重错配。</strong></p>
+<p><strong>介入条件</strong>：<br />
+1. <strong>不介入现价</strong>。以正常化口径，<strong>5.15 元（PB 1.5x）以下</strong>才具备以净资产为底的保护<br />
+2. <strong>可上调至重点关注的条件</strong>（须同时满足两项）：① <strong>营收季度同比转正</strong>；② 募投基地正式投产并公告产能爬坡进度，或取得新能源／核电领域大额订单公告<br />
+3. <strong>观察指标</strong>：季度营收同比、控制阀毛利率（守 28%）、检维修毛利率（企稳于 45% 以上）、应收账款周转天数、石化行业固定资产投资增速</p>
+<h3>第五步进阶 · 上行想象力情景（四类，只进乐观栏、不进中性锚）</h3>
+<ul>
+<li><strong>类型 A · 行业调整剩者红利</strong>：新版《承压类特种设备安全附件安全技术规程》2026 年 7 月起实施"一阀一码 + 材质溯源"，<strong>强制淘汰无仿真验证、低密封等级的低端阀门</strong>；叠加上游原材料占成本 75%+ 挤压中小厂利润，<strong>行业中小产能进入系统性出清期</strong>。公司具备 SIL-3 认证、72 项发明专利与三桶油入网资质，是<strong>出清后的剩者候选</strong>。<strong>验证点</strong>：行业中小厂商出清数量、公司中标份额；<strong>证伪信号</strong>：CR 提升但公司营收份额仍下滑。<strong>弹性</strong>：中性净利 +25%。</li>
+<li><strong>类型 B · 政策反转期权</strong>：<strong>央企供应链控制阀国产化率考核</strong>是本股最直接的政策抓手——重点炼化领域国产化率已纳入央企供应链考核体系，且 2026 年多家能源央企明确新建项目国产化率硬性指标（LNG 深冷阀、煤化工高压调节阀、长输管线球阀优先国产）。公司已入网三桶油并在 PTA 装置有国产替代业绩，<strong>政策一旦进入强制落地阶段，订单将系统性转向国产供应商</strong>。<strong>验证点</strong>：央企国产化率考核细则、公司中标公告；<strong>证伪信号</strong>：考核未落地或外资降价反击。<strong>弹性</strong>：中性净利 +40%。</li>
+<li><strong>类型 C · 市场错杀修复</strong>：<strong>部分成立</strong>。当前营收 −19.28% 是石化资本开支的<strong>周期性收缩</strong>，而非公司竞争力恶化（控制阀毛利率反而 +1.66pct，配件 +29.40%，经营现金流改善 83%）。若 2027 年石化固定资产投资企稳，市场对"周期底部的微利"的悲观定价存在修复空间。<strong>验证点</strong>：石化行业固定资产投资增速、公司季度营收同比；<strong>证伪信号</strong>：下游投资连续两年负增长。<strong>弹性</strong>：估值中枢 +20%。</li>
+<li><strong>类型 D · 技术／技术代际跃迁期权（新能源特种阀）</strong>：公司在氢能储运阀、储能／光热特种阀、半导体高纯耐腐蚀阀方向布局，属<strong>从传统石化阀向全新极端工况阀的技术升级</strong>（而非简单市场迁移）。三要素：① 政策驱动（核电阀门国产化率目标 ≥92%、氢能阀门关键材料自主保障率 85%）✓；② 趋势（氢能储运阀门年复合增长率 41.5%、锂电精密阀门全球 2026 年破 42 亿美元）✓；③ <strong>公司落地 ✗</strong>（未披露任何新能源订单金额、客户定点或量产数据）。<strong>硬验证点</strong>：中试／样机验证通过 + 客户定点或大额订单公告 + 量产成本优于旧路线。<strong>证伪信号</strong>：连续 12 个月无订单公告、认证未通过。<strong>弹性</strong>：对应乐观情景 12.59 元（+68.8%）。</li>
+</ul>
+<blockquote>
+<p><strong>什么条件出现才上调至重点关注</strong>：<strong>营收季度同比转正</strong>，<strong>且</strong>募投"开关控制阀制造基地"投产并公告产能利用率，或取得核电／氢能领域大额订单公告。在此之前，新能源与海外均为未验证期权，<strong>禁止</strong>因"国产替代"主题单独上调评级。</p>
+</blockquote>
+<p><strong>最大风险（最可能破坏逻辑的因素）</strong>：<br />
+1. <strong>下游资本开支持续下行（首要）</strong>：石油化工、钢铁冶金固定资产投资放缓是营收 −19.28% 的直接原因；若 2027 年仍未企稳，中性情景须下修至悲观（2.78 元，−62.7%）<br />
+2. <strong>募投项目进度滞后</strong>：公司明确"基于市场需求收缩及原材料波动对投资节奏进行审慎调整，整体进度较原计划有所滞后"——<strong>产能增量假设的兑现时点存在不确定性</strong><br />
+3. <strong>检维修毛利率崩塌</strong>：从 65% 跌至 50.12%（−14.91pct），且子公司舟山化服、无锡工服延续亏损，<strong>特色业务尚未形成盈利支撑</strong><br />
+4. <strong>经营杠杆放大</strong>：营收 −19.28% 引发净利 −34.09%，下行期利润收缩弹性约为收入的 1.8 倍<br />
+5. <strong>应收账款 5.51 亿元（占总资产 22.75%）</strong>：回款周期长，存在信用减值风险<br />
+6. <strong>海外与新能源均未见收入印证</strong>：海外收入占比仅 0.24%，2025 年报"东盟、中东市场攻坚、斩获突破性订单"目标<strong>尚未在收入端兑现</strong><br />
+7. <strong>估值与盈利严重错配</strong>：PB 2.19x 对应年化 ROE 约 2.2%</p>
+<p><strong>结论：暂不介入</strong></p>
+<blockquote>
+<p>理由：① 中性远期空间 <strong>−19.0%</strong>、悲观 <strong>−62.7%</strong>，风险收益不对称；② 公司<strong>完全亏得起</strong>（净资产 12.22 亿元、负债率 49.52%、经营现金流改善 83%、可转债已兑付），且控制阀主业毛利率逆势提升、配件与西北区域高增，<strong>不存在"确无扭亏可能"</strong>——故<strong>不适用"坚决回避"</strong>；③ <strong>PB 2.19x 对应年化 ROE 约 2.2%，估值与盈利严重错配</strong>——市场定价的是央企国产替代与新能源主题，而非当期盈利；④ 真正的实质变量是<strong>募投基地投产（2026 年底）与央企国产化率考核落地</strong>，但前者进度已滞后、后者尚未在收入端体现。<br />
+<strong>核心跟踪点</strong>：季度营收同比能否转正 + 募投基地投产与产能利用率公告 + 核电／氢能大额订单公告 + 检维修毛利率能否企稳。</p>
+</blockquote>
+<hr />
+<h3>本股估值锚定速查表</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前股价</td>
+<td>7.46 元</td>
+</tr>
+<tr>
+<td>基准目标价（2026年底）</td>
+<td><strong>5.20 元</strong>（区间 4.89–5.56，正常化口径，现价已高出约 43%）</td>
+</tr>
+<tr>
+<td>基准空间</td>
+<td><strong>−30.3%</strong></td>
+</tr>
+<tr>
+<td>远期目标价（2029E·中性）</td>
+<td><strong>6.04 元</strong></td>
+</tr>
+<tr>
+<td>远期空间（中性）</td>
+<td><strong>−19.0%</strong></td>
+</tr>
+<tr>
+<td>区间</td>
+<td>悲观 2.78 元（−62.7%）～ 乐观 12.59 元（+68.8%）</td>
+</tr>
+<tr>
+<td>核心逻辑</td>
+<td>三桶油入网控制阀商，下游石化资本开支收缩致营收降 19%，控制阀毛利逆势+1.66pct；PB 2.19x 对应 ROE 仅 2.2%，估值与盈利错配</td>
+</tr>
+<tr>
+<td>建议</td>
+<td><strong>暂不介入</strong>（营收季度转正或募投基地投产公告后再评估，PB 1.5x 即 5.15 元以下有安全垫）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>数据来源：智能自控 2026 年半年度报告（2026-08-26 披露）、2025 年年度报告、关于 2026 年半年度募集资金存放与使用情况的专项报告、东方财富财富号中报解读、证券之星中报解读、全球阀门网行业综述、市场监管总局新版《承压类特种设备安全附件安全技术规程》（2026-07 实施）、工信部高端控制阀关键基础件扶持政策、中研普华《2026 控制阀行业发展现状与产业链分析》、腾讯行情（2026-09-30 收盘）。</em><br />
+<em>估值测算为基于公开信息的独立判断，不构成投资建议。</em></p>
+</div>
+</div></body></html>
